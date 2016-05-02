@@ -11,6 +11,8 @@ import plotly.graph_objs as go
 from bottle import route, run, debug, template, request, static_file, error, get, post, response,  static_file, view
 import plotly.plotly as py
 py.sign_in('mcs142124', 'p7p80472qt')
+from datetime import date
+from datetime import datetime
 
 '''
 This function takes one argument:
@@ -144,14 +146,49 @@ def plotGraph(series1,series2,anomalies):
     print temp
     return template('graphPlot', graph=temp)
 
+'''
 
+This function takes one argument:
+
+li: List of tuples of the forms as follows:
+
+(start_date, end_date, value)
+
+
+It merges windows if it overlaps.
+
+returns list of tuples of the form:
+
+(start_date, end_date, value)
+
+'''
 def mergeDates(li):
-    if(len(li)>0):
-        last = li[0][1]
-        mxVal= li[0][2]
-        flag =0
-        for i in li:
-            if(flag==0):
-                flag=1
-                continue
-            
+    # Convert first and second item of tuple to date from string
+    # print li
+    li = [ (datetime.strptime(a, "%Y-%m-%d"),datetime.strptime(b, "%Y-%m-%d"),c) for (a,b,c) in li]
+    li = sorted(li, key=lambda x: x[0]) # sort input list
+    new_list_of_ranges = [] # output list
+    
+    new_range_item_start = None
+    new_range_item_end = None
+    new_value = None
+    
+    length = len(li)
+    for i,range_item in enumerate(li):
+        if new_range_item_start is None:
+            new_range_item_start = range_item[0]
+            new_range_item_end = range_item[1]
+            new_value = range_item[2]
+        #elif new_range_item_end >= range_item[0]:
+        elif((abs(new_range_item_end- range_item[0]).days) == 1):
+            new_range_item_end = max(range_item[1], new_range_item_end)
+            new_value = max(new_value, range_item[2])
+        else:
+            new_list_of_ranges.append((new_range_item_start, new_range_item_end, new_value))
+            new_range_item_start = range_item[0]
+            new_range_item_end = range_item[1]
+            new_value = range_item[2]
+        # save if this is last item
+        if i + 1 == length:
+            new_list_of_ranges.append((new_range_item_start, new_range_item_end, new_value))
+    return new_list_of_ranges
