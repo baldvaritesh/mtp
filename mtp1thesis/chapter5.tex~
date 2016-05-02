@@ -1,0 +1,9 @@
+\chapter{Conclusion}
+
+Often rise in the price of commodity are considered as a result of unseasonal rainfall, increased demand, unrealistic government policies, supply deficit etc. But supply chain deficits and natural calamities can not only be held responsible for every hike in price of commodity. Sometimes the hike in prices are man-made with the intension of earning more profits with illicit means like excess hoarding, manual creation of supply crunch etc.
+
+These manual interventions to the supply chain of commodity for sake of earning more profit can be found by analyzing time series data of dependent factors since these have distinguishing characteristics. These characteristics can be found by various statistical and machine learning techniques.
+
+So, for given time series first one needs to understand normal behavior before going for detection of anomalies. Time series may have periodicity, seasonality, trends or may have complete randomness. So method to detect anomaly should be designed in a such a way that functionalities covered by it does not miss any type of time series. So, here we have tried to build up a system keeping multiple functionalities for one hypothesis, such that it can cover multiple aspects of any time series.
+
+In future, we are planning to develop this library, where given time series and relation as input, our system will provide cases of anomalies present in the time series.

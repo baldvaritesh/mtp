@@ -1,0 +1,72 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Thesis.aux
+A level-1 auxiliary file: titlepage.aux
+A level-1 auxiliary file: certificate.aux
+A level-1 auxiliary file: abstract.aux
+A level-1 auxiliary file: acknowledgement.aux
+A level-1 auxiliary file: chapter1.aux
+A level-1 auxiliary file: chapter2.aux
+A level-1 auxiliary file: chapter3.aux
+A level-1 auxiliary file: chapter4.aux
+A level-1 auxiliary file: chapter5.aux
+The style file: plain.bst
+Database file #1: biblio.bib
+Warning--to sort, need author or key in agmarknet
+Warning--to sort, need author or key in retailpricecollection
+Warning--to sort, need author or key in Redif57:online
+Warning--to sort, need author or key in Whyo17:online
+Warning--to sort, need author or key in Theg44:online
+Warning--to sort, need author or key in Theg88:online
+Warning--to sort, need author or key in Flyin19:online
+Warning--to sort, need author or key in Onion55:online
+Warning--to sort, need author or key in Hoard62:online
+Warning--to sort, need author or key in Onion85:online
+Warning--to sort, need author or key in Noon17:online
+Warning--to sort, need author or key in Govt81:online
+Warning--to sort, need author or key in Onion68:online
+Warning--to sort, need author or key in Keral99:online
+Warning--to sort, need author or key in Rains78:online
+Warning--there's a number but no volume in kapur2011quid
+You've used 21 entries,
+            2118 wiz_defined-function locations,
+            603 strings with 7880 characters,
+and the built_in function-call counts, 4411 in all, are:
+= -- 444
+> -- 106
+< -- 1
++ -- 52
+- -- 30
+* -- 201
+:= -- 620
+add.period$ -- 64
+call.type$ -- 21
+change.case$ -- 78
+chr.to.int$ -- 0
+cite$ -- 37
+duplicate$ -- 177
+empty$ -- 482
+format.name$ -- 30
+if$ -- 1017
+int.to.chr$ -- 0
+int.to.str$ -- 21
+missing$ -- 4
+newline$ -- 108
+num.names$ -- 12
+pop$ -- 179
+preamble$ -- 1
+purify$ -- 57
+quote$ -- 0
+skip$ -- 124
+stack$ -- 0
+substring$ -- 169
+swap$ -- 30
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 84
+warning$ -- 16
+while$ -- 18
+width$ -- 23
+write$ -- 204
+(There were 16 warnings)
