@@ -27,10 +27,8 @@ date_xpath_ndtv = "/html/head/meta[@name='publish-date']/@content"
 # firstpost : <meta property="article:published_time" content="2014-10-14T10:25:32+05:30" />
 # dna : <meta property="og:updated_time" content="2015-08-20T14:57:00+05:30" />
 
-
-url = 'http://www.dnaindia.com/money/report-onion-prices-skyrocket-cross-rs-80-in-some-markets-2116424'
-news_souce = 'dna'
 def getDate(url, news_souce):
+    publish_fmt = "%a, %d %b %Y %H:%M:%S %Z"
     if(news_souce == 'dna'):
         hdr = {'User-Agent': 'Mozilla/5.0'}
         req = urllib2.Request(url,headers=hdr)
@@ -43,24 +41,48 @@ def getDate(url, news_souce):
     if(news_souce == 'ht'):
         date_object = tree.xpath(date_xpath_ht)
         # Format :  2015-08-22T02:00Z
-        return date_object[0]
+        date =  date_object[0]
+        date = date.split("T")[0]
+        date = datetime.datetime.strptime(date, '%Y-%m-%d')
+        date = date.strftime(publish_fmt)
+        return date
     elif(news_souce == 'dna'):
         date_object = tree.xpath(date_xpath_dna)
         # Format : 2015-08-20T14:57:00+05:30
-        return date_object[0]
+        date = date_object[0]
+        date = date.split("T")[0]
+        date = datetime.datetime.strptime(date, '%Y-%m-%d')
+        date = date.strftime(publish_fmt)
+        return date
     elif(news_souce == 'firstpost'):
         # 2014-10-14T10:25:32+05:30
         date_object = tree.xpath(date_xpath_firstpost)
-        return date_object[0]
+        date = date_object[0]
+        date = date.split("T")[0]
+        date = datetime.datetime.strptime(date, '%Y-%m-%d')
+        date = date.strftime(publish_fmt)
+        return date
     elif(news_souce == 'ndtv'):
         date_object = tree.xpath(date_xpath_ndtv)
         # Wed, 01 Jul 2015 12:23:28 +0530
-        return date_object[0]
+        date = date_object[0]
+        date = date.split("+")[0]
+        date =date.strip()
+        date = datetime.datetime.strptime(date, '%a, %d %b %Y %H:%M:%S')
+        date = date.strftime(publish_fmt)
+        return date
 
     # date path : /html/body/div[1]/div[2]/section/div/div[1]/div[2]/ul/li[2]
 
-
-
+def getNewsSource(exact_url):
+    if(exact_url.find('www.hindustantimes.com') >= 0 ):
+        return 'ht'
+    elif(exact_url.find('www.dnaindia.com') >= 0 ):
+        return 'dna'
+    elif(exact_url.find('www.firstpost.com') >= 0 ):
+        return 'firstpost'
+    elif(exact_url.find('ndtv.com') >= 0 ):
+        return 'ndtv'
 
 ######################################################################
 ##########          BEAUTIFUL SOUP: END                       ########
@@ -114,10 +136,13 @@ def set_meta_table(article_hash,opinion_section,source_id,search_text_hash,exact
         #publish_date = 'Sun, 1 Jan 1900 00:00:00 GMT'
         publish_date = ''
         # print p
-
-        if 'date' in p.keys():
-            
+        publish_fmt = "%a, %d %b %Y %H:%M:%S %Z"
+        if 'date' in p.keys():            
             publish_date = p['date']
+            publish_datetime =  datetime.datetime.strptime(publish_date,publish_fmt)
+        else:
+            news_souce = getNewsSource(exact_url)
+            publish_datetime = getDate(exact_url,news_souce)
 
 
     word_count = len(onlytext.strip().split())
@@ -135,9 +160,9 @@ def set_meta_table(article_hash,opinion_section,source_id,search_text_hash,exact
 
         source_url = exact_url #Why need this field???
         analysis_fmt = "%a %b %d %H:%M:%S %Y"
-        publish_fmt = "%a, %d %b %Y %H:%M:%S %Z"
+        
         analysis_datetime = datetime.datetime.strptime(analysis_date,analysis_fmt)
-        publish_datetime =  datetime.datetime.strptime(publish_date,publish_fmt)
+        
 
 
         sql_query = "insert into ArticleMetaData( \
