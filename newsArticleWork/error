@@ -1,0 +1,29 @@
+processing Index: 1 of 621
+('Print exact_url:', 'http://www.hindustantimes.com/business/why-skyrocketing-onion-prices-pack-a-pungent-punch/story-WyPKraeRlDDMRehYiuc8mJ.html')
+
+## running diffbot!
+## diffbot parsing done!
+## Running alchemyapi
+##Document Sentiment - negative
+##Score - -0.43164
+##Printing query -
+insert into ArticleMetaData(                     article_hash_url , title, publish_date,                    onlytext, source_id, source_url, exact_url,                     opinion_section,search_text_hash, word_count,                     analysis_date, document_sentiment,pos_on_page,                    page_number, score) values (88aea909a182f26a9b66c911eace55f4,Why skyrocketing onion prices pack a pungent punch,2015-08-22 01:00:00,Onion-market
+The skyrocketing prices of onions, a key ingredient used in making dishes ranging from curries to biryanis, reflects India’s inability to insulate staples from weather-induced supply disturbances.
+On Thursday onions traded at Rs 4,900 a quintal (or Rs 49 a kg) at Lasalgaon in Maharashtra, India’s largest wholesale market for the crop. Inadequate supplies have pushed up prices sharply over the last few weeks. Already, retail onion prices have touched Rs 80 a kg in some parts of Delhi bringing back memories of 2013, when the vegetable was retailing at Rs 100 a kg in some pockets.
+There were only 3,900 quintals available for sale in Lasalgaon on Thursday. This is less than a third of what was brought in to the market year. On the same date last year, 13,860 quintals of onions were sold. These were traded at Rs 1,600 a quintal, less than a third of current prices.
+So, what is pushing up prices?
+First, unseasonal rains and hailstorms in March and April damaged the rabi crop affecting supplies. The July-September period is the lean period for onion production. The demand during this period is met from rabi (summer stocks). The unseasonal rains meant that stored rabi onions have nearly halved to 1.4 million tonnes.
+The domestic demand for onions is about 15 million tonnes a year. In a normal year, India produces about 18-20 million tonnes year. In the last onion crop year (June 2014-July 2015), the domestic production stood at 18.9 million tonnes, marginally lower than the previous year’s 19.4 million tonnes.
+The rains and hailstorms, however, have dealt a blow to the winter harvest, which accounts for about 55% of the total production, damaging significant amount of stocks. Separately, inconsistent rains in the main onion producing states of Maharashtra, Karnataka and Andhra Pradesh have delayed planting of the kharif crop.
+Maharashtra, India’s main onion producing state has received more than quarter less than its normal summer rains this year. Likewise for Karnataka. Besides, while conceptually inflation may be an economic construct, but politicians always try and keep one eye on the price movements because an untamed inflation monster can have grave electoral implications.
+Former prime minister Indira Gandhi stormed back to power in 1980 riding on increasing street protest of steep onion prices. In 1998, current foreign minister and the then Delhi Chief Minister Sushma Swaraj faced the wrath of an angry electorate over high onion prices losing the state polls to the Shiela Dikshit-led Congress.
+There are a few signs that the government and the RBI would do well to keep constant vigil on. The value of the rupee, among other things, provides an early peek on future price movements.
+A weaker rupee makes imported goods such as crude oil and gold expensive. Costlier crude oil and the resultant increase in fuel prices can push up prices of most goods.
+The local currency has fallen a couple of rupees since China devalued the yuan to keep its export price competitive in a bumpy world economy. A persistently weak rupee could prompt the RBI to keep interest rates high to maintain India’s attractiveness as a debt-market to keep the dollars coming in.
+On the administrative side, there is a live example in the current onion crisis. A country-wide goods and services tax (GST) can help neutralise the indirect tax costs such as octroi when move across state borders. It is not just about onions.
+Efficiencies movement of goods free of fiscal barriers and a common national market can help deal with such unforeseen price shocks of essential and other items.
+Read More:,1,http://www.hindustantimes.com/business/why-skyrocketing-onion-prices-pack-a-pungent-punch/story-WyPKraeRlDDMRehYiuc8mJ.html,http://www.hindustantimes.com/business/why-skyrocketing-onion-prices-pack-a-pungent-punch/story-WyPKraeRlDDMRehYiuc8mJ.html,no,npa,599,2016-04-10 21:24:20,negative,1,1,-0.43164)
+ 
+## Writing to DB----
+## DB write failed!!
+NameError("global name 'db' is not defined",)
