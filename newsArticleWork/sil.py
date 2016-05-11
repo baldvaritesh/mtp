@@ -92,7 +92,7 @@ def getNewsSource(exact_url):
 
 ##Globals##
 ####Urls
-csv_file = 'Articles/test.csv'
+csv_file = 'Articles/output1.csv'
 df_urls = pd.read_csv(csv_file)
 
 ####Alchemy object

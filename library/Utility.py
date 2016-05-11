@@ -13,6 +13,7 @@ import plotly.plotly as py
 py.sign_in('mcs142124', 'p7p80472qt')
 from datetime import date
 from datetime import datetime
+from datetime import timedelta
 
 '''
 This function takes one argument:
@@ -191,4 +192,100 @@ def mergeDates(li):
         # save if this is last item
         if i + 1 == length:
             new_list_of_ranges.append((new_range_item_start, new_range_item_end, new_value))
+    return new_list_of_ranges
+
+
+'''
+
+This function requires minumum 5 arguments:
+
+numOfResults: number of lists you are passing, minimum 2
+
+listi : result from ith alorithm : list
+resultOfi : result of which algorithm : string, it can be from following:
+            (slope_based, linear_regression, graph_based, spike_detection, multiple_arima)
+
+It finds intersection of all algos.
+
+returns list of tuples.
+
+Return Tuple format:
+
+(date, correlation, slope_based, linear_regression, graph_based, spike_detection, multiple_arima)
+
+'''
+def intersection(numOfResults, list1, resultOf1, list2, resultOf2, list3 = [], resultOf3="linear_regression", list4=[], resultOf4="graph_based", list5=[], resultOf5="spike_detection" , list6=[], resultOf6="multiple_arima"):
+    # Convert first and second item of tuple to date from string
+    # First Combine both the results into one, 3 tuples to 4 tuples -> 4th will be from which time series it is.
+    '''
+    li1 = [ (datetime.strptime(a, "%Y-%m-%d"),datetime.strptime(b, "%Y-%m-%d"),c, resultOf1) for (a,b,c) in list1]
+    li2 = [ (datetime.strptime(a, "%Y-%m-%d"),datetime.strptime(b, "%Y-%m-%d"),c, resultOf2) for (a,b,c) in list2]
+    li3 = [ (datetime.strptime(a, "%Y-%m-%d"),datetime.strptime(b, "%Y-%m-%d"),c, resultOf3) for (a,b,c) in list3]
+    li4 = [ (datetime.strptime(a, "%Y-%m-%d"),datetime.strptime(b, "%Y-%m-%d"),c, resultOf4) for (a,b,c) in list4]
+    li5 = [ (datetime.strptime(a, "%Y-%m-%d"),datetime.strptime(b, "%Y-%m-%d"),c, resultOf5) for (a,b,c) in list5]
+    li6 = [ (datetime.strptime(a, "%Y-%m-%d"),datetime.strptime(b, "%Y-%m-%d"),c, resultOf6) for (a,b,c) in list6]
+    '''
+    
+    li1 = [ (a,b,c, resultOf1) for (a,b,c) in list1]
+    li2 = [ (a,b,c, resultOf2) for (a,b,c) in list2]
+    li3 = [ (a,b,c, resultOf3) for (a,b,c) in list3]
+    li4 = [ (a,b,c, resultOf4) for (a,b,c) in list4]
+    li5 = [ (a,b,c, resultOf5) for (a,b,c) in list5]
+    li6 = [ (a,b,c, resultOf6) for (a,b,c) in list6]
+    
+    # Append one list to other
+    list = li1 + li2 + li3 + li4 + li5 + li6
+
+    temp = dict()
+
+    for (a,b,c,d) in list:
+        i = a
+        while i <= b:
+            # for i in range(a,b+timedelta(days = 1)):
+            if(i in temp):
+                temp[i] = temp[i] + 1
+            else:
+                temp[i] = 1
+            i = i + timedelta(days = 1)
+
+    dates_to_consider = set()
+    for i in temp:
+        if(temp[i] == numOfResults):
+            dates_to_consider.add(i)
+
+    # Fetch data
+    results = dict()
+    for (a,b,c,d) in list:
+        i = a
+        while i <= b:
+            # for i in range(a,b+timedelta(days = 1)):
+            if(i in dates_to_consider):
+                if(i in results):
+                    previous_tuple = results[i]
+                else:
+                    previous_tuple = [i,0,0,0,0,0,0]
+                if(d == "correlation"):
+                    previous_tuple[1] = c
+                elif(d== "slope_based"):
+                    previous_tuple[2] = c
+                elif(d== "linear_regression"):
+                    previous_tuple[3] = c
+                elif(d== "graph_based"):
+                    previous_tuple[4] = c
+                elif(d== "spike_detection"):
+                    previous_tuple[5] = c
+                elif(d== "multiple_arima"):
+                    previous_tuple[6] = c
+                results[i] = previous_tuple
+            i = i + timedelta(days = 1)
+
+
+    # output list
+    new_list_of_ranges = [] 
+    for i in results:
+        new_list_of_ranges.append(results[i])
+
+    #Sort it
+    new_list_of_ranges = sorted(new_list_of_ranges, key=lambda x: x[0])
+
     return new_list_of_ranges

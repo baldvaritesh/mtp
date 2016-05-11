@@ -6,7 +6,11 @@ from slopeBasedDetection import anomalyDatesSlopeBaseddetetion
 from Utility import MADThreshold
 from Utility import mergeDates
 from SlopeCurveBased import slopeCurveBasedDetection
-
+from slopeBasedDetection import slopeBased
+from linear_regression import linear_regressionMain
+from window_correlation import anomaliesFromWindowCorrelationWithConstantlag
+from Utility import intersection
+import numpy as np
 '''
 
 This function takes 1 argument:
@@ -37,7 +41,7 @@ def getColumnFromListOfTuples(lstTuples,i):
     elif len(lstTuples[0])< i-1 :
         return []
     else:
-        return [item[i-1] for item in lstTuples]
+        return [item[i] for item in lstTuples]
     
 def convertListToFloat(li):
     return [float(i) for i in li]
@@ -65,43 +69,40 @@ def hypothesis4Testing(numOfFiles, *timeSeriesFileNames):
             csvData = map(tuple, reader)
         csvDataList.append(csvData)
     
+    centresList = []
     testData= []
+    temp1 = []
     for i in csvDataList:
         td= getColumnFromListOfTuples(i,2)  # wholesale price, indexing starts from 1
         testData.append(convertListToFloat(td))
+        temp1 = getColumnFromListOfTuples(i,0)
+        # print temp1
+        temp2 = getColumnFromListOfTuples(i,2)
+        temp2  = np.array(temp2).astype(np.float)
+        temp = zip(temp1,temp2)
+        centresList.append(temp)
     #print "testData" + str(testData)
     
     avgTimeSeries=findAverageTimeSeries(testData)
+    avgTimeSeries = zip(temp1,avgTimeSeries)
+    # print avgTimeSeries
     #print "Average Time Series :::::: "+ str(avgTimeSeries)
     
-    #Finding anomaly dates for every time series with average time series
-    count=0
-    tcases=0  # Number of Anomalies
-    h4res=[]
-    for timeSeries in testData:
-        #print "Value of i ::::::::::::::::::::::::: "+ str(count)
-        #ser = findDiffSeries(i,1)
-        #print "Result of Ser::::::::::::::::"+ str(ser)
-        #(r,s)=MADThreshold(ser)
-        #print "Result of MAD TEST :::::::::::::::::::::::::"+ str(r)+ ":::"+str(s)
-        #p =[x for x in ser if x > 100 or x < -100]
-        #print "Exception list :::::::::::"+ str(p)
-        #print "length of exception list ::::::::::::::"+ str(len(p))
-        #plt.plot(ser)
-        #plt.show()
-        
-        #temp= slopeCurveBasedDetection(i,avgTimeSeries,1)
-        temp= slopeBasedDetection(timeSeries,True,avgTimeSeries,True,7,True,0,0) # Returns anomaly points
-        tcases=tcases+len(temp)
-        #print "TEMP :::::::::::::::::::::::::::::::::::::::::::::"+ str(csvDataList[count])
-        res= anomalyDatesSlopeBaseddetetion(temp,csvDataList[count]) # returns date of anomaly
-        h4res.append( (count,res)) # (series no. , anomaly dates)
-        #h4res.append( (count,temp))
-        count=count+1
-    #print "Final Result ::::::::::::::::"+ str(h4res)
-    mergedWindows = mergeDates(h4res[0][1]) # Finds overlapped dates and merges windows
-    print "Final Reported Anomalies ::::::::::::::::::: "+ str(len(mergedWindows))
-    
+    for i,c_list in enumerate(centresList):
+        # CALL SLOPE BASED
+        slopeBasedResult = slopeBased(c_list,False,avgTimeSeries, False)
+        # print slopeBasedResult
+        slopeBasedResult = mergeDates(slopeBasedResult)
+        # Correlation
+        correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,avgTimeSeries)
+        correlationResult = mergeDates(correlationResult)
+        # Linear Regression
+        lrResult = linear_regressionMain(avgTimeSeries,c_list,1)
+        lrResult = mergeDates(lrResult)
+        result = intersection(3,slopeBasedResult,'slope_based',correlationResult,'correlation',lrResult,'linear_regression')
+        print "Anomalies fior time-series " + str(i) + " are:"
+        for (a,b,c,d,e,f,g) in result:
+            print str(a) + "," + str(b) + "," + str(c) + "," + str(d) + "," + str(e)+ "," + str(f)+ "," + str(g)
     
 # hypothesis4Testing(1,"AhmedabadSILData.csv")
-hypothesis4Testing(4,"AhmedabadSILData.csv","BengaluruSILData.csv","MumbaiSILData.csv","PatnaSILData.csv")
+hypothesis4Testing(4,"testingCSV/AhmedabadSILData.csv","testingCSV/BengaluruSILData.csv","testingCSV/MumbaiSILData.csv","testingCSV/PatnaSILData.csv")

@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import scipy.stats
 from Utility import MADThreshold 
 import datetime
+import numpy as np
 
 '''
 This function takes 5 arguments:
@@ -27,6 +28,9 @@ def correlation(arr1, arr2, maxlag, pos=1, neg=1):
         return result
     
     # Mean of the two series
+    # print arr1
+    arr1  = np.array(arr1).astype(np.float)
+    arr2  = np.array(arr2).astype(np.float)
     mean1 = numpy.mean(arr1)
     mean2 = numpy.mean(arr2)
     
@@ -218,8 +222,8 @@ def WindowCorrelationWithConstantLag(arr1, arr2, window_size=15,maxlag=15, posit
 
 '''
 This function takes 7 arguments:
-arr1: Series 1
-arr2: Series 2
+arr1: Series 1 (date, value)
+arr2: Series 2 (date, value)
 maxlag: maximum lag to consider
 positive_correlation: true if we are looking for maximum positive correlation, else false
 pos: to take potitive lag or not, i.e. 1 to maxlag

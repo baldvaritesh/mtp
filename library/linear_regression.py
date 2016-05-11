@@ -85,6 +85,35 @@ def anomalies_from_linear_regression(result_of_lr, any_series):
         result.append((start_date,result_of_lr[i][1],result_of_lr[i][2],result_of_lr[i][3],result_of_lr[i][4]))
     return result
 
+'''
+This function takes 5 arguments:
+x_series: independent variable (date, value)
+y_series: dependent variable : y = f(x) of the format (date, value)
+param: Defines what to be treated as anomaly depending on its value as follows:
+        0: Values going out of range, both with positive and negative error
+        1: Values with potitive errors
+        -1: Values with negative errors
+default_threshold: Whether to use default threshold used by system using MAD test or user defined threshold
+threshold: Threshold value if it is used defined and default_threshold is 'False'
+
+Returns array of tuples of the form (start_date,x_value,y_value,predicted_y_value,difference_between_predicted_and_actual_y_value)
+
+Requirements: Length of both the series should be equal
+'''
+
+def linear_regressionMain(x_series, y_series, param = 0, default_threshold = True, threshold = 0):
+    # Extract just values from the series
+    # First column is date and second is value
+    x_series_vals = [ row[1] for row in x_series]
+    y_series_vals = [ row[1] for row in y_series]
+    result1 = linear_regression(x_series_vals, y_series_vals, param = 0, default_threshold = True, threshold = 0)
+    temp =  anomalies_from_linear_regression(result1[0], x_series)
+    temp1 = [ row[0] for row in temp]
+    temp2 = [ row[4] for row in temp]
+    return zip(temp1,temp1,temp2)
+    
+    
+
 ######################################################################
 ##                       TESTING CODE                               ##
 ######################################################################

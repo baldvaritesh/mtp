@@ -201,7 +201,34 @@ def graphBasedAnomaly(PredictorVariable, TargetVariable):
     return result
 
 '''
+Anomaly Detection by Random Walk on Graph
+Takes Three arguments,
+Predictor Variable : multiple lists which are predictor variable as multiple args in the format of (date, vals)
+Target Variable: Single List of format (date, vals)
+threshold : if connectivity by random walk is below threshold value then return it
+Returns result of random Walk
+'''
+def graphBased( threshold, TargetVariable,*PredictorVariable):
+    # Fetching values of target variable
+    target_vals = [row[1] for row in TargetVariable ]
+    target_vals = [target_vals]
+    # Fetching vals for predictor
+    predict_vals = []
+    for li in PredictorVariable:
+        temp = [row[1] for row in li]
+        predict_vals.append(temp)
+    randomWalkResults = graphBasedAnomaly(predict_vals,target_vals)
+    result = []
+    for i in range(0,len(randomWalkResults)):
+        if(randomWalkResults[i] < threshold):
+            result.append(TargetVariable[i][0],randomWalkResults[i])
+    return result
+        
+    
+
+'''
 Testing
+
 '''
 
-print graphBasedAnomaly([[1,2,3],[1,2,3],[1,2,3]],[[1,2,3]])
+print graphBasedAnomaly(0.2, [[3,2582,3],[1,2,9],[10000,5,3]],[[10,200,3]])
