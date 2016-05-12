@@ -1,5 +1,6 @@
 require(forecast)
 require(vars)
+
 var.data= read.csv(file.choose(),header=FALSE)
 head(var.data)
 

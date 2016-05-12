@@ -14,6 +14,22 @@ py.sign_in('mcs142124', 'p7p80472qt')
 from datetime import date
 from datetime import datetime
 from datetime import timedelta
+import math
+
+'''
+This function removes nan from the list.
+
+Takes one argument : list of floats
+
+'''
+
+def cleanArray(array):
+    result = []
+    for element in array:
+        if(math.isnan(element)):
+            continue
+        result.append(element)
+    return result
 
 '''
 This function takes one argument:
@@ -23,6 +39,7 @@ returns threshold value to be consider using MAD Test
 '''
 def MADThreshold(array):
     # return 1.4826*numpy.median(np.array(array))
+    array = cleanArray(array)
     array = np.array(array)
     median = numpy.median(array)
     diff = []
@@ -233,6 +250,15 @@ def intersection(numOfResults, list1, resultOf1, list2, resultOf2, list3 = [], r
     li5 = [ (a,b,c, resultOf5) for (a,b,c) in list5]
     li6 = [ (a,b,c, resultOf6) for (a,b,c) in list6]
     
+    '''print "LIST 1"
+    print li1
+    print "LIST 2"
+    print li2
+    print "LIST 3"
+    print li3
+    print "List printing done"
+    '''
+    
     # Append one list to other
     list = li1 + li2 + li3 + li4 + li5 + li6
 
@@ -252,7 +278,11 @@ def intersection(numOfResults, list1, resultOf1, list2, resultOf2, list3 = [], r
     for i in temp:
         if(temp[i] == numOfResults):
             dates_to_consider.add(i)
-
+    
+    #print "FInal anomaly dates are : "
+    #print dates_to_consider
+    #print "date printing done"
+    
     # Fetch data
     results = dict()
     for (a,b,c,d) in list:
@@ -289,3 +319,24 @@ def intersection(numOfResults, list1, resultOf1, list2, resultOf2, list3 = [], r
     new_list_of_ranges = sorted(new_list_of_ranges, key=lambda x: x[0])
 
     return new_list_of_ranges
+
+'''
+
+Takes intersection of 2 lists of the form:
+(date, correlation, slope_based, linear_regression, graph_based, spike_detection, multiple_arima)
+
+return list of tuple of the same form....
+
+'''
+
+def intersectionOfFinalResults(list1, list2):
+    list1Set = set()
+    for tuple in list1:
+        list1Set.add(tuple[0])
+        
+    result = []
+    for tuple in list2:
+        if(tuple[0] in list1Set):
+            result.append(tuple)
+    
+    return result

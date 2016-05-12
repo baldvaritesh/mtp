@@ -10,6 +10,7 @@ from slopeBasedDetection import slopeBased
 from linear_regression import linear_regressionMain
 from window_correlation import anomaliesFromWindowCorrelationWithConstantlag
 from Utility import intersection
+from Utility import intersectionOfFinalResults
 import numpy as np
 '''
 
@@ -70,8 +71,9 @@ def hypothesis4Testing(numOfFiles, *timeSeriesFileNames):
         csvDataList.append(csvData)
     
     centresList = []
-    testData= []
     temp1 = []
+    testData = []
+    arrivalAtCentres = []
     for i in csvDataList:
         td= getColumnFromListOfTuples(i,2)  # wholesale price, indexing starts from 1
         testData.append(convertListToFloat(td))
@@ -79,30 +81,87 @@ def hypothesis4Testing(numOfFiles, *timeSeriesFileNames):
         # print temp1
         temp2 = getColumnFromListOfTuples(i,2)
         temp2  = np.array(temp2).astype(np.float)
+        temp3 = getColumnFromListOfTuples(i,3)
+        temp3  = np.array(temp3).astype(np.float)
         temp = zip(temp1,temp2)
         centresList.append(temp)
+        temp = zip(temp1,temp3)
+        arrivalAtCentres.append(temp)
     #print "testData" + str(testData)
     
     avgTimeSeries=findAverageTimeSeries(testData)
     avgTimeSeries = zip(temp1,avgTimeSeries)
     # print avgTimeSeries
-    #print "Average Time Series :::::: "+ str(avgTimeSeries)
+    # print "Average Time Series :::::: "+ str(avgTimeSeries)
+    
+    # Hashmap to save results of comparison of retail prices.
+    center_anomalies_only_retail = dict()
     
     for i,c_list in enumerate(centresList):
         # CALL SLOPE BASED
-        slopeBasedResult = slopeBased(c_list,False,avgTimeSeries, False)
+        slopeBasedResult = slopeBased(c_list,False,avgTimeSeries, False,7,True,0, -1)
         # print slopeBasedResult
         slopeBasedResult = mergeDates(slopeBasedResult)
+        #print 'Done slope based'
         # Correlation
         correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,avgTimeSeries)
         correlationResult = mergeDates(correlationResult)
+        #print 'Done correlation based'
         # Linear Regression
         lrResult = linear_regressionMain(avgTimeSeries,c_list,1)
         lrResult = mergeDates(lrResult)
         result = intersection(3,slopeBasedResult,'slope_based',correlationResult,'correlation',lrResult,'linear_regression')
+        # Lets save these results.
+        center_anomalies_only_retail[i] = result
+        '''
         print "Anomalies fior time-series " + str(i) + " are:"
         for (a,b,c,d,e,f,g) in result:
             print str(a) + "," + str(b) + "," + str(c) + "," + str(d) + "," + str(e)+ "," + str(f)+ "," + str(g)
+        '''
+        
+    
+    
+    # Now lets consider arrival of each center and see whether these anomalies are due to that or not
+    # Anomalies from Arrival vs Retail
+    center_anomalies_arr_vs_retail = dict()
+    for i,c_list in enumerate(arrivalAtCentres):
+        # CALL SLOPE BASED
+        slopeBasedResult = slopeBased(c_list,False,centresList[i], False,7,True,0, 1)
+        slopeBasedResult = mergeDates(slopeBasedResult)
+        # Correlation
+        correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,centresList[i],15,15,False)
+        correlationResult = mergeDates(correlationResult)
+        # Linear Regression
+        lrResult = linear_regressionMain(c_list,centresList[i],1)
+        lrResult = mergeDates(lrResult)
+        #print lrResult
+        result = intersection(3,slopeBasedResult,'slope_based',correlationResult,'correlation',lrResult,'linear_regression')
+        # Lets save these results.
+        center_anomalies_arr_vs_retail[i] = result
+        '''
+        print "Anomalies fior time-series with arrival " + str(i) + " are:"
+        for (a,b,c,d,e,f,g) in result:
+            print str(a) + "," + str(b) + "," + str(c) + "," + str(d) + "," + str(e)+ "," + str(f)+ "," + str(g)
+        '''
+    
+    # Time to analyse both results:
+    for i in range(0,len(arrivalAtCentres)):
+        print "\n\n\n\nFOR CENTER " + str(i) + "  INTERSECTION OF RETAIL VS AVG AND RETAIL VS ARRIVAL IS..... \n\n"
+        retailVSreatil = center_anomalies_only_retail[i]
+        reatilVSarrival = center_anomalies_arr_vs_retail[i]
+        print "Retail Results ::::::: "
+        print retailVSreatil
+        print "Retail vs Arrival Results ::::::: "
+        print reatilVSarrival
+        intersect = intersectionOfFinalResults(reatilVSarrival,retailVSreatil)
+        for (a,b,c,d,e,f,g) in intersect:
+            print str(a) + "," + str(b) + "," + str(c) + "," + str(d) + "," + str(e)+ "," + str(f)+ "," + str(g)
+        print "-----------------------------------------------------------------------------------------------------------------------"
+        
+    
     
 # hypothesis4Testing(1,"AhmedabadSILData.csv")
-hypothesis4Testing(4,"testingCSV/AhmedabadSILData.csv","testingCSV/BengaluruSILData.csv","testingCSV/MumbaiSILData.csv","testingCSV/PatnaSILData.csv")
+# For Centers
+hypothesis4Testing(5,"testingCSV/AhmedabadSILData.csv","testingCSV/BengaluruSILData.csv","testingCSV/MumbaiSILData.csv","testingCSV/PatnaSILData.csv","testingCSV/DelhiSILData.csv")
+
+

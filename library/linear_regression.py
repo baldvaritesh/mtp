@@ -1,3 +1,16 @@
+'''
+
+TODO:
+
+
+Handle param for -1, take lower threshold in stead of upper
+
+in linear_regression function
+
+'''
+
+
+
 import numpy
 import sklearn
 import numpy as np
@@ -106,7 +119,7 @@ def linear_regressionMain(x_series, y_series, param = 0, default_threshold = Tru
     # First column is date and second is value
     x_series_vals = [ row[1] for row in x_series]
     y_series_vals = [ row[1] for row in y_series]
-    result1 = linear_regression(x_series_vals, y_series_vals, param = 0, default_threshold = True, threshold = 0)
+    result1 = linear_regression(x_series_vals, y_series_vals, param, default_threshold, threshold)
     temp =  anomalies_from_linear_regression(result1[0], x_series)
     temp1 = [ row[0] for row in temp]
     temp2 = [ row[4] for row in temp]

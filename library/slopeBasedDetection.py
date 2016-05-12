@@ -1,3 +1,15 @@
+'''
+
+TODO:
+
+
+Handle default_threshold = False case in 
+
+def slopeBasedDetection(series1,smoothed1,series2,smoothed2,next_val_to_consider = 7, default_threshold = True, threshold = 0, what_to_consider = 1):
+
+'''
+
+
 import numpy
 from Utility import MADThreshold 
 from Utility import smoothArray
@@ -23,6 +35,7 @@ returns array of tuples as follows:
 where first and second specifies the points between which slope was calculated. slope_value is the value of slope between those 2 points.
 
 '''
+
 def slopeBasedDetection(series1,smoothed1,series2,smoothed2,next_val_to_consider = 7, default_threshold = True, threshold = 0, what_to_consider = 1):
     if(smoothed1 == False):
         series1 = smoothArray(series1)
@@ -37,14 +50,14 @@ def slopeBasedDetection(series1,smoothed1,series2,smoothed2,next_val_to_consider
     while(i<(n-next_val_to_consider+1)):
     #for i in range(0,n-next_val_to_consider+1):
         if((series2[i+next_val_to_consider-1] - series2[i]) == 0):
-            i= i+ next_val_to_consider -1
+            i= i+ next_val_to_consider 
             continue
         diff = ((series1[i+next_val_to_consider-1] - series1[i]) * series2[i] )/ ((series2[i+next_val_to_consider-1] - series2[i]) * series1[i])
         if(diff < 0):
             negative_slopes.append((i,i+next_val_to_consider-1,diff))
         else:
             positive_slopes.append((i,i+next_val_to_consider-1,diff))
-        i= i+ next_val_to_consider -1
+        i= i+ next_val_to_consider
     
              
     if(default_threshold == True):
@@ -62,33 +75,27 @@ def slopeBasedDetection(series1,smoothed1,series2,smoothed2,next_val_to_consider
         if(len(temp)>0):
             (negative_threshold,_) = MADThreshold(temp)
         # print "Negative Threshold Value:" + str(negative_threshold)
-        
+    
+    positive_anomalous_pts = []
     for i in range(0,len(positive_slopes)):
         if(positive_slopes[i][2] > positive_threshold):
-            anomalous_pts.append(positive_slopes[i])
-            
+            positive_anomalous_pts.append(positive_slopes[i])
+    
+    
+    negative_anomalous_pts = []
     for i in range(0,len(negative_slopes)):
         if(negative_slopes[i][2] < negative_threshold):
-            anomalous_pts.append(negative_slopes[i])
-    
-    # Sort array according to start of window
-    sorted(anomalous_pts, key=lambda x: x[0])
-    
-    '''
+            negative_anomalous_pts.append(negative_slopes[i])
+        
     if(what_to_consider == 1):
-        for i in range(0,n):
-            if(diff>0 and diff > threshold):
-                anomalous_pts.append(i,i+next_val_to_consider-1,diff)
+        return positive_anomalous_pts
     elif(what_to_consider == -1):
-        for i in range(0,n):
-            if(diff<0 and diff < threshold):
-                anomalous_pts.append(i,i+next_val_to_consider-1,diff)
+        return negative_anomalous_pts
     elif(what_to_consider == 0):
-        for i in range(0,n):
-            if(abs(diff) > threshold):
-                anomalous_pts.append(i,i+next_val_to_consider-1,diff)
-    '''
-    return anomalous_pts
+        anomalous_pts = positive_anomalous_pts  + negative_anomalous_pts
+        # Sort array according to start of window
+        sorted(anomalous_pts, key=lambda x: x[0])    
+        return anomalous_pts
     pass
 
 '''
@@ -136,7 +143,7 @@ def slopeBased(series1,smoothed1,series2,smoothed2,next_val_to_consider = 7, def
     # First column is date and second is value
     series1_vals = [ row[1] for row in series1]
     series2_vals = [ row[1] for row in series2]
-    result_1 = slopeBasedDetection(series1_vals,smoothed1,series2_vals,smoothed2,next_val_to_consider = 7, default_threshold = True, threshold = 0, what_to_consider = 1)
+    result_1 = slopeBasedDetection(series1_vals,smoothed1,series2_vals,smoothed2,next_val_to_consider, default_threshold, threshold, what_to_consider)
     return anomalyDatesSlopeBaseddetetion(result_1,series1)
 
 ##########################################################################

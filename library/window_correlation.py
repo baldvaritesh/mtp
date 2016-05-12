@@ -183,18 +183,17 @@ def correlationAtLag(series1, series2, lag, window_size):
             k = i + start2
             if((j+window_size) >=n or (k+window_size) >=n):
                 break
-            # print "i:" + str(i)
-            # print "j:" + str(j)
-            # print "k:" + str(k)
-            # print "n:" + str(n)
-            # print "\n"
             temp_arr_1 = series1[j:(j+window_size)]
             temp_arr_2 = series2[k:(k+window_size)]
             temp = scipy.stats.pearsonr(temp_arr_1,temp_arr_2)
+            '''if(math.isnan(temp[0])):
+                print "Temp arr 1"
+                print temp_arr_1
+                print "Temp arr 2"
+                print temp_arr_2'''
             # Get maximum correlation and append it to array
             result.append(temp[0])
-            if(temp[0] >=1):
-                print "tring tring " + str(i) 
+            
             i = i + window_size
     return result
 
@@ -238,6 +237,7 @@ def anomaliesFromWindowCorrelationWithConstantlag(arr1, arr2, window_size=15,max
     arr1_data = [x[1] for x in arr1]
     arr2_data = [x[1] for x in arr2]
     arr = WindowCorrelationWithConstantLag(arr1_data,arr2_data,window_size,maxlag,positive_correlation,pos,neg)
+    
     if(arr[1][0] >= 0):
         array_to_consider = arr1
     else:
@@ -246,10 +246,20 @@ def anomaliesFromWindowCorrelationWithConstantlag(arr1, arr2, window_size=15,max
 
     (lower_thresh,upper_thrash)= MADThreshold(arr[1])
     for i in range(0,len(arr[1])):
-        if(lower_thresh > arr[1][i]):
-            start_date_of_window = datetime.datetime.strptime(array_to_consider[i*window_size][0], "%Y-%m-%d").date()
-            end_date_of_window = start_date_of_window + datetime.timedelta(days=window_size)
-            datesOfAnomalies.append((start_date_of_window,end_date_of_window, arr[1][i]))
+        if(positive_correlation):
+            if(lower_thresh > arr[1][i]):
+                start_date_of_window = datetime.datetime.strptime(array_to_consider[i*window_size][0], "%Y-%m-%d").date()
+                end_date_of_window = start_date_of_window + datetime.timedelta(days=(window_size-1))
+                start_date_of_window = start_date_of_window.strftime("%Y-%m-%d")
+                end_date_of_window = end_date_of_window.strftime("%Y-%m-%d")
+                datesOfAnomalies.append((start_date_of_window,end_date_of_window, arr[1][i]))
+        else:
+            if(upper_thrash < arr[1][i]):
+                start_date_of_window = datetime.datetime.strptime(array_to_consider[i*window_size][0], "%Y-%m-%d").date()
+                end_date_of_window = start_date_of_window + datetime.timedelta(days=(window_size-1))
+                start_date_of_window = start_date_of_window.strftime("%Y-%m-%d")
+                end_date_of_window = end_date_of_window.strftime("%Y-%m-%d")
+                datesOfAnomalies.append((start_date_of_window,end_date_of_window, arr[1][i]))
     return datesOfAnomalies
 
 
