@@ -149,11 +149,19 @@ def hypothesis4Testing(numOfFiles, *timeSeriesFileNames):
         print "\n\n\n\nFOR CENTER " + str(i) + "  INTERSECTION OF RETAIL VS AVG AND RETAIL VS ARRIVAL IS..... \n\n"
         retailVSreatil = center_anomalies_only_retail[i]
         reatilVSarrival = center_anomalies_arr_vs_retail[i]
-        print "Retail Results ::::::: "+retailVSreatil
-        print "Retail vs Arrival Results ::::::: "+reatilVSarrival
+        print "Retail Results ::::::: "
+        for (a,b,c,d,e,f,g) in retailVSreatil:
+            print str(a) + "," + str(b) + "," + str(c) + "," + str(d) + "," + str(e)+ "," + str(f)+ "," + str(g)
+        print "-----------------------------------------------------------------------------------------------------------------------"
+        print "Retail vs Arrival Results ::::::: "
+        for (a,b,c,d,e,f,g) in reatilVSarrival:
+            print str(a) + "," + str(b) + "," + str(c) + "," + str(d) + "," + str(e)+ "," + str(f)+ "," + str(g)
+        
+        print "-----------------------------------------------------------------------------------------------------------------------"
         intersect = intersectionOfFinalResults(reatilVSarrival,retailVSreatil)
         for (a,b,c,d,e,f,g) in intersect:
             print str(a) + "," + str(b) + "," + str(c) + "," + str(d) + "," + str(e)+ "," + str(f)+ "," + str(g)
+        print "-----------------------------------------------------------------------------------------------------------------------"
         
     
     

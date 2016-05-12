@@ -82,7 +82,7 @@ def hypothesis4Testing(numOfFiles, *timeSeriesFileNames):
         temp2 = getColumnFromListOfTuples(i,2)
         temp2  = np.array(temp2).astype(np.float)
         temp3 = getColumnFromListOfTuples(i,3)
-        temp3  = np.array(temp3).astype(np.float)
+        temp3  = np.array(temp2).astype(np.float)
         temp = zip(temp1,temp2)
         centresList.append(temp)
         temp = zip(temp1,temp3)
@@ -99,26 +99,26 @@ def hypothesis4Testing(numOfFiles, *timeSeriesFileNames):
     
     for i,c_list in enumerate(centresList):
         # CALL SLOPE BASED
-        slopeBasedResult = slopeBased(c_list,False,avgTimeSeries, False,7,True,0, -1)
+        slopeBasedResult = slopeBased(c_list,False,avgTimeSeries, False)
         # print slopeBasedResult
         slopeBasedResult = mergeDates(slopeBasedResult)
-        #print 'Done slope based'
+        print 'Done slope based'
+        print 'Slope based Results for centres '+ str(i)
+        for (a,b,c) in slopeBasedResult:
+		print str(a)+"::"+str(b)+"::"+str(c)
         # Correlation
         correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,avgTimeSeries)
         correlationResult = mergeDates(correlationResult)
-        #print 'Done correlation based'
+        print 'Done correlation based'
         # Linear Regression
         lrResult = linear_regressionMain(avgTimeSeries,c_list,1)
         lrResult = mergeDates(lrResult)
         result = intersection(3,slopeBasedResult,'slope_based',correlationResult,'correlation',lrResult,'linear_regression')
         # Lets save these results.
         center_anomalies_only_retail[i] = result
-        '''
         print "Anomalies fior time-series " + str(i) + " are:"
         for (a,b,c,d,e,f,g) in result:
             print str(a) + "," + str(b) + "," + str(c) + "," + str(d) + "," + str(e)+ "," + str(f)+ "," + str(g)
-        '''
-        
     
     
     # Now lets consider arrival of each center and see whether these anomalies are due to that or not
@@ -126,47 +126,43 @@ def hypothesis4Testing(numOfFiles, *timeSeriesFileNames):
     center_anomalies_arr_vs_retail = dict()
     for i,c_list in enumerate(arrivalAtCentres):
         # CALL SLOPE BASED
-        slopeBasedResult = slopeBased(c_list,False,centresList[i], False,7,True,0, 1)
+        slopeBasedResult = slopeBased(c_list,False,centresList[i], False,7,True,0, -1)
+        # print slopeBasedResult
         slopeBasedResult = mergeDates(slopeBasedResult)
+        print 'Done slope based'
+        print 'Slope based Results for centres for arrival '+ str(i)
+        for (a,b,c) in slopeBasedResult:
+		print str(a)+"::"+str(b)+"::"+str(c)
         # Correlation
         correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,centresList[i],15,15,False)
         correlationResult = mergeDates(correlationResult)
+        print 'Done correlation based'
         # Linear Regression
         lrResult = linear_regressionMain(c_list,centresList[i],1)
         lrResult = mergeDates(lrResult)
-        #print lrResult
         result = intersection(3,slopeBasedResult,'slope_based',correlationResult,'correlation',lrResult,'linear_regression')
         # Lets save these results.
         center_anomalies_arr_vs_retail[i] = result
-        '''
         print "Anomalies fior time-series with arrival " + str(i) + " are:"
         for (a,b,c,d,e,f,g) in result:
             print str(a) + "," + str(b) + "," + str(c) + "," + str(d) + "," + str(e)+ "," + str(f)+ "," + str(g)
-        '''
     
     # Time to analyse both results:
     for i in range(0,len(arrivalAtCentres)):
-        print "\n\n\n\nFOR CENTER " + str(i) + "  INTERSECTION OF RETAIL VS AVG AND RETAIL VS ARRIVAL IS..... \n\n"
+        print "\n\n\n\nFOR CENTER " + str(i) + "  INTERSECTION OF REATAIL VS AVG AND RETAIL VS ARRIVAL IS..... \n\n"
         retailVSreatil = center_anomalies_only_retail[i]
         reatilVSarrival = center_anomalies_arr_vs_retail[i]
-        print "Retail Results ::::::: "
-        for (a,b,c,d,e,f,g) in retailVSreatil:
-            print str(a) + "," + str(b) + "," + str(c) + "," + str(d) + "," + str(e)+ "," + str(f)+ "," + str(g)
-        print "-----------------------------------------------------------------------------------------------------------------------"
-        print "Retail vs Arrival Results ::::::: "
-        for (a,b,c,d,e,f,g) in reatilVSarrival:
-            print str(a) + "," + str(b) + "," + str(c) + "," + str(d) + "," + str(e)+ "," + str(f)+ "," + str(g)
-        
-        print "-----------------------------------------------------------------------------------------------------------------------"
         intersect = intersectionOfFinalResults(reatilVSarrival,retailVSreatil)
         for (a,b,c,d,e,f,g) in intersect:
             print str(a) + "," + str(b) + "," + str(c) + "," + str(d) + "," + str(e)+ "," + str(f)+ "," + str(g)
-        print "-----------------------------------------------------------------------------------------------------------------------"
-        
     
+
+def hypothesis4TestingMandis(numOfFiles, *timeSeriesFileNames):
+    pass
     
 # hypothesis4Testing(1,"AhmedabadSILData.csv")
 # For Centers
 hypothesis4Testing(5,"testingCSV/AhmedabadSILData.csv","testingCSV/BengaluruSILData.csv","testingCSV/MumbaiSILData.csv","testingCSV/PatnaSILData.csv","testingCSV/DelhiSILData.csv")
 
-
+# For Mandis
+hypothesis4TestingMandis()
