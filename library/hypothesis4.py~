@@ -12,6 +12,9 @@ from window_correlation import anomaliesFromWindowCorrelationWithConstantlag
 from Utility import intersection
 from Utility import intersectionOfFinalResults
 import numpy as np
+from DatabaseConn import Conn
+from Utility import placeMapping
+import datetime
 '''
 
 This function takes 1 argument:
@@ -97,19 +100,29 @@ def hypothesis4Testing(numOfFiles, *timeSeriesFileNames):
     # Hashmap to save results of comparison of retail prices.
     center_anomalies_only_retail = dict()
     
+    RRSlope=[]
+    RRCorr=[]
+    RRlinear=[]
+    
     for i,c_list in enumerate(centresList):
         # CALL SLOPE BASED
         slopeBasedResult = slopeBased(c_list,False,avgTimeSeries, False,7,True,0, -1)
         # print slopeBasedResult
         slopeBasedResult = mergeDates(slopeBasedResult)
+        
+        RRSlope.append(slopeBasedResult)
         #print 'Done slope based'
         # Correlation
         correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,avgTimeSeries)
         correlationResult = mergeDates(correlationResult)
+        
+        RRCorr.append(correlationResult)
         #print 'Done correlation based'
         # Linear Regression
         lrResult = linear_regressionMain(avgTimeSeries,c_list,1)
         lrResult = mergeDates(lrResult)
+        
+        RRlinear.append(lrResult)
         result = intersection(3,slopeBasedResult,'slope_based',correlationResult,'correlation',lrResult,'linear_regression')
         # Lets save these results.
         center_anomalies_only_retail[i] = result
@@ -119,7 +132,9 @@ def hypothesis4Testing(numOfFiles, *timeSeriesFileNames):
             print str(a) + "," + str(b) + "," + str(c) + "," + str(d) + "," + str(e)+ "," + str(f)+ "," + str(g)
         '''
         
-    
+    RASlope=[]
+    RACorr=[]
+    RAlinear=[]
     
     # Now lets consider arrival of each center and see whether these anomalies are due to that or not
     # Anomalies from Arrival vs Retail
@@ -128,12 +143,18 @@ def hypothesis4Testing(numOfFiles, *timeSeriesFileNames):
         # CALL SLOPE BASED
         slopeBasedResult = slopeBased(c_list,False,centresList[i], False,7,True,0, 1)
         slopeBasedResult = mergeDates(slopeBasedResult)
+        
+        RASlope.append(slopeBasedResult)
         # Correlation
         correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,centresList[i],15,15,False)
         correlationResult = mergeDates(correlationResult)
+        
+        RACorr.append(correlationResult)
         # Linear Regression
         lrResult = linear_regressionMain(c_list,centresList[i],1)
         lrResult = mergeDates(lrResult)
+        
+        RAlinear.append(lrResult)
         #print lrResult
         result = intersection(3,slopeBasedResult,'slope_based',correlationResult,'correlation',lrResult,'linear_regression')
         # Lets save these results.
@@ -144,29 +165,73 @@ def hypothesis4Testing(numOfFiles, *timeSeriesFileNames):
             print str(a) + "," + str(b) + "," + str(c) + "," + str(d) + "," + str(e)+ "," + str(f)+ "," + str(g)
         '''
     
+    file = open("NewsAnalysisResult.csv", "a")
+
+
     # Time to analyse both results:
     for i in range(0,len(arrivalAtCentres)):
         print "\n\n\n\nFOR CENTER " + str(i) + "  INTERSECTION OF RETAIL VS AVG AND RETAIL VS ARRIVAL IS..... \n\n"
+        place = placeMapping(i)
+        retailVSreatil = RRlinear[i]
+        reatilVSarrival = RAlinear[i]
+        result = intersection(2,retailVSreatil,'slope_based',reatilVSarrival,'slope_based')
+        print result
+        for [a,b,c,d,e,f,g] in result:
+            lli=Conn(a,place)
+            if(len(lli) !=0):
+            	print str(a) + "," + str(b) + "," + str(c) + "," + "" + "," + ""+ "," + ""+ "," + ""
+            	print lli
+            	for li in lli:
+            		file.write(str(a) + "||" + str(b) + "||" + str(c) +  "||" + "Correlation" + "||" + "" + "||" + "" + "||" + "" + "||" +li['title']+ "||"+li['sourcename']+ "||"+li['source_url']+ "||"+str(li['publish_date'])+ "||"+li['article_id']+ "||"+li['exact_url']+ "||"+li['title']+"||"+place+"\n")
+        print "-----------------------------------------------------------------------------------------------------------------------"
+    
+    
+    # Time to analyse both results:
+    '''for i in range(0,len(arrivalAtCentres)):
+        print "\n\n\n\nFOR CENTER " + str(i) + "  INTERSECTION OF RETAIL VS AVG AND RETAIL VS ARRIVAL IS..... \n\n"
+        place = placeMapping(i)
         retailVSreatil = center_anomalies_only_retail[i]
         reatilVSarrival = center_anomalies_arr_vs_retail[i]
-        print "Retail Results ::::::: "
+        print "Retail Results ::::::: "+ place
         for (a,b,c,d,e,f,g) in retailVSreatil:
-            print str(a) + "," + str(b) + "," + str(c) + "," + str(d) + "," + str(e)+ "," + str(f)+ "," + str(g)
+            lli=Conn(a,place)
+            #print str(a) + "," + str(b) + "," + str(c) + "," + str(d) + "," + str(e)+ "," + str(f)+ "," + str(g)
+            #print li
+            if(len(lli) !=0):
+            	print str(a) + "," + str(b) + "," + str(c) + "," + str(d) + "," + str(e)+ "," + str(f)+ "," + str(g)
+            	print lli
+            	for li in lli:
+            		file.write(str(a) + "||" + str(b) + "||" + str(c) + "||" + str(d) + "||" + str(e)+ "||" + str(f)+ "||" + str(g) + "||"+li['title']+ "||"+li['sourcename']+ "||"+li['source_url']+ "||"+str(li['publish_date'])+ "||"+li['article_id']+ "||"+li['exact_url']+ "||"+li['title']+"||"+place+"\n")
         print "-----------------------------------------------------------------------------------------------------------------------"
         print "Retail vs Arrival Results ::::::: "
         for (a,b,c,d,e,f,g) in reatilVSarrival:
-            print str(a) + "," + str(b) + "," + str(c) + "," + str(d) + "," + str(e)+ "," + str(f)+ "," + str(g)
-        
+            lli=Conn(a,place)
+            if(len(lli) !=0):
+            	print str(a) + "," + str(b) + "," + str(c) + "," + str(d) + "," + str(e)+ "," + str(f)+ "," + str(g)
+            	print lli
+            	for li in lli:
+            		file.write(str(a) + "||" + str(b) + "||" + str(c) + "||" + str(d) + "||" + str(e)+ "||" + str(f)+ "||" + str(g) + "||"+li['title']+ "||"+li['sourcename']+ "||"+li['source_url']+ "||"+str(li['publish_date'])+ "||"+li['article_id']+ "||"+li['exact_url']+ "||"+li['title']+"||"+place+"\n")       
         print "-----------------------------------------------------------------------------------------------------------------------"
         intersect = intersectionOfFinalResults(reatilVSarrival,retailVSreatil)
         for (a,b,c,d,e,f,g) in intersect:
-            print str(a) + "," + str(b) + "," + str(c) + "," + str(d) + "," + str(e)+ "," + str(f)+ "," + str(g)
+            lli=Conn(a,place)
+            if(len(lli) !=0):
+            	print str(a) + "," + str(b) + "," + str(c) + "," + str(d) + "," + str(e)+ "," + str(f)+ "," + str(g)
+            	print lli
+            	for li in lli:
+            		file.write(str(a) + "||" + str(b) + "||" + str(c) + "||" + str(d) + "||" + str(e)+ "||" + str(f)+ "||" + str(g) + "||"+li['title']+ "||"+li['sourcename']+ "||"+li['source_url']+ "||"+str(li['publish_date'])+ "||"+li['article_id']+ "||"+li['exact_url']+ "||"+li['title']+"||"+place+"\n")
         print "-----------------------------------------------------------------------------------------------------------------------"
-        
+       ''' 
+    file.close()
     
     
 # hypothesis4Testing(1,"AhmedabadSILData.csv")
 # For Centers
+#start_date = "2010/11/11"
+#date_1 = datetime.datetime.strptime(start_date, "%Y/%m/%d")
+#res= Conn(date_1,"")
+#print "REsult :::::::::::::::::::::::::::"
+#print res
 hypothesis4Testing(5,"testingCSV/AhmedabadSILData.csv","testingCSV/BengaluruSILData.csv","testingCSV/MumbaiSILData.csv","testingCSV/PatnaSILData.csv","testingCSV/DelhiSILData.csv")
 
 

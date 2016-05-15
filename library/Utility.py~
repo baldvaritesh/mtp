@@ -30,6 +30,19 @@ def cleanArray(array):
             continue
         result.append(element)
     return result
+    
+def placeMapping(i):
+    if (i==0):
+    	return "Ahmedabad"
+    elif (i==1):
+    	return "Bangalore"
+    elif(i==2):
+    	return "Mumbai"
+    elif(i==3):
+    	return "Patna"
+    elif(i==4):
+    	return "Delhi"
+    
 
 '''
 This function takes one argument:
@@ -279,9 +292,9 @@ def intersection(numOfResults, list1, resultOf1, list2, resultOf2, list3 = [], r
         if(temp[i] == numOfResults):
             dates_to_consider.add(i)
     
-    print "FInal anomaly dates are : "
-    print dates_to_consider
-    print "date printing done"
+    #print "FInal anomaly dates are : "
+    #print dates_to_consider
+    #print "date printing done"
     
     # Fetch data
     results = dict()
@@ -340,3 +353,79 @@ def intersectionOfFinalResults(list1, list2):
             result.append(tuple)
     
     return result
+
+# For reading Graph based anomaly results
+# Read CSVs and get top 500 results
+
+def removeQuotes(string):
+    if string.startswith('"') and string.endswith('"'):
+        return string[1:-1]
+    return string
+
+def getGBAResultsRvR(i, numOfPtsReqd):
+    if(i==0):
+        file = "/home/kapil/Desktop/mtp/library/resultsOfGBA/abd1gba.csv"
+    elif(i==1):
+        file = "/home/kapil/Desktop/mtp/library/resultsOfGBA/bglr2gba.csv"
+    elif(i==2):
+        file = "/home/kapil/Desktop/mtp/library/resultsOfGBA/mumbai3gba.csv"
+    elif(i==3):
+        file = "/home/kapil/Desktop/mtp/library/resultsOfGBA/patna4gba.csv"
+    elif(i==4):
+        file = "/home/kapil/Desktop/mtp/library/resultsOfGBA/delhi5gba.csv"
+    
+    results = []
+    for i,line in enumerate(open(file)):
+        line = line.strip()
+        tokens = line.split(",")
+        date = removeQuotes(tokens[3])
+        value = float(removeQuotes(tokens[1]))
+        rank = int(removeQuotes(tokens[2]))
+        results.append((date,value,rank))
+    
+    # Sort by rank
+    results = sorted(results, key=lambda x: x[2])
+    
+    # Take top numOfPtsReqd
+    results = results[0:numOfPtsReqd]
+    
+    # Sort by date
+    results = sorted(results, key=lambda x: x[0])
+    
+    results = [ (datetime.strptime(a, "%d/%m/%y").strftime("%Y-%m-%d"),b) for (a,b,c) in results]
+    
+    return results
+
+def getGBAResultsRvA(i, numOfPtsReqd):
+    if(i==0):
+        file = "/home/kapil/Desktop/mtp/library/resultsOfGBA/abd1gbaRetailVsArr.csv"
+    elif(i==1):
+        file = "/home/kapil/Desktop/mtp/library/resultsOfGBA/bglr2gbaRetailVsArr.csv"
+    elif(i==2):
+        file = "/home/kapil/Desktop/mtp/library/resultsOfGBA/mumbai3gbaRetailVsArr.csv"
+    elif(i==3):
+        file = "/home/kapil/Desktop/mtp/library/resultsOfGBA/patna4gbaRetailVsArr.csv"
+    elif(i==4):
+        file = "/home/kapil/Desktop/mtp/library/resultsOfGBA/delhi5gbaRetailVsArr.csv"
+    
+    results = []
+    for i,line in enumerate(open(file)):
+        line = line.strip()
+        tokens = line.split(",")
+        date = removeQuotes(tokens[3])
+        value = float(removeQuotes(tokens[1]))
+        rank = int(removeQuotes(tokens[2]))
+        results.append((date,value,rank))
+    
+    # Sort by rank
+    results = sorted(results, key=lambda x: x[2])
+    
+    # Take top numOfPtsReqd
+    results = results[0:numOfPtsReqd]
+    
+    # Sort by date
+    results = sorted(results, key=lambda x: x[0])
+    
+    results = [ (datetime.strptime(a, "%d/%m/%y").strftime("%Y-%m-%d"),b) for (a,b,c) in results]
+    
+    return results

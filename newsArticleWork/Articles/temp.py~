@@ -1,0 +1,19 @@
+file1 = open('output.csv')
+file2 = open('output1.csv')
+
+
+hashmap = dict()
+
+for i,line in enumerate(file1):
+	if(i==0):
+		continue
+	columns = line.strip().split(",")
+	hashmap[columns[5]] = line.strip()
+	
+for i,line in enumerate(file2):
+	if(i==0):
+		continue
+	columns = line.strip().split(",")
+	if(hashmap[columns[5]] is None):
+		print line.strip()
+
