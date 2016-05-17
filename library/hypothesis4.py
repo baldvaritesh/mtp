@@ -103,15 +103,17 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         lrResult = linear_regressionMain(avgRetailTimeSeries,c_list,1)
         lrResult = mergeDates(lrResult)
         
+        lrResult = []
+        slopeBasedResult = []
+        
         # Result for Hypothesis 1
-        result = intersection(3,slopeBasedResult,'slope_based',correlationResult,'correlation',lrResult,'linear_regression')
+        result = intersection(1,slopeBasedResult,'slope_based',correlationResult,'correlation',lrResult,'linear_regression')
         center_anomalies_only_retail[i] = result
         
         # Hypothesis 1: END
         
         # Plot Graph for i'th center, it requires 4 args. We have 3. We need to get dates for news articles
         news_article_result = fetchNewsForCenter(result,i)
-        
         
         
     # Now lets consider arrival of each center and see whether these anomalies are due to that or not

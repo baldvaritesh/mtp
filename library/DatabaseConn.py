@@ -19,6 +19,23 @@ Following is assumed for center Numbers:
 
 
 returns result of the following form....
+A tuple:
+
+	(resultList, allArticlesQueryResult)
+	
+Where:
+
+* resultList : This is of tuples with following fields:
+				(System_anomaly_date, news_article_date, news_source, source_url, difference_between_system_date_and_news_article_date, list_of_keywords)
+				
+				1. System_anomaly_date: date reported by our system which is reported as anomolous date
+				2. news_article_date: date of news article correpsonding to above System_anomaly_date
+				3. news_source: souce of news (which media?)
+				4. source_url: link of the news article
+				5. difference_between_system_date_and_news_article_date: difference between dates of (news_article_date - System_anomaly_date)
+				6. list_of_keywords: List of keywords related with this article
+				
+* allArticlesQueryResult: List of dates of all news articles for this center which is present in the database
 
 
 '''
@@ -53,17 +70,37 @@ def fetchNewsForCenter(resultsOfSystem, centerNumber, intervalToConsider=5):
 		end_date = date + datetime.timedelta(days=intervalToConsider)
 		end_date = end_date.strftime('%Y/%m/%d')
 		
-		query = "select publish_date, name, source_url from articlemetadata amd, newssource ns where amd.source_id = ns.id and publish_date >= '"+start_date+"' and publish_date<= '"+end_date+"'"
+		query = "select publish_date, name, source_url, article_hash_url from articlemetadata amd, newssource ns where amd.source_id = ns.id and publish_date >= '"+start_date+"' and publish_date<= '"+end_date+"' and article_hash_url in (select distinct(article_id) from alchemyentity where entity iLike '"+center+"' )"
 		cur.execute(query)
 		queryResult = cur.fetchall()
 		
 		resultOfThisDate = []
-		for row_queryResult in queryResult:
-			smallTuple = (row_queryResult[0], row_queryResult[1], row_queryResult[2], (row_queryResult[0] - date).days)
+		for row_queryResult in queryResult:			
+			# Find All keyword corresponding to that article using : article_hash_url
+			query = "select keyword from alchemykeyword where article_id = '" + row_queryResult[3] + "'"
+			cur.execute(query)
+			keywordQueryResult = cur.fetchall()
+			smallTuple = (row_queryResult[0], row_queryResult[1], row_queryResult[2], (row_queryResult[0] - date).days, keywordQueryResult)
 			resultOfThisDate.append(smallTuple)
-		print resultOfThisDate
+		result[date] = resultOfThisDate
 		
-	pass
+	# Fetch all dates of news articles corresponding to this center
+	query = "select distinct publish_date from articlemetadata where article_hash_url in (select distinct(article_id) from alchemyentity where entity iLike '"+center+"' )"
+	cur.execute(query)
+	allArticlesQueryResult = cur.fetchall()
+	
+	# Convert result to list from dictionary
+	resultList = []
+	for date in result:
+		temp_list = result[date]
+		for row_temp_list in temp_list:
+			(a,b,c,d,e) = row_temp_list
+			resultList.append((date,a,b,c,d,e))
+	# Sort by anomaly date
+	resultList = sorted(resultList, key=lambda x: x[0])
+	
+	return(resultList, allArticlesQueryResult)
+
 
 def Conn(dd,place):
 	conn = psycopg2.connect(database="news_articles", user="postgres", password="password", host="127.0.0.1", port="5432")
