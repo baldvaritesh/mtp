@@ -19,6 +19,7 @@ from Utility import getGBAResultsRvR
 from Utility import findAverageTimeSeries
 from Utility import getColumnFromListOfTuples
 from Utility import convertListToFloat
+from Utility import plotGraphForHypothesis
 import datetime
 
 
@@ -103,17 +104,18 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         lrResult = linear_regressionMain(avgRetailTimeSeries,c_list,1)
         lrResult = mergeDates(lrResult)
         
-        lrResult = []
-        slopeBasedResult = []
-        
         # Result for Hypothesis 1
-        result = intersection(1,slopeBasedResult,'slope_based',correlationResult,'correlation',lrResult,'linear_regression')
+        # result = intersection(3,slopeBasedResult,'slope_based',correlationResult,'correlation',lrResult,'linear_regression')
+        result = intersection(2,correlationResult,'correlation',lrResult,'linear_regression')
         center_anomalies_only_retail[i] = result
         
         # Hypothesis 1: END
         
         # Plot Graph for i'th center, it requires 4 args. We have 3. We need to get dates for news articles
-        news_article_result = fetchNewsForCenter(result,i)
+        (news_article_found, all_articles) = fetchNewsForCenter(result,i)
+        news_article_found_dates = getColumnFromListOfTuples(news_article_found, 1)
+        plotGraphForHypothesis(c_list, avgRetailTimeSeries, result, news_article_found_dates)
+        
         
         
     # Now lets consider arrival of each center and see whether these anomalies are due to that or not

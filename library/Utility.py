@@ -86,15 +86,17 @@ Plots Grpah.
 
 '''
 def plotGraphForHypothesis(original,average,list1, list2):
-	datetange = [row[0] for row in original]
+	print list2
+	dates = [row[0] for row in original]
+	daterange = [datetime.strptime(x, "%Y-%m-%d") for x in dates]
 	original = [row[1] for row in original]
 	avg = [row[1] for row in average]
-	plt.plot(datetange,original, color = 'b')
-	plt.plot(datetange,avg, color = 'r')
+	plt.plot(daterange,original, color = 'y')
+	plt.plot(daterange,avg, color = 'r')
 	for row in list1:
-		plt.axvspan(row[0], row[0], color='y', alpha=0.5, lw=0)
+		plt.axvspan(row[0], row[0] + timedelta(days=1), color='y', alpha=0.5, lw=0)
 	for row in list2:
-		plt.axvspan(row, row, color='g', alpha=0.5, lw=0)
+		plt.axvspan(row, row + timedelta(days=1), color='r', alpha=0.5, lw=0)
 	plt.show()
 
 
