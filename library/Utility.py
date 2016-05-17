@@ -312,7 +312,7 @@ def mergeDates(li):
 
 def resultOfOneMethod(array):
     result = []
-    for (a,b,c) in list:
+    for (a,b,c) in array:
         i = a
         while i <= b:
             result.append((i,c))
