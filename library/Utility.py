@@ -309,6 +309,16 @@ def mergeDates(li):
     return new_list_of_ranges
 
 
+
+def resultOfOneMethod(array):
+    result = []
+    for (a,b,c) in list:
+        i = a
+        while i <= b:
+            result.append((i,c))
+            i = i + timedelta(days = 1)
+    return result
+
 '''
 
 This function requires minumum 5 arguments:

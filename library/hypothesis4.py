@@ -21,7 +21,7 @@ from Utility import getColumnFromListOfTuples
 from Utility import convertListToFloat
 from Utility import plotGraphForHypothesis
 import datetime
-
+from Utility import resultOfOneMethod
 
 '''
 This function takes 2 arguments:
@@ -112,9 +112,9 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         # Hypothesis 1: END
         
         # Plot Graph for i'th center, it requires 4 args. We have 3. We need to get dates for news articles
-        (news_article_found, all_articles) = fetchNewsForCenter(result,i)
+        (news_article_found, all_articles) = fetchNewsForCenter(resultOfOneMethod(correlationResult),i)
         news_article_found_dates = getColumnFromListOfTuples(news_article_found, 1)
-        plotGraphForHypothesis(c_list, avgRetailTimeSeries, result, news_article_found_dates)
+        plotGraphForHypothesis(c_list, avgRetailTimeSeries, resultOfOneMethod(correlationResult), news_article_found_dates)
         
         
         
