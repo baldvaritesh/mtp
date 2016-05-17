@@ -16,6 +16,88 @@ from datetime import datetime
 from datetime import timedelta
 import math
 
+
+'''
+
+This function takes one argument:
+li : list of elements
+
+Returns list of elements after converting each element into float 
+
+'''
+def convertListToFloat(li):
+    return [float(i) for i in li]
+
+
+'''
+
+This function returns i'th element of all tuples in the list.
+Takes two arguments:
+
+lstTuples : List of tuples
+i: which tuple element to return, index starting from zero
+
+
+Returns list of elements.
+
+
+'''
+def getColumnFromListOfTuples(lstTuples,i):
+    if len(lstTuples) == 0:
+        return []
+    elif len(lstTuples[0])< i-1 :
+        return []
+    else:
+        return [item[i] for item in lstTuples]
+
+
+'''
+This function takes 1 argument:
+
+timeSeriesCollection: 2D array of float elements.
+Each row is one timeseries.
+
+returns average of all timeseries.
+
+For example let,
+timeSeriesCollection: [
+    [1,2,3], # Timeseries 1
+    [4,5,6], # Timeseries 2
+    [7,8,9] # Timeseries 3
+]
+
+This function will return,
+
+[4,5,6]
+
+'''
+def findAverageTimeSeries(timeSeriesCollection):
+    return [sum(e)/len(e) for e in zip(* timeSeriesCollection)]
+
+'''
+
+This function takes 4 arguments:
+original: Original Time Series of retail of the format list of tuples . Tuple (date, value)
+average: Average Retail Time Series of avg retail of the format list of tuples . Tuple (date, value)
+list1: Predicted By system : list of tuples ... (date, ... , ...)
+list2: Actual results : List of Dates
+
+Plots Grpah.
+
+'''
+def plotGraphForHypothesis(original,average,list1, list2):
+	datetange = [row[0] for row in original]
+	original = [row[1] for row in original]
+	avg = [row[1] for row in average]
+	plt.plot(datetange,original, color = 'b')
+	plt.plot(datetange,avg, color = 'r')
+	for row in list1:
+		plt.axvspan(row[0], row[0], color='y', alpha=0.5, lw=0)
+	for row in list2:
+		plt.axvspan(row, row, color='g', alpha=0.5, lw=0)
+	plt.show()
+
+
 '''
 This function removes nan from the list.
 
