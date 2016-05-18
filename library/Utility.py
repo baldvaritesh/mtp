@@ -22,8 +22,26 @@ import psycopg2
 This function help to print stats
 
 '''
-def statsPrintHelper(result1, result2, methodName, centerID):
+def statsPrintHelperIntersect(result1, result2, methodName, centerID):
     intersect = intersectionOfFinalResults(result1,result2)
+    (intersect_news_article_result,all_articles_intersect) = fetchNewsForCenter(intersect, centerID)
+    print "STATS FOR CENTER:" + str(centerID)
+    print "For Method : " + methodName
+    print "Total anomalies reported: " + str(len(intersect))
+    print "Total news articles found related to anomaly reported: " + str(len(intersect_news_article_result))
+    print "Total news articles present for this center " + str(len(all_articles_intersect))
+    print "How far is news articles from reported anomalies? "
+    print getDiffStatsOfNewsArticles(intersect_news_article_result)
+    print "**********"
+    pass
+
+'''
+
+This function help to print stats
+
+'''
+def statsPrintHelperUnion(result1, result2, methodName, centerID):
+    intersect = unionOfFinalResults(result1,result2)
     (intersect_news_article_result,all_articles_intersect) = fetchNewsForCenter(intersect, centerID)
     print "STATS FOR CENTER:" + str(centerID)
     print "For Method : " + methodName
@@ -570,6 +588,28 @@ def intersectionOfFinalResults(list1, list2):
     for tuple in list2:
         if(tuple[0] in list1Set):
             result.append(tuple)
+    
+    return result
+
+'''
+
+Takes union of 2 lists of the form:
+(date, correlation, slope_based, linear_regression, graph_based, spike_detection, multiple_arima)
+
+return list of tuple of the same form....
+
+'''
+def unionOfFinalResults(list1, list2):
+    result = []
+    list1Set = set()
+    for tuple in list1:
+        list1Set.add(tuple[0])
+        result.append(tuple)
+    
+    for tuple in list2:
+        if(tuple[0] not in list1Set):
+            result.append(tuple)
+    result = sorted(result, key=lambda x: x[0])
     
     return result
 

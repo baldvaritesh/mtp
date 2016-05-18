@@ -23,7 +23,8 @@ from Utility import plotGraphForHypothesis
 import datetime
 from Utility import resultOfOneMethod
 from Utility import getDiffStatsOfNewsArticles
-from Utility import statsPrintHelper
+from Utility import statsPrintHelperIntersect
+from Utility import statsPrintHelperUnion
 
 '''
 This function takes 2 arguments:
@@ -303,13 +304,24 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
     print "Going for (RETAIL VS ARRIVAL) Intersect (Retail vs Retail Average) CENTER BY CENTER"
     # For each center
     for i in range(0,5):
-        statsPrintHelper(RvsA_anomalies_slope[i], RvsR_anomalies_slope[i], "Slope Based", i)
-        statsPrintHelper(RvsA_anomalies_correlation[i], RvsR_anomalies_correlation[i], "Correlation Based", i)
-        statsPrintHelper(RvsA_anomalies_linear_regression[i], RvsR_anomalies_linear_regression[i], "Linear Regression", i)
-        statsPrintHelper(RvsA_anomalies_graph_based[i], RvsR_anomalies_graph_based[i], "Graph Based", i)
-        statsPrintHelper(RvsA_anomalies_without_H3[i], RvsR_anomalies_without_H3[i], "Intersection of Slope Based, Correlation based and linear regression", i)
-        statsPrintHelper(RvsA_anomalies_with_H3[i], RvsR_anomalies_with_H3[i], "Intersection of Slope Based, Correlation based, graph based and linear regression", i)
+        statsPrintHelperIntersect(RvsA_anomalies_slope[i], RvsR_anomalies_slope[i], "Slope Based", i)
+        statsPrintHelperIntersect(RvsA_anomalies_correlation[i], RvsR_anomalies_correlation[i], "Correlation Based", i)
+        statsPrintHelperIntersect(RvsA_anomalies_linear_regression[i], RvsR_anomalies_linear_regression[i], "Linear Regression", i)
+        statsPrintHelperIntersect(RvsA_anomalies_graph_based[i], RvsR_anomalies_graph_based[i], "Graph Based", i)
+        statsPrintHelperIntersect(RvsA_anomalies_without_H3[i], RvsR_anomalies_without_H3[i], "Intersection of Slope Based, Correlation based and linear regression", i)
+        statsPrintHelperIntersect(RvsA_anomalies_with_H3[i], RvsR_anomalies_with_H3[i], "Intersection of Slope Based, Correlation based, graph based and linear regression", i)
     print "END OF (RETAIL VS ARRIVAL) Intersect (Retail vs Retail Average) CENTER BY CENTER"
+    
+    print "Going for (RETAIL VS ARRIVAL) Union (Retail vs Retail Average) CENTER BY CENTER"
+    # For each center
+    for i in range(0,5):
+        statsPrintHelperUnion(RvsA_anomalies_slope[i], RvsR_anomalies_slope[i], "Slope Based", i)
+        statsPrintHelperUnion(RvsA_anomalies_correlation[i], RvsR_anomalies_correlation[i], "Correlation Based", i)
+        statsPrintHelperUnion(RvsA_anomalies_linear_regression[i], RvsR_anomalies_linear_regression[i], "Linear Regression", i)
+        statsPrintHelperUnion(RvsA_anomalies_graph_based[i], RvsR_anomalies_graph_based[i], "Graph Based", i)
+        statsPrintHelperUnion(RvsA_anomalies_without_H3[i], RvsR_anomalies_without_H3[i], "Intersection of Slope Based, Correlation based and linear regression", i)
+        statsPrintHelperUnion(RvsA_anomalies_with_H3[i], RvsR_anomalies_with_H3[i], "Intersection of Slope Based, Correlation based, graph based and linear regression", i)
+    print "END OF (RETAIL VS ARRIVAL) Union (Retail vs Retail Average) CENTER BY CENTER"
     
     # Time to combine all centers
     
