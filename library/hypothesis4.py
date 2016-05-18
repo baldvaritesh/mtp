@@ -84,12 +84,25 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
     avgRetailTimeSeries = findAverageTimeSeries(retailListWithNoDates)
     avgRetailTimeSeries = zip(temp1,avgRetailTimeSeries)
     
-    # Hashmap to save results of comparison of retail prices.
-    center_anomalies_only_retail = dict()
+    # Hashmap to save results of comparison of retail prices vs average
+    RvsR_anomalies_without_H3 = dict()
+    RvsR_anomalies_with_H3 = dict()
+    RvsR_anomalies_slope = dict()
+    RvsR_anomalies_correlation = dict()
+    RvsR_anomalies_linear_regression = dict()
+    RvsR_anomalies_graph_based = dict()
     
-    slopeBasedResult=[]
-    correlationResult=[]
-    lrResult=[]
+    
+    # Hashmap to save results of comparison of retail prices vs arrival
+    RvsA_anomalies_without_H3 = dict()
+    RvsA_anomalies_with_H3 = dict()
+    RvsA_anomalies_slope = dict()
+    RvsA_anomalies_correlation = dict()
+    RvsA_anomalies_linear_regression = dict()
+    RvsA_anomalies_graph_based = dict()
+    
+    print "STARTING WITH RETAIL VS AVERAGE \n\n\n"
+    
     for i,c_list in enumerate(retailList):
         
         # Hypothesis 1: START
@@ -107,11 +120,10 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         lrResult = mergeDates(lrResult)
         
         # Result for Hypothesis 1
-        slopeBased_result = resultOfOneMethod(slopeBased_result)
+        slopeBased_result = resultOfOneMethod(slopeBasedResult)
         correlationBased_result = resultOfOneMethod(correlationResult)
         linearRegression_result = resultOfOneMethod(lrResult)
         intersection_result_without_H3 = intersection(3,slopeBasedResult,'slope_based',correlationResult,'correlation',lrResult,'linear_regression')
-        center_anomalies_only_retail[i] = result_without_H3
         
         # Hypothesis 1: END
         
@@ -138,15 +150,56 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         print "Total news articles present for this center " + str(len(all_articles_slope_based))
         print "How far is news articles from reported anomalies? "
         print getDiffStatsOfNewsArticles(slopeBased_news_article_result)
+        print "**********"
+        print "For Method : Correlation Based"
+        print "Total anomalies reported: " + str(len(correlationBased_result))
+        print "Total news articles found related to anomaly reported: " + str(len(correlationBased_news_article_result))
+        print "Total news articles present for this center " + str(len(all_articles_correlationBased))
+        print "How far is news articles from reported anomalies? "
+        print getDiffStatsOfNewsArticles(correlationBased_news_article_result)
+        print "**********"
+        print "For Method : Linear Regression"
+        print "Total anomalies reported: " + str(len(linearRegression_result))
+        print "Total news articles found related to anomaly reported: " + str(len(linearRegression_news_article_result))
+        print "Total news articles present for this center " + str(len(all_articles_linearRegression))
+        print "How far is news articles from reported anomalies? "
+        print getDiffStatsOfNewsArticles(linearRegression_news_article_result)
+        print "**********"
+        print "For Method : Graph Based anomaly result"
+        print "Total anomalies reported: " + str(len(graphBasedAnomaly_result))
+        print "Total news articles found related to anomaly reported: " + str(len(graphBasedAnomaly_news_article_result))
+        print "Total news articles present for this center " + str(len(all_articles_graphBasedAnomaly))
+        print "How far is news articles from reported anomalies? "
+        print getDiffStatsOfNewsArticles(graphBasedAnomaly_news_article_result)
+        print "**********"
+        print "For Method : Intersection of Slope Based,Correlation Based and Linear Regression"
+        print "Total anomalies reported: " + str(len(intersection_result_without_H3))
+        print "Total news articles found related to anomaly reported: " + str(len(intersection_result_without_H3_news_article_result))
+        print "Total news articles present for this center " + str(len(all_articles_intersection_result_without_H3))
+        print "How far is news articles from reported anomalies? "
+        print getDiffStatsOfNewsArticles(intersection_result_without_H3_news_article_result)
+        print "**********"
+        print "For Method : Intersection of Slope Based,Correlation Based, Linear Regression and Graph based"
+        print "Total anomalies reported: " + str(len(intersection_result_with_H3))
+        print "Total news articles found related to anomaly reported: " + str(len(intersection_result_with_H3_news_article_result))
+        print "Total news articles present for this center " + str(len(all_articles_intersection_result_with_H3))
+        print "How far is news articles from reported anomalies? "
+        print getDiffStatsOfNewsArticles(intersection_result_with_H3_news_article_result)
         print "-----------------------------------------------------"
                
-        
         # Plot Graph for i'th center
         # plotGraphForHypothesis(c_list, avgRetailTimeSeries, resultOfOneMethod(correlationResult), news_article_matched_dates, all_articles)
         
+        # Save results in dictionary to process further
+        RvsR_anomalies_without_H3[i] = intersection_result_without_H3
+        RvsR_anomalies_with_H3[i] = intersection_result_with_H3
+        RvsR_anomalies_slope[i] = slopeBased_result
+        RvsR_anomalies_correlation[i] = correlationBased_result
+        RvsR_anomalies_linear_regression[i] = linearRegression_result
+        RvsR_anomalies_graph_based[i] = graphBasedAnomaly_result
         
-        
-        
+    print "END OF RETAIL VS AVERAGE \n\n\n"
+    print "STARTING WITH RETAIL VS ARRIVAL \n\n\n"
     # Now lets consider arrival of each center and see whether these anomalies are due to that or not
     # Anomalies from Arrival vs Retail
     center_anomalies_arr_vs_retail = dict()
@@ -165,14 +218,87 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         # Linear Regression
         lrResult = linear_regressionMain(c_list,retailList[i],1)
         lrResult = mergeDates(lrResult)
-        
+
         # Result for Hypothesis 2
-        result = intersection(3,slopeBasedResult,'slope_based',correlationResult,'correlation',lrResult,'linear_regression')
-        center_anomalies_arr_vs_retail[i] = result
+        slopeBased_result = resultOfOneMethod(slopeBasedResult)
+        correlationBased_result = resultOfOneMethod(correlationResult)
+        linearRegression_result = resultOfOneMethod(lrResult)
+        intersection_result_without_H3 = intersection(3,slopeBasedResult,'slope_based',correlationResult,'correlation',lrResult,'linear_regression')
         
         # Hypothesis 2: END
+        
+        # Hypothesis 3 For Reatil vs ARRIVAL: START
+        
+        graphBasedAnomaly = getGBAResultsRvA(i,50)
+        graphBasedAnomaly_result = resultOfOneMethod(graphBasedAnomaly)
+        intersection_result_with_H3 = intersection(4,slopeBasedResult,'slope_based',correlationResult,'correlation',lrResult,'linear_regression', graphBasedAnomaly, 'graph_based')
+        
+        # Hypothesis 3 For Reatil vs ARRIVAL: END
+        
+        # Get stats of news articles for each method
+        (slopeBased_news_article_result,all_articles_slope_based) = fetchNewsForCenter(slopeBased_result, i)
+        (correlationBased_news_article_result,all_articles_correlationBased) = fetchNewsForCenter(correlationBased_result, i)
+        (linearRegression_news_article_result,all_articles_linearRegression) = fetchNewsForCenter(linearRegression_result, i)
+        (graphBasedAnomaly_news_article_result,all_articles_graphBasedAnomaly) = fetchNewsForCenter(graphBasedAnomaly_result, i)
+        (intersection_result_without_H3_news_article_result,all_articles_intersection_result_without_H3) = fetchNewsForCenter(intersection_result_without_H3, i)
+        (intersection_result_with_H3_news_article_result,all_articles_intersection_result_with_H3) = fetchNewsForCenter(intersection_result_with_H3, i)
+        
+        print "STATS FOR CENTER:" + str(i)
+        print "For Method : Slope Based"
+        print "Total anomalies reported: " + str(len(slopeBased_result))
+        print "Total news articles found related to anomaly reported: " + str(len(slopeBased_news_article_result))
+        print "Total news articles present for this center " + str(len(all_articles_slope_based))
+        print "How far is news articles from reported anomalies? "
+        print getDiffStatsOfNewsArticles(slopeBased_news_article_result)
+        print "**********"
+        print "For Method : Correlation Based"
+        print "Total anomalies reported: " + str(len(correlationBased_result))
+        print "Total news articles found related to anomaly reported: " + str(len(correlationBased_news_article_result))
+        print "Total news articles present for this center " + str(len(all_articles_correlationBased))
+        print "How far is news articles from reported anomalies? "
+        print getDiffStatsOfNewsArticles(correlationBased_news_article_result)
+        print "**********"
+        print "For Method : Linear Regression"
+        print "Total anomalies reported: " + str(len(linearRegression_result))
+        print "Total news articles found related to anomaly reported: " + str(len(linearRegression_news_article_result))
+        print "Total news articles present for this center " + str(len(all_articles_linearRegression))
+        print "How far is news articles from reported anomalies? "
+        print getDiffStatsOfNewsArticles(linearRegression_news_article_result)
+        print "**********"
+        print "For Method : Graph Based anomaly result"
+        print "Total anomalies reported: " + str(len(graphBasedAnomaly_result))
+        print "Total news articles found related to anomaly reported: " + str(len(graphBasedAnomaly_news_article_result))
+        print "Total news articles present for this center " + str(len(all_articles_graphBasedAnomaly))
+        print "How far is news articles from reported anomalies? "
+        print getDiffStatsOfNewsArticles(graphBasedAnomaly_news_article_result)
+        print "**********"
+        print "For Method : Intersection of Slope Based,Correlation Based and Linear Regression"
+        print "Total anomalies reported: " + str(len(intersection_result_without_H3))
+        print "Total news articles found related to anomaly reported: " + str(len(intersection_result_without_H3_news_article_result))
+        print "Total news articles present for this center " + str(len(all_articles_intersection_result_without_H3))
+        print "How far is news articles from reported anomalies? "
+        print getDiffStatsOfNewsArticles(intersection_result_without_H3_news_article_result)
+        print "**********"
+        print "For Method : Intersection of Slope Based,Correlation Based, Linear Regression and Graph based"
+        print "Total anomalies reported: " + str(len(intersection_result_with_H3))
+        print "Total news articles found related to anomaly reported: " + str(len(intersection_result_with_H3_news_article_result))
+        print "Total news articles present for this center " + str(len(all_articles_intersection_result_with_H3))
+        print "How far is news articles from reported anomalies? "
+        print getDiffStatsOfNewsArticles(intersection_result_with_H3_news_article_result)
+        print "-----------------------------------------------------"
+               
+        # Plot Graph for i'th center
+        # plotGraphForHypothesis(c_list, avgRetailTimeSeries, resultOfOneMethod(correlationResult), news_article_matched_dates, all_articles)
+        
+        # Save results in dictionary to process further
+        RvsA_anomalies_without_H3[i] = intersection_result_without_H3
+        RvsA_anomalies_with_H3[i] = intersection_result_with_H3
+        RvsA_anomalies_slope[i] = slopeBased_result
+        RvsA_anomalies_correlation[i] = correlationBased_result
+        RvsA_anomalies_linear_regression[i] = linearRegression_result
+        RvsA_anomalies_graph_based[i] = graphBasedAnomaly_result
     
-    
+    print "END OF RETAIL VS ARRIVAL \n\n\n"
     
 hypothesisForCenter(5,"testingCSV/AhmedabadSILData.csv","testingCSV/BengaluruSILData.csv","testingCSV/MumbaiSILData.csv","testingCSV/PatnaSILData.csv","testingCSV/DelhiSILData.csv")
 

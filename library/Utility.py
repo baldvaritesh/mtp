@@ -492,7 +492,7 @@ def getGBAResultsRvR(i, numOfPtsReqd):
     # Sort by date
     results = sorted(results, key=lambda x: x[0])
     
-    results = [ (datetime.strptime(a, "%d/%m/%y").strftime("%Y-%m-%d"),datetime.strptime(a, "%d/%m/%y").strftime("%Y-%m-%d"),b) for (a,b,c) in results]
+    results = [ (datetime.strptime(a, "%d/%m/%y"),datetime.strptime(a, "%d/%m/%y"),b) for (a,b,c) in results]
     
     return results
 
@@ -526,7 +526,7 @@ def getGBAResultsRvA(i, numOfPtsReqd):
     # Sort by date
     results = sorted(results, key=lambda x: x[0])
     
-    results = [ (datetime.strptime(a, "%d/%m/%y").strftime("%Y-%m-%d"),datetime.strptime(a, "%d/%m/%y").strftime("%Y-%m-%d"),b) for (a,b,c) in results]
+    results = [ (datetime.strptime(a, "%d/%m/%y"),datetime.strptime(a, "%d/%m/%y"),b) for (a,b,c) in results]
     
     return results
 
@@ -549,7 +549,7 @@ returns array of tuples of the following form:
 '''
 
 def getDiffStatsOfNewsArticles(array):
-    bins = set()
+    bins = dict()
     for row in array:
         if(row[4] in bins):
             bins[row[4]] = bins[row[4]] + 1
