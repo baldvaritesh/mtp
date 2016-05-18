@@ -85,18 +85,24 @@ list2: Actual results : List of Dates
 Plots Grpah.
 
 '''
-def plotGraphForHypothesis(original,average,list1, list2):
-	print list2
+def plotGraphForHypothesis(original,average,list1, list2, total_news_articles):
 	dates = [row[0] for row in original]
 	daterange = [datetime.strptime(x, "%Y-%m-%d") for x in dates]
 	original = [row[1] for row in original]
 	avg = [row[1] for row in average]
-	plt.plot(daterange,original, color = 'y')
-	plt.plot(daterange,avg, color = 'r')
+	fig, ax = plt.subplots()
+	ax.plot(daterange,original, color = 'g', label='Original Series')
+	ax.plot(daterange,avg, color = 'b')
 	for row in list1:
-		plt.axvspan(row[0], row[0] + timedelta(days=1), color='y', alpha=0.5, lw=0)
+		ax.axvspan(row[0], row[0] + timedelta(days=1), color='y', alpha=0.5, lw=0)
+	# print type(list2)
+	# print type(total_news_articles)
+	# print (list2)
+	# print (total_news_articles)
 	for row in list2:
-		plt.axvspan(row, row + timedelta(days=1), color='r', alpha=0.5, lw=0)
+		ax.axvspan(row, row + timedelta(days=1), color='r', alpha=0.5, lw=0)
+	for row in total_news_articles:
+		ax.axvspan(row, row + timedelta(days=1), color='c', alpha=0.5, lw=0)
 	plt.show()
 
 
@@ -486,7 +492,7 @@ def getGBAResultsRvR(i, numOfPtsReqd):
     # Sort by date
     results = sorted(results, key=lambda x: x[0])
     
-    results = [ (datetime.strptime(a, "%d/%m/%y").strftime("%Y-%m-%d"),b) for (a,b,c) in results]
+    results = [ (datetime.strptime(a, "%d/%m/%y").strftime("%Y-%m-%d"),datetime.strptime(a, "%d/%m/%y").strftime("%Y-%m-%d"),b) for (a,b,c) in results]
     
     return results
 
@@ -520,6 +526,41 @@ def getGBAResultsRvA(i, numOfPtsReqd):
     # Sort by date
     results = sorted(results, key=lambda x: x[0])
     
-    results = [ (datetime.strptime(a, "%d/%m/%y").strftime("%Y-%m-%d"),b) for (a,b,c) in results]
+    results = [ (datetime.strptime(a, "%d/%m/%y").strftime("%Y-%m-%d"),datetime.strptime(a, "%d/%m/%y").strftime("%Y-%m-%d"),b) for (a,b,c) in results]
     
     return results
+
+'''
+
+this function takes one argument:
+
+array: list of tuples of the following form:
+        (System_anomaly_date, news_article_date, news_source, source_url, difference_between_system_date_and_news_article_date, list_of_keywords)
+        
+This function will create bins for "difference_between_system_date_and_news_article_date"
+
+returns array of tuples of the following form:
+
+    (a,b)
+    
+    Where a: one of the distinct value from "difference_between_system_date_and_news_article_date"
+          b: How many a's are present
+
+'''
+
+def getDiffStatsOfNewsArticles(array):
+    bins = set()
+    for row in array:
+        if(row[4] in bins):
+            bins[row[4]] = bins[row[4]] + 1
+        else:
+            bins[row[4]] = 1
+    
+    result = []
+    
+    for key in bins:
+        result.append((key,bins[key]))
+    
+    # Sort by first element of tuple
+    result = sorted(result, key=lambda x: x[0])
+    return result 

@@ -1,5 +1,7 @@
 import psycopg2
 import datetime
+from Utility import getColumnFromListOfTuples
+
 
 '''
 
@@ -85,7 +87,7 @@ def fetchNewsForCenter(resultsOfSystem, centerNumber, intervalToConsider=5):
 		result[date] = resultOfThisDate
 		
 	# Fetch all dates of news articles corresponding to this center
-	query = "select distinct publish_date from articlemetadata where article_hash_url in (select distinct(article_id) from alchemyentity where entity iLike '"+center+"' )"
+	query = "select distinct publish_date from articlemetadata where article_hash_url in (select distinct(article_id) from alchemyentity where entity iLike '"+center+"')  order by publish_date"
 	cur.execute(query)
 	allArticlesQueryResult = cur.fetchall()
 	
@@ -99,7 +101,7 @@ def fetchNewsForCenter(resultsOfSystem, centerNumber, intervalToConsider=5):
 	# Sort by anomaly date
 	resultList = sorted(resultList, key=lambda x: x[0])
 	
-	return(resultList, allArticlesQueryResult)
+	return(resultList, getColumnFromListOfTuples(allArticlesQueryResult,0))
 
 
 def Conn(dd,place):

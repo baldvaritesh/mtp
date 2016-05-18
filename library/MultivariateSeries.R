@@ -1,7 +1,6 @@
 require(forecast)
 require(vars)
-
-var.data= read.csv(file.choose(),header=FALSE)
+var.data= read.csv(file="/home/kapil/Desktop/mtp/library/testingCSV/AhmedabadSILData.csv",header=FALSE)
 head(var.data)
 
 mumbai.wp = ts(var.data[2], frequency=365, start=c(2006), end=c(2015))
@@ -27,11 +26,14 @@ plot(onion2.ts)
 
 VARselect(onion2.ts, lag.max=60)$selection
 
-var = VAR(onion2.ts, p=32)
-serial.test(var, lags.pt=60, type="PT.asymptotic")
+var = VAR(onion.ts, p=29)
+# serial.test(onion.ts, lags.pt=60, type="PT.asymptotic")
 
 summary(var, equation="d.WPcData")
 predict(var, n.ahead=3000, ci=0.95)
 
 fcst = forecast(var)
 plot(fcst)
+
+# write(fcst, file = "/home/kapil/Desktop/temp.csv", sep = ",")
+# write.table(fcst, file = "/home/kapil/Desktop/temp.csv", sep = ",")

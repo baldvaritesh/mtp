@@ -22,6 +22,8 @@ from Utility import convertListToFloat
 from Utility import plotGraphForHypothesis
 import datetime
 from Utility import resultOfOneMethod
+from Utility import getDiffStatsOfNewsArticles
+
 
 '''
 This function takes 2 arguments:
@@ -105,16 +107,43 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         lrResult = mergeDates(lrResult)
         
         # Result for Hypothesis 1
-        # result = intersection(3,slopeBasedResult,'slope_based',correlationResult,'correlation',lrResult,'linear_regression')
-        result = intersection(2,correlationResult,'correlation',lrResult,'linear_regression')
-        center_anomalies_only_retail[i] = result
+        slopeBased_result = resultOfOneMethod(slopeBased_result)
+        correlationBased_result = resultOfOneMethod(correlationResult)
+        linearRegression_result = resultOfOneMethod(lrResult)
+        intersection_result_without_H3 = intersection(3,slopeBasedResult,'slope_based',correlationResult,'correlation',lrResult,'linear_regression')
+        center_anomalies_only_retail[i] = result_without_H3
         
         # Hypothesis 1: END
         
-        # Plot Graph for i'th center, it requires 4 args. We have 3. We need to get dates for news articles
-        (news_article_found, all_articles) = fetchNewsForCenter(resultOfOneMethod(correlationResult),i)
-        news_article_found_dates = getColumnFromListOfTuples(news_article_found, 1)
-        plotGraphForHypothesis(c_list, avgRetailTimeSeries, resultOfOneMethod(correlationResult), news_article_found_dates)
+        # Hypothesis 3 For Reatil vs AVG: START
+        
+        graphBasedAnomaly = getGBAResultsRvR(i,50)
+        graphBasedAnomaly_result = resultOfOneMethod(graphBasedAnomaly)
+        intersection_result_with_H3 = intersection(4,slopeBasedResult,'slope_based',correlationResult,'correlation',lrResult,'linear_regression', graphBasedAnomaly, 'graph_based')
+        
+        # Hypothesis 3 For Reatil vs AVG: END
+        
+        # Get stats of news articles for each method
+        (slopeBased_news_article_result,all_articles_slope_based) = fetchNewsForCenter(slopeBased_result, i)
+        (correlationBased_news_article_result,all_articles_correlationBased) = fetchNewsForCenter(correlationBased_result, i)
+        (linearRegression_news_article_result,all_articles_linearRegression) = fetchNewsForCenter(linearRegression_result, i)
+        (graphBasedAnomaly_news_article_result,all_articles_graphBasedAnomaly) = fetchNewsForCenter(graphBasedAnomaly_result, i)
+        (intersection_result_without_H3_news_article_result,all_articles_intersection_result_without_H3) = fetchNewsForCenter(intersection_result_without_H3, i)
+        (intersection_result_with_H3_news_article_result,all_articles_intersection_result_with_H3) = fetchNewsForCenter(intersection_result_with_H3, i)
+        
+        print "STATS FOR CENTER:" + str(i)
+        print "For Method : Slope Based"
+        print "Total anomalies reported: " + str(len(slopeBased_result))
+        print "Total news articles found related to anomaly reported: " + str(len(slopeBased_news_article_result))
+        print "Total news articles present for this center " + str(len(all_articles_slope_based))
+        print "How far is news articles from reported anomalies? "
+        print getDiffStatsOfNewsArticles(slopeBased_news_article_result)
+        print "-----------------------------------------------------"
+               
+        
+        # Plot Graph for i'th center
+        # plotGraphForHypothesis(c_list, avgRetailTimeSeries, resultOfOneMethod(correlationResult), news_article_matched_dates, all_articles)
+        
         
         
         
@@ -142,6 +171,8 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         center_anomalies_arr_vs_retail[i] = result
         
         # Hypothesis 2: END
+    
+    
     
 hypothesisForCenter(5,"testingCSV/AhmedabadSILData.csv","testingCSV/BengaluruSILData.csv","testingCSV/MumbaiSILData.csv","testingCSV/PatnaSILData.csv","testingCSV/DelhiSILData.csv")
 
