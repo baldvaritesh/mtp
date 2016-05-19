@@ -38,4 +38,10 @@ To get started and run the example, simply:
 Just replace YOUR_API_KEY with your 40 character API key from AlchemyAPI, and you should be good to go.
 
 	
-	
+## Regarding database
+
+Table Analysis is created, which stores manual analysis, such as article is related or not, if not, delete from database, if related than to which center it is related and what is news article is saying about abnormal prices.
+Reasons:
+    * unseasonal rainfall
+    * traders nexus
+    * low production

@@ -73,5 +73,12 @@ url VARCHAR(200),
 PRIMARY KEY(id)
 );
 
+CREATE TABLE analysis(
+article_id VARCHAR(100),
+place VARCHAR(200),
+reason VARCHAR(200),
+FOREIGN KEY (article_id) REFERENCES ArticleMetaData(article_hash_url)
+);
+
 CREATE INDEX pub_date_index ON ArticleMetaData(publish_date);
 CREATE INDEX ana_date_index ON ArticleMetaData(analysis_date);
