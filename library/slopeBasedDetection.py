@@ -9,7 +9,6 @@ def slopeBasedDetection(series1,smoothed1,series2,smoothed2,next_val_to_consider
 
 '''
 
-
 import numpy
 from Utility import MADThreshold 
 from Utility import smoothArray
