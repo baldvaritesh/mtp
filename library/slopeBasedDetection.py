@@ -1,6 +1,6 @@
 '''
 
-TODO:
+TODO: DONE : Testing code run fine, to be tested, checked
 
 
 Handle default_threshold = False case in 
@@ -14,6 +14,7 @@ import numpy
 from Utility import MADThreshold 
 from Utility import smoothArray
 import numpy as np
+
 '''
 This function takes 8 arguments:
 
@@ -26,8 +27,22 @@ This function takes 8 arguments:
 7. threshold: This is threshold value to consider if not default one.
 8. what_to_consider :
     1. Only positive slopes
-    0. Both type of slopes
+    0. Both type of slopes, positive as well as negative
     -1. Only negative slopes
+
+
+Note:
+
+When default_threshold = True
+    For the case of what_to_consider=1 and what_to_consider=-1, we have two different thresholds.
+    For what_to_consider = 1, we consider only postitive slope values and calculate threshold
+    For what_to_consider = -1, we consider only negative slope values and calculate threshold
+    For what_to_consider = 0, we take union of above of two results.
+    
+When default_threshold = False
+    For what_to_consider = 1, we consider only postitive slope values which are > given threshold
+    For what_to_consider = -1, we consider only negative slope values which are < given threshold
+    For what_to_consider = 0, we consider those slope values whose absolute value is > given threshold
 
 
 returns array of tuples as follows:
@@ -48,7 +63,6 @@ def slopeBasedDetection(series1,smoothed1,series2,smoothed2,next_val_to_consider
     negative_slopes = []
     i = 0
     while(i<(n-next_val_to_consider+1)):
-    #for i in range(0,n-next_val_to_consider+1):
         if((series2[i+next_val_to_consider-1] - series2[i]) == 0):
             i= i+ next_val_to_consider 
             continue
@@ -76,26 +90,55 @@ def slopeBasedDetection(series1,smoothed1,series2,smoothed2,next_val_to_consider
             (negative_threshold,_) = MADThreshold(temp)
         # print "Negative Threshold Value:" + str(negative_threshold)
     
-    positive_anomalous_pts = []
-    for i in range(0,len(positive_slopes)):
-        if(positive_slopes[i][2] > positive_threshold):
-            positive_anomalous_pts.append(positive_slopes[i])
-    
-    
-    negative_anomalous_pts = []
-    for i in range(0,len(negative_slopes)):
-        if(negative_slopes[i][2] < negative_threshold):
-            negative_anomalous_pts.append(negative_slopes[i])
-        
     if(what_to_consider == 1):
+        positive_anomalous_pts = []
+        if(default_threshold):
+            for i in range(0,len(positive_slopes)):
+                if(positive_slopes[i][2] > positive_threshold):
+                    positive_anomalous_pts.append(positive_slopes[i])
+        else:
+            for i in range(0,len(positive_slopes)):
+                if(positive_slopes[i][2] > threshold):
+                    positive_anomalous_pts.append(positive_slopes[i])
         return positive_anomalous_pts
     elif(what_to_consider == -1):
+        negative_anomalous_pts = []
+        if(default_threshold):
+            for i in range(0,len(negative_slopes)):
+                if(negative_slopes[i][2] < negative_threshold):
+                    negative_anomalous_pts.append(negative_slopes[i])
+        else:
+            for i in range(0,len(negative_slopes)):
+                if(negative_slopes[i][2] < threshold):
+                    negative_anomalous_pts.append(negative_slopes[i])
         return negative_anomalous_pts
     elif(what_to_consider == 0):
-        anomalous_pts = positive_anomalous_pts  + negative_anomalous_pts
-        # Sort array according to start of window
-        sorted(anomalous_pts, key=lambda x: x[0])    
-        return anomalous_pts
+        if(default_threshold):
+            positive_anomalous_pts = []
+            for i in range(0,len(positive_slopes)):
+                if(positive_slopes[i][2] > positive_threshold):
+                    positive_anomalous_pts.append(positive_slopes[i])
+            negative_anomalous_pts = []
+            for i in range(0,len(negative_slopes)):
+                if(negative_slopes[i][2] < negative_threshold):
+                    negative_anomalous_pts.append(negative_slopes[i])
+            anomalous_pts = positive_anomalous_pts  + negative_anomalous_pts
+            # Sort array according to start of window
+            sorted(anomalous_pts, key=lambda x: x[0])    
+            return anomalous_pts
+        else:
+            positive_anomalous_pts = []
+            for i in range(0,len(positive_slopes)):
+                if(positive_slopes[i][2] > threshold):
+                    positive_anomalous_pts.append(positive_slopes[i])
+            negative_anomalous_pts = []
+            for i in range(0,len(negative_slopes)):
+                if(abs(negative_slopes[i][2]) > threshold):
+                    negative_anomalous_pts.append(negative_slopes[i])
+            anomalous_pts = positive_anomalous_pts  + negative_anomalous_pts
+            # Sort array according to start of window
+            sorted(anomalous_pts, key=lambda x: x[0])    
+            return anomalous_pts
     pass
 
 '''
