@@ -24,7 +24,7 @@ import datetime
 from Utility import resultOfOneMethod
 from Utility import getDiffStatsOfNewsArticles
 from Utility import statsPrintHelperIntersect
-from Utility import statsPrintHelperUnion
+from Utility import statsPrintHelperUnion,statsPrintHelperAllCentersUnion
 
 '''
 This function takes 2 arguments:
@@ -303,6 +303,7 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
     
     print "Going for (RETAIL VS ARRIVAL) Intersect (Retail vs Retail Average) CENTER BY CENTER"
     # For each center
+    '''
     for i in range(0,5):
         statsPrintHelperIntersect(RvsA_anomalies_slope[i], RvsR_anomalies_slope[i], "Slope Based", i)
         statsPrintHelperIntersect(RvsA_anomalies_correlation[i], RvsR_anomalies_correlation[i], "Correlation Based", i)
@@ -310,10 +311,12 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         statsPrintHelperIntersect(RvsA_anomalies_graph_based[i], RvsR_anomalies_graph_based[i], "Graph Based", i)
         statsPrintHelperIntersect(RvsA_anomalies_without_H3[i], RvsR_anomalies_without_H3[i], "Intersection of Slope Based, Correlation based and linear regression", i)
         statsPrintHelperIntersect(RvsA_anomalies_with_H3[i], RvsR_anomalies_with_H3[i], "Intersection of Slope Based, Correlation based, graph based and linear regression", i)
+    '''
     print "END OF (RETAIL VS ARRIVAL) Intersect (Retail vs Retail Average) CENTER BY CENTER"
     
     print "Going for (RETAIL VS ARRIVAL) Union (Retail vs Retail Average) CENTER BY CENTER"
     # For each center
+    '''
     for i in range(0,5):
         statsPrintHelperUnion(RvsA_anomalies_slope[i], RvsR_anomalies_slope[i], "Slope Based", i)
         statsPrintHelperUnion(RvsA_anomalies_correlation[i], RvsR_anomalies_correlation[i], "Correlation Based", i)
@@ -322,8 +325,19 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         statsPrintHelperUnion(RvsA_anomalies_without_H3[i], RvsR_anomalies_without_H3[i], "Intersection of Slope Based, Correlation based and linear regression", i)
         statsPrintHelperUnion(RvsA_anomalies_with_H3[i], RvsR_anomalies_with_H3[i], "Intersection of Slope Based, Correlation based, graph based and linear regression", i)
     print "END OF (RETAIL VS ARRIVAL) Union (Retail vs Retail Average) CENTER BY CENTER"
+    '''
     
     # Time to combine all centers
+    # Take Union
+    print "Union of Retail vs Arrival"
+    statsPrintHelperAllCentersUnion(RvsA_anomalies_slope[0],RvsA_anomalies_slope[1],RvsA_anomalies_slope[2],RvsA_anomalies_slope[3],RvsA_anomalies_slope[4],"Slope Based")
+    statsPrintHelperAllCentersUnion(RvsA_anomalies_correlation[0],RvsA_anomalies_correlation[1],RvsA_anomalies_correlation[2],RvsA_anomalies_correlation[3],RvsA_anomalies_correlation[4],"Correlation Based")
+    statsPrintHelperAllCentersUnion(RvsA_anomalies_linear_regression[0],RvsA_anomalies_linear_regression[1],RvsA_anomalies_linear_regression[2],RvsA_anomalies_linear_regression[3],RvsA_anomalies_linear_regression[4],"Linear Regression")
+    statsPrintHelperAllCentersUnion(RvsA_anomalies_graph_based[0],RvsA_anomalies_graph_based[1],RvsA_anomalies_graph_based[2],RvsA_anomalies_graph_based[3],RvsA_anomalies_graph_based[4],"Graph based anomaly")
+    statsPrintHelperAllCentersUnion(RvsA_anomalies_without_H3[0],RvsA_anomalies_without_H3[1],RvsA_anomalies_without_H3[2],RvsA_anomalies_without_H3[3],RvsA_anomalies_without_H3[4],"3 methods")
+    statsPrintHelperAllCentersUnion(RvsA_anomalies_slope[0],RvsA_anomalies_slope[1],RvsA_anomalies_slope[2],RvsA_anomalies_slope[3],RvsA_anomalies_slope[4],"All 4 methods")
+    
+    # Intersection for all methods 
     
     
 hypothesisForCenter(5,"testingCSV/AhmedabadSILData.csv","testingCSV/BengaluruSILData.csv","testingCSV/MumbaiSILData.csv","testingCSV/PatnaSILData.csv","testingCSV/DelhiSILData.csv")

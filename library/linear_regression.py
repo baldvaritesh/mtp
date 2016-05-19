@@ -1,9 +1,9 @@
 '''
 
-TODO:
+TODO: DONE : TO BE CHECKED, TESTED (Testing code is working fine)
 
 
-Handle param for -1, take lower threshold in stead of upper
+Handle param for -1, take lower threshold instead of upper
 
 in linear_regression function
 
@@ -70,16 +70,36 @@ def linear_regression(x_series, y_series, param = 0, default_threshold = True, t
         elif(param == -1 and x<0):
             diff.append(temp)
     
+    results = []
     # Finding outliers
     if(default_threshold == True):
         diff_vals = [abs(x[4]) for x in diff]
-        (_,outVal)=  MADThreshold(diff_vals)
+        (lowerThreshold,upperThreshold) =  MADThreshold(diff_vals)
+        if(param == 1):
+            for i in range(0, len(diff)):
+                if(diff[i][4] > upperThreshold):
+                    results.append(diff[i])                    
+        elif(param == -1):
+            for i in range(0, len(diff)):
+                if(diff[i][4] < lowerThreshold):
+                    results.append(diff[i])  
+        elif(param == 0):
+            for i in range(0, len(diff)):
+                if(diff[i][4] < lowerThreshold or diff[i][4] > upperThreshold):
+                    results.append(diff[i]) 
     else:
-        outVal = threshold
-    results = []
-    for i in range(0,len(diff)):
-        if(abs(diff[i][4]) > outVal):
-            results.append(diff[i])
+        if(param == 1):
+            for i in range(0, len(diff)):
+                if(diff[i][4] > threshold):
+                    results.append(diff[i])
+        elif(param == -1):
+            for i in range(0, len(diff)):
+                if(diff[i][4] < threshold):
+                    results.append(diff[i])
+        elif(param == 0):
+            for i in range(0,len(diff)):
+                if(abs(diff[i][4]) > outVal):
+                    results.append(diff[i])
     return (results,regr)
 
 '''
