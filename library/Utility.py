@@ -684,6 +684,65 @@ def intersection(numOfResults, list1, resultOf1, list2, resultOf2, list3 = [], r
     return new_list_of_ranges
 
 '''
+To transform R Script CSV for MultiVariate Time series forecast method
+'''
+def csvTransform(filePath,startDate):
+    with open(filePath, 'rb') as csvfile:
+        csvReader = csv.reader(csvfile, delimiter=',')
+        rowCount=0
+        dtVal=startDate
+        st=""
+        output_file = open("/home/kapil/Desktop/mtp/library/testingCSV/Output.csv", "w")
+        percDiffArray=[]
+        for row in csvReader:
+            
+            if (rowCount==0):
+                rowCount=1
+                continue
+            if(float(row[5])==-1):
+                #print "hault"
+                break
+        
+            percDiff=  ((float(row[5])-float(row[1]))/float(row[1]))*100
+            percDiffArray.append(percDiff)
+        #Call MadThreshold
+        #print percDiff
+        (N,P) = MADThreshold(percDiffArray)
+		
+    with open(filePath, 'rb') as csvfile: 
+    	csvReader = csv.reader(csvfile, delimiter=',')  
+    	rowCount=0
+    	cnt=0
+    	for row in csvReader:
+			#print row
+			score=0
+			#print row
+			if (rowCount==0):
+				rowCount=1
+				continue
+			if(float(row[5])==-1):
+				#print "hault"
+				break
+			if(float(row[5])>float(row[3]) or float(row[5])<float(row[2])):
+				score= 1
+			percDiff=  ((float(row[5])-float(row[1]))/float(row[1]))*100
+		
+			if(percDiff>P or percDiff< N):
+				if(score==1):
+					score=3
+				else:
+					score=2
+				if(score== 3):
+					st= str(dtVal) +","+str(dtVal) +","+str(percDiff)+"\n"
+					#print st
+					cnt=cnt+1
+					output_file.write(st)
+			dtVal = dtVal + timedelta(days=1)
+    output_file.close()
+    #print cnt
+    print "N & P ::::::"+ str(N)+":::::::::"+str(P)
+
+'''
 
 Takes intersection of 2 lists of the form:
 (date, correlation, slope_based, linear_regression, graph_based, spike_detection, multiple_arima)
@@ -750,6 +809,7 @@ def getGBAResultsRvR(i, numOfPtsReqd):
     for i,line in enumerate(open(file)):
         line = line.strip()
         tokens = line.split(",")
+
         date = removeQuotes(tokens[3])
         value = float(removeQuotes(tokens[1]))
         rank = int(removeQuotes(tokens[2]))
@@ -836,3 +896,7 @@ def getDiffStatsOfNewsArticles(array):
     # Sort by first element of tuple
     result = sorted(result, key=lambda x: x[0])
     return result 
+    
+#dt= datetime.strptime('2010-01-01' , '%Y-%m-%d')
+#csvTransform("/home/reshma/Desktop/Arrivalresults.csv",dt)
+#csvTransform("/home/kapil/Desktop/mtp/library/testingCSV/Retailresults.csv",dt)

@@ -77,6 +77,7 @@ CREATE TABLE analysis(
 article_id VARCHAR(100),
 place VARCHAR(200),
 reason VARCHAR(200),
+comment VARCHAR(500),
 FOREIGN KEY (article_id) REFERENCES ArticleMetaData(article_hash_url)
 );
 
