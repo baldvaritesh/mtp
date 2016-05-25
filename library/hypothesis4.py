@@ -26,6 +26,8 @@ from Utility import getDiffStatsOfNewsArticles
 from Utility import statsPrintHelperIntersect
 from Utility import statsPrintHelperUnion,statsPrintHelperAllCentersUnion
 
+from callingGraphBasedAnomaly import graphBasedAnomalyMain
+
 '''
 This function takes 2 arguments:
 
@@ -80,6 +82,9 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         temp4  = np.array(temp4).astype(np.float)
         temp4 = zip(temp1,temp4)
         wholesaleList.append(temp4)
+    
+    # graphBasedAnomalyMain(retailList,1,50)
+    # print "DONE"
     
     # Find average of all retail prices
     avgRetailTimeSeries = findAverageTimeSeries(retailListWithNoDates)

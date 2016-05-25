@@ -1,6 +1,6 @@
 import subprocess
 from datetime import datetime
-from Utility import csvTransform
+from Utility import csvTransform,getColumnFromListOfTuples, removeQuotes
 
 
 '''
@@ -58,12 +58,12 @@ def generateCSVsForGraphBasedAnomaly(lists, dateIndex, seriesIndex):
         # Take out vals from it and print it to csv file
         name = 'input'+ str(i) + 'GBA.csv'
         fileWriter = open(name,'w')
-        for Tuple in list[i]:
-            fileWriter.write(Tuple[seriesIndex]+ "\n")
+        for Tuple in lists[i]:
+            fileWriter.write(str(Tuple[seriesIndex]) + "\n")
         fileWriter.close()
         fileNames.append(name)
     # dates = [ datetime.strptime(date, "%Y-%m-%d") for date in dateInString]
-    return (dates,fileNames)
+    return (dateInString,fileNames)
 
 '''
 This function takes 3 arguments:
@@ -79,7 +79,7 @@ reurns list of tuples of the form:
 '''
 def getAnomalies(dates,resultFile, numOfPtsReqd):    
     results = []
-    for i,line in enumerate(open(file)):
+    for i,line in enumerate(open(resultFile)):
         if(i==0):
             continue
         line = line.strip()
@@ -98,7 +98,7 @@ def getAnomalies(dates,resultFile, numOfPtsReqd):
     
     # Sort by date
     results = sorted(results, key=lambda x: x[0])    
-    results = [ (datetime.strptime(a, "%Y-%m-%d"),datetime.strptime(a, "%Y-%m-%d"),b) for (a,b,c) in results]    
+    results = [ (datetime.strptime(a, "%Y-%m-%d"),datetime.strptime(a, "%Y-%m-%d"),b) for (a,b,c) in results]
     return results
 
 '''
