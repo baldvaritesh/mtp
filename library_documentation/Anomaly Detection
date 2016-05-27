@@ -1,0 +1,32 @@
+\documentclass[a4paper,10pt]{report}
+%\documentclass[a4paper,10pt]{scrartcl}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{blindtext}
+\usepackage[utf8]{inputenc}
+\usepackage{commath}
+\usepackage[utf8]{inputenc}
+
+\title{Anomaly Detection Library}
+\author{Kapil Thakkar and Reshma Kumari}
+\date{27th May, 2016}
+
+\pdfinfo{%
+  /Title    (Anomaly Detection Library)
+  /Author   (Kapil Thakkar and Reshma Kumari)
+  /Creator  (Kapil Thakkar and Reshma Kumari)
+  /Producer (Kapil Thakkar and Reshma Kumari)
+  /Subject  (Major Project)
+  /Keywords (Anomaly Detection)
+}
+
+\begin{document}
+\maketitle
+
+\tableofcontents{}
+ 
+\include{Chapter_1} 
+ 
+
+
+\end{document}
