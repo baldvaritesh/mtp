@@ -1,6 +1,7 @@
 \documentclass[a4paper,10pt]{report}
 %\documentclass[a4paper,10pt]{scrartcl}
-
+\usepackage{array}
+\usepackage{booktabs}
 \usepackage{blindtext}
 \usepackage[utf8]{inputenc}
 \usepackage{commath}
@@ -23,93 +24,9 @@
 \maketitle
 
 \tableofcontents{}
+
+\include{Chapter_1} 
  
-\chapter{Window Based Correlation}
 
-\section{Introduction}
-
-This technique is basically applied on two time-series. Let's say we have two 
-time series as series1 and series2. So, in this method, we first find 
-correlation at various lags between these two time series. User can specify 
-minimum and maximum lag to consider. So, for all those values, we find 
-correlation values. 
-
-After finding correlation values at all lags, we consider that lag at which 
-correlation value is higher among all previously calulated correlation values 
-at all lags. Let's say that lag be ``x''. So, depending upon that ``x'', we 
-shift series1 or series2. If ``x'' is positive, we move series2 by ``x'' units 
-and if it is negative than we shift series1 by \abs{x} units.
-
-Now, we are ready to apply window correlation. Take window value,``w'' as 
-input. First window will be from 1st element to w'th elementof both the time 
-series after aligning by lag ``x''. Find correlation for this window between 
-two time-series and save it in an array. Now, slide window by one element and 
-calculate correlation value again and so on. Now, we have correlation values at 
-multiple windows.
-
-Now, let's say both the series should have been positively correlated. So, what 
-we do is, we choose threshold by MAD test if not provided to us, and find all 
-correlation values which are below that threshold and report all those windows 
-as anomaly.
-
-\section{Related Functions}
-
-\subsection{correlation(arr1, arr2, maxlag, pos, neg)}
-
-This function calculates correlation between arr1 and arr2 at all possible lags 
-between -maxlag to +maxlag, as specified by pos and neg parameters.
-
-\begin{itemize}
- \item Input Parameters
- 
- \begin{enumerate}
-  \item arr1 \textit{(list)} : Input series 1 as a list of float values
-  \item arr2 \textit{(list)} : Input series 2 as a list of float values
-  \item maxlag \textit{(int)} : maximum (maxlag) and minimum (-maxlag) lag to 
-consider while calculating correlation betweem arr1 and arr2
-  \item pos \textit{(int)} : To consider positive lag or not, i.e. 1 to maxlag
-  \item neg \textit{(int)} : To consider negative lag or not, i.e. -maxlag to -1
- \end{enumerate}
-
- \item Output \textit{(list)} : \\
-  Returns list of tuples of the form \\
-  \center{(lag, correlation value at this lag)}
- 
-\end{itemize}
-
-\subsection{getMaxCorr(arar1,positive_correlation)}
-
-This function takes list of tuples of the form (lag, correlation value at this 
-lag) as  input. Returns lag value at which correlation value is maximum if 
-positive_correlation is True, and returns lag at which correlation value is 
-minimum if positive_correlation is False. \\
-\\
-Basically, if both the series are positively correlated than we will be 
-interested in maximum positive correlation or if both series are negatively 
-correlated than we will be interested in minimum negative correlation, which is 
-specified by positive_correlation parameter.
-
-\begin{itemize}
- \item Input Parameters
- 
- \begin{enumerate}
-  \item arr1 \textit{(list)} : list of tuples of the form \\
-  \center{(lag, correlation value at this lag)}
-  \item positive_correlation \textit{(boolean, ``True'' or ``False'')} : 
-      \begin{itemize}
-       \item True: If value of this parameter is True than it will return lag at which correlation value if maximum (positive)
-       \item False: If value of this parameter is False than it will return lag at which correlation value if minimum (negative)
-      \end{itemize}
-
- \end{enumerate}
-
- \item Output \textit{(list)} : \\
-  Returns list of tuples of the form \\
-  \center{(lag, correlation value at this lag)}
- 
-\end{itemize}
-
-
-\section{Description}
 
 \end{document}

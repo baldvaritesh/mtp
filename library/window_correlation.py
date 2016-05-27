@@ -220,7 +220,7 @@ def WindowCorrelationWithConstantLag(arr1, arr2, window_size=15,maxlag=15, posit
     return (lag,result2)
 
 '''
-This function takes 7 arguments:
+This function takes 9 arguments:
 arr1: Series 1 (date, value)
 arr2: Series 2 (date, value)
 maxlag: maximum lag to consider
@@ -228,12 +228,13 @@ positive_correlation: true if we are looking for maximum positive correlation, e
 pos: to take potitive lag or not, i.e. 1 to maxlag
 neg: to take negative lag or not, i.e. -maxlag to -1
 window_size: window size to consider while calculating sliding window correlation
-
+default_threshold: whether to use default threshold or not. If True, default threshold will be used using MAD test.
+threshold: if default_threshold is False, than this user provided threshold will be used.
 Returns array of tuples of the form (start_date,end_date,correlation_value)
 
 Requirements: Length of both the series should be equal
 '''
-def anomaliesFromWindowCorrelationWithConstantlag(arr1, arr2, window_size=15,maxlag=15, positive_correlation=True, pos=1, neg=1):
+def anomaliesFromWindowCorrelationWithConstantlag(arr1, arr2, window_size=15,maxlag=15, positive_correlation=True, pos=1, neg=1, default_threshold = True, threshold = 0):
     arr1_data = [x[1] for x in arr1]
     arr2_data = [x[1] for x in arr2]
     arr = WindowCorrelationWithConstantLag(arr1_data,arr2_data,window_size,maxlag,positive_correlation,pos,neg)
@@ -243,8 +244,10 @@ def anomaliesFromWindowCorrelationWithConstantlag(arr1, arr2, window_size=15,max
     else:
         array_to_consider = arr2
     datesOfAnomalies = []
-
-    (lower_thresh,upper_thrash)= MADThreshold(arr[1])
+    if(default_threshold):
+        (lower_thresh,upper_thrash)= MADThreshold(arr[1])
+    else:
+        lower_thresh = upper_thrash = threshold
     for i in range(0,len(arr[1])):
         if(positive_correlation):
             if(lower_thresh > arr[1][i]):

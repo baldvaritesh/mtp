@@ -4,4 +4,6 @@
 \contentsline {subsection}{\numberline {1.2.1}correlation(arr1, arr2, maxlag, pos, neg)}{2}
 \contentsline {subsection}{\numberline {1.2.2}getMaxCorr(arar1,positive\_correlation)}{3}
 \contentsline {subsection}{\numberline {1.2.3}correlationAtLag(series1, series2, lag, window\_size)}{3}
-\contentsline {section}{\numberline {1.3}Description}{3}
+\contentsline {subsection}{\numberline {1.2.4}WindowCorrelationWithConstantLag(arr1, arr2, window\_size,maxlag, positive\_correlation, pos, neg)}{4}
+\contentsline {subsection}{\numberline {1.2.5}anomaliesFromWindowCorrelationWithConstantlag(arr1, arr2, window\_size=15,maxlag=15, positive\_correlation=True, pos=1, neg=1, default\_threshold = True, threshold = 0):}{4}
+\contentsline {section}{\numberline {1.3}Description}{5}

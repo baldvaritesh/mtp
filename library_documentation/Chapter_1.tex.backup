@@ -17,7 +17,8 @@ and if it is negative than we shift series1 by \abs{x} units.
 Now, we are ready to apply window correlation. Take window value,``w'' as 
 input. First window will be from 1st element to w'th elementof both the time 
 series after aligning by lag ``x''. Find correlation for this window between 
-two time-series and save it in an array. Now, slide window by one element and 
+two time-series and save it in an array. Now, slide window by ``w'' elements 
+and 
 calculate correlation value again and so on. Now, we have correlation values at 
 multiple windows.
 
@@ -41,8 +42,10 @@ between -maxlag to +maxlag, as specified by pos and neg parameters.
   \item arr2 \textit{(list)} : Input series 2 as a list of float values
   \item maxlag \textit{(int)} : maximum (maxlag) and minimum (-maxlag) lag to 
 consider while calculating correlation betweem arr1 and arr2
-  \item pos \textit{(int)} : To consider positive lag or not, i.e. 1 to maxlag
-  \item neg \textit{(int)} : To consider negative lag or not, i.e. -maxlag to -1
+  \item pos \textit{(int, 1 or 0)} : To consider positive lag or not, i.e. 1 to 
+maxlag
+  \item neg \textit{(int, 1 or 0)} : To consider negative lag or not, i.e. 
+-maxlag to -1
  \end{enumerate}
 
  \item Output \textit{(list)} : \\
@@ -67,23 +70,177 @@ specified by positive\_correlation parameter.
  \item Input Parameters
  
  \begin{enumerate}
-  \item arr1 \textit{(list)} : list of tuples of the form \\ (lag, correlation value at this lag) \\ i.e. correlation values at various lags
+  \item arr1 \textit{(list)} : list of tuples of the form \\ (lag, correlation 
+value at this lag) \\ i.e. correlation values at various lags
   \item positive\_correlation \textit{(boolean, ``True'' or ``False'')} : 
       \begin{itemize}
-       \item True: If value of this parameter is True than it will return lag at which correlation value if maximum (positive)
-       \item False: If value of this parameter is False than it will return lag at which correlation value if minimum (negative)
+       \item True: If value of this parameter is True than it will return lag 
+at which correlation value if maximum (positive)
+       \item False: If value of this parameter is False than it will return lag 
+at which correlation value if minimum (negative)
       \end{itemize}
 
  \end{enumerate}
 
  \item Output \textit{(Tuple)} : \\
-  returns single tuple of the form (lag,correlation value at this lag), i.e. lag at which optimum correlation value is found along with correlation value.
+  returns single tuple of the form (lag,correlation value at this lag), i.e. 
+lag at which optimum correlation value is found along with correlation value.
  
 \end{itemize}
 
 
 \subsection{correlationAtLag(series1, series2, lag, window\_size)}
 
-This function fisrt aligns two series by given lag. If lag is positive than it shifts start of series2 else start of series1. 
+This function fisrt aligns two series by given lag. If lag is positive than it 
+shifts start of series2 else start of series1. After aligning both the series 
+according to lag, this function calculates correlation between both series at 
+all windows. 
+
+window\_size states size of the window. So, we will start with first window 
+taking first window\_size elements from each series and will calculate 
+correlation. We will save this correlation value in list and will slide to next 
+window. Next window will start after window\_size elements. In such a way, we 
+calculate, correlation at all windows and return the list of correlation values.
+
+
+\begin{itemize}
+ \item Input Parameters
+ 
+ \begin{enumerate}
+  \item series1 \textit{(list)} : Input series 1 as a list of float values
+  \item series2 \textit{(list)} : Input series 2 as a list of float values
+  \item lag \textit{(int)} : lag at which series needs to be adjusted as 
+explained above
+  \item window\_size \textit{(int)} : window size to be considered
+ \end{enumerate}
+
+ \item Output \textit{(list)} : \\
+  Returns list of correlation values (of float type) for all windows calculated 
+at given lag \\
+ 
+\end{itemize}
+
+
+\subsection{WindowCorrelationWithConstantLag(arr1, arr2, window\_size,maxlag, 
+positive\_correlation, pos, neg)}
+
+This is sort of driver function, which will call above 3 functions. This 
+function will first get lag at which series needs to be adjusted. Than using 
+this lag, it will calculate correlation values at all windows and will return 
+it.
+
+\begin{itemize}
+ \item Input Parameters
+ 
+ \begin{enumerate}
+  \item arr1 \textit{(list)} : Input series 1 as a list of float values
+  \item arr2 \textit{(list)} : Input series 2 as a list of float values
+  \item window\_size \textit{(int)} : window size to be considered while 
+calculating window correlation
+  \item maxlag \textit{(int)} : maximum (maxlag) and minimum (-maxlag) lag to 
+consider while calculating correlation betweem arr1 and arr2, to align both the 
+series
+  \item positive\_correlation \textit{(boolean, ``True'' or ``False'')} : 
+      \begin{itemize}
+       \item True: This suggest that both the series are positively correlated
+       \item False: This suggest that both the series are negatively correlated
+      \end{itemize}
+      
+  \item pos \textit{(int, 1 or 0)} : If value of this parameter is True than we 
+will consider positive values for lag, i.e. 1 to +maxlag to align both the 
+series initially
+  \item neg \textit{(int, 1 or 0)} : If value of this parameter is True than we 
+will consider negative values for lag, i.e. -maxlag to -1 to align both the 
+series initially
+  
+ \end{enumerate}
+
+ \item Output \textit{(list)} : \\
+  List of tuples of the form (lag,array)
+Where lag is lag value for which whole series is shifted and then at that lag, 
+we have calculated correlation for all window. Correlation value for all 
+windows is stored in array.
+ 
+\end{itemize}
+
+\subsection{anomaliesFromWindowCorrelationWithConstantlag(arr1, arr2, 
+window\_size=15,maxlag=15, positive\_correlation=True, pos=1, neg=1, 
+default\_threshold = True, threshold = 0):}
+
+
+This is main function of this method. This is driver of whole method. Using 
+previously stated methods, it will first gather correlation values at different 
+windows. Than depending upon which type of threshold is to be used, it will 
+filter out anomalies. If default threshold is to be used, than it will be 
+caulated using MAD test on the correlation values at each window, else 
+threshold provided by user will be used. 
+
+Correlation values not satisying threshold will be reported along with the date 
+range of that window.
+
+
+\begin{itemize}
+ \item Input Parameters
+ 
+ \begin{enumerate}
+  \item arr1 \textit{(list)} : Input series 1 as a list of tuples of the from 
+(date,value)
+  \item arr2 \textit{(list)} : Input series 2 as a list of tuples of the from 
+(date,value)
+  \item window\_size \textit{(int)} : window size to be considered while 
+calculating window correlation
+  \item maxlag \textit{(int)} : maximum (maxlag) and minimum (-maxlag) lag to 
+consider while calculating correlation betweem arr1 and arr2, to align both the 
+series
+  \item positive\_correlation \textit{(boolean, ``True'' or ``False'')} : 
+      \begin{itemize}
+       \item True: This suggest that both the series are positively correlated
+       \item False: This suggest that both the series are negatively correlated
+      \end{itemize}
+      
+  \item pos \textit{(int, 1 or 0)} : If value of this parameter is True than we 
+will consider positive values for lag, i.e. 1 to +maxlag to align both the 
+series initially
+  \item neg \textit{(int, 1 or 0)} : If value of this parameter is True than we 
+will consider negative values for lag, i.e. -maxlag to -1 to align both the 
+series initially
+  \item default\_threshold \textit{(boolean, ``True'' or ``False'')} : whether 
+to use default threshold or not. If True, default threshold will be used using 
+MAD test on calculated correlation values for all windows.
+  \item threshold \textit{(float)} : if default\_threshold is False, than this 
+user provided threshold will be used.
+ \end{enumerate}
+
+ \item Output \textit{(list)} : \\
+  This function filter out anomalies and returns them. This function returns
+  List of tuples of the form \\ (start\_date,end\_date,correlation\_value), \\
+  where (start\_date, end\_date) specifies range of the window and 
+correlation\_value if value of correlation of that window
+  
+\end{itemize}
 
 \section{Description}
+
+
+Putting all together, here is the summary:\\
+\\
+Function ``anomaliesFromWindowCorrelationWithConstantlag`` is the main driver. 
+Main inputs are 2 time series, which are list of tuples of the form 
+(date,value).
+
+This function calls ''WindowCorrelationWithConstantLag`` and gets the 
+correlation values at all windows and filters out anomalies and returns them in 
+the format of (start\_date,end\_date,correlation\_value),
+  where (start\_date, end\_date) specifies range of the window and 
+correlation\_value if value of correlation of that window.
+
+
+Function ''WindowCorrelationWithConstantLag``, first makes use of 
+''correlation`` function, to calculate correlation values at all lags to find 
+out at which lag it needs to be align. Result of ''correlation`` function is 
+passed to ''getMaxCorr`` function. Which will return lag at which optimum value 
+of correlation is present. This output will be used by ''correlationAtLag`` 
+function, to caluclate correlation at all windows after aligning both series by 
+input lag. 
+
+
