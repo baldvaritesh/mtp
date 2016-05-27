@@ -1,19 +1,20 @@
 require(forecast)
 require(vars)
 
-MultivariateAnomaly <- function(fileName,hd= FALSE, paramCount,fPointsNeeded) {
+MultivariateAnomaly <- function(fileName,hd= FALSE, paramCount,fileStart) {
 var.data= read.csv(file = fileName,header=hd)
 head(var.data)
 
 objTimeSeries <- list()
 for (i in 1:paramCount) {
-objTimeSeries[[i]] <- ts(var.data[i+1])
+objTimeSeries[[i]] <- ts(var.data[i])
 }
 
 percModelPoints <- 0.60
-noOfPredictions <- fPointsNeeded
+
 noOfModelPoints <- trunc(percModelPoints*length(objTimeSeries[[1]]))
 noOfRemPoints <- length(objTimeSeries[[1]])- noOfModelPoints
+noOfPredictions <- noOfRemPoints
 
 if(noOfRemPoints< noOfPredictions)
 {
@@ -67,7 +68,7 @@ p <- predict(var, n.ahead=noOfPredictions, ci=0.95)
 
 for(i in 1:length(p$fcst))
 {
-strName <- paste("/home/kapil/Desktop/mtp/library/testingCSV/param",i,".csv",sep="")
+strName <- paste("/home/kapil/Desktop/mtp/library/testingCSV/",fileStart,i,".csv",sep="")
 print(strName)
 objForecast <- as.data.frame(p$fcst[i])
 objForecast[5] <- window(objTimeSeries[[i]],start = noOfModelPoints, end = noOfModelPoints+noOfPredictions-1)
@@ -80,7 +81,7 @@ write.csv(objForecast,strName,row.names=TRUE)
 myArgs <- commandArgs(trailingOnly = TRUE)
 myArgs[2]
 if(myArgs[2]=='TRUE'){
-	x <- MultivariateAnomaly(myArgs[1],TRUE,as.integer(myArgs[3]),as.integer(myArgs[4]))
+	x <- MultivariateAnomaly(myArgs[1],TRUE,as.integer(myArgs[3]),myAgrs[4])
 } else {
-	x <- MultivariateAnomaly(myArgs[1],FALSE,as.integer(myArgs[3]),as.integer(myArgs[4]))
+	x <- MultivariateAnomaly(myArgs[1],FALSE,as.integer(myArgs[3]),myArgs[4])
 }

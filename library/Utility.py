@@ -59,12 +59,12 @@ def fetchNewsFor5Centers(resultsOfSystem, intervalToConsider=5):
 	for row_resultsOfSystem in resultsOfSystem:
 		date = row_resultsOfSystem[0].date()
 		
-		start_date = date - timedelta(days=-1*intervalToConsider)
+		start_date = date - timedelta(days=intervalToConsider)
 		start_date = start_date.strftime('%Y/%m/%d')
 		end_date = date + timedelta(days=intervalToConsider)
 		end_date = end_date.strftime('%Y/%m/%d')
 		
-		query = "select publish_date, name, source_url, article_hash_url from articlemetadata amd, newssource ns where amd.source_id = ns.id and publish_date >= '"+start_date+"' and publish_date<= '"+end_date+"' and article_hash_url in (select distinct(article_id) from alchemyentity where entity iLike 'Ahmedabad' or entity iLike 'Bengaluru' or entity iLike 'Mumbai' or entity iLike 'Patna' or entity iLike 'Delhi'  )"
+		query = "select publish_date, name, source_url, article_hash_url, an.reason, an.comment, an.days from articlemetadata amd, newssource ns, analysis an where amd.source_id = ns.id and publish_date >= '"+start_date+"' and publish_date<= '"+end_date+"' and article_hash_url = an.article_id and article_hash_url in (select distinct(article_id) from analysis where place iLike 'Ahmedabad' or place iLike 'Bengaluru' or place iLike 'Mumbai' or place iLike 'Patna' or place iLike 'Delhi' or place iLike 'India' )"
 		cur.execute(query)
 		queryResult = cur.fetchall()
 		
@@ -72,14 +72,13 @@ def fetchNewsFor5Centers(resultsOfSystem, intervalToConsider=5):
 		for row_queryResult in queryResult:			
 			# Find All keyword corresponding to that article using : article_hash_url
 			query = "select keyword from alchemykeyword where article_id = '" + row_queryResult[3] + "'"
-			cur.execute(query)
 			keywordQueryResult = cur.fetchall()
 			smallTuple = (row_queryResult[0], row_queryResult[1], row_queryResult[2], (row_queryResult[0] - date).days, keywordQueryResult)
 			resultOfThisDate.append(smallTuple)
 		result[date] = resultOfThisDate
 		
 	# Fetch all dates of news articles corresponding to this center
-	query = "select distinct publish_date from articlemetadata where article_hash_url in (select distinct(article_id) from alchemyentity where entity iLike 'Ahmedabad' or entity iLike 'Bengaluru' or entity iLike 'Mumbai' or entity iLike 'Patna' or entity iLike 'Delhi')  order by publish_date"
+	query = "select publish_date, an.reason, an.comment, an.days from articlemetadata, analysis an where article_hash_url = an.article_id and article_hash_url in (select distinct(article_id) from analysis where place iLike 'Ahmedabad' or place iLike 'Bengaluru' or place iLike 'Mumbai' or place iLike 'Patna' or place iLike 'Delhi' or place iLike 'India' )  order by publish_date"
 	cur.execute(query)
 	allArticlesQueryResult = cur.fetchall()
 	
@@ -92,8 +91,17 @@ def fetchNewsFor5Centers(resultsOfSystem, intervalToConsider=5):
 			resultList.append((date,a,b,c,d,e))
 	# Sort by anomaly date
 	resultList = sorted(resultList, key=lambda x: x[0])
+	# Filter resultList for duplicates
+	filteredResult = []
+	newsSet = set()
+	for Tuple in resultList:
+		if(str(Tuple[1]) + str(Tuple[2]) + str(Tuple[3]) in newsSet):
+			continue
+		else:
+			filteredResult.append(Tuple)
+			newsSet.add(str(Tuple[1]) + str(Tuple[2]) + str(Tuple[3]))
 	
-	return(resultList, getColumnFromListOfTuples(allArticlesQueryResult,0))
+	return(filteredResult, allArticlesQueryResult)
 
 
 def statsPrintHelperAllCentersUnion(result1,result2, result3, result4, result5, methodName):
@@ -126,7 +134,7 @@ def statsPrintHelperAllCentersUnion(result1,result2, result3, result4, result5, 
     print "Total news articles found related to anomaly reported: " + str(len(news_article_result))
     print "Total news articles present for this center " + str(len(all_articles_intersect))
     print "How far is news articles from reported anomalies? "
-    print getDiffStatsOfNewsArticles(news_article_result)
+    print getDiffStatsOfNewsArticles(news_article_result,all_articles_intersect)
     print "**********"
 
 
@@ -138,13 +146,13 @@ This function help to print stats
 def statsPrintHelperIntersect(result1, result2, methodName, centerID):
     intersect = intersectionOfFinalResults(result1,result2)
     (intersect_news_article_result,all_articles_intersect) = fetchNewsForCenter(intersect, centerID)
-    print "STATS FOR CENTER:" + str(centerID)
+    print "STATS FOR CENTER:" + str(placeMapping(centerID))
     print "For Method : " + methodName
     print "Total anomalies reported: " + str(len(intersect))
     print "Total news articles found related to anomaly reported: " + str(len(intersect_news_article_result))
     print "Total news articles present for this center " + str(len(all_articles_intersect))
     print "How far is news articles from reported anomalies? "
-    print getDiffStatsOfNewsArticles(intersect_news_article_result)
+    print getDiffStatsOfNewsArticles(intersect_news_article_result,all_articles_intersect)
     print "**********"
     pass
 
@@ -156,13 +164,13 @@ This function help to print stats
 def statsPrintHelperUnion(result1, result2, methodName, centerID):
     intersect = unionOfFinalResults(result1,result2)
     (intersect_news_article_result,all_articles_intersect) = fetchNewsForCenter(intersect, centerID)
-    print "STATS FOR CENTER:" + str(centerID)
+    print "STATS FOR CENTER:" + str(placeMapping(centerID))
     print "For Method : " + methodName
     print "Total anomalies reported: " + str(len(intersect))
     print "Total news articles found related to anomaly reported: " + str(len(intersect_news_article_result))
     print "Total news articles present for this center " + str(len(all_articles_intersect))
     print "How far is news articles from reported anomalies? "
-    print getDiffStatsOfNewsArticles(intersect_news_article_result)
+    print getDiffStatsOfNewsArticles(intersect_news_article_result,all_articles_intersect)
     print "**********"
     pass
 
@@ -230,17 +238,17 @@ def fetchNewsForCenter(resultsOfSystem, centerNumber, intervalToConsider=5):
 	for row_resultsOfSystem in resultsOfSystem:
 		date = row_resultsOfSystem[0].date()
 		
-		start_date = date - timedelta(days=-1*intervalToConsider)
+		start_date = date - timedelta(days=intervalToConsider)
 		start_date = start_date.strftime('%Y/%m/%d')
 		end_date = date + timedelta(days=intervalToConsider)
 		end_date = end_date.strftime('%Y/%m/%d')
-		
-		query = "select publish_date, name, source_url, article_hash_url from articlemetadata amd, newssource ns where amd.source_id = ns.id and publish_date >= '"+start_date+"' and publish_date<= '"+end_date+"' and article_hash_url in (select distinct(article_id) from alchemyentity where entity iLike '"+center+"' )"
+		query = "select publish_date, name, source_url, article_hash_url, an.reason, an.comment, an.days from articlemetadata amd, newssource ns, analysis an where amd.source_id = ns.id and publish_date >= '"+start_date+"' and publish_date<= '"+end_date+"' and article_hash_url = an.article_id and article_hash_url in (select distinct(article_id) from analysis where place iLike '"+center+"' or place iLike 'india' )"
+
 		cur.execute(query)
 		queryResult = cur.fetchall()
 		
 		resultOfThisDate = []
-		for row_queryResult in queryResult:			
+		for row_queryResult in queryResult:		
 			# Find All keyword corresponding to that article using : article_hash_url
 			query = "select keyword from alchemykeyword where article_id = '" + row_queryResult[3] + "'"
 			cur.execute(query)
@@ -250,7 +258,7 @@ def fetchNewsForCenter(resultsOfSystem, centerNumber, intervalToConsider=5):
 		result[date] = resultOfThisDate
 		
 	# Fetch all dates of news articles corresponding to this center
-	query = "select distinct publish_date from articlemetadata where article_hash_url in (select distinct(article_id) from alchemyentity where entity iLike '"+center+"')  order by publish_date"
+	query = "select publish_date,  an.reason, an.comment, an.days  from articlemetadata, analysis an where  article_hash_url = an.article_id and article_hash_url in (select distinct(article_id) from analysis where place iLike '"+center+"' or place iLike 'india' )  order by publish_date"
 	cur.execute(query)
 	allArticlesQueryResult = cur.fetchall()
 	
@@ -263,8 +271,17 @@ def fetchNewsForCenter(resultsOfSystem, centerNumber, intervalToConsider=5):
 			resultList.append((date,a,b,c,d,e))
 	# Sort by anomaly date
 	resultList = sorted(resultList, key=lambda x: x[0])
+	# Filter resultList for duplicates
+	filteredResult = []
+	newsSet = set()
+	for Tuple in resultList:
+		if(str(Tuple[1]) + str(Tuple[2]) + str(Tuple[3]) in newsSet):
+			continue
+		else:
+			filteredResult.append(Tuple)
+			newsSet.add(str(Tuple[1]) + str(Tuple[2]) + str(Tuple[3]))
 	
-	return(resultList, getColumnFromListOfTuples(allArticlesQueryResult,0))
+	return(filteredResult, allArticlesQueryResult)
 
 
 '''
@@ -355,6 +372,14 @@ def plotGraphForHypothesis(original,average,list1, list2, total_news_articles):
 		ax.axvspan(row, row + timedelta(days=1), color='c', alpha=0.5, lw=0)
 	plt.show()
 
+def writeToCSV(lstData,fileName):
+	with open(fileName,'w') as out:
+		csv_out=csv.writer(out)
+		for row in lstData:
+			csv_out.writerow(row)
+
+def concateLists(lstData):
+	return zip(*lstData)
 
 '''
 This function removes nan from the list.
@@ -690,9 +715,7 @@ def csvTransform(filePath,startDate):
     with open(filePath, 'rb') as csvfile:
         csvReader = csv.reader(csvfile, delimiter=',')
         rowCount=0
-        dtVal=startDate
-        st=""
-        output_file = open("/home/kapil/Desktop/mtp/library/testingCSV/Output.csv", "w")
+        dtVal=datetime.strptime(startDate, '%Y-%m-%d')
         percDiffArray=[]
         for row in csvReader:
             
@@ -708,7 +731,8 @@ def csvTransform(filePath,startDate):
         #Call MadThreshold
         #print percDiff
         (N,P) = MADThreshold(percDiffArray)
-		
+	
+    outputList=[]
     with open(filePath, 'rb') as csvfile: 
     	csvReader = csv.reader(csvfile, delimiter=',')  
     	rowCount=0
@@ -733,15 +757,14 @@ def csvTransform(filePath,startDate):
 				else:
 					score=2
 				if(score== 3):
-					st= str(dtVal) +","+str(dtVal) +","+str(percDiff)+"\n"
+					st= (dtVal, dtVal, percDiff)
 					#print st
 					cnt=cnt+1
-					output_file.write(st)
+					outputList.append(st)
 			dtVal = dtVal + timedelta(days=1)
-    output_file.close()
     #print cnt
     print "N & P ::::::"+ str(N)+":::::::::"+str(P)
-
+    return outputList
 '''
 
 Takes intersection of 2 lists of the form:
@@ -880,23 +903,57 @@ returns array of tuples of the following form:
 
 '''
 
-def getDiffStatsOfNewsArticles(array):
-    bins = dict()
-    for row in array:
-        if(row[4] in bins):
-            bins[row[4]] = bins[row[4]] + 1
-        else:
-            bins[row[4]] = 1
-    
-    result = []
-    
-    for key in bins:
-        result.append((key,bins[key]))
-    
-    # Sort by first element of tuple
-    result = sorted(result, key=lambda x: x[0])
-    return result 
-    
+def getDiffStatsOfNewsArticles(array, array2):
+	# First let's return year by year result
+	news_present = dict()
+	news_matched_with_system = dict()
+	
+	for row in array2:
+		if(row[0].year in news_present):
+			news_present[row[0].year] = news_present[row[0].year] + 1
+		else:
+			news_present[row[0].year] = 1
+			
+	for row in array:
+		if(row[0].year in news_matched_with_system):
+			news_matched_with_system[row[0].year] = news_matched_with_system[row[0].year] + 1
+		else:
+			news_matched_with_system[row[0].year] = 1
+	
+	news_present_array = []
+	news_matched_with_system_array = []
+	
+	for key in news_present:
+		news_present_array.append((key,news_present[key]))
+	
+	for key in news_matched_with_system:
+		news_matched_with_system_array.append((key,news_matched_with_system[key]))
+	
+	news_present_array = sorted(news_present_array, key=lambda x: x[0])
+	news_matched_with_system_array = sorted(news_matched_with_system_array, key=lambda x: x[0])
+	
+	print "News Present in Database : "
+	for row in news_present_array:
+		print row
+	print "News matched with our system: "
+	for row in news_matched_with_system_array:
+		print row
+		
+	bins = dict()
+	for row in array:
+		if(row[4] in bins):
+			bins[row[4]] = bins[row[4]] + 1
+		else:
+			bins[row[4]] = 1
+			
+	result = []
+	for key in bins:
+		result.append((key,bins[key]))
+		
+	# Sort by first element of tuple
+	result = sorted(result, key=lambda x: x[0])
+	return result 
+
 #dt= datetime.strptime('2010-01-01' , '%Y-%m-%d')
 #csvTransform("/home/reshma/Desktop/Arrivalresults.csv",dt)
 #csvTransform("/home/kapil/Desktop/mtp/library/testingCSV/Retailresults.csv",dt)
