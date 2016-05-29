@@ -2,121 +2,113 @@
 
 \section{Introduction}
 
-This technique is basically applied on two time-series. Let's say we have two 
+The method works on two time-series. It finds the ratio of steepness 
+at two different points in the time-series. Let's say we have two 
 time series as series1 and series2. So, in this method, we first find 
-correlation at various lags between these two time series. User can specify 
-minimum and maximum lag to consider. So, for all those values, we find 
-correlation values. 
+the rate of change in the time-series values for both time-series followed 
+by taking ratio of these rate of change. i.e  suppose we have two points on 
+time-series 1 as $y_{11}$ and $y_{12}$ and on time-series 2 as $y_{21}$ and $y_{22}$. 
+Rate of change between these points is calculated as following
+ $$S_1=\frac{y_{12}-y_{11}}{y_{11}}$$
+ ,
+  $$S_2=\frac{y_{22}-y_{21}}{y_{21}}$$
+ Ratio of steepness is calculated as
+ $$rs = \frac{S_1}{S_2}$$
 
-After finding correlation values at all lags, we consider that lag at which 
-correlation value is higher among all previously calulated correlation values 
-at all lags. Let's say that lag be ``x''. So, depending upon that ``x'', we 
-shift series1 or series2. If ``x'' is positive, we move series2 by ``x'' units 
-and if it is negative than we shift series1 by \abs{x} units.
+The \textbf{rs} is calulated between first and last point of every window of
+size ``w'' provided as input. 
 
-Now, we are ready to apply window correlation. Take window value,``w'' as 
-input. First window will be from 1st element to w'th elementof both the time 
-series after aligning by lag ``x''. Find correlation for this window between 
-two time-series and save it in an array. Now, slide window by ``w'' elements 
-and 
-calculate correlation value again and so on. Now, we have correlation values at 
-multiple windows.
+Now, we have rate of change in the steepness(\textbf{rs}) for every window. 
+The outliers are detected by the threshold value provided by user or if not, 
+then threshold is computed using MAD test.
 
-Now, let's say both the series should have been positively correlated. So, what 
-we do is, we choose threshold by MAD test if not provided to us, and find all 
-correlation values which are below that threshold and report all those windows 
-as anomaly.
+If the two time-series are expected to move in tandem, then all the points 
+with \textbf{rs} greater than threshold are reported whereas if the two time 
+series should not move in tandem then all the points with \textbf{rs} less than 
+threshold are reported. 
 
 \section{Related Functions}
 
-\subsection{correlation(arr1, arr2, maxlag, pos, neg)}
+\subsection{slopeBasedDetection(series1,smoothed1,series2,smoothed2,next{\_}val{\_}to{\_}consider, default{\_}threshold, threshold, what{\_}to{\_}consider)}
 
-This function calculates correlation between arr1 and arr2 at all possible lags 
-between -maxlag to +maxlag, as specified by pos and neg parameters.
-
-\begin{itemize}
- \item Input Parameters
- 
- \begin{enumerate}
-  \item arr1 \textit{(list)} : Input series 1 as a list of float values
-  \item arr2 \textit{(list)} : Input series 2 as a list of float values
-  \item maxlag \textit{(int)} : maximum (maxlag) and minimum (-maxlag) lag to 
-consider while calculating correlation betweem arr1 and arr2
-  \item pos \textit{(int)} : To consider positive lag or not, i.e. 1 to maxlag
-  \item neg \textit{(int)} : To consider negative lag or not, i.e. -maxlag to -1
- \end{enumerate}
-
- \item Output \textit{(list)} : \\
-  Returns list of tuples of the form \\
-  \center{(lag, correlation value at this lag)}
- 
-\end{itemize}
-
-\subsection{getMaxCorr(arar1,positive\_correlation)}
-
-This function takes list of tuples of the form (lag, correlation value at this 
-lag) as  input. Returns lag value at which correlation value is maximum if 
-positive\_correlation is True, and returns lag at which correlation value is 
-minimum if positive\_correlation is False. \\
-\\
-Basically, if both the series are positively correlated than we will be 
-interested in maximum positive correlation or if both series are negatively 
-correlated than we will be interested in minimum negative correlation, which is 
-specified by positive\_correlation parameter.
-
-\begin{itemize}
- \item Input Parameters
- 
- \begin{enumerate}
-  \item arr1 \textit{(list)} : list of tuples of the form \\ (lag, correlation 
-value at this lag) \\ i.e. correlation values at various lags
-  \item positive\_correlation \textit{(boolean, ``True'' or ``False'')} : 
-      \begin{itemize}
-       \item True: If value of this parameter is True than it will return lag 
-at which correlation value if maximum (positive)
-       \item False: If value of this parameter is False than it will return lag 
-at which correlation value if minimum (negative)
-      \end{itemize}
-
- \end{enumerate}
-
- \item Output \textit{(Tuple)} : \\
-  returns single tuple of the form (lag,correlation value at this lag), i.e. 
-lag at which optimum correlation value is found along with correlation value.
- 
-\end{itemize}
-
-
-\subsection{correlationAtLag(series1, series2, lag, window\_size)}
-
-This function fisrt aligns two series by given lag. If lag is positive than it 
-shifts start of series2 else start of series1. After aligning both the series 
-according to lag, this function calculates correlation between both series at 
-all windows. 
-
-window\_size states size of the window. So, we will start with first window 
-taking first window\_size elements from each series and will calculate 
-correlation. We will save this correlation value in list and will slide to next 
-window. Next window will start after window\_size elements. In such a way, we 
-calculate, correlation at all windows and return the list of correlation values.
-
+This function smoothes the provided time series data using exponential moving average(if needed) and 
+calculates \textbf{rs} for first and last point of every window of size next{\_}val{\_}to{\_}consider.
 
 \begin{itemize}
  \item Input Parameters
  
  \begin{enumerate}
   \item series1 \textit{(list)} : Input series 1 as a list of float values
+  \item smoothed1 \textit{(boolean)} : Whether series1 is smoothed or not? If not smoothing will be done
   \item series2 \textit{(list)} : Input series 2 as a list of float values
-  \item lag \textit{(int)} : lag at which
-  \item pos \textit{(int)} : To consider positive lag or not, i.e. 1 to maxlag
-  \item neg \textit{(int)} : To consider negative lag or not, i.e. -maxlag to -1
- \end{enumerate}
+  \item smoothed2 \textit{(boolean)} : Whether series2 is smoothed or not? If not smoothing will be done
+  \item next{\_}val{\_}to{\_}consider \textit{(int)} : indicates the size of window or next point in time-series to calculate slope of steepness. Default is 7 days.
+  \item default{\_}threshold \textit{(int)} : Whether to consider default threshold or not. If false, the threshold is calculated using MAD Test.
+  \item threshold \textit{(int)} : Threshold value to consider if default threshold is set to true
+  \item what{\_}to{\_}consider \textit{(int)} : Can be either 1,0 or -1. If the series are supposed to move in tandem 1 is set otherwise -1 is set. In case we don't know the correlation between two, 0 is set.
+  \end{enumerate}
 
  \item Output \textit{(list)} : \\
   Returns list of tuples of the form \\
-  \center{(lag, correlation value at this lag)}
+  \center{(first,second,slope\_value)}\\
+  \begin{flushleft}
+ where first and second are the array index of passed series
+ \end{flushleft}
+\end{itemize}
+
+\subsection{anomalyDatesSlopeBaseddetetion(slopeBasedResult,any\_series)}
+
+This function basically takes result of ”slopeBasedDetection” as input along with
+any series which is list of tuples of the form (date, value), and gives date to each
+anomaly.\\
+The result returned by ”slopeBasedDetection” function just provides index of
+data point, which is reported as anomaly. But we have time series, so we need
+to provide date, instead of index of data point. So, this function basically,
+attaches each anomaly with its date and returns it.\\
+
+\begin{itemize}
+ \item Input Parameters
  
+ \begin{enumerate}
+  \item slopeBasedResult \textit{(list)} : This is list of anomalies reported by ”slopeBasedDetection” function.
+  \item any\_series \textit{(list)} : Any list/series of tuples in the format (Date,Value), date will be used from this series to find date against each anomaly.
+ \end{enumerate}
+
+ \item Output \textit{(list)} : \\
+ 	Returns list of tuples of the following form: \\ 
+ 	(start\_date,end\_date,slope\_value)
+
 \end{itemize}
 
 
+\subsection{slopeBased(series1,smoothed1,series2,smoothed2,next_val_to_consider, default_threshold, threshold, what_to_consider)}
+
+This is main function of this anomaly detection technique. This function first calls "slopeBasedDetection" function, gets list of anomalies. 
+After that, it calls "anomalyDatesSlopeBaseddetetion" function to attach date with each anomaly and than returns result.
+
+\begin{itemize}
+ \item Input Parameters
+ 
+ \begin{enumerate}
+  \item series1 \textit{(list)} : Input series 1 as a list of float values
+  \item smoothed1 \textit{(boolean)} : Whether series1 is smoothed or not? If not smoothing will be done
+  \item series2 \textit{(list)} : Input series 2 as a list of float values
+  \item smoothed2 \textit{(boolean)} : Whether series2 is smoothed or not? If not smoothing will be done
+  \item next{\_}val{\_}to{\_}consider \textit{(int)} : indicates the size of window or next point in time-series to calculate slope of steepness. Default is 7 days.
+  \item default{\_}threshold \textit{(int)} : Whether to consider default threshold or not. If false, the threshold is calculated using MAD Test.
+  \item threshold \textit{(int)} : Threshold value to consider if default threshold is set to true
+  \item what{\_}to{\_}consider \textit{(int)} : Can be either 1,0 or -1. If the series are supposed to move in tandem 1 is set otherwise -1 is set. In case we don't know the correlation between two, 0 is set.
+  \end{enumerate}
+
+ \item Output \textit{(list)} : \\
+ 	Returns list of tuples of the following form: \\ 
+ 	(start\_date,end\_date,slope\_value)
+ 	where, start\_date and end\_date are points on which the steep was computed along with the slope\_value which was spotted as outlier.
+ 
+\end{itemize}
+
 \section{Description}
+
+slopeBased function is called to find anomalies based on the rate of change in value. It calls slopeBasedDetection method to compute the slopes between points in windows. 
+Anomaly points are reported based on the parameters provided to the function. \\
+IOn order to map dates against every anomaly points instead of array index, anomalyDatesSlopeBaseddetetion is called which provides (start\_date,end\_date,slope\_value) as final output.
