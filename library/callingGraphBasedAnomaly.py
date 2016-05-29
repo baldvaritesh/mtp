@@ -7,7 +7,7 @@ from Utility import csvTransform,getColumnFromListOfTuples, removeQuotes
 This function takes 3 arguments:
 dependentVar: Index of the dependent variable, where dependentVar = function of independantVars
 numberOfVals: Each CSV contains how many values?
-timeSeriesFileNames: name of the files wo which series is stored. File should contain only series values.
+timeSeriesFileNames: name of the files to which series is stored. File should contain only series values.
 
 Executes R script. Result of R script is stored in file, "GraphBasedAnomalyOp.csv"
 
