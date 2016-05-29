@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.1.3)  29 MAY 2016 15:12
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.1.3)  29 MAY 2016 17:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -356,22 +356,22 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 ))
-(./Anomaly Detection.aux (./Chapter_1.aux) (./Chapter_3.aux))
+(./Anomaly Detection.aux (./Chapter_1.aux) (./Chapter_3.aux) (./Chapter_4.aux))
 \openout1 = `"Anomaly Detection.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
- [1
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+[1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Anomaly Detection.toc
 Overfull \hbox (53.85083pt too wide) in paragraph at lines 7--7
@@ -394,6 +394,18 @@ Overfull \hbox (15.6174pt too wide) in paragraph at lines 8--8
 Overfull \hbox (25.31732pt too wide) in paragraph at lines 13--13
  [][] []\OT1/cmr/m/n/10 linear[]regression(x[]series, y[]series, param = 0, de-
 fault[]threshold 
+ []
+
+
+Overfull \hbox (18.77853pt too wide) in paragraph at lines 20--20
+ [][] []\OT1/cmr/m/n/10 graphBasedAnomalyCall(dependentVar, num-berOf-Vals, tim
+e- 
+ []
+
+
+Overfull \hbox (6.09789pt too wide) in paragraph at lines 21--21
+ [][] []\OT1/cmr/m/n/10 generateCSVsForGraphBasedAnomaly(lists, dateIn-dex, se-
+ 
  []
 
 )
@@ -448,17 +460,17 @@ Overfull \hbox (54.81726pt too wide) in paragraph at lines 168--168
  []
 
 [4])
-Underfull \hbox (badness 10000) in paragraph at lines 225--28
+Underfull \hbox (badness 10000) in paragraph at lines 225--27
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--28
+Underfull \hbox (badness 10000) in paragraph at lines 225--27
 
  []
 
 
-Overfull \hbox (11.69522pt too wide) in paragraph at lines 225--28
+Overfull \hbox (11.69522pt too wide) in paragraph at lines 225--27
 \OT1/cmr/m/n/10 Function ``anoma-lies-FromWin-dow-Cor-re-la-tion-With-Con-stant
 -lag`` is the main driver.
  []
@@ -527,32 +539,81 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--101
  []
 
 [9])
-Underfull \hbox (badness 10000) in paragraph at lines 106--29
+Underfull \hbox (badness 10000) in paragraph at lines 106--28
 
  []
 
-[10] (./Anomaly Detection.aux (./Chapter_1.aux) (./Chapter_3.aux)) ) 
+[10]
+\openout2 = `Chapter_4.aux'.
+
+ (./Chapter_4.tex
+Chapter 3.
+
+Overfull \hbox (0.65277pt too wide) in paragraph at lines 36--36
+[]\OT1/cmr/bx/n/12 graphBasedAnomalyCall(dependentVar, num-berOf-
+ []
+
+[11
+
+
+
+]
+Overfull \hbox (2.86394pt too wide) in paragraph at lines 68--68
+[]\OT1/cmr/bx/n/12 generateCSVsForGraphBasedAnomaly(lists, dateIn-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--98
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--98
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 99--111
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--111
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--131
+
+ []
+
+[13])
+Underfull \hbox (badness 10000) in paragraph at lines 201--29
+
+ []
+
+[14] (./Anomaly Detection.aux (./Chapter_1.aux) (./Chapter_3.aux)
+(./Chapter_4.aux)) ) 
 Here is how much of TeX's memory you used:
- 1495 strings out of 493304
- 17290 string characters out of 6139872
- 78999 words of memory out of 5000000
- 4953 multiletter control sequences out of 15000+600000
+ 1503 strings out of 493304
+ 17395 string characters out of 6139872
+ 79504 words of memory out of 5000000
+ 4954 multiletter control sequences out of 15000+600000
  10581 words of font info for 38 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  34i,6n,22p,828b,245s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmti10.pfb>
-Output written on "Anomaly Detection.pdf" (11 pages, 121883 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
+x12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on "Anomaly Detection.pdf" (15 pages, 134846 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
- 50 compressed objects within 1 object stream
+ 85 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

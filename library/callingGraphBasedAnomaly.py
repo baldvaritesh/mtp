@@ -69,7 +69,7 @@ def generateCSVsForGraphBasedAnomaly(lists, dateIndex, seriesIndex):
 This function takes 3 arguments:
 
 dates : List of dates
-resultFile: Link to file to which output of graph based anomaly is written
+resultFile: Path of file to which output of graph based anomaly is written
 numOfPtsReqd: Number of anomalous points required
 
 

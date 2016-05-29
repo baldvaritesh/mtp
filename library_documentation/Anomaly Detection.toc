@@ -14,3 +14,11 @@
 \contentsline {subsection}{\numberline {2.2.2}anomalies\_from\_linear\_regression(result\_of\_lr, any\_series)}{8}
 \contentsline {subsection}{\numberline {2.2.3}linear\_regressionMain(x\_series, y\_series, param = 0, default\_threshold = True, threshold = 0)}{9}
 \contentsline {section}{\numberline {2.3}Description}{10}
+\contentsline {chapter}{\numberline {3}Graph Based Anomaly Detection Technique}{11}
+\contentsline {section}{\numberline {3.1}Introduction}{11}
+\contentsline {section}{\numberline {3.2}Related Functions}{12}
+\contentsline {subsection}{\numberline {3.2.1}graphBasedAnomalyCall(dependentVar, numberOfVals, timeSeriesFileNames)}{12}
+\contentsline {subsection}{\numberline {3.2.2}generateCSVsForGraphBasedAnomaly(lists, dateIndex, seriesIndex)}{12}
+\contentsline {subsection}{\numberline {3.2.3}getAnomalies(dates,resultFile, numOfPtsReqd)}{13}
+\contentsline {subsection}{\numberline {3.2.4}graphBasedAnomalyMain(lists, dependentVar, numOfPtsReqd, dateIndex=0, seriesIndex=1)}{14}
+\contentsline {section}{\numberline {3.3}Description}{14}
