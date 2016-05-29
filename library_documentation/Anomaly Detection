@@ -27,6 +27,8 @@
  
 \include{Chapter_1} 
  
+ 
+\include{Chapter_2} 
 
 
 \end{document}
