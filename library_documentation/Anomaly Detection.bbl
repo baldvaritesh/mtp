@@ -1,0 +1,15 @@
+\begin{thebibliography}{1}
+
+\bibitem{nasa}
+Haibin Cheng, Pang-Ning Tan, Christopher Potter, and Steven~A Klooster.
+\newblock Detection and characterization of anomalies in multivariate time
+  series.
+\newblock In {\em SDM}, pages 413--424. SIAM, 2009.
+
+\bibitem{nasarbook}
+Nagiza~F Samatova, William Hendrix, John Jenkins, Kanchana Padmanabhan, and
+  Arpan Chakraborty.
+\newblock {\em Practical Graph Mining with R}.
+\newblock CRC Press, 2013.
+
+\end{thebibliography}
