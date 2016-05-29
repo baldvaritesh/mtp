@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.1.3)  29 MAY 2016 17:41
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.1.3)  29 MAY 2016 19:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -356,22 +356,30 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 ))
-(./Anomaly Detection.aux (./Chapter_1.aux) (./Chapter_3.aux) (./Chapter_4.aux))
+(/usr/share/texlive/texmf-dist/tex/latex/tocbibind/tocbibind.sty
+Package: tocbibind 2010/10/13 v1.5k extra ToC listings
+Package tocbibind Info: The document has chapter divisions on input line 50.
+
+
+Package tocbibind Note: Using chapter style headings, unless overridden.
+
+) (./Anomaly Detection.aux (./Chapter_1.aux) (./Chapter_2.aux) (./Chapter_3.aux
+) (./Chapter_4.aux) (./Chapter_6.aux))
 \openout1 = `"Anomaly Detection.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-[1
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+ [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Anomaly Detection.toc
 Overfull \hbox (53.85083pt too wide) in paragraph at lines 7--7
@@ -391,30 +399,30 @@ Overfull \hbox (15.6174pt too wide) in paragraph at lines 8--8
  []
 
 
-Overfull \hbox (25.31732pt too wide) in paragraph at lines 13--13
+Overfull \hbox (25.31732pt too wide) in paragraph at lines 20--20
  [][] []\OT1/cmr/m/n/10 linear[]regression(x[]series, y[]series, param = 0, de-
 fault[]threshold 
  []
 
 
-Overfull \hbox (18.77853pt too wide) in paragraph at lines 20--20
+Overfull \hbox (18.77853pt too wide) in paragraph at lines 27--27
  [][] []\OT1/cmr/m/n/10 graphBasedAnomalyCall(dependentVar, num-berOf-Vals, tim
 e- 
  []
 
 
-Overfull \hbox (6.09789pt too wide) in paragraph at lines 21--21
+Overfull \hbox (6.09789pt too wide) in paragraph at lines 28--28
  [][] []\OT1/cmr/m/n/10 generateCSVsForGraphBasedAnomaly(lists, dateIn-dex, se-
  
  []
 
-)
+[1
+
+])
 \tf@toc=\write3
 \openout3 = `"Anomaly Detection.toc"'.
 
- [1
-
-]
+ [2]
 \openout2 = `Chapter_1.aux'.
 
  (./Chapter_1.tex
@@ -425,7 +433,7 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 38.
- [2
+ [3
 
 
 ]
@@ -438,7 +446,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--68
 
  []
 
-[3]
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 117--120
 
  []
@@ -459,28 +467,52 @@ Overfull \hbox (54.81726pt too wide) in paragraph at lines 168--168
 ,
  []
 
-[4])
-Underfull \hbox (badness 10000) in paragraph at lines 225--27
+[5])
+Underfull \hbox (badness 10000) in paragraph at lines 225--29
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--27
+Underfull \hbox (badness 10000) in paragraph at lines 225--29
 
  []
 
 
-Overfull \hbox (11.69522pt too wide) in paragraph at lines 225--27
+Overfull \hbox (11.69522pt too wide) in paragraph at lines 225--29
 \OT1/cmr/m/n/10 Function ``anoma-lies-FromWin-dow-Cor-re-la-tion-With-Con-stant
 -lag`` is the main driver.
  []
 
-[5] [6]
+[6] [7]
+\openout2 = `Chapter_2.aux'.
+
+ (./Chapter_2.tex
+Chapter 2.
+[8
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--66
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 115--117
+
+ []
+
+) [10]
 \openout2 = `Chapter_3.aux'.
 
  (./Chapter_3.tex
-Chapter 2.
-[7
+Chapter 3.
+[11
 
 
 
@@ -521,7 +553,7 @@ Overfull \hbox (26.87538pt too wide) in paragraph at lines 55--55
 ies) 
  []
 
-[8]
+[12]
 Overfull \hbox (15.79759pt too wide) in paragraph at lines 65--66
 []\OT1/cmr/m/n/10 result[]of[]lr \OT1/cmr/m/it/10 (list) \OT1/cmr/m/n/10 : This
  is list of anoma-lies re-ported by "lin-ear[]regression"
@@ -538,22 +570,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--101
 
  []
 
-[9])
-Underfull \hbox (badness 10000) in paragraph at lines 106--28
+[13])
+Underfull \hbox (badness 10000) in paragraph at lines 106--31
 
  []
 
-[10]
+[14]
 \openout2 = `Chapter_4.aux'.
 
  (./Chapter_4.tex
-Chapter 3.
+Chapter 4.
 
 Overfull \hbox (0.65277pt too wide) in paragraph at lines 36--36
 []\OT1/cmr/bx/n/12 graphBasedAnomalyCall(dependentVar, num-berOf-
  []
 
-[11
+[15
 
 
 
@@ -572,7 +604,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--98
 
  []
 
-[12]
+[16]
 Underfull \hbox (badness 10000) in paragraph at lines 99--111
 
  []
@@ -587,33 +619,162 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--131
 
  []
 
-[13])
-Underfull \hbox (badness 10000) in paragraph at lines 201--29
+[17])
+Underfull \hbox (badness 10000) in paragraph at lines 201--32
 
  []
 
-[14] (./Anomaly Detection.aux (./Chapter_1.aux) (./Chapter_3.aux)
-(./Chapter_4.aux)) ) 
+[18]
+\openout2 = `Chapter_6.aux'.
+
+ (./Chapter_6.tex
+Chapter 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
+[19
+
+
+
+]
+Overfull \hbox (4.7672pt too wide) in paragraph at lines 51--55
+\OT1/cmr/m/n/10 (slope[]based, lin-ear[]regression, graph[]based, spike[]detect
+ion, mul-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+
+ []
+
+
+Overfull \hbox (3.92833pt too wide) in paragraph at lines 78--81
+\OT1/cmr/m/n/10 (date, cor-re-la-tion value, slope[]based value, lin-ear[]regre
+ssion value,
+ []
+
+
+Overfull \hbox (3.92833pt too wide) in paragraph at lines 81--84
+\OT1/cmr/m/n/10 (date, cor-re-la-tion value, slope[]based value, lin-ear[]regre
+ssion value,
+ []
+
+[20]
+Overfull \hbox (3.92833pt too wide) in paragraph at lines 105--108
+\OT1/cmr/m/n/10 (date, cor-re-la-tion value, slope[]based value, lin-ear[]regre
+ssion value,
+ []
+
+
+Overfull \hbox (3.92833pt too wide) in paragraph at lines 108--111
+\OT1/cmr/m/n/10 (date, cor-re-la-tion value, slope[]based value, lin-ear[]regre
+ssion value,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--136
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--164
+
+ []
+
+[21]) [22] (./Anomaly Detection.bbl) [23
+
+
+] (./Anomaly Detection.aux
+(./Chapter_1.aux) (./Chapter_2.aux) (./Chapter_3.aux) (./Chapter_4.aux)
+(./Chapter_6.aux)) ) 
 Here is how much of TeX's memory you used:
- 1503 strings out of 493304
- 17395 string characters out of 6139872
- 79504 words of memory out of 5000000
- 4954 multiletter control sequences out of 15000+600000
+ 1608 strings out of 493304
+ 18869 string characters out of 6139872
+ 81444 words of memory out of 5000000
+ 5038 multiletter control sequences out of 15000+600000
  10581 words of font info for 38 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 34i,6n,22p,828b,245s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,6n,22p,828b,313s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
 x12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "Anomaly Detection.pdf" (15 pages, 134846 bytes).
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on "Anomaly Detection.pdf" (24 pages, 159981 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
+ 117 PDF objects out of 1000 (max. 8388607)
+ 81 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
