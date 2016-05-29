@@ -10,9 +10,9 @@
 \contentsline {chapter}{\numberline {2}Slope Based Detection}{8}
 \contentsline {section}{\numberline {2.1}Introduction}{8}
 \contentsline {section}{\numberline {2.2}Related Functions}{8}
-\contentsline {subsection}{\numberline {2.2.1}correlation(arr1, arr2, maxlag, pos, neg)}{8}
-\contentsline {subsection}{\numberline {2.2.2}getMaxCorr(arar1,positive\_correlation)}{9}
-\contentsline {subsection}{\numberline {2.2.3}correlationAtLag(series1, series2, lag, window\_size)}{9}
+\contentsline {subsection}{\numberline {2.2.1}slopeBasedDetection(series1,smoothed1,series2,smoothed2,next{\_}val{\_}to{\_}consider, default{\_}threshold, threshold, what{\_}to{\_}consider)}{8}
+\contentsline {subsection}{\numberline {2.2.2}anomalyDatesSlopeBaseddetetion(slopeBasedResult,any\_series)}{9}
+\contentsline {subsection}{\numberline {2.2.3}slopeBased(series1,smoothed1,series2,smoothed2,next\_val\_to\_consider, default\_threshold, threshold, what\_to\_consider)}{10}
 \contentsline {section}{\numberline {2.3}Description}{10}
 \contentsline {chapter}{\numberline {3}Linear Regression}{11}
 \contentsline {section}{\numberline {3.1}Introduction}{11}
@@ -29,8 +29,15 @@
 \contentsline {subsection}{\numberline {4.2.3}getAnomalies(dates,resultFile, numOfPtsReqd)}{17}
 \contentsline {subsection}{\numberline {4.2.4}graphBasedAnomalyMain(lists, dependentVar, numOfPtsReqd, dateIndex=0, seriesIndex=1)}{18}
 \contentsline {section}{\numberline {4.3}Description}{18}
-\contentsline {chapter}{\numberline {5}Utility}{19}
+\contentsline {chapter}{\numberline {5}Multivariate Time Series Anomaly Detection Technique}{19}
 \contentsline {section}{\numberline {5.1}Introduction}{19}
-\contentsline {subsection}{\numberline {5.1.1}Functions used by Anomaly detection techniques}{19}
-\contentsline {subsection}{\numberline {5.1.2}Functions used to process results}{21}
-\contentsline {chapter}{Bibliography}{24}
+\contentsline {section}{\numberline {5.2}Related Functions}{20}
+\contentsline {subsection}{\numberline {5.2.1}MultivariateAnomaly(fileName,hd, paramCount,fileStart)}{20}
+\contentsline {subsection}{\numberline {5.2.2}multivaraiateAnalysis(args)}{20}
+\contentsline {subsection}{\numberline {5.2.3}csvTransform(filePath,startDate)}{20}
+\contentsline {section}{\numberline {5.3}Description}{21}
+\contentsline {chapter}{\numberline {6}Utility}{22}
+\contentsline {section}{\numberline {6.1}Introduction}{22}
+\contentsline {subsection}{\numberline {6.1.1}Functions used by Anomaly detection techniques}{22}
+\contentsline {subsection}{\numberline {6.1.2}Functions used to process results}{25}
+\contentsline {chapter}{Bibliography}{28}

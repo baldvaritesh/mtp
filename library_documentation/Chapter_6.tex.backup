@@ -10,7 +10,8 @@ the results of the anomaly techniques.
 
 \begin{itemize}
  \item convertListToFloat(li) \\
-	Given list of elements, this function type casts all the elements to float type.
+	Given list of elements, this function type casts all the elements to 
+float type.
 	
 	\begin{itemize}
 	  \item Input Parameters
@@ -36,8 +37,10 @@ the results of the anomaly techniques.
 	  \item Input Parameters
 	  
 	  \begin{enumerate}
-	    \item lstTuples \textit{(int)} : list of tuples. Tuples has no fixed format
-	    \item i \textit{(int)} : index of which tuple element to return, index starting from zero
+	    \item lstTuples \textit{(int)} : list of tuples. Tuples has no fixed 
+format
+	    \item i \textit{(int)} : index of which tuple element to return, 
+index starting from zero
 	  \end{enumerate}
 
 	  \item Output \textit{(list)}: \\
@@ -48,23 +51,26 @@ the results of the anomaly techniques.
  
  \item findAverageTimeSeries(timeSeriesCollection) \\
  
-	It takes 2D list of element, where each element of timeSeriesCollection is one time series. It returns average of all time series. \\
+	It takes 2D list of element, where each element of timeSeriesCollection 
+is one time series. It returns average of all time series. (first element of 
+resltant time series will be average of first element of all time series) \\
 	
 	For example let,\\
-	timeSeriesCollection: [ \\
-	    [1,2,3], # Timeseries 1 \\
-	    [4,5,6], # Timeseries 2 \\
-	    [7,8,9] # Timeseries 3 \\
-	] \\
+	timeSeriesCollection: [ \newline
+	    [1,2,3], \# Timeseries 1 \newline
+	    [4,5,6], \# Timeseries 2 \newline
+	    [7,8,9] \# Timeseries 3 \newline
+	] \newline
 	\\
-	This function will return,\\
-	[4,5,6] \\
+	This function will return,\newline
+	[4,5,6] \newline
 	
 	\begin{itemize}
 	  \item Input Parameters
 	  
 	  \begin{enumerate}
-	    \item timeSeriesCollection \textit{(list)} : 2D array of float elements.
+	    \item timeSeriesCollection \textit{(list)} : 2D array of float 
+elements.
 	  \end{enumerate}
 
 	  \item Output \textit{(list)}: \\
@@ -75,10 +81,102 @@ the results of the anomaly techniques.
  
  
  \item writeToCSV(lstData,fileName) \\
+ 
+ This writes the list of tuples into the file provided as input.
+ \begin{itemize}
+	  \item Input Parameters
+	  
+	  \begin{enumerate}
+	    \item lstData \textit{(list)} : list of tuples that needs to be written in csv file.
+	    \item fileName \textit{(string)} : Name of file in which the list of tuples needs to be written.
+	    \end{enumerate}
+
+	  \item Output \textit{(file)}: \\
+	  Generates a csv file with data written in that.
+	  
+	\end{itemize}
+
  \item concateLists(lstData) \\
+ 
+  This function converts the list of lists into a single list of tuples. 
+  
+  For example let,\\
+	timeSeriesCollection: [ \newline
+	    [1,2,3], \# Timeseries 1 \newline
+	    [4,5,6], \# Timeseries 2 \newline
+	    [7,8,9] \# Timeseries 3 \newline
+	] \newline
+	\\
+	This function will return,\newline
+	[ \newline
+	    (1,4,7), \# Timeseries 1 \newline
+	    (2,5,8), \# Timeseries 2 \newline
+	    (3,6,9) \# Timeseries 3 \newline
+	] \newline
+  
+ \begin{itemize}
+	  \item Input Parameters
+	  
+	  \begin{enumerate}
+	    \item lstData \textit{(list)} : list of different lists
+	    \end{enumerate}
+
+	  \item Output \textit{(file)}: \\
+	  Return a single list of tuples.
+	  
+	\end{itemize}
+	
  \item cleanArray(array) \\
+ 
+	This function removes ``nan'' (Not a number values) from the list.
+	
+	\begin{itemize}
+	  \item Input Parameters
+	  
+	  \begin{enumerate}
+	    \item array \textit{(list)} : list of float type elements
+elements.
+	  \end{enumerate}
+
+	  \item Output \textit{(list)}: \\
+	  Returns list of float elements after removing ``nan'' elements.
+	  
+	\end{itemize}
+ 
+ 
  \item MADThreshold(array) \\
+ 
+ This function is used to calculate threshold value using Median Absolute Deviation outlier detection method.
+ 
+ \begin{itemize}
+	  \item Input Parameters
+	  
+	  \begin{enumerate}
+	    \item array \textit{(list)} : Array of integers, real numbers, etc
+	    \end{enumerate}
+
+	  \item Output \textit{(float)}: \\
+	  threshold value computed using MAD Test.
+	  
+	\end{itemize}
+ 
  \item smoothArray(array, alpha = 2.0/15.0) \\
+ This function smooths input array by exponential moving average technique.
+ 
+ \begin{itemize}
+	  \item Input Parameters
+	  
+	  \begin{enumerate}
+	    \item array \textit{(list)} : Array of integers, real numbers, etc
+	    \item alpha \textit{(float)} : smoothening factor of exponential average smoothing
+	    \end{enumerate}
+
+	  \item Output \textit{(float)}: \\
+	  threshold value computed using MAD Test.
+	  
+	\end{itemize}
+ 
+ 
  \item csv2array(filePath) \\
  \item getColumn(array, column\_number) \\
  \item formatCSV2Array(z) \\
@@ -129,9 +227,9 @@ graph\_based value, spike\_detection value, multiple\_arima value)
    
    \item intersectionOfFinalResults(list1, list2) \\
   
-  This function takes intersection of 2 lists (where each list is list of tuple) 
-and returns result. Note that these input lists are generated as a output of 
-``intersection'' method.
+  This function takes intersection of 2 lists (where each list is list of 
+tuple) and returns result. Note that these input lists are generated as a output 
+of ``intersection'' method.
  \begin{itemize}
  \item Input Parameters
  
@@ -201,7 +299,8 @@ example if one tuple is (1-1-2015, 15-1-2015, 5) and other tuple is (15-1-2015,
  \begin{enumerate}
   \item li \textit{(list)} : List of tuples of the format: \\
   (startDate, endDate, Value) \\
-  Note that here startDate and endDate, are of type \textit{datetime} and Value is of type \textit{float}.
+  Note that here startDate and endDate, are of type \textit{datetime} and Value 
+is of type \textit{float}.
  \end{enumerate}
 
  \item Output \textit{(list)}: \\
@@ -216,12 +315,14 @@ example if one tuple is (1-1-2015, 15-1-2015, 5) and other tuple is (15-1-2015,
  \item resultOfOneMethod(array) \\
  
  
- This function just converts format of the result list. Usually, anomaly detection methods returns list of tuples of the format, \\ 
+ This function just converts format of the result list. Usually, anomaly 
+detection methods returns list of tuples of the format, \\ 
  (startDate, endDate, Value) \\
  this function will convert it to list of tuples of the format, \\
  (date, value) \\
  \\
- Basically, all the dates between startDate and endDate will be added to the result list.
+ Basically, all the dates between startDate and endDate will be added to the 
+result list.
  
  \begin{itemize}
  \item Input Parameters
@@ -229,13 +330,15 @@ example if one tuple is (1-1-2015, 15-1-2015, 5) and other tuple is (15-1-2015,
  \begin{enumerate}
   \item array \textit{(list)} : List of tuples of the format: \\
   (startDate, endDate, Value) \\
-  Note that here startDate and endDate, are of type \textit{datetime} and Value is of type \textit{float}.
+  Note that here startDate and endDate, are of type \textit{datetime} and Value 
+is of type \textit{float}.
  \end{enumerate}
 
  \item Output \textit{(list)}: \\
  This function returns list of tuples of the form: \\
  (date, Value)
-  Note that here date is of type \textit{datetime} and Value is of type \textit{float}.
+  Note that here date is of type \textit{datetime} and Value is of type 
+\textit{float}.
  \end{itemize}
  
  

@@ -24,7 +24,7 @@ import datetime
 from Utility import resultOfOneMethod
 from Utility import concateLists
 from Utility import writeToCSV
-from Utility import csvTransform
+from multiVariateTimeseries import csvTransform
 from Utility import getDiffStatsOfNewsArticles
 from Utility import statsPrintHelperIntersect
 from Utility import statsPrintHelperUnion,statsPrintHelperAllCentersUnion

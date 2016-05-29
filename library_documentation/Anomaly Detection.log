@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.1.3)  29 MAY 2016 19:47
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.5.27)  30 MAY 2016 01:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **"Anomaly Detection.tex"
 (./Anomaly Detection.tex
 LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 78 languages loaded.
+Babel <3.9h> and hyphenation patterns for 2 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
@@ -364,7 +364,7 @@ Package tocbibind Info: The document has chapter divisions on input line 50.
 Package tocbibind Note: Using chapter style headings, unless overridden.
 
 ) (./Anomaly Detection.aux (./Chapter_1.aux) (./Chapter_2.aux) (./Chapter_3.aux
-) (./Chapter_4.aux) (./Chapter_6.aux))
+) (./Chapter_4.aux) (./Chapter_5.aux) (./Chapter_6.aux))
 \openout1 = `"Anomaly Detection.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
@@ -396,6 +396,24 @@ Overfull \hbox (1.44519pt too wide) in paragraph at lines 8--8
 Overfull \hbox (15.6174pt too wide) in paragraph at lines 8--8
  \OT1/cmr/m/n/10 arr2, win-dow[]size=15,maxlag=15, pos-i-tive[]correlation=True
 , 
+ []
+
+
+Overfull \hbox (96.32864pt too wide) in paragraph at lines 13--13
+ [][] []\OT1/cmr/m/n/10 slopeBasedDetection(series1,smoothed1,series2,smoothed2
+,next[]val[]to[]consider, 
+ []
+
+
+Overfull \hbox (16.73961pt too wide) in paragraph at lines 14--14
+ [][] []\OT1/cmr/m/n/10 anomalyDatesSlopeBaseddetetion(slopeBasedResult,any[]se
+ries) []  
+ []
+
+
+Overfull \hbox (54.24524pt too wide) in paragraph at lines 15--15
+ [][] []\OT1/cmr/m/n/10 slopeBased(series1,smoothed1,series2,smoothed2,next[]va
+l[]to[]consider, 
  []
 
 
@@ -488,26 +506,45 @@ Overfull \hbox (11.69522pt too wide) in paragraph at lines 225--29
 
  (./Chapter_2.tex
 Chapter 2.
+
+Overfull \hbox (165.40784pt too wide) in paragraph at lines 32--32
+[]\OT1/cmr/bx/n/12 slopeBasedDetection(series1,smoothed1,series2,smoothed2,next
+[]val[]to[]consider,
+ []
+
 [8
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 49--51
+Underfull \hbox (badness 10000) in paragraph at lines 51--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--66
+Overfull \hbox (70.10727pt too wide) in paragraph at lines 59--59
+[]\OT1/cmr/bx/n/12 anomalyDatesSlopeBaseddetetion(slopeBasedResult,any[]series)
+ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--68
 
  []
 
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 115--117
 
+Overfull \hbox (108.24118pt too wide) in paragraph at lines 84--84
+[]\OT1/cmr/bx/n/12 slopeBased(series1,smoothed1,series2,smoothed2,next[]val[]to
+[]consider,
  []
 
-) [10]
+[9])
+Overfull \hbox (48.96747pt too wide) in paragraph at lines 112--30
+\OT1/cmr/m/n/10 anoma-ly-DatesS-lope-Based-de-te-tion is called which pro-vides
+ (start[]date,end[]date,slope[]value)
+ []
+
+[10]
 \openout2 = `Chapter_3.aux'.
 
  (./Chapter_3.tex
@@ -625,10 +662,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 201--32
  []
 
 [18]
+\openout2 = `Chapter_5.aux'.
+
+ (./Chapter_5.tex
+Chapter 5.
+
+Overfull \hbox (35.84865pt too wide) in paragraph at lines 34--34
+[]\OT1/cmr/bx/n/12 MultivariateAnomaly(fileName,hd, param-Count,fileStart) 
+ []
+
+[19
+
+
+
+])
+Underfull \hbox (badness 10000) in paragraph at lines 102--33
+
+ []
+
+[20] [21]
 \openout2 = `Chapter_6.aux'.
 
  (./Chapter_6.tex
-Chapter 5.
+Chapter 6.
 
 Underfull \hbox (badness 10000) in paragraph at lines 32--33
 
@@ -654,7 +710,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--67
 
  []
 
-[19
+[22
 
 
 
@@ -664,114 +720,120 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--84
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
+Underfull \hbox (badness 10000) in paragraph at lines 103--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+Underfull \hbox (badness 10000) in paragraph at lines 103--116
+
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
+Overfull \hbox (1.1031pt too wide) in paragraph at lines 171--172
+[]\OT1/cmr/m/n/10 alpha \OT1/cmr/m/it/10 (float) \OT1/cmr/m/n/10 : smoothen-ing
+ fac-tor of ex-po-nen-tial av-er-age smooth-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
+
+ []
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--108
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
-
- []
-
-[20]
-Overfull \hbox (4.7672pt too wide) in paragraph at lines 135--139
+Overfull \hbox (4.7672pt too wide) in paragraph at lines 254--258
 \OT1/cmr/m/n/10 (slope[]based, lin-ear[]regression, graph[]based, spike[]detect
 ion, mul-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
+Underfull \hbox (badness 10000) in paragraph at lines 272--273
 
  []
 
 
-Overfull \hbox (3.92833pt too wide) in paragraph at lines 162--165
+Overfull \hbox (3.92833pt too wide) in paragraph at lines 281--284
+\OT1/cmr/m/n/10 (date, cor-re-la-tion value, slope[]based value, lin-ear[]regre
+ssion value,
+ []
+
+[25]
+Overfull \hbox (3.92833pt too wide) in paragraph at lines 284--287
 \OT1/cmr/m/n/10 (date, cor-re-la-tion value, slope[]based value, lin-ear[]regre
 ssion value,
  []
 
 
-Overfull \hbox (3.92833pt too wide) in paragraph at lines 165--168
+Overfull \hbox (3.92833pt too wide) in paragraph at lines 308--311
 \OT1/cmr/m/n/10 (date, cor-re-la-tion value, slope[]based value, lin-ear[]regre
 ssion value,
  []
 
 
-Overfull \hbox (3.92833pt too wide) in paragraph at lines 189--192
-\OT1/cmr/m/n/10 (date, cor-re-la-tion value, slope[]based value, lin-ear[]regre
-ssion value,
- []
-
-[21]
-Overfull \hbox (3.92833pt too wide) in paragraph at lines 192--195
+Overfull \hbox (3.92833pt too wide) in paragraph at lines 311--314
 \OT1/cmr/m/n/10 (date, cor-re-la-tion value, slope[]based value, lin-ear[]regre
 ssion value,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--210
+Underfull \hbox (badness 10000) in paragraph at lines 328--329
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--220
+Underfull \hbox (badness 10000) in paragraph at lines 331--339
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 359--360
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 243--251
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 362--370
 
  []
 
-[22]) [23] (./Anomaly Detection.bbl) [24
+) [27] (./Anomaly Detection.bbl) [28
 
 
-] (./Anomaly Detection.aux
-(./Chapter_1.aux) (./Chapter_2.aux) (./Chapter_3.aux) (./Chapter_4.aux)
+] (./Anomaly Detection.aux (./Chapter_1.aux) (./Chapter_2.aux) (./Chapter_3.aux
+) (./Chapter_4.aux) (./Chapter_5.aux)
 (./Chapter_6.aux)) ) 
 Here is how much of TeX's memory you used:
- 1608 strings out of 493304
- 18869 string characters out of 6139872
- 81444 words of memory out of 5000000
- 5038 multiletter control sequences out of 15000+600000
+ 1616 strings out of 495028
+ 18974 string characters out of 6181497
+ 77684 words of memory out of 5000000
+ 4790 multiletter control sequences out of 15000+600000
  10581 words of font info for 38 fonts, out of 8000000 for 9000
- 957 hyphenation exceptions out of 8191
- 34i,6n,22p,828b,313s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 14 hyphenation exceptions out of 8191
+ 34i,6n,22p,828b,311s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
 x12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pf
@@ -779,12 +841,13 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "Anomaly Detection.pdf" (25 pages, 161401 bytes).
+dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmti10.pfb>
+Output written on "Anomaly Detection.pdf" (29 pages, 179401 bytes).
 PDF statistics:
- 121 PDF objects out of 1000 (max. 8388607)
- 84 compressed objects within 1 object stream
+ 137 PDF objects out of 1000 (max. 8388607)
+ 95 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

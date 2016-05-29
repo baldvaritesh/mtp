@@ -81,7 +81,51 @@ elements.
  
  
  \item writeToCSV(lstData,fileName) \\
+ 
+ This writes the list of tuples into the file provided as input.
+ \begin{itemize}
+	  \item Input Parameters
+	  
+	  \begin{enumerate}
+	    \item lstData \textit{(list)} : list of tuples that needs to be written in csv file.
+	    \item fileName \textit{(string)} : Name of file in which the list of tuples needs to be written.
+	    \end{enumerate}
+
+	  \item Output \textit{(file)}: \\
+	  Generates a csv file with data written in that.
+	  
+	\end{itemize}
+
  \item concateLists(lstData) \\
+ 
+  This function converts the list of lists into a single list of tuples. 
+  
+  For example let,\\
+	timeSeriesCollection: [ \newline
+	    [1,2,3], \# Timeseries 1 \newline
+	    [4,5,6], \# Timeseries 2 \newline
+	    [7,8,9] \# Timeseries 3 \newline
+	] \newline
+	\\
+	This function will return,\newline
+	[ \newline
+	    (1,4,7), \# Timeseries 1 \newline
+	    (2,5,8), \# Timeseries 2 \newline
+	    (3,6,9) \# Timeseries 3 \newline
+	] \newline
+  
+ \begin{itemize}
+	  \item Input Parameters
+	  
+	  \begin{enumerate}
+	    \item lstData \textit{(list)} : list of different lists
+	    \end{enumerate}
+
+	  \item Output \textit{(file)}: \\
+	  Return a single list of tuples.
+	  
+	\end{itemize}
+	
  \item cleanArray(array) \\
  
 	This function removes ``nan'' (Not a number values) from the list.
@@ -101,12 +145,87 @@ elements.
  
  
  \item MADThreshold(array) \\
- \item smoothArray(array, alpha = 2.0/15.0) \\
- \item csv2array(filePath) \\
- \item getColumn(array, column\_number) \\
- \item formatCSV2Array(z) \\
+ 
+ This function is used to calculate threshold value using Median Absolute Deviation outlier detection method.
+ 
+ \begin{itemize}
+	  \item Input Parameters
+	  
+	  \begin{enumerate}
+	    \item array \textit{(list)} : Array of integers, real numbers, etc
+	    \end{enumerate}
 
- \item csvTransform(filePath,startDate) \\
+	  \item Output \textit{(float)}: \\
+	  threshold value computed using MAD Test.
+	  
+	\end{itemize}
+ 
+ \item smoothArray(array, alpha = 2.0/15.0) \\
+ This function smooths input array by exponential moving average technique.
+ 
+ \begin{itemize}
+	  \item Input Parameters
+	  
+	  \begin{enumerate}
+	    \item array \textit{(list)} : Array of integers, real numbers, etc
+	    \item alpha \textit{(float)} : smoothening factor of exponential average smoothing
+	    \end{enumerate}
+
+	  \item Output \textit{(list)}: \\
+	  Array which is exponentially smoothed
+	  
+	\end{itemize}
+ 
+ 
+ \item csv2array(filePath) \\
+ 
+  This function reads csv file into list
+ 
+ \begin{itemize}
+	  \item Input Parameters
+	  
+	  \begin{enumerate}
+	    \item filePath \textit{(string)} : Path of file to be read
+	    \end{enumerate}
+
+	  \item Output \textit{(list)}: \\
+	  list of rows in the csv file
+	  
+	\end{itemize}
+ 
+ \item getColumn(array, column\_number) \\
+ 
+   This function fetches a particular column from a list of tuples.
+ 
+ \begin{itemize}
+	  \item Input Parameters
+	  
+	  \begin{enumerate}
+	    \item array \textit{(list)} : List of tuples
+	    \item column\_number \textit{(int)} : The index of the column number to be fetched from list of tuples
+	    \end{enumerate}
+
+	  \item Output \textit{(list)}: \\
+	  list of elements corresponding to the column
+	  
+	\end{itemize}
+	
+ \item formatCSV2Array(z) \\
+ 
+    This function returns the same list with changed datatypes of elements within it.
+ 
+ \begin{itemize}
+	  \item Input Parameters
+	  
+	  \begin{enumerate}
+	    \item z \textit{(list)} : List of tuples
+	    \end{enumerate}
+
+	  \item Output \textit{(list)}: \\
+	  return same array changing data type of second column to float
+	  
+	\end{itemize}
+ 
 
 \end{itemize}
 

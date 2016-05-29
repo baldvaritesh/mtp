@@ -81,7 +81,7 @@ attaches each anomaly with its date and returns it.\\
 \end{itemize}
 
 
-\subsection{slopeBased(series1,smoothed1,series2,smoothed2,next_val_to_consider, default_threshold, threshold, what_to_consider)}
+\subsection{slopeBased(series1,smoothed1,series2,smoothed2,next\_val\_to\_consider, default\_threshold, threshold, what\_to\_consider)}
 
 This is main function of this anomaly detection technique. This function first calls "slopeBasedDetection" function, gets list of anomalies. 
 After that, it calls "anomalyDatesSlopeBaseddetetion" function to attach date with each anomaly and than returns result.
@@ -102,7 +102,7 @@ After that, it calls "anomalyDatesSlopeBaseddetetion" function to attach date wi
 
  \item Output \textit{(list)} : \\
  	Returns list of tuples of the following form: \\ 
- 	(start\_date,end\_date,slope\_value)
+ 	(start\_date,end\_date,slope\_value)\\
  	where, start\_date and end\_date are points on which the steep was computed along with the slope\_value which was spotted as outlier.
  
 \end{itemize}
@@ -111,4 +111,4 @@ After that, it calls "anomalyDatesSlopeBaseddetetion" function to attach date wi
 
 slopeBased function is called to find anomalies based on the rate of change in value. It calls slopeBasedDetection method to compute the slopes between points in windows. 
 Anomaly points are reported based on the parameters provided to the function. \\
-IOn order to map dates against every anomaly points instead of array index, anomalyDatesSlopeBaseddetetion is called which provides (start\_date,end\_date,slope\_value) as final output.
+In order to map dates against every anomaly points instead of array index, anomalyDatesSlopeBaseddetetion is called which provides (start\_date,end\_date,slope\_value) as final output.
