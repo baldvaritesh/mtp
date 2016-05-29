@@ -1,8 +1,0 @@
-write(RandomWalkOutput, ncolumns = 1,append = FALSE, file = "abd1gba.csv",sep=",")
-write(RandomWalkOutput, ncolumns = 1,append = FALSE, file = "bglr2gba.csv",sep=",")
-write(RandomWalkOutput, ncolumns = 1,append = FALSE, file = "mumbai3gba.csv",sep=",")
-write(RandomWalkOutput, ncolumns = 1,append = FALSE, file = "patna4gba.csv",sep=",")
-write(RandomWalkOutput, ncolumns = 1,append = FALSE, file = "delhi5gba.csv",sep=",")
-
-
-

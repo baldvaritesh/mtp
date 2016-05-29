@@ -24,7 +24,7 @@ x_series: independent variable
 y_series: dependent variable : y = f(x)
 param: Defines what to be treated as anomaly depending on its value as follows:
         0: Values going out of range, both with positive and negative error
-        1: Values with potitive errors
+        1: Values with positive errors
         -1: Values with negative errors
 default_threshold: Whether to use default threshold used by system using MAD test or user defined threshold
 threshold: Threshold value if it is used defined and default_threshold is 'False'
@@ -129,7 +129,7 @@ param: Defines what to be treated as anomaly depending on its value as follows:
 default_threshold: Whether to use default threshold used by system using MAD test or user defined threshold
 threshold: Threshold value if it is used defined and default_threshold is 'False'
 
-Returns array of tuples of the form (start_date,x_value,y_value,predicted_y_value,difference_between_predicted_and_actual_y_value)
+Returns array of tuples of the form (start_date,end_date,difference_between_predicted_and_actual_y_value)
 
 Requirements: Length of both the series should be equal
 '''
