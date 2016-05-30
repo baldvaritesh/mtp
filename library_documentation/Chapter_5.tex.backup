@@ -1,0 +1,215 @@
+\chapter{Multivariate Time Series Anomaly Detection Technique}
+
+\section{Introduction}
+
+The method uses vector autoregressive framework for multivaraiate time-series analysis
+in order to forecast values. The framework treats all the varaiables as symmetrical
+and all the varaiables are modelled as if they influence each others equally.
+
+VAR generates forecast values for all the varaiables in recursive manner. Since VAR 
+works on only stationary series, lag needs to be found so that the series could be
+differenced in order to make them stationary.
+
+The code is implemented in R and python is used to call the R script with Appropriate 
+arguments and process the intermeddiate results generated from the script. Forecast and 
+vars library are used in R to implement VAR model for multiple time-series.
+
+All the interrelated time-series are passed to R script using a csv file. 60\% 
+(This can be configured as per user need) of the passed data for every time-series 
+is consumed for modelling the time-series. Rest of the time-series data is used to 
+find the anomalies in the system by finding predicted values and range of higher and lower
+predicted values.
+
+Multiple csv files (one for each varaiable) are generated as an output to the R script 
+call which has actual values of varaiables along with the predicted ,lower and higher 
+values of prediction. All the points which does not fall in the forecasted range and 
+the percentage differnce between the actual and forecasted value breached threshold 
+are reported as anomalies.
+
+Note that the threshold is computed with MAD test on the percentage of differnce between actual and forecasted value.
+If in future, one wants to add threshold value than function can be modified according to that as well.
+
+\section{Related Functions}
+
+\subsection{MultivariateAnomaly(fileName,hd, paramCount,fileStart)}
+
+This function is inside R script which takes a fileName containing all the related 
+time-series and generate output files (one file for every component) containing predicted, actual,
+lower and higher forecasted values. The name of output files starts with fileStart appended with
+the sequence number of parameter. Like if i pass ``RetailWsArrival'' as fileStart and there are 
+two varaiables or series in input file. The names of generated file will be : RetailWsArrival1.csv and 
+RetailWsArrival2.csv
+
+\begin{itemize}
+ \item Input Parameters
+ 
+ \begin{enumerate}
+  \item fileName \textit{(string)} : Name of the file which contains all the interrelated time series for model
+  \item hd \textit{(boolean)} : Whether the CSV file contains header for columns or not 
+  \item paramCount \textit{(int)} : Number of varaiables in file 
+  \item fileStart \textit{(string)} : Prefix for the name of output files to be generated
+  
+ \end{enumerate}
+
+ \item Output: This function will write output to CSV file as stated before.
+
+\end{itemize}
+
+\subsection{multivaraiateAnalysis(args)}
+
+This function calls the R script through python passing args as the input to the R script.
+
+\begin{itemize}
+ \item Input Parameters
+ 
+ \begin{enumerate}
+  \item args \textit{(list)} : list of strings which serve as input to R script 
+
+ \end{enumerate}
+
+ \item Output: No output.
+
+\end{itemize}
+
+\subsection{generateCSVsForGraphBasedAnomaly(lists, dateIndex, seriesIndex)}
+
+In python code, we have time-series as a list. This list is list of tuples, in 
+which first value of tuple is date and than we have more than one values in the 
+same tuple, representing different time-series. For example, if we have 
+test-case as onion, than for one city we have 3 time series along with date, 
+which is rpresented as list of tuples of the the form (date, arrival, wholesale 
+price, retail price). But, for R script, we need just time series values. So 
+this function will take series of time series in variable ``lists``, where 
+lists[i] will represent one timeseries or multiple time series for one object 
+(like explained previously we can have multiple time series for one city).
+
+dateIndex will say which tuple number for the list lists[i] represents date and 
+seriesIndex represents, if lists[i] represents multiple series than which one 
+to take out of them. This can be explained by example as follows:
+
+Let's say, we have lists as folows: \newline
+\newline
+[ \newline
+\hfill  [(1-1-2010, x1, y1, z1), (2-1-2010, x2, y2, z2), ... ], \newline
+\hfill  [(1-1-2010, x1, y1, z1), (2-1-2010, x2, y2, z2), ... ], \newline
+\hfill  [...], ...  \newline
+]; \newline
+ \newline
+So, here we have time-series corresponding to two entities, which can be 
+accessed via lists[0] and lists[1]. Now, lists[0] gives us 3 time-series for 
+one entity. But let's say, here we need only one corresponding to ''y`` time 
+series. So, give dateIndex as 0 here and seriesIndex as 2. So, this function 
+will create 2 CSVs, one for each entity. Each CSV will have values [y1, y2, y3, 
+...]. One line will contain one value in file.
+
+Note that it is not necessary to have multiple time-series for on entity. We 
+can have just simple structure as follows: \newline
+\newline
+[ \newline
+\hspace{1cm}  [(1-1-2010, x1), (2-1-2010, x2), ... ], \newline
+\hspace{1cm}  [(1-1-2010, y1), (2-1-2010, y2), ... ], \newline
+\hspace{1cm}  [...], ...  \newline
+]; \newline
+ \newline
+So here, we have two time-series as x and y, and we can than give dateIndex as 
+0 here and seriesIndex as 1. This will create two CSVs, one for ''x`` and other 
+for ''y``.
+
+After creating these CSVs, this function returns names of the file created.
+
+
+\begin{itemize}
+ \item Input Parameters
+ 
+ \begin{enumerate}
+  \item lists \textit{(list)} : List of time-series, where lists[i] = list of 
+tuple of the form (date, val1 [, val2, val3, ...]) \\
+    where date is in form of string and values in square brackets are optional.
+  \item dateIndex \textit{(int)} : column number of date in list of tuple 
+(starting with 0)
+  \item seriesIndex \textit{(int)} : column number of series in list of tuple 
+(starting with 0)
+
+ \end{enumerate}
+
+ \item Output \textit{(Tuple)}: \\
+  returns tuple of the form, (dates,fileNames), \\
+  
+  Where, \\
+  fileNames: Generated multiple CSVs, corresponding to each series for the 
+input of R script. Returns name of these files. \\
+  dates: Separated date from the series, so that later we can combine result of 
+the R script (anomalies) with dates.
+
+ 
+\end{itemize}
+
+
+\subsection{getAnomalies(dates,resultFile, numOfPtsReqd)}
+
+This function does the work of combining result of R script with the date. 
+Result generated by R will be in some file, which is passed here as resultFile 
+parameter. This will have indices for each day. So using this we append dates 
+to it. So now, we have connectivity value for each date. This function sorts 
+them according to connectivity value and returns the number of points required 
+stated by parameter numOfPtsReqd, which as low connectivity value. 
+
+
+\begin{itemize}
+ \item Input Parameters
+ 
+ \begin{enumerate}
+  \item dates \textit{(list)} : List of dates, returned by ''getAnomalies`` 
+function.
+  \item resultFile \textit{(string)} : Path of file to which output of R script 
+is written
+  \item numOfPtsReqd \textit{(int)} : Number of anomalous points required
+
+ \end{enumerate}
+
+ \item Output \textit{(list)}: \\
+  reurns list of tuples of the form: \\
+  (start\_date, end\_date, connectivity\_value) \\
+  Note that, here start\_date will be same as end\_date, as this function 
+returns results day-wise.
+  
+\end{itemize}
+
+\subsection{graphBasedAnomalyMain(lists, dependentVar, numOfPtsReqd, 
+dateIndex=0, seriesIndex=1)}
+
+This is the main function of this method. This function makes call to other 
+functions, uses the output of one, as a input to other, combines all functions 
+and returns generated output.
+
+\begin{itemize}
+ \item Input Parameters
+ 
+ \begin{enumerate}
+  \item lists \textit{(list)} : List of time-series, where lists[i] = list of 
+tuple of the form (date, val1 [, val2, val3, ...]) \\
+    where date is in form of string and values in square brackets are optional. 
+   
+  \item dependentVar \textit{(int)} : Index of the dependent variable, where 
+dependentVar = function of independantVars
+  \item numOfPtsReqd \textit{(int)} : Number of anomalous points required
+  \item dateIndex \textit{(int)} : column number of date in list of tuple 
+(starting with 0)
+  \item seriesIndex \textit{(int)} : column number of series in list of tuple 
+(starting with 0)
+  
+ \end{enumerate}
+
+\end{itemize}
+
+\section{Description}
+
+Putting all together, here is the summary:\\
+\\
+''graphBasedAnomalyMain`` is the main function. First, it calls 
+''generateCSVsForGraphBasedAnomaly``, which will generate files for each 
+series, which will be used as input for R script. It also generates list of 
+dates. Now, this list of file is passed to function, ''graphBasedAnomalyCall``, 
+which will execute R script and will generate output in predefined file. This 
+file name, along with dates and number of anomaly points required is passed to 
+function  ''getAnomalies``, which will return output in required format.
