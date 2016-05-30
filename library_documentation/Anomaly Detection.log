@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.5.27)  30 MAY 2016 01:35
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.1.3)  30 MAY 2016 16:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **"Anomaly Detection.tex"
 (./Anomaly Detection.tex
 LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 2 languages loaded.
+Babel <3.9h> and hyphenation patterns for 78 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
@@ -399,9 +399,15 @@ Overfull \hbox (15.6174pt too wide) in paragraph at lines 8--8
  []
 
 
-Overfull \hbox (96.32864pt too wide) in paragraph at lines 13--13
+Overfull \hbox (6.55621pt too wide) in paragraph at lines 13--13
  [][] []\OT1/cmr/m/n/10 slopeBasedDetection(series1,smoothed1,series2,smoothed2
-,next[]val[]to[]consider, 
+,  
+ []
+
+
+Overfull \hbox (35.60078pt too wide) in paragraph at lines 13--13
+ \OT1/cmr/m/n/10 next[]val[]to[]consider, de-fault[]threshold, thresh-old, what
+[]to[]consider) []  
  []
 
 
@@ -445,58 +451,58 @@ Overfull \hbox (6.09789pt too wide) in paragraph at lines 28--28
 
  (./Chapter_1.tex
 Chapter 1.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 38.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 37.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 38.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 37.
  [3
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 51--53
+Underfull \hbox (badness 10000) in paragraph at lines 50--52
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--68
+Underfull \hbox (badness 10000) in paragraph at lines 58--67
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 117--120
+Underfull \hbox (badness 10000) in paragraph at lines 118--121
 
  []
 
 
-Overfull \hbox (11.23064pt too wide) in paragraph at lines 125--125
+Overfull \hbox (11.23064pt too wide) in paragraph at lines 126--126
 []\OT1/cmr/bx/n/12 WindowCorrelationWithConstantLag(arr1, arr2, win-
  []
 
 
-Overfull \hbox (35.16396pt too wide) in paragraph at lines 168--168
+Overfull \hbox (35.16396pt too wide) in paragraph at lines 169--169
 []\OT1/cmr/bx/n/12 anomaliesFromWindowCorrelationWithConstantlag(arr1,
  []
 
 
-Overfull \hbox (54.81726pt too wide) in paragraph at lines 168--168
+Overfull \hbox (54.81726pt too wide) in paragraph at lines 169--169
 \OT1/cmr/bx/n/12 arr2, win-dow[]size=15,maxlag=15, pos-i-tive[]correlation=True
 ,
  []
 
 [5])
-Underfull \hbox (badness 10000) in paragraph at lines 225--29
+Underfull \hbox (badness 10000) in paragraph at lines 226--29
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--29
+Underfull \hbox (badness 10000) in paragraph at lines 226--29
 
  []
 
 
-Overfull \hbox (11.69522pt too wide) in paragraph at lines 225--29
+Overfull \hbox (11.69522pt too wide) in paragraph at lines 226--29
 \OT1/cmr/m/n/10 Function ``anoma-lies-FromWin-dow-Cor-re-la-tion-With-Con-stant
 -lag`` is the main driver.
  []
@@ -507,9 +513,14 @@ Overfull \hbox (11.69522pt too wide) in paragraph at lines 225--29
  (./Chapter_2.tex
 Chapter 2.
 
-Overfull \hbox (165.40784pt too wide) in paragraph at lines 32--32
-[]\OT1/cmr/bx/n/12 slopeBasedDetection(series1,smoothed1,series2,smoothed2,next
-[]val[]to[]consider,
+Overfull \hbox (43.857pt too wide) in paragraph at lines 32--32
+[]\OT1/cmr/bx/n/12 slopeBasedDetection(series1,smoothed1,series2,smoothed2, 
+ []
+
+
+Overfull \hbox (95.93645pt too wide) in paragraph at lines 32--32
+\OT1/cmr/bx/n/12 next[]val[]to[]consider, de-fault[]threshold, thresh-old, what
+[]to[]consider) 
  []
 
 [8
@@ -517,29 +528,34 @@ Overfull \hbox (165.40784pt too wide) in paragraph at lines 32--32
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 51--53
+Underfull \hbox (badness 10000) in paragraph at lines 53--55
 
  []
 
 
-Overfull \hbox (70.10727pt too wide) in paragraph at lines 59--59
+Overfull \hbox (70.10727pt too wide) in paragraph at lines 61--61
 []\OT1/cmr/bx/n/12 anomalyDatesSlopeBaseddetetion(slopeBasedResult,any[]series)
  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--68
+Underfull \hbox (badness 10000) in paragraph at lines 63--66
 
  []
 
 
-Overfull \hbox (108.24118pt too wide) in paragraph at lines 84--84
+Underfull \hbox (badness 10000) in paragraph at lines 67--71
+
+ []
+
+
+Overfull \hbox (108.24118pt too wide) in paragraph at lines 87--87
 []\OT1/cmr/bx/n/12 slopeBased(series1,smoothed1,series2,smoothed2,next[]val[]to
 []consider,
  []
 
 [9])
-Overfull \hbox (48.96747pt too wide) in paragraph at lines 112--30
+Overfull \hbox (48.96747pt too wide) in paragraph at lines 115--30
 \OT1/cmr/m/n/10 anoma-ly-DatesS-lope-Based-de-te-tion is called which pro-vides
  (start[]date,end[]date,slope[]value)
  []
@@ -554,61 +570,70 @@ Chapter 3.
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 38--52
+Underfull \hbox (badness 10000) in paragraph at lines 74--82
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--52
+Underfull \hbox (badness 10000) in paragraph at lines 74--82
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--52
+Underfull \hbox (badness 10000) in paragraph at lines 74--82
 
  []
 
 
-Overfull \hbox (134.93996pt too wide) in paragraph at lines 38--52
-\OT1/cmr/m/n/10 (Index[]of[]Data[]Point,x[]value,y[]value,predicted[]y[]value,d
-ifference[]between[]predicted[]and[]actual[]y[]value) 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--52
+Underfull \hbox (badness 10000) in paragraph at lines 74--82
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--52
+Underfull \hbox (badness 10000) in paragraph at lines 83--94
 
  []
 
 
-Overfull \hbox (26.87538pt too wide) in paragraph at lines 55--55
+Underfull \hbox (badness 10000) in paragraph at lines 83--94
+
+ []
+
+
+Overfull \hbox (26.87538pt too wide) in paragraph at lines 97--97
 []\OT1/cmr/bx/n/12 anomalies[]from[]linear[]regression(result[]of[]lr, any[]ser
 ies) 
  []
 
 [12]
-Overfull \hbox (15.79759pt too wide) in paragraph at lines 65--66
+Overfull \hbox (15.79759pt too wide) in paragraph at lines 112--116
 []\OT1/cmr/m/n/10 result[]of[]lr \OT1/cmr/m/it/10 (list) \OT1/cmr/m/n/10 : This
  is list of anoma-lies re-ported by "lin-ear[]regression"
  []
 
 
-Overfull \hbox (65.52867pt too wide) in paragraph at lines 69--72
-\OT1/cmr/m/n/10 (date,x[]value,y[]value,predicted[]y[]value,difference[]between
-[]predicted[]and[]actual[]y[]value) 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 96--101
+Underfull \hbox (badness 10000) in paragraph at lines 121--123
 
  []
 
-[13])
-Underfull \hbox (badness 10000) in paragraph at lines 106--31
+
+Overfull \hbox (67.97311pt too wide) in paragraph at lines 124--126
+[]\OT1/cmr/m/n/10 (date,x[]value,y[]value,predicted[]y[]value, dif-fer-ence[]be
+tween[]predicted[]and[]actual[]y[]value) 
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 162--164
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--169
+
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 174--31
 
  []
 
@@ -664,27 +689,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 201--32
 [18]
 \openout2 = `Chapter_5.aux'.
 
- (./Chapter_5.tex
-Chapter 5.
 
-Overfull \hbox (35.84865pt too wide) in paragraph at lines 34--34
-[]\OT1/cmr/bx/n/12 MultivariateAnomaly(fileName,hd, param-Count,fileStart) 
- []
-
-[19
-
-
-
-])
-Underfull \hbox (badness 10000) in paragraph at lines 102--33
-
- []
-
-[20] [21]
+No file Chapter_5.tex.
 \openout2 = `Chapter_6.aux'.
 
- (./Chapter_6.tex
-Chapter 6.
+(./Chapter_6.tex
+Chapter 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 32--33
 
@@ -710,7 +720,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--67
 
  []
 
-[22
+[19
+
+
 
 
 
@@ -734,7 +746,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--116
 
  []
 
-[23]
+[20]
 Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
@@ -760,7 +772,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 196--197
 
  []
 
-[24]
+[21]
 Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
  []
@@ -782,7 +794,7 @@ Overfull \hbox (3.92833pt too wide) in paragraph at lines 281--284
 ssion value,
  []
 
-[25]
+[22]
 Overfull \hbox (3.92833pt too wide) in paragraph at lines 284--287
 \OT1/cmr/m/n/10 (date, cor-re-la-tion value, slope[]based value, lin-ear[]regre
 ssion value,
@@ -815,25 +827,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 359--360
 
  []
 
-[26]
+[23]
 Underfull \hbox (badness 10000) in paragraph at lines 362--370
 
  []
 
-) [27] (./Anomaly Detection.bbl) [28
+) [24] (./Anomaly Detection.bbl) [25
 
 
 ] (./Anomaly Detection.aux (./Chapter_1.aux) (./Chapter_2.aux) (./Chapter_3.aux
 ) (./Chapter_4.aux) (./Chapter_5.aux)
 (./Chapter_6.aux)) ) 
 Here is how much of TeX's memory you used:
- 1616 strings out of 495028
- 18974 string characters out of 6181497
- 77684 words of memory out of 5000000
- 4790 multiletter control sequences out of 15000+600000
+ 1614 strings out of 493304
+ 18946 string characters out of 6139872
+ 82971 words of memory out of 5000000
+ 5039 multiletter control sequences out of 15000+600000
  10581 words of font info for 38 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 34i,6n,22p,828b,311s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 957 hyphenation exceptions out of 8191
+ 34i,6n,22p,348b,311s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
 x12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pf
@@ -844,10 +856,10 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive
 dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmti10.pfb>
-Output written on "Anomaly Detection.pdf" (29 pages, 179401 bytes).
+Output written on "Anomaly Detection.pdf" (26 pages, 173859 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 95 compressed objects within 1 object stream
+ 128 PDF objects out of 1000 (max. 8388607)
+ 89 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

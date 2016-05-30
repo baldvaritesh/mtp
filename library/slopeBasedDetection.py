@@ -163,9 +163,9 @@ This is MAIN Function of this method.
 
 This function takes 8 arguments:
 
-1. series1 : Array of elements (int, real_vals)
+1. series1 : Array of elements (date, real_vals)
 2. smoothed1 : whether series1 is smoothed or not.
-3. series2 : Array of elements (int, real_vals)
+3. series2 : Array of elements (date, real_vals)
 4. smoothed2 : whether series2 is smoothed or not.
 5. next_val_to_consider: Which Val to consider to calculate slope? Usually next Val, but for our data we take 7 days
 6. default_threshold: whether to consider default threshold or not (True/False)

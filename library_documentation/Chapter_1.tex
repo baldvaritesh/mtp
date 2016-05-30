@@ -5,17 +5,16 @@
 This technique is basically applied on two time-series. Let's say we have two 
 time series as series1 and series2. So, in this method, we first find 
 correlation at various lags between these two time series. User can specify 
-minimum and maximum lag to consider. So, for all those values, we find 
-correlation values. 
+minimum and maximum lag to consider. So, for each value between minimum and maximum lag, we find correlation values.
 
 After finding correlation values at all lags, we consider that lag at which 
-correlation value is higher among all previously calulated correlation values 
+correlation value is higher, among all previously calulated correlation values, 
 at all lags. Let's say that lag be ``x''. So, depending upon that ``x'', we 
 shift series1 or series2. If ``x'' is positive, we move series2 by ``x'' units 
 and if it is negative than we shift series1 by \abs{x} units.
 
-Now, we are ready to apply window correlation. Take window value,``w'' as 
-input. First window will be from 1st element to w'th elementof both the time 
+Now, we are ready to apply window correlation. Take window size,``w'' as 
+input. First window will be from 1st element to w'th element of both the time 
 series after aligning by lag ``x''. Find correlation for this window between 
 two time-series and save it in an array. Now, slide window by ``w'' elements 
 and 
@@ -25,7 +24,7 @@ multiple windows.
 Now, let's say both the series should have been positively correlated. So, what 
 we do is, we choose threshold by MAD test if not provided to us, and find all 
 correlation values which are below that threshold and report all those windows 
-as anomaly.
+as anomaly. Similarly, for negative correlation values above the threshold value is reported as anomaly.
 
 \section{Related Functions}
 
@@ -43,9 +42,9 @@ between -maxlag to +maxlag, as specified by pos and neg parameters.
   \item maxlag \textit{(int)} : maximum (maxlag) and minimum (-maxlag) lag to 
 consider while calculating correlation betweem arr1 and arr2
   \item pos \textit{(int, 1 or 0)} : To consider positive lag or not, i.e. 1 to 
-maxlag
+maxlag, if value is 1, than positive lag will be considered, else not.
   \item neg \textit{(int, 1 or 0)} : To consider negative lag or not, i.e. 
--maxlag to -1
+-maxlag to -1, if value is 1, than negative lag will be considered, else not.
  \end{enumerate}
 
  \item Output \textit{(list)} : \\
@@ -56,15 +55,17 @@ maxlag
 
 \subsection{getMaxCorr(arar1,positive\_correlation)}
 
-This function takes list of tuples of the form (lag, correlation value at this 
-lag) as  input. Returns lag value at which correlation value is maximum if 
-positive\_correlation is True, and returns lag at which correlation value is 
-minimum if positive\_correlation is False. \\
-\\
-Basically, if both the series are positively correlated than we will be 
+If both the series are positively correlated than we will be 
 interested in maximum positive correlation or if both series are negatively 
 correlated than we will be interested in minimum negative correlation, which is 
 specified by positive\_correlation parameter.
+\\
+This function takes list of tuples of the form (lag, correlation value at this 
+lag) as  input. Returns lag value at which correlation value is maximum, if 
+positive\_correlation is True, and returns lag at which correlation value is 
+minimum if positive\_correlation is False. \\
+
+
 
 \begin{itemize}
  \item Input Parameters
@@ -91,15 +92,15 @@ lag at which optimum correlation value is found along with correlation value.
 
 \subsection{correlationAtLag(series1, series2, lag, window\_size)}
 
-This function fisrt aligns two series by given lag. If lag is positive than it 
+This function first aligns two series by given lag. If lag is positive than it 
 shifts start of series2 else start of series1. After aligning both the series 
 according to lag, this function calculates correlation between both series at 
 all windows. 
 
 window\_size states size of the window. So, we will start with first window 
-taking first window\_size elements from each series and will calculate 
+taking first ``window\_size'' elements from each series and will calculate 
 correlation. We will save this correlation value in list and will slide to next 
-window. Next window will start after window\_size elements. In such a way, we 
+window. Next window will start after ``window\_size'' elements. In such a way, we 
 calculate, correlation at all windows and return the list of correlation values.
 
 
@@ -146,17 +147,17 @@ series
        \item False: This suggest that both the series are negatively correlated
       \end{itemize}
       
-  \item pos \textit{(int, 1 or 0)} : If value of this parameter is True than we 
+  \item pos \textit{(int, 1 or 0)} : If value of this parameter is 1 than we 
 will consider positive values for lag, i.e. 1 to +maxlag to align both the 
 series initially
-  \item neg \textit{(int, 1 or 0)} : If value of this parameter is True than we 
+  \item neg \textit{(int, 1 or 0)} : If value of this parameter is 1 than we 
 will consider negative values for lag, i.e. -maxlag to -1 to align both the 
 series initially
   
  \end{enumerate}
 
  \item Output \textit{(list)} : \\
-  List of tuples of the form (lag,array)
+  Returns tuple of the form (lag,array)
 Where lag is lag value for which whole series is shifted and then at that lag, 
 we have calculated correlation for all window. Correlation value for all 
 windows is stored in array.
@@ -172,10 +173,10 @@ This is main function of this method. This is driver of whole method. Using
 previously stated methods, it will first gather correlation values at different 
 windows. Than depending upon which type of threshold is to be used, it will 
 filter out anomalies. If default threshold is to be used, than it will be 
-caulated using MAD test on the correlation values at each window, else 
+calculated using MAD test on the correlation values at each window, else 
 threshold provided by user will be used. 
 
-Correlation values not satisying threshold will be reported along with the date 
+Correlation values not satisfying threshold will be reported along with the date 
 range of that window.
 
 
@@ -183,9 +184,9 @@ range of that window.
  \item Input Parameters
  
  \begin{enumerate}
-  \item arr1 \textit{(list)} : Input series 1 as a list of tuples of the from 
+  \item arr1 \textit{(list)} : Input series 1 as a list of tuples of the form 
 (date,value)
-  \item arr2 \textit{(list)} : Input series 2 as a list of tuples of the from 
+  \item arr2 \textit{(list)} : Input series 2 as a list of tuples of the form 
 (date,value)
   \item window\_size \textit{(int)} : window size to be considered while 
 calculating window correlation
@@ -198,10 +199,10 @@ series
        \item False: This suggest that both the series are negatively correlated
       \end{itemize}
       
-  \item pos \textit{(int, 1 or 0)} : If value of this parameter is True than we 
+  \item pos \textit{(int, 1 or 0)} : If value of this parameter is 1 than we 
 will consider positive values for lag, i.e. 1 to +maxlag to align both the 
 series initially
-  \item neg \textit{(int, 1 or 0)} : If value of this parameter is True than we 
+  \item neg \textit{(int, 1 or 0)} : If value of this parameter is 1 than we 
 will consider negative values for lag, i.e. -maxlag to -1 to align both the 
 series initially
   \item default\_threshold \textit{(boolean, ``True'' or ``False'')} : whether 
@@ -215,7 +216,7 @@ user provided threshold will be used.
   This function filter out anomalies and returns them. This function returns
   List of tuples of the form \\ (start\_date,end\_date,correlation\_value), \\
   where (start\_date, end\_date) specifies range of the window and 
-correlation\_value if value of correlation of that window
+correlation\_value is value of correlation of that window
   
 \end{itemize}
 
@@ -240,4 +241,4 @@ correlation values at all windows and filters out anomalies (either using
 threshold calculated by MAD test or by user provided threshold) and returns them 
 in the format of (start\_date,end\_date,correlation\_value),
   where (start\_date, end\_date) specifies range of the window and 
-correlation\_value if value of correlation of that window.
+correlation\_value is value of correlation of that window.
