@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.1.3)  30 MAY 2016 16:59
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.1.3)  30 MAY 2016 17:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -363,8 +363,12 @@ Package tocbibind Info: The document has chapter divisions on input line 50.
 
 Package tocbibind Note: Using chapter style headings, unless overridden.
 
-) (./Anomaly Detection.aux (./Chapter_1.aux) (./Chapter_2.aux) (./Chapter_3.aux
-) (./Chapter_4.aux) (./Chapter_5.aux) (./Chapter_6.aux))
+) (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(./Anomaly Detection.aux (./Chapter_1.aux) (./Chapter_2.aux) (./Chapter_3.aux)
+(./Chapter_4.aux) (./Chapter_5.aux) (./Chapter_6.aux))
 \openout1 = `"Anomaly Detection.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
@@ -689,12 +693,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 201--32
 [18]
 \openout2 = `Chapter_5.aux'.
 
+ (./Chapter_5.tex
+Chapter 5.
 
-No file Chapter_5.tex.
+Overfull \hbox (35.84865pt too wide) in paragraph at lines 36--36
+[]\OT1/cmr/bx/n/12 MultivariateAnomaly(fileName,hd, param-Count,fileStart) 
+ []
+
+[19
+
+
+
+])
+Underfull \hbox (badness 10000) in paragraph at lines 104--33
+
+ []
+
+[20] [21]
 \openout2 = `Chapter_6.aux'.
 
-(./Chapter_6.tex
-Chapter 5.
+ (./Chapter_6.tex
+Chapter 6.
 
 Underfull \hbox (badness 10000) in paragraph at lines 32--33
 
@@ -720,9 +739,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--67
 
  []
 
-[19
-
-
+[22
 
 
 
@@ -746,7 +763,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--116
 
  []
 
-[20]
+[23]
 Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
@@ -772,7 +789,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 196--197
 
  []
 
-[21]
+[24]
 Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
  []
@@ -794,7 +811,7 @@ Overfull \hbox (3.92833pt too wide) in paragraph at lines 281--284
 ssion value,
  []
 
-[22]
+[25]
 Overfull \hbox (3.92833pt too wide) in paragraph at lines 284--287
 \OT1/cmr/m/n/10 (date, cor-re-la-tion value, slope[]based value, lin-ear[]regre
 ssion value,
@@ -827,23 +844,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 359--360
 
  []
 
-[23]
+[26]
 Underfull \hbox (badness 10000) in paragraph at lines 362--370
 
  []
 
-) [24] (./Anomaly Detection.bbl) [25
+) [27] (./Anomaly Detection.bbl) [28
 
 
 ] (./Anomaly Detection.aux (./Chapter_1.aux) (./Chapter_2.aux) (./Chapter_3.aux
 ) (./Chapter_4.aux) (./Chapter_5.aux)
 (./Chapter_6.aux)) ) 
 Here is how much of TeX's memory you used:
- 1614 strings out of 493304
- 18946 string characters out of 6139872
- 82971 words of memory out of 5000000
- 5039 multiletter control sequences out of 15000+600000
- 10581 words of font info for 38 fonts, out of 8000000 for 9000
+ 1692 strings out of 493304
+ 19882 string characters out of 6139872
+ 84096 words of memory out of 5000000
+ 5110 multiletter control sequences out of 15000+600000
+ 10749 words of font info for 39 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  34i,6n,22p,348b,311s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
@@ -855,11 +872,12 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmti10.pfb>
-Output written on "Anomaly Detection.pdf" (26 pages, 173859 bytes).
+e1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmtt10.pfb>
+Output written on "Anomaly Detection.pdf" (29 pages, 191084 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
- 89 compressed objects within 1 object stream
+ 141 PDF objects out of 1000 (max. 8388607)
+ 98 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

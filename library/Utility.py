@@ -64,21 +64,22 @@ def fetchNewsFor5Centers(resultsOfSystem, intervalToConsider=5):
 		end_date = date + timedelta(days=intervalToConsider)
 		end_date = end_date.strftime('%Y/%m/%d')
 		
-		query = "select publish_date, name, source_url, article_hash_url, an.reason, an.comment, an.days from articlemetadata amd, newssource ns, analysis an where amd.source_id = ns.id and publish_date >= '"+start_date+"' and publish_date<= '"+end_date+"' and article_hash_url = an.article_id and article_hash_url in (select distinct(article_id) from analysis where place iLike 'Ahmedabad' or place iLike 'Bengaluru' or place iLike 'Mumbai' or place iLike 'Patna' or place iLike 'Delhi' or place iLike 'India' )"
+		query = "select publish_date, name, source_url, article_hash_url, an.reason, an.comment, an.days from articlemetadata amd, newssource ns, analysis an where amd.source_id = ns.id and publish_date >= '"+start_date+"' and publish_date<= '"+end_date+"' and article_hash_url = an.article_id and article_hash_url in (select distinct(article_id) from analysis where place iLike 'Ahmedabad' or place iLike 'Bengaluru' or place iLike 'Mumbai' or place iLike 'Patna' or place iLike 'Delhi' or place iLike 'India'  and comment not ilike '%delete%' )"
 		cur.execute(query)
 		queryResult = cur.fetchall()
 		
 		resultOfThisDate = []
 		for row_queryResult in queryResult:			
 			# Find All keyword corresponding to that article using : article_hash_url
-			query = "select keyword from alchemykeyword where article_id = '" + row_queryResult[3] + "'"
-			keywordQueryResult = cur.fetchall()
-			smallTuple = (row_queryResult[0], row_queryResult[1], row_queryResult[2], (row_queryResult[0] - date).days, keywordQueryResult)
+			# query = "select keyword from alchemykeyword where article_id = '" + row_queryResult[3] + "'"
+			# keywordQueryResult = cur.fetchall()
+			# smallTuple = (row_queryResult[0], row_queryResult[1], row_queryResult[2], (row_queryResult[0] - date).days, keywordQueryResult)
+			smallTuple = (row_queryResult[0], row_queryResult[1], row_queryResult[2], (row_queryResult[0] - date).days , row_queryResult[4], row_queryResult[5], row_queryResult[6])
 			resultOfThisDate.append(smallTuple)
 		result[date] = resultOfThisDate
 		
 	# Fetch all dates of news articles corresponding to this center
-	query = "select publish_date, an.reason, an.comment, an.days from articlemetadata, analysis an where article_hash_url = an.article_id and article_hash_url in (select distinct(article_id) from analysis where place iLike 'Ahmedabad' or place iLike 'Bengaluru' or place iLike 'Mumbai' or place iLike 'Patna' or place iLike 'Delhi' or place iLike 'India' )  order by publish_date"
+	query = "select publish_date, an.reason, an.comment, an.days from articlemetadata, analysis an where article_hash_url = an.article_id and article_hash_url in (select distinct(article_id) from analysis where place iLike 'Ahmedabad' or place iLike 'Bengaluru' or place iLike 'Mumbai' or place iLike 'Patna' or place iLike 'Delhi' or place iLike 'India'  and comment not ilike '%delete%' )  order by publish_date"
 	cur.execute(query)
 	allArticlesQueryResult = cur.fetchall()
 	
@@ -87,8 +88,8 @@ def fetchNewsFor5Centers(resultsOfSystem, intervalToConsider=5):
 	for date in result:
 		temp_list = result[date]
 		for row_temp_list in temp_list:
-			(a,b,c,d,e) = row_temp_list
-			resultList.append((date,a,b,c,d,e))
+			(a,b,c,d,e, f, g) = row_temp_list
+			resultList.append((date,a,b,c,d,e,f,g))
 	# Sort by anomaly date
 	resultList = sorted(resultList, key=lambda x: x[0])
 	# Filter resultList for duplicates
@@ -242,7 +243,7 @@ def fetchNewsForCenter(resultsOfSystem, centerNumber, intervalToConsider=5):
 		start_date = start_date.strftime('%Y/%m/%d')
 		end_date = date + timedelta(days=intervalToConsider)
 		end_date = end_date.strftime('%Y/%m/%d')
-		query = "select publish_date, name, source_url, article_hash_url, an.reason, an.comment, an.days from articlemetadata amd, newssource ns, analysis an where amd.source_id = ns.id and publish_date >= '"+start_date+"' and publish_date<= '"+end_date+"' and article_hash_url = an.article_id and article_hash_url in (select distinct(article_id) from analysis where place iLike '"+center+"' or place iLike 'india' )"
+		query = "select publish_date, name, source_url, article_hash_url, an.reason, an.comment, an.days  from articlemetadata amd, newssource ns, analysis an where amd.source_id = ns.id and publish_date >= '"+start_date+"' and publish_date<= '"+end_date+"' and article_hash_url = an.article_id and article_hash_url in (select distinct(article_id) from analysis where place iLike '"+center+"' or place iLike 'india' and comment not ilike '%delete%' )"
 
 		cur.execute(query)
 		queryResult = cur.fetchall()
@@ -250,15 +251,16 @@ def fetchNewsForCenter(resultsOfSystem, centerNumber, intervalToConsider=5):
 		resultOfThisDate = []
 		for row_queryResult in queryResult:		
 			# Find All keyword corresponding to that article using : article_hash_url
-			query = "select keyword from alchemykeyword where article_id = '" + row_queryResult[3] + "'"
-			cur.execute(query)
-			keywordQueryResult = cur.fetchall()
-			smallTuple = (row_queryResult[0], row_queryResult[1], row_queryResult[2], (row_queryResult[0] - date).days, keywordQueryResult)
+			# query = "select keyword from alchemykeyword where article_id = '" + row_queryResult[3] + "'"
+			# keywordQueryResult = cur.fetchall()
+			# smallTuple = (row_queryResult[0], row_queryResult[1], row_queryResult[2], (row_queryResult[0] - date).days, keywordQueryResult)
+			smallTuple = (row_queryResult[0], row_queryResult[1], row_queryResult[2], (row_queryResult[0] - date).days , row_queryResult[4], row_queryResult[5], row_queryResult[6])
 			resultOfThisDate.append(smallTuple)
 		result[date] = resultOfThisDate
 		
 	# Fetch all dates of news articles corresponding to this center
-	query = "select publish_date,  an.reason, an.comment, an.days  from articlemetadata, analysis an where  article_hash_url = an.article_id and article_hash_url in (select distinct(article_id) from analysis where place iLike '"+center+"' or place iLike 'india' )  order by publish_date"
+	query = "select publish_date,  an.reason, an.comment, an.days  from articlemetadata, analysis an where  article_hash_url = an.article_id and article_hash_url in (select distinct(article_id) from analysis where place iLike '"+center+"' or place iLike 'india'  and comment not ilike '%delete%' )  order by publish_date"
+	
 	cur.execute(query)
 	allArticlesQueryResult = cur.fetchall()
 	
@@ -267,8 +269,8 @@ def fetchNewsForCenter(resultsOfSystem, centerNumber, intervalToConsider=5):
 	for date in result:
 		temp_list = result[date]
 		for row_temp_list in temp_list:
-			(a,b,c,d,e) = row_temp_list
-			resultList.append((date,a,b,c,d,e))
+			(a,b,c,d,e,f,g) = row_temp_list
+			resultList.append((date,a,b,c,d,e,f,g))
 	# Sort by anomaly date
 	resultList = sorted(resultList, key=lambda x: x[0])
 	# Filter resultList for duplicates
@@ -343,12 +345,12 @@ def findAverageTimeSeries(timeSeriesCollection):
 
 '''
 
-This function takes 4 arguments:
+This function takes 5 arguments:
 original: Original Time Series of retail of the format list of tuples . Tuple (date, value)
 average: Average Retail Time Series of avg retail of the format list of tuples . Tuple (date, value)
 list1: Predicted By system : list of tuples ... (date, ... , ...)
 list2: Actual results : List of Dates
-
+total_news_articles: All articles present in the databse for this center/entity
 Plots Grpah.
 
 '''
@@ -366,6 +368,8 @@ def plotGraphForHypothesis(original,average,list1, list2, total_news_articles):
 	# print type(total_news_articles)
 	# print (list2)
 	# print (total_news_articles)
+	list2 = [row[0] for row in list2]
+	total_news_articles = [row[0] for row in total_news_articles]
 	for row in list2:
 		ax.axvspan(row, row + timedelta(days=1), color='r', alpha=0.5, lw=0)
 	for row in total_news_articles:
@@ -619,7 +623,7 @@ Return Tuple format:
 (date, correlation, slope_based, linear_regression, graph_based, spike_detection, multiple_arima)
 
 '''
-def intersection(numOfResults, list1, resultOf1, list2, resultOf2, list3 = [], resultOf3="linear_regression", list4=[], resultOf4="graph_based", list5=[], resultOf5="spike_detection" , list6=[], resultOf6="multiple_arima"):
+def intersection(numOfResults, list1, resultOf1, list2, resultOf2, list3 = [], resultOf3="linear_regression", list4=[], resultOf4="graph_based", list5=[], resultOf5="multiple_arima" , list6=[], resultOf6="spike_detection"):
     # Convert first and second item of tuple to date from string
     # First Combine both the results into one, 3 tuples to 4 tuples -> 4th will be from which time series it is.
     '''
