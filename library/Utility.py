@@ -218,9 +218,9 @@ def fetchNewsForCenter(resultsOfSystem, centerNumber, intervalToConsider=5):
 	center = ""
 	
 	if(centerNumber == 0):
-		center = "Ahmedabad"
+		center = "Mumbai"
 	elif(centerNumber == 1):
-		center = "Bengaluru"
+		center = "Delhi"
 	elif(centerNumber == 2):
 		center = "Mumbai"
 	elif(centerNumber == 3):
@@ -237,13 +237,14 @@ def fetchNewsForCenter(resultsOfSystem, centerNumber, intervalToConsider=5):
 	
 	# Let's see details for each date...
 	for row_resultsOfSystem in resultsOfSystem:
+		# date = row_resultsOfSystem[0].date()
 		date = row_resultsOfSystem[0].date()
 		
 		start_date = date - timedelta(days=intervalToConsider)
 		start_date = start_date.strftime('%Y/%m/%d')
 		end_date = date + timedelta(days=intervalToConsider)
 		end_date = end_date.strftime('%Y/%m/%d')
-		query = "select publish_date, name, source_url, article_hash_url, an.reason, an.comment, an.days  from articlemetadata amd, newssource ns, analysis an where amd.source_id = ns.id and publish_date >= '"+start_date+"' and publish_date<= '"+end_date+"' and article_hash_url = an.article_id and article_hash_url in (select distinct(article_id) from analysis where place iLike '"+center+"' or place iLike 'india' and comment not ilike '%delete%' )"
+		query = "select publish_date, name, source_url, article_hash_url, an.reason, an.comment, an.days  from articlemetadata amd, newssource ns, analysis an where amd.source_id = ns.id and publish_date >= '"+start_date+"' and publish_date<= '"+end_date+"' and article_hash_url = an.article_id and article_hash_url in (select distinct(article_id) from analysis where comment not ilike '%delete%' and reason not ilike '%prices dropped%' and (place iLike '"+center+"' or place iLike 'india') )"
 
 		cur.execute(query)
 		queryResult = cur.fetchall()
@@ -259,7 +260,7 @@ def fetchNewsForCenter(resultsOfSystem, centerNumber, intervalToConsider=5):
 		result[date] = resultOfThisDate
 		
 	# Fetch all dates of news articles corresponding to this center
-	query = "select publish_date,  an.reason, an.comment, an.days  from articlemetadata, analysis an where  article_hash_url = an.article_id and article_hash_url in (select distinct(article_id) from analysis where place iLike '"+center+"' or place iLike 'india'  and comment not ilike '%delete%' )  order by publish_date"
+	query = "select publish_date,  an.reason, an.comment, an.days  from articlemetadata, analysis an where  article_hash_url = an.article_id and article_hash_url in (select distinct(article_id) from analysis where  comment not ilike '%delete%' and reason not ilike '%prices dropped%' and (place iLike '"+center+"' or place iLike 'india') ) order by publish_date"
 	
 	cur.execute(query)
 	allArticlesQueryResult = cur.fetchall()
@@ -402,9 +403,9 @@ def cleanArray(array):
     
 def placeMapping(i):
     if (i==0):
-    	return "Ahmedabad"
+    	return "Mumbai"
     elif (i==1):
-    	return "Bangalore"
+    	return "Delhi"
     elif(i==2):
     	return "Mumbai"
     elif(i==3):
@@ -856,6 +857,7 @@ def getDiffStatsOfNewsArticles(array, array2):
 	news_present = dict()
 	news_matched_with_system = dict()
 	
+	
 	for row in array2:
 		if(row[0].year in news_present):
 			news_present[row[0].year] = news_present[row[0].year] + 1
@@ -905,3 +907,44 @@ def getDiffStatsOfNewsArticles(array, array2):
 #dt= datetime.strptime('2010-01-01' , '%Y-%m-%d')
 #csvTransform("/home/reshma/Desktop/Arrivalresults.csv",dt)
 #csvTransform("/home/kapil/Desktop/mtp/library/testingCSV/Retailresults.csv",dt)
+
+'''
+This function takes 2 arguments:
+numOfLists: It stats number of lists, whose union is to be found
+lists: each element of lists is a list, whose union is to be found, each of this list should be list of tuples, whose first element should be date
+
+returns list of dates after union
+'''
+
+def union(numOfLists, *lists):
+	n = len(lists)
+	dates = set()
+	for lst in lists:
+		for row in lst:
+			dates.add(row[0])
+	result = list(dates)
+	result.sort()
+	result = [(date,) for date in result]
+	return result
+	pass
+
+'''
+This function takes 2 arguments:
+list1 : list of dates in tuple format (date,)
+list2 : list of dates
+
+returns intersection of list1 and list2
+'''
+
+def intersect(list1,list2):
+	dates1 = set()
+	result = set()
+	for date in list1:
+		dates1.add(date[0])
+	for date in list2:
+		if(date[0] in dates1):
+			result.add(date[0])
+	result = list(result)
+	result.sort()
+	result =[(date,) for date in result]
+	return result

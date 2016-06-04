@@ -113,5 +113,5 @@ numOfPtsReqd: Number of anomalous points required
 '''
 def graphBasedAnomalyMain(lists, dependentVar, numOfPtsReqd, dateIndex=0, seriesIndex=1):
     (dates,fileNames) = generateCSVsForGraphBasedAnomaly(lists, dateIndex, seriesIndex)
-    graphBasedAnomalyCall(dependentVar, len(dates), fileNames)
+    graphBasedAnomalyCall(dependentVar+1, len(dates), fileNames)
     return getAnomalies(dates, "GraphBasedAnomalyOp.csv", numOfPtsReqd)
