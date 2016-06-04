@@ -260,7 +260,7 @@ def fetchNewsForCenter(resultsOfSystem, centerNumber, intervalToConsider=5):
 		result[date] = resultOfThisDate
 		
 	# Fetch all dates of news articles corresponding to this center
-	query = "select publish_date,  an.reason, an.comment, an.days  from articlemetadata, analysis an where  article_hash_url = an.article_id and article_hash_url in (select distinct(article_id) from analysis where  comment not ilike '%delete%' and reason not ilike '%prices dropped%' and (place iLike '"+center+"' or place iLike 'india') ) order by publish_date"
+	query = "select publish_date,  an.reason, an.comment, an.days  from articlemetadata, analysis an where  article_hash_url = an.article_id and article_hash_url in (select distinct(article_id) from analysis where  comment not ilike '%delete%' and reason not ilike '%prices dropped%' and publish_date <= '2015-07-06' and (place iLike '"+center+"' or place iLike 'india') ) order by publish_date"
 	
 	cur.execute(query)
 	allArticlesQueryResult = cur.fetchall()
@@ -971,7 +971,13 @@ def getYearWiseStats(*results):
 			temp.append(vals[val])
 		columns[i] = temp
 		i = i+1
-	for i in range(1,len(numOfColumns+1)):
-		result = zip(result,columns[i])
+	# for i in range(1,numOfColumns+1):
+	# 	result = zip(result,columns[i])
+	
+		
+	if(numOfColumns == 8):
+		result = zip(columns[0],columns[1],columns[2],columns[3],columns[4],columns[5],columns[6],columns[7],columns[8])
+	else: # numOfColumns = 9
+		result = zip(columns[0],columns[1],columns[2],columns[3],columns[4],columns[5],columns[6],columns[7],columns[8],columns[9])
 	return result
 	

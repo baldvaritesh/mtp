@@ -82,5 +82,5 @@ def csvTransform(filePath,startDate):
 					outputList.append(st)
 			dtVal = dtVal + timedelta(days=1)
     #print cnt
-    print "N & P ::::::"+ str(N)+":::::::::"+str(P)
+    # print "N & P ::::::"+ str(N)+":::::::::"+str(P)
     return outputList

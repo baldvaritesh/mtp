@@ -124,7 +124,7 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
     WvsA_anomalies_intersection = dict()
     
     # To save news
-    all_articles = []
+    all_articles = dict()
     
     print "STARTING WITH RETAIL VS AVERAGE \n\n\n"
     
@@ -183,7 +183,7 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         # plotGraphForHypothesis(c_list, avgRetailTimeSeries, resultOfOneMethod(slopeBasedResult), slopeBased_news_article_result, all_articles_slope_based)
         
         # Save system results in dictionary to process further
-        RvsR_anomalies_union_of_H3  = union_result_of_H3
+        RvsR_anomalies_union_of_H3[2*i]  = union_result_of_H3
         RvsR_anomalies_union_of_H1[2*i] = union_result_of_H1
         RvsR_anomalies_intersection[2*i] = intersection_result_with_H3
         RvsR_anomalies_slope[2*i] = slopeBased_result
@@ -193,9 +193,9 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         RvsR_anomalies_multiple_arima[2*i] = multiple_arima_result
         
         # Save news matched
-        RvsR_anomalies_union_of_H3  = union_result_of_H3_news_article
-        RvsR_anomalies_union_of_H1[2*i] = union_result_of_H1_news_article
-        RvsR_anomalies_intersection[2*i] = intersection_result_with_H3_news_article_result
+        RvsR_anomalies_union_of_H3 [2*i+1] = union_result_of_H3_news_article
+        RvsR_anomalies_union_of_H1[2*i+1] = union_result_of_H1_news_article
+        RvsR_anomalies_intersection[2*i+1] = intersection_result_with_H3_news_article_result
         RvsR_anomalies_slope[2*i+1] = slopeBased_news_article_result
         RvsR_anomalies_correlation[2*i+1] = correlationBased_news_article_result
         RvsR_anomalies_linear_regression[2*i+1] = linearRegression_news_article_result
@@ -275,7 +275,7 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         
         
         # Save system results in dictionary to process further
-        RvsA_anomalies_union_of_H3  = union_result_of_H3
+        RvsA_anomalies_union_of_H3[2*i]  = union_result_of_H3
         RvsA_anomalies_union_of_H1[2*i] = union_result_of_H1
         RvsA_anomalies_intersection[2*i] = intersection_result_with_H3
         RvsA_anomalies_slope[2*i] = slopeBased_result
@@ -285,9 +285,9 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         RvsA_anomalies_multiple_arima[2*i] = multiple_arima_result
         
         # Save news matched
-        RvsA_anomalies_union_of_H3  = union_result_of_H3_news_article
-        RvsA_anomalies_union_of_H1[2*i] = union_result_of_H1_news_article
-        RvsA_anomalies_intersection[2*i] = intersection_result_with_H3_news_article_result
+        RvsA_anomalies_union_of_H3[2*i+1]  = union_result_of_H3_news_article
+        RvsA_anomalies_union_of_H1[2*i+1] = union_result_of_H1_news_article
+        RvsA_anomalies_intersection[2*i+1] = intersection_result_with_H3_news_article_result
         RvsA_anomalies_slope[2*i+1] = slopeBased_news_article_result
         RvsA_anomalies_correlation[2*i+1] = correlationBased_news_article_result
         RvsA_anomalies_linear_regression[2*i+1] = linearRegression_news_article_result
@@ -366,7 +366,7 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         # plotGraphForHypothesis(c_list, avgRetailTimeSeries, resultOfOneMethod(slopeBasedResult), slopeBased_news_article_result, all_articles_slope_based)
         
         # Save system results in dictionary to process further
-        RvsW_anomalies_union_of_H3  = union_result_of_H3
+        RvsW_anomalies_union_of_H3[2*i]  = union_result_of_H3
         RvsW_anomalies_union_of_H1[2*i] = union_result_of_H1
         RvsW_anomalies_intersection[2*i] = intersection_result_with_H3
         RvsW_anomalies_slope[2*i] = slopeBased_result
@@ -376,9 +376,9 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         RvsW_anomalies_multiple_arima[2*i] = multiple_arima_result
         
         # Save news matched
-        RvsW_anomalies_union_of_H3  = union_result_of_H3_news_article
-        RvsW_anomalies_union_of_H1[2*i] = union_result_of_H1_news_article
-        RvsW_anomalies_intersection[2*i] = intersection_result_with_H3_news_article_result
+        RvsW_anomalies_union_of_H3[2*i+1]  = union_result_of_H3_news_article
+        RvsW_anomalies_union_of_H1[2*i+1] = union_result_of_H1_news_article
+        RvsW_anomalies_intersection[2*i+1] = intersection_result_with_H3_news_article_result
         RvsW_anomalies_slope[2*i+1] = slopeBased_news_article_result
         RvsW_anomalies_correlation[2*i+1] = correlationBased_news_article_result
         RvsW_anomalies_linear_regression[2*i+1] = linearRegression_news_article_result
@@ -457,7 +457,7 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         # plotGraphForHypothesis(c_list, avgRetailTimeSeries, resultOfOneMethod(correlationResult), news_article_matched_dates, all_articles)
         
         # Save system results in dictionary to process further
-        WvsA_anomalies_union_of_H3  = union_result_of_H3
+        WvsA_anomalies_union_of_H3[2*i]  = union_result_of_H3
         WvsA_anomalies_union_of_H1[2*i] = union_result_of_H1
         WvsA_anomalies_intersection[2*i] = intersection_result_with_H3
         WvsA_anomalies_slope[2*i] = slopeBased_result
@@ -467,9 +467,9 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         WvsA_anomalies_multiple_arima[2*i] = multiple_arima_result
         
         # Save news matched
-        WvsA_anomalies_union_of_H3  = union_result_of_H3_news_article
-        WvsA_anomalies_union_of_H1[2*i] = union_result_of_H1_news_article
-        WvsA_anomalies_intersection[2*i] = intersection_result_with_H3_news_article_result
+        WvsA_anomalies_union_of_H3[2*i+1]  = union_result_of_H3_news_article
+        WvsA_anomalies_union_of_H1[2*i+1] = union_result_of_H1_news_article
+        WvsA_anomalies_intersection[2*i+1] = intersection_result_with_H3_news_article_result
         WvsA_anomalies_slope[2*i+1] = slopeBased_news_article_result
         WvsA_anomalies_correlation[2*i+1] = correlationBased_news_article_result
         WvsA_anomalies_linear_regression[2*i+1] = linearRegression_news_article_result
@@ -582,6 +582,7 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
             for j in range(1,len(list1)):
                 tempString = tempString + "," + str(list1[j])
             print tempString
+        
         
         print "Raw Data:::"
         print "Retail vs Average data"
