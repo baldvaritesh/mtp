@@ -952,10 +952,26 @@ def intersect(list1,list2):
 
 def getYearWiseStats(*results):
 	numOfColumns = len(results)
+	columns = dict()
 	result = []
 	if(numOfColumns == 8):
-		tempList1 = 
-		pass
+		tempList1 = [2006,2007,2008,2009,2010,2011,2012,2013,2014,2015]
 	else: # numOfColumns = 9
-		pass
+		tempList1 = [2010,2011,2012,2013,2014,2015]
+	columns[0] = result = tempList1
+	i = 1
+	for lst in results:
+		vals = dict()
+		for val in tempList1:
+			vals[val] = 0
+		for Tuple in lst:
+			vals[Tuple[0].year] = vals[Tuple[0].year] +1
+		temp = []
+		for val in tempList1:
+			temp.append(vals[val])
+		columns[i] = temp
+		i = i+1
+	for i in range(1,len(numOfColumns+1)):
+		result = zip(result,columns[i])
+	return result
 	
