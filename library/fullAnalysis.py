@@ -583,6 +583,78 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
                 tempString = tempString + "," + str(list1[j])
             print tempString
         
+        print "Raw Data:::"
+        print "Retail vs Average data"
+        print "Slope Result:::"
+        print RvsR_anomalies_slope[2*i]
+        print "Correlation Result:::"
+        print RvsR_anomalies_correlation[2*i]
+        print "Linear Regression Result:::"
+        print RvsR_anomalies_linear_regression[2*i]
+        print "Graph Based Result:::"
+        print RvsR_anomalies_graph_based[2*i]
+        print "VAR Result:::"
+        print RvsR_anomalies_multiple_arima[2*i]
+        print "(1U2U3) Result:::"
+        print RvsR_anomalies_union_of_H1[2*i]
+        print "(4U5) Result:::"
+        print RvsR_anomalies_union_of_H3[2*i]
+        print "(1 U 2 U 3) ^ (4 U 5) Result:::"
+        print RvsR_anomalies_intersection[2*i]
+        
+        print "Retail vs Arrival data"
+        print "Slope Result:::"
+        print RvsA_anomalies_slope[2*i]
+        print "Correlation Result:::"
+        print RvsA_anomalies_correlation[2*i]
+        print "Linear Regression Result:::"
+        print RvsA_anomalies_linear_regression[2*i]
+        print "Graph Based Result:::"
+        print RvsA_anomalies_graph_based[2*i]
+        print "VAR Result:::"
+        print RvsA_anomalies_multiple_arima[2*i]
+        print "(1U2U3) Result:::"
+        print RvsA_anomalies_union_of_H1[2*i]
+        print "(4U5) Result:::"
+        print RvsA_anomalies_union_of_H3[2*i]
+        print "(1 U 2 U 3) ^ (4 U 5) Result:::"
+        print RvsA_anomalies_intersection[2*i]
+        
+        print "Retail vs Wholesale data"
+        print "Slope Result:::"
+        print RvsW_anomalies_slope[2*i]
+        print "Correlation Result:::"
+        print RvsW_anomalies_correlation[2*i]
+        print "Linear Regression Result:::"
+        print RvsW_anomalies_linear_regression[2*i]
+        print "Graph Based Result:::"
+        print RvsW_anomalies_graph_based[2*i]
+        print "VAR Result:::"
+        print RvsW_anomalies_multiple_arima[2*i]
+        print "(1U2U3) Result:::"
+        print RvsW_anomalies_union_of_H1[2*i]
+        print "(4U5) Result:::"
+        print RvsW_anomalies_union_of_H3[2*i]
+        print "(1 U 2 U 3) ^ (4 U 5) Result:::"
+        print RvsW_anomalies_intersection[2*i]
+        
+        print "Wholesale vs Arrival data"
+        print "Slope Result:::"
+        print WvsA_anomalies_slope[2*i]
+        print "Correlation Result:::"
+        print WvsA_anomalies_correlation[2*i]
+        print "Linear Regression Result:::"
+        print WvsA_anomalies_linear_regression[2*i]
+        print "Graph Based Result:::"
+        print WvsA_anomalies_graph_based[2*i]
+        print "VAR Result:::"
+        print WvsA_anomalies_multiple_arima[2*i]
+        print "(1U2U3) Result:::"
+        print WvsA_anomalies_union_of_H1[2*i]
+        print "(4U5) Result:::"
+        print WvsA_anomalies_union_of_H3[2*i]
+        print "(1 U 2 U 3) ^ (4 U 5) Result:::"
+        print WvsA_anomalies_intersection[2*i]
         
         
         
