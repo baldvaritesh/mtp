@@ -489,65 +489,12 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         print "#######################################################################"
         print "#######################################################################"
         print "-----------------------------------------------------"
-        # Plot Graph for i'th center
-        # plotGraphForHypothesis(c_list, avgRetailTimeSeries, resultOfOneMethod(correlationResult), news_article_matched_dates, all_articles)
         
-        # Save results in dictionary to process further
-        # RvsA_anomalies_without_H3[i] = intersection_result_without_H3
-        # RvsA_anomalies_with_H3[i] = intersection_result_with_H3
-        # RvsA_anomalies_slope[i] = slopeBased_result
-        # RvsA_anomalies_correlation[i] = correlationBased_result
-        # RvsA_anomalies_linear_regression[i] = linearRegression_result
-        # RvsA_anomalies_graph_based[i] = graphBasedAnomaly_result
-        # RvsA_anomalies_multiple_arima[i] = multiple_arima_result
+       
     
     print "END OF RETAIL VS ARRIVAL \n\n\n"
     
     
-    
-    
-    
-    
-    '''
-    print "Going for (RETAIL VS ARRIVAL) Intersect (Retail vs Retail Average) CENTER BY CENTER"
-    # For each center
-    
-    for i in range(0,5):
-        statsPrintHelperIntersect(RvsA_anomalies_slope[i], RvsR_anomalies_slope[i], "Slope Based", i)
-        statsPrintHelperIntersect(RvsA_anomalies_multiple_arima[i], RvsR_anomalies_multiple_arima[i], "Multiple ARIMA", i)
-        statsPrintHelperIntersect(RvsA_anomalies_correlation[i], RvsR_anomalies_correlation[i], "Correlation Based", i)
-        statsPrintHelperIntersect(RvsA_anomalies_linear_regression[i], RvsR_anomalies_linear_regression[i], "Linear Regression", i)
-        statsPrintHelperIntersect(RvsA_anomalies_graph_based[i], RvsR_anomalies_graph_based[i], "Graph Based", i)
-        statsPrintHelperIntersect(RvsA_anomalies_without_H3[i], RvsR_anomalies_without_H3[i], "Intersection of Slope Based, Correlation based and linear regression", i)
-        statsPrintHelperIntersect(RvsA_anomalies_with_H3[i], RvsR_anomalies_with_H3[i], "Intersection of Slope Based, Correlation based, graph based and linear regression and multivariate", i)
-    
-    print "END OF (RETAIL VS ARRIVAL) Intersect (Retail vs Retail Average) CENTER BY CENTER"
-    
-    print "Going for (RETAIL VS ARRIVAL) Union (Retail vs Retail Average) CENTER BY CENTER"
-    # For each center
-    
-    for i in range(0,5):
-        statsPrintHelperUnion(RvsA_anomalies_slope[i], RvsR_anomalies_slope[i], "Slope Based", i)
-        statsPrintHelperUnion(RvsA_anomalies_multiple_arima[i], RvsR_anomalies_multiple_arima[i], "Multiple ARIMA", i)
-        statsPrintHelperUnion(RvsA_anomalies_correlation[i], RvsR_anomalies_correlation[i], "Correlation Based", i)
-        statsPrintHelperUnion(RvsA_anomalies_linear_regression[i], RvsR_anomalies_linear_regression[i], "Linear Regression", i)
-        statsPrintHelperUnion(RvsA_anomalies_graph_based[i], RvsR_anomalies_graph_based[i], "Graph Based", i)
-        statsPrintHelperUnion(RvsA_anomalies_without_H3[i], RvsR_anomalies_without_H3[i], "Intersection of Slope Based, Correlation based and linear regression", i)
-        statsPrintHelperUnion(RvsA_anomalies_with_H3[i], RvsR_anomalies_with_H3[i], "Intersection of Slope Based, Correlation based, graph based and linear regression and multivariate", i)
-    print "END OF (RETAIL VS ARRIVAL) Union (Retail vs Retail Average) CENTER BY CENTER"
-    
-    
-    # Time to combine all centers
-    # Take Union
-    print "Union of Retail vs Arrival"
-    statsPrintHelperAllCentersUnion(RvsA_anomalies_slope[0],RvsA_anomalies_slope[1],RvsA_anomalies_slope[2],RvsA_anomalies_slope[3],RvsA_anomalies_slope[4],"Slope Based")
-    statsPrintHelperAllCentersUnion(RvsA_anomalies_correlation[0],RvsA_anomalies_correlation[1],RvsA_anomalies_correlation[2],RvsA_anomalies_correlation[3],RvsA_anomalies_correlation[4],"Correlation Based")
-    statsPrintHelperAllCentersUnion(RvsA_anomalies_linear_regression[0],RvsA_anomalies_linear_regression[1],RvsA_anomalies_linear_regression[2],RvsA_anomalies_linear_regression[3],RvsA_anomalies_linear_regression[4],"Linear Regression")
-    statsPrintHelperAllCentersUnion(RvsA_anomalies_graph_based[0],RvsA_anomalies_graph_based[1],RvsA_anomalies_graph_based[2],RvsA_anomalies_graph_based[3],RvsA_anomalies_graph_based[4],"Graph based anomaly")
-    statsPrintHelperAllCentersUnion(RvsA_anomalies_multiple_arima[0],RvsA_anomalies_multiple_arima[1],RvsA_anomalies_multiple_arima[2],RvsA_anomalies_multiple_arima[3],RvsA_anomalies_multiple_arima[4],"Graph based anomaly")
-    statsPrintHelperAllCentersUnion(RvsA_anomalies_without_H3[0],RvsA_anomalies_without_H3[1],RvsA_anomalies_without_H3[2],RvsA_anomalies_without_H3[3],RvsA_anomalies_without_H3[4],"3 methods")
-    statsPrintHelperAllCentersUnion(RvsA_anomalies_with_H3[0],RvsA_anomalies_with_H3[1],RvsA_anomalies_with_H3[2],RvsA_anomalies_with_H3[3],RvsA_anomalies_with_H3[4],"All 5 methods")
-    '''
     
 hypothesisForCenter(2,"testingCSV/MumbaiSILData.csv","testingCSV/DelhiSILData.csv")
 
