@@ -948,3 +948,14 @@ def intersect(list1,list2):
 	result.sort()
 	result =[(date,) for date in result]
 	return result
+
+
+def getYearWiseStats(*results):
+	numOfColumns = len(results)
+	result = []
+	if(numOfColumns == 8):
+		tempList1 = 
+		pass
+	else: # numOfColumns = 9
+		pass
+	
