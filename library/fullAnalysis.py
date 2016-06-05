@@ -544,7 +544,7 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         
         
         print "\n\nRetail Vs Average"
-        print "Distribution of All Articles, Articles Present, Slope Based,Correlation,Linear Regression,Graph Based,Multi Variate,1 U 2 U 3,4 U 5,(1 U 2 U 3) ^ (4 U 5)"
+        print "Distribution of All Articles, Slope Based,Correlation,Linear Regression,Graph Based,Multi Variate,1 U 2 U 3,4 U 5,(1 U 2 U 3) ^ (4 U 5)"
         tempList = getYearWiseStats(RvsR_anomalies_slope[2*i],RvsR_anomalies_correlation[2*i],RvsR_anomalies_linear_regression[2*i],RvsR_anomalies_graph_based[2*i],RvsR_anomalies_multiple_arima[2*i],RvsR_anomalies_union_of_H1[2*i],RvsR_anomalies_union_of_H3[2*i],RvsR_anomalies_intersection[2*i])
         for list1 in tempList:
             tempString = str(list1[0])
@@ -555,7 +555,7 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         
         
         print "\n\nRetail Vs Arrival"
-        print "Distribution of All Articles, Articles Present, Slope Based,Correlation,Linear Regression,Graph Based,Multi Variate,1 U 2 U 3,4 U 5,(1 U 2 U 3) ^ (4 U 5)"
+        print "Distribution of All Articles,  Slope Based,Correlation,Linear Regression,Graph Based,Multi Variate,1 U 2 U 3,4 U 5,(1 U 2 U 3) ^ (4 U 5)"
         tempList = getYearWiseStats(RvsA_anomalies_slope[2*i],RvsA_anomalies_correlation[2*i],RvsA_anomalies_linear_regression[2*i],RvsA_anomalies_graph_based[2*i],RvsA_anomalies_multiple_arima[2*i],RvsA_anomalies_union_of_H1[2*i],RvsA_anomalies_union_of_H3[2*i],RvsA_anomalies_intersection[2*i])
         for list1 in tempList:
             tempString = str(list1[0])
@@ -565,7 +565,7 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
             
         
         print "\n\nRetail Vs Wholesale"
-        print "Distribution of All Articles, Articles Present, Slope Based,Correlation,Linear Regression,Graph Based,Multi Variate,1 U 2 U 3,4 U 5,(1 U 2 U 3) ^ (4 U 5)"
+        print "Distribution of All Articles,  Slope Based,Correlation,Linear Regression,Graph Based,Multi Variate,1 U 2 U 3,4 U 5,(1 U 2 U 3) ^ (4 U 5)"
         tempList = getYearWiseStats(RvsW_anomalies_slope[2*i],RvsW_anomalies_correlation[2*i],RvsW_anomalies_linear_regression[2*i],RvsW_anomalies_graph_based[2*i],RvsW_anomalies_multiple_arima[2*i],RvsW_anomalies_union_of_H1[2*i],RvsW_anomalies_union_of_H3[2*i],RvsW_anomalies_intersection[2*i])
         for list1 in tempList:
             tempString = str(list1[0])
@@ -575,7 +575,7 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
             
         
         print "\n\Wholesale Vs Arrival"
-        print "Distribution of All Articles, Articles Present, Slope Based,Correlation,Linear Regression,Graph Based,Multi Variate,1 U 2 U 3,4 U 5,(1 U 2 U 3) ^ (4 U 5)"
+        print "Distribution of All Articles,  Slope Based,Correlation,Linear Regression,Graph Based,Multi Variate,1 U 2 U 3,4 U 5,(1 U 2 U 3) ^ (4 U 5)"
         tempList = getYearWiseStats(WvsA_anomalies_slope[2*i],WvsA_anomalies_correlation[2*i],WvsA_anomalies_linear_regression[2*i],WvsA_anomalies_graph_based[2*i],WvsA_anomalies_multiple_arima[2*i],WvsA_anomalies_union_of_H1[2*i],WvsA_anomalies_union_of_H3[2*i],WvsA_anomalies_intersection[2*i])
         for list1 in tempList:
             tempString = str(list1[0])
@@ -587,75 +587,267 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         print "Raw Data:::"
         print "Retail vs Average data"
         print "Slope Result:::"
-        print RvsR_anomalies_slope[2*i]
+        print "Date,Value"
+        for l in range(len(RvsR_anomalies_slope[2*i])):
+            print str(RvsR_anomalies_slope[2*i][l][0])+","+str(RvsR_anomalies_slope[2*i][l][1])
+        print "News Data"
+        print "Start Date, End Date,News Source,Link,Days,Reason,Comment,Days Reported"
+        for l in range(len(RvsR_anomalies_slope[2*i+1])):
+            print str(RvsR_anomalies_slope[2*i+1][l][0])+","+str(RvsR_anomalies_slope[2*i+1][l][1])+","+str(RvsR_anomalies_slope[2*i+1][l][2])+","+str(RvsR_anomalies_slope[2*i+1][l][3])+","+str(RvsR_anomalies_slope[2*i+1][l][4])+","+str(RvsR_anomalies_slope[2*i+1][l][5])+","+str(RvsR_anomalies_slope[2*i+1][l][6])+","+str(RvsR_anomalies_slope[2*i+1][l][7])
         print "Correlation Result:::"
-        print RvsR_anomalies_correlation[2*i]
+        print "Date,Value"
+        for l in range(len(RvsR_anomalies_correlation[2*i])):
+            print str(RvsR_anomalies_correlation[2*i][l][0])+","+str(RvsR_anomalies_correlation[2*i][l][1])
+        print "News Data"
+        print "Start Date, End Date,News Source,Link,Days,Reason,Comment,Days Reported"
+        for l in range(len(RvsR_anomalies_correlation[2*i+1])):
+            print str(RvsR_anomalies_correlation[2*i+1][l][0])+","+str(RvsR_anomalies_correlation[2*i+1][l][1])+","+str(RvsR_anomalies_correlation[2*i+1][l][2])+","+str(RvsR_anomalies_correlation[2*i+1][l][3])+","+str(RvsR_anomalies_correlation[2*i+1][l][4])+","+str(RvsR_anomalies_correlation[2*i+1][l][5])+","+str(RvsR_anomalies_correlation[2*i+1][l][6])+","+str(RvsR_anomalies_correlation[2*i+1][l][7])
         print "Linear Regression Result:::"
-        print RvsR_anomalies_linear_regression[2*i]
+        print "Date,Value"
+        for l in range(len(RvsR_anomalies_linear_regression[2*i])):
+            print str(RvsR_anomalies_linear_regression[2*i][l][0])+","+str(RvsR_anomalies_linear_regression[2*i][l][1])
+        print "News Data"
+        print "Start Date, End Date,News Source,Link,Days,Reason,Comment,Days Reported"
+        for l in range(len(RvsR_anomalies_linear_regression[2*i+1])):
+            print str(RvsR_anomalies_linear_regression[2*i+1][l][0])+","+str(RvsR_anomalies_linear_regression[2*i+1][l][1])+","+str(RvsR_anomalies_linear_regression[2*i+1][l][2])+","+str(RvsR_anomalies_linear_regression[2*i+1][l][3])+","+str(RvsR_anomalies_linear_regression[2*i+1][l][4])+","+str(RvsR_anomalies_linear_regression[2*i+1][l][5])+","+str(RvsR_anomalies_linear_regression[2*i+1][l][6])+","+str(RvsR_anomalies_linear_regression[2*i+1][l][7])
         print "Graph Based Result:::"
-        print RvsR_anomalies_graph_based[2*i]
+        print "Date,Value"
+        for l in range(len(RvsR_anomalies_graph_based[2*i])):
+            print str(RvsR_anomalies_graph_based[2*i][l][0])+","+str(RvsR_anomalies_graph_based[2*i][l][1])
+        print "News Data"
+        print "Start Date, End Date,News Source,Link,Days,Reason,Comment,Days Reported"
+        for l in range(len(RvsR_anomalies_graph_based[2*i+1])):
+            print str(RvsR_anomalies_graph_based[2*i+1][l][0])+","+str(RvsR_anomalies_graph_based[2*i+1][l][1])+","+str(RvsR_anomalies_graph_based[2*i+1][l][2])+","+str(RvsR_anomalies_graph_based[2*i+1][l][3])+","+str(RvsR_anomalies_graph_based[2*i+1][l][4])+","+str(RvsR_anomalies_graph_based[2*i+1][l][5])+","+str(RvsR_anomalies_graph_based[2*i+1][l][6])+","+str(RvsR_anomalies_graph_based[2*i+1][l][7])
         print "VAR Result:::"
-        print RvsR_anomalies_multiple_arima[2*i]
+        print "Date,Value"
+        for l in range(len(RvsR_anomalies_multiple_arima[2*i])):
+            print str(RvsR_anomalies_multiple_arima[2*i][l][0])+","+str(RvsR_anomalies_multiple_arima[2*i][l][1])
+        print "News Data"
+        print "Start Date, End Date,News Source,Link,Days,Reason,Comment,Days Reported"
+        for l in range(len(RvsR_anomalies_multiple_arima[2*i+1])):
+            print str(RvsR_anomalies_multiple_arima[2*i+1][l][0])+","+str(RvsR_anomalies_multiple_arima[2*i+1][l][1])+","+str(RvsR_anomalies_multiple_arima[2*i+1][l][2])+","+str(RvsR_anomalies_multiple_arima[2*i+1][l][3])+","+str(RvsR_anomalies_multiple_arima[2*i+1][l][4])+","+str(RvsR_anomalies_multiple_arima[2*i+1][l][5])+","+str(RvsR_anomalies_multiple_arima[2*i+1][l][6])+","+str(RvsR_anomalies_multiple_arima[2*i+1][l][7])
         print "(1U2U3) Result:::"
-        print RvsR_anomalies_union_of_H1[2*i]
+        print "Date"
+        for l in range(len(RvsR_anomalies_union_of_H1[2*i])):
+            print RvsR_anomalies_union_of_H1[2*i][l][0]
+        print "News Data"
+        print "Start Date, End Date,News Source,Link,Days,Reason,Comment,Days Reported"
+        for l in range(len(RvsR_anomalies_union_of_H1[2*i+1])):
+            print str(RvsR_anomalies_union_of_H1[2*i+1][l][0])+","+str(RvsR_anomalies_union_of_H1[2*i+1][l][1])+","+str(RvsR_anomalies_union_of_H1[2*i+1][l][2])+","+str(RvsR_anomalies_union_of_H1[2*i+1][l][3])+","+str(RvsR_anomalies_union_of_H1[2*i+1][l][4])+","+str(RvsR_anomalies_union_of_H1[2*i+1][l][5])+","+str(RvsR_anomalies_union_of_H1[2*i+1][l][6])+","+str(RvsR_anomalies_union_of_H1[2*i+1][l][7])
         print "(4U5) Result:::"
-        print RvsR_anomalies_union_of_H3[2*i]
+        print "Date"
+        for l in range(len(RvsR_anomalies_union_of_H3[2*i])):
+            print RvsR_anomalies_union_of_H3[2*i][l][0]
+        print "News Data"
+        print "Start Date, End Date,News Source,Link,Days,Reason,Comment,Days Reported"
+        for l in range(len(RvsR_anomalies_union_of_H3[2*i+1])):
+            print str(RvsR_anomalies_union_of_H3[2*i+1][l][0])+","+str(RvsR_anomalies_union_of_H3[2*i+1][l][1])+","+str(RvsR_anomalies_union_of_H3[2*i+1][l][2])+","+str(RvsR_anomalies_union_of_H3[2*i+1][l][3])+","+str(RvsR_anomalies_union_of_H3[2*i+1][l][4])+","+str(RvsR_anomalies_union_of_H3[2*i+1][l][5])+","+str(RvsR_anomalies_union_of_H3[2*i+1][l][6])+","+str(RvsR_anomalies_union_of_H3[2*i+1][l][7])
         print "(1 U 2 U 3) ^ (4 U 5) Result:::"
-        print RvsR_anomalies_intersection[2*i]
+        print "Date"
+        for l in range(len(RvsR_anomalies_intersection[2*i])):
+            print RvsR_anomalies_intersection[2*i][l][0]
+        print "News Data"
+        print "Start Date, End Date,News Source,Link,Days,Reason,Comment,Days Reported"
+        for l in range(len(RvsR_anomalies_intersection[2*i+1])):
+            print str(RvsR_anomalies_intersection[2*i+1][l][0])+","+str(RvsR_anomalies_intersection[2*i+1][l][1])+","+str(RvsR_anomalies_intersection[2*i+1][l][2])+","+str(RvsR_anomalies_intersection[2*i+1][l][3])+","+str(RvsR_anomalies_intersection[2*i+1][l][4])+","+str(RvsR_anomalies_intersection[2*i+1][l][5])+","+str(RvsR_anomalies_intersection[2*i+1][l][6])+","+str(RvsR_anomalies_intersection[2*i+1][l][7])
         
         print "Retail vs Arrival data"
         print "Slope Result:::"
-        print RvsA_anomalies_slope[2*i]
+        print "Date,Value"
+        for l in range(len(RvsA_anomalies_slope[2*i])):
+            print str(RvsA_anomalies_slope[2*i][l][0])+","+str(RvsA_anomalies_slope[2*i][l][1])
+        print "News Data"
+        print "Start Date, End Date,News Source,Link,Days,Reason,Comment,Days Reported"
+        for l in range(len(RvsA_anomalies_slope[2*i+1])):
+            print str(RvsA_anomalies_slope[2*i+1][l][0])+","+str(RvsA_anomalies_slope[2*i+1][l][1])+","+str(RvsA_anomalies_slope[2*i+1][l][2])+","+str(RvsA_anomalies_slope[2*i+1][l][3])+","+str(RvsA_anomalies_slope[2*i+1][l][4])+","+str(RvsA_anomalies_slope[2*i+1][l][5])+","+str(RvsA_anomalies_slope[2*i+1][l][6])+","+str(RvsA_anomalies_slope[2*i+1][l][7])
         print "Correlation Result:::"
-        print RvsA_anomalies_correlation[2*i]
+        print "Date,Value"
+        for l in range(len(RvsA_anomalies_correlation[2*i])):
+            print str(RvsA_anomalies_correlation[2*i][l][0])+","+str(RvsA_anomalies_correlation[2*i][l][1])
+        print "News Data"
+        print "Start Date, End Date,News Source,Link,Days,Reason,Comment,Days Reported"
+        for l in range(len(RvsA_anomalies_correlation[2*i+1])):
+            print str(RvsA_anomalies_correlation[2*i+1][l][0])+","+str(RvsA_anomalies_correlation[2*i+1][l][1])+","+str(RvsA_anomalies_correlation[2*i+1][l][2])+","+str(RvsA_anomalies_correlation[2*i+1][l][3])+","+str(RvsA_anomalies_correlation[2*i+1][l][4])+","+str(RvsA_anomalies_correlation[2*i+1][l][5])+","+str(RvsA_anomalies_correlation[2*i+1][l][6])+","+str(RvsA_anomalies_correlation[2*i+1][l][7])
         print "Linear Regression Result:::"
-        print RvsA_anomalies_linear_regression[2*i]
+        print "Date,Value"
+        for l in range(len(RvsA_anomalies_linear_regression[2*i])):
+            print str(RvsA_anomalies_linear_regression[2*i][l][0])+","+str(RvsA_anomalies_linear_regression[2*i][l][1])
+        print "News Data"
+        print "Start Date, End Date,News Source,Link,Days,Reason,Comment,Days Reported"
+        for l in range(len(RvsA_anomalies_linear_regression[2*i+1])):
+            print str(RvsA_anomalies_linear_regression[2*i+1][l][0])+","+str(RvsA_anomalies_linear_regression[2*i+1][l][1])+","+str(RvsA_anomalies_linear_regression[2*i+1][l][2])+","+str(RvsA_anomalies_linear_regression[2*i+1][l][3])+","+str(RvsA_anomalies_linear_regression[2*i+1][l][4])+","+str(RvsA_anomalies_linear_regression[2*i+1][l][5])+","+str(RvsA_anomalies_linear_regression[2*i+1][l][6])+","+str(RvsA_anomalies_linear_regression[2*i+1][l][7])
         print "Graph Based Result:::"
-        print RvsA_anomalies_graph_based[2*i]
+        print "Date,Value"
+        for l in range(len(RvsA_anomalies_graph_based[2*i])):
+            print str(RvsA_anomalies_graph_based[2*i][l][0])+","+str(RvsA_anomalies_graph_based[2*i][l][1])
+        print "News Data"
+        print "Start Date, End Date,News Source,Link,Days,Reason,Comment,Days Reported"
+        for l in range(len(RvsA_anomalies_graph_based[2*i+1])):
+            print str(RvsA_anomalies_graph_based[2*i+1][l][0])+","+str(RvsA_anomalies_graph_based[2*i+1][l][1])+","+str(RvsA_anomalies_graph_based[2*i+1][l][2])+","+str(RvsA_anomalies_graph_based[2*i+1][l][3])+","+str(RvsA_anomalies_graph_based[2*i+1][l][4])+","+str(RvsA_anomalies_graph_based[2*i+1][l][5])+","+str(RvsA_anomalies_graph_based[2*i+1][l][6])+","+str(RvsA_anomalies_graph_based[2*i+1][l][7])
         print "VAR Result:::"
-        print RvsA_anomalies_multiple_arima[2*i]
+        print "Date,Value"
+        for l in range(len(RvsA_anomalies_multiple_arima[2*i])):
+            print str(RvsA_anomalies_multiple_arima[2*i][l][0])+","+str(RvsA_anomalies_multiple_arima[2*i][l][1])
+        print "News Data"
+        print "Start Date, End Date,News Source,Link,Days,Reason,Comment,Days Reported"
+        for l in range(len(RvsA_anomalies_multiple_arima[2*i+1])):
+            print str(RvsA_anomalies_multiple_arima[2*i+1][l][0])+","+str(RvsA_anomalies_multiple_arima[2*i+1][l][1])+","+str(RvsA_anomalies_multiple_arima[2*i+1][l][2])+","+str(RvsA_anomalies_multiple_arima[2*i+1][l][3])+","+str(RvsA_anomalies_multiple_arima[2*i+1][l][4])+","+str(RvsA_anomalies_multiple_arima[2*i+1][l][5])+","+str(RvsA_anomalies_multiple_arima[2*i+1][l][6])+","+str(RvsA_anomalies_multiple_arima[2*i+1][l][7])
         print "(1U2U3) Result:::"
-        print RvsA_anomalies_union_of_H1[2*i]
+        print "Date"
+        for l in range(len(RvsA_anomalies_union_of_H1[2*i])):
+            print RvsA_anomalies_union_of_H1[2*i][l][0]
+        print "News Data"
+        print "Start Date, End Date,News Source,Link,Days,Reason,Comment,Days Reported"
+        for l in range(len(RvsA_anomalies_union_of_H1[2*i+1])):
+            print str(RvsA_anomalies_union_of_H1[2*i+1][l][0])+","+str(RvsA_anomalies_union_of_H1[2*i+1][l][1])+","+str(RvsA_anomalies_union_of_H1[2*i+1][l][2])+","+str(RvsA_anomalies_union_of_H1[2*i+1][l][3])+","+str(RvsA_anomalies_union_of_H1[2*i+1][l][4])+","+str(RvsA_anomalies_union_of_H1[2*i+1][l][5])+","+str(RvsA_anomalies_union_of_H1[2*i+1][l][6])+","+str(RvsA_anomalies_union_of_H1[2*i+1][l][7])
         print "(4U5) Result:::"
-        print RvsA_anomalies_union_of_H3[2*i]
+        print "Date"
+        for l in range(len(RvsA_anomalies_union_of_H3[2*i])):
+            print RvsA_anomalies_union_of_H3[2*i][l][0]
+        print "News Data"
+        print "Start Date, End Date,News Source,Link,Days,Reason,Comment,Days Reported"
+        for l in range(len(RvsA_anomalies_union_of_H3[2*i+1])):
+            print str(RvsA_anomalies_union_of_H3[2*i+1][l][0])+","+str(RvsA_anomalies_union_of_H3[2*i+1][l][1])+","+str(RvsA_anomalies_union_of_H3[2*i+1][l][2])+","+str(RvsA_anomalies_union_of_H3[2*i+1][l][3])+","+str(RvsA_anomalies_union_of_H3[2*i+1][l][4])+","+str(RvsA_anomalies_union_of_H3[2*i+1][l][5])+","+str(RvsA_anomalies_union_of_H3[2*i+1][l][6])+","+str(RvsA_anomalies_union_of_H3[2*i+1][l][7])
         print "(1 U 2 U 3) ^ (4 U 5) Result:::"
-        print RvsA_anomalies_intersection[2*i]
+        print "Date"
+        for l in range(len(RvsA_anomalies_intersection[2*i])):
+            print RvsA_anomalies_intersection[2*i][l][0]
+        print "News Data"
+        print "Start Date, End Date,News Source,Link,Days,Reason,Comment,Days Reported"
+        for l in range(len(RvsA_anomalies_intersection[2*i+1])):
+            print str(RvsA_anomalies_intersection[2*i+1][l][0])+","+str(RvsA_anomalies_intersection[2*i+1][l][1])+","+str(RvsA_anomalies_intersection[2*i+1][l][2])+","+str(RvsA_anomalies_intersection[2*i+1][l][3])+","+str(RvsA_anomalies_intersection[2*i+1][l][4])+","+str(RvsA_anomalies_intersection[2*i+1][l][5])+","+str(RvsA_anomalies_intersection[2*i+1][l][6])+","+str(RvsA_anomalies_intersection[2*i+1][l][7])
         
         print "Retail vs Wholesale data"
         print "Slope Result:::"
-        print RvsW_anomalies_slope[2*i]
+        print "Date,Value"
+        for l in range(len(RvsW_anomalies_slope[2*i])):
+            print str(RvsW_anomalies_slope[2*i][l][0])+","+str(RvsW_anomalies_slope[2*i][l][1])
+        print "News Data"
+        print "Start Date, End Date,News Source,Link,Days,Reason,Comment,Days Reported"
+        for l in range(len(RvsW_anomalies_slope[2*i+1])):
+            print str(RvsW_anomalies_slope[2*i+1][l][0])+","+str(RvsW_anomalies_slope[2*i+1][l][1])+","+str(RvsW_anomalies_slope[2*i+1][l][2])+","+str(RvsW_anomalies_slope[2*i+1][l][3])+","+str(RvsW_anomalies_slope[2*i+1][l][4])+","+str(RvsW_anomalies_slope[2*i+1][l][5])+","+str(RvsW_anomalies_slope[2*i+1][l][6])+","+str(RvsW_anomalies_slope[2*i+1][l][7])
         print "Correlation Result:::"
-        print RvsW_anomalies_correlation[2*i]
+        print "Date,Value"
+        for l in range(len(RvsW_anomalies_correlation[2*i])):
+            print str(RvsW_anomalies_correlation[2*i][l][0])+","+str(RvsW_anomalies_correlation[2*i][l][1])
+        print "News Data"
+        print "Start Date, End Date,News Source,Link,Days,Reason,Comment,Days Reported"
+        for l in range(len(RvsW_anomalies_correlation[2*i+1])):
+            print str(RvsW_anomalies_correlation[2*i+1][l][0])+","+str(RvsW_anomalies_correlation[2*i+1][l][1])+","+str(RvsW_anomalies_correlation[2*i+1][l][2])+","+str(RvsW_anomalies_correlation[2*i+1][l][3])+","+str(RvsW_anomalies_correlation[2*i+1][l][4])+","+str(RvsW_anomalies_correlation[2*i+1][l][5])+","+str(RvsW_anomalies_correlation[2*i+1][l][6])+","+str(RvsW_anomalies_correlation[2*i+1][l][7])
         print "Linear Regression Result:::"
-        print RvsW_anomalies_linear_regression[2*i]
+        print "Date,Value"
+        for l in range(len(RvsW_anomalies_linear_regression[2*i])):
+            print str(RvsW_anomalies_linear_regression[2*i][l][0])+","+str(RvsW_anomalies_linear_regression[2*i][l][1])
+        print "News Data"
+        print "Start Date, End Date,News Source,Link,Days,Reason,Comment,Days Reported"
+        for l in range(len(RvsW_anomalies_linear_regression[2*i+1])):
+            print str(RvsW_anomalies_linear_regression[2*i+1][l][0])+","+str(RvsW_anomalies_linear_regression[2*i+1][l][1])+","+str(RvsW_anomalies_linear_regression[2*i+1][l][2])+","+str(RvsW_anomalies_linear_regression[2*i+1][l][3])+","+str(RvsW_anomalies_linear_regression[2*i+1][l][4])+","+str(RvsW_anomalies_linear_regression[2*i+1][l][5])+","+str(RvsW_anomalies_linear_regression[2*i+1][l][6])+","+str(RvsW_anomalies_linear_regression[2*i+1][l][7])
         print "Graph Based Result:::"
-        print RvsW_anomalies_graph_based[2*i]
+        print "Date,Value"
+        for l in range(len(RvsW_anomalies_graph_based[2*i])):
+            print str(RvsW_anomalies_graph_based[2*i][l][0])+","+str(RvsW_anomalies_graph_based[2*i][l][1])
+        print "News Data"
+        print "Start Date, End Date,News Source,Link,Days,Reason,Comment,Days Reported"
+        for l in range(len(RvsW_anomalies_graph_based[2*i+1])):
+            print str(RvsW_anomalies_graph_based[2*i+1][l][0])+","+str(RvsW_anomalies_graph_based[2*i+1][l][1])+","+str(RvsW_anomalies_graph_based[2*i+1][l][2])+","+str(RvsW_anomalies_graph_based[2*i+1][l][3])+","+str(RvsW_anomalies_graph_based[2*i+1][l][4])+","+str(RvsW_anomalies_graph_based[2*i+1][l][5])+","+str(RvsW_anomalies_graph_based[2*i+1][l][6])+","+str(RvsW_anomalies_graph_based[2*i+1][l][7])
         print "VAR Result:::"
-        print RvsW_anomalies_multiple_arima[2*i]
+        print "Date,Value"
+        for l in range(len(RvsW_anomalies_multiple_arima[2*i])):
+            print str(RvsW_anomalies_multiple_arima[2*i][l][0])+","+str(RvsW_anomalies_multiple_arima[2*i][l][1])
+        print "News Data"
+        print "Start Date, End Date,News Source,Link,Days,Reason,Comment,Days Reported"
+        for l in range(len(RvsW_anomalies_multiple_arima[2*i+1])):
+            print str(RvsW_anomalies_multiple_arima[2*i+1][l][0])+","+str(RvsW_anomalies_multiple_arima[2*i+1][l][1])+","+str(RvsW_anomalies_multiple_arima[2*i+1][l][2])+","+str(RvsW_anomalies_multiple_arima[2*i+1][l][3])+","+str(RvsW_anomalies_multiple_arima[2*i+1][l][4])+","+str(RvsW_anomalies_multiple_arima[2*i+1][l][5])+","+str(RvsW_anomalies_multiple_arima[2*i+1][l][6])+","+str(RvsW_anomalies_multiple_arima[2*i+1][l][7])
         print "(1U2U3) Result:::"
-        print RvsW_anomalies_union_of_H1[2*i]
+        print "Date"
+        for l in range(len(RvsW_anomalies_union_of_H1[2*i])):
+            print RvsW_anomalies_union_of_H1[2*i][l][0]
+        print "News Data"
+        print "Start Date, End Date,News Source,Link,Days,Reason,Comment,Days Reported"
+        for l in range(len(RvsW_anomalies_union_of_H1[2*i+1])):
+            print str(RvsW_anomalies_union_of_H1[2*i+1][l][0])+","+str(RvsW_anomalies_union_of_H1[2*i+1][l][1])+","+str(RvsW_anomalies_union_of_H1[2*i+1][l][2])+","+str(RvsW_anomalies_union_of_H1[2*i+1][l][3])+","+str(RvsW_anomalies_union_of_H1[2*i+1][l][4])+","+str(RvsW_anomalies_union_of_H1[2*i+1][l][5])+","+str(RvsW_anomalies_union_of_H1[2*i+1][l][6])+","+str(RvsW_anomalies_union_of_H1[2*i+1][l][7])
         print "(4U5) Result:::"
-        print RvsW_anomalies_union_of_H3[2*i]
+        print "Date"
+        for l in range(len(RvsW_anomalies_union_of_H3[2*i])):
+            print RvsW_anomalies_union_of_H3[2*i][l][0]
+        print "News Data"
+        print "Start Date, End Date,News Source,Link,Days,Reason,Comment,Days Reported"
+        for l in range(len(RvsW_anomalies_union_of_H3[2*i+1])):
+            print str(RvsW_anomalies_union_of_H3[2*i+1][l][0])+","+str(RvsW_anomalies_union_of_H3[2*i+1][l][1])+","+str(RvsW_anomalies_union_of_H3[2*i+1][l][2])+","+str(RvsW_anomalies_union_of_H3[2*i+1][l][3])+","+str(RvsW_anomalies_union_of_H3[2*i+1][l][4])+","+str(RvsW_anomalies_union_of_H3[2*i+1][l][5])+","+str(RvsW_anomalies_union_of_H3[2*i+1][l][6])+","+str(RvsW_anomalies_union_of_H3[2*i+1][l][7])
         print "(1 U 2 U 3) ^ (4 U 5) Result:::"
-        print RvsW_anomalies_intersection[2*i]
+        print "Date"
+        for l in range(len(RvsW_anomalies_intersection[2*i])):
+            print RvsW_anomalies_intersection[2*i][l][0]
+        print "News Data"
+        print "Start Date, End Date,News Source,Link,Days,Reason,Comment,Days Reported"
+        for l in range(len(RvsW_anomalies_intersection[2*i+1])):
+            print str(RvsW_anomalies_intersection[2*i+1][l][0])+","+str(RvsW_anomalies_intersection[2*i+1][l][1])+","+str(RvsW_anomalies_intersection[2*i+1][l][2])+","+str(RvsW_anomalies_intersection[2*i+1][l][3])+","+str(RvsW_anomalies_intersection[2*i+1][l][4])+","+str(RvsW_anomalies_intersection[2*i+1][l][5])+","+str(RvsW_anomalies_intersection[2*i+1][l][6])+","+str(RvsW_anomalies_intersection[2*i+1][l][7])
         
         print "Wholesale vs Arrival data"
         print "Slope Result:::"
-        print WvsA_anomalies_slope[2*i]
+        print "Date,Value"
+        for l in range(len(WvsA_anomalies_slope[2*i])):
+            print str(WvsA_anomalies_slope[2*i][l][0])+","+str(WvsA_anomalies_slope[2*i][l][1])
+        print "News Data"
+        print "Start Date, End Date,News Source,Link,Days,Reason,Comment,Days Reported"
+        for l in range(len(WvsA_anomalies_slope[2*i+1])):
+            print str(WvsA_anomalies_slope[2*i+1][l][0])+","+str(WvsA_anomalies_slope[2*i+1][l][1])+","+str(WvsA_anomalies_slope[2*i+1][l][2])+","+str(WvsA_anomalies_slope[2*i+1][l][3])+","+str(WvsA_anomalies_slope[2*i+1][l][4])+","+str(WvsA_anomalies_slope[2*i+1][l][5])+","+str(WvsA_anomalies_slope[2*i+1][l][6])+","+str(WvsA_anomalies_slope[2*i+1][l][7])
         print "Correlation Result:::"
-        print WvsA_anomalies_correlation[2*i]
+        print "Date,Value"
+        for l in range(len(WvsA_anomalies_correlation[2*i])):
+            print str(WvsA_anomalies_correlation[2*i][l][0])+","+str(WvsA_anomalies_correlation[2*i][l][1])
+        print "News Data"
+        print "Start Date, End Date,News Source,Link,Days,Reason,Comment,Days Reported"
+        for l in range(len(WvsA_anomalies_correlation[2*i+1])):
+            print str(WvsA_anomalies_correlation[2*i+1][l][0])+","+str(WvsA_anomalies_correlation[2*i+1][l][1])+","+str(WvsA_anomalies_correlation[2*i+1][l][2])+","+str(WvsA_anomalies_correlation[2*i+1][l][3])+","+str(WvsA_anomalies_correlation[2*i+1][l][4])+","+str(WvsA_anomalies_correlation[2*i+1][l][5])+","+str(WvsA_anomalies_correlation[2*i+1][l][6])+","+str(WvsA_anomalies_correlation[2*i+1][l][7])
         print "Linear Regression Result:::"
-        print WvsA_anomalies_linear_regression[2*i]
+        print "Date,Value"
+        for l in range(len(WvsA_anomalies_linear_regression[2*i])):
+            print str(WvsA_anomalies_linear_regression[2*i][l][0])+","+str(WvsA_anomalies_linear_regression[2*i][l][1])
+        print "News Data"
+        print "Start Date, End Date,News Source,Link,Days,Reason,Comment,Days Reported"
+        for l in range(len(WvsA_anomalies_linear_regression[2*i+1])):
+            print str(WvsA_anomalies_linear_regression[2*i+1][l][0])+","+str(WvsA_anomalies_linear_regression[2*i+1][l][1])+","+str(WvsA_anomalies_linear_regression[2*i+1][l][2])+","+str(WvsA_anomalies_linear_regression[2*i+1][l][3])+","+str(WvsA_anomalies_linear_regression[2*i+1][l][4])+","+str(WvsA_anomalies_linear_regression[2*i+1][l][5])+","+str(WvsA_anomalies_linear_regression[2*i+1][l][6])+","+str(WvsA_anomalies_linear_regression[2*i+1][l][7])
         print "Graph Based Result:::"
-        print WvsA_anomalies_graph_based[2*i]
+        print "Date,Value"
+        for l in range(len(WvsA_anomalies_graph_based[2*i])):
+            print str(WvsA_anomalies_graph_based[2*i][l][0])+","+str(WvsA_anomalies_graph_based[2*i][l][1])
+        print "News Data"
+        print "Start Date, End Date,News Source,Link,Days,Reason,Comment,Days Reported"
+        for l in range(len(WvsA_anomalies_graph_based[2*i+1])):
+            print str(WvsA_anomalies_graph_based[2*i+1][l][0])+","+str(WvsA_anomalies_graph_based[2*i+1][l][1])+","+str(WvsA_anomalies_graph_based[2*i+1][l][2])+","+str(WvsA_anomalies_graph_based[2*i+1][l][3])+","+str(WvsA_anomalies_graph_based[2*i+1][l][4])+","+str(WvsA_anomalies_graph_based[2*i+1][l][5])+","+str(WvsA_anomalies_graph_based[2*i+1][l][6])+","+str(WvsA_anomalies_graph_based[2*i+1][l][7])
         print "VAR Result:::"
-        print WvsA_anomalies_multiple_arima[2*i]
+        print "Date,Value"
+        for l in range(len(WvsA_anomalies_multiple_arima[2*i])):
+            print str(WvsA_anomalies_multiple_arima[2*i][l][0])+","+str(WvsA_anomalies_multiple_arima[2*i][l][1])
+        print "News Data"
+        print "Start Date, End Date,News Source,Link,Days,Reason,Comment,Days Reported"
+        for l in range(len(WvsA_anomalies_multiple_arima[2*i+1])):
+            print str(WvsA_anomalies_multiple_arima[2*i+1][l][0])+","+str(WvsA_anomalies_multiple_arima[2*i+1][l][1])+","+str(WvsA_anomalies_multiple_arima[2*i+1][l][2])+","+str(WvsA_anomalies_multiple_arima[2*i+1][l][3])+","+str(WvsA_anomalies_multiple_arima[2*i+1][l][4])+","+str(WvsA_anomalies_multiple_arima[2*i+1][l][5])+","+str(WvsA_anomalies_multiple_arima[2*i+1][l][6])+","+str(WvsA_anomalies_multiple_arima[2*i+1][l][7])
         print "(1U2U3) Result:::"
-        print WvsA_anomalies_union_of_H1[2*i]
+        print "Date"
+        for l in range(len(WvsA_anomalies_union_of_H1[2*i])):
+            print WvsA_anomalies_union_of_H1[2*i][l][0]
+        print "News Data"
+        print "Start Date, End Date,News Source,Link,Days,Reason,Comment,Days Reported"
+        for l in range(len(WvsA_anomalies_union_of_H1[2*i+1])):
+            print str(WvsA_anomalies_union_of_H1[2*i+1][l][0])+","+str(WvsA_anomalies_union_of_H1[2*i+1][l][1])+","+str(WvsA_anomalies_union_of_H1[2*i+1][l][2])+","+str(WvsA_anomalies_union_of_H1[2*i+1][l][3])+","+str(WvsA_anomalies_union_of_H1[2*i+1][l][4])+","+str(WvsA_anomalies_union_of_H1[2*i+1][l][5])+","+str(WvsA_anomalies_union_of_H1[2*i+1][l][6])+","+str(WvsA_anomalies_union_of_H1[2*i+1][l][7])
         print "(4U5) Result:::"
-        print WvsA_anomalies_union_of_H3[2*i]
+        print "Date"
+        for l in range(len(WvsA_anomalies_union_of_H3[2*i])):
+            print WvsA_anomalies_union_of_H3[2*i][l][0]
+        print "News Data"
+        print "Start Date, End Date,News Source,Link,Days,Reason,Comment,Days Reported"
+        for l in range(len(WvsA_anomalies_union_of_H3[2*i+1])):
+            print str(WvsA_anomalies_union_of_H3[2*i+1][l][0])+","+str(WvsA_anomalies_union_of_H3[2*i+1][l][1])+","+str(WvsA_anomalies_union_of_H3[2*i+1][l][2])+","+str(WvsA_anomalies_union_of_H3[2*i+1][l][3])+","+str(WvsA_anomalies_union_of_H3[2*i+1][l][4])+","+str(WvsA_anomalies_union_of_H3[2*i+1][l][5])+","+str(WvsA_anomalies_union_of_H3[2*i+1][l][6])+","+str(WvsA_anomalies_union_of_H3[2*i+1][l][7])
         print "(1 U 2 U 3) ^ (4 U 5) Result:::"
-        print WvsA_anomalies_intersection[2*i]
+        print "Date"
+        for l in range(len(WvsA_anomalies_intersection[2*i])):
+            print WvsA_anomalies_intersection[2*i][l][0]
+        print "News Data"
+        print "Start Date, End Date,News Source,Link,Days,Reason,Comment,Days Reported"
+        for l in range(len(WvsA_anomalies_intersection[2*i+1])):
+            print str(WvsA_anomalies_intersection[2*i+1][l][0])+","+str(WvsA_anomalies_intersection[2*i+1][l][1])+","+str(WvsA_anomalies_intersection[2*i+1][l][2])+","+str(WvsA_anomalies_intersection[2*i+1][l][3])+","+str(WvsA_anomalies_intersection[2*i+1][l][4])+","+str(WvsA_anomalies_intersection[2*i+1][l][5])+","+str(WvsA_anomalies_intersection[2*i+1][l][6])+","+str(WvsA_anomalies_intersection[2*i+1][l][7])
         
         
         
