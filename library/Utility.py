@@ -374,7 +374,7 @@ def plotGraphForHypothesis(original,average,list1, list2, total_news_articles):
 	for row in list2:
 		ax.axvspan(row, row + timedelta(days=1), color='r', alpha=0.5, lw=0)
 	for row in total_news_articles:
-		ax.axvspan(row, row + timedelta(days=1), color='c', alpha=0.5, lw=0)
+		ax.axvspan(row, row + timedelta(days=1), color='b', alpha=0.5, lw=0)
 	plt.show()
 
 def writeToCSV(lstData,fileName):
