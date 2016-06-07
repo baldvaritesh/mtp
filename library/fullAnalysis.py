@@ -278,7 +278,7 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         
         
         # Plot Graph for i'th center
-        plotGraphForHypothesis(c_list, retailList[i], resultOfOneMethod(slopeBasedResult), slopeBased_news_article_result, all_articles_slope_based)
+        plotGraphForHypothesisArrival(c_list, retailList[i], resultOfOneMethod(slopeBasedResult), slopeBased_news_article_result, all_articles_slope_based)
         
         # Save system results in dictionary to process further
         RvsA_anomalies_union_of_H3[2*i]  = union_result_of_H3
@@ -462,7 +462,7 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         (intersection_result_with_H3_news_article_result,all_articles_intersection_result_with_H3) = fetchNewsForCenter(intersection_result_with_H3, i)
         
         # Plot Graph for i'th center
-        plotGraphForHypothesis(c_list, wholesaleList[i], resultOfOneMethod(slopeBased_result), slopeBased_news_article_result, all_articles_slope_based)
+        plotGraphForHypothesisArrival(c_list, wholesaleList[i], slopeBased_result, slopeBased_news_article_result, all_articles_slope_based)
         
         # Save system results in dictionary to process further
         WvsA_anomalies_union_of_H3[2*i]  = union_result_of_H3

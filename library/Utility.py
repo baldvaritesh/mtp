@@ -377,6 +377,44 @@ def plotGraphForHypothesis(original,average,list1, list2, total_news_articles):
 		ax.axvspan(row, row + timedelta(days=1), color='b', alpha=0.5, lw=0)
 	plt.show()
 
+
+
+
+'''
+
+This function takes 5 arguments:
+series 1 : original : list of tuples . Tuple (date, value)
+series 2 : average : (date, value)
+list2: Actual results : List of Dates
+total_news_articles: All articles present in the databse for this center/entity
+Plots Grpah.
+
+'''
+def plotGraphForHypothesisArrival(original,average,list1, list2, total_news_articles):
+	dates = [row[0] for row in original]
+	daterange = [datetime.strptime(x, "%Y-%m-%d") for x in dates]
+	original = [row[1] for row in original]
+	avg = [row[1] for row in average]
+	fig, ax = plt.subplots()
+	ax.plot(daterange,original, color = 'g', label='Original Series')
+	ax2 = ax.twinx()
+	ax2.plot(daterange,avg, color = 'b')
+	ax2.set_ylabel('series 2', color='b')
+	for row in list1:
+		ax.axvspan(row[0], row[0] + timedelta(days=1), color='y', alpha=0.5, lw=0)
+	# print type(list2)
+	# print type(total_news_articles)
+	# print (list2)
+	# print (total_news_articles)
+	list2 = [row[0] for row in list2]
+	total_news_articles = [row[0] for row in total_news_articles]
+	for row in list2:
+		ax.axvspan(row, row + timedelta(days=1), color='r', alpha=0.5, lw=0)
+	for row in total_news_articles:
+		ax.axvspan(row, row + timedelta(days=1), color='b', alpha=0.5, lw=0)
+	plt.show()
+
+
 def writeToCSV(lstData,fileName):
 	with open(fileName,'w') as out:
 		csv_out=csv.writer(out)
