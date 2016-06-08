@@ -103,6 +103,7 @@ def slopeBasedDetection(series1,smoothed1,series2,smoothed2,next_val_to_consider
     elif(what_to_consider == -1):
         negative_anomalous_pts = []
         if(default_threshold):
+            print "Threshold value for slope based: " + str(negative_threshold)
             for i in range(0,len(negative_slopes)):
                 if(negative_slopes[i][2] < negative_threshold):
                     negative_anomalous_pts.append(negative_slopes[i])

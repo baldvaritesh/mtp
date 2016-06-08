@@ -4,13 +4,6 @@ import csv
 import matplotlib.pyplot as plt
 import datetime
 import StringIO
-import plotly
-from plotly.graph_objs import Scatter, Layout
-import plotly.plotly as py
-import plotly.graph_objs as go
-from bottle import route, run, debug, template, request, static_file, error, get, post, response,  static_file, view
-import plotly.plotly as py
-py.sign_in('mcs142124', 'p7p80472qt')
 from datetime import date
 from datetime import datetime
 from datetime import timedelta
@@ -260,7 +253,7 @@ def fetchNewsForCenter(resultsOfSystem, centerNumber, intervalToConsider=5):
 		result[date] = resultOfThisDate
 		
 	# Fetch all dates of news articles corresponding to this center
-	query = "select publish_date,  an.reason, an.comment, an.days  from articlemetadata, analysis an where  article_hash_url = an.article_id and article_hash_url in (select distinct(article_id) from analysis where  comment not ilike '%delete%' and reason not ilike '%prices dropped%' and publish_date <= '2015-07-06' and (place iLike '"+center+"' or place iLike 'india') ) order by publish_date"
+	query = "select distinct publish_date,  an.reason, an.comment, an.days  from articlemetadata, analysis an where  article_hash_url = an.article_id and article_hash_url in (select distinct(article_id) from analysis where  comment not ilike '%delete%' and reason not ilike '%prices dropped%' and publish_date <= '2015-07-06' and (place iLike '"+center+"' or place iLike 'india') ) order by publish_date"
 	
 	cur.execute(query)
 	allArticlesQueryResult = cur.fetchall()
@@ -273,18 +266,23 @@ def fetchNewsForCenter(resultsOfSystem, centerNumber, intervalToConsider=5):
 			(a,b,c,d,e,f,g) = row_temp_list
 			resultList.append((date,a,b,c,d,e,f,g))
 	# Sort by anomaly date
-	resultList = sorted(resultList, key=lambda x: x[0])
+	resultList = sorted(resultList, key=lambda x: (x[0],x[1]))
+	
+	
+	
 	# Filter resultList for duplicates
 	filteredResult = []
 	newsSet = set()
 	for Tuple in resultList:
-		if(str(Tuple[1]) + str(Tuple[2]) + str(Tuple[3]) in newsSet):
+		if(Tuple[0] in newsSet):
 			continue
 		else:
 			filteredResult.append(Tuple)
-			newsSet.add(str(Tuple[1]) + str(Tuple[2]) + str(Tuple[3]))
+			newsSet.add(Tuple[0])
 	
-	return(filteredResult, allArticlesQueryResult)
+	
+	
+	return(filteredResult, resultList, allArticlesQueryResult)
 
 
 '''
@@ -373,7 +371,12 @@ def plotGraphForHypothesis(original,average,list1, list2, total_news_articles):
 	total_news_articles = [row[0] for row in total_news_articles]
 	for row in list2:
 		ax.axvspan(row, row + timedelta(days=1), color='r', alpha=0.5, lw=0)
-	for row in total_news_articles:
+	list2 = set(list2)
+	total_news_articles = set(total_news_articles)
+	not_found_articles = total_news_articles - list2
+	not_found_articles = list(not_found_articles)
+	not_found_articles.sort()
+	for row in not_found_articles:
 		ax.axvspan(row, row + timedelta(days=1), color='b', alpha=0.5, lw=0)
 	plt.show()
 
@@ -410,7 +413,12 @@ def plotGraphForHypothesisArrival(original,average,list1, list2, total_news_arti
 	total_news_articles = [row[0] for row in total_news_articles]
 	for row in list2:
 		ax.axvspan(row, row + timedelta(days=1), color='r', alpha=0.5, lw=0)
-	for row in total_news_articles:
+	list2 = set(list2)
+	total_news_articles = set(total_news_articles)
+	not_found_articles = total_news_articles - list2
+	not_found_articles = list(not_found_articles)
+	not_found_articles.sort()
+	for row in not_found_articles:
 		ax.axvspan(row, row + timedelta(days=1), color='b', alpha=0.5, lw=0)
 	plt.show()
 

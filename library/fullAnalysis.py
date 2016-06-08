@@ -6,7 +6,7 @@ from slopeBasedDetection import slopeBased
 from linear_regression import linear_regressionMain
 from window_correlation import anomaliesFromWindowCorrelationWithConstantlag
 import numpy as np
-from Utility import fetchNewsForCenter,placeMapping, getGBAResultsRvA, getGBAResultsRvR, findAverageTimeSeries, getColumnFromListOfTuples, convertListToFloat, plotGraphForHypothesis, resultOfOneMethod, concateLists, writeToCSV, getDiffStatsOfNewsArticles, statsPrintHelperIntersect, statsPrintHelperUnion,statsPrintHelperAllCentersUnion, intersection, intersectionOfFinalResults, MADThreshold, mergeDates, union, intersect, getYearWiseStats
+from Utility import fetchNewsForCenter,placeMapping, getGBAResultsRvA, getGBAResultsRvR, findAverageTimeSeries, getColumnFromListOfTuples, convertListToFloat, plotGraphForHypothesis, resultOfOneMethod, concateLists, writeToCSV, getDiffStatsOfNewsArticles, statsPrintHelperIntersect, statsPrintHelperUnion,statsPrintHelperAllCentersUnion, intersection, intersectionOfFinalResults, MADThreshold, mergeDates, union, intersect, getYearWiseStats, plotGraphForHypothesisArrival
 import datetime
 from multiVariateTimeseries import csvTransform
 from multiVariateTimeseries import multivaraiateAnalysis
@@ -77,11 +77,11 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
     
     #forecast retail prices of all centers based on the retail prices at differnet centers --Reshma
     lstRetail= concateLists(retailListWithNoDates)
-    
+    '''
     writeToCSV(lstRetail,"/home/kapil/Desktop/mtp/library/testingCSV/AllRetailData.csv")
     args = ['/home/kapil/Desktop/mtp/library/testingCSV/AllRetailData.csv','FALSE',str(len(retailListWithNoDates)),'retail']
     multivaraiateAnalysis(args)
-    
+    '''
     
     # Hashmap to save results of comparison of retail prices vs average
     RvsR_anomalies_slope = dict()
@@ -171,18 +171,18 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         # Hypothesis 3 For Reatil vs AVG: END
         
         # Get stats of news articles for each method
-        (slopeBased_news_article_result,all_articles_slope_based) = fetchNewsForCenter(slopeBased_result, i)
-        (correlationBased_news_article_result,all_articles_correlationBased) = fetchNewsForCenter(correlationBased_result, i)
-        (linearRegression_news_article_result,all_articles_linearRegression) = fetchNewsForCenter(linearRegression_result, i)
-        (graphBasedAnomaly_news_article_result,all_articles_graphBasedAnomaly) = fetchNewsForCenter(graphBasedAnomaly_result, i)
-        (multiple_arima_news_article_result, all_articles_multiple_arima) = fetchNewsForCenter(multiple_arima_result, i)
-        (union_result_of_H1_news_article,all_articles_union_result_of_H1) = fetchNewsForCenter(union_result_of_H1, i)
-        (union_result_of_H3_news_article, all_articles_union_result_of_H3) = fetchNewsForCenter(union_result_of_H3, i)
-        (intersection_result_with_H3_news_article_result,all_articles_intersection_result_with_H3) = fetchNewsForCenter(intersection_result_with_H3, i)
+        (filteredResult_slope_based, slopeBased_news_article_result,all_articles_slope_based) = fetchNewsForCenter(slopeBased_result, i)
+        (filteredResult_correlation_based, correlationBased_news_article_result,all_articles_correlationBased) = fetchNewsForCenter(correlationBased_result, i)
+        (filteredResult_linear_regression, linearRegression_news_article_result,all_articles_linearRegression) = fetchNewsForCenter(linearRegression_result, i)
+        (filteredResult_graph_based, graphBasedAnomaly_news_article_result,all_articles_graphBasedAnomaly) = fetchNewsForCenter(graphBasedAnomaly_result, i)
+        (filteredResult_multiple_arima, multiple_arima_news_article_result, all_articles_multiple_arima) = fetchNewsForCenter(multiple_arima_result, i)
+        (filteredResult_union_of_h1, union_result_of_H1_news_article,all_articles_union_result_of_H1) = fetchNewsForCenter(union_result_of_H1, i)
+        (filteredResult_union_of_h3, union_result_of_H3_news_article, all_articles_union_result_of_H3) = fetchNewsForCenter(union_result_of_H3, i)
+        (filteredResult_intersection, intersection_result_with_H3_news_article_result,all_articles_intersection_result_with_H3) = fetchNewsForCenter(intersection_result_with_H3, i)
         
        
         # Plot Graph for i'th center
-        plotGraphForHypothesis(c_list, avgRetailTimeSeries, resultOfOneMethod(slopeBasedResult), slopeBased_news_article_result, all_articles_slope_based)
+        plotGraphForHypothesis(c_list, avgRetailTimeSeries, linearRegression_result, filteredResult_linear_regression, all_articles_linearRegression)
         
         # Save system results in dictionary to process further
         RvsR_anomalies_union_of_H3[2*i]  = union_result_of_H3
@@ -195,14 +195,14 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         RvsR_anomalies_multiple_arima[2*i] = multiple_arima_result
         
         # Save news matched
-        RvsR_anomalies_union_of_H3 [2*i+1] = union_result_of_H3_news_article
-        RvsR_anomalies_union_of_H1[2*i+1] = union_result_of_H1_news_article
-        RvsR_anomalies_intersection[2*i+1] = intersection_result_with_H3_news_article_result
-        RvsR_anomalies_slope[2*i+1] = slopeBased_news_article_result
-        RvsR_anomalies_correlation[2*i+1] = correlationBased_news_article_result
-        RvsR_anomalies_linear_regression[2*i+1] = linearRegression_news_article_result
-        RvsR_anomalies_graph_based[2*i+1] = graphBasedAnomaly_news_article_result
-        RvsR_anomalies_multiple_arima[2*i+1] = multiple_arima_news_article_result
+        RvsR_anomalies_union_of_H3[2*i+1]  = filteredResult_union_of_h3
+        RvsR_anomalies_union_of_H1[2*i+1] = filteredResult_union_of_h1
+        RvsR_anomalies_intersection[2*i+1] = filteredResult_intersection
+        RvsR_anomalies_slope[2*i+1] = filteredResult_slope_based
+        RvsR_anomalies_correlation[2*i+1] = filteredResult_correlation_based
+        RvsR_anomalies_linear_regression[2*i+1] = filteredResult_linear_regression
+        RvsR_anomalies_graph_based[2*i+1] = filteredResult_graph_based
+        RvsR_anomalies_multiple_arima[2*i+1] = filteredResult_multiple_arima
         
         all_articles[i] = all_articles_correlationBased
   
@@ -266,19 +266,19 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
                 
         # Hypothesis 3 For Reatil vs ARRIVAL: END
         
-        # Get stats of news articles for each method
-        (slopeBased_news_article_result,all_articles_slope_based) = fetchNewsForCenter(slopeBased_result, i)
-        (correlationBased_news_article_result,all_articles_correlationBased) = fetchNewsForCenter(correlationBased_result, i)
-        (linearRegression_news_article_result,all_articles_linearRegression) = fetchNewsForCenter(linearRegression_result, i)
-        (graphBasedAnomaly_news_article_result,all_articles_graphBasedAnomaly) = fetchNewsForCenter(graphBasedAnomaly_result, i)
-        (multiple_arima_news_article_result, all_articles_multiple_arima) = fetchNewsForCenter(multiple_arima_result, i)
-        (union_result_of_H1_news_article,all_articles_union_result_of_H1) = fetchNewsForCenter(union_result_of_H1, i)
-        (union_result_of_H3_news_article, all_articles_union_result_of_H3) = fetchNewsForCenter(union_result_of_H3, i)
-        (intersection_result_with_H3_news_article_result,all_articles_intersection_result_with_H3) = fetchNewsForCenter(intersection_result_with_H3, i)
+        # Get stats of news articles for each method        
+        (filteredResult_slope_based, slopeBased_news_article_result,all_articles_slope_based) = fetchNewsForCenter(slopeBased_result, i)
+        (filteredResult_correlation_based, correlationBased_news_article_result,all_articles_correlationBased) = fetchNewsForCenter(correlationBased_result, i)
+        (filteredResult_linear_regression, linearRegression_news_article_result,all_articles_linearRegression) = fetchNewsForCenter(linearRegression_result, i)
+        (filteredResult_graph_based, graphBasedAnomaly_news_article_result,all_articles_graphBasedAnomaly) = fetchNewsForCenter(graphBasedAnomaly_result, i)
+        (filteredResult_multiple_arima, multiple_arima_news_article_result, all_articles_multiple_arima) = fetchNewsForCenter(multiple_arima_result, i)
+        (filteredResult_union_of_h1, union_result_of_H1_news_article,all_articles_union_result_of_H1) = fetchNewsForCenter(union_result_of_H1, i)
+        (filteredResult_union_of_h3, union_result_of_H3_news_article, all_articles_union_result_of_H3) = fetchNewsForCenter(union_result_of_H3, i)
+        (filteredResult_intersection, intersection_result_with_H3_news_article_result,all_articles_intersection_result_with_H3) = fetchNewsForCenter(intersection_result_with_H3, i)
         
         
         # Plot Graph for i'th center
-        plotGraphForHypothesisArrival(c_list, retailList[i], resultOfOneMethod(slopeBasedResult), slopeBased_news_article_result, all_articles_slope_based)
+        plotGraphForHypothesisArrival(c_list, retailList[i], linearRegression_result, filteredResult_linear_regression, all_articles_linearRegression)
         
         # Save system results in dictionary to process further
         RvsA_anomalies_union_of_H3[2*i]  = union_result_of_H3
@@ -291,14 +291,14 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         RvsA_anomalies_multiple_arima[2*i] = multiple_arima_result
         
         # Save news matched
-        RvsA_anomalies_union_of_H3[2*i+1]  = union_result_of_H3_news_article
-        RvsA_anomalies_union_of_H1[2*i+1] = union_result_of_H1_news_article
-        RvsA_anomalies_intersection[2*i+1] = intersection_result_with_H3_news_article_result
-        RvsA_anomalies_slope[2*i+1] = slopeBased_news_article_result
-        RvsA_anomalies_correlation[2*i+1] = correlationBased_news_article_result
-        RvsA_anomalies_linear_regression[2*i+1] = linearRegression_news_article_result
-        RvsA_anomalies_graph_based[2*i+1] = graphBasedAnomaly_news_article_result
-        RvsA_anomalies_multiple_arima[2*i+1] = multiple_arima_news_article_result
+        RvsA_anomalies_union_of_H3[2*i+1]  = filteredResult_union_of_h3
+        RvsA_anomalies_union_of_H1[2*i+1] = filteredResult_union_of_h1
+        RvsA_anomalies_intersection[2*i+1] = filteredResult_intersection
+        RvsA_anomalies_slope[2*i+1] = filteredResult_slope_based
+        RvsA_anomalies_correlation[2*i+1] = filteredResult_correlation_based
+        RvsA_anomalies_linear_regression[2*i+1] = filteredResult_linear_regression
+        RvsA_anomalies_graph_based[2*i+1] = filteredResult_graph_based
+        RvsA_anomalies_multiple_arima[2*i+1] = filteredResult_multiple_arima
     
     print "END OF RETAIL VS ARRIVAL \n\n\n"
     
@@ -359,18 +359,18 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         # Hypothesis 3 For Reatil vs AVG: END
         
         # Get stats of news articles for each method
-        (slopeBased_news_article_result,all_articles_slope_based) = fetchNewsForCenter(slopeBased_result, i)
-        (correlationBased_news_article_result,all_articles_correlationBased) = fetchNewsForCenter(correlationBased_result, i)
-        (linearRegression_news_article_result,all_articles_linearRegression) = fetchNewsForCenter(linearRegression_result, i)
-        (graphBasedAnomaly_news_article_result,all_articles_graphBasedAnomaly) = fetchNewsForCenter(graphBasedAnomaly_result, i)
-        (multiple_arima_news_article_result, all_articles_multiple_arima) = fetchNewsForCenter(multiple_arima_result, i)
-        (union_result_of_H1_news_article,all_articles_union_result_of_H1) = fetchNewsForCenter(union_result_of_H1, i)
-        (union_result_of_H3_news_article, all_articles_union_result_of_H3) = fetchNewsForCenter(union_result_of_H3, i)
-        (intersection_result_with_H3_news_article_result,all_articles_intersection_result_with_H3) = fetchNewsForCenter(intersection_result_with_H3, i)
+        (filteredResult_slope_based, slopeBased_news_article_result,all_articles_slope_based) = fetchNewsForCenter(slopeBased_result, i)
+        (filteredResult_correlation_based, correlationBased_news_article_result,all_articles_correlationBased) = fetchNewsForCenter(correlationBased_result, i)
+        (filteredResult_linear_regression, linearRegression_news_article_result,all_articles_linearRegression) = fetchNewsForCenter(linearRegression_result, i)
+        (filteredResult_graph_based, graphBasedAnomaly_news_article_result,all_articles_graphBasedAnomaly) = fetchNewsForCenter(graphBasedAnomaly_result, i)
+        (filteredResult_multiple_arima, multiple_arima_news_article_result, all_articles_multiple_arima) = fetchNewsForCenter(multiple_arima_result, i)
+        (filteredResult_union_of_h1, union_result_of_H1_news_article,all_articles_union_result_of_H1) = fetchNewsForCenter(union_result_of_H1, i)
+        (filteredResult_union_of_h3, union_result_of_H3_news_article, all_articles_union_result_of_H3) = fetchNewsForCenter(union_result_of_H3, i)
+        (filteredResult_intersection, intersection_result_with_H3_news_article_result,all_articles_intersection_result_with_H3) = fetchNewsForCenter(intersection_result_with_H3, i)
         
         
         # Plot Graph for i'th center
-        plotGraphForHypothesis(c_list, wholesaleList[i], resultOfOneMethod(slopeBasedResult), slopeBased_news_article_result, all_articles_slope_based)
+        plotGraphForHypothesis(c_list, wholesaleList[i], linearRegression_result, filteredResult_linear_regression, all_articles_linearRegression)
         
         # Save system results in dictionary to process further
         RvsW_anomalies_union_of_H3[2*i]  = union_result_of_H3
@@ -383,14 +383,14 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         RvsW_anomalies_multiple_arima[2*i] = multiple_arima_result
         
         # Save news matched
-        RvsW_anomalies_union_of_H3[2*i+1]  = union_result_of_H3_news_article
-        RvsW_anomalies_union_of_H1[2*i+1] = union_result_of_H1_news_article
-        RvsW_anomalies_intersection[2*i+1] = intersection_result_with_H3_news_article_result
-        RvsW_anomalies_slope[2*i+1] = slopeBased_news_article_result
-        RvsW_anomalies_correlation[2*i+1] = correlationBased_news_article_result
-        RvsW_anomalies_linear_regression[2*i+1] = linearRegression_news_article_result
-        RvsW_anomalies_graph_based[2*i+1] = graphBasedAnomaly_news_article_result
-        RvsW_anomalies_multiple_arima[2*i+1] = multiple_arima_news_article_result  
+        RvsW_anomalies_union_of_H3[2*i+1]  = filteredResult_union_of_h3
+        RvsW_anomalies_union_of_H1[2*i+1] = filteredResult_union_of_h1
+        RvsW_anomalies_intersection[2*i+1] = filteredResult_intersection
+        RvsW_anomalies_slope[2*i+1] = filteredResult_slope_based
+        RvsW_anomalies_correlation[2*i+1] = filteredResult_correlation_based
+        RvsW_anomalies_linear_regression[2*i+1] = filteredResult_linear_regression
+        RvsW_anomalies_graph_based[2*i+1] = filteredResult_graph_based
+        RvsW_anomalies_multiple_arima[2*i+1] = filteredResult_multiple_arima
   
     print "END OF RETAIL VS WHOLESALE \n\n\n"
     
@@ -452,17 +452,17 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         # Hypothesis 3 For Reatil vs ARRIVAL: END
         
         # Get stats of news articles for each method
-        (slopeBased_news_article_result,all_articles_slope_based) = fetchNewsForCenter(slopeBased_result, i)
-        (correlationBased_news_article_result,all_articles_correlationBased) = fetchNewsForCenter(correlationBased_result, i)
-        (linearRegression_news_article_result,all_articles_linearRegression) = fetchNewsForCenter(linearRegression_result, i)
-        (graphBasedAnomaly_news_article_result,all_articles_graphBasedAnomaly) = fetchNewsForCenter(graphBasedAnomaly_result, i)
-        (multiple_arima_news_article_result, all_articles_multiple_arima) = fetchNewsForCenter(multiple_arima_result, i)
-        (union_result_of_H1_news_article,all_articles_union_result_of_H1) = fetchNewsForCenter(union_result_of_H1, i)
-        (union_result_of_H3_news_article, all_articles_union_result_of_H3) = fetchNewsForCenter(union_result_of_H3, i)
-        (intersection_result_with_H3_news_article_result,all_articles_intersection_result_with_H3) = fetchNewsForCenter(intersection_result_with_H3, i)
+        (filteredResult_slope_based, slopeBased_news_article_result,all_articles_slope_based) = fetchNewsForCenter(slopeBased_result, i)
+        (filteredResult_correlation_based, correlationBased_news_article_result,all_articles_correlationBased) = fetchNewsForCenter(correlationBased_result, i)
+        (filteredResult_linear_regression, linearRegression_news_article_result,all_articles_linearRegression) = fetchNewsForCenter(linearRegression_result, i)
+        (filteredResult_graph_based, graphBasedAnomaly_news_article_result,all_articles_graphBasedAnomaly) = fetchNewsForCenter(graphBasedAnomaly_result, i)
+        (filteredResult_multiple_arima, multiple_arima_news_article_result, all_articles_multiple_arima) = fetchNewsForCenter(multiple_arima_result, i)
+        (filteredResult_union_of_h1, union_result_of_H1_news_article,all_articles_union_result_of_H1) = fetchNewsForCenter(union_result_of_H1, i)
+        (filteredResult_union_of_h3, union_result_of_H3_news_article, all_articles_union_result_of_H3) = fetchNewsForCenter(union_result_of_H3, i)
+        (filteredResult_intersection, intersection_result_with_H3_news_article_result,all_articles_intersection_result_with_H3) = fetchNewsForCenter(intersection_result_with_H3, i)
         
         # Plot Graph for i'th center
-        plotGraphForHypothesisArrival(c_list, wholesaleList[i], slopeBased_result, slopeBased_news_article_result, all_articles_slope_based)
+        plotGraphForHypothesisArrival(c_list, wholesaleList[i], linearRegression_result, filteredResult_linear_regression, all_articles_linearRegression)
         
         # Save system results in dictionary to process further
         WvsA_anomalies_union_of_H3[2*i]  = union_result_of_H3
@@ -475,14 +475,14 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         WvsA_anomalies_multiple_arima[2*i] = multiple_arima_result
         
         # Save news matched
-        WvsA_anomalies_union_of_H3[2*i+1]  = union_result_of_H3_news_article
-        WvsA_anomalies_union_of_H1[2*i+1] = union_result_of_H1_news_article
-        WvsA_anomalies_intersection[2*i+1] = intersection_result_with_H3_news_article_result
-        WvsA_anomalies_slope[2*i+1] = slopeBased_news_article_result
-        WvsA_anomalies_correlation[2*i+1] = correlationBased_news_article_result
-        WvsA_anomalies_linear_regression[2*i+1] = linearRegression_news_article_result
-        WvsA_anomalies_graph_based[2*i+1] = graphBasedAnomaly_news_article_result
-        WvsA_anomalies_multiple_arima[2*i+1] = multiple_arima_news_article_result
+        WvsA_anomalies_union_of_H3[2*i+1]  = filteredResult_union_of_h3
+        WvsA_anomalies_union_of_H1[2*i+1] = filteredResult_union_of_h1
+        WvsA_anomalies_intersection[2*i+1] = filteredResult_intersection
+        WvsA_anomalies_slope[2*i+1] = filteredResult_slope_based
+        WvsA_anomalies_correlation[2*i+1] = filteredResult_correlation_based
+        WvsA_anomalies_linear_regression[2*i+1] = filteredResult_linear_regression
+        WvsA_anomalies_graph_based[2*i+1] = filteredResult_graph_based
+        WvsA_anomalies_multiple_arima[2*i+1] = filteredResult_multiple_arima
       
     print "END OF RETAIL VS ARRIVAL \n\n\n"
     
