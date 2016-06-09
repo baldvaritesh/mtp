@@ -1,0 +1,369 @@
+\documentclass[a4paper,10pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+
+
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+
+
+
+
+
+
+% Title Page
+\title{Results and Analysis}
+\author{Kapil Thakkar and Reshma Kumari}
+
+
+\begin{document}
+\maketitle
+
+\chapter{Results and Analysis}
+
+We executed our library functions on the onion data. This data consists of 
+Wholesale Price, Retail Price and Arrival since 1st January 2006 to 6th July 
+2015. In this chapter, we will show results produced by our system and will 
+analyse these results along with each method.
+
+\section{Results}
+
+We have performed 4 types of analysis and result for each of this method is as 
+follows. Note that these are primary results. Data for 2 centers are considered 
+over here, Mumbai and Delhi.
+
+Here are some results related with Mumbai Center. Table \ref{AnomaliesReported} stats the result of anomalies reported by our system, with details about anomalies reported by each method. So here First 5 columns corresponds to each method. Column 6 is union of results of first 3 methods and column 7 is union of result of method 4 and 5, as described in table. Column 8 is intersection of results of column 6 and column 7, which is final result of our system.
+
+
+Table \ref{ArticlesMatched} stats the result of number of articles matched with the dates reported by our system as anomaly, for each method. So here First 5 columns corresponds to each method. Column 6 is union of results of first 3 methods and column 7 is union of result of method 4 and 5, as described in table. Column 8 is intersection of results of column 6 and column 7, which is final result of our system.
+
+
+Note that total number of articles present for center Mumbai is \textbf{143}. Note one thing that articles are present from 2010 onwards. Apart from Graph Based Anomaly method, all methods are producing results from 2006 onwards as input data is from that time.
+ 
+Now, we present detailed analysis for each of the different type of time-series. Fist type of such analysis is in table \ref{RetailVsAverage}. This table shows distribution of news articles present year-wise for each method when retail price time series is compared with average retail price time series. Fist type of such analysis is in table \ref{RetailVsArrival}. This table shows distribution of news articles present year-wise for each method when retail price time series is compared with arrival data of onion time series. Third type of such analysis is in table \ref{RetailVsWholesale}. This table shows distribution of news articles present year-wise for each method when retail price time series is compared with wholesale price time series. Fourth type of such analysis is in table \ref{WholesaleVsArrival}. This table shows distribution of news articles present year-wise for each method when wholesale price time series is compared with arrival data of onion time series.
+
+Distribution of anomalies present year-wise, for each method is also shown in table. Result is described in different tables for different analysis. Result for various analysis is described in tables  \ref{RetailVsAverageDist}, \ref{RetailVsArrivalDist}, \ref{RetailVsWholesaleDist} and \ref{WholesaleVsArrivalDist}.
+
+Such results of different cities can also be calculated.
+
+
+
+
+	\begin{table}[]
+	\centering
+	
+	\resizebox{\textwidth}{!}
+	{\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
+	\hline
+	Methods		    & Slope Based (1) & Window Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6  $\cap$ 7 \\
+	\hline
+	Retail Vs Average    & 742             & 1245                   & 353                   & 100             & 177              & 1871          & 192       & 136       \\
+	\hline
+	Retail Vs Arrival    & 420             & 120                    & 353                   & 100             & 167              & 810           & 267       & 173       \\
+	\hline
+	Retail Vs Wholesale  & 658             & 1230                   & 310                   & 100             & 167              & 1819          & 229       & 132       \\
+	\hline
+	Wholesale Vs Arrival & 448             & 525                    & 282                   & 100             & 186              & 1165          & 286       & 217       \\
+	\hline
+	\end{tabular}}
+	\caption{Anomalies Reported}
+	\label{AnomaliesReported}
+	\end{table}
+    
+    
+    
+
+  
+	\begin{table}[]
+	\centering
+	
+	\resizebox{\textwidth}{!}
+	{\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
+	\hline
+	Methods		    & Slope Based (1) & Window Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6  $\cap$ 7 \\
+	\hline
+	Retail Vs Average    & 742             & 1245                   & 353                   & 100             & 177              & 1871          & 192       & 136       \\
+	\hline
+	Retail Vs Arrival    & 420             & 120                    & 353                   & 100             & 167              & 810           & 267       & 173       \\
+	\hline
+	Retail Vs Wholesale  & 658             & 1230                   & 310                   & 100             & 167              & 1819          & 229       & 132       \\
+	\hline
+	Wholesale Vs Arrival & 448             & 525                    & 282                   & 100             & 186              & 1165          & 286       & 217       \\
+	\hline
+	\end{tabular}}
+	\caption{Number of news articles matched with system}
+	\label{ArticlesMatched}
+	\end{table}
+	
+      
+
+	\begin{table}[]
+	\centering
+	\resizebox{\textwidth}{!}
+	{\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
+	\hline
+	Distribution of All Articles & Articles Present & Slope Based (1) & Window Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6  $\cap$ 7 \\
+	\hline
+	2010                         & 7                & 0           & 5           & 6                 & 0           & 0             & 6         & 0     & 0                                     \\
+	\hline
+	2011                         & 7                & 0           & 3           & 0                 & 2           & 0             & 2         & 2     & 2                                     \\
+	\hline
+	2012                         & 2                & 1           & 1           & 0                 & 0           & 0             & 1         & 0     & 0                                     \\
+	\hline
+	2013                         & 77               & 46          & 31          & 17                & 30          & 52            & 50        & 52    & 50                                    \\
+	\hline
+	2014                         & 37               & 6           & 18          & 14                & 0           & 1             & 20        & 1     & 1                                     \\
+	\hline
+	2015                         & 13               & 0           & 12          & 0                 & 0           & 0             & 12        & 0     & 0                                     \\
+	\hline
+	Total                        & 143              & 53          & 70          & 37                & 32          & 53            & 91        & 55    & 53                                   \\
+	\hline
+	\end{tabular}}	
+	\caption{Retail Price VS Average Retail Price}
+	\label{RetailVsAverage}
+	\end{table}
+	
+	
+	
+	\begin{table}[]
+	\centering
+	\resizebox{\textwidth}{!}
+	{\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
+	\hline
+	Distribution of All Articles & Articles Present & Slope Based (1) & Window Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6  $\cap$ 7 \\
+	\hline
+	2010                         & 7                & 0           & 5           & 6                 & 0           & 0             & 6         & 0     & 0                                     \\
+	\hline
+	2011                         & 7                & 0           & 3           & 0                 & 2           & 0             & 2         & 2     & 2                                     \\
+	\hline
+	2012                         & 2                & 1           & 1           & 0                 & 0           & 0             & 1         & 0     & 0                                     \\
+	\hline
+	2013                         & 77               & 46          & 31          & 17                & 30          & 52            & 50        & 52    & 50                                    \\
+	\hline
+	2014                         & 37               & 6           & 18          & 14                & 0           & 1             & 20        & 1     & 1                                     \\
+	\hline
+	2015                         & 13               & 0           & 12          & 0                 & 0           & 0             & 12        & 0     & 0                                     \\
+	\hline
+	Total                        & 143              & 53          & 70          & 37                & 32          & 53            & 91        & 55    & 53                                   \\
+	\hline
+	\end{tabular}}	
+	\caption{Retail Price VS Arrival data of onion}
+	\label{RetailVsArrival}
+	\end{table}
+
+	
+	
+	
+	\begin{table}[]
+	\centering
+	\resizebox{\textwidth}{!}
+	{\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
+	\hline
+	Distribution of All Articles & Articles Present & Slope Based (1) & Window Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6  $\cap$ 7 \\
+	\hline
+	2010                         & 7                & 0           & 5           & 6                 & 0           & 0             & 6         & 0     & 0                                     \\
+	\hline
+	2011                         & 7                & 0           & 3           & 0                 & 2           & 0             & 2         & 2     & 2                                     \\
+	\hline
+	2012                         & 2                & 1           & 1           & 0                 & 0           & 0             & 1         & 0     & 0                                     \\
+	\hline
+	2013                         & 77               & 46          & 31          & 17                & 30          & 52            & 50        & 52    & 50                                    \\
+	\hline
+	2014                         & 37               & 6           & 18          & 14                & 0           & 1             & 20        & 1     & 1                                     \\
+	\hline
+	2015                         & 13               & 0           & 12          & 0                 & 0           & 0             & 12        & 0     & 0                                     \\
+	\hline
+	Total                        & 143              & 53          & 70          & 37                & 32          & 53            & 91        & 55    & 53                                   \\
+	\hline
+	\end{tabular}}	
+	\caption{Retail Price VS Wholesale Price}
+	\label{RetailVsWholesale}
+	\end{table}
+
+	
+	
+	\begin{table}[]
+	\centering
+	\resizebox{\textwidth}{!}
+	{\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
+	\hline
+	Distribution of All Articles & Articles Present & Slope Based (1) & Window Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6  $\cap$ 7 \\
+	\hline
+	2010                         & 7                & 0           & 5           & 6                 & 0           & 0             & 6         & 0     & 0                                     \\
+	\hline
+	2011                         & 7                & 0           & 3           & 0                 & 2           & 0             & 2         & 2     & 2                                     \\
+	\hline
+	2012                         & 2                & 1           & 1           & 0                 & 0           & 0             & 1         & 0     & 0                                     \\
+	\hline
+	2013                         & 77               & 46          & 31          & 17                & 30          & 52            & 50        & 52    & 50                                    \\
+	\hline
+	2014                         & 37               & 6           & 18          & 14                & 0           & 1             & 20        & 1     & 1                                     \\
+	\hline
+	2015                         & 13               & 0           & 12          & 0                 & 0           & 0             & 12        & 0     & 0                                     \\
+	\hline
+	Total                        & 143              & 53          & 70          & 37                & 32          & 53            & 91        & 55    & 53                                   \\
+	\hline
+	\end{tabular}}	
+	\caption{ Wholesale Price VS Arrival data of onion}
+	\label{WholesaleVsArrival}
+	\end{table}
+	
+	
+	
+	
+	\begin{table}[]
+	\centering
+	\resizebox{\textwidth}{!}
+	{\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
+	\hline
+	Distribution of All Articles & Slope Based (1) & Window Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6  $\cap$ 7 \\
+	\hline
+	2006                         & 35          & 30          & 0                 & 78          & 0             & 58        & 78    & 7                                     \\
+	\hline
+	2007                         & 63          & 0           & 0                 & 22          & 0             & 63        & 22    & 0                                     \\
+	\hline
+	2008                         & 28          & 0           & 0                 & 0           & 0             & 28        & 0     & 0                                     \\
+	\hline
+	2009                         & 28          & 15          & 0                 & 0           & 0             & 43        & 0     & 0                                     \\
+	\hline
+	2010                         & 48          & 15          & 46                & 0           & 0             & 82        & 0     & 0                                     \\
+	\hline
+	2011                         & 36          & 30          & 40                & 0           & 0             & 105       & 0     & 0                                     \\
+	\hline
+	2012                         & 77          & 0           & 0                 & 0           & 0             & 77        & 0     & 0                                     \\
+	\hline
+	2013                         & 59          & 0           & 168               & 0           & 161           & 203       & 161   & 161                                   \\
+	\hline
+	2014                         & 46          & 30          & 99                & 0           & 6             & 151       & 6     & 5                                     \\
+	\hline
+	2015                         & 0           & 0           & 0                 & 0           & 0             & 0         & 0     & 0                                     \\
+	\hline
+	Total			    & 420         & 120         & 353               & 100         & 167           & 810       & 267   & 173                                   \\
+	\hline
+	\end{tabular}}
+	\caption{Distribution of Anomalies reported by system for Retail Price VS Average Retail Price}
+	\label{RetailVsAverageDist}
+	\end{table}
+	  
+	  
+	  
+	
+	\begin{table}[]
+	\centering
+	\resizebox{\textwidth}{!}
+	{\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
+	\hline
+	Distribution of All Articles & Slope Based (1) & Window Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6  $\cap$ 7 \\
+	\hline
+	2006                         & 35          & 30          & 0                 & 78          & 0             & 58        & 78    & 7                                     \\
+	\hline
+	2007                         & 63          & 0           & 0                 & 22          & 0             & 63        & 22    & 0                                     \\
+	\hline
+	2008                         & 28          & 0           & 0                 & 0           & 0             & 28        & 0     & 0                                     \\
+	\hline
+	2009                         & 28          & 15          & 0                 & 0           & 0             & 43        & 0     & 0                                     \\
+	\hline
+	2010                         & 48          & 15          & 46                & 0           & 0             & 82        & 0     & 0                                     \\
+	\hline
+	2011                         & 36          & 30          & 40                & 0           & 0             & 105       & 0     & 0                                     \\
+	\hline
+	2012                         & 77          & 0           & 0                 & 0           & 0             & 77        & 0     & 0                                     \\
+	\hline
+	2013                         & 59          & 0           & 168               & 0           & 161           & 203       & 161   & 161                                   \\
+	\hline
+	2014                         & 46          & 30          & 99                & 0           & 6             & 151       & 6     & 5                                     \\
+	\hline
+	2015                         & 0           & 0           & 0                 & 0           & 0             & 0         & 0     & 0                                     \\
+	\hline
+	Total			    & 420         & 120         & 353               & 100         & 167           & 810       & 267   & 173                                   \\
+	\hline
+	\end{tabular}}
+	\caption{Distribution of Anomalies reported by system for Retail Price VS Arrival data of onion }
+	\label{RetailVsArrivalDist}
+	\end{table}
+	
+	
+	\begin{table}[]
+	\centering
+	\resizebox{\textwidth}{!}
+	{\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
+	\hline
+	Distribution of All Articles & Slope Based (1) & Window Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6  $\cap$ 7 \\
+	\hline
+	2006                         & 35          & 30          & 0                 & 78          & 0             & 58        & 78    & 7                                     \\
+	\hline
+	2007                         & 63          & 0           & 0                 & 22          & 0             & 63        & 22    & 0                                     \\
+	\hline
+	2008                         & 28          & 0           & 0                 & 0           & 0             & 28        & 0     & 0                                     \\
+	\hline
+	2009                         & 28          & 15          & 0                 & 0           & 0             & 43        & 0     & 0                                     \\
+	\hline
+	2010                         & 48          & 15          & 46                & 0           & 0             & 82        & 0     & 0                                     \\
+	\hline
+	2011                         & 36          & 30          & 40                & 0           & 0             & 105       & 0     & 0                                     \\
+	\hline
+	2012                         & 77          & 0           & 0                 & 0           & 0             & 77        & 0     & 0                                     \\
+	\hline
+	2013                         & 59          & 0           & 168               & 0           & 161           & 203       & 161   & 161                                   \\
+	\hline
+	2014                         & 46          & 30          & 99                & 0           & 6             & 151       & 6     & 5                                     \\
+	\hline
+	2015                         & 0           & 0           & 0                 & 0           & 0             & 0         & 0     & 0                                     \\
+	\hline
+	Total			    & 420         & 120         & 353               & 100         & 167           & 810       & 267   & 173                                   \\
+	\hline
+	\end{tabular}}
+	\caption{Distribution of Anomalies reported by system for Retail Price VS Wholesale Price }
+	\label{RetailVsWholesaleDist}
+	\end{table}
+	
+	
+	\begin{table}[]
+	\centering
+	\resizebox{\textwidth}{!}
+	{\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
+	\hline
+	Distribution of All Articles & Slope Based (1) & Window Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6  $\cap$ 7 \\
+	\hline
+	2006                         & 35          & 30          & 0                 & 78          & 0             & 58        & 78    & 7                                     \\
+	\hline
+	2007                         & 63          & 0           & 0                 & 22          & 0             & 63        & 22    & 0                                     \\
+	\hline
+	2008                         & 28          & 0           & 0                 & 0           & 0             & 28        & 0     & 0                                     \\
+	\hline
+	2009                         & 28          & 15          & 0                 & 0           & 0             & 43        & 0     & 0                                     \\
+	\hline
+	2010                         & 48          & 15          & 46                & 0           & 0             & 82        & 0     & 0                                     \\
+	\hline
+	2011                         & 36          & 30          & 40                & 0           & 0             & 105       & 0     & 0                                     \\
+	\hline
+	2012                         & 77          & 0           & 0                 & 0           & 0             & 77        & 0     & 0                                     \\
+	\hline
+	2013                         & 59          & 0           & 168               & 0           & 161           & 203       & 161   & 161                                   \\
+	\hline
+	2014                         & 46          & 30          & 99                & 0           & 6             & 151       & 6     & 5                                     \\
+	\hline
+	2015                         & 0           & 0           & 0                 & 0           & 0             & 0         & 0     & 0                                     \\
+	\hline
+	Total			    & 420         & 120         & 353               & 100         & 167           & 810       & 267   & 173                                   \\
+	\hline
+	\end{tabular}}
+	\caption{Distribution of Anomalies reported by system for Wholesale Price VS Arrival data of onion }
+	\label{WholesaleVsArrivalDist}
+	\end{table}
+	
+
+	
+\section{Analysis of Each Method}
+
+In this section, we try to analyse each method, what is limitation of each method and where it is performing good. So, we will describe each method one by one and study them.
+
+	
+\end{document}          

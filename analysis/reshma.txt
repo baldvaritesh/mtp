@@ -1,0 +1,26 @@
+VAR model  related analysis:
+For Mumbai
+
+Retail vs Average data
+2013-07-19 00:00:00 -2013-09-11 00:00:00 - One news article with suspect of traders nexus operatins in The Times of India on 2013-08-17, rest all on low supply and production
+2013-09-17 00:00:00 - 2014-01-06 00:00:00 - multiple articles on traders nexus reported during this tenure
+2014-12-03 00:00:00- 2014-12-15 00:00:00 - unseasonal rainfall
+
+Retail vs Arrival data
+2013-07-19 00:00:00- 2013-09-11 00:00:00 - articles on traders nexus
+2013-09-17 00:00:00- 2014-01-06 00:00:00
+
+Retail vs Wholesale data
+2013-07-19 00:00:00- 2013-09-11 00:00:00
+2013-09-17 00:00:00- 2014-01-06 00:00:00
+
+Wholesale vs Arrival data
+
+2013-07-14 00:00:00- 2013-12-12 00:00:00
+2014-07-07 00:00:00- 2014-08-09 00:00:00
+
+
+
+
+
+
