@@ -172,6 +172,7 @@ def correlationAtLag(series1, series2, lag, window_size):
     n = min(n1,n2)    
     # Find Correlation at all Window
     result = []
+    p_Val = []
     if(window_size >= n):
         temp = scipy.stats.pearsonr(series1[start1:n],series2[start2:n])
         result.append(temp[0])
@@ -192,9 +193,16 @@ def correlationAtLag(series1, series2, lag, window_size):
                 print "Temp arr 2"
                 print temp_arr_2'''
             # Get maximum correlation and append it to array
+            #if(temp[1]<0.05):
             result.append(temp[0])
-            
+            if(temp[1]<0.05):
+            	p_Val.append((temp[0],temp[1],"S"))
+            else:
+            	p_Val.append((temp[0],temp[1],"INS"))
+
             i = i + window_size
+    print "p_Value---------------------------------------"
+    print p_Val
     return result
 
 '''
@@ -246,6 +254,10 @@ def anomaliesFromWindowCorrelationWithConstantlag(arr1, arr2, window_size=15,max
     datesOfAnomalies = []
     if(default_threshold):
         (lower_thresh,upper_thrash)= MADThreshold(arr[1])
+        print "array on which correlation is computed"
+        print arr[1]
+        print "Mad Threshold--------------------------"
+        print str(lower_thresh)+"-----" +str(upper_thrash)
     else:
         lower_thresh = upper_thrash = threshold
     for i in range(0,len(arr[1])):

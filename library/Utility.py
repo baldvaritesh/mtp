@@ -478,7 +478,16 @@ def MADThreshold(array):
     tolerance = 1.4826 * median_of_diff
     return (median - tolerance,median + tolerance)
     
-
+'''def MADThreshold(array):
+	array = cleanArray(array)
+	array = np.array(array)
+	median = numpy.median(array, axis=0)
+	diff = np.sum((array - median)**2, axis=-1)
+	diff = np.sqrt(diff)
+	med_abs_deviation = numpy.median(diff)
+	modified_z_score = 0.6745 * diff / med_abs_deviation
+	return (-1*modified_z_score,modified_z_score)
+'''	
 '''
 This function takes 2 arguments:
 array: Array of integers, real numbers, etc
@@ -1026,4 +1035,22 @@ def getYearWiseStats(*results):
 	else: # numOfColumns = 9
 		result = zip(columns[0],columns[1],columns[2],columns[3],columns[4],columns[5],columns[6],columns[7],columns[8],columns[9])
 	return result
-	
+
+
+'''
+This function is just to take series from 2010 onwards for the graph based anomaly method.
+Cuts given 2 input list and start from 2010 and returns them
+'''
+def processListForGB(listOfList):
+	oneList = listOfList[0]
+	tempList = [datetime.strptime(row[0],"%Y-%m-%d") for row in oneList]
+	date = datetime.strptime("2010-01-01","%Y-%m-%d")
+	i = 0
+	for dateVal in tempList:
+		if(date<dateVal):
+			break
+		i=i+1
+	result = []
+	for anyList in listOfList:
+		result.append(anyList[i:])
+	return result

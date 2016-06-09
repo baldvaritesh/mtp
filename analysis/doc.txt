@@ -125,3 +125,22 @@ METHOD LINEAR REGRESSION:
     Wholesale vs Arrival:
     
         Missed articles for Jan Feb 2013, Jun Jul 2013 Jun 2015, but covered many for Jul Aug Sep Oct Nov Dec 2013.
+        
+        
+METHOD GRAPH BASED ANOMALY:
+
+    Retail vs Average:
+    
+        This method sees vry successful for this particular scenario. Every tenure of anomaly has been matched with some news articles. The anomalies which were not matched with news articles were part of tenure reported and usually, this tenure is large and for every date news articles are not present. Few articles are missed that might be due to fact that we have chosen limited number of anomaly points, here 150. We look forward to increase number of these points and check what result comes.
+        
+    Retail vs Wholesale:
+    
+        The reason why any news articles is not matched is because all anomalies reported (150 chosen) are before 2010. We need to aither increase number of anomalies or pass the function series after 2009.
+        
+    Retail vs Wholesale:
+    
+        Apart from Jan 2013, July 2014, Jun 2015, anomalies are matchinng.
+        
+    Wholesale vs Arrival:
+    
+        Whole first half of 2013 is reported. This mthod is not working properly when we are taking arrival.
