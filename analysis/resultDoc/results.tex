@@ -363,10 +363,44 @@ Such results of different cities can also be calculated.
 	
 \section{Analysis of Each Method}
 
-In this section, we try to analyse each method, what is limitation of each method and where it is performing good. So, we will describe each method one by one and study them.
+In this section, we try to analyse each method, what is limitation of each method and where it is performing good. So, we will describe each method one by one and study them. Note that we have articles from 2010 onwards, so we will be focussing on anomalies reported after 2010 and comparing with them news articles which we have.
+
+\subsection{Slope Based Anomaly Detection}
+	
+		The main functionality of this method is to find change in one variable with respect to other. Given two time-series, here we try to find, between two points in time series, how much dependent variable changed corresponding to independent variable. If this change is huge, than it is reported as anomaly.
+		
+		We have four type of analysis which are as follows:
+		\begin{enumerate}
+			\item \textbf{Retail Price vs Average of Retail Price}: Here, we first take average of retail price at all centres and than compare change in retail price with change in average of retail price for different time window.			
+			\item \textbf{Retail Price vs Arrival of Onion}: Here, we try to find change in retail price with respect to change in arrival of onion for different windows. 
+			\item \textbf{Retail Price vs Wholesale Price}: Here, retail price is dependent on wholesale price and here we try to find change in retail price with respect to change wholesale price for different windows in this method.
+			\item \textbf{Wholesale Price vs Arrival of Onion}: Here, we try to find change in wholesale price with respect to change in arrival of onion for different window size.
+		\end{enumerate}
+		
+		So, in each of the case, we try to find change with respect to another, and if this change is huge, crossing threshold than it is reported as anomaly. Now, not that in analysis 1 and 3 stated above, both the time series are directly proportional to each other and in the analysis 2 and 4 both the time series are inversely proportional to each other. So, limitations faced by this method for analysis 1 and 3 will be similar and for analysis 2 and 4 will be similar. While describing this method, each analysis will be referenced by its corresponding number.
+		
+		First we will start with analysis 1 and 3. Here, we have few observations as follows:
+		\begin{itemize}
+			\item Dates are reported as anomalies, if retail price at centre is increasing more as compared to average retail price for analysis 1 or if retail price at centre is increasing more as compared to wholesale price for analysis 3.
+			Such cases are reported for the following tenure by this method:
+			\begin{itemize}
+				\item \textit{Analysis 1}: June 2010, August 2010, May 2011, June 2011, Nov 2012, Apr 2013, May 2013 (Prices went too high as compared to average)
+				\item \textit{Analysis 3}:
+			\end{itemize}
+			
+			So, even though we do not have articles for these anomalies, but method is behaving as it should be. 			
+			
+			\item This observation is limitation of this method. There exist few cases where, drop in retail price for one center is quite huge as compared to drop in price for average retail price (in case of analysis 1) or wholesale price (in case of analysis 3). This is good thing for centres, and should bot be anomaly. But in this case, slope value goes high and that's why our method reports that tenure as anomaly as well.
+			Such cases are reported for the following tenure by this method:
+			\begin{itemize}
+				\item \textit{Analysis 1}: January 2010
+				\item \textit{Analysis 3}:
+			\end{itemize}
+			
+		\end{itemize}
+		
 
 
-
-
+	Also, note one thing that, this method reports anomaly as whole window. So, because of that too, we have more anomaly dates.
 	
 \end{document}          

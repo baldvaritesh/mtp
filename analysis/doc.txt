@@ -25,9 +25,9 @@ Retail vs Average:
     
     Since articles are present from 2010 only, we will focus on analysis of 2010 onwards...
     
-    Anomalies reported in January, 2010 by his method, has more drop in original retail prices than original. Actually, this is good thing for center Mumbai and not good for other centers contributing to average, as prices over there are more as compared to Mumbai. This is limitation of this method, that this method just reports abnormaly high or low slope values. In this case it is good for center but since slope value is high, it is reported as anomaly.
+    Done : Anomalies reported in January, 2010 by his method, has more drop in original retail prices than original. Actually, this is good thing for center Mumbai and not good for other centers contributing to average, as prices over there are more as compared to Mumbai. This is limitation of this method, that this method just reports abnormaly high or low slope values. In this case it is good for center but since slope value is high, it is reported as anomaly.
     
-    Anomalies reported in (Jun 2010, August 2010, May 2011, June 2011, Nov 2012, Apr 2013) are such that original prices are increasing more as compared to average retail price. So, anomalies reported are normal.
+    Done: Anomalies reported in (Jun 2010, August 2010, May 2011, June 2011, Nov 2012, Apr 2013) are such that original prices are increasing more as compared to average retail price. So, anomalies reported are normal.
     
     Dec 2010, (Jan Feb 2012), June 2013 could not be captured by this method, because along with center Mumbai, in other centers as well, prices went high. So no abnormal values of slopes were observed.
     
@@ -36,12 +36,11 @@ Retail vs Average:
     Oct and Nov 2011, Feb 2012, Mar 2012, Dec 2014, March 2015 original prices were less as compared to average, but average was high from start only. And there was sudden hike in original price. So this should have been reported and it is normal.
     
     In May and Jun 2012, original prices went high suddenly as compared to average. So, it is quite normal.
-    Also, in Jun 2012, Aug 2012, Jan 2013, Feb 2014, Oct 2014, Feb 2015 prices also went down. But it went down more in Mumbai, as compared to average. So, slope value is high. This is another reason for false positives in this method. 
-    
+    Also, in Jun 2012, Aug 2012, Jan 2013, Feb 2014, Oct 2014, Feb 2015 prices also went down. But it went down more in Mumbai, as compared to average. So, slope value is high. This is another reason for false positives in this method.    
     
     Dec 27, 2012 article was not reported by our system, but one week before that Dec 22, 2012 was reported as anomaly by this method. So, delay in coming this thing as news can be considered as a reason for why our system did not match that.
     
-    In May 2013, prices went too much high as compared to average. Very Very High.
+    Done : In May 2013, prices went too much high as compared to average. Very Very High.
     
     We have many news around Aug 2013, Sept Oct Nov 2013 and our system has reported one tenure in this month. News is spread out for whole this month and that's why some of the news articles are missed. Note that prices went too much high. 
     
