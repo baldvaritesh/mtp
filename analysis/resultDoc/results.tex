@@ -5,15 +5,15 @@
 
 
 
-\usepackage{geometry}
- \geometry{
- a4paper,
- total={170mm,257mm},
- left=20mm,
- top=20mm,
- }
+%\usepackage{geometry}
+% \geometry{
+% a4paper,
+% total={170mm,257mm},
+% left=20mm,
+% top=20mm,
+% }
 
-
+\usepackage[margin=1in]{geometry}
 
 
 
@@ -384,8 +384,8 @@ In this section, we try to analyse each method, what is limitation of each metho
 			\item Dates are reported as anomalies, if retail price at centre is increasing more as compared to average retail price for analysis 1 or if retail price at centre is increasing more as compared to wholesale price for analysis 3.
 			Such cases are reported for the following tenure by this method:
 			\begin{itemize}
-				\item \textit{Analysis 1}: June 2010, August 2010, May 2011, June 2011, Nov 2012, Apr 2013, May 2013 (Prices went too high as compared to average)
-				\item \textit{Analysis 3}:
+				\item \textit{Analysis 1}: June 2010, August 2010, May 2011, June 2011, May Jun Nov 2012, Apr May 2013 (Prices went too high as compared to average)
+				\item \textit{Analysis 3}: Apr Jul Oct Dec 2010, Jan 2011, May Jun 2014
 			\end{itemize}
 			
 			So, even though we do not have articles for these anomalies, but method is behaving as it should be. 			
@@ -393,14 +393,119 @@ In this section, we try to analyse each method, what is limitation of each metho
 			\item This observation is limitation of this method. There exist few cases where, drop in retail price for one center is quite huge as compared to drop in price for average retail price (in case of analysis 1) or wholesale price (in case of analysis 3). This is good thing for centres, and should bot be anomaly. But in this case, slope value goes high and that's why our method reports that tenure as anomaly as well.
 			Such cases are reported for the following tenure by this method:
 			\begin{itemize}
-				\item \textit{Analysis 1}: January 2010
-				\item \textit{Analysis 3}:
+				\item \textit{Analysis 1}: January 2010, Jun Aug 2012, Jan 2013, Feb Oct 2014, Feb 2015
+				\item \textit{Analysis 3}: Feb May 2010
 			\end{itemize}
+			
+			\item Other observation is related to why few anomalies were reported in news but not by our system. Reason for that is we are comparing relative change in two time series. Now for some dates, where news article is present but our system did not report, value of both time series increased together. Although, prices went too high, but still relative change, i.e. slope value remained relatively low as compared to others, and so was not reported by our system.
+			Such cases are reported for the following tenure by this method:
+			\begin{itemize}
+				\item \textit{Analysis 1}: Dec 2010, Jan Feb 2012, Jun 2013, May June 2015
+				\item \textit{Analysis 3}: Feb 2013, Jul 2014
+			\end{itemize}
+			
+			\item In some cases, original retail price was running less than average retail price for some time and then suddenly prices in the centre increased drastically. So such cases were reported as anomaly in this method, which is quite normal. Such cases were found in \textit{Analysis 1} for Oct Nov 2011, Feb Mar 2012 and Dec 2014.
+			
+			\item In some cases, tenure reported as anomaly is quite large, because situations were abnormal for long time. But may be for such large tenure, news articles should be present, is not necessary. And anomaly reported was justifiable. For\textit{ Analysis 1}, such tenure was reported for March end to May start 2014.
+			
+			\item In \textit{Analysis 1}, For June 2014, method has reported tenure upto mid June when prices started increasing, but it remained high and due to that some articles are present for June 21 around, we have missed, because at that time relative slope value became normal, but since prices were high, it was covered by news articles.
+			
+			\item There exist some cases in \textit{Analysis 3} where retail price were decreasing but wholesale price was keep on increasing, this creatd negative slope value, where as in this scenario, we were looking for only positive slopes and that's why this method missed it. Such periods were in July Aug Sept 2013, Nov Dec 2013.
 			
 		\end{itemize}
 		
+		
+		Now we present few observation for Analysis 2 and 4.
+		
+		\begin{itemize}
+			\item If change in retail price or change in wholesale price is more as compared to change in arrival (prices went too high, even for small drop in arrival), then it is reported as anomaly by this method.
+			Such cases are reported for the following tenure by this method:
+			\begin{itemize}
+				\item \textit{Analysis 2}: Oct Dec 2010, May Jun 2013
+				\item \textit{Analysis 4}: Sept Oct Nov 2010, Jun 2013, Jun 2015
+			\end{itemize}	
+			
+			\item But in above described scenario, when change in price is high, but prices are decreasing and when arrival is increasing, and if drop in price is too high, then also it will be reported as anomaly.	So this is limitation of this method and reports false positives in this case.
+			Such cases are reported for the following tenure by this method:
+			\begin{itemize}
+				\item \textit{Analysis 2}: Feb Mar 2011, Jan Feb 2014
+				\item \textit{Analysis 4}: Oct Dec 2011, Jan 2012, Jan 2014, Mar 2011
+			\end{itemize}
+			
+			\item One more limitation of this method is when arrival is increasing but along with that retail or wholesale price is also increasing. Since will come out as positive slope and this method, in this scenario is only looking for negative slope and so, this will not be reported as anomaly and news articles corresponding to this tenure will not be matched by results of this method.
+			Such cases are reported for the following tenure by this method:
+			\begin{itemize}
+				\item \textit{Analysis 2}: Jan Feb July Nov 2013, June July 2014
+				\item \textit{Analysis 4}: Jan Feb 2013, July 2014, June 2015
+			\end{itemize}
+			
+			\item There exist some cases, where first due to low arrival prices went too high and when arrival started entering into market slowly and slowly prices were going down. This period of slowly decrement of prices is not reported by this method, but since prices were still high, this system could not report dates for news articles corresponding to this tenure. Such cases occurred in \textit{Analysis 2} for Dec 2010 and Jan 2011 and in \textit{Analysis 4} for Nov 2013. Also, note that these articles were mainly on Pakistan banned exports and article on inflation stating that inflation rate is high and onion prices are playing an important role in this.
+			
+			\item In some of the cases, where arrival fell too much drastically, and due to that retail price went high drastically as well. And since retail prices went high too much it got reported in news articles, but this was expected, as arrival was less. But here both the changes were high, so ultimately slope value was not so high and was not reported by our system. Such cases in \textit{Analysis 2} exist for Aug Sept 2013
+			
+			\item Another limitation of this method is when retail price remained constant and there was change in arrival. As retail price was constant, slope value became zero and method did not report them and due to that few news articles could not be matched by dates reported by this method for example in \textit{Analysis 2}, this thing occurred for June July 2015
+			
+		\end{itemize}
 
 
-	Also, note one thing that, this method reports anomaly as whole window. So, because of that too, we have more anomaly dates.
-	
+	Also, note one thing that, this method reports anomaly as whole window of few days (here 7 days). So, because of that too, method tends to report more anomaly dates.
+
+
+\subsection{Linear Regression}
+
+		The main functionality of this method is to find what should be ideal value of the dependent variable given value of independent variable. This method first finds out linear relationship between 2 variables, whose time series is given as input and one of them is dependent on another. After finding out this equation, we see for a given value of independent variable what should be ideal value of dependent variable and note down the relative difference. If this difference is large, then it is reported as anomaly.
+		
+		We have four type of analysis which are as follows:
+		\begin{enumerate}
+			\item \textbf{Retail Price vs Average of Retail Price}: Here, we first take average of retail price at all centres as independent variable and retail price as dependent variable.			
+			\item \textbf{Retail Price vs Arrival of Onion}: Here, we take retail price as dependent variable and arrival of onion as independent variable.
+			\item \textbf{Retail Price vs Wholesale Price}: Here, we take retail price as dependent variable and Wholesale Price as independent variable.
+			\item \textbf{Wholesale Price vs Arrival of Onion}: Here, we take Wholesale price as dependent variable and arrival of onion as independent variable.
+		\end{enumerate}
+		
+		So, in each of the case, we try to find relative difference between ideal value and its real value, and if it is huge, crossing threshold than it is reported as anomaly. Now, not that in analysis 1 and 3 stated above, both the time series are directly proportional to each other and in the analysis 2 and 4 both the time series are inversely proportional to each other. So, limitations faced by this method for analysis 1 and 3 will be similar and for analysis 2 and 4 will be similar. While describing this method, each analysis will be referenced by its corresponding number.
+		
+		First we will start with analysis 1 and 3. Here, we have few observations as follows:
+		
+		\begin{itemize}
+			\item This method will report any tenure as anomaly when there is large gap i.e. more than expected between retail price of a center and average price (for \textit{Analysis 1}) or wholesale price (for \textit{Analysis 3}).
+			Such cases are reported for the following tenure by this method:
+			\begin{itemize}
+				\item \textit{Analysis 1}: Dec 2010, Near to Jan 2011, May June July 2011, Jan May June 2012, June 2013
+				\item \textit{Analysis 3}: Feb Mar 2011, Jan 2012, June 2012, Jan Feb 2014, Apr 2015
+			\end{itemize}
+			
+			
+			\item One limitation of this method is both the series have high values for some time period and difference between them is not so huge then that will not be reported.	
+			Such cases are reported for the following tenure by this method:
+			\begin{itemize}
+				\item \textit{Analysis 1}: Jan 2011, Jan Feb Aug Sept Oct Nov 2013, July 2014, June July 2015
+				\item \textit{Analysis 3}: Feb 2013, Aug Sept Oct Nov 2013, June July 2015
+			\end{itemize}		
+			
+			\item  Note that in the tenure of Oct Nov 2013 (for \textit{Analysis 1}) prices are usually high and as the prices are high tolerance level also increases little bit. So even if for some difference it is reported as anomaly at lower price, it is not necessary that for the same difference, it will be reported as anomaly at higher prices.			
+			
+		\end{itemize}
+		
+		
+		Now we present few observation for Analysis 2 and 4.
+		
+		
+		\begin{itemize}
+			\item Here, in this method, it tries to predict what should be retail price or wholesale price based on the arrival of the product. So if the price is too high for the given arrival than it will be reported.
+			Such cases are reported for the following tenure by this method:
+			\begin{itemize}
+				\item \textit{Analysis 2}: Dec Jan Feb 2011, Aug Sept Oct Nov 2013, Oct Dec 2014
+				\item \textit{Analysis 4}: Dec 2010, July Aug Sept Oct Nov Dec 2013, July 2014
+			\end{itemize}
+			
+			\item Now, this method has also missed few of the articles for this analysis as well. Now, looking at the graphs we could not interpret what may be exact reason why they were missed. But method may have found prices to be moderate and that's they might have been missed.
+			Such cases are reported for the following tenure by this method:
+			\begin{itemize}
+				\item \textit{Analysis 2}: Jan Feb 2013, July 2014, June July 2015
+				\item \textit{Analysis 4}: Jan Feb 2013, June July 2013, June 2015
+			\end{itemize}
+		\end{itemize}
+		
+			
 \end{document}          
