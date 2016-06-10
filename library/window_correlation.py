@@ -251,8 +251,12 @@ def anomaliesFromWindowCorrelationWithConstantlag(arr1, arr2, window_size=15,max
     datesOfAnomalies = []
     if(default_threshold):
         (lower_thresh,upper_thrash)= MADThreshold(arr[1][k][0])
+        print "Threshold::::::::::::::::::"
+        print str(lower_thresh)+":::"+str(upper_thrash)
     else:
         lower_thresh = upper_thrash = threshold
+    print "Lag At which Series are shifted........................"
+    print arr[0]
     for i in range(0,len(arr[1])):
         if(positive_correlation):
             if(lower_thresh > arr[1][i][0] and arr[1][i][1]<0.01):
