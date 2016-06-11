@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.15)  10 JUN 2016 13:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.15)  11 JUN 2016 16:58
 entering extended mode
 **./results.tex
 (results.tex
@@ -291,6 +291,14 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count89
+\float@exts=\toks17
+\float@box=\box26
+\@float@everytoks=\toks18
+\@floatcapt=\box27
+)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
@@ -305,9 +313,9 @@ Package ifvtex Info: VTeX not detected.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count89
-\Gm@cntv=\count90
-\c@Gm@tempcnt=\count91
+\Gm@cnth=\count90
+\Gm@cntv=\count91
+\c@Gm@tempcnt=\count92
 \Gm@bindingoffset=\dimen105
 \Gm@wd@mp=\dimen106
 \Gm@odd@mp=\dimen107
@@ -316,37 +324,37 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutheight=\dimen110
 \Gm@layouthoffset=\dimen111
 \Gm@layoutvoffset=\dimen112
-\Gm@dimlist=\toks17
+\Gm@dimlist=\toks19
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
 (results.aux)
 \openout1 = `results.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count92
+\scratchcounter=\count93
 \scratchdimen=\dimen113
-\scratchbox=\box26
-\nofMPsegments=\count93
-\nofMParguments=\count94
-\everyMPshowfont=\toks18
-\MPscratchCnt=\count95
+\scratchbox=\box28
+\nofMPsegments=\count94
+\nofMParguments=\count95
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count96
 \MPscratchDim=\dimen114
-\MPnumerator=\count96
-\makeMPintoPDFobject=\count97
-\everyMPtoPDFconversion=\toks19
+\MPnumerator=\count97
+\makeMPintoPDFobject=\count98
+\everyMPtoPDFconversion=\toks21
 )
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -356,15 +364,15 @@ LaTeX Font Info:    ... okay on input line 26.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(56.9055pt, 483.69684pt, 56.90553pt)
-* v-part:(T,H,B)=(56.9055pt, 731.23582pt, 56.90552pt)
+* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=483.69684pt
-* \textheight=731.23582pt
-* \oddsidemargin=-15.36449pt
-* \evensidemargin=-15.36449pt
-* \topmargin=-52.36449pt
+* \textwidth=452.9679pt
+* \textheight=700.50687pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -383,90 +391,535 @@ LaTeX Font Info:    ... okay on input line 26.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 27.
+(Font)              <12> on input line 21.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 27.
+(Font)              <8> on input line 21.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 27.
+(Font)              <6> on input line 21.
 [1
 
 {C:/Users/Kapil Thakkar/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 Chapter 1.
 
+LaTeX Warning: Reference `AnomaliesReported' on page 1 undefined on input line 
+36.
+
+
+LaTeX Warning: Reference `ArticlesMatched' on page 1 undefined on input line 38
+.
+
+
+LaTeX Warning: Reference `RetailVsAverage' on page 1 undefined on input line 42
+.
+
+
+LaTeX Warning: Reference `RetailVsArrival' on page 1 undefined on input line 42
+.
+
+
+LaTeX Warning: Reference `RetailVsWholesale' on page 1 undefined on input line 
+42.
+
+
+LaTeX Warning: Reference `WholesaleVsArrival' on page 1 undefined on input line
+ 42.
+
+
+LaTeX Warning: Reference `RetailVsAverageDist' on page 1 undefined on input lin
+e 44.
+
+
+LaTeX Warning: Reference `RetailVsArrivalDist' on page 1 undefined on input lin
+e 44.
+
+
+LaTeX Warning: Reference `RetailVsWholesaleDist' on page 1 undefined on input l
+ine 44.
+
+
+LaTeX Warning: Reference `WholesaleVsArrivalDist' on page 1 undefined on input 
+line 44.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--47
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--47
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--47
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--47
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--47
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--47
+
+ []
+
+
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 59.
+               Default added (so using `tbp') on input line 51.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 75.
+(Font)              <7> on input line 67.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 75.
+(Font)              <5> on input line 67.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 84.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 107.
+               Default added (so using `tbp') on input line 76.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 135.
+               Default added (so using `tbp') on input line 99.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 164.
+               Default added (so using `tbp') on input line 127.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 192.
+               Default added (so using `tbp') on input line 156.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 221.
+               Default added (so using `tbp') on input line 184.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 258.
+               Default added (so using `tbp') on input line 213.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 293.
+               Default added (so using `tbp') on input line 250.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 328.
+               Default added (so using `tbp') on input line 285.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 320.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 358--361
+
+ []
 
 [1
 
 ] [2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 384.
+Underfull \hbox (badness 10000) in paragraph at lines 364--367
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 374--377
+
+ []
+
+[3]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 381.
 
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 384.
- [3]
-[4] (results.aux) ) 
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 381.
+
+
+LaTeX Warning: Reference `fig:12111' on page 4 undefined on input line 384.
+
+
+LaTeX Warning: Reference `fig:12131' on page 4 undefined on input line 385.
+
+<graphs/12111.png, id=20, 1675.2186pt x 922.8879pt>
+File: graphs/12111.png Graphic file (type png)
+ <use graphs/12111.png>
+Package pdftex.def Info: graphs/12111.png used on input line 389.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+
+<graphs/12131.png, id=22, 1675.2186pt x 922.8879pt>
+File: graphs/12131.png Graphic file (type png)
+ <use graphs/12131.png>
+Package pdftex.def Info: graphs/12131.png used on input line 396.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+
+[4 <./graphs/12111.png> <./graphs/12131.png>]
+
+LaTeX Warning: Reference `fig:12112' on page 5 undefined on input line 408.
+
+
+LaTeX Warning: Reference `fig:12132' on page 5 undefined on input line 409.
+
+<graphs/12112.png, id=29, 1675.2186pt x 922.8879pt>
+File: graphs/12112.png Graphic file (type png)
+ <use graphs/12112.png>
+Package pdftex.def Info: graphs/12112.png used on input line 414.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+
+<graphs/12132.png, id=30, 1675.2186pt x 922.8879pt>
+File: graphs/12132.png Graphic file (type png)
+ <use graphs/12132.png>
+Package pdftex.def Info: graphs/12132.png used on input line 421.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+
+
+LaTeX Warning: Reference `fig:12113' on page 5 undefined on input line 434.
+
+
+LaTeX Warning: Reference `fig:12133' on page 5 undefined on input line 435.
+
+[5 <./graphs/12112.png> <./graphs/12132.png>]
+<graphs/12113.png, id=36, 1675.2186pt x 922.8879pt>
+File: graphs/12113.png Graphic file (type png)
+ <use graphs/12113.png>
+Package pdftex.def Info: graphs/12113.png used on input line 440.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+
+<graphs/12133.png, id=37, 1675.2186pt x 922.8879pt>
+File: graphs/12133.png Graphic file (type png)
+ <use graphs/12133.png>
+Package pdftex.def Info: graphs/12133.png used on input line 447.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+
+
+LaTeX Warning: Reference `fig:12114' on page 6 undefined on input line 452.
+
+<graphs/12114.png, id=38, 1675.2186pt x 922.8879pt>
+File: graphs/12114.png Graphic file (type png)
+ <use graphs/12114.png>
+Package pdftex.def Info: graphs/12114.png used on input line 456.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+
+[6 <./graphs/12113.png> <./graphs/12133.png>]
+
+LaTeX Warning: Reference `fig:12115' on page 7 undefined on input line 461.
+
+<graphs/12115.png, id=45, 1675.2186pt x 922.8879pt>
+File: graphs/12115.png Graphic file (type png)
+ <use graphs/12115.png>
+Package pdftex.def Info: graphs/12115.png used on input line 465.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+
+
+LaTeX Warning: Reference `fig:12116' on page 7 undefined on input line 470.
+
+<graphs/12116.png, id=46, 1675.2186pt x 922.8879pt>
+File: graphs/12116.png Graphic file (type png)
+ <use graphs/12116.png>
+Package pdftex.def Info: graphs/12116.png used on input line 474.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+
+[7 <./graphs/12114.png> <./graphs/12115.png>]
+
+LaTeX Warning: Reference `fig:12134' on page 8 undefined on input line 480.
+
+<graphs/12134.png, id=52, 1675.2186pt x 922.8879pt>
+File: graphs/12134.png Graphic file (type png)
+ <use graphs/12134.png>
+Package pdftex.def Info: graphs/12134.png used on input line 484.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+
+
+LaTeX Warning: Reference `fig:12121' on page 8 undefined on input line 499.
+
+
+LaTeX Warning: Reference `fig:12141' on page 8 undefined on input line 500.
+
+<graphs/12121.png, id=53, 1675.2186pt x 922.8879pt>
+File: graphs/12121.png Graphic file (type png)
+ <use graphs/12121.png>
+Package pdftex.def Info: graphs/12121.png used on input line 505.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+
+[8 <./graphs/12116.png> <./graphs/12134.png>]
+<graphs/12141.png, id=59, 1675.2186pt x 922.8879pt>
+File: graphs/12141.png Graphic file (type png)
+ <use graphs/12141.png>
+Package pdftex.def Info: graphs/12141.png used on input line 512.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+
+
+LaTeX Warning: Reference `fig:12122' on page 9 undefined on input line 521.
+
+
+LaTeX Warning: Reference `fig:12142' on page 9 undefined on input line 522.
+
+<graphs/12122.png, id=60, 1675.2186pt x 922.8879pt>
+File: graphs/12122.png Graphic file (type png)
+ <use graphs/12122.png>
+Package pdftex.def Info: graphs/12122.png used on input line 527.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+
+[9 <./graphs/12121.png> <./graphs/12141.png>]
+<graphs/12142.png, id=66, 1675.2186pt x 922.8879pt>
+File: graphs/12142.png Graphic file (type png)
+ <use graphs/12142.png>
+Package pdftex.def Info: graphs/12142.png used on input line 534.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+
+
+LaTeX Warning: Reference `fig:12123' on page 10 undefined on input line 545.
+
+
+LaTeX Warning: Reference `fig:12143' on page 10 undefined on input line 546.
+
+<graphs/12123.png, id=67, 1675.2186pt x 922.8879pt>
+File: graphs/12123.png Graphic file (type png)
+ <use graphs/12123.png>
+Package pdftex.def Info: graphs/12123.png used on input line 551.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+
+[10 <./graphs/12122.png> <./graphs/12142.png>]
+<graphs/12143.png, id=73, 1675.2186pt x 922.8879pt>
+File: graphs/12143.png Graphic file (type png)
+ <use graphs/12143.png>
+Package pdftex.def Info: graphs/12143.png used on input line 558.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+
+
+LaTeX Warning: Reference `fig:12124' on page 11 undefined on input line 565.
+
+
+LaTeX Warning: Reference `fig:12144' on page 11 undefined on input line 565.
+
+<graphs/12124.png, id=74, 1675.2186pt x 922.8879pt>
+File: graphs/12124.png Graphic file (type png)
+ <use graphs/12124.png>
+Package pdftex.def Info: graphs/12124.png used on input line 569.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+
+[11 <./graphs/12123.png> <./graphs/12143.png>]
+<graphs/12144.png, id=80, 1675.2186pt x 922.8879pt>
+File: graphs/12144.png Graphic file (type png)
+ <use graphs/12144.png>
+Package pdftex.def Info: graphs/12144.png used on input line 576.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+
+
+LaTeX Warning: Reference `fig:12125' on page 12 undefined on input line 581.
+
+<graphs/12125.png, id=81, 1675.2186pt x 922.8879pt>
+File: graphs/12125.png Graphic file (type png)
+ <use graphs/12125.png>
+Package pdftex.def Info: graphs/12125.png used on input line 585.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+
+[12 <./graphs/12124.png> <./graphs/12144.png>]
+
+LaTeX Warning: Reference `fig:12126' on page 13 undefined on input line 590.
+
+<graphs/12126.png, id=88, 1675.2186pt x 922.8879pt>
+File: graphs/12126.png Graphic file (type png)
+ <use graphs/12126.png>
+Package pdftex.def Info: graphs/12126.png used on input line 594.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 607--610
+
+ []
+
+[13 <./graphs/12125.png> <./graphs/12126.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 617--620
+
+ []
+
+
+LaTeX Warning: Reference `fig:12211' on page 14 undefined on input line 628.
+
+
+LaTeX Warning: Reference `fig:12231' on page 14 undefined on input line 629.
+
+<graphs/12211.png, id=94, 1675.2186pt x 922.8879pt>
+File: graphs/12211.png Graphic file (type png)
+ <use graphs/12211.png>
+Package pdftex.def Info: graphs/12211.png used on input line 633.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+
+<graphs/12231.png, id=95, 1675.2186pt x 922.8879pt>
+File: graphs/12231.png Graphic file (type png)
+ <use graphs/12231.png>
+Package pdftex.def Info: graphs/12231.png used on input line 640.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+
+[14 <./graphs/12211.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 645--648
+
+ []
+
+
+LaTeX Warning: Reference `fig:12212' on page 15 undefined on input line 649.
+
+
+LaTeX Warning: Reference `fig:12232' on page 15 undefined on input line 650.
+
+<graphs/12212.png, id=100, 1675.2186pt x 922.8879pt>
+File: graphs/12212.png Graphic file (type png)
+ <use graphs/12212.png>
+Package pdftex.def Info: graphs/12212.png used on input line 654.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+
+<graphs/12232.png, id=101, 1675.2186pt x 922.8879pt>
+File: graphs/12232.png Graphic file (type png)
+ <use graphs/12232.png>
+Package pdftex.def Info: graphs/12232.png used on input line 661.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+
+[15 <./graphs/12231.png> <./graphs/12212.png>]
+
+LaTeX Warning: Reference `fig:12212' on page 16 undefined on input line 668.
+
+
+LaTeX Warning: Reference `fig:12221' on page 16 undefined on input line 680.
+
+
+LaTeX Warning: Reference `fig:12241' on page 16 undefined on input line 681.
+
+<graphs/12221.png, id=107, 1675.2186pt x 922.8879pt>
+File: graphs/12221.png Graphic file (type png)
+ <use graphs/12221.png>
+Package pdftex.def Info: graphs/12221.png used on input line 685.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+
+<graphs/12241.png, id=108, 1675.2186pt x 922.8879pt>
+File: graphs/12241.png Graphic file (type png)
+ <use graphs/12241.png>
+Package pdftex.def Info: graphs/12241.png used on input line 692.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+
+[16 <./graphs/12232.png> <./graphs/12221.png>]
+
+LaTeX Warning: Reference `fig:12222' on page 17 undefined on input line 703.
+
+
+LaTeX Warning: Reference `fig:12242' on page 17 undefined on input line 704.
+
+<graphs/12222.png, id=114, 1675.2186pt x 922.8879pt>
+File: graphs/12222.png Graphic file (type png)
+ <use graphs/12222.png>
+Package pdftex.def Info: graphs/12222.png used on input line 708.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+
+<graphs/12242.png, id=115, 1675.2186pt x 922.8879pt>
+File: graphs/12242.png Graphic file (type png)
+ <use graphs/12242.png>
+Package pdftex.def Info: graphs/12242.png used on input line 715.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+
+[17 <./graphs/12241.png> <./graphs/12222.png>]
+
+LaTeX Warning: Reference `fig:1231' on page 18 undefined on input line 727.
+
+
+LaTeX Warning: Reference `fig:12331' on page 18 undefined on input line 727.
+
+<graphs/1231.png, id=121, 1675.2186pt x 922.8879pt>
+File: graphs/1231.png Graphic file (type png)
+ <use graphs/1231.png>
+Package pdftex.def Info: graphs/1231.png used on input line 730.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 723--733
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 723--733
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 723--733
+
+ []
+
+[18 <./graphs/12242.png>] <graphs/12331.png, id=127, 1675.2186pt x 922.8879pt>
+File: graphs/12331.png Graphic file (type png)
+
+<use graphs/12331.png>
+Package pdftex.def Info: graphs/12331.png used on input line 737.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+
+
+LaTeX Warning: Reference `fig:12321' on page 19 undefined on input line 742.
+
+
+LaTeX Warning: Reference `fig:12341' on page 19 undefined on input line 742.
+
+
+LaTeX Warning: Reference `fig:12322_delhi' on page 19 undefined on input line 7
+42.
+
+
+LaTeX Warning: Reference `fig:12442_delhi' on page 19 undefined on input line 7
+42.
+
+<graphs/12321.png, id=128, 1675.2186pt x 922.8879pt>
+File: graphs/12321.png Graphic file (type png)
+ <use graphs/12321.png>
+Package pdftex.def Info: graphs/12321.png used on input line 745.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+
+[19 <./graphs/1231.png> <./graphs/12331.png>]
+<graphs/12341.png, id=134, 1675.2186pt x 922.8879pt>
+File: graphs/12341.png Graphic file (type png)
+ <use graphs/12341.png>
+Package pdftex.def Info: graphs/12341.png used on input line 752.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+
+<graphs/12322_delhi.png, id=135, 1675.2186pt x 922.8879pt>
+File: graphs/12322_delhi.png Graphic file (type png)
+
+<use graphs/12322_delhi.png>
+Package pdftex.def Info: graphs/12322_delhi.png used on input line 760.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+ [20 <./graphs/12321.png> <./graphs/12341.png>]
+<graphs/12442_delhi.png, id=141, 1675.2186pt x 922.8879pt>
+File: graphs/12442_delhi.png Graphic file (type png)
+
+<use graphs/12442_delhi.png>
+Package pdftex.def Info: graphs/12442_delhi.png used on input line 767.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+ [21 <./graphs/12322_delhi.png> <./graphs/12442_delhi.png>] (results.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 1897 strings out of 493634
- 24991 string characters out of 3141288
- 160382 words of memory out of 3000000
- 5291 multiletter control sequences out of 15000+200000
+ 2164 strings out of 493634
+ 29375 string characters out of 3141288
+ 162590 words of memory out of 3000000
+ 5517 multiletter control sequences out of 15000+200000
  9154 words of font info for 32 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 27i,9n,28p,1021b,211s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1
-7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pf
-b>
-Output written on results.pdf (5 pages, 108448 bytes).
+ 27i,9n,32p,1023b,292s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on results.pdf (22 pages, 4279039 bytes).
 PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
+ 170 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 
