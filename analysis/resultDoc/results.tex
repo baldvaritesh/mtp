@@ -2,9 +2,6 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 
-
-
-
 %\usepackage{geometry}
 % \geometry{
 % a4paper,
@@ -14,9 +11,6 @@
 % }
 
 \usepackage[margin=1in]{geometry}
-
-
-
 
 % Title Page
 \title{Results and Analysis}
@@ -37,20 +31,18 @@ analyse these results along with each method.
 
 We have performed 4 types of analysis and result for each of this method is as 
 follows. Note that these are primary results. Data for 2 centers are considered 
-over here, Mumbai and Delhi.
-
-Here are some results related with Mumbai Center. Table \ref{AnomaliesReported} stats the result of anomalies reported by our system, with details about anomalies reported by each method. So here First 5 columns corresponds to each method. Column 6 is union of results of first 3 methods and column 7 is union of result of method 4 and 5, as described in table. Column 8 is intersection of results of column 6 and column 7, which is final result of our system.
-
-
-Table \ref{ArticlesMatched} stats the result of number of articles matched with the dates reported by our system as anomaly, for each method. So here First 5 columns corresponds to each method. Column 6 is union of results of first 3 methods and column 7 is union of result of method 4 and 5, as described in table. Column 8 is intersection of results of column 6 and column 7, which is final result of our system.
-
-
-Note that total number of articles present for center Mumbai is \textbf{143}. Note one thing that articles are present from 2010 onwards. Apart from Graph Based Anomaly method, all methods are producing results from 2006 onwards as input data is from that time.
- 
-Now, we present detailed analysis for each of the different type of time-series. Fist type of such analysis is in table \ref{RetailVsAverage}. This table shows distribution of news articles present year-wise for each method when retail price time series is compared with average retail price time series. Fist type of such analysis is in table \ref{RetailVsArrival}. This table shows distribution of news articles present year-wise for each method when retail price time series is compared with arrival data of onion time series. Third type of such analysis is in table \ref{RetailVsWholesale}. This table shows distribution of news articles present year-wise for each method when retail price time series is compared with wholesale price time series. Fourth type of such analysis is in table \ref{WholesaleVsArrival}. This table shows distribution of news articles present year-wise for each method when wholesale price time series is compared with arrival data of onion time series.
-
-Distribution of anomalies present year-wise, for each method is also shown in table. Result is described in different tables for different analysis. Result for various analysis is described in tables  \ref{RetailVsAverageDist}, \ref{RetailVsArrivalDist}, \ref{RetailVsWholesaleDist} and \ref{WholesaleVsArrivalDist}.
-
+over here, Mumbai and Delhi.\\
+\\
+Here are some results related with Mumbai Center. Table \ref{AnomaliesReported} stats the result of anomalies reported by our system, with details about anomalies reported by each method. So here First 5 columns corresponds to each method. Column 6 is union of results of first 3 methods and column 7 is union of result of method 4 and 5, as described in table. Column 8 is intersection of results of column 6 and column 7, which is final result of our system.\\
+\\
+Table \ref{ArticlesMatched} stats the result of number of articles matched with the dates reported by our system as anomaly, for each method. So here First 5 columns corresponds to each method. Column 6 is union of results of first 3 methods and column 7 is union of result of method 4 and 5, as described in table. Column 8 is intersection of results of column 6 and column 7, which is final result of our system.\\
+\\
+Note that total number of articles present for center Mumbai is \textbf{143}. Note one thing that articles are present from 2010 onwards. Apart from Graph Based Anomaly method, all methods are producing results from 2006 onwards as input data is from that time.\\
+ \\
+Now, we present detailed analysis for each of the different type of time-series. Fist type of such analysis is in table \ref{RetailVsAverage}. This table shows distribution of news articles present year-wise for each method when retail price time series is compared with average retail price time series. Fist type of such analysis is in table \ref{RetailVsArrival}. This table shows distribution of news articles present year-wise for each method when retail price time series is compared with arrival data of onion time series. Third type of such analysis is in table \ref{RetailVsWholesale}. This table shows distribution of news articles present year-wise for each method when retail price time series is compared with wholesale price time series. Fourth type of such analysis is in table \ref{WholesaleVsArrival}. This table shows distribution of news articles present year-wise for each method when wholesale price time series is compared with arrival data of onion time series.\\
+\\
+Distribution of anomalies present year-wise, for each method is also shown in table. Result is described in different tables for different analysis. Result for various analysis is described in tables  \ref{RetailVsAverageDist}, \ref{RetailVsArrivalDist}, \ref{RetailVsWholesaleDist} and \ref{WholesaleVsArrivalDist}.\\
+\\
 Such results of different cities can also be calculated.
 
 
@@ -380,11 +372,13 @@ In this section, we try to analyse each method, what is limitation of each metho
 		So, in each of the case, we try to find change with respect to another, and if this change is huge, crossing threshold than it is reported as anomaly. Now, not that in analysis 1 and 3 stated above, both the time series are directly proportional to each other and in the analysis 2 and 4 both the time series are inversely proportional to each other. So, limitations faced by this method for analysis 1 and 3 will be similar and for analysis 2 and 4 will be similar. While describing this method, each analysis will be referenced by its corresponding number.\\
 		\\
 		First we will start with analysis 1 and 3. Here, we have few observations as follows:
+				
 		\begin{itemize}
+		
 			\item Dates are reported as anomalies, if retail price at centre is increasing more as compared to average retail price for analysis 1 or if retail price at centre is increasing more as compared to wholesale price for analysis 3.
 			Such cases are reported for the following tenure by this method:
 			\begin{itemize}
-				\item \textit{Analysis 1}: June 2010, August 2010, May 2011, June 2011, May Jun Nov 2012, Apr May 2013 (Prices went too high as compared to average)
+				\item \textit{Analysis 1}: June 2010, August 2010, May 2011, June 2011, May Jun Nov 2012, Apr May 2013 (Prices went too high as compared to average) (See Figure )
 				\item \textit{Analysis 3}: Apr Jul Oct Dec 2010, Jan 2011, May Jun 2014
 			\end{itemize}
 			
@@ -404,13 +398,13 @@ In this section, we try to analyse each method, what is limitation of each metho
 				\item \textit{Analysis 3}: Feb 2013, Jul 2014
 			\end{itemize}
 			
-			\item In some cases, original retail price was running less than average retail price for some time and then suddenly prices in the centre increased drastically. So such cases were reported as anomaly in this method, which is quite normal. Such cases were found in \textit{Analysis 1} for Oct Nov 2011, Feb Mar 2012 and Dec 2014.
+			\item In some cases, original retail price was running less than average retail price for some time and then suddenly prices in the centre increased drastically. So such cases were reported as anomaly in this method, which is quite normal. Such cases were found in \textit{Analysis 1} for Nov 2011, Feb Mar 2012 and Dec 2014.
 			
 			\item In some cases, tenure reported as anomaly is quite large, because situations were abnormal for long time. But may be for such large tenure, news articles should be present, is not necessary. And anomaly reported was justifiable. For\textit{ Analysis 1}, such tenure was reported for March end to May start 2014.
 			
 			\item In \textit{Analysis 1}, For June 2014, method has reported tenure upto mid June when prices started increasing, but it remained high and due to that some articles are present for June 21 around, we have missed, because at that time relative slope value became normal, but since prices were high, it was covered by news articles.
 			
-			\item There exist some cases in \textit{Analysis 3} where retail price were decreasing but wholesale price was keep on increasing, this creatd negative slope value, where as in this scenario, we were looking for only positive slopes and that's why this method missed it. Such periods were in July Aug Sept 2013, Nov Dec 2013.
+			\item There exist some cases in \textit{Analysis 3} where retail price were decreasing but wholesale price was keep on increasing, this created negative slope value, where as in this scenario, we were looking for only positive slopes and that's why this method missed it. Such periods were in July Aug Sept 2013, Nov Dec 2013.
 			
 		\end{itemize}
 		
@@ -429,7 +423,7 @@ In this section, we try to analyse each method, what is limitation of each metho
 			Such cases are reported for the following tenure by this method:
 			\begin{itemize}
 				\item \textit{Analysis 2}: Feb Mar 2011, Jan Feb 2014
-				\item \textit{Analysis 4}: Oct Dec 2011, Jan 2012, Jan 2014, Mar 2011
+				\item \textit{Analysis 4}: Oct Dec 2011, Jan 2014, Mar 2011
 			\end{itemize}
 			
 			\item One more limitation of this method is when arrival is increasing but along with that retail or wholesale price is also increasing. Since will come out as positive slope and this method, in this scenario is only looking for negative slope and so, this will not be reported as anomaly and news articles corresponding to this tenure will not be matched by results of this method.
@@ -495,7 +489,7 @@ In this section, we try to analyse each method, what is limitation of each metho
 			\item Here, in this method, it tries to predict what should be retail price or wholesale price based on the arrival of the product. So if the price is too high for the given arrival than it will be reported.
 			Such cases are reported for the following tenure by this method:
 			\begin{itemize}
-				\item \textit{Analysis 2}: Dec Jan Feb 2011, Aug Sept Oct Nov 2013, Oct Dec 2014
+				\item \textit{Analysis 2}: Dec 2010, Jan Feb 2011, Aug Sept Oct Nov 2013, Oct Dec 2014
 				\item \textit{Analysis 4}: Dec 2010, July Aug Sept Oct Nov Dec 2013, July 2014
 			\end{itemize}
 			
