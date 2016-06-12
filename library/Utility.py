@@ -402,7 +402,7 @@ def plotGraphForHypothesisArrival(original,average,list1, list2, total_news_arti
 	ax.plot(daterange,original, color = 'g', label='Original Series')
 	ax2 = ax.twinx()
 	ax2.plot(daterange,avg, color = 'b')
-	ax2.set_ylabel('series 2', color='b')
+	ax2.set_ylabel('Price', color='b')
 	for row in list1:
 		ax.axvspan(row[0], row[0] + timedelta(days=1), color='y', alpha=0.5, lw=0)
 	# print type(list2)

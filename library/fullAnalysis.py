@@ -77,11 +77,11 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
     
     #forecast retail prices of all centers based on the retail prices at differnet centers --Reshma
     lstRetail= concateLists(retailListWithNoDates)
-    '''
+    
     writeToCSV(lstRetail,"/home/kapil/Desktop/mtp/library/testingCSV/AllRetailData.csv")
     args = ['/home/kapil/Desktop/mtp/library/testingCSV/AllRetailData.csv','FALSE',str(len(retailListWithNoDates)),'retail']
     multivaraiateAnalysis(args)
-    '''
+    
     
     # Hashmap to save results of comparison of retail prices vs average
     RvsR_anomalies_slope = dict()
@@ -154,15 +154,15 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         
         # Hypothesis 3 For Reatil vs AVG: START
         retailListGB = processListForGB(retailList)
-        graphBasedAnomaly = graphBasedAnomalyMain(retailListGB,i,250)
+        graphBasedAnomaly = graphBasedAnomalyMain(retailListGB,i,300)
         # graphBasedAnomaly = []
         graphBasedAnomaly_result = resultOfOneMethod(graphBasedAnomaly)
         
         
         #Since 60% data is used for modelling and rest is used to forecast
         # startDatePoint =int(0.60*len(retailListWithNoDates[0]))
-        # multiVariate_Anomaly_Result = csvTransform("/home/kapil/Desktop/mtp/library/testingCSV/retail"+str(i+1)+".csv",temp1[startDatePoint])
-        multiVariate_Anomaly_Result = []
+        multiVariate_Anomaly_Result = csvTransform("/home/kapil/Desktop/mtp/library/testingCSV/retail"+str(i+1)+".csv",temp1[startDatePoint])
+        # multiVariate_Anomaly_Result = []
         multiple_arima_result = resultOfOneMethod(multiVariate_Anomaly_Result)
         
         union_result_of_H3 = union(2,graphBasedAnomaly_result, multiple_arima_result)
@@ -172,6 +172,11 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         
         # Get stats of news articles for each method
         (filteredResult_slope_based, slopeBased_news_article_result,all_articles_slope_based) = fetchNewsForCenter(slopeBased_result, i)
+        
+        for row in all_articles_slope_based:
+            print row
+        sys.exit(0)
+        
         (filteredResult_correlation_based, correlationBased_news_article_result,all_articles_correlationBased) = fetchNewsForCenter(correlationBased_result, i)
         (filteredResult_linear_regression, linearRegression_news_article_result,all_articles_linearRegression) = fetchNewsForCenter(linearRegression_result, i)
         (filteredResult_graph_based, graphBasedAnomaly_news_article_result,all_articles_graphBasedAnomaly) = fetchNewsForCenter(graphBasedAnomaly_result, i)
@@ -182,7 +187,9 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         
        
         # Plot Graph for i'th center
-        plotGraphForHypothesis(c_list, avgRetailTimeSeries, graphBasedAnomaly_result, filteredResult_graph_based, all_articles_graphBasedAnomaly)
+        # plotGraphForHypothesis(c_list, avgRetailTimeSeries, slopeBased_result, filteredResult_slope_based, all_articles_graphBasedAnomaly)
+        # plotGraphForHypothesis(c_list, avgRetailTimeSeries, linearRegression_result, filteredResult_linear_regression, all_articles_graphBasedAnomaly)
+        # plotGraphForHypothesis(c_list, avgRetailTimeSeries, graphBasedAnomaly_result, filteredResult_graph_based, all_articles_graphBasedAnomaly)
         
         # Save system results in dictionary to process further
         RvsR_anomalies_union_of_H3[2*i]  = union_result_of_H3
@@ -253,13 +260,13 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         lstWSRetailArrival.append(getColumnFromListOfTuples(arrivalList[i],1))
         lstRetail= concateLists(lstWSRetailArrival)
         #print lstRetail
-        '''
+        
         writeToCSV(lstRetail,"/home/kapil/Desktop/mtp/library/testingCSV/AllDataForeCast"+str(i+1)+".csv")
         args = ['/home/kapil/Desktop/mtp/library/testingCSV/AllDataForeCast'+str(i+1)+'.csv','FALSE','3','RetailWsArrival']
         multivaraiateAnalysis(args)
-        '''
-        # multiVariate_Anomaly_Result = csvTransform('/home/kapil/Desktop/mtp/library/testingCSV/RetailWsArrival2.csv',temp1[startDatePoint])
-        multiVariate_Anomaly_Result = []
+        
+        multiVariate_Anomaly_Result = csvTransform('/home/kapil/Desktop/mtp/library/testingCSV/RetailWsArrival2.csv',temp1[startDatePoint])
+        # multiVariate_Anomaly_Result = []
         multiple_arima_result = resultOfOneMethod(multiVariate_Anomaly_Result)
         union_result_of_H3 = union(2,graphBasedAnomaly_result, multiple_arima_result)
         
@@ -281,7 +288,9 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         
         
         # Plot Graph for i'th center
-        plotGraphForHypothesisArrival(c_list, retailList[i], graphBasedAnomaly_result, filteredResult_graph_based, all_articles_graphBasedAnomaly)
+        # plotGraphForHypothesisArrival(c_list, retailList[i], slopeBased_result, filteredResult_slope_based, all_articles_graphBasedAnomaly)
+        # plotGraphForHypothesisArrival(c_list, retailList[i], linearRegression_result, filteredResult_linear_regression, all_articles_graphBasedAnomaly)
+        # plotGraphForHypothesisArrival(c_list, retailList[i], graphBasedAnomaly_result, filteredResult_graph_based, all_articles_graphBasedAnomaly)
         
         # Save system results in dictionary to process further
         RvsA_anomalies_union_of_H3[2*i]  = union_result_of_H3
@@ -338,7 +347,7 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         temp6.append(c_list)
         temp6.append(wholesaleList[i])
         temp6 = processListForGB(temp6)
-        graphBasedAnomaly = graphBasedAnomalyMain(temp6,0,250)
+        graphBasedAnomaly = graphBasedAnomalyMain(temp6,0,300)
         # graphBasedAnomaly  = []
         graphBasedAnomaly_result = resultOfOneMethod(graphBasedAnomaly)
         
@@ -347,15 +356,15 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         lstCentre.append(getColumnFromListOfTuples(wholesaleList[i],1))
         lstCentre= concateLists(lstCentre)
         #print lstRetail
-        '''
+        
         writeToCSV(lstCentre,"/home/kapil/Desktop/mtp/library/testingCSV/RetailWS"+str(i+1)+".csv")
         args = ['/home/kapil/Desktop/mtp/library/testingCSV/RetailWS'+str(i+1)+'.csv','FALSE','2','RetailWSOutput']
         multivaraiateAnalysis(args)
-        '''     
+          
         #Since 60% data is used for modelling and rest is used to forecast
         startDatePoint =int(0.60*len(temp6[0]))
-        # multiVariate_Anomaly_Result = csvTransform("/home/kapil/Desktop/mtp/library/testingCSV/RetailWSOutput"+str(1)+".csv",temp1[startDatePoint])
-        multiVariate_Anomaly_Result = []
+        multiVariate_Anomaly_Result = csvTransform("/home/kapil/Desktop/mtp/library/testingCSV/RetailWSOutput"+str(1)+".csv",temp1[startDatePoint])
+        # multiVariate_Anomaly_Result = []
         multiple_arima_result = resultOfOneMethod(multiVariate_Anomaly_Result)
         
         union_result_of_H3 = union(2,graphBasedAnomaly_result, multiple_arima_result)
@@ -375,7 +384,9 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         
         
         # Plot Graph for i'th center
-        plotGraphForHypothesis(c_list, wholesaleList[i], graphBasedAnomaly_result, filteredResult_graph_based, all_articles_graphBasedAnomaly)
+        # plotGraphForHypothesis(c_list, wholesaleList[i], slopeBased_result, filteredResult_slope_based, all_articles_graphBasedAnomaly)
+        # plotGraphForHypothesis(c_list, wholesaleList[i], linearRegression_result, filteredResult_linear_regression, all_articles_graphBasedAnomaly)
+        # plotGraphForHypothesis(c_list, wholesaleList[i], graphBasedAnomaly_result, filteredResult_graph_based, all_articles_graphBasedAnomaly)
         
         # Save system results in dictionary to process further
         RvsW_anomalies_union_of_H3[2*i]  = union_result_of_H3
@@ -443,13 +454,13 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         lstCentre.append(getColumnFromListOfTuples(arrivalList[i],1))
         lstCentre= concateLists(lstCentre)
         #print lstRetail
-        '''
+        
         writeToCSV(lstCentre,"/home/kapil/Desktop/mtp/library/testingCSV/WSArrival"+str(i+1)+".csv")
         args = ['/home/kapil/Desktop/mtp/library/testingCSV/WSArrival'+str(i+1)+'.csv','FALSE','2','WsArrivalOutput']
         multivaraiateAnalysis(args)
-        '''
-        # multiVariate_Anomaly_Result = csvTransform('/home/kapil/Desktop/mtp/library/testingCSV/WsArrivalOutput1.csv',temp1[startDatePoint])
-        multiVariate_Anomaly_Result = []
+        
+        multiVariate_Anomaly_Result = csvTransform('/home/kapil/Desktop/mtp/library/testingCSV/WsArrivalOutput1.csv',temp1[startDatePoint])
+        # multiVariate_Anomaly_Result = []
         multiple_arima_result = resultOfOneMethod(multiVariate_Anomaly_Result)
         union_result_of_H3 = union(2,graphBasedAnomaly_result, multiple_arima_result)
         
@@ -470,7 +481,9 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         (filteredResult_intersection, intersection_result_with_H3_news_article_result,all_articles_intersection_result_with_H3) = fetchNewsForCenter(intersection_result_with_H3, i)
         
         # Plot Graph for i'th center
-        plotGraphForHypothesisArrival(c_list, wholesaleList[i], graphBasedAnomaly_result, filteredResult_graph_based, all_articles_graphBasedAnomaly)
+        # plotGraphForHypothesisArrival(c_list, wholesaleList[i], slopeBased_result, filteredResult_slope_based, all_articles_graphBasedAnomaly)
+        # plotGraphForHypothesisArrival(c_list, wholesaleList[i], linearRegression_result, filteredResult_linear_regression, all_articles_graphBasedAnomaly)
+        # plotGraphForHypothesisArrival(c_list, wholesaleList[i], graphBasedAnomaly_result, filteredResult_graph_based, all_articles_graphBasedAnomaly)
         
         # Save system results in dictionary to process further
         WvsA_anomalies_union_of_H3[2*i]  = union_result_of_H3

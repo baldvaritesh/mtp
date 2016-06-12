@@ -50,7 +50,8 @@ def csvTransform(filePath,startDate):
         #Call MadThreshold
         #print percDiff
         (N,P) = MADThreshold(percDiffArray)
-	
+	print "Var Percentage Threshold"
+	print str(N)+":::"+str(P)
     outputList=[]
     with open(filePath, 'rb') as csvfile: 
     	csvReader = csv.reader(csvfile, delimiter=',')  
