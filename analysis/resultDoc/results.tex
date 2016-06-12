@@ -40,8 +40,13 @@ Here are some results related with Mumbai Center. Table \ref{AnomaliesReported} 
 \\
 Table \ref{ArticlesMatched} stats the result of number of articles matched with the dates reported by our system as anomaly, for each method. So here First 5 columns corresponds to each method. Column 6 is union of results of first 3 methods and column 7 is union of result of method 4 and 5, as described in table. Column 8 is intersection of results of column 6 and column 7, which is final result of our system.\\
 \\
-Note that total number of articles present for center Mumbai is \textbf{99}. Note one thing that articles are present from 2010 onwards. Apart from Graph Based Anomaly method, all methods are producing results from 2006 onwards as input data is from that time.\\
- \\
+Note that total number of articles present for center Mumbai is \textbf{99}. Note one thing that articles are present from 2010 onwards. Apart from Graph Based Anomaly method, all methods are producing results from 2006 onwards as input data is from that time. The following pie chart shows the analysis of article showing what news articles states as the reason for the price hikes of onion.\\
+\\
+\begin{tikzpicture}
+   \pie[ text = legend ]{32/Traders Nexus, 18/Not Stated, 10/Unseasonal Rainfall, 12/Low Production, 18/Low Supply, 10/Other  }
+\end{tikzpicture}
+
+
 Now, we present detailed analysis for each of the different type of time-series. First type of such analysis is in table \ref{RetailVsAverage}. This table shows distribution of news articles present (that matched with system results) year-wise for each method when retail price time series is compared with average retail price time series. Second type of such analysis is in table \ref{RetailVsArrival}. This table shows distribution of news articles present year-wise for each method when retail price time series is compared with arrival data of onion time series. Third type of such analysis is in table \ref{RetailVsWholesale}. This table shows distribution of news articles present year-wise for each method when retail price time series is compared with wholesale price time series. Fourth type of such analysis is in table \ref{WholesaleVsArrival}. This table shows distribution of news articles present year-wise for each method when wholesale price time series is compared with arrival data of onion time series.\\
 \\
 Distribution of anomalies present year-wise, for each method is also shown in table. Result for various analysis is described in tables  \ref{RetailVsAverageDist}, \ref{RetailVsArrivalDist}, \ref{RetailVsWholesaleDist} and \ref{WholesaleVsArrivalDist}.\\
@@ -715,179 +720,6 @@ In this section, we try to analyse each method, what is limitation of each metho
 		    	\caption{Linear Regression (Green line - Arrival Data of Onion, Blue Line - Wholesale Price)}
 		    	\label{fig:12242}
 			\end{figure}
-		\end{itemize}
-		
-\subsection{Window Based Correlation}
-
-		This method checks if the provided two timeseries moves in tandem or not. If not, then what are the time periods when they are not following the desired behavior. In order to find such time periods in the timeseries, the whole timeseries is divided into smaller windows and correlation value computed for that window is used to determine if that period is anomalous or not. The P-value of 0.01 is used in order to check the significance of correlation value.
-		\\
-		\\
-		The function is tested with different set of timeseries. Following are the four tests which were performed:
-		\begin{enumerate}
-			\item \textbf{Retail Price vs Average of Retail Price}: This test tries to find if any centre deviates from other centres abruptly. Average of timeseries of all the centres is taken as a representative timeseries for the behavior of all the centres which is compared with every centre in order to find time periods where these two did not move in tandem
-			\item \textbf{Retail Price vs Arrival of Onion}: Retail timeseries is expected not to move in tandem with Arrival timeseries. So, the time periods with positive correlation values are spotted in this. 
-			\item \textbf{Retail Price vs Wholesale Price}: Retail timeseries is expected to move in tandem with wholesale timeseries. So, the time periods with negative correlation values are spotted in this.
-			\item \textbf{Wholesale Price vs Arrival of Onion}: Wholesale timeseries is expected to not move in tandem with Arrival timeseries. So, the time periods with positive correlation values are spotted in this. 
-		\end{enumerate}
-		
-		The two timeseries are first aligned with each other at the maximum lag value. Then the entire timeseries is divided into small time periods of 15 days in order to locate anomalous situations through their respective correlation values.
-		\\
-		\\
-		Observations when retail price timeseries is compared with average of retail price timeseries: 
-		
-		\begin{itemize}
-			\item The timeseries showed the initial shift/lag of zero days which means both the timeseries are best aligned without any lag.
-			
-			Some of the tenures for which the method reported anomalies are:
-			
-			\begin{itemize}
-				\item 2008-03-06 to 2008-03-20 (See Figure \ref{fig:20080306_0320})
-				\item 2009-09-12 to 2009-09-26 (See Figure \ref{fig:20090912_0926})
-				\item 2011-07-04 to 2011-08-02 (See Figure \ref{fig:20110704_0802})
-			\end{itemize}
-			\begin{figure}[H]
-		    	\centering
-  		    	\includegraphics[width=0.8\textwidth]{graphs/20080306_0320.png}
-		    	\caption{Window based correlation (Green line - Centre Retail Price, Blue Line - Average Retail Price)}
-		    	\label{fig:20080306_0320}
-			\end{figure}
-			
-			\begin{figure}[H]
-		    	\centering
-  		    	\includegraphics[width=0.8\textwidth]{graphs/20090912_0926.png}
-		    	\caption{Window based correlation (Green line - Centre Retail Price, Blue Line - Average Retail Price)}
-		    	\label{fig:20090912_0926}
-			\end{figure}
-
-			\begin{figure}[H]
-		    	\centering
-  		    	\includegraphics[width=0.8\textwidth]{graphs/20110704_0802.png}
-		    	\caption{Window based correlation (Green line - Centre Retail Price, Blue Line - Average Retail Price)}
-		    	\label{fig:20110704_0802}
-			\end{figure}
-			
-			But looking closely in the data, it is found that these tenures are reported because the two series were not in tandem which was mostly because prices of delhi faced some fluctuations whereas Mumbai prices did not show evident fluctuations. One of the reason for fluctuation in prices of Delhi over Mumbai could be because Delhi is dependent on other states for Onion whereas Mumbai does not have such issue.
-			\\
-			\\
-			Some of the tenures which went unnoticed by method:
-			
-			\begin{itemize}
-				\item 2010-12-20 to 2010-12-25 (See Figure \ref{fig:20101220_1225})
-				\item 2011-01-06 to 2011-01-08 (See Figure \ref{fig:20110106_0108})
-				\item 2012-12-27 to 2013-01-05 (See Figure \ref{fig:20121227_0105})
-			\end{itemize}
-			\begin{figure}[H]
-		    	\centering
-  		    	\includegraphics[width=0.8\textwidth]{graphs/20101220_1225.png}
-		    	\caption{Window based correlation (Green line - Centre Retail Price, Blue Line - Average Retail Price)}
-		    	\label{fig:20101220_1225}
-			\end{figure}
-			
-			\begin{figure}[H]
-		    	\centering
-  		    	\includegraphics[width=0.8\textwidth]{graphs/20110106_0108.png}
-		    	\caption{Window based correlation (Green line - Centre Retail Price, Blue Line - Average Retail Price)}
-		    	\label{fig:20110106_0108}
-			\end{figure}
-
-			\begin{figure}[H]
-		    	\centering
-  		    	\includegraphics[width=0.8\textwidth]{graphs/20121227_0105.png}
-		    	\caption{Window based correlation (Green line - Centre Retail Price, Blue Line - Average Retail Price)}
-		    	\label{fig:20121227_0105}
-			\end{figure}
-			
-			Some of the tenures which were reported by news reports as well as method:
-			
-			\begin{itemize}
-				\item 2013-10-06 to 2013-10-15 (See Figure \ref{fig:20131006_1015_1021})
-				\item 2013-10-17 to 2013-10-21 (See Figure \ref{fig:20131006_1015_1021})
-			\end{itemize}
-			\begin{figure}[H]
-		    	\centering
-  		    	\includegraphics[width=0.8\textwidth]{graphs/20131006_1015_1021.png}
-		    	\caption{Window based correlation (Green line - Centre Retail Price, Blue Line - Average Retail Price)}
-		    	\label{fig:20131006_1015_1021}
-			\end{figure}
-						
-		\end{itemize}
-		
-		Other interesting observations that were found while conducting above mentioned tests are as following:
-		\begin{itemize}
-			\item The lag chosen while comparing retail and arrival for Mumbai came as 15 days which means it takes 15 days of time for arrival to impact retail.
-			\item The lag chosen by method while comparing retail and arrival for Delhi came out to be -9 days which gives hints that retail prices are impacting arrival of Onion which is not ideal in real time scenario.
-			\item The lag chosen while comparing retail and wholesale for Mumbai comes out as -15 which means retail prices are impacted in approx. 15 days after change in the wholesale prices.
-			\item The lag chosen while comparing retail and wholesale for Delhi comes out as -4 which is clearly very small than Mumbai. It might be because of smaller supply chain in Delhi compared to Mumbai.
-			\item The lag chosen while comparing wholesale and arrival for Mumbai came as 11 days which means it takes 11 days of time for arrival to impact wholesale.
-			\item The lag chosen by method while comparing wholesale and arrival for Delhi came out to be -14 days which gives hints that wholesale prices are impacting arrival of Onion which is not ideal in real time scenario.
-		\end{itemize}
-		
-		Limitations of method:
-		\begin{itemize}
-			\item The method reports all the tenures where series are not in sync or are in sync(as needed). Like in case of  2008-03-06 to 2008-03-20 for retail vs average, though the correlation went really high because of opposite directions but the fluctuation in prices were not very prominent.
-			\item If all the timeseries follows same anomalous behavior then it is not possible to find anomaly in any.
-			\item If the anomaly is for very small tenure compared to the selected window size then it is likely to be missed or go unnoticed. In case of 2011-01-06 - 2011-01-08
-		\end{itemize}
-
-\subsection{Multivariate Time Series- Vector Autoregressive}
-
-		The method uses vector autoregressive framework for multivaraiate time-series analysis in order to forecast values by using all the related variables/timeseries that can impact the timeseries. The error in the predicted value with the original value helps in determining anomalous points from the timeseries. MAD test is applied in order to fix the threshold value for the error.
-		60\% (This can be configured as per need) of the data is used for calibration and rest of the data is checked for anomalous points. So, the start date for the anomalous points begins after 2011-09-16
-		\\
-		The function is tested with different set of timeseries. Following are the four tests which were performed:
-		\begin{enumerate}
-		    \item \textbf{Retail Price vs Average of Retail Price}: All the centres should ideally move in tandem. So test is performed over every centre with other centres helping in predicting values.            
-		    \item \textbf{Retail Price vs Arrival of Onion}: Arrival is one of the major deciding factor for retail. So the predictions are made for retail based on arrival.
-		    \item \textbf{Retail Price vs Wholesale Price}: Retail prices are predicted based on the wholesale prices.
-		    \item \textbf{Wholesale Price vs Arrival of Onion}: Wholesale timeseries is predicted on the basis of arrival timeseries.
-		\end{enumerate}
-		
-		Observations when retail price timeseries is compared with average of retail price timeseries: 
-		
-		\begin{itemize}
-			\item The threshold selected by this method for error values are -19.0358099572 and 107.697818954 which means all the data points with error values less than -19.0358099572 and greater than 107.697818954 are reported by the method.
-			
-			Some of the tenures for which the method reported anomalies are:
-			
-			\begin{itemize}
-				\item 2013-07-19 to 2013-09-11 (See Figure \ref{fig:20130719_0911})
-				\item 2013-09-17 to 2014-01-06 (See Figure \ref{fig:20130917_0106})
-				\item 2014-12-03 to 2014-12-15 (See Figure \ref{fig:20141203_1215})
-			\end{itemize}
-			\begin{figure}[H]
-		    	\centering
-  		    	\includegraphics[width=0.8\textwidth]{graphs/20130719_0911.png}
-		    	\caption{Vector Autoregressive (Green line - Centre Retail Price, Blue Line - Average Retail Price)}
-		    	\label{fig:20130719_0911}
-			\end{figure}
-			
-			\begin{figure}[H]
-		    	\centering
-  		    	\includegraphics[width=0.8\textwidth]{graphs/20130917_0106.png}
-		    	\caption{Vector Autoregressive (Green line - Centre Retail Price, Blue Line - Average Retail Price)}
-		    	\label{fig:20130917_0106}
-			\end{figure}
-
-			\begin{figure}[H]
-		    	\centering
-  		    	\includegraphics[width=0.8\textwidth]{graphs/20141203_1215.png}
-		    	\caption{Vector Autoregressive (Green line - Centre Retail Price, Blue Line - Average Retail Price)}
-		    	\label{fig:20141203_1215}
-			\end{figure}
-			
-			No data points were reported against news articles present in May, June, July 2014 despite of large error value. The threshold selected by the MAD test was higher than the error values. This could be corrected by manually setting threshold values which can be account for these data points.
-			
-		\end{itemize}
-		
-		Other interesting observations that were found while conducting above mentioned tests are as following:
-		\begin{itemize}
-			\item Some of the data points like July 2014 data were not captured despite of error value close to MAD threshold. These can be captured by lowering the threshold.
-			\item For news articles in Dec 2012,Jan 2013, Feb 2013 the values does not show high error values despite of news articles reporting the crisis. The possible reason could be because similar trend have been seen for this tenure in the data.
-		\end{itemize}
-		
-		Limitations of method:
-		\begin{itemize}
-			\item The method depends on the MAD Test in order to set threshold. So, even though the error value is close to threshold but less than it won't be reported. Other methods could be also used in order to decide threshold.
 		\end{itemize}
 		
 \subsection{Graph Based Anomaly Detection}
