@@ -41,9 +41,9 @@ Here are some results related with Mumbai Center. Table \ref{AnomaliesReported} 
 \\
 Table \ref{ArticlesMatched} shows the result of number of articles matched with the dates reported by our system as anomaly for each method. So here First 5 columns corresponds to each method. Column 6 is union of results of first 3 methods and column 7 is union of result of method 4 and 5, as described in table. Column 8 is intersection of results of column 6 and column 7, which is final result of our system.\\
 \\
-Note that total number of articles present for center Mumbai is \textbf{99} and all these articles are present after 2010. Apart from Graph Based Anomaly and Multivariate- vector autoregressive method, all methods are producing results from 2006 onwards as input data is from that time. The following pie chart shows the analysis of article showing what news articles states as the reason for the price hikes of onion.\\
+Note that total number of articles present for center Mumbai is \textbf{99} and all these articles are present after 2010. Apart from Graph Based Anomaly and Multivariate- vector autoregressive method, all methods are producing results from 2006 onwards as input data is from that time. The following pie chart(see figure \ref{fig:pieReasons}) shows the analysis of article showing what news articles states as the reason for the price hikes of onion.\\
 \\
-\begin{figure}
+\begin{figure}[H]
 \centering
 \begin{tikzpicture}
    \pie[ text = legend ]{32/Traders Nexus, 18/Not Stated, 10/Unseasonal Rainfall, 12/Low Production, 18/Low Supply, 10/Other  }
@@ -54,8 +54,9 @@ Note that total number of articles present for center Mumbai is \textbf{99} and 
 
 % First here about +5, -5
 
+While finding the news article match for every anomaly, we check for all the news articles 5 days before and 5 days after the reported date. In case we find any news article in this tenure, we consider it as a match for that date. Following bar charts represents distribution of how far is the news article from the date of anomaly. 
 
-\begin{figure}
+\begin{figure}[H]
 \centering
 \begin{tikzpicture}
 \begin{axis}[
@@ -68,7 +69,9 @@ Note that total number of articles present for center Mumbai is \textbf{99} and 
 	ybar interval=0.7,
 ]
 \addplot 
-	coordinates {(-5,3)(-4,4)(-3,5)(-2,4)(-1,6)(0,16)(1,10)(2,5)(3,4)(4,3)(5,4)};
+
+	coordinates {(-5,3)(-4,4)(-3,5)(-2,4)(-1,6)(0,16)(1,10)(2,5)(3,4)(4,3)(5,4)(6,0)};
+
 
 % \legend{Men,Women}
 \end{axis}
@@ -78,7 +81,7 @@ Note that total number of articles present for center Mumbai is \textbf{99} and 
 \end{figure}
 
 
-\begin{figure}
+\begin{figure}[H]
 \centering
 \begin{tikzpicture}
 \begin{axis}[
@@ -91,7 +94,7 @@ Note that total number of articles present for center Mumbai is \textbf{99} and 
 	ybar interval=0.7,
 ]
 \addplot 
-	coordinates {(-5,8)(-4,9)(-3,9)(-2,9)(-1,11)(0,11)(1,12)(2,14)(3,16)(4,21)(5,33)};
+	coordinates {(-5,8)(-4,9)(-3,11)(-2,13)(-1,16)(0,34)(1,21)(2,14)(3,11)(4,8)(5,8)(6,0)};
 
 % \legend{Men,Women}
 \end{axis}
@@ -101,7 +104,7 @@ Note that total number of articles present for center Mumbai is \textbf{99} and 
 \end{figure}
 
 
-\begin{figure}
+\begin{figure}[H]
 \centering
 \begin{tikzpicture}
 \begin{axis}[
@@ -114,7 +117,7 @@ Note that total number of articles present for center Mumbai is \textbf{99} and 
 	ybar interval=0.7,
 ]
 \addplot 
-	coordinates {(-5,4)(-4,5)(-3,5)(-2,4)(-1,3)(0,3)(1,3)(2,3)(3,5)(4,6)(5,11)};
+	coordinates {(-5,4)(-4,5)(-3,6)(-2,5)(-1,3)(0,9)(1,5)(2,3)(3,5)(4,3)(5,4)(6,0)};
 
 % \legend{Men,Women}
 \end{axis}
@@ -124,7 +127,7 @@ Note that total number of articles present for center Mumbai is \textbf{99} and 
 \end{figure}
 
 
-\begin{figure}
+\begin{figure}[H]
 \centering
 \begin{tikzpicture}
 \begin{axis}[
@@ -137,7 +140,7 @@ Note that total number of articles present for center Mumbai is \textbf{99} and 
 	ybar interval=0.7,
 ]
 \addplot 
-	coordinates {(-5,8)(-4,10)(-3,9)(-2,9)(-1,11)(0,12)(1,14)(2,16)(3,18)(4,24)(5,37)};
+	coordinates {(-5,8)(-4,10)(-3,11)(-2,13)(-1,17)(0,37)(1,25)(2,16)(3,13)(4,9)(5,9)(6,0)};
 
 % \legend{Men,Women}
 \end{axis}
