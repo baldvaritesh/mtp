@@ -54,7 +54,7 @@ Note that total number of articles present for center Mumbai is \textbf{99} and 
 
 % First here about +5, -5
 
-While finding the news article match for every anomaly, we check for all the news articles 5 days before and 5 days after the reported date. In case we find any news article in this tenure, we consider it as a match for that date. Following bar charts represents distribution of how far is the news article from the date of anomaly. 
+While finding the news article match for every anomaly, we check for all the news articles 5 days before and 5 days after the reported date. In case we find any news article in this tenure, we consider it as a match for that date. For one date of anomaly, multiple articles may be present but for this analysis we have considered only the nearest article for that anomaly date. Following bar charts represents distribution of how far is the news article from the date of anomaly.
 
 \begin{figure}[H]
 \centering
@@ -66,7 +66,7 @@ While finding the news article match for every anomaly, we check for all the new
 \begin{axis}[
 	x tick label style={
 		/pgf/number format/1000 sep=},
-	ylabel=Year,
+	ylabel=Number of Articles,
 	enlargelimits=0.05,
 	legend style={at={(0.5,-0.1)},
 	anchor=north,legend columns=-1},
