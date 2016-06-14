@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.1.3)  14 JUN 2016 15:02
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.1.3)  14 JUN 2016 18:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -533,6 +533,146 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \c@pgfpie@colorLength=\count110
 \c@pgfpie@sliceLength=\count111
 )
+(/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2013/10/03 v1.9 Data Visualization (1.9)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks28
+\t@pgfplots@tokb=\toks29
+\t@pgfplots@tokc=\toks30
+\pgfplots@tmpa=\dimen148
+\c@pgfplots@coordindex=\count112
+\c@pgfplots@scanlineindex=\count113
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
+.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_loader.code.tex
+Package pgfplots: loading complementary code for your PGF version...
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_misc.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks31
+\pgfkeys@temptoks=\toks32
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks33
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count114
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2012/09/11 v2.10 (rcs-revision 1.17)
+\pgf@plot@mark@count=\count115
+\pgfplotmarksize=\dimen149
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgflibraryfpu.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2012/11/30  (rcs-revision 1.38)
+\pgfpic=\box37
+\pgf@hbox=\box38
+\pgf@layerbox@main=\box39
+\pgf@picture@serial@count=\count116
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2012/11/07  (rcs-revision 1.5)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructure.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructureext.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray
+.code.tex
+\c@pgfplotsarray@tmp=\count117
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatri
+x.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
+d.code.tex
+\c@pgfplotstable@counta=\count118
+\t@pgfplotstable@a=\toks34
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.te
+x
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.co
+de.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
+fshading.code.tex
+\c@pgfplotslibrarysurf@no=\count119
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
+shading.pgfsys-pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.
+tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.t
+ex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.cod
+e.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex)
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecor
+ations.code.tex
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen150
+\pgfdecoratedremainingdistance=\dimen151
+\pgfdecoratedinputsegmentcompleteddistance=\dimen152
+\pgfdecoratedinputsegmentremainingdistance=\dimen153
+\pgf@decorate@distancetomove=\dimen154
+\pgf@decorate@repeatstate=\count120
+\pgfdecorationsegmentamplitude=\dimen155
+\pgfdecorationsegmentlength=\dimen156
+)
+\tikz@lib@dec@box=\box40
+)
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecor
+ations.pathmorphing.code.tex
+(/usr/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.p
+athmorphing.code.tex))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecor
+ations.pathreplacing.code.tex
+(/usr/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.p
+athreplacing.code.tex))
+\pgfplots@numplots=\count121
+\pgfplots@xmin@reg=\dimen157
+\pgfplots@xmax@reg=\dimen158
+\pgfplots@ymin@reg=\dimen159
+\pgfplots@ymax@reg=\dimen160
+\pgfplots@zmin@reg=\dimen161
+\pgfplots@zmax@reg=\dimen162
+)
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotm
+arks.code.tex
+File: tikzlibraryplotmarks.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2010/10/15 v2.10 (rcs-revision 1.12)
+)))
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
@@ -547,46 +687,46 @@ Package ifvtex Info: VTeX not detected.
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count112
-\Gm@cntv=\count113
-\c@Gm@tempcnt=\count114
-\Gm@bindingoffset=\dimen148
-\Gm@wd@mp=\dimen149
-\Gm@odd@mp=\dimen150
-\Gm@even@mp=\dimen151
-\Gm@layoutwidth=\dimen152
-\Gm@layoutheight=\dimen153
-\Gm@layouthoffset=\dimen154
-\Gm@layoutvoffset=\dimen155
-\Gm@dimlist=\toks28
+\Gm@cnth=\count122
+\Gm@cntv=\count123
+\c@Gm@tempcnt=\count124
+\Gm@bindingoffset=\dimen163
+\Gm@wd@mp=\dimen164
+\Gm@odd@mp=\dimen165
+\Gm@even@mp=\dimen166
+\Gm@layoutwidth=\dimen167
+\Gm@layoutheight=\dimen168
+\Gm@layouthoffset=\dimen169
+\Gm@layoutvoffset=\dimen170
+\Gm@dimlist=\toks35
 ) (./results.aux)
 \openout1 = `results.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
  (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count115
-\scratchdimen=\dimen156
-\scratchbox=\box37
-\nofMPsegments=\count116
-\nofMParguments=\count117
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count118
-\MPscratchDim=\dimen157
-\MPnumerator=\count119
-\makeMPintoPDFobject=\count120
-\everyMPtoPDFconversion=\toks30
+\scratchcounter=\count125
+\scratchdimen=\dimen171
+\scratchbox=\box41
+\nofMPsegments=\count126
+\nofMParguments=\count127
+\everyMPshowfont=\toks36
+\MPscratchCnt=\count128
+\MPscratchDim=\dimen172
+\MPnumerator=\count129
+\makeMPintoPDFobject=\count130
+\everyMPtoPDFconversion=\toks37
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -632,6 +772,12 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
+ick labels; missing features). Consider writing \pgfplotsset{compat=1.9} into y
+our preamble.
+ on input line 24.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -667,11 +813,11 @@ ABD: EveryShipout initializing macros
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 24.
+(Font)              <12> on input line 25.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 24.
+(Font)              <8> on input line 25.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 24.
+(Font)              <6> on input line 25.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
@@ -783,465 +929,464 @@ Missing character: There is no ! in font nullfont!
 Missing character: There is no 6 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--48
+Underfull \hbox (badness 10000) in paragraph at lines 36--54
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--48
+Underfull \hbox (badness 10000) in paragraph at lines 36--54
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--48
+Underfull \hbox (badness 10000) in paragraph at lines 36--54
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--48
+Underfull \hbox (badness 10000) in paragraph at lines 36--54
+
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 74.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 74.
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--55
+Underfull \hbox (badness 10000) in paragraph at lines 150--155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--55
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 157.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 178.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 201.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 227.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 254.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 280.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 307.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 342.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 375.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 408.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--447
 
  []
 
 [1
 
-]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 57.
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 73.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 73.
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 78.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 101.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 127.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 154.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 180.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 207.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 242.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 275.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 308.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 344--347
+] [2] [3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 450--453
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--353
+Underfull \hbox (badness 10000) in paragraph at lines 460--463
 
  []
 
-[2] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 360--363
-
- []
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 367.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 467.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 367.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 467.
 
-<graphs/12111.png, id=24, 1675.2186pt x 922.8879pt>
+<graphs/12111.png, id=27, 1675.2186pt x 922.8879pt>
 File: graphs/12111.png Graphic file (type png)
  <use graphs/12111.png>
-Package pdftex.def Info: graphs/12111.png used on input line 375.
+Package pdftex.def Info: graphs/12111.png used on input line 475.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
 
-<graphs/12131.png, id=26, 1675.2186pt x 922.8879pt>
+[5] <graphs/12131.png, id=33, 1675.2186pt x 922.8879pt>
 File: graphs/12131.png Graphic file (type png)
  <use graphs/12131.png>
-Package pdftex.def Info: graphs/12131.png used on input line 382.
+Package pdftex.def Info: graphs/12131.png used on input line 482.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
 
-[4 <./graphs/12111.png>] <graphs/12112.png, id=32, 1675.2186pt x 922.8879pt>
+<graphs/12112.png, id=34, 1675.2186pt x 922.8879pt>
 File: graphs/12112.png Graphic file (type png)
-
-<use graphs/12112.png>
-Package pdftex.def Info: graphs/12112.png used on input line 400.
+ <use graphs/12112.png>
+Package pdftex.def Info: graphs/12112.png used on input line 500.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
- <graphs/12132.png, id=33, 1675.2186pt x 922.8879pt>
+
+[6 <./graphs/12111.png> <./graphs/12131.png>]
+<graphs/12132.png, id=41, 1675.2186pt x 922.8879pt>
 File: graphs/12132.png Graphic file (type png)
-
-<use graphs/12132.png>
-Package pdftex.def Info: graphs/12132.png used on input line 407.
+ <use graphs/12132.png>
+Package pdftex.def Info: graphs/12132.png used on input line 507.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
- [5 <./graphs/12131.png> <./graphs/12112.png>]
-<graphs/12113.png, id=39, 1675.2186pt x 922.8879pt>
+
+<graphs/12113.png, id=42, 1675.2186pt x 922.8879pt>
 File: graphs/12113.png Graphic file (type png)
  <use graphs/12113.png>
-Package pdftex.def Info: graphs/12113.png used on input line 426.
+Package pdftex.def Info: graphs/12113.png used on input line 526.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
 
-<graphs/12133.png, id=40, 1675.2186pt x 922.8879pt>
+[7 <./graphs/12112.png> <./graphs/12132.png>]
+<graphs/12133.png, id=48, 1675.2186pt x 922.8879pt>
 File: graphs/12133.png Graphic file (type png)
  <use graphs/12133.png>
-Package pdftex.def Info: graphs/12133.png used on input line 433.
+Package pdftex.def Info: graphs/12133.png used on input line 533.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
 
-[6 <./graphs/12132.png> <./graphs/12113.png>]
-<graphs/12114.png, id=47, 1675.2186pt x 922.8879pt>
+<graphs/12114.png, id=49, 1675.2186pt x 922.8879pt>
 File: graphs/12114.png Graphic file (type png)
  <use graphs/12114.png>
-Package pdftex.def Info: graphs/12114.png used on input line 442.
+Package pdftex.def Info: graphs/12114.png used on input line 542.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
 
-<graphs/12115.png, id=48, 1675.2186pt x 922.8879pt>
+[8 <./graphs/12113.png> <./graphs/12133.png>]
+<graphs/12115.png, id=55, 1675.2186pt x 922.8879pt>
 File: graphs/12115.png Graphic file (type png)
  <use graphs/12115.png>
-Package pdftex.def Info: graphs/12115.png used on input line 451.
+Package pdftex.def Info: graphs/12115.png used on input line 551.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
 
-[7 <./graphs/12133.png> <./graphs/12114.png>]
-<graphs/12116.png, id=54, 1675.2186pt x 922.8879pt>
+<graphs/12116.png, id=56, 1675.2186pt x 922.8879pt>
 File: graphs/12116.png Graphic file (type png)
  <use graphs/12116.png>
-Package pdftex.def Info: graphs/12116.png used on input line 460.
+Package pdftex.def Info: graphs/12116.png used on input line 560.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
 
-<graphs/12134.png, id=55, 1675.2186pt x 922.8879pt>
+[9 <./graphs/12114.png> <./graphs/12115.png>]
+<graphs/12134.png, id=62, 1675.2186pt x 922.8879pt>
 File: graphs/12134.png Graphic file (type png)
  <use graphs/12134.png>
-Package pdftex.def Info: graphs/12134.png used on input line 470.
+Package pdftex.def Info: graphs/12134.png used on input line 570.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
 
-[8 <./graphs/12115.png> <./graphs/12116.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 481--482
+Underfull \hbox (badness 10000) in paragraph at lines 581--582
 
  []
 
-<graphs/12121.png, id=61, 1675.2186pt x 922.8879pt>
+<graphs/12121.png, id=63, 1675.2186pt x 922.8879pt>
 File: graphs/12121.png Graphic file (type png)
  <use graphs/12121.png>
-Package pdftex.def Info: graphs/12121.png used on input line 491.
+Package pdftex.def Info: graphs/12121.png used on input line 591.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
 
-<graphs/12141.png, id=62, 1675.2186pt x 922.8879pt>
+[10 <./graphs/12116.png> <./graphs/12134.png>]
+<graphs/12141.png, id=69, 1675.2186pt x 922.8879pt>
 File: graphs/12141.png Graphic file (type png)
  <use graphs/12141.png>
-Package pdftex.def Info: graphs/12141.png used on input line 498.
+Package pdftex.def Info: graphs/12141.png used on input line 598.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
 
-[9 <./graphs/12134.png> <./graphs/12121.png>]
-<graphs/12122.png, id=68, 1675.2186pt x 922.8879pt>
+<graphs/12122.png, id=70, 1675.2186pt x 922.8879pt>
 File: graphs/12122.png Graphic file (type png)
  <use graphs/12122.png>
-Package pdftex.def Info: graphs/12122.png used on input line 513.
+Package pdftex.def Info: graphs/12122.png used on input line 613.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
 
-<graphs/12142.png, id=69, 1675.2186pt x 922.8879pt>
+[11 <./graphs/12121.png> <./graphs/12141.png>]
+<graphs/12142.png, id=76, 1675.2186pt x 922.8879pt>
 File: graphs/12142.png Graphic file (type png)
  <use graphs/12142.png>
-Package pdftex.def Info: graphs/12142.png used on input line 520.
+Package pdftex.def Info: graphs/12142.png used on input line 620.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
 
-[10 <./graphs/12141.png> <./graphs/12122.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 525--526
+Underfull \hbox (badness 10000) in paragraph at lines 625--626
 
  []
 
-<graphs/12123.png, id=75, 1675.2186pt x 922.8879pt>
+<graphs/12123.png, id=77, 1675.2186pt x 922.8879pt>
 File: graphs/12123.png Graphic file (type png)
  <use graphs/12123.png>
-Package pdftex.def Info: graphs/12123.png used on input line 535.
+Package pdftex.def Info: graphs/12123.png used on input line 635.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
 
-<graphs/12143.png, id=76, 1675.2186pt x 922.8879pt>
+[12 <./graphs/12122.png> <./graphs/12142.png>]
+<graphs/12143.png, id=84, 1675.2186pt x 922.8879pt>
 File: graphs/12143.png Graphic file (type png)
  <use graphs/12143.png>
-Package pdftex.def Info: graphs/12143.png used on input line 542.
+Package pdftex.def Info: graphs/12143.png used on input line 642.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
 
-[11 <./graphs/12142.png> <./graphs/12123.png>]
-<graphs/12124.png, id=82, 1675.2186pt x 922.8879pt>
+<graphs/12124.png, id=85, 1675.2186pt x 922.8879pt>
 File: graphs/12124.png Graphic file (type png)
  <use graphs/12124.png>
-Package pdftex.def Info: graphs/12124.png used on input line 551.
+Package pdftex.def Info: graphs/12124.png used on input line 651.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
 
-<graphs/12144.png, id=83, 1675.2186pt x 922.8879pt>
+[13 <./graphs/12123.png> <./graphs/12143.png>]
+<graphs/12144.png, id=91, 1675.2186pt x 922.8879pt>
 File: graphs/12144.png Graphic file (type png)
  <use graphs/12144.png>
-Package pdftex.def Info: graphs/12144.png used on input line 558.
+Package pdftex.def Info: graphs/12144.png used on input line 658.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
 
-[12 <./graphs/12143.png> <./graphs/12124.png>]
-<graphs/12125.png, id=90, 1675.2186pt x 922.8879pt>
+<graphs/12125.png, id=92, 1675.2186pt x 922.8879pt>
 File: graphs/12125.png Graphic file (type png)
  <use graphs/12125.png>
-Package pdftex.def Info: graphs/12125.png used on input line 567.
+Package pdftex.def Info: graphs/12125.png used on input line 667.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
 
-<graphs/12126.png, id=91, 1675.2186pt x 922.8879pt>
+[14 <./graphs/12124.png> <./graphs/12144.png>]
+<graphs/12126.png, id=98, 1675.2186pt x 922.8879pt>
 File: graphs/12126.png Graphic file (type png)
  <use graphs/12126.png>
-Package pdftex.def Info: graphs/12126.png used on input line 576.
+Package pdftex.def Info: graphs/12126.png used on input line 676.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
 
-[13 <./graphs/12144.png> <./graphs/12125.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 589--592
+Underfull \hbox (badness 10000) in paragraph at lines 689--692
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 599--602
+[15 <./graphs/12125.png> <./graphs/12126.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 699--702
 
  []
 
-[14 <./graphs/12126.png>] <graphs/12211.png, id=101, 1675.2186pt x 922.8879pt>
+<graphs/12211.png, id=104, 1675.2186pt x 922.8879pt>
 File: graphs/12211.png Graphic file (type png)
-
-<use graphs/12211.png>
-Package pdftex.def Info: graphs/12211.png used on input line 615.
+ <use graphs/12211.png>
+Package pdftex.def Info: graphs/12211.png used on input line 715.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
- <graphs/12231.png, id=102, 1675.2186pt x 922.8879pt>
+
+<graphs/12231.png, id=105, 1675.2186pt x 922.8879pt>
 File: graphs/12231.png Graphic file (type png)
-
-<use graphs/12231.png>
-Package pdftex.def Info: graphs/12231.png used on input line 622.
+ <use graphs/12231.png>
+Package pdftex.def Info: graphs/12231.png used on input line 722.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 627--630
+[16 <./graphs/12211.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 727--730
 
  []
 
-<graphs/12212.png, id=103, 1675.2186pt x 922.8879pt>
+<graphs/12212.png, id=110, 1675.2186pt x 922.8879pt>
 File: graphs/12212.png Graphic file (type png)
  <use graphs/12212.png>
-Package pdftex.def Info: graphs/12212.png used on input line 636.
+Package pdftex.def Info: graphs/12212.png used on input line 736.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
 
-[15 <./graphs/12211.png> <./graphs/12231.png>]
-<graphs/12232.png, id=109, 1675.2186pt x 922.8879pt>
+<graphs/12232.png, id=111, 1675.2186pt x 922.8879pt>
 File: graphs/12232.png Graphic file (type png)
  <use graphs/12232.png>
-Package pdftex.def Info: graphs/12232.png used on input line 643.
+Package pdftex.def Info: graphs/12232.png used on input line 743.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
 
-<graphs/12221.png, id=110, 1675.2186pt x 922.8879pt>
+[17 <./graphs/12231.png> <./graphs/12212.png>]
+<graphs/12221.png, id=117, 1675.2186pt x 922.8879pt>
 File: graphs/12221.png Graphic file (type png)
  <use graphs/12221.png>
-Package pdftex.def Info: graphs/12221.png used on input line 667.
+Package pdftex.def Info: graphs/12221.png used on input line 767.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
 
-[16 <./graphs/12212.png> <./graphs/12232.png>]
-<graphs/12241.png, id=116, 1675.2186pt x 922.8879pt>
+<graphs/12241.png, id=118, 1675.2186pt x 922.8879pt>
 File: graphs/12241.png Graphic file (type png)
  <use graphs/12241.png>
-Package pdftex.def Info: graphs/12241.png used on input line 674.
+Package pdftex.def Info: graphs/12241.png used on input line 774.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
 
-<graphs/12222.png, id=117, 1675.2186pt x 922.8879pt>
+[18 <./graphs/12232.png> <./graphs/12221.png>]
+<graphs/12222.png, id=125, 1675.2186pt x 922.8879pt>
 File: graphs/12222.png Graphic file (type png)
  <use graphs/12222.png>
-Package pdftex.def Info: graphs/12222.png used on input line 690.
+Package pdftex.def Info: graphs/12222.png used on input line 790.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
 
-[17 <./graphs/12221.png> <./graphs/12241.png>]
-<graphs/12242.png, id=123, 1675.2186pt x 922.8879pt>
+<graphs/12242.png, id=126, 1675.2186pt x 922.8879pt>
 File: graphs/12242.png Graphic file (type png)
  <use graphs/12242.png>
-Package pdftex.def Info: graphs/12242.png used on input line 697.
+Package pdftex.def Info: graphs/12242.png used on input line 797.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 706--710
+[19 <./graphs/12241.png> <./graphs/12222.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 806--810
 
  []
 
-[18 <./graphs/12222.png> <./graphs/12242.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 717--721
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--821
 
  []
 
-<graphs/20080306_0320.png, id=130, 1675.2186pt x 922.8879pt>
+<graphs/20080306_0320.png, id=132, 1675.2186pt x 922.8879pt>
 File: graphs/20080306_0320.png Graphic file (type png)
 
 <use graphs/20080306_0320.png>
-Package pdftex.def Info: graphs/20080306_0320.png used on input line 734.
+Package pdftex.def Info: graphs/20080306_0320.png used on input line 834.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
-
-<graphs/20090912_0926.png, id=131, 1675.2186pt x 922.8879pt>
+ [20 <./graphs/12242.png>]
+<graphs/20090912_0926.png, id=137, 1675.2186pt x 922.8879pt>
 File: graphs/20090912_0926.png Graphic file (type png)
 
 <use graphs/20090912_0926.png>
-Package pdftex.def Info: graphs/20090912_0926.png used on input line 741.
+Package pdftex.def Info: graphs/20090912_0926.png used on input line 841.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
- [19 <./graphs/20080306_0320.png>]
-<graphs/20110704_0802.png, id=136, 1675.2186pt x 922.8879pt>
+
+<graphs/20110704_0802.png, id=138, 1675.2186pt x 922.8879pt>
 File: graphs/20110704_0802.png Graphic file (type png)
 
 <use graphs/20110704_0802.png>
-Package pdftex.def Info: graphs/20110704_0802.png used on input line 748.
+Package pdftex.def Info: graphs/20110704_0802.png used on input line 848.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 753--757
+ [21 <./graphs/20080306_0320.png> <./graphs/20090912_0926.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 853--857
 
  []
 
-<graphs/20101220_1225.png, id=137, 1675.2186pt x 922.8879pt>
+<graphs/20101220_1225.png, id=144, 1675.2186pt x 922.8879pt>
 File: graphs/20101220_1225.png Graphic file (type png)
 
 <use graphs/20101220_1225.png>
-Package pdftex.def Info: graphs/20101220_1225.png used on input line 765.
+Package pdftex.def Info: graphs/20101220_1225.png used on input line 865.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
- [20 <./graphs/20090912_0926.png> <./graphs/20110704_0802.png>] <graphs/2011010
-6_0108.png, id=143, 1675.2186pt x 922.8879pt>
+
+<graphs/20110106_0108.png, id=145, 1675.2186pt x 922.8879pt>
 File: graphs/20110106_0108.png Graphic file (type png)
 
 <use graphs/20110106_0108.png>
-Package pdftex.def Info: graphs/20110106_0108.png used on input line 772.
+Package pdftex.def Info: graphs/20110106_0108.png used on input line 872.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
-
-<graphs/20121227_0105.png, id=144, 1675.2186pt x 922.8879pt>
+ [22 <./graphs/20110704_0802.png> <./graphs/20101220_1225.png>] <graphs/2012122
+7_0105.png, id=151, 1675.2186pt x 922.8879pt>
 File: graphs/20121227_0105.png Graphic file (type png)
 
 <use graphs/20121227_0105.png>
-Package pdftex.def Info: graphs/20121227_0105.png used on input line 779.
+Package pdftex.def Info: graphs/20121227_0105.png used on input line 879.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
- [21 <./graphs/20101220_1225.png> <./graphs/20110106_0108.png>]
-<graphs/20131006_1015_1021.png, id=150, 1675.2186pt x 922.8879pt>
+
+<graphs/20131006_1015_1021.png, id=152, 1675.2186pt x 922.8879pt>
 File: graphs/20131006_1015_1021.png Graphic file (type png)
 
 <use graphs/20131006_1015_1021.png>
-Package pdftex.def Info: graphs/20131006_1015_1021.png used on input line 792.
+Package pdftex.def Info: graphs/20131006_1015_1021.png used on input line 892.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
- [22 <./graphs/20121227_0105.png> <./graphs/20131006_1015_1021.png>]
-<graphs/20130719_0911.png, id=156, 1675.2186pt x 922.8879pt>
+ [23 <./graphs/20110106_0108.png> <./graphs/20121227_0105.png>] [24 <./graphs/2
+0131006_1015_1021.png>]
+<graphs/20130719_0911.png, id=163, 1675.2186pt x 922.8879pt>
 File: graphs/20130719_0911.png Graphic file (type png)
 
 <use graphs/20130719_0911.png>
-Package pdftex.def Info: graphs/20130719_0911.png used on input line 843.
+Package pdftex.def Info: graphs/20130719_0911.png used on input line 943.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
- [23]
-<graphs/20130917_0106.png, id=160, 1675.2186pt x 922.8879pt>
+
+<graphs/20130917_0106.png, id=164, 1675.2186pt x 922.8879pt>
 File: graphs/20130917_0106.png Graphic file (type png)
 
 <use graphs/20130917_0106.png>
-Package pdftex.def Info: graphs/20130917_0106.png used on input line 850.
+Package pdftex.def Info: graphs/20130917_0106.png used on input line 950.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
-
-<graphs/20141203_1215.png, id=161, 1675.2186pt x 922.8879pt>
+ [25 <./graphs/20130719_0911.png>]
+<graphs/20141203_1215.png, id=169, 1675.2186pt x 922.8879pt>
 File: graphs/20141203_1215.png Graphic file (type png)
 
 <use graphs/20141203_1215.png>
-Package pdftex.def Info: graphs/20141203_1215.png used on input line 857.
+Package pdftex.def Info: graphs/20141203_1215.png used on input line 957.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
- [24 <./graphs/20130719_0911.png> <./graphs/20130917_0106.png>] <graphs/1231.pn
-g, id=168, 1675.2186pt x 922.8879pt>
+
+<graphs/1231.png, id=170, 1675.2186pt x 922.8879pt>
 File: graphs/1231.png Graphic file (type png)
-
-<use graphs/1231.png>
-Package pdftex.def Info: graphs/1231.png used on input line 887.
+ <use graphs/1231.png>
+Package pdftex.def Info: graphs/1231.png used on input line 987.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 880--890
+Underfull \hbox (badness 10000) in paragraph at lines 980--990
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 880--890
+Underfull \hbox (badness 10000) in paragraph at lines 980--990
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 880--890
+Underfull \hbox (badness 10000) in paragraph at lines 980--990
 
  []
 
-[25 <./graphs/20141203_1215.png>]
-<graphs/12331.png, id=173, 1675.2186pt x 922.8879pt>
+[26 <./graphs/20130917_0106.png> <./graphs/20141203_1215.png>]
+<graphs/12331.png, id=176, 1675.2186pt x 922.8879pt>
 File: graphs/12331.png Graphic file (type png)
  <use graphs/12331.png>
-Package pdftex.def Info: graphs/12331.png used on input line 894.
+Package pdftex.def Info: graphs/12331.png used on input line 994.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
 
-<graphs/12321.png, id=174, 1675.2186pt x 922.8879pt>
+[27 <./graphs/1231.png>] <graphs/12321.png, id=181, 1675.2186pt x 922.8879pt>
 File: graphs/12321.png Graphic file (type png)
- <use graphs/12321.png>
-Package pdftex.def Info: graphs/12321.png used on input line 902.
-(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
 
-[26 <./graphs/1231.png> <./graphs/12331.png>]
-<graphs/12341.png, id=180, 1675.2186pt x 922.8879pt>
+<use graphs/12321.png>
+Package pdftex.def Info: graphs/12321.png used on input line 1002.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+ <graphs/12341.png, id=182, 1675.2186pt x 922.8879pt>
 File: graphs/12341.png Graphic file (type png)
- <use graphs/12341.png>
-Package pdftex.def Info: graphs/12341.png used on input line 909.
-(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
 
-<graphs/12322_delhi.png, id=181, 1675.2186pt x 922.8879pt>
+<use graphs/12341.png>
+Package pdftex.def Info: graphs/12341.png used on input line 1009.
+(pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
+ [28 <./graphs/12331.png> <./graphs/12321.png>]
+<graphs/12322_delhi.png, id=188, 1675.2186pt x 922.8879pt>
 File: graphs/12322_delhi.png Graphic file (type png)
 
 <use graphs/12322_delhi.png>
-Package pdftex.def Info: graphs/12322_delhi.png used on input line 917.
+Package pdftex.def Info: graphs/12322_delhi.png used on input line 1017.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
- [27 <./graphs/12321.png> <./graphs/12341.png>]
-<graphs/12442_delhi.png, id=187, 1675.2186pt x 922.8879pt>
+
+<graphs/12442_delhi.png, id=189, 1675.2186pt x 922.8879pt>
 File: graphs/12442_delhi.png Graphic file (type png)
 
 <use graphs/12442_delhi.png>
-Package pdftex.def Info: graphs/12442_delhi.png used on input line 924.
+Package pdftex.def Info: graphs/12442_delhi.png used on input line 1024.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
- [28 <./graphs/12322_delhi.png> <./graphs/12442_delhi.png>] (./results.aux) ) 
+ [29 <./graphs/12341.png> <./graphs/12322_delhi.png>] [30 <./graphs/12442_delhi
+.png>] (./results.aux) ) 
 Here is how much of TeX's memory you used:
- 11210 strings out of 493304
- 208695 string characters out of 6139872
- 314689 words of memory out of 5000000
- 14397 multiletter control sequences out of 15000+600000
+ 19059 strings out of 493304
+ 458004 string characters out of 6139872
+ 664844 words of memory out of 5000000
+ 22098 multiletter control sequences out of 15000+600000
  9154 words of font info for 32 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 56i,10n,57p,1059b,692s stack positions out of 5000i,500n,10000p,200000b,80000s
-</
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmti10.pfb>
-Output written on results.pdf (29 pages, 5158370 bytes).
+ 56i,11n,84p,1059b,1821s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on results.pdf (31 pages, 5162656 bytes).
 PDF statistics:
- 217 PDF objects out of 1000 (max. 8388607)
- 90 compressed objects within 1 object stream
+ 224 PDF objects out of 1000 (max. 8388607)
+ 95 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  233 words of extra memory for PDF output out of 10000 (max. 10000000)
 

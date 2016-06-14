@@ -1074,7 +1074,9 @@ def newsAnomalyDiffDays(array):
 			data[row[4]] = 1
 		else:
 			data[row[4]] = data[row[4]] + 1
-	result = list(data)
+	result = []
+	for key in data:
+		result.append((key,data[key]))
 	result.sort()
 	return result
 	pass

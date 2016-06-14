@@ -6,7 +6,7 @@ from slopeBasedDetection import slopeBased
 from linear_regression import linear_regressionMain
 from window_correlation import anomaliesFromWindowCorrelationWithConstantlag
 import numpy as np
-from Utility import fetchNewsForCenter,placeMapping, getGBAResultsRvA, getGBAResultsRvR, findAverageTimeSeries, getColumnFromListOfTuples, convertListToFloat, plotGraphForHypothesis, resultOfOneMethod, concateLists, writeToCSV, getDiffStatsOfNewsArticles, statsPrintHelperIntersect, statsPrintHelperUnion,statsPrintHelperAllCentersUnion, intersection, intersectionOfFinalResults, MADThreshold, mergeDates, union, intersect, getYearWiseStats, plotGraphForHypothesisArrival, processListForGB
+from Utility import fetchNewsForCenter,placeMapping, getGBAResultsRvA, getGBAResultsRvR, findAverageTimeSeries, getColumnFromListOfTuples, convertListToFloat, plotGraphForHypothesis, resultOfOneMethod, concateLists, writeToCSV, getDiffStatsOfNewsArticles, statsPrintHelperIntersect, statsPrintHelperUnion,statsPrintHelperAllCentersUnion, intersection, intersectionOfFinalResults, MADThreshold, mergeDates, union, intersect, getYearWiseStats, plotGraphForHypothesisArrival, processListForGB, newsAnomalyDiffDays
 import datetime
 from multiVariateTimeseries import csvTransform
 from multiVariateTimeseries import multivaraiateAnalysis
@@ -874,29 +874,32 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
             print str(WvsA_anomalies_intersection[2*i+1][l][0])+","+str(WvsA_anomalies_intersection[2*i+1][l][1])+","+str(WvsA_anomalies_intersection[2*i+1][l][2])+","+str(WvsA_anomalies_intersection[2*i+1][l][3])+","+str(WvsA_anomalies_intersection[2*i+1][l][4])+","+str(WvsA_anomalies_intersection[2*i+1][l][5])+","+str(WvsA_anomalies_intersection[2*i+1][l][6])+","+str(WvsA_anomalies_intersection[2*i+1][l][7])
         
         
-        
+    for i in range(0,numOfFiles):
+        print "Center:" + str(placeMapping(i)) 
         print "\n\nPRINTING FINAL STATS\n\n"
         
-        retVsAv = newsAnomalyDiffDays(RvsR_anomalies_intersection)
-        retVsArr = newsAnomalyDiffDays(RvsA_anomalies_intersection)
-        retVsWhole = newsAnomalyDiffDays(RvsW_anomalies_intersection)
-        wholeVsArr = newsAnomalyDiffDays(WvsA_anomalies_intersection)
+        retVsAv = newsAnomalyDiffDays(RvsR_anomalies_intersection[2*i+1])
+        retVsArr = newsAnomalyDiffDays(RvsA_anomalies_intersection[2*i+1])
+        retVsWhole = newsAnomalyDiffDays(RvsW_anomalies_intersection[2*i+1])
+        wholeVsArr = newsAnomalyDiffDays(WvsA_anomalies_intersection[2*i+1])
+        
+        # print retVsAv
         
         print "\n\nRetail vs Average Data:"
         for row in retVsAv:
-            print row[0] +"," + row[1]
+            print str(row[0]) +"," + str(row[1])
             
         print "\n\nRetail vs Arrival Data:"
         for row in retVsArr:
-            print row[0] +"," + row[1]
+            print str(row[0]) +"," + str(row[1])
             
         print "\n\nRetail vs Wholesale Data:"
         for row in retVsWhole:
-            print row[0] +"," + row[1]
+            print str(row[0]) +"," + str(row[1])
             
         print "\n\Wholesale vs Arrival Data:"
         for row in wholeVsArr:
-            print row[0] +"," + row[1]
+            print str(row[0]) +"," + str(row[1])
         
 hypothesisForCenter(2,"testingCSV/MumbaiSILData.csv","testingCSV/DelhiSILData.csv")
 
