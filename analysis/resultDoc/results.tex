@@ -35,18 +35,18 @@ analyse these results along with each method.
 
 We have performed 4 types of analysis and result for each of this method is as 
 follows. Note that these are primary results. Data for 2 centres are considered 
-, Mumbai and Delhi.\\
+- Mumbai and Delhi.\\
 \\
-Here are some results related with Mumbai Center. Table \ref{AnomaliesReported} stats the result of anomalies reported by our system, with details about anomalies reported by each method. So here First 5 columns corresponds to each method. Column 6 is union of results of first 3 methods and column 7 is union of results of method 4 and 5, as described in table. Column 8 is intersection of results of column 6 and column 7, which is final result of our system.\\
+Here are some results related with Mumbai Center. Table \ref{AnomaliesReported} shows the result of anomalies reported by our system, with details about anomalies reported by each method. So here First 5 columns corresponds to each method. Column 6 is union of results of first 3 methods and column 7 is union of results of method 4 and 5, as described in table. Column 8 is intersection of results of column 6 and column 7, which is final result of our system.\\
 \\
-Table \ref{ArticlesMatched} stats the result of number of articles matched with the dates reported by our system as anomaly, for each method. So here First 5 columns corresponds to each method. Column 6 is union of results of first 3 methods and column 7 is union of result of method 4 and 5, as described in table. Column 8 is intersection of results of column 6 and column 7, which is final result of our system.\\
+Table \ref{ArticlesMatched} shows the result of number of articles matched with the dates reported by our system as anomaly for each method. So here First 5 columns corresponds to each method. Column 6 is union of results of first 3 methods and column 7 is union of result of method 4 and 5, as described in table. Column 8 is intersection of results of column 6 and column 7, which is final result of our system.\\
 \\
-Note that total number of articles present for center Mumbai is \textbf{99}. Note one thing that articles are present from 2010 onwards. Apart from Graph Based Anomaly method, all methods are producing results from 2006 onwards as input data is from that time. The following pie chart shows the analysis of article showing what news articles states as the reason for the price hikes of onion.\\
+Note that total number of articles present for center Mumbai is \textbf{99} and all these articles are present after 2010. Apart from Graph Based Anomaly and Multivariate- vector autoregressive method, all methods are producing results from 2006 onwards as input data is from that time. The following pie chart shows the analysis of article showing what news articles states as the reason for the price hikes of onion.\\
 \\
 \begin{figure}
 \centering
 \begin{tikzpicture}
-    \pie[ text = legend ]{32/Traders Nexus, 18/Not Stated, 10/Unseasonal Rainfall, 12/Low Production, 18/Low Supply, 10/Other  }
+   \pie[ text = legend ]{32/Traders Nexus, 18/Not Stated, 10/Unseasonal Rainfall, 12/Low Production, 18/Low Supply, 10/Other  }
 \end{tikzpicture}
 \caption{Reasons stated by news articles for onion price hike}
 \label{fig:pieReasons}
@@ -441,31 +441,31 @@ Such results for different cities can also be calculated.
 	
 \section{Analysis of Each Method}
 
-In this section, we try to analyse each method, what is limitation of each method and where it is performing good. So, we will describe each method one by one and study them. Note that we have articles from 2010 onwards, so we will be focussing on anomalies reported after 2010 and comparing with them news articles which we have. \\
+In this section, we try to analyse strengths, weaknesses and limitations of every method. So, we will describe each method one by one. Note that we have articles from 2010 onwards, so we will be focussing on anomalies reported after 2010 and compare them with the news articles we have. \\
 \\
-\textbf{Note that all the graphs and results described in following sections are for centre Mumbai. As Mumbai is in Maharashtra state, which is largest producer of onion in India. Also in graphs, Yellow highlighted region corresponds to anomalies reported by system, red region corresponds to dates for which our system reported anomaly and news article was present for that and blue region corresponds to date for which news article was present but that date was not reported as anomaly by our system.}
+\textbf{Note that all the graphs and results described in following sections are for centre Mumbai. Mumbai is in Maharashtra state, which is the largest producer of onion in India. Also in graphs, Yellow highlighted region corresponds to anomalies reported by system, red region corresponds to dates for which our system reported anomaly and news article was present for that and blue region corresponds to date for which news article was present but that date was not reported as anomaly by our system.}
 
 \subsection{Slope Based Anomaly Detection}
 	
-		The main functionality of this method is to find change in one variable with respect to other. Given two time-series, here we try to find, between two points in time series, how much dependent variable changed corresponding to independent variable. If this change is huge, than it is reported as anomaly.\\
+		The main functionality of this method is to find change in one variable with respect to other. Given two time-series, here we try to find, between two points in time series, how much dependent variable changed corresponding to independent variable. If this change is huge, then it is reported as anomaly.\\
 		\\
-		We have four types of analysis which are as follows:
+		We have four types of analysis which are as following:
 		\begin{enumerate}
 			\item \textbf{Retail Price vs Average of Retail Price}: Here, we first take average of retail price at all centres and than compare change in retail price with respect to change in average of retail price for different time window.			
 			\item \textbf{Retail Price vs Arrival of Onion}: Here, we try to find change in retail price with respect to change in arrival of onion for different windows. 
-			\item \textbf{Retail Price vs Wholesale Price}: Here, retail price is dependent on wholesale price and we try to find change in retail price with respect to change wholesale price for different windows in this method.
+			\item \textbf{Retail Price vs Wholesale Price}: Here, retail price is dependent on wholesale price and we try to find change in retail price with respect to change wholesale price for different windows.
 			\item \textbf{Wholesale Price vs Arrival of Onion}: Here, we try to find change in wholesale price with respect to change in arrival of onion for different window size.
 		\end{enumerate}
 		
-		So, in each of the case, we try to find change with respect to another, and if this change is huge, crossing threshold than it is reported as anomaly. Now, not that in analysis 1 and 3 stated above, both the time series are directly proportional to each other and in the analysis 2 and 4 both the time series are inversely proportional to each other. So, limitations faced by this method for analysis 1 and 3 will be similar and for analysis 2 and 4 will be similar. While describing this method, each analysis will be referenced by its corresponding number.\\
+		So, in each of the case, we try to find change with respect to another, and if this change is huge, crossing threshold than it is reported as anomaly. Note that in analysis 1 and 3 stated above, both the time series are directly proportional to each other and in the analysis 2 and 4 both the time series are inversely proportional to each other. So, limitations faced by this method for analysis 1 and 3 will be similar and for analysis 2 and 4 will be similar. While describing this method, each analysis will be referenced by its corresponding number.\\
 		\\
-		First we will start with analysis 1 and 3. Here, we have few observations as follows:
+		First we will start with analysis 1 and 3. Following are the few observations:
 		
 			
 		\begin{itemize}
 		
-			\item Dates are reported as anomalies, if retail price at centre is increasing more as compared to average retail price for analysis 1 or if retail price at centre is increasing more as compared to wholesale price for analysis 3. \\
-			Such cases are reported for the following tenure by this method:
+			\item In case of analysis 1, dates are reported as anomalies if retail price at centre is increasing more as compared to average retail price and in case of analysis 3, it is reported if retail price at centre is increasing more as compared to wholesale price. \\
+			Following tenures are some cases reported by this method:
 			\begin{itemize}
 				\item \textit{Analysis 1}: June 2010, August 2010, May 2011, June 2011, May Jun Nov 2012, Apr May 2013 (Prices went too high as compared to average) (See Figure \ref{fig:12111})
 				\item \textit{Analysis 3}: Apr July Oct Dec 2010, Jan 2011, May June 2014 (See Figure \ref{fig:12131})
@@ -488,8 +488,8 @@ In this section, we try to analyse each method, what is limitation of each metho
 			
 			So, even though we do not have articles for these anomalies, but method is behaving as it should be. 			
 			
-			\item This method also has limitations. There exist few cases where, drop in retail price for one center is quite huge as compared to drop in average retail price (in case of \textit{analysis 1}) or wholesale price (in case of \textit{analysis 3}). This is good thing for centres, and should not be treated as anomaly. But in this case, slope value goes high and that's why our method reports that tenure as anomaly as well.\\
-			Such cases are reported for the following tenure by this method:
+			\item One of the limitation for this method is that there are some cases where drop in retail price for one center is quite huge as compared to drop in average retail price (in case of \textit{analysis 1}) or wholesale price (in case of \textit{analysis 3}). This is good thing for customers at that centre and should not be treated as anomaly. But in this case, slope value goes high and that's why our method reports that tenure as anomaly.\\
+			Following tenures are some cases reported by this method:
 			\begin{itemize}
 				\item \textit{Analysis 1}: January 2010, June Aug 2012, Jan 2013, Feb Oct 2014, Feb 2015  (See Figure \ref{fig:12112})
 				\item \textit{Analysis 3}: Feb May 2010  (See Figure \ref{fig:12132})
@@ -513,9 +513,9 @@ In this section, we try to analyse each method, what is limitation of each metho
 			
 			
 			
-			\item Other observation is related to why few anomalies were reported in news but not by our system. Reason for that is we are comparing relative change in two time series. Now for some dates, where news article is present but our system did not report, value of both time series increased together. Although, prices went too high, but still relative change, i.e. slope value remained relatively low as compared to others, and so that was not reported by our system.
+			\item Other observation is related to why few anomalies were reported in news but not by our system. Reason for that is we are comparing relative change in two time series. Now for some dates, where news article is present but our system did not report, value of both time series increased together. Although, prices went too high, but still relative change, i.e. slope value remained relatively low as compared to others. So that was not reported by our system.
 				
-			Such cases are reported for the following tenure by this method:
+			Following tenures are some cases reported by this method:
 			\begin{itemize}
 				\item \textit{Analysis 1}: Dec 2010, Jan Feb 2012, June 2013, May June 2015   (See Figure \ref{fig:12113})
 				\item \textit{Analysis 3}: Feb 2013, July 2014   (See Figure \ref{fig:12133})
@@ -544,7 +544,7 @@ In this section, we try to analyse each method, what is limitation of each metho
 		    	\label{fig:12114}
 			\end{figure}			
 			
-			\item In some cases, tenure reported as anomaly is quite large, because situations were abnormal for long time. But is not necessary that news articles should be present for such a large tenure. And anomaly reported was justifiable. For\textit{ Analysis 1}, such tenure was reported for March end to May start 2014.  (See Figure \ref{fig:12115})
+			\item In some cases, tenure reported as anomaly is quite large, because situations were abnormal for long time. But is not necessary that news articles should be present for such a large tenure and anomaly reported was justifiable. For\textit{ Analysis 1}, such tenure was reported for March end to May start 2014.  (See Figure \ref{fig:12115})
 			
 			\begin{figure}[H]
 		    	\centering
@@ -553,7 +553,7 @@ In this section, we try to analyse each method, what is limitation of each metho
 		    	\label{fig:12115}
 			\end{figure}			
 			
-			\item In \textit{Analysis 1}, For June 2014, method has reported tenure upto mid June when prices started increasing, but it remained high and due to that some news articles are present for June 21 around, we have missed, because at that time relative slope value became normal, but since prices were high, it was covered by news articles. (See Figure \ref{fig:12116})
+			\item In \textit{Analysis 1} for June 2014, method has reported tenure upto mid June when prices started increasing but it remained high and due to that some news articles are present around June 21. We have missed because at that time relative slope value became normal. But since prices were high, it was covered by news articles. (See Figure \ref{fig:12116})
 			
 			\begin{figure}[H]
 		    	\centering
@@ -563,7 +563,7 @@ In this section, we try to analyse each method, what is limitation of each metho
 			\end{figure}			
 			
 			
-			\item There exist some cases in \textit{Analysis 3} where retail price were decreasing but wholesale price kept on increasing, this created negative slope value, where as in this scenario, we were looking for only positive slopes and that's why this method missed it. Such periods were in July Aug Sept 2013, Nov Dec 2013. (See Figure \ref{fig:12134})
+			\item There exist some cases in \textit{Analysis 3} where retail price were decreasing but wholesale price kept on increasing, this created negative slope value, whereas in this scenario, we were looking for only positive slopes and that's why this method missed it. Such periods were in July Aug Sept 2013, Nov Dec 2013. (See Figure \ref{fig:12134})
 			
 			\begin{figure}[H]
 		    	\centering
@@ -580,7 +580,7 @@ In this section, we try to analyse each method, what is limitation of each metho
 		\begin{itemize}
 			\item If change in retail price or change in wholesale price is more as compared to change in arrival (prices went too high, even for small drop in arrival), then it is reported as anomaly by this method.\\
 			
-			Such cases are reported for the following tenure by this method:
+			Following tenures are some cases reported by this method:
 			\begin{itemize}
 				\item \textit{Analysis 2}: Oct Dec 2010, May Jun 2013 (See Figure \ref{fig:12121})
 				\item \textit{Analysis 4}: Sept Oct Nov 2010, Jun 2013, Jun 2015 (See Figure \ref{fig:12141})
@@ -601,7 +601,7 @@ In this section, we try to analyse each method, what is limitation of each metho
 			\end{figure}
 			
 			\item But in above described scenario, when change in price is high, but prices are decreasing and when arrival is increasing, and if drop in price is too high, then also it will be reported as anomaly.	So this is limitation of this method and reports false positives in this case.\\
-			Such cases are reported for the following tenure by this method:
+			Following tenures are some cases reported by this method:
 			
 			\begin{itemize}
 				\item \textit{Analysis 2}: Feb Mar 2011, Jan Feb 2014 (See Figure \ref{fig:12122})
@@ -622,9 +622,9 @@ In this section, we try to analyse each method, what is limitation of each metho
 		    	\label{fig:12142}
 			\end{figure}
 			
-			\item One more limitation of this method is when arrival is increasing but along with that retail or wholesale price is also increasing. Since will come out as positive slope and this method, in this scenario is only looking for negative slope and that's why, this will not be reported as anomaly and news articles corresponding to this tenure will not be matched by results of this method.\\		
+			\item One more limitation of this method is when arrival is increasing but along with that retail or wholesale price is also increasing. This will result into a positive slope and in this scenario we are only looking for negative slope and that's why, this will not be reported as anomaly and news articles corresponding to this tenure will not be matched by results of this method.\\		
 			
-			Such cases are reported for the following tenure by this method:
+			Following tenures are some cases reported by this method:
 			\begin{itemize}
 				\item \textit{Analysis 2}: Jan Feb July Nov 2013, June July 2014 (See Figure \ref{fig:12123})
 				\item \textit{Analysis 4}: Jan Feb 2013, July 2014, June 2015 (See Figure \ref{fig:12143})
@@ -644,7 +644,7 @@ In this section, we try to analyse each method, what is limitation of each metho
 		    	\label{fig:12143}
 			\end{figure}
 			
-			\item There exist some cases, where due to low arrival, prices went too high and when slowly arrival started entering into market, prices were going down slowly. This period of slow decrement of prices is not reported by this method, but since prices were still high, this system could not report dates for news articles corresponding to this tenure. Such cases occurred in \textit{Analysis 2} for Dec 2010 and Jan 2011 (See Figure \ref{fig:12124})and in \textit{Analysis 4} for Nov 2013 (See Figure \ref{fig:12144}). Also, note that these articles were mainly on Pakistan banned exports and article on inflation stating that inflation rate is high and onion prices are playing an important role in this.
+			\item There exist some cases where due to low arrival, prices went high and when slowly arrival started entering into market, prices were going down slowly. This period of slow decrement of prices is not reported by this method but since prices were still high, this system could not report dates for news articles corresponding to this tenure. Such cases occurred in \textit{Analysis 2} for Dec 2010 and Jan 2011 (See Figure \ref{fig:12124})and in \textit{Analysis 4} for Nov 2013 (See Figure \ref{fig:12144}). Also, note that these articles were mainly on Pakistan banned exports and article on inflation stating that inflation rate went high and onion prices are playing an important role in this.
 			
 			\begin{figure}[H]
 		    	\centering
@@ -660,7 +660,7 @@ In this section, we try to analyse each method, what is limitation of each metho
 		    	\label{fig:12144}
 			\end{figure}
 			
-			\item In some of the cases, where arrival fell too much drastically, and due to that retail price went high drastically as well. And since retail prices went high too much it got reported in news articles, but this was expected, as arrival was less. But here both the changes were high, so ultimately slope value was not so high and was not reported by system. Such cases in \textit{Analysis 2} exist for Aug Sept 2013  (See Figure \ref{fig:12125}).
+			\item In some of the cases where arrival fell drastically and due to that retail price went high drastically. Since retail prices went high too much, it got reported in news articles but this was expected as arrival was less. But here both the changes were high, so ultimately slope value was not so high and was not reported by system. Such cases in \textit{Analysis 2} exist for Aug Sept 2013  (See Figure \ref{fig:12125}).
 			
 			\begin{figure}[H]
 		    	\centering
@@ -681,7 +681,7 @@ In this section, we try to analyse each method, what is limitation of each metho
 		\end{itemize}
 
 
-	Also, note one thing that, this method reports anomaly as whole window of few days (here 7 days). So, because of that too, method tends to report more anomaly dates.
+	Also, note one thing that this method reports anomaly as whole window of few days (here 7 days). So because of that too, method tends to report more anomaly dates.
 
 
 \subsection{Linear Regression}
@@ -696,16 +696,16 @@ In this section, we try to analyse each method, what is limitation of each metho
 			\item \textbf{Wholesale Price vs Arrival of Onion}: Here, we take Wholesale price as dependent variable and arrival of onion as independent variable.
 		\end{enumerate}
 		
-		So, in each of the case, we try to find relative difference between ideal value and its real value, and if it is huge, crossing threshold than it is reported as anomaly. Now, note that in analysis 1 and 3 stated above, both the time series are directly proportional to each other and in the analysis 2 and 4 both the time series are inversely proportional to each other. So, limitations faced by this method for analysis 1 and 3 will be similar and for analysis 2 and 4 will be similar. While describing this method, each analysis will be referenced by its corresponding number.\\
+		So, in each of the case, we try to find relative difference between ideal value and its real value, and if it is huge (crosses threshold) then it is reported as anomaly. Now, note that in analysis 1 and 3 stated above, both the time series are directly proportional to each other and in the analysis 2 and 4 both the time series are inversely proportional to each other. So, limitations faced by this method for analysis 1 and 3 will be similar and for analysis 2 and 4 will be similar. While describing this method, each analysis will be referenced by its corresponding number.\\
 		\\
-		First we will start with analysis 1 and 3. Here, we have few observations as follows:
+		First we will start with analysis 1 and 3. Following are the few observations we made:
 		
 		\begin{itemize}
 			\item This method will report any tenure as anomaly when there is large gap i.e. more than expected between retail price of a center and average retail price (for \textit{Analysis 1}) or wholesale price (for \textit{Analysis 3}).
 			
 			
 			
-			Such cases are reported for the following tenure by this method:
+			Following tenures are some cases reported by this method:
 			\begin{itemize}
 				\item \textit{Analysis 1}: Dec 2010, Near to Jan 2011, May June July 2011, Jan May June 2012, June 2013 (See Figure \ref{fig:12211})
 				\item \textit{Analysis 3}: Feb Mar 2011, Jan 2012, June 2012, Jan Feb 2014, Apr 2015 (See Figure \ref{fig:12231})
@@ -726,7 +726,7 @@ In this section, we try to analyse each method, what is limitation of each metho
 			
 			\item One limitation of this method is that, if both the series have high values for some time period and difference between them is not so huge then that will not be reported as anomaly.	\\
 			\\
-			Such cases are reported for the following tenure by this method:
+			Following tenures are some cases reported by this method:
 			\begin{itemize}
 				\item \textit{Analysis 1}: Jan 2011, Jan Feb Aug Sept Oct Nov 2013, July 2014, June July 2015 (See Figure \ref{fig:12212})
 				\item \textit{Analysis 3}: Feb 2013, Aug Sept Oct Nov 2013, June July 2015 (See Figure \ref{fig:12232})
@@ -747,7 +747,7 @@ In this section, we try to analyse each method, what is limitation of each metho
 			
 					
 			
-			\item  Note that in the tenure of Oct Nov 2013 (for \textit{Analysis 1}) prices are usually high and as the prices are high, tolerance level also increases little bit. So even, if for some difference it is reported as anomaly at lower price, it is not necessary that for the same difference, it will be reported as anomaly at higher prices. (See Figure \ref{fig:12212})		
+			\item  Note that in the tenure of Oct Nov 2013 (for \textit{Analysis 1}) prices are usually high and as the prices are high, tolerance level also increases little bit. So, even if for some difference it is reported as anomaly at lower price, it is not necessary that for the same difference, it will be reported as anomaly at higher prices. (See Figure \ref{fig:12212})		
 			
 		\end{itemize}
 		
@@ -756,8 +756,8 @@ In this section, we try to analyse each method, what is limitation of each metho
 		
 		
 		\begin{itemize}
-			\item Here, in this method, it tries to predict what should be retail price or wholesale price based on the arrival of the product. So if the price is too high for the given arrival than it will be reported as anomaly.
-			Such cases are reported for the following tenure by this method:
+			\item Here, in this method, it tries to predict what should be retail price or wholesale price based on the arrival of the product. So if the price is too high for the given arrival then it will be reported as anomaly.
+			Following tenures are some cases reported by this method:
 			\begin{itemize}
 				\item \textit{Analysis 2}: Dec 2010, Jan Feb 2011, Aug Sept Oct Nov 2013, Oct Dec 2014 (See Figure \ref{fig:12221})
 				\item \textit{Analysis 4}: Dec 2010, July Aug Sept Oct Nov Dec 2013, July 2014 (See Figure \ref{fig:12241})
@@ -778,9 +778,9 @@ In this section, we try to analyse each method, what is limitation of each metho
 			
 			
 			
-			\item Now, this method has also missed few of the articles for this analysis as well. Now, looking at the graphs we could not interpret what may be exact reason why they were missed. But method may have found prices to be moderate and that's they might have been missed.
+			\item Now, this method has also missed few of the articles for this analysis as well. Now, looking at the graphs we could not interpret what may be exact reason why they were missed. But method may have found prices to be moderate and that's why they might have been missed.
 			
-			Such cases are reported for the following tenure by this method:
+			Following tenures are some cases reported by this method:
 			\begin{itemize}
 				\item \textit{Analysis 2}: Jan Feb 2013, July 2014, June July 2015 (See Figure \ref{fig:12222})
 				\item \textit{Analysis 4}: Jan Feb 2013, June July 2013, June 2015 (See Figure \ref{fig:12242})
@@ -981,7 +981,13 @@ In this section, we try to analyse each method, what is limitation of each metho
 	\\
 	The working of this method is quite complex and can not be generalised. For detailed information go through the paper. So we will just represent, how method has performed on the different analysis.\\
 	\\
-	For \textbf{Retail Price vs Average of Retail Price} (See Figure \ref{fig:1231}) and \textbf{Retail Price vs Wholesale Price} (See Figure \ref{fig:12331}), this method has performed well. For \textbf{Retail Price vs Average of Retail Price}, every tenure of anomaly has been matched with some news articles. The anomalies which were not matched with news articles were part of large tenure which had some matching with news articles and usually, this tenure is large and for every date news articles are not present. Few articles are missed that might be due to limited number of points chosen. If number of points are increased, than it might be covered as well. For \textbf{Retail Price vs Wholesale Price}, apart from Jan 2013, July 2014, June 2015, all anomalies are matching with some news articles.\\
+	For \textbf{Retail Price vs Average of Retail Price} (See Figure \ref{fig:1231}) and \textbf{Retail Price vs Wholesale Price} (See Figure \ref{fig:12331}), this method has performed well. For \textbf{Retail Price vs Average of Retail Price}, every tenure of anomaly has been matched with some news articles.
+	\\
+	The anomalies which were not matched with news articles were part of large tenure which had some matching with news articles and usually, this tenure is large and for every date news articles are not present. 
+	\\
+	Few articles are missed, that might be due to limited number of points chosen. If number of points are increased, than it might be covered as well. 
+	\\
+	For \textbf{Retail Price vs Wholesale Price}, apart from Jan 2013, July 2014, June 2015, all anomalies are matching with some news articles.\\
 			\begin{figure}[H]
 		    	\centering
   		    	\includegraphics[width=0.8\textwidth]{graphs/1231.png}
@@ -996,7 +1002,7 @@ In this section, we try to analyse each method, what is limitation of each metho
 		    	\label{fig:12331}
 			\end{figure}
 	
-	For \textbf{Retail Price vs Arrival of Onion} (See Figure \ref{fig:12321}) and \textbf{Wholesale Price vs Arrival of Onion} (See Figure \ref{fig:12341}), this method is not producing good results. Many points are reported as anomaly which are close to each other. And due to limited number of points, number of anomalies matching with news articles are quite less. Figures \ref{fig:12322_delhi} and \ref{fig:12442_delhi} describe results of these both analysis for Delhi centre.
+	For \textbf{Retail Price vs Arrival of Onion} (See Figure \ref{fig:12321}) and \textbf{Wholesale Price vs Arrival of Onion} (See Figure \ref{fig:12341}), this method is not producing good results. Many points are reported as anomaly which are close to each other. And due to limited number of points, number of anomalies matching with news articles are quite less. The reason might be because of fluctuations seen in the arrival timeseries. Figures \ref{fig:12322_delhi} and \ref{fig:12442_delhi} describe results of these both analysis for Delhi centre.
 			\begin{figure}[H]
 		    	\centering
   		    	\includegraphics[width=0.8\textwidth]{graphs/12321.png}
