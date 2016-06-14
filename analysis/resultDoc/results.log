@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.5.27)  14 JUN 2016 19:19
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.5.27)  14 JUN 2016 19:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1375,13 +1375,13 @@ Package pdftex.def Info: graphs/12442_delhi.png used on input line 1031.
 (pdftex.def)             Requested size: 362.37569pt x 199.62808pt.
  [30 <./graphs/12322_delhi.png> <./graphs/12442_delhi.png>] (./results.aux) ) 
 Here is how much of TeX's memory you used:
- 19059 strings out of 495028
- 458004 string characters out of 6181497
+ 19062 strings out of 495028
+ 458067 string characters out of 6181497
  641557 words of memory out of 5000000
- 21849 multiletter control sequences out of 15000+600000
+ 21852 multiletter control sequences out of 15000+600000
  9154 words of font info for 32 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 56i,11n,84p,1059b,1817s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,11n,84p,1059b,1819s stack positions out of 5000i,500n,10000p,200000b,80000s
 </
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/te
@@ -1390,7 +1390,7 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmti10.pfb>
-Output written on results.pdf (31 pages, 5163088 bytes).
+Output written on results.pdf (31 pages, 5163286 bytes).
 PDF statistics:
  224 PDF objects out of 1000 (max. 8388607)
  95 compressed objects within 1 object stream
