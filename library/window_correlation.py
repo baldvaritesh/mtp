@@ -172,10 +172,7 @@ def correlationAtLag(series1, series2, lag, window_size):
     n = min(n1,n2)    
     # Find Correlation at all Window
     result = []
-    sig_res=[]
-    p_Val = []
-    scnt=0
-    inscnt=0
+    
     if(window_size >= n):
         temp = scipy.stats.pearsonr(series1[start1:n],series2[start2:n])
         result.append(temp[0])
@@ -196,9 +193,10 @@ def correlationAtLag(series1, series2, lag, window_size):
                 print "Temp arr 2"
                 print temp_arr_2'''
             # Get maximum correlation and append it to array
-
             result.append((temp[0],temp[1]))
+     
             i = i + window_size
+
     return result
 
 '''
@@ -219,6 +217,9 @@ Requirements: Length of both the series should be equal
 '''
 def WindowCorrelationWithConstantLag(arr1, arr2, window_size=15,maxlag=15, positive_correlation=True, pos=1, neg=1):
     result1 = correlation(arr1,arr2, maxlag, pos, neg)
+    print "Correlation Results::::::::::::::::"
+    print result1
+    print "Correlation Results End::::::::::::::::"
     (lag,correlationVal) = getMaxCorr(result1,positive_correlation)
     result2 = correlationAtLag(arr1,arr2, lag, window_size)
     return (lag,result2)
@@ -244,7 +245,7 @@ def anomaliesFromWindowCorrelationWithConstantlag(arr1, arr2, window_size=15,max
     arr2_data = [x[1] for x in arr2]
     arr = WindowCorrelationWithConstantLag(arr1_data,arr2_data,window_size,maxlag,positive_correlation,pos,neg)
     
-    if(arr[1][0][0] >= 0):
+    if(arr[1][0][1] >= 0):
         array_to_consider = arr1
     else:
         array_to_consider = arr2
@@ -253,25 +254,26 @@ def anomaliesFromWindowCorrelationWithConstantlag(arr1, arr2, window_size=15,max
         (lower_thresh,upper_thrash)= MADThreshold(arr[1][k][0])
         print "Threshold::::::::::::::::::"
         print str(lower_thresh)+":::"+str(upper_thrash)
+        (lower_thresh,upper_thrash)= MADThreshold(arr[1])
     else:
         lower_thresh = upper_thrash = threshold
     print "Lag At which Series are shifted........................"
     print arr[0]
     for i in range(0,len(arr[1])):
         if(positive_correlation):
-            if(lower_thresh > arr[1][i][0] and arr[1][i][1]<0.01):
+            if(arr[1][i][1]<0.01 and lower_thresh > arr[1][i][0]):
                 start_date_of_window = datetime.datetime.strptime(array_to_consider[i*window_size][0], "%Y-%m-%d").date()
                 end_date_of_window = start_date_of_window + datetime.timedelta(days=(window_size-1))
                 start_date_of_window = start_date_of_window.strftime("%Y-%m-%d")
                 end_date_of_window = end_date_of_window.strftime("%Y-%m-%d")
-                datesOfAnomalies.append((start_date_of_window,end_date_of_window, arr[1][i]))
+                datesOfAnomalies.append((start_date_of_window,end_date_of_window, arr[1][i][0]))
         else:
-            if(upper_thrash < arr[1][i][0] and arr[1][i][1]<0.01):
+            if(arr[1][i][1]<0.01 and upper_thrash < arr[1][i][0]):
                 start_date_of_window = datetime.datetime.strptime(array_to_consider[i*window_size][0], "%Y-%m-%d").date()
                 end_date_of_window = start_date_of_window + datetime.timedelta(days=(window_size-1))
                 start_date_of_window = start_date_of_window.strftime("%Y-%m-%d")
                 end_date_of_window = end_date_of_window.strftime("%Y-%m-%d")
-                datesOfAnomalies.append((start_date_of_window,end_date_of_window, arr[1][i]))
+                datesOfAnomalies.append((start_date_of_window,end_date_of_window, arr[1][i][0]))
     return datesOfAnomalies
 
 

@@ -1,0 +1,55 @@
+VAR model  related analysis:
+
+Retail vs Average data
+For Mumbai
+The Mad threshold limits are : -19.0358099572:::107.697818954
+60% of the data is utilised for data caliberation. o the start date for the analysis starts from 2011-09-16. Thus no dates will be reported before that.
+No dates were reported from January and febuary 2013, because the prediction only varied 20-30% from the actual.
+
+2013-07-19 00:00:00 -2013-09-11 00:00:00 - One news article with suspect of traders nexus operatins in The Times of India on 2013-08-17, rest all on low supply and production
+2013-09-17 00:00:00 - 2014-01-06 00:00:00 - multiple articles on traders nexus reported during this tenure
+2014-12-03 00:00:00- 2014-12-15 00:00:00 - unseasonal rainfall
+
+No values are reported against news articles present May,June, July 2014 despite of heavy deviation because the threshold is set to even higher value.
+Threshold can be reduced to even report such points.
+
+For Delhi
+Var Percentage Threshold::-27.3105715933:::108.229036587
+July 2014 data could have been captured easily as the value was more than 100 or close to 107. But were not reported because of the higher MAD threshold.
+
+
+Retail vs Arrival data
+For Mumbai
+Var Percentage Threshold:: -17.5157159383:::100.551628767
+
+2013-07-19 00:00:00- 2013-09-11 00:00:00 - articles on traders nexus
+2013-09-17 00:00:00- 2014-01-06 00:00:00
+For news articles in dec2012,Jan,Feb2013, the values are not much deviating which means similar trend might have been seen before.
+
+For Delhi
+Var Percentage Threshold:: -31.408964822:::110.093679532
+
+Retail vs Wholesale data
+For Mumbai
+Var Percentage Threshold:: -19.3881378252:::110.550934619
+
+2013-07-19 00:00:00- 2013-09-11 00:00:00
+2013-09-17 00:00:00- 2014-01-06 00:00:00
+For Delhi
+Var Percentage Threshold:: -29.9215203461:::109.941356693
+
+Wholesale vs Arrival data
+For Mumbai
+Var Percentage Threshold:: -44.5716429204:::85.5005787015
+
+2013-07-14 00:00:00- 2013-12-12 00:00:00
+2014-07-07 00:00:00- 2014-08-09 00:00:00
+For Delhi
+Var Percentage Threshold::-34.0033972868:::98.6164524824
+
+
+
+
+
+
+

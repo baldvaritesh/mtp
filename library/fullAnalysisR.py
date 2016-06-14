@@ -154,8 +154,8 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         
         # Hypothesis 3 For Reatil vs AVG: START
         
-        #graphBasedAnomaly = graphBasedAnomalyMain(retailList,i,150)
-        graphBasedAnomaly = []
+        graphBasedAnomaly = graphBasedAnomalyMain(retailList,i,150)
+        #graphBasedAnomaly = []
         graphBasedAnomaly_result = resultOfOneMethod(graphBasedAnomaly)
         
         
@@ -242,8 +242,8 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         temp5 = []
         temp5.append(retailList[i])
         temp5.append(arrivalList[i])
-        #graphBasedAnomaly = graphBasedAnomalyMain(temp5, 0,150)
-        graphBasedAnomaly = []
+        graphBasedAnomaly = graphBasedAnomalyMain(temp5, 0,150)
+        #graphBasedAnomaly = []
         graphBasedAnomaly_result = resultOfOneMethod(graphBasedAnomaly)
         
         
@@ -337,8 +337,8 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         temp6 = []
         temp6.append(c_list)
         temp6.append(wholesaleList[i])
-        #graphBasedAnomaly = graphBasedAnomalyMain(temp6,0,150)
-        graphBasedAnomaly  = []
+        graphBasedAnomaly = graphBasedAnomalyMain(temp6,0,150)
+        #graphBasedAnomaly  = []
         graphBasedAnomaly_result = resultOfOneMethod(graphBasedAnomaly)
         
         lstCentre=[]
@@ -432,8 +432,8 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         temp5 = []
         temp5.append(wholesaleList[i])
         temp5.append(arrivalList[i])
-        #graphBasedAnomaly = graphBasedAnomalyMain(temp5, 0,150)
-        graphBasedAnomaly = []
+        graphBasedAnomaly = graphBasedAnomalyMain(temp5, 0,150)
+        #graphBasedAnomaly = []
         graphBasedAnomaly_result = resultOfOneMethod(graphBasedAnomaly)
         
         lstCentre =[]

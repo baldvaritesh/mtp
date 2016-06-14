@@ -2,6 +2,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{tikz}
+%\usepackage{pgf-pie}
+
 %\usepackage{geometry}
 % \geometry{
 % a4paper,
@@ -30,47 +33,25 @@ analyse these results along with each method.
 \section{Results}
 
 We have performed 4 types of analysis and result for each of this method is as 
-follows. Note that these are primary results. Data for 2 centers are considered 
-over here, Mumbai and Delhi.\\
+follows. Note that these are primary results. Data for 2 centres are considered 
+, Mumbai and Delhi.\\
 \\
-Here are some results related with Mumbai Center. Table \ref{AnomaliesReported} stats the result of anomalies reported by our system, with details about anomalies reported by each method. So here First 5 columns corresponds to each method. Column 6 is union of results of first 3 methods and column 7 is union of result of method 4 and 5, as described in table. Column 8 is intersection of results of column 6 and column 7, which is final result of our system.\\
+Here are some results related with Mumbai Center. Table \ref{AnomaliesReported} stats the result of anomalies reported by our system, with details about anomalies reported by each method. So here First 5 columns corresponds to each method. Column 6 is union of results of first 3 methods and column 7 is union of results of method 4 and 5, as described in table. Column 8 is intersection of results of column 6 and column 7, which is final result of our system.\\
 \\
 Table \ref{ArticlesMatched} stats the result of number of articles matched with the dates reported by our system as anomaly, for each method. So here First 5 columns corresponds to each method. Column 6 is union of results of first 3 methods and column 7 is union of result of method 4 and 5, as described in table. Column 8 is intersection of results of column 6 and column 7, which is final result of our system.\\
 \\
-Note that total number of articles present for center Mumbai is \textbf{143}. Note one thing that articles are present from 2010 onwards. Apart from Graph Based Anomaly method, all methods are producing results from 2006 onwards as input data is from that time.\\
- \\
-Now, we present detailed analysis for each of the different type of time-series. Fist type of such analysis is in table \ref{RetailVsAverage}. This table shows distribution of news articles present year-wise for each method when retail price time series is compared with average retail price time series. Fist type of such analysis is in table \ref{RetailVsArrival}. This table shows distribution of news articles present year-wise for each method when retail price time series is compared with arrival data of onion time series. Third type of such analysis is in table \ref{RetailVsWholesale}. This table shows distribution of news articles present year-wise for each method when retail price time series is compared with wholesale price time series. Fourth type of such analysis is in table \ref{WholesaleVsArrival}. This table shows distribution of news articles present year-wise for each method when wholesale price time series is compared with arrival data of onion time series.\\
+Note that total number of articles present for center Mumbai is \textbf{99}. Note one thing that articles are present from 2010 onwards. Apart from Graph Based Anomaly method, all methods are producing results from 2006 onwards as input data is from that time. The following pie chart shows the analysis of article showing what news articles states as the reason for the price hikes of onion.\\
 \\
-Distribution of anomalies present year-wise, for each method is also shown in table. Result is described in different tables for different analysis. Result for various analysis is described in tables  \ref{RetailVsAverageDist}, \ref{RetailVsArrivalDist}, \ref{RetailVsWholesaleDist} and \ref{WholesaleVsArrivalDist}.\\
+\begin{tikzpicture}
+  % \pie[ text = legend ]{32/Traders Nexus, 18/Not Stated, 10/Unseasonal Rainfall, 12/Low Production, 18/Low Supply, 10/Other  }
+\end{tikzpicture}
+
+
+Now, we present detailed analysis for each of the different type of time-series. First type of such analysis is in table \ref{RetailVsAverage}. This table shows distribution of news articles present (that matched with system results) year-wise for each method when retail price time series is compared with average retail price time series. Second type of such analysis is in table \ref{RetailVsArrival}. This table shows distribution of news articles present year-wise for each method when retail price time series is compared with arrival data of onion time series. Third type of such analysis is in table \ref{RetailVsWholesale}. This table shows distribution of news articles present year-wise for each method when retail price time series is compared with wholesale price time series. Fourth type of such analysis is in table \ref{WholesaleVsArrival}. This table shows distribution of news articles present year-wise for each method when wholesale price time series is compared with arrival data of onion time series.\\
 \\
-Such results of different cities can also be calculated.
-
-
-
-
-	\begin{table}[]
-	\centering
-	
-	\resizebox{\textwidth}{!}
-	{\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
-	\hline
-	Methods		    & Slope Based (1) & Window Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6  $\cap$ 7 \\
-	\hline
-	Retail Vs Average    & 742             & 1245                   & 353                   & 100             & 177              & 1871          & 192       & 136       \\
-	\hline
-	Retail Vs Arrival    & 420             & 120                    & 353                   & 100             & 167              & 810           & 267       & 173       \\
-	\hline
-	Retail Vs Wholesale  & 658             & 1230                   & 310                   & 100             & 167              & 1819          & 229       & 132       \\
-	\hline
-	Wholesale Vs Arrival & 448             & 525                    & 282                   & 100             & 186              & 1165          & 286       & 217       \\
-	\hline
-	\end{tabular}}
-	\caption{Anomalies Reported}
-	\label{AnomaliesReported}
-	\end{table}
-    
-    
-    
+Distribution of anomalies present year-wise, for each method is also shown in table. Result for various analysis is described in tables  \ref{RetailVsAverageDist}, \ref{RetailVsArrivalDist}, \ref{RetailVsWholesaleDist} and \ref{WholesaleVsArrivalDist}.\\
+\\
+Such results for different cities can also be calculated.
 
   
 	\begin{table}[]
@@ -79,15 +60,36 @@ Such results of different cities can also be calculated.
 	\resizebox{\textwidth}{!}
 	{\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
 	\hline
-	Methods		    & Slope Based (1) & Window Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6  $\cap$ 7 \\
+	Methods              & Slope Based (1) & Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6 $\cap$ 7  \\
 	\hline
-	Retail Vs Average    & 742             & 1245                   & 353                   & 100             & 177              & 1871          & 192       & 136       \\
+	Retail Vs Average    & 742             & 255             & 353                   & 150             & 177              & 1206          & 228       & 84  \\
 	\hline
-	Retail Vs Arrival    & 420             & 120                    & 353                   & 100             & 167              & 810           & 267       & 173       \\
+	Retail Vs Arrival    & 420             & 795             & 353                   & 150             & 167              & 1381          & 317       & 256 \\
 	\hline
-	Retail Vs Wholesale  & 658             & 1230                   & 310                   & 100             & 167              & 1819          & 229       & 132       \\
+	Retail Vs Wholesale  & 658             & 420             & 310                   & 150             & 167              & 1243          & 279       & 124 \\
 	\hline
-	Wholesale Vs Arrival & 448             & 525                    & 282                   & 100             & 186              & 1165          & 286       & 217       \\
+	Wholesale Vs Arrival & 448             & 705             & 282                   & 150             & 186              & 1315          & 336       & 244 \\
+	\hline
+	\end{tabular}}
+	\caption{Anomalies Reported}
+	\label{AnomaliesReported}
+	\end{table}
+      
+	\begin{table}[]
+	\centering
+	
+	\resizebox{\textwidth}{!}
+	{\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
+	\hline
+	Methods              & Slope Based (1) & Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6 $\cap$ 7   \\
+	\hline
+	Retail Vs Average    & 67              & 47              & 50                    & 95              & 122              & 142           & 144       & 61  \\
+	\hline
+	Retail Vs Arrival    & 42              & 74              & 167                   & 0               & 119              & 220           & 119       & 119 \\
+	\hline
+	Retail Vs Wholesale  & 30              & 55              & 40                    & 39              & 119              & 107           & 124       & 44  \\
+	\hline
+	Wholesale Vs Arrival & 64              & 64              & 174                   & 0               & 139              & 219           & 139       & 139 \\
 	\hline
 	\end{tabular}}
 	\caption{Number of news articles matched with system}
@@ -101,21 +103,21 @@ Such results of different cities can also be calculated.
 	\resizebox{\textwidth}{!}
 	{\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
 	\hline
-	Distribution of All Articles & Articles Present & Slope Based (1) & Window Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6  $\cap$ 7 \\
+	Distribution of All Articles & Articles Present & Slope Based (1) & Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6 $\cap$ 7 \\
 	\hline
-	2010                         & 7                & 0           & 5           & 6                 & 0           & 0             & 6         & 0     & 0                                     \\
+	2010                         & 6                & 0               & 0               & 8                     & 2               & 0                & 8             & 2         & 0  \\
 	\hline
-	2011                         & 7                & 0           & 3           & 0                 & 2           & 0             & 2         & 2     & 2                                     \\
+	2011                         & 3                & 0               & 0               & 0                     & 12              & 0                & 0             & 12        & 0  \\
 	\hline
-	2012                         & 2                & 1           & 1           & 0                 & 0           & 0             & 1         & 0     & 0                                     \\
+	2012                         & 2                & 1               & 0               & 0                     & 0               & 0                & 1             & 0         & 0  \\
 	\hline
-	2013                         & 77               & 46          & 31          & 17                & 30          & 52            & 50        & 52    & 50                                    \\
+	2013                         & 54               & 42              & 14              & 18                    & 78              & 119              & 61            & 124       & 61 \\
 	\hline
-	2014                         & 37               & 6           & 18          & 14                & 0           & 1             & 20        & 1     & 1                                     \\
+	2014                         & 23               & 24              & 0               & 24                    & 3               & 3                & 39            & 6         & 0  \\
 	\hline
-	2015                         & 13               & 0           & 12          & 0                 & 0           & 0             & 12        & 0     & 0                                     \\
+	2015                         & 11               & 0               & 33              & 0                     & 0               & 0                & 33            & 0         & 0  \\
 	\hline
-	Total                        & 143              & 53          & 70          & 37                & 32          & 53            & 91        & 55    & 53                                   \\
+	Total                        & 99               & 67              & 47              & 50                    & 95              & 122              & 142           & 144       & 61 \\
 	\hline
 	\end{tabular}}	
 	\caption{Retail Price VS Average Retail Price}
@@ -129,21 +131,21 @@ Such results of different cities can also be calculated.
 	\resizebox{\textwidth}{!}
 	{\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
 	\hline
-	Distribution of All Articles & Articles Present & Slope Based (1) & Window Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6  $\cap$ 7 \\
+	Distribution of All Articles & Articles Present & Slope Based (1) & Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6 $\cap$ 7  \\
 	\hline
-	2010                         & 7                & 0           & 5           & 6                 & 0           & 0             & 6         & 0     & 0                                     \\
+	2010                         & 6                & 17              & 0               & 17                    & 0               & 0                & 17            & 0         & 0   \\
 	\hline
-	2011                         & 7                & 0           & 3           & 0                 & 2           & 0             & 2         & 2     & 2                                     \\
+	2011                         & 3                & 1               & 0               & 12                    & 0               & 0                & 12            & 0         & 0   \\
 	\hline
-	2012                         & 2                & 1           & 1           & 0                 & 0           & 0             & 1         & 0     & 0                                     \\
+	2012                         & 2                & 0               & 0               & 0                     & 0               & 0                & 0             & 0         & 0   \\
 	\hline
-	2013                         & 77               & 46          & 31          & 17                & 30          & 52            & 50        & 52    & 50                                    \\
+	2013                         & 54               & 10              & 39              & 126                   & 0               & 119              & 137           & 119       & 119 \\
 	\hline
-	2014                         & 37               & 6           & 18          & 14                & 0           & 1             & 20        & 1     & 1                                     \\
+	2014                         & 23               & 14              & 35              & 12                    & 0               & 0                & 54            & 0         & 0   \\
 	\hline
-	2015                         & 13               & 0           & 12          & 0                 & 0           & 0             & 12        & 0     & 0                                     \\
+	2015                         & 11               & 0               & 0               & 0                     & 0               & 0                & 0             & 0         & 0   \\
 	\hline
-	Total                        & 143              & 53          & 70          & 37                & 32          & 53            & 91        & 55    & 53                                   \\
+	Total                        & 99               & 42              & 74              & 167                   & 0               & 119              & 220           & 119       & 119 \\
 	\hline
 	\end{tabular}}	
 	\caption{Retail Price VS Arrival data of onion}
@@ -158,21 +160,21 @@ Such results of different cities can also be calculated.
 	\resizebox{\textwidth}{!}
 	{\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
 	\hline
-	Distribution of All Articles & Articles Present & Slope Based (1) & Window Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6  $\cap$ 7 \\
+	Distribution of All Articles & Articles Present & Slope Based (1) & Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6 $\cap$ 7 \\
 	\hline
-	2010                         & 7                & 0           & 5           & 6                 & 0           & 0             & 6         & 0     & 0                                     \\
+	2010                         & 6                & 6               &                 & 2                     & 0               & 0                & 6             & 0         & 0  \\
 	\hline
-	2011                         & 7                & 0           & 3           & 0                 & 2           & 0             & 2         & 2     & 2                                     \\
+	2011                         & 3                & 1               & 0               & 0                     & 0               & 0                & 1             & 0         & 0  \\
 	\hline
-	2012                         & 2                & 1           & 1           & 0                 & 0           & 0             & 1         & 0     & 0                                     \\
+	2012                         & 2                & 2               & 7               & 0                     & 0               & 0                & 7             & 0         & 0  \\
 	\hline
-	2013                         & 77               & 46          & 31          & 17                & 30          & 52            & 50        & 52    & 50                                    \\
+	2013                         & 54               & 7               & 21              & 18                    & 39              & 119              & 45            & 124       & 44 \\
 	\hline
-	2014                         & 37               & 6           & 18          & 14                & 0           & 1             & 20        & 1     & 1                                     \\
+	2014                         & 23               & 14              & 27              & 20                    & 0               & 0                & 48            & 0         & 0  \\
 	\hline
-	2015                         & 13               & 0           & 12          & 0                 & 0           & 0             & 12        & 0     & 0                                     \\
+	2015                         & 11               & 0               & 0               & 0                     & 0               & 0                & 0             & 0         & 0  \\
 	\hline
-	Total                        & 143              & 53          & 70          & 37                & 32          & 53            & 91        & 55    & 53                                   \\
+	Total                        & 99               & 30              & 55              & 40                    & 39              & 119              & 107           & 124       & 44 \\
 	\hline
 	\end{tabular}}	
 	\caption{Retail Price VS Wholesale Price}
@@ -186,21 +188,21 @@ Such results of different cities can also be calculated.
 	\resizebox{\textwidth}{!}
 	{\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
 	\hline
-	Distribution of All Articles & Articles Present & Slope Based (1) & Window Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6  $\cap$ 7 \\
+	Distribution of All Articles & Articles Present & Slope Based (1) & Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6 $\cap$ 7  \\
 	\hline
-	2010                         & 7                & 0           & 5           & 6                 & 0           & 0             & 6         & 0     & 0                                     \\
+	2010                         & 6                & 17              & 0               & 17                    & 0               & 0                & 17            & 0         & 0   \\
 	\hline
-	2011                         & 7                & 0           & 3           & 0                 & 2           & 0             & 2         & 2     & 2                                     \\
+	2011                         & 3                & 1               & 0               & 12                    & 0               & 0                & 12            & 0         & 0   \\
 	\hline
-	2012                         & 2                & 1           & 1           & 0                 & 0           & 0             & 1         & 0     & 0                                     \\
+	2012                         & 2                & 0               & 0               & 0                     & 0               & 0                & 0             & 0         & 0   \\
 	\hline
-	2013                         & 77               & 46          & 31          & 17                & 30          & 52            & 50        & 52    & 50                                    \\
+	2013                         & 54               & 25              & 15              & 125                   & 0               & 123              & 129           & 123       & 123 \\
 	\hline
-	2014                         & 37               & 6           & 18          & 14                & 0           & 1             & 20        & 1     & 1                                     \\
+	2014                         & 23               & 21              & 49              & 20                    & 0               & 16               & 61            & 16        & 16  \\
 	\hline
-	2015                         & 13               & 0           & 12          & 0                 & 0           & 0             & 12        & 0     & 0                                     \\
+	2015                         & 11               & 0               & 0               & 0                     & 0               & 0                & 0             & 0         & 0   \\
 	\hline
-	Total                        & 143              & 53          & 70          & 37                & 32          & 53            & 91        & 55    & 53                                   \\
+	Total                        & 99               & 64              & 64              & 174                   & 0               & 139              & 219           & 139       & 139 \\
 	\hline
 	\end{tabular}}	
 	\caption{ Wholesale Price VS Arrival data of onion}
@@ -215,29 +217,29 @@ Such results of different cities can also be calculated.
 	\resizebox{\textwidth}{!}
 	{\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
 	\hline
-	Distribution of All Articles & Slope Based (1) & Window Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6  $\cap$ 7 \\
+	Distribution of All Articles & Slope Based (1) & Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6 $\cap$ 7 \\
 	\hline
-	2006                         & 35          & 30          & 0                 & 78          & 0             & 58        & 78    & 7                                     \\
+	2006                         & 133             & 30              & 65                    & 0               & 0                & 204           & 0         & 0  \\
 	\hline
-	2007                         & 63          & 0           & 0                 & 22          & 0             & 63        & 22    & 0                                     \\
+	2007                         & 14              & 15              & 30                    & 0               & 0                & 53            & 0         & 0  \\
 	\hline
-	2008                         & 28          & 0           & 0                 & 0           & 0             & 28        & 0     & 0                                     \\
+	2008                         & 42              & 15              & 0                     & 0               & 0                & 47            & 0         & 0  \\
 	\hline
-	2009                         & 28          & 15          & 0                 & 0           & 0             & 43        & 0     & 0                                     \\
+	2009                         & 82              & 15              & 0                     & 1               & 0                & 96            & 1         & 0  \\
 	\hline
-	2010                         & 48          & 15          & 46                & 0           & 0             & 82        & 0     & 0                                     \\
+	2010                         & 72              & 45              & 28                    & 6               & 0                & 142           & 6         & 0  \\
 	\hline
-	2011                         & 36          & 30          & 40                & 0           & 0             & 105       & 0     & 0                                     \\
+	2011                         & 56              & 60              & 115                   & 27              & 0                & 182           & 27        & 0  \\
 	\hline
-	2012                         & 77          & 0           & 0                 & 0           & 0             & 77        & 0     & 0                                     \\
+	2012                         & 84              & 0               & 33                    & 0               & 0                & 100           & 0         & 0  \\
 	\hline
-	2013                         & 59          & 0           & 168               & 0           & 161           & 203       & 161   & 161                                   \\
+	2013                         & 77              & 15              & 56                    & 108             & 161              & 125           & 170       & 80 \\
 	\hline
-	2014                         & 46          & 30          & 99                & 0           & 6             & 151       & 6     & 5                                     \\
+	2014                         & 140             & 0               & 26                    & 8               & 16               & 155           & 24        & 4  \\
 	\hline
-	2015                         & 0           & 0           & 0                 & 0           & 0             & 0         & 0     & 0                                     \\
+	2015                         & 42              & 60              & 0                     & 0               & 0                & 102           & 0         & 0  \\
 	\hline
-	Total			    & 420         & 120         & 353               & 100         & 167           & 810       & 267   & 173                                   \\
+	Total                        & 742             & 255             & 353                   & 150             & 177              & 1206          & 228       & 84 \\
 	\hline
 	\end{tabular}}
 	\caption{Distribution of Anomalies reported by system for Retail Price VS Average Retail Price}
@@ -252,29 +254,29 @@ Such results of different cities can also be calculated.
 	\resizebox{\textwidth}{!}
 	{\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
 	\hline
-	Distribution of All Articles & Slope Based (1) & Window Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6  $\cap$ 7 \\
+	Distribution of All Articles & Slope Based (1) & Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6 $\cap$ 7  \\
 	\hline
-	2006                         & 35          & 30          & 0                 & 78          & 0             & 58        & 78    & 7                                     \\
+	2006                         & 35              & 185             & 0                     & 78              & 0                & 199           & 78        & 48  \\
 	\hline
-	2007                         & 63          & 0           & 0                 & 22          & 0             & 63        & 22    & 0                                     \\
+	2007                         & 63              & 85              & 0                     & 72              & 0                & 148           & 72        & 42  \\
 	\hline
-	2008                         & 28          & 0           & 0                 & 0           & 0             & 28        & 0     & 0                                     \\
+	2008                         & 28              & 105             & 0                     & 0               & 0                & 126           & 0         & 0   \\
 	\hline
-	2009                         & 28          & 15          & 0                 & 0           & 0             & 43        & 0     & 0                                     \\
+	2009                         & 28              & 45              & 0                     & 0               & 0                & 73            & 0         & 0   \\
 	\hline
-	2010                         & 48          & 15          & 46                & 0           & 0             & 82        & 0     & 0                                     \\
+	2010                         & 48              & 60              & 46                    & 0               & 0                & 107           & 0         & 0   \\
 	\hline
-	2011                         & 36          & 30          & 40                & 0           & 0             & 105       & 0     & 0                                     \\
+	2011                         & 36              & 60              & 40                    & 0               & 0                & 128           & 0         & 0   \\
 	\hline
-	2012                         & 77          & 0           & 0                 & 0           & 0             & 77        & 0     & 0                                     \\
+	2012                         & 77              & 45              & 0                     & 0               & 0                & 118           & 0         & 0   \\
 	\hline
-	2013                         & 59          & 0           & 168               & 0           & 161           & 203       & 161   & 161                                   \\
+	2013                         & 59              & 90              & 168                   & 0               & 161              & 263           & 161       & 161 \\
 	\hline
-	2014                         & 46          & 30          & 99                & 0           & 6             & 151       & 6     & 5                                     \\
+	2014                         & 46              & 105             & 99                    & 0               & 6                & 204           & 6         & 5   \\
 	\hline
-	2015                         & 0           & 0           & 0                 & 0           & 0             & 0         & 0     & 0                                     \\
+	2015                         & 0               & 15              & 0                     & 0               & 0                & 15            & 0         & 0   \\
 	\hline
-	Total			    & 420         & 120         & 353               & 100         & 167           & 810       & 267   & 173                                   \\
+	Total                        & 420             & 795             & 353                   & 150             & 167              & 1381          & 317       & 256 \\
 	\hline
 	\end{tabular}}
 	\caption{Distribution of Anomalies reported by system for Retail Price VS Arrival data of onion }
@@ -287,29 +289,29 @@ Such results of different cities can also be calculated.
 	\resizebox{\textwidth}{!}
 	{\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
 	\hline
-	Distribution of All Articles & Slope Based (1) & Window Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6  $\cap$ 7 \\
+	Distribution of All Articles & Slope Based (1) & Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6 $\cap$ 7  \\
 	\hline
-	2006                         & 35          & 30          & 0                 & 78          & 0             & 58        & 78    & 7                                     \\
+	2006                         & 126             & 0               & 0                     & 63              & 0                & 126           & 63        & 28  \\
 	\hline
-	2007                         & 63          & 0           & 0                 & 22          & 0             & 63        & 22    & 0                                     \\
+	2007                         & 77              & 30              & 0                     & 0               & 0                & 107           & 0         & 0   \\
 	\hline
-	2008                         & 28          & 0           & 0                 & 0           & 0             & 28        & 0     & 0                                     \\
+	2008                         & 70              & 15              & 0                     & 24              & 0                & 85            & 24        & 0   \\
 	\hline
-	2009                         & 28          & 15          & 0                 & 0           & 0             & 43        & 0     & 0                                     \\
+	2009                         & 63              & 75              & 0                     & 0               & 0                & 126           & 0         & 0   \\
 	\hline
-	2010                         & 48          & 15          & 46                & 0           & 0             & 82        & 0     & 0                                     \\
+	2010                         & 62              & 30              & 2                     & 0               & 0                & 92            & 0         & 0   \\
 	\hline
-	2011                         & 36          & 30          & 40                & 0           & 0             & 105       & 0     & 0                                     \\
+	2011                         & 50              & 45              & 67                    & 0               & 0                & 155           & 0         & 0   \\
 	\hline
-	2012                         & 77          & 0           & 0                 & 0           & 0             & 77        & 0     & 0                                     \\
+	2012                         & 72              & 82              & 64                    & 20              & 0                & 160           & 20        & 9   \\
 	\hline
-	2013                         & 59          & 0           & 168               & 0           & 161           & 203       & 161   & 161                                   \\
+	2013                         & 50              & 38              & 44                    & 43              & 161              & 124           & 166       & 81  \\
 	\hline
-	2014                         & 46          & 30          & 99                & 0           & 6             & 151       & 6     & 5                                     \\
+	2014                         & 60              & 75              & 99                    & 0               & 6                & 182           & 6         & 6   \\
 	\hline
-	2015                         & 0           & 0           & 0                 & 0           & 0             & 0         & 0     & 0                                     \\
+	2015                         & 28              & 30              & 34                    & 0               & 0                & 86            & 0         & 0   \\
 	\hline
-	Total			    & 420         & 120         & 353               & 100         & 167           & 810       & 267   & 173                                   \\
+	Total                        & 658             & 420             & 310                   & 150             & 167              & 1243          & 279       & 124  \\
 	\hline
 	\end{tabular}}
 	\caption{Distribution of Anomalies reported by system for Retail Price VS Wholesale Price }
@@ -322,29 +324,29 @@ Such results of different cities can also be calculated.
 	\resizebox{\textwidth}{!}
 	{\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
 	\hline
-	Distribution of All Articles & Slope Based (1) & Window Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6  $\cap$ 7 \\
+	Distribution of All Articles & Slope Based (1) & Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6 $\cap$ 7  \\
 	\hline
-	2006                         & 35          & 30          & 0                 & 78          & 0             & 58        & 78    & 7                                     \\
+	2006                         & 0               & 65              & 0                     & 71              & 0                & 65            & 71        & 27  \\
 	\hline
-	2007                         & 63          & 0           & 0                 & 22          & 0             & 63        & 22    & 0                                     \\
+	2007                         & 42              & 100             & 0                     & 79              & 0                & 142           & 79        & 31  \\
 	\hline
-	2008                         & 28          & 0           & 0                 & 0           & 0             & 28        & 0     & 0                                     \\
+	2008                         & 21              & 120             & 0                     & 0               & 0                & 141           & 0         & 0   \\
 	\hline
-	2009                         & 28          & 15          & 0                 & 0           & 0             & 43        & 0     & 0                                     \\
+	2009                         & 56              & 60              & 0                     & 0               & 0                & 109           & 0         & 0   \\
 	\hline
-	2010                         & 48          & 15          & 46                & 0           & 0             & 82        & 0     & 0                                     \\
+	2010                         & 83              & 75              & 51                    & 0               & 0                & 162           & 0         & 0   \\
 	\hline
-	2011                         & 36          & 30          & 40                & 0           & 0             & 105       & 0     & 0                                     \\
+	2011                         & 64              & 60              & 34                    & 0               & 0                & 157           & 0         & 0   \\
 	\hline
-	2012                         & 77          & 0           & 0                 & 0           & 0             & 77        & 0     & 0                                     \\
+	2012                         & 42              & 45              & 0                     & 0               & 0                & 87            & 0         & 0   \\
 	\hline
-	2013                         & 59          & 0           & 168               & 0           & 161           & 203       & 161   & 161                                   \\
+	2013                         & 80              & 45              & 157                   & 0               & 152              & 246           & 152       & 152 \\
 	\hline
-	2014                         & 46          & 30          & 99                & 0           & 6             & 151       & 6     & 5                                     \\
+	2014                         & 46              & 105             & 40                    & 0               & 34               & 162           & 34        & 34  \\
 	\hline
-	2015                         & 0           & 0           & 0                 & 0           & 0             & 0         & 0     & 0                                     \\
+	2015                         & 14              & 30              & 0                     & 0               & 0                & 44            & 0         & 0   \\
 	\hline
-	Total			    & 420         & 120         & 353               & 100         & 167           & 810       & 267   & 173                                   \\
+	Total                        & 448             & 705             & 282                   & 150             & 186              & 1315          & 336       & 244  \\
 	\hline
 	\end{tabular}}
 	\caption{Distribution of Anomalies reported by system for Wholesale Price VS Arrival data of onion }
@@ -357,17 +359,17 @@ Such results of different cities can also be calculated.
 
 In this section, we try to analyse each method, what is limitation of each method and where it is performing good. So, we will describe each method one by one and study them. Note that we have articles from 2010 onwards, so we will be focussing on anomalies reported after 2010 and comparing with them news articles which we have. \\
 \\
-\textbf{Note that all the graphs and results described in following sections are for centre Mumbai. As Mumbai is in Maharashtra state, which is larger producer of onion in India. Also, Yellow highlighted region corresponds to anomalies reported by system, red region corresponds region for which out system reported anomaly and news article was present for that and blue region corresponds to date for which news article was present but that date was not reported as anomaly by our system.}
+\textbf{Note that all the graphs and results described in following sections are for centre Mumbai. As Mumbai is in Maharashtra state, which is largest producer of onion in India. Also in graphs, Yellow highlighted region corresponds to anomalies reported by system, red region corresponds to dates for which our system reported anomaly and news article was present for that and blue region corresponds to date for which news article was present but that date was not reported as anomaly by our system.}
 
 \subsection{Slope Based Anomaly Detection}
 	
 		The main functionality of this method is to find change in one variable with respect to other. Given two time-series, here we try to find, between two points in time series, how much dependent variable changed corresponding to independent variable. If this change is huge, than it is reported as anomaly.\\
 		\\
-		We have four type of analysis which are as follows:
+		We have four types of analysis which are as follows:
 		\begin{enumerate}
-			\item \textbf{Retail Price vs Average of Retail Price}: Here, we first take average of retail price at all centres and than compare change in retail price with change in average of retail price for different time window.			
+			\item \textbf{Retail Price vs Average of Retail Price}: Here, we first take average of retail price at all centres and than compare change in retail price with respect to change in average of retail price for different time window.			
 			\item \textbf{Retail Price vs Arrival of Onion}: Here, we try to find change in retail price with respect to change in arrival of onion for different windows. 
-			\item \textbf{Retail Price vs Wholesale Price}: Here, retail price is dependent on wholesale price and here we try to find change in retail price with respect to change wholesale price for different windows in this method.
+			\item \textbf{Retail Price vs Wholesale Price}: Here, retail price is dependent on wholesale price and we try to find change in retail price with respect to change wholesale price for different windows in this method.
 			\item \textbf{Wholesale Price vs Arrival of Onion}: Here, we try to find change in wholesale price with respect to change in arrival of onion for different window size.
 		\end{enumerate}
 		
@@ -378,7 +380,7 @@ In this section, we try to analyse each method, what is limitation of each metho
 			
 		\begin{itemize}
 		
-			\item Dates are reported as anomalies, if retail price at centre is increasing more as compared to average retail price for analysis 1 or if retail price at centre is increasing more as compared to wholesale price for analysis 3.
+			\item Dates are reported as anomalies, if retail price at centre is increasing more as compared to average retail price for analysis 1 or if retail price at centre is increasing more as compared to wholesale price for analysis 3. \\
 			Such cases are reported for the following tenure by this method:
 			\begin{itemize}
 				\item \textit{Analysis 1}: June 2010, August 2010, May 2011, June 2011, May Jun Nov 2012, Apr May 2013 (Prices went too high as compared to average) (See Figure \ref{fig:12111})
@@ -402,7 +404,7 @@ In this section, we try to analyse each method, what is limitation of each metho
 			
 			So, even though we do not have articles for these anomalies, but method is behaving as it should be. 			
 			
-			\item This observation is limitation of this method. There exist few cases where, drop in retail price for one center is quite huge as compared to drop in price for average retail price (in case of \textit{analysis 1}) or wholesale price (in case of \textit{analysis 3}). This is good thing for centres, and should bot be anomaly. But in this case, slope value goes high and that's why our method reports that tenure as anomaly as well.
+			\item This method also has limitations. There exist few cases where, drop in retail price for one center is quite huge as compared to drop in average retail price (in case of \textit{analysis 1}) or wholesale price (in case of \textit{analysis 3}). This is good thing for centres, and should not be treated as anomaly. But in this case, slope value goes high and that's why our method reports that tenure as anomaly as well.\\
 			Such cases are reported for the following tenure by this method:
 			\begin{itemize}
 				\item \textit{Analysis 1}: January 2010, June Aug 2012, Jan 2013, Feb Oct 2014, Feb 2015  (See Figure \ref{fig:12112})
@@ -427,7 +429,7 @@ In this section, we try to analyse each method, what is limitation of each metho
 			
 			
 			
-			\item Other observation is related to why few anomalies were reported in news but not by our system. Reason for that is we are comparing relative change in two time series. Now for some dates, where news article is present but our system did not report, value of both time series increased together. Although, prices went too high, but still relative change, i.e. slope value remained relatively low as compared to others, and so was not reported by our system.
+			\item Other observation is related to why few anomalies were reported in news but not by our system. Reason for that is we are comparing relative change in two time series. Now for some dates, where news article is present but our system did not report, value of both time series increased together. Although, prices went too high, but still relative change, i.e. slope value remained relatively low as compared to others, and so that was not reported by our system.
 				
 			Such cases are reported for the following tenure by this method:
 			\begin{itemize}
@@ -458,7 +460,7 @@ In this section, we try to analyse each method, what is limitation of each metho
 		    	\label{fig:12114}
 			\end{figure}			
 			
-			\item In some cases, tenure reported as anomaly is quite large, because situations were abnormal for long time. But may be for such large tenure, news articles should be present, is not necessary. And anomaly reported was justifiable. For\textit{ Analysis 1}, such tenure was reported for March end to May start 2014.  (See Figure \ref{fig:12115})
+			\item In some cases, tenure reported as anomaly is quite large, because situations were abnormal for long time. But is not necessary that news articles should be present for such a large tenure. And anomaly reported was justifiable. For\textit{ Analysis 1}, such tenure was reported for March end to May start 2014.  (See Figure \ref{fig:12115})
 			
 			\begin{figure}[H]
 		    	\centering
@@ -467,7 +469,7 @@ In this section, we try to analyse each method, what is limitation of each metho
 		    	\label{fig:12115}
 			\end{figure}			
 			
-			\item In \textit{Analysis 1}, For June 2014, method has reported tenure upto mid June when prices started increasing, but it remained high and due to that some articles are present for June 21 around, we have missed, because at that time relative slope value became normal, but since prices were high, it was covered by news articles. (See Figure \ref{fig:12116})
+			\item In \textit{Analysis 1}, For June 2014, method has reported tenure upto mid June when prices started increasing, but it remained high and due to that some news articles are present for June 21 around, we have missed, because at that time relative slope value became normal, but since prices were high, it was covered by news articles. (See Figure \ref{fig:12116})
 			
 			\begin{figure}[H]
 		    	\centering
@@ -477,7 +479,7 @@ In this section, we try to analyse each method, what is limitation of each metho
 			\end{figure}			
 			
 			
-			\item There exist some cases in \textit{Analysis 3} where retail price were decreasing but wholesale price was keep on increasing, this created negative slope value, where as in this scenario, we were looking for only positive slopes and that's why this method missed it. Such periods were in July Aug Sept 2013, Nov Dec 2013. (See Figure \ref{fig:12134})
+			\item There exist some cases in \textit{Analysis 3} where retail price were decreasing but wholesale price kept on increasing, this created negative slope value, where as in this scenario, we were looking for only positive slopes and that's why this method missed it. Such periods were in July Aug Sept 2013, Nov Dec 2013. (See Figure \ref{fig:12134})
 			
 			\begin{figure}[H]
 		    	\centering
@@ -492,7 +494,7 @@ In this section, we try to analyse each method, what is limitation of each metho
 		Now we present few observation for Analysis 2 and 4.
 		
 		\begin{itemize}
-			\item If change in retail price or change in wholesale price is more as compared to change in arrival (prices went too high, even for small drop in arrival), then it is reported as anomaly by this method.
+			\item If change in retail price or change in wholesale price is more as compared to change in arrival (prices went too high, even for small drop in arrival), then it is reported as anomaly by this method.\\
 			
 			Such cases are reported for the following tenure by this method:
 			\begin{itemize}
@@ -514,7 +516,7 @@ In this section, we try to analyse each method, what is limitation of each metho
 		    	\label{fig:12141}
 			\end{figure}
 			
-			\item But in above described scenario, when change in price is high, but prices are decreasing and when arrival is increasing, and if drop in price is too high, then also it will be reported as anomaly.	So this is limitation of this method and reports false positives in this case.
+			\item But in above described scenario, when change in price is high, but prices are decreasing and when arrival is increasing, and if drop in price is too high, then also it will be reported as anomaly.	So this is limitation of this method and reports false positives in this case.\\
 			Such cases are reported for the following tenure by this method:
 			
 			\begin{itemize}
@@ -536,9 +538,7 @@ In this section, we try to analyse each method, what is limitation of each metho
 		    	\label{fig:12142}
 			\end{figure}
 			
-			\item One more limitation of this method is when arrival is increasing but along with that retail or wholesale price is also increasing. Since will come out as positive slope and this method, in this scenario is only looking for negative slope and so, this will not be reported as anomaly and news articles corresponding to this tenure will not be matched by results of this method.
-			
-			
+			\item One more limitation of this method is when arrival is increasing but along with that retail or wholesale price is also increasing. Since will come out as positive slope and this method, in this scenario is only looking for negative slope and that's why, this will not be reported as anomaly and news articles corresponding to this tenure will not be matched by results of this method.\\		
 			
 			Such cases are reported for the following tenure by this method:
 			\begin{itemize}
@@ -560,9 +560,7 @@ In this section, we try to analyse each method, what is limitation of each metho
 		    	\label{fig:12143}
 			\end{figure}
 			
-			
-			
-			\item There exist some cases, where first due to low arrival prices went too high and when arrival started entering into market slowly and slowly prices were going down. This period of slowly decrement of prices is not reported by this method, but since prices were still high, this system could not report dates for news articles corresponding to this tenure. Such cases occurred in \textit{Analysis 2} for Dec 2010 and Jan 2011 (See Figure \ref{fig:12124})and in \textit{Analysis 4} for Nov 2013 (See Figure \ref{fig:12144}). Also, note that these articles were mainly on Pakistan banned exports and article on inflation stating that inflation rate is high and onion prices are playing an important role in this.
+			\item There exist some cases, where due to low arrival, prices went too high and when slowly arrival started entering into market, prices were going down slowly. This period of slow decrement of prices is not reported by this method, but since prices were still high, this system could not report dates for news articles corresponding to this tenure. Such cases occurred in \textit{Analysis 2} for Dec 2010 and Jan 2011 (See Figure \ref{fig:12124})and in \textit{Analysis 4} for Nov 2013 (See Figure \ref{fig:12144}). Also, note that these articles were mainly on Pakistan banned exports and article on inflation stating that inflation rate is high and onion prices are playing an important role in this.
 			
 			\begin{figure}[H]
 		    	\centering
@@ -578,7 +576,7 @@ In this section, we try to analyse each method, what is limitation of each metho
 		    	\label{fig:12144}
 			\end{figure}
 			
-			\item In some of the cases, where arrival fell too much drastically, and due to that retail price went high drastically as well. And since retail prices went high too much it got reported in news articles, but this was expected, as arrival was less. But here both the changes were high, so ultimately slope value was not so high and was not reported by our system. Such cases in \textit{Analysis 2} exist for Aug Sept 2013  (See Figure \ref{fig:12125}).
+			\item In some of the cases, where arrival fell too much drastically, and due to that retail price went high drastically as well. And since retail prices went high too much it got reported in news articles, but this was expected, as arrival was less. But here both the changes were high, so ultimately slope value was not so high and was not reported by system. Such cases in \textit{Analysis 2} exist for Aug Sept 2013  (See Figure \ref{fig:12125}).
 			
 			\begin{figure}[H]
 		    	\centering
@@ -606,7 +604,7 @@ In this section, we try to analyse each method, what is limitation of each metho
 
 		The main functionality of this method is to find what should be ideal value of the dependent variable given value of independent variable. This method first finds out linear relationship between 2 variables, whose time series is given as input and one of them is dependent on another. After finding out this equation, we see for a given value of independent variable what should be ideal value of dependent variable and note down the relative difference. If this difference is large, then it is reported as anomaly.\\
 		\\
-		We have four type of analysis which are as follows:
+		We have four types of analysis which are as follows:
 		\begin{enumerate}
 			\item \textbf{Retail Price vs Average of Retail Price}: Here, we first take average of retail price at all centres as independent variable and retail price as dependent variable.			
 			\item \textbf{Retail Price vs Arrival of Onion}: Here, we take retail price as dependent variable and arrival of onion as independent variable.
@@ -614,12 +612,12 @@ In this section, we try to analyse each method, what is limitation of each metho
 			\item \textbf{Wholesale Price vs Arrival of Onion}: Here, we take Wholesale price as dependent variable and arrival of onion as independent variable.
 		\end{enumerate}
 		
-		So, in each of the case, we try to find relative difference between ideal value and its real value, and if it is huge, crossing threshold than it is reported as anomaly. Now, not that in analysis 1 and 3 stated above, both the time series are directly proportional to each other and in the analysis 2 and 4 both the time series are inversely proportional to each other. So, limitations faced by this method for analysis 1 and 3 will be similar and for analysis 2 and 4 will be similar. While describing this method, each analysis will be referenced by its corresponding number.\\
+		So, in each of the case, we try to find relative difference between ideal value and its real value, and if it is huge, crossing threshold than it is reported as anomaly. Now, note that in analysis 1 and 3 stated above, both the time series are directly proportional to each other and in the analysis 2 and 4 both the time series are inversely proportional to each other. So, limitations faced by this method for analysis 1 and 3 will be similar and for analysis 2 and 4 will be similar. While describing this method, each analysis will be referenced by its corresponding number.\\
 		\\
 		First we will start with analysis 1 and 3. Here, we have few observations as follows:
 		
 		\begin{itemize}
-			\item This method will report any tenure as anomaly when there is large gap i.e. more than expected between retail price of a center and average price (for \textit{Analysis 1}) or wholesale price (for \textit{Analysis 3}).
+			\item This method will report any tenure as anomaly when there is large gap i.e. more than expected between retail price of a center and average retail price (for \textit{Analysis 1}) or wholesale price (for \textit{Analysis 3}).
 			
 			
 			
@@ -642,7 +640,7 @@ In this section, we try to analyse each method, what is limitation of each metho
 		    	\label{fig:12231}
 			\end{figure}
 			
-			\item One limitation of this method is both the series have high values for some time period and difference between them is not so huge then that will not be reported.	\\
+			\item One limitation of this method is that, if both the series have high values for some time period and difference between them is not so huge then that will not be reported as anomaly.	\\
 			\\
 			Such cases are reported for the following tenure by this method:
 			\begin{itemize}
@@ -665,7 +663,7 @@ In this section, we try to analyse each method, what is limitation of each metho
 			
 					
 			
-			\item  Note that in the tenure of Oct Nov 2013 (for \textit{Analysis 1}) prices are usually high and as the prices are high tolerance level also increases little bit. So even if for some difference it is reported as anomaly at lower price, it is not necessary that for the same difference, it will be reported as anomaly at higher prices. (See Figure \ref{fig:12212})		
+			\item  Note that in the tenure of Oct Nov 2013 (for \textit{Analysis 1}) prices are usually high and as the prices are high, tolerance level also increases little bit. So even, if for some difference it is reported as anomaly at lower price, it is not necessary that for the same difference, it will be reported as anomaly at higher prices. (See Figure \ref{fig:12212})		
 			
 		\end{itemize}
 		
@@ -674,7 +672,7 @@ In this section, we try to analyse each method, what is limitation of each metho
 		
 		
 		\begin{itemize}
-			\item Here, in this method, it tries to predict what should be retail price or wholesale price based on the arrival of the product. So if the price is too high for the given arrival than it will be reported.
+			\item Here, in this method, it tries to predict what should be retail price or wholesale price based on the arrival of the product. So if the price is too high for the given arrival than it will be reported as anomaly.
 			Such cases are reported for the following tenure by this method:
 			\begin{itemize}
 				\item \textit{Analysis 2}: Dec 2010, Jan Feb 2011, Aug Sept Oct Nov 2013, Oct Dec 2014 (See Figure \ref{fig:12221})
@@ -717,6 +715,181 @@ In this section, we try to analyse each method, what is limitation of each metho
 		    	\label{fig:12242}
 			\end{figure}
 		\end{itemize}
+
+		
+\subsection{Window Based Correlation}
+
+		This method checks if the provided two timeseries moves in tandem or not. If not, then what are the time periods when they are not following the desired behavior. In order to find such time periods in the timeseries, the whole timeseries is divided into smaller windows and correlation value computed for that window is used to determine if that period is anomalous or not. The P-value of 0.01 is used in order to check the significance of correlation value.
+		\\
+		\\
+		The function is tested with different set of timeseries. Following are the four tests which were performed:
+		\begin{enumerate}
+			\item \textbf{Retail Price vs Average of Retail Price}: This test tries to find if any centre deviates from other centres abruptly. Average of timeseries of all the centres is taken as a representative timeseries for the behavior of all the centres which is compared with every centre in order to find time periods where these two did not move in tandem
+			\item \textbf{Retail Price vs Arrival of Onion}: Retail timeseries is expected not to move in tandem with Arrival timeseries. So, the time periods with positive correlation values are spotted in this. 
+			\item \textbf{Retail Price vs Wholesale Price}: Retail timeseries is expected to move in tandem with wholesale timeseries. So, the time periods with negative correlation values are spotted in this.
+			\item \textbf{Wholesale Price vs Arrival of Onion}: Wholesale timeseries is expected to not move in tandem with Arrival timeseries. So, the time periods with positive correlation values are spotted in this. 
+		\end{enumerate}
+		
+		The two timeseries are first aligned with each other at the maximum lag value. Then the entire timeseries is divided into small time periods of 15 days in order to locate anomalous situations through their respective correlation values.
+		\\
+		\\
+		Observations when retail price timeseries is compared with average of retail price timeseries: 
+		
+		\begin{itemize}
+			\item The timeseries showed the initial shift/lag of zero days which means both the timeseries are best aligned without any lag.
+			
+			Some of the tenures for which the method reported anomalies are:
+			
+			\begin{itemize}
+				\item 2008-03-06 to 2008-03-20 (See Figure \ref{fig:20080306_0320})
+				\item 2009-09-12 to 2009-09-26 (See Figure \ref{fig:20090912_0926})
+				\item 2011-07-04 to 2011-08-02 (See Figure \ref{fig:20110704_0802})
+			\end{itemize}
+			\begin{figure}[H]
+		    	\centering
+  		    	\includegraphics[width=0.8\textwidth]{graphs/20080306_0320.png}
+		    	\caption{Window based correlation (Green line - Centre Retail Price, Blue Line - Average Retail Price)}
+		    	\label{fig:20080306_0320}
+			\end{figure}
+			
+			\begin{figure}[H]
+		    	\centering
+  		    	\includegraphics[width=0.8\textwidth]{graphs/20090912_0926.png}
+		    	\caption{Window based correlation (Green line - Centre Retail Price, Blue Line - Average Retail Price)}
+		    	\label{fig:20090912_0926}
+			\end{figure}
+
+			\begin{figure}[H]
+		    	\centering
+  		    	\includegraphics[width=0.8\textwidth]{graphs/20110704_0802.png}
+		    	\caption{Window based correlation (Green line - Centre Retail Price, Blue Line - Average Retail Price)}
+		    	\label{fig:20110704_0802}
+			\end{figure}
+			
+			But looking closely in the data, it is found that these tenures are reported because the two series were not in tandem which was mostly because prices of delhi faced some fluctuations whereas Mumbai prices did not show evident fluctuations. One of the reason for fluctuation in prices of Delhi over Mumbai could be because Delhi is dependent on other states for Onion whereas Mumbai does not have such issue.
+			\\
+			\\
+			Some of the tenures which went unnoticed by method:
+			
+			\begin{itemize}
+				\item 2010-12-20 to 2010-12-25 (See Figure \ref{fig:20101220_1225})
+				\item 2011-01-06 to 2011-01-08 (See Figure \ref{fig:20110106_0108})
+				\item 2012-12-27 to 2013-01-05 (See Figure \ref{fig:20121227_0105})
+			\end{itemize}
+			\begin{figure}[H]
+		    	\centering
+  		    	\includegraphics[width=0.8\textwidth]{graphs/20101220_1225.png}
+		    	\caption{Window based correlation (Green line - Centre Retail Price, Blue Line - Average Retail Price)}
+		    	\label{fig:20101220_1225}
+			\end{figure}
+			
+			\begin{figure}[H]
+		    	\centering
+  		    	\includegraphics[width=0.8\textwidth]{graphs/20110106_0108.png}
+		    	\caption{Window based correlation (Green line - Centre Retail Price, Blue Line - Average Retail Price)}
+		    	\label{fig:20110106_0108}
+			\end{figure}
+
+			\begin{figure}[H]
+		    	\centering
+  		    	\includegraphics[width=0.8\textwidth]{graphs/20121227_0105.png}
+		    	\caption{Window based correlation (Green line - Centre Retail Price, Blue Line - Average Retail Price)}
+		    	\label{fig:20121227_0105}
+			\end{figure}
+			
+			Some of the tenures which were reported by news reports as well as method:
+			
+			\begin{itemize}
+				\item 2013-10-06 to 2013-10-15 (See Figure \ref{fig:20131006_1015_1021})
+				\item 2013-10-17 to 2013-10-21 (See Figure \ref{fig:20131006_1015_1021})
+			\end{itemize}
+			\begin{figure}[H]
+		    	\centering
+  		    	\includegraphics[width=0.8\textwidth]{graphs/20131006_1015_1021.png}
+		    	\caption{Window based correlation (Green line - Centre Retail Price, Blue Line - Average Retail Price)}
+		    	\label{fig:20131006_1015_1021}
+			\end{figure}
+						
+		\end{itemize}
+		
+		Other interesting observations that were found while conducting above mentioned tests are as following:
+		\begin{itemize}
+			\item The lag chosen while comparing retail and arrival for Mumbai came as 15 days which means it takes 15 days of time for arrival to impact retail.
+			\item The lag chosen by method while comparing retail and arrival for Delhi came out to be -9 days which gives hints that retail prices are impacting arrival of Onion which is not ideal in real time scenario.
+			\item The lag chosen while comparing retail and wholesale for Mumbai comes out as -15 which means retail prices are impacted in approx. 15 days after change in the wholesale prices.
+			\item The lag chosen while comparing retail and wholesale for Delhi comes out as -4 which is clearly very small than Mumbai. It might be because of smaller supply chain in Delhi compared to Mumbai.
+			\item The lag chosen while comparing wholesale and arrival for Mumbai came as 11 days which means it takes 11 days of time for arrival to impact wholesale.
+			\item The lag chosen by method while comparing wholesale and arrival for Delhi came out to be -14 days which gives hints that wholesale prices are impacting arrival of Onion which is not ideal in real time scenario.
+		\end{itemize}
+		
+		Limitations of method:
+		\begin{itemize}
+			\item The method reports all the tenures where series are not in sync or are in sync(as needed). Like in case of  2008-03-06 to 2008-03-20 for retail vs average, though the correlation went really high because of opposite directions but the fluctuation in prices were not very prominent.
+			\item If all the timeseries follows same anomalous behavior then it is not possible to find anomaly in any.
+			\item If the anomaly is for very small tenure compared to the selected window size then it is likely to be missed or go unnoticed. In case of 2011-01-06 - 2011-01-08
+		\end{itemize}
+
+\subsection{Multivariate Time Series- Vector Autoregressive}
+
+		The method uses vector autoregressive framework for multivaraiate time-series analysis in order to forecast values by using all the related variables/timeseries that can impact the timeseries. The error in the predicted value with the original value helps in determining anomalous points from the timeseries. MAD test is applied in order to fix the threshold value for the error.
+		60\% (This can be configured as per need) of the data is used for calibration and rest of the data is checked for anomalous points. So, the start date for the anomalous points begins after 2011-09-16
+		\\
+		The function is tested with different set of timeseries. Following are the four tests which were performed:
+		\begin{enumerate}
+		    \item \textbf{Retail Price vs Average of Retail Price}: All the centres should ideally move in tandem. So test is performed over every centre with other centres helping in predicting values.            
+		    \item \textbf{Retail Price vs Arrival of Onion}: Arrival is one of the major deciding factor for retail. So the predictions are made for retail based on arrival.
+		    \item \textbf{Retail Price vs Wholesale Price}: Retail prices are predicted based on the wholesale prices.
+		    \item \textbf{Wholesale Price vs Arrival of Onion}: Wholesale timeseries is predicted on the basis of arrival timeseries.
+		\end{enumerate}
+		
+		Observations when retail price timeseries is compared with average of retail price timeseries: 
+		
+		\begin{itemize}
+			\item The threshold selected by this method for error values are -19.0358099572 and 107.697818954 which means all the data points with error values less than -19.0358099572 and greater than 107.697818954 are reported by the method.
+			
+			Some of the tenures for which the method reported anomalies are:
+			
+			\begin{itemize}
+				\item 2013-07-19 to 2013-09-11 (See Figure \ref{fig:20130719_0911})
+				\item 2013-09-17 to 2014-01-06 (See Figure \ref{fig:20130917_0106})
+				\item 2014-12-03 to 2014-12-15 (See Figure \ref{fig:20141203_1215})
+			\end{itemize}
+			\begin{figure}[H]
+		    	\centering
+  		    	\includegraphics[width=0.8\textwidth]{graphs/20130719_0911.png}
+		    	\caption{Vector Autoregressive (Green line - Centre Retail Price, Blue Line - Average Retail Price)}
+		    	\label{fig:20130719_0911}
+			\end{figure}
+			
+			\begin{figure}[H]
+		    	\centering
+  		    	\includegraphics[width=0.8\textwidth]{graphs/20130917_0106.png}
+		    	\caption{Vector Autoregressive (Green line - Centre Retail Price, Blue Line - Average Retail Price)}
+		    	\label{fig:20130917_0106}
+			\end{figure}
+
+			\begin{figure}[H]
+		    	\centering
+  		    	\includegraphics[width=0.8\textwidth]{graphs/20141203_1215.png}
+		    	\caption{Vector Autoregressive (Green line - Centre Retail Price, Blue Line - Average Retail Price)}
+		    	\label{fig:20141203_1215}
+			\end{figure}
+			
+			No data points were reported against news articles present in May, June, July 2014 despite of large error value. The threshold selected by the MAD test was higher than the error values. This could be corrected by manually setting threshold values which can be account for these data points.
+			
+		\end{itemize}
+		
+		Other interesting observations that were found while conducting above mentioned tests are as following:
+		\begin{itemize}
+			\item Some of the data points like July 2014 data were not captured despite of error value close to MAD threshold. These can be captured by lowering the threshold.
+			\item For news articles in Dec 2012,Jan 2013, Feb 2013 the values does not show high error values despite of news articles reporting the crisis. The possible reason could be because similar trend have been seen for this tenure in the data.
+		\end{itemize}
+		
+		Limitations of method:
+		\begin{itemize}
+			\item The method depends on the MAD Test in order to set threshold. So, even though the error value is close to threshold but less than it won't be reported. Other methods could be also used in order to decide threshold.
+		\end{itemize}		
+		
 		
 \subsection{Graph Based Anomaly Detection}
 
@@ -739,7 +912,7 @@ In this section, we try to analyse each method, what is limitation of each metho
 		    	\label{fig:12331}
 			\end{figure}
 	
-	For \textbf{Retail Price vs Arrival of Onion} (See Figure \ref{fig:12321}) and \textbf{Wholesale Price vs Arrival of Onion} (See Figure \ref{fig:12341}), this method is not producing good results. Many points are reported as anomaly which are close to each other. And due to that for limited number of points, which we are passing as 150, number of anomalies matching with news articles are quite less. Figures \ref{fig:12322_delhi} and \ref{fig:12442_delhi} describe results of this both analysis for Delhi centre.
+	For \textbf{Retail Price vs Arrival of Onion} (See Figure \ref{fig:12321}) and \textbf{Wholesale Price vs Arrival of Onion} (See Figure \ref{fig:12341}), this method is not producing good results. Many points are reported as anomaly which are close to each other. And due to limited number of points, number of anomalies matching with news articles are quite less. Figures \ref{fig:12322_delhi} and \ref{fig:12442_delhi} describe results of these both analysis for Delhi centre.
 			\begin{figure}[H]
 		    	\centering
   		    	\includegraphics[width=0.8\textwidth]{graphs/12321.png}
