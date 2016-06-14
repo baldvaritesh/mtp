@@ -160,7 +160,7 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         
         
         #Since 60% data is used for modelling and rest is used to forecast
-        # startDatePoint =int(0.60*len(retailListWithNoDates[0]))
+        startDatePoint =int(0.60*len(retailListWithNoDates[0]))
         multiVariate_Anomaly_Result = csvTransform("/home/kapil/Desktop/mtp/library/testingCSV/retail"+str(i+1)+".csv",temp1[startDatePoint])
         # multiVariate_Anomaly_Result = []
         multiple_arima_result = resultOfOneMethod(multiVariate_Anomaly_Result)
@@ -171,12 +171,7 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         # Hypothesis 3 For Reatil vs AVG: END
         
         # Get stats of news articles for each method
-        (filteredResult_slope_based, slopeBased_news_article_result,all_articles_slope_based) = fetchNewsForCenter(slopeBased_result, i)
-        
-        for row in all_articles_slope_based:
-            print row
-        sys.exit(0)
-        
+        (filteredResult_slope_based, slopeBased_news_article_result,all_articles_slope_based) = fetchNewsForCenter(slopeBased_result, i)        
         (filteredResult_correlation_based, correlationBased_news_article_result,all_articles_correlationBased) = fetchNewsForCenter(correlationBased_result, i)
         (filteredResult_linear_regression, linearRegression_news_article_result,all_articles_linearRegression) = fetchNewsForCenter(linearRegression_result, i)
         (filteredResult_graph_based, graphBasedAnomaly_news_article_result,all_articles_graphBasedAnomaly) = fetchNewsForCenter(graphBasedAnomaly_result, i)
@@ -362,7 +357,7 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         multivaraiateAnalysis(args)
           
         #Since 60% data is used for modelling and rest is used to forecast
-        startDatePoint =int(0.60*len(temp6[0]))
+        startDatePoint =int(0.60*len(c_list))
         multiVariate_Anomaly_Result = csvTransform("/home/kapil/Desktop/mtp/library/testingCSV/RetailWSOutput"+str(1)+".csv",temp1[startDatePoint])
         # multiVariate_Anomaly_Result = []
         multiple_arima_result = resultOfOneMethod(multiVariate_Anomaly_Result)
@@ -879,6 +874,29 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
             print str(WvsA_anomalies_intersection[2*i+1][l][0])+","+str(WvsA_anomalies_intersection[2*i+1][l][1])+","+str(WvsA_anomalies_intersection[2*i+1][l][2])+","+str(WvsA_anomalies_intersection[2*i+1][l][3])+","+str(WvsA_anomalies_intersection[2*i+1][l][4])+","+str(WvsA_anomalies_intersection[2*i+1][l][5])+","+str(WvsA_anomalies_intersection[2*i+1][l][6])+","+str(WvsA_anomalies_intersection[2*i+1][l][7])
         
         
+        
+        print "\n\nPRINTING FINAL STATS\n\n"
+        
+        retVsAv = newsAnomalyDiffDays(RvsR_anomalies_intersection)
+        retVsArr = newsAnomalyDiffDays(RvsA_anomalies_intersection)
+        retVsWhole = newsAnomalyDiffDays(RvsW_anomalies_intersection)
+        wholeVsArr = newsAnomalyDiffDays(WvsA_anomalies_intersection)
+        
+        print "\n\nRetail vs Average Data:"
+        for row in retVsAv:
+            print row[0] +"," + row[1]
+            
+        print "\n\nRetail vs Arrival Data:"
+        for row in retVsArr:
+            print row[0] +"," + row[1]
+            
+        print "\n\nRetail vs Wholesale Data:"
+        for row in retVsWhole:
+            print row[0] +"," + row[1]
+            
+        print "\n\Wholesale vs Arrival Data:"
+        for row in wholeVsArr:
+            print row[0] +"," + row[1]
         
 hypothesisForCenter(2,"testingCSV/MumbaiSILData.csv","testingCSV/DelhiSILData.csv")
 

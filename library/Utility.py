@@ -193,14 +193,15 @@ A tuple:
 Where:
 
 * resultList : This is of tuples with following fields:
-				(System_anomaly_date, news_article_date, news_source, source_url, difference_between_system_date_and_news_article_date, list_of_keywords)
-				
+				(System_anomaly_date, news_article_date, news_source, source_url, difference_between_system_date_and_news_article_date ,reason, comment, days_compared_in_article)
 				1. System_anomaly_date: date reported by our system which is reported as anomolous date
 				2. news_article_date: date of news article correpsonding to above System_anomaly_date
 				3. news_source: souce of news (which media?)
 				4. source_url: link of the news article
 				5. difference_between_system_date_and_news_article_date: difference between dates of (news_article_date - System_anomaly_date)
-				6. list_of_keywords: List of keywords related with this article
+				6. reason: what reason is stated by article
+				7. comment: any comment on article if present
+				8. days_compared_in_article: Article has compared data between how many days to state that it is anomaly?
 				
 * allArticlesQueryResult: List of dates of all news articles for this center which is present in the database
 
@@ -1054,3 +1055,26 @@ def processListForGB(listOfList):
 	for anyList in listOfList:
 		result.append(anyList[i:])
 	return result
+
+'''
+This function will help to determine how much news articles are away from anomaly normally.
+
+Takes input list of tuples of the form:
+
+(System_anomaly_date, news_article_date, news_source, source_url, difference_between_system_date_and_news_article_date ,reason, comment, days_compared_in_article)
+
+returns list of tuples the form:
+(difference_between_system_date_and_news_article_date, number_of_articles_with_this_value)
+
+'''
+def newsAnomalyDiffDays(array):
+	data = dict()
+	for row in array:
+		if(row[4] not in data):
+			data[row[4]] = 1
+		else:
+			data[row[4]] = data[row[4]] + 1
+	result = list(data)
+	result.sort()
+	return result
+	pass
