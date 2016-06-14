@@ -864,7 +864,6 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
             print str(WvsA_anomalies_intersection[2*i+1][l][0])+","+str(WvsA_anomalies_intersection[2*i+1][l][1])+","+str(WvsA_anomalies_intersection[2*i+1][l][2])+","+str(WvsA_anomalies_intersection[2*i+1][l][3])+","+str(WvsA_anomalies_intersection[2*i+1][l][4])+","+str(WvsA_anomalies_intersection[2*i+1][l][5])+","+str(WvsA_anomalies_intersection[2*i+1][l][6])+","+str(WvsA_anomalies_intersection[2*i+1][l][7])
         
         
-        
 hypothesisForCenter(2,"testingCSV/MumbaiSILData.csv","testingCSV/DelhiSILData.csv")
 
 
