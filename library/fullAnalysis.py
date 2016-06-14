@@ -900,6 +900,7 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         print "\n\Wholesale vs Arrival Data:"
         for row in wholeVsArr:
             print str(row[0]) +"," + str(row[1])
+        # print "size:" + str(len(WvsA_anomalies_intersection[2*i+1]))
         
 hypothesisForCenter(2,"testingCSV/MumbaiSILData.csv","testingCSV/DelhiSILData.csv")
 

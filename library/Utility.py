@@ -271,7 +271,8 @@ def fetchNewsForCenter(resultsOfSystem, centerNumber, intervalToConsider=5):
 	resultList = sorted(sorted(resultList, key = lambda x : x[0]), key = lambda x : x[1], reverse = True) 
 	
 	
-	
+	'''
+	# Previous logic: just basic sort
 	# Filter resultList for duplicates
 	filteredResult = []
 	newsSet = set()
@@ -281,8 +282,26 @@ def fetchNewsForCenter(resultsOfSystem, centerNumber, intervalToConsider=5):
 		else:
 			filteredResult.append(Tuple)
 			newsSet.add(Tuple[0])
+	'''
 	
-	
+	# New logic for filteredResult, we will keep nearest article
+	filteredResult = []
+	newsSet = dict()
+	for Tuple in resultList:
+		if(Tuple[0] in newsSet):
+			existingTuple = newsSet[Tuple[0]]
+			currentDiff = Tuple[4]
+			existingDiff = existingTuple[4]
+			if(abs(currentDiff) < abs(existingDiff)):
+				newsSet[Tuple[0]] = Tuple
+			elif(abs(currentDiff) == abs(existingDiff) and currentDiff > existingDiff):
+				newsSet[Tuple[0]] = Tuple				
+		else:
+			newsSet[Tuple[0]] = Tuple
+		
+	for key in newsSet:
+		filteredResult.append(newsSet[key])
+	filteredResult = sorted(filteredResult, key = lambda x : x[0], reverse = False) 
 	
 	return(filteredResult, resultList, allArticlesQueryResult)
 
