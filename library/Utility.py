@@ -267,7 +267,8 @@ def fetchNewsForCenter(resultsOfSystem, centerNumber, intervalToConsider=5):
 			(a,b,c,d,e,f,g) = row_temp_list
 			resultList.append((date,a,b,c,d,e,f,g))
 	# Sort by anomaly date
-	resultList = sorted(resultList, key=lambda x: (x[0],x[1]))
+	# resultList = sorted(resultList, key=lambda x: (x[0],x[1]))
+	resultList = sorted(sorted(resultList, key = lambda x : x[0]), key = lambda x : x[1], reverse = True) 
 	
 	
 	
