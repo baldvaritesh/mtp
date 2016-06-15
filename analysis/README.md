@@ -1,0 +1,3 @@
+Mumbai,Delhi_result1.csv
+
+These are the primary results on which analysis was performed. In this Linear Regression, Multivariate and slope based methods were run based on the default threshold value. Correlation function was modified to report only those values which had correlation values with opposite signs. For Graph based anomaly, for retail vs average retail and retail vs wholesale 300 anomalies were chosen and for rest 500.
