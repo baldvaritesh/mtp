@@ -78,8 +78,8 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
     #forecast retail prices of all centers based on the retail prices at differnet centers --Reshma
     lstRetail= concateLists(retailListWithNoDates)
     
-    writeToCSV(lstRetail,"/home/kapil/Desktop/mtp/library/testingCSV/AllRetailData.csv")
-    args = ['/home/kapil/Desktop/mtp/library/testingCSV/AllRetailData.csv','FALSE',str(len(retailListWithNoDates)),'retail']
+    writeToCSV(lstRetail,"testingCSV/AllRetailData.csv")
+    args = ['testingCSV/AllRetailData.csv','FALSE',str(len(retailListWithNoDates)),'retail']
     multivaraiateAnalysis(args)
     
     
@@ -161,7 +161,7 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         
         #Since 60% data is used for modelling and rest is used to forecast
         startDatePoint =int(0.60*len(retailListWithNoDates[0]))
-        multiVariate_Anomaly_Result = csvTransform("/home/kapil/Desktop/mtp/library/testingCSV/retail"+str(i+1)+".csv",temp1[startDatePoint])
+        multiVariate_Anomaly_Result = csvTransform("testingCSV/retail"+str(i+1)+".csv",temp1[startDatePoint])
         # multiVariate_Anomaly_Result = []
         multiple_arima_result = resultOfOneMethod(multiVariate_Anomaly_Result)
         
@@ -256,11 +256,11 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         lstRetail= concateLists(lstWSRetailArrival)
         #print lstRetail
         
-        writeToCSV(lstRetail,"/home/kapil/Desktop/mtp/library/testingCSV/AllDataForeCast"+str(i+1)+".csv")
-        args = ['/home/kapil/Desktop/mtp/library/testingCSV/AllDataForeCast'+str(i+1)+'.csv','FALSE','3','RetailWsArrival']
+        writeToCSV(lstRetail,"testingCSV/AllDataForeCast"+str(i+1)+".csv")
+        args = ['testingCSV/AllDataForeCast'+str(i+1)+'.csv','FALSE','3','RetailWsArrival']
         multivaraiateAnalysis(args)
         
-        multiVariate_Anomaly_Result = csvTransform('/home/kapil/Desktop/mtp/library/testingCSV/RetailWsArrival2.csv',temp1[startDatePoint])
+        multiVariate_Anomaly_Result = csvTransform('testingCSV/RetailWsArrival2.csv',temp1[startDatePoint])
         # multiVariate_Anomaly_Result = []
         multiple_arima_result = resultOfOneMethod(multiVariate_Anomaly_Result)
         union_result_of_H3 = union(2,graphBasedAnomaly_result, multiple_arima_result)
@@ -352,13 +352,13 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         lstCentre= concateLists(lstCentre)
         #print lstRetail
         
-        writeToCSV(lstCentre,"/home/kapil/Desktop/mtp/library/testingCSV/RetailWS"+str(i+1)+".csv")
-        args = ['/home/kapil/Desktop/mtp/library/testingCSV/RetailWS'+str(i+1)+'.csv','FALSE','2','RetailWSOutput']
+        writeToCSV(lstCentre,"testingCSV/RetailWS"+str(i+1)+".csv")
+        args = ['testingCSV/RetailWS'+str(i+1)+'.csv','FALSE','2','RetailWSOutput']
         multivaraiateAnalysis(args)
           
         #Since 60% data is used for modelling and rest is used to forecast
         startDatePoint =int(0.60*len(c_list))
-        multiVariate_Anomaly_Result = csvTransform("/home/kapil/Desktop/mtp/library/testingCSV/RetailWSOutput"+str(1)+".csv",temp1[startDatePoint])
+        multiVariate_Anomaly_Result = csvTransform("testingCSV/RetailWSOutput"+str(1)+".csv",temp1[startDatePoint])
         # multiVariate_Anomaly_Result = []
         multiple_arima_result = resultOfOneMethod(multiVariate_Anomaly_Result)
         
@@ -450,11 +450,11 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         lstCentre= concateLists(lstCentre)
         #print lstRetail
         
-        writeToCSV(lstCentre,"/home/kapil/Desktop/mtp/library/testingCSV/WSArrival"+str(i+1)+".csv")
-        args = ['/home/kapil/Desktop/mtp/library/testingCSV/WSArrival'+str(i+1)+'.csv','FALSE','2','WsArrivalOutput']
+        writeToCSV(lstCentre,"testingCSV/WSArrival"+str(i+1)+".csv")
+        args = ['testingCSV/WSArrival'+str(i+1)+'.csv','FALSE','2','WsArrivalOutput']
         multivaraiateAnalysis(args)
         
-        multiVariate_Anomaly_Result = csvTransform('/home/kapil/Desktop/mtp/library/testingCSV/WsArrivalOutput1.csv',temp1[startDatePoint])
+        multiVariate_Anomaly_Result = csvTransform('testingCSV/WsArrivalOutput1.csv',temp1[startDatePoint])
         # multiVariate_Anomaly_Result = []
         multiple_arima_result = resultOfOneMethod(multiVariate_Anomaly_Result)
         union_result_of_H3 = union(2,graphBasedAnomaly_result, multiple_arima_result)

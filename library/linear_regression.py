@@ -76,18 +76,23 @@ def linear_regression(x_series, y_series, param = 0, default_threshold = True, t
         diff_vals = [abs(x[4]) for x in diff]
         (lowerThreshold,upperThreshold) =  MADThreshold(diff_vals)
         if(param == 1):
+            print "Upper Threshold of Linear Regression : " + str(upperThreshold)
             for i in range(0, len(diff)):
                 if(diff[i][4] > upperThreshold):
                     results.append(diff[i])                    
         elif(param == -1):
+            print "Lower Threshold of Linear Regression : " + str(lowerThreshold)
             for i in range(0, len(diff)):
                 if(diff[i][4] < lowerThreshold):
                     results.append(diff[i])  
         elif(param == 0):
+            print "Upper Threshold of Linear Regression : " + str(upperThreshold)
+            print "Lower Threshold of Linear Regression : " + str(lowerThreshold)
             for i in range(0, len(diff)):
                 if(diff[i][4] < lowerThreshold or diff[i][4] > upperThreshold):
                     results.append(diff[i]) 
     else:
+        print "User defined Threshold Value for Linear Regression: " + str(threshold)
         if(param == 1):
             for i in range(0, len(diff)):
                 if(diff[i][4] > threshold):
@@ -98,7 +103,7 @@ def linear_regression(x_series, y_series, param = 0, default_threshold = True, t
                     results.append(diff[i])
         elif(param == 0):
             for i in range(0,len(diff)):
-                if(abs(diff[i][4]) > outVal):
+                if(abs(diff[i][4]) > threshold):
                     results.append(diff[i])
     return (results,regr)
 

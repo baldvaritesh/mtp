@@ -90,30 +90,35 @@ def slopeBasedDetection(series1,smoothed1,series2,smoothed2,next_val_to_consider
         # print "Negative Threshold Value:" + str(negative_threshold)
     
     if(what_to_consider == 1):
-        positive_anomalous_pts = []
+        positive_anomalous_pts = []        
         if(default_threshold):
+            print "Possitive Threshold of Slope Based : " + str(positive_threshold)
             for i in range(0,len(positive_slopes)):
                 if(positive_slopes[i][2] > positive_threshold):
                     positive_anomalous_pts.append(positive_slopes[i])
         else:
+            print "Possitive Threshold of Slope Based User Given: " + str(threshold)
             for i in range(0,len(positive_slopes)):
                 if(positive_slopes[i][2] > threshold):
                     positive_anomalous_pts.append(positive_slopes[i])
         return positive_anomalous_pts
-    elif(what_to_consider == -1):
+    elif(what_to_consider == -1):        
         negative_anomalous_pts = []
         if(default_threshold):
-            print "Threshold value for slope based: " + str(negative_threshold)
+            print "Negative Threshold of Slope Based : " + str(negative_threshold)
             for i in range(0,len(negative_slopes)):
                 if(negative_slopes[i][2] < negative_threshold):
                     negative_anomalous_pts.append(negative_slopes[i])
         else:
+            print "Negative Threshold of Slope Based User Given: " + str(threshold)
             for i in range(0,len(negative_slopes)):
                 if(negative_slopes[i][2] < threshold):
                     negative_anomalous_pts.append(negative_slopes[i])
         return negative_anomalous_pts
     elif(what_to_consider == 0):
         if(default_threshold):
+            print "Possitive Threshold of Slope Based : " + str(positive_threshold)
+            print "Negative Threshold of Slope Based : " + str(negative_threshold)
             positive_anomalous_pts = []
             for i in range(0,len(positive_slopes)):
                 if(positive_slopes[i][2] > positive_threshold):
@@ -127,6 +132,7 @@ def slopeBasedDetection(series1,smoothed1,series2,smoothed2,next_val_to_consider
             sorted(anomalous_pts, key=lambda x: x[0])    
             return anomalous_pts
         else:
+            print "Threshold of Slope Based User Given: " + str(threshold)
             positive_anomalous_pts = []
             for i in range(0,len(positive_slopes)):
                 if(positive_slopes[i][2] > threshold):
