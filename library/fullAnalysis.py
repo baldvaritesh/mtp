@@ -24,6 +24,12 @@ It has 4 columns:
 Date, Wholesale Price, Retail Price, Arrival
 
 '''
+
+defaultThresholdCentre1 = [6, 14, -5, 100, 6, 50, -7, 100]
+defaultThresholdCentre2 = [6, 14, -4, 100, 6, 20, -5, 100]
+userThreshold = True
+
+
 def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
     if len(timeSeriesFileNames) != numOfFiles:
         print "Number of files mentioned do not match the specified files provided"
@@ -131,18 +137,35 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
     for i,c_list in enumerate(retailList):
         
         # Hypothesis 1: START
-        
-        # CALL SLOPE BASED
-        slopeBasedResult = slopeBased(c_list,False,avgRetailTimeSeries, False,7,True,0, 1)        
-        slopeBasedResult = mergeDates(slopeBasedResult)     
-        
-        # Correlation
-        correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,avgRetailTimeSeries)
-        correlationResult = mergeDates(correlationResult)
-        
-        # Linear Regression
-        lrResult = linear_regressionMain(avgRetailTimeSeries,c_list,1)
-        lrResult = mergeDates(lrResult)
+        if(userThreshold):
+            if(i==0):
+                slopeBasedResult = slopeBased(c_list,False,avgRetailTimeSeries, False,7,False,defaultThresholdCentre1[0], 1)
+            elif(i==1):
+                slopeBasedResult = slopeBased(c_list,False,avgRetailTimeSeries, False,7,False,defaultThresholdCentre2[0], 1)
+            slopeBasedResult = mergeDates(slopeBasedResult)     
+            
+            # Correlation
+            correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,avgRetailTimeSeries)
+            correlationResult = mergeDates(correlationResult)
+            
+            # Linear Regression
+            if(i==0):
+                lrResult = linear_regressionMain(avgRetailTimeSeries,c_list,1, False, defaultThresholdCentre1[1])
+            elif(i==1):
+                lrResult = linear_regressionMain(avgRetailTimeSeries,c_list,1, False, defaultThresholdCentre2[1])
+            lrResult = mergeDates(lrResult)
+        else:            
+            # CALL SLOPE BASED
+            slopeBasedResult = slopeBased(c_list,False,avgRetailTimeSeries, False,7,True,0, 1)        
+            slopeBasedResult = mergeDates(slopeBasedResult)     
+            
+            # Correlation
+            correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,avgRetailTimeSeries)
+            correlationResult = mergeDates(correlationResult)
+            
+            # Linear Regression
+            lrResult = linear_regressionMain(avgRetailTimeSeries,c_list,1)
+            lrResult = mergeDates(lrResult)
         
         # Result for Hypothesis 1
         slopeBased_result = resultOfOneMethod(slopeBasedResult)
@@ -218,18 +241,37 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
     for i,c_list in enumerate(arrivalList):
         
         # Hypothesis 2: START        
+        if(userThreshold):
+            # CALL SLOPE BASED
+            if(i==0):
+                slopeBasedResult = slopeBased(retailList[i],False,c_list, False,7,False,defaultThresholdCentre1[2], -1)
+            elif(i==1):
+                slopeBasedResult = slopeBased(retailList[i],False,c_list, False,7,False,defaultThresholdCentre2[2], -1)
+            slopeBasedResult = mergeDates(slopeBasedResult)
+            
+            # Correlation
+            correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,retailList[i],15,15,False)
+            correlationResult = mergeDates(correlationResult)
+            
+            # Linear Regression
+            if(i==0):
+                lrResult = linear_regressionMain(c_list,retailList[i],1, False, defaultThresholdCentre1[3])
+            elif(i==1):
+                lrResult = linear_regressionMain(c_list,retailList[i],1, False, defaultThresholdCentre2[3])
+            lrResult = mergeDates(lrResult)
+        else:            
+            # CALL SLOPE BASED
+            slopeBasedResult = slopeBased(retailList[i],False,c_list, False,7,True,0, -1)
+            slopeBasedResult = mergeDates(slopeBasedResult)
+            
+            # Correlation
+            correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,retailList[i],15,15,False)
+            correlationResult = mergeDates(correlationResult)
+            
+            # Linear Regression
+            lrResult = linear_regressionMain(c_list,retailList[i],1)
+            lrResult = mergeDates(lrResult)
         
-        # CALL SLOPE BASED
-        slopeBasedResult = slopeBased(retailList[i],False,c_list, False,7,True,0, -1)
-        slopeBasedResult = mergeDates(slopeBasedResult)
-        
-        # Correlation
-        correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,retailList[i],15,15,False)
-        correlationResult = mergeDates(correlationResult)
-        
-        # Linear Regression
-        lrResult = linear_regressionMain(c_list,retailList[i],1)
-        lrResult = mergeDates(lrResult)
 
         # Result for Hypothesis 2
         slopeBased_result = resultOfOneMethod(slopeBasedResult)
@@ -316,18 +358,38 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
     for i,c_list in enumerate(retailList):
         
         # Hypothesis 1: START
+        if(userThreshold):
+            # CALL SLOPE BASED
+            if(i==0):
+                slopeBasedResult = slopeBased(c_list,False,wholesaleList[i], False,7,False,defaultThresholdCentre1[4], 1)
+            elif(i==1):
+                slopeBasedResult = slopeBased(c_list,False,wholesaleList[i], False,7,False,defaultThresholdCentre2[4], 1)
+            slopeBasedResult = mergeDates(slopeBasedResult)     
+            
+            # Correlation
+            correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,wholesaleList[i])
+            correlationResult = mergeDates(correlationResult)
+            
+            # Linear Regression
+            if(i==0):
+                lrResult = linear_regressionMain(wholesaleList[i],c_list,1, False, defaultThresholdCentre1[5])
+            elif(i==1):
+                lrResult = linear_regressionMain(wholesaleList[i],c_list,1, False, defaultThresholdCentre2[5])
+            lrResult = mergeDates(lrResult)
+        else:            
+            # CALL SLOPE BASED
+            slopeBasedResult = slopeBased(c_list,False,wholesaleList[i], False,7,True,0, 1)
+            slopeBasedResult = mergeDates(slopeBasedResult)     
+            
+            # Correlation
+            correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,wholesaleList[i])
+            correlationResult = mergeDates(correlationResult)
+            
+            # Linear Regression
+            lrResult = linear_regressionMain(wholesaleList[i],c_list,1)
+            lrResult = mergeDates(lrResult)
+            
         
-        # CALL SLOPE BASED
-        slopeBasedResult = slopeBased(c_list,False,wholesaleList[i], False,7,True,0, 1)
-        slopeBasedResult = mergeDates(slopeBasedResult)     
-        
-        # Correlation
-        correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,wholesaleList[i])
-        correlationResult = mergeDates(correlationResult)
-        
-        # Linear Regression
-        lrResult = linear_regressionMain(wholesaleList[i],c_list,1)
-        lrResult = mergeDates(lrResult)
         
         # Result for Hypothesis 1
         slopeBased_result = resultOfOneMethod(slopeBasedResult)
@@ -414,18 +476,38 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
     for i,c_list in enumerate(arrivalList):
         
         # Hypothesis 2: START        
+        if(userThreshold):
+            # CALL SLOPE BASED
+            if(i==0):
+                slopeBasedResult = slopeBased(wholesaleList[i],False,c_list, False,7,False,defaultThresholdCentre1[6], -1)
+            elif(i==1):
+                slopeBasedResult = slopeBased(wholesaleList[i],False,c_list, False,7,False,defaultThresholdCentre2[6], -1)
+            slopeBasedResult = mergeDates(slopeBasedResult)
+            
+            # Correlation
+            correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,wholesaleList[i],15,15,False)
+            correlationResult = mergeDates(correlationResult)
+            
+            # Linear Regression
+            if(i==0):
+                lrResult = linear_regressionMain(c_list,wholesaleList[i],1, defaultThresholdCentre1[7])
+            elif(i==1):
+                lrResult = linear_regressionMain(c_list,wholesaleList[i],1, defaultThresholdCentre2[7])
+            lrResult = mergeDates(lrResult)
+        else:            
+            # CALL SLOPE BASED
+            slopeBasedResult = slopeBased(wholesaleList[i],False,c_list, False,7,True,0, -1)
+            slopeBasedResult = mergeDates(slopeBasedResult)
+            
+            # Correlation
+            correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,wholesaleList[i],15,15,False)
+            correlationResult = mergeDates(correlationResult)
+            
+            # Linear Regression
+            lrResult = linear_regressionMain(c_list,wholesaleList[i],1)
+            lrResult = mergeDates(lrResult)       
         
-        # CALL SLOPE BASED
-        slopeBasedResult = slopeBased(wholesaleList[i],False,c_list, False,7,True,0, -1)
-        slopeBasedResult = mergeDates(slopeBasedResult)
         
-        # Correlation
-        correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,wholesaleList[i],15,15,False)
-        correlationResult = mergeDates(correlationResult)
-        
-        # Linear Regression
-        lrResult = linear_regressionMain(c_list,wholesaleList[i],1)
-        lrResult = mergeDates(lrResult)
 
         # Result for Hypothesis 2
         slopeBased_result = resultOfOneMethod(slopeBasedResult)
@@ -902,6 +984,8 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
             print str(row[0]) +"," + str(row[1])
         # print "size:" + str(len(WvsA_anomalies_intersection[2*i+1]))
         
-hypothesisForCenter(5,"testingCSV/MumbaiSILData.csv","testingCSV/DelhiSILData.csv", "testingCSV/AhmedabadSILData.csv","testingCSV/BengaluruSILData.csv","testingCSV/PatnaSILData.csv")
+# hypothesisForCenter(5,"testingCSV/MumbaiSILData.csv","testingCSV/DelhiSILData.csv", "testingCSV/AhmedabadSILData.csv","testingCSV/BengaluruSILData.csv","testingCSV/PatnaSILData.csv")
+
+hypothesisForCenter(2,"testingCSV/MumbaiSILData.csv","testingCSV/DelhiSILData.csv")
 
 
