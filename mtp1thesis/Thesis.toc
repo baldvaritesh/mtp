@@ -18,16 +18,12 @@
 \contentsline {subsection}{\numberline {3.6.1}Summary Of News Atricles}{12}{subsection.3.6.1}
 \contentsline {section}{\numberline {3.7}Characteristics of anomaly}{19}{section.3.7}
 \contentsline {section}{\numberline {3.8}Hypothesis}{20}{section.3.8}
-\contentsline {chapter}{\numberline {4}Proposed Design and Framework}{27}{chapter.4}
+\contentsline {chapter}{\numberline {4}Design and Framework}{27}{chapter.4}
 \contentsline {section}{\numberline {4.1}System Design}{27}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Input Time-series}{27}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Relation Between Time-series (Hypothesis)}{28}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Automatic Selection of Functions and Processing Time series}{29}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Highlight Anomalies}{29}{subsection.4.1.4}
 \contentsline {section}{\numberline {4.2}Test Criterion for Hypothesis}{29}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Hypothesis 1}{29}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}Hypothesis 2}{30}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}Hypothesis 3}{31}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4}Hypothesis 4}{31}{subsection.4.2.4}
 \contentsline {chapter}{\numberline {5}Conclusion}{33}{chapter.5}
-\contentsline {chapter}{Bibliography}{34}{chapter*.6}
+\contentsline {chapter}{Bibliography}{34}{chapter*.7}
