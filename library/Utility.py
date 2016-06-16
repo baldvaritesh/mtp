@@ -57,7 +57,7 @@ def fetchNewsFor5Centers(resultsOfSystem, intervalToConsider=5):
 		end_date = date + timedelta(days=intervalToConsider)
 		end_date = end_date.strftime('%Y/%m/%d')
 		
-		query = "select publish_date, name, source_url, article_hash_url, an.reason, an.comment, an.days from articlemetadata amd, newssource ns, analysis an where amd.source_id = ns.id and publish_date >= '"+start_date+"' and publish_date<= '"+end_date+"' and article_hash_url = an.article_id and article_hash_url in (select distinct(article_id) from analysis where place iLike 'Ahmedabad' or place iLike 'Bengaluru' or place iLike 'Mumbai' or place iLike 'Patna' or place iLike 'Delhi' or place iLike 'India'  and comment not ilike '%delete%' )"
+		query = "select publish_date, name, source_url, article_hash_url, an.reason, an.comment, an.days from articlemetadata amd, newssource ns, analysis an where amd.source_id = ns.id and publish_date >= '"+start_date+"' and publish_date<= '"+end_date+"' and article_hash_url = an.article_id and article_hash_url in (select distinct(article_id) from analysis where placeMapping iLike 'Ahmedabad' or place iLike 'Bengaluru' or place iLike 'Mumbai' or place iLike 'Patna' or place iLike 'Delhi' or place iLike 'India'  and comment not ilike '%delete%' )"
 		cur.execute(query)
 		queryResult = cur.fetchall()
 		
@@ -209,18 +209,7 @@ Where:
 '''
 
 def fetchNewsForCenter(resultsOfSystem, centerNumber, intervalToConsider=5):
-	center = ""
-	
-	if(centerNumber == 0):
-		center = "Mumbai"
-	elif(centerNumber == 1):
-		center = "Delhi"
-	elif(centerNumber == 2):
-		center = "Mumbai"
-	elif(centerNumber == 3):
-		center = "Patna"
-	elif(centerNumber == 4):
-		center = "Delhi"
+	center = placeMapping(centerNumber)
 	
 	# Create connection to Database
 	conn = psycopg2.connect(database="news_articles", user="postgres", password="password", host="127.0.0.1", port="5432")
@@ -474,11 +463,11 @@ def placeMapping(i):
     elif (i==1):
     	return "Delhi"
     elif(i==2):
-    	return "Mumbai"
+    	return "Ahmedabad"
     elif(i==3):
-    	return "Patna"
+    	return "Banglore"
     elif(i==4):
-    	return "Delhi"
+    	return "Patna"
     
 
 '''
