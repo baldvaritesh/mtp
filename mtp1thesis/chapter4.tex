@@ -120,3 +120,29 @@ Other technique, to combine multiple time series is, subspace based transformati
 \textbf{Note (Applicable to Onion Case):} Results returned by H1 and H2, consists of all the time periods where arrival-wholesale price and wholesale price-retail price pairs go out of line. There may be case where, for each time of that year it may be going out of line and might not be anomaly. So, to remove such false positives, we can take intersection of results of H1 and results of H3. Similar thing can be done with H2 also, by taking  intersection of results of H2 and results of H3.
 
 
+\section{Anomaly Detection Library}
+Following methods are implemented in the library to detect anomalies in given timeseries:
+\\
+
+\subsection{Window Based Correlation}
+The method finds anomalies between two timeseries. If the two timeseries are supposed to be positively correlated, then it reports all the tenures where the timeseries deviates from showing positive correlation between them.
+\\
+Similarly if the two timeseries are supposed to be negatively correlated, then it reports all the tenures where the timeseries deviates from showing negative correlation between them. The significant deviations are reported based on either the default significance value of 0.01 or it can be customized based on the need.
+
+\
+\subsection{Slope Based Detection}
+The  method calculates the rate of change of one timeseries with respect to the other. The tenures are reported where one timeseries varies to a large extent from the other.
+\\
+The threshold is decided based on the MAD outlier detection test or it could be set manually.
+\subsection{Linear Regression}
+The method builds a linear model between two timeseries. Values are predicted based on this linear model and error is calulated. All the tenures with error values breaching the threshold are reported as anomaly. 
+\\
+The threshold can be decided by MAD outlier detection technique or it can be configured manually.
+\subsection{Graph Based Anomaly}
+Graph based anomaly detection technique considers each day as a node of a graph. Similar nodes are connected to each other by some weight. Similarity of nodes are calculated by making use of the values of that node i.e. value(s) of timeseries on that date. Based on this similarity, edge weights are also assigned. Then random walk algorithm is applied on this graph structure and connectivity value of each node is calculated. Graph nodes having the least connectivity values are reported as anomaly.
+\\
+The method also takes into account the trend, seasonality etc of timeseries. Top few points (can be configured) are reported as anomaly by the system.
+\subsection{Multivariate- Vector Autoregressive}
+The method uses vector autoregressive framework for multivariate time-series analysis in order to forecast values. The framework treats all the variables as symmetrical and all the variables are modeled as if they influence each others equally.
+\\
+Error percentage is calculated between actual and forecasted values. These error values are used to filter anomalous conditions from non-anomalous conditions by setting a threshold value which can be automatically computed by MAD outlier detection test or it can be manually configured to the required value.
