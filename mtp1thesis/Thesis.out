@@ -25,5 +25,19 @@
 \BOOKMARK [2][-]{subsection.4.2.2}{Hypothesis 2}{section.4.2}% 25
 \BOOKMARK [2][-]{subsection.4.2.3}{Hypothesis 3}{section.4.2}% 26
 \BOOKMARK [2][-]{subsection.4.2.4}{Hypothesis 4}{section.4.2}% 27
-\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 28
-\BOOKMARK [0][-]{chapter*.7}{Bibliography}{}% 29
+\BOOKMARK [1][-]{section.4.3}{Anomaly Detection Library}{chapter.4}% 28
+\BOOKMARK [2][-]{subsection.4.3.1}{Window Based Correlation}{section.4.3}% 29
+\BOOKMARK [2][-]{subsection.4.3.2}{Slope Based Detection}{section.4.3}% 30
+\BOOKMARK [2][-]{subsection.4.3.3}{Linear Regression}{section.4.3}% 31
+\BOOKMARK [2][-]{subsection.4.3.4}{Graph Based Anomaly}{section.4.3}% 32
+\BOOKMARK [2][-]{subsection.4.3.5}{Multivariate- Vector Autoregressive}{section.4.3}% 33
+\BOOKMARK [0][-]{chapter.5}{Results and Analysis}{}% 34
+\BOOKMARK [1][-]{section.5.1}{Results}{chapter.5}% 35
+\BOOKMARK [1][-]{section.5.2}{Analysis of Each Method}{chapter.5}% 36
+\BOOKMARK [2][-]{subsection.5.2.1}{Slope Based Anomaly Detection}{section.5.2}% 37
+\BOOKMARK [2][-]{subsection.5.2.2}{Linear Regression}{section.5.2}% 38
+\BOOKMARK [2][-]{subsection.5.2.3}{Window Based Correlation}{section.5.2}% 39
+\BOOKMARK [2][-]{subsection.5.2.4}{Multivariate Time Series- Vector Autoregressive}{section.5.2}% 40
+\BOOKMARK [2][-]{subsection.5.2.5}{Graph Based Anomaly Detection}{section.5.2}% 41
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 42
+\BOOKMARK [0][-]{chapter*.17}{Bibliography}{}% 43
