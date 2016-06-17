@@ -1,0 +1,117 @@
+\chapter{Slope Based Detection}
+
+\section{Introduction}
+
+The method works on two time-series. It finds the ratio of steepness 
+at two different points in the time-series. Let's say we have two 
+time series as series1 and series2. So in this method, we first find 
+the rate of change in the time-series values for both time-series followed 
+by taking ratio of these rate of change. i.e  suppose we have two points on 
+time-series 1 as $y_{11}$ and $y_{12}$ and on time-series 2 as $y_{21}$ and $y_{22}$. 
+Rate of change between these points is calculated as following
+ $$S_1=\frac{y_{12}-y_{11}}{y_{11}}$$
+ ,
+  $$S_2=\frac{y_{22}-y_{21}}{y_{21}}$$
+ Ratio of steepness ( \textbf{rs} ) is calculated as
+ $$rs = \frac{S_1}{S_2}$$
+
+The \textbf{rs} is calulated between first and last point of every window of
+size ``w'' provided as input. 
+
+Now, we have rate of change in the steepness(\textbf{rs}) for every window. 
+The outliers are detected by the threshold value provided by user or if not, 
+then threshold is computed using MAD test on the all \textbf{rs} calculated above.
+
+If the two time-series are expected to move in tandem, then all the points 
+with \textbf{rs} greater than threshold are reported whereas if the two time 
+series should not move in tandem then all the points with \textbf{rs} less than 
+threshold are reported. 
+
+\section{Related Functions}
+
+\subsection{slopeBasedDetection(series1,smoothed1,series2,smoothed2, \\ next\_val\_to\_consider, default\_threshold, threshold, what\_to\_consider)}
+
+This function smoothes the provided time series data using exponential moving average(if needed) and 
+calculates \textbf{rs} for first and last point of every window of size next{\_}val{\_}to{\_}consider.
+
+% Since, we calculate rs at regular interval, to avoid sudden spike or steepness in result, we prefer smoothed time-series.
+
+\begin{itemize}
+ \item Input Parameters
+ 
+ \begin{enumerate}
+  \item series1 \textit{(list)} : Input series 1 as a list of float values
+  \item smoothed1 \textit{(boolean)} : Whether series1 is smoothed or not? If not (value of this parameter is \textit{False} ) smoothing will be done
+  \item series2 \textit{(list)} : Input series 2 as a list of float values
+  \item smoothed2 \textit{(boolean)} : Whether series2 is smoothed or not? If not (value of this parameter is \textit{False} ) smoothing will be done
+  \item next{\_}val{\_}to{\_}consider \textit{(int)} : indicates the size of window or next point in time-series to calculate slope of steepness. Default is 7 days.
+  \item default{\_}threshold \textit{(int)} : Whether to consider default threshold or not. If \textit{True}, the threshold is calculated using MAD Test.
+  \item threshold \textit{(int)} : Threshold value to consider if default\_threshold is set to \textit{False}
+  \item what{\_}to{\_}consider \textit{(int)} : Can be either 1,0 or -1. If the series are supposed to move in tandem, 1 is set otherwise -1 is set. In case we don't know the correlation between two, 0 is set.
+  \end{enumerate}
+
+ \item Output \textit{(list)} : \\
+  Returns list of tuples of the form \\
+  \center{(first,second,slope\_value)}\\
+  \begin{flushleft}
+ where first and second are the array index of passed series for which the \textbf{rs} is calculated.
+ \end{flushleft}
+\end{itemize}
+
+\subsection{anomalyDatesSlopeBaseddetetion(slopeBasedResult,any\_series)}
+
+This function basically takes result of ”slopeBasedDetection” as input along with
+any series which is list of tuples of the form (date, value), and gives date to each
+anomaly.\\
+
+The result returned by ”slopeBasedDetection” function just provides index of
+data point, which is reported as anomaly. But we have time series, so we need
+to provide date, instead of index of data point. So, this function basically,
+attaches each anomaly with its date and returns it.\\
+
+\begin{itemize}
+ \item Input Parameters
+ 
+ \begin{enumerate}
+  \item slopeBasedResult \textit{(list)} : This is list of anomalies reported by ”slopeBasedDetection” function.
+  \item any\_series \textit{(list)} : Any list/series of tuples in the format (Date,Value), date will be used from this series to find date against each anomaly.
+ \end{enumerate}
+
+ \item Output \textit{(list)} : \\
+ 	Returns list of tuples of the following form: \\ 
+ 	(start\_date,end\_date,slope\_value)
+
+\end{itemize}
+
+
+\subsection{slopeBased(series1,smoothed1,series2,smoothed2,next\_val\_to\_consider, default\_threshold, threshold, what\_to\_consider)}
+
+This is main function of this anomaly detection technique. This function first calls "slopeBasedDetection" function, gets list of anomalies. 
+After that, it calls "anomalyDatesSlopeBaseddetetion" function to attach date with each anomaly and than returns result.
+
+\begin{itemize}
+ \item Input Parameters
+ 
+ \begin{enumerate}
+  \item series1 \textit{(list)} : Input series 1 as a list of tuples of the forms (date, value)
+  \item smoothed1 \textit{(boolean)} : Whether series1 is smoothed or not? If not (value of this parameter is \textit{False} ) smoothing will be done
+  \item series2 \textit{(list)} : Input series 2 as a list of tuples of the forms (date, value)
+  \item smoothed2 \textit{(boolean)} : Whether series2 is smoothed or not? If not (value of this parameter is \textit{False} ) smoothing will be done
+  \item next{\_}val{\_}to{\_}consider \textit{(int)} : indicates the size of window or next point in time-series to calculate slope of steepness. Default is 7 days.
+  \item default{\_}threshold \textit{(int)} : Whether to consider default threshold or not. If \textit{True}, the threshold is calculated using MAD Test.
+  \item threshold \textit{(int)} : Threshold value to consider if default\_threshold is set to \textit{False}
+  \item what{\_}to{\_}consider \textit{(int)} : Can be either 1,0 or -1. If the series are supposed to move in tandem, 1 is set otherwise -1 is set. In case we don't know the correlation between two, 0 is set.
+  \end{enumerate}
+
+ \item Output \textit{(list)} : \\
+ 	Returns list of tuples of the following form: \\ 
+ 	(start\_date,end\_date,slope\_value)\\
+ 	where, start\_date and end\_date are points on which the steep was computed along with the slope\_value which was spotted as outlier.
+ 
+\end{itemize}
+
+\section{Description}
+
+slopeBased function is called to find anomalies based on the rate of change in value. It calls slopeBasedDetection method to compute the slopes between points in windows. 
+Anomaly points are reported based on the parameters provided to the function. \\
+In order to map dates against every anomaly points instead of array index, anomalyDatesSlopeBaseddetetion is called which provides (start\_date,end\_date,slope\_value) as final output.
