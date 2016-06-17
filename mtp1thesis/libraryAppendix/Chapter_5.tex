@@ -4,31 +4,31 @@
 
 The method uses vector autoregressive framework for multivaraiate time-series analysis
 in order to forecast values. The framework treats all the variables as symmetrical
-and all the variables are modelled as if they influence each others equally.
-
+and all the variables are modelled as if they influence each others equally.\\
+\\
 VAR generates forecast values for all the variables in recursive manner. Since VAR 
 works on only stationary series, lag needs to be found so that the series could be
-differenced in order to make them stationary.
-
+differenced in order to make them stationary.\\
+\\
 The code is implemented in R and python is used to call the R script with Appropriate 
 arguments and process the intermeddiate results generated from the script. Forecast and 
-vars library are used in R to implement VAR model for multiple time-series.
-
+vars library are used in R to implement VAR model for multiple time-series.\\
+\\
 All the interrelated time-series are passed to R script using a csv file. 60\% 
 (This can be configured as per user need) of the passed data for every time-series 
 is consumed for modelling the time-series. Rest of the time-series data is used to 
 find the anomalies in the system by finding predicted values and range of higher and lower
-predicted values.
-
+predicted values.\\
+\\
 Multiple csv files (one for each varaiable) are generated as an output to the R script 
 call which has actual values of variables along with the predicted ,lower and higher 
 values of prediction. All the points which does not fall in the forecasted range and 
 the percentage differnce between the actual and forecasted value breached threshold 
-are reported as anomalies.
-
+are reported as anomalies.\\
+\\
 Note that the threshold is computed with MAD test on the percentage of differnce between actual and forecasted value.
-If in future, one wants to add threshold value than function can be modified according to that as well.
-
+If in future, one wants to add threshold value than function can be modified according to that as well.\\
+\\
 Refer \cite{var} for more detailed information.
 
 \section{Related Functions}
@@ -37,8 +37,8 @@ Refer \cite{var} for more detailed information.
 
 This function is inside R script which takes a fileName containing all the related 
 time-series and generate output files (one file for every component) containing predicted, actual,
-lower and higher forecasted values. 
-
+lower and higher forecasted values. \\
+\\
 The name of output files starts with fileStart appended with
 the sequence number of variable. Like if ``RetailWsArrival'' is passed as fileStart and there are 
 two variables or series in input file. The names of generated file will be : RetailWsArrival1.csv and 
