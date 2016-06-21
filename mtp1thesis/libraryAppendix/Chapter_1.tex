@@ -5,22 +5,21 @@
 This technique is basically applied on two time-series. Let's say we have two 
 time series as series1 and series2. So, in this method, we first find 
 correlation at various lags between these two time series. User can specify 
-minimum and maximum lag to consider. So, for each value between minimum and maximum lag, we find correlation values.
-
+minimum and maximum lag to consider. So, for each value between minimum and maximum lag, we find correlation values.\\
+\\
 After finding correlation values at all lags, we consider that lag at which 
 correlation value is higher, among all previously calulated correlation values, 
 at all lags. Let's say that lag be ``x''. So, depending upon that ``x'', we 
 shift series1 or series2. If ``x'' is positive, we move series2 by ``x'' units 
-and if it is negative than we shift series1 by \abs{x} units.
-
+and if it is negative than we shift series1 by \abs{x} units.\\
+\\
 Now, we are ready to apply window correlation. Take window size,``w'' as 
 input. First window will be from 1st element to w'th element of both the time 
 series after aligning by lag ``x''. Find correlation for this window between 
 two time-series and save it in an array. Now, slide window by ``w'' elements 
-and 
-calculate correlation value again and so on. Now, we have correlation values at 
-multiple windows.
-
+and calculate correlation value again and so on. Now, we have correlation values at 
+multiple windows.\\
+\\
 Now, let's say both the series should have been positively correlated. So, what 
 we do is, we choose threshold by MAD test if not provided to us, and find all 
 correlation values which are below that threshold and report all those windows 
@@ -95,13 +94,13 @@ lag at which optimum correlation value is found along with correlation value.
 This function first aligns two series by given lag. If lag is positive than it 
 shifts start of series2 else start of series1. After aligning both the series 
 according to lag, this function calculates correlation between both series at 
-all windows. 
-
+all windows. \\
+\\
 window\_size states size of the window. So, we will start with first window 
 taking first ``window\_size'' elements from each series and will calculate 
 correlation. We will save this correlation value in list and will slide to next 
 window. Next window will start after ``window\_size'' elements. In such a way, we 
-calculate, correlation at all windows and return the list of correlation values.
+calculate, correlation at all windows and return the list of correlation values.\\
 
 
 \begin{itemize}
@@ -164,8 +163,8 @@ windows is stored in array.
  
 \end{itemize}
 
-\subsection{anomaliesFromWindowCorrelationWithConstantlag(arr1, arr2, 
-window\_size=15,maxlag=15, positive\_correlation=True, pos=1, neg=1, 
+\subsection{anomaliesFromWindowCorrelationWithConstantlag\\(arr1, arr2, 
+window\_size=15,maxlag=15, \\positive\_correlation=True, pos=1, neg=1, \\
 default\_threshold = True, threshold = 0):}
 
 
@@ -174,10 +173,10 @@ previously stated methods, it will first gather correlation values at different
 windows. Than depending upon which type of threshold is to be used, it will 
 filter out anomalies. If default threshold is to be used, than it will be 
 calculated using MAD test on the correlation values at each window, else 
-threshold provided by user will be used. 
-
+threshold provided by user will be used. \\
+\\
 Correlation values not satisfying threshold will be reported along with the date 
-range of that window.
+range of that window.\\
 
 
 \begin{itemize}

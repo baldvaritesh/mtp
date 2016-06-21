@@ -5,16 +5,16 @@
 This technique is applied on two time series where one is independent variable 
 and other is dependent variable. Let's say independent variable 
 is "x" represented by series1 and "y" is dependent variable which is 
-represented by series2, where y=f(x). 
-
+represented by series2, where y=f(x). \\
+\\
 So, in this method, given values of both variables at different points, i.e. 
 given many pairs of (x,y), which are represented here by series1 and series2, 
 this technique tries to find relation between x and y, i.e. it tries to find 
 best suitable function y=f(x), which can best fit given data. Note that this 
 function can only find linear relation between two variables, i.e. it can find 
 relation such as y = mx + c, where "m" and "c" are some variables, which are 
-found by this method, which can best represent these two series. 
-
+found by this method, which can best represent these two series. \\
+\\
 After finding that function, for a given value of "x" one can predict, what 
 should be ideal value of "y". So, this technique basically works on this 
 principle. After finding that function, we again apply same function of the 
@@ -37,12 +37,12 @@ y\_series is series corresponding to "y" variable (dependent variable, dependent
 on "x"). Given these two series, it first finds out best linear relationship 
 between these two variables and as described in the above section, it finds 
 relative difference between predicted and actual "y" series and the ones which 
-are beyond threshold value are reported as anomaly. 
-
+are beyond threshold value are reported as anomaly. \\
+\\
 As described above, threshold value may be calculated by MAD test on relative 
 difference values by keeping "default\_threshold" as "True", and if it is false, 
-user will provide threshold value, by setting up "threshold" parameter above.
-
+user will provide threshold value, by setting up "threshold" parameter above.\\
+\\
 Note that i'th value in y\_series should be corresponding to i'th value in the 
 x\_series.
 
@@ -98,8 +98,8 @@ is just one value, for which we need corresponding ideal "y" value.
 
 This function basically takes result of "linear\_regression" as input along with 
 any series which is list of tuples of the form (date, value), and gives date to 
-each anomaly. 
-
+each anomaly. \\
+\\
 The result returned by "linear\_regression" function just provides index of data 
 point, which is reported as anomaly. But we have time series, so we need to 
 provide date, instead of index of data point. So, this function basically, 
