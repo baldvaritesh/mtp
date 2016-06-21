@@ -8,7 +8,7 @@ correlation at various lags between these two time series. User can specify
 minimum and maximum lag to consider. So, for each value between minimum and maximum lag, we find correlation values.\\
 \\
 After finding correlation values at all lags, we consider that lag at which 
-correlation value is higher, among all previously calulated correlation values, 
+correlation value is higher, among all previously calculated correlation values, 
 at all lags. Let's say that lag be ``x''. So, depending upon that ``x'', we 
 shift series1 or series2. If ``x'' is positive, we move series2 by ``x'' units 
 and if it is negative than we shift series1 by \abs{x} units.\\
@@ -39,7 +39,7 @@ between -maxlag to +maxlag, as specified by pos and neg parameters.
   \item arr1 \textit{(list)} : Input series 1 as a list of float values
   \item arr2 \textit{(list)} : Input series 2 as a list of float values
   \item maxlag \textit{(int)} : maximum (maxlag) and minimum (-maxlag) lag to 
-consider while calculating correlation betweem arr1 and arr2
+consider while calculating correlation between arr1 and arr2
   \item pos \textit{(int, 1 or 0)} : To consider positive lag or not, i.e. 1 to 
 maxlag, if value is 1, than positive lag will be considered, else not.
   \item neg \textit{(int, 1 or 0)} : To consider negative lag or not, i.e. 
@@ -138,7 +138,7 @@ it.
   \item window\_size \textit{(int)} : window size to be considered while 
 calculating window correlation
   \item maxlag \textit{(int)} : maximum (maxlag) and minimum (-maxlag) lag to 
-consider while calculating correlation betweem arr1 and arr2, to align both the 
+consider while calculating correlation between arr1 and arr2, to align both the 
 series
   \item positive\_correlation \textit{(boolean, ``True'' or ``False'')} : 
       \begin{itemize}
@@ -190,7 +190,7 @@ range of that window.\\
   \item window\_size \textit{(int)} : window size to be considered while 
 calculating window correlation
   \item maxlag \textit{(int)} : maximum (maxlag) and minimum (-maxlag) lag to 
-consider while calculating correlation betweem arr1 and arr2, to align both the 
+consider while calculating correlation between arr1 and arr2, to align both the 
 series
   \item positive\_correlation \textit{(boolean, ``True'' or ``False'')} : 
       \begin{itemize}
