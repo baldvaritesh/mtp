@@ -490,9 +490,9 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
             
             # Linear Regression
             if(i==0):
-                lrResult = linear_regressionMain(c_list,wholesaleList[i],1, defaultThresholdCentre1[7])
+                lrResult = linear_regressionMain(c_list,wholesaleList[i],1, False,defaultThresholdCentre1[7])
             elif(i==1):
-                lrResult = linear_regressionMain(c_list,wholesaleList[i],1, defaultThresholdCentre2[7])
+                lrResult = linear_regressionMain(c_list,wholesaleList[i],1, False,defaultThresholdCentre2[7])
             lrResult = mergeDates(lrResult)
         else:            
             # CALL SLOPE BASED
