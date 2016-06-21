@@ -31,7 +31,7 @@ We have following data:
 
 \end{enumerate}
 
-Onion Data was collected from the the government websites,\cite{agmarknet} for arrival and wholesale price data and \cite{retailpricecollection} (Department of Consumer Affairs) for retail price data. Crawlers were written to collect the data from these datewise for the period of approximately 9.5 years, starting from 1st January 2006 to 6th July 2015. More data can be added simply by running crawlers again.\\
+Onion Data was collected from the government websites,\cite{agmarknet} for arrival and wholesale price data and \cite{retailpricecollection} (Department of Consumer Affairs) for retail price data. Crawlers were written to collect the data from these date-wise for the period of approximately 9.5 years, starting from 1st January 2006 to 6th July 2015. More data can be added simply by running crawlers again.\\
 \\
 Note that news articles were collected two times. First time to study what is called anomaly in the case of onion and how news source says, on what basis, that there is anomaly. We collected some set of article by manual search. We studied this to understand the characteristics of anomalies, so that we can build our system on that. These articles are studied thoroughly in this chapter in section 3.6. After that, when our system/library got ready, to match our results, we collected news articles rigorously. We have total 453 news articles regarding onion price from 1st December 2010 to 6th July 2015. First these articles were processed using Alchemy API \ref{alchemyapi} and Diffbot \ref{diffbot} to get the date, place and keywords in the article to analyse them. But we found that many of these collected articles were irrelevant, places fetched using Alchemy API was not up to the mark and date extracted from article was often wrong. Also, articles were related to onion prices. So, these APIs cannot tell us, whether article is abou price hike or price dropped. Plus it was difficult for us to fetch reason of price hike from these automatic analysis
 . Because of all these reasons, those articles were studied manually to find out reason stated by news articles for price hike, place mentioned in news article, number of days which are being compared to state that there is unusual price hike and any other comment if present in article. After studying each and every article manually, we found that only 267 articles are relevant to this project.
@@ -89,7 +89,7 @@ Corresponding to every date and location of hoarding news report, values like cu
 
 To answer this question, we went through the series of the news articles when the hoarding is in the news. Then looking over those articles, we try to see that why they are reporting in news, what happened so that people are giving it name of hoarding and how reporters are making conclusion that it may be the class of the hoarding.
 
-\subsection{Summary Of News Atricles}
+\subsection{Summary Of News Articles}
 
 
 First such incident was reported in the 1998. The article \cite{Redif57:online} dated on 21st September 1999 states as follows:
@@ -264,7 +264,7 @@ So, major characteristics of hoarding spotted in newspapers are following:
 \item Rise in wholesale prices when arrival is enough/high
 \end{enumerate}
 
-We can also generalize anomaly cases as shown in table \ref{table:1} and \ref{table:2}. The estimated arrival, wholesale and retail price data is labeled up, down and constant based on if it exceeds actual data value. Red flags are raised based on the following tables if the condition falls under the category marked with {\color{red}A}’s.
+We can also generalize anomaly cases as shown in table \ref{table:1} and \ref{table:2}. The estimated arrival, wholesale and retail price data is labelled up, down and constant based on if it exceeds actual data value. Red flags are raised based on the following tables if the condition falls under the category marked with {\color{red}A}’s.
 
 
 \begin{table}
@@ -313,7 +313,7 @@ Also, one should make a note of that, even in H1 and H2, when wholesale price or
 
 Also, we assume that mandis in the same region will behave in similar manner, because production and effect of other factors will be same in one region. So, based on that we have following hypothesis:
 
-\textbf{\textit{H4. Mandis in the same region should follow the same relationship between arrival and wholesale price, as that of, taken whole region combinely.}
+\textbf{\textit{H4. Mandis in the same region should follow the same relationship between arrival and wholesale price, as that of, taken whole region altogether.}
 \center{OR} \\
 \textit{Retail prices across various centres should follow same relationship among themselves taken effect of them combinely.} }
 

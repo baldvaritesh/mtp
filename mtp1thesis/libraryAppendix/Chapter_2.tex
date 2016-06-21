@@ -15,7 +15,7 @@ Rate of change between these points is calculated as following
  Ratio of steepness ( \textbf{rs} ) is calculated as
  $$rs = \frac{S_1}{S_2}$$
 
-The \textbf{rs} is calulated between first and last point of every window of
+The \textbf{rs} is calculated between first and last point of every window of
 size ``w'' provided as input. \\
 \\
 Now, we have rate of change in the steepness(\textbf{rs}) for every window. 
@@ -31,7 +31,7 @@ threshold are reported.
 
 \subsection{slopeBasedDetection(series1,smoothed1,\\series2,smoothed2, next\_val\_to\_consider,\\ default\_threshold, threshold, what\_to\_consider)}
 
-This function smoothes the provided time series data using exponential moving average(if needed) and 
+This function smooths the provided time series data using exponential moving average(if needed) and 
 calculates \textbf{rs} for first and last point of every window of size next{\_}val{\_}to{\_}consider.
 
 % Since, we calculate rs at regular interval, to avoid sudden spike or steepness in result, we prefer smoothed time-series.
