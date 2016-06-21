@@ -1,0 +1,59 @@
+\documentclass[a4paper,10pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+%\usepackage{geometry}
+% \geometry{
+% a4paper,
+% total={170mm,257mm},
+% left=20mm,
+% top=20mm,
+% }
+
+\usepackage[margin=1in]{geometry}
+
+% Title Page
+\title{Results and Analysis}
+\author{Kapil Thakkar and Reshma Kumari}
+
+
+\begin{document}
+\maketitle
+
+\chapter{Results and Analysis}
+
+
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+	x tick label style={
+		/pgf/number format/1000 sep=},
+	ylabel=Year,
+	enlargelimits=0.05,
+	legend style={at={(0.5,-0.1)},
+	anchor=north,legend columns=-1},
+	ybar interval=0.7,
+]
+\addplot 
+	coordinates {(Retail vs Average Retail,78) (Retail vs Arrival,281)
+		 (Retail vs Wholesale,123) (Wholesale vs Arrival,413) (abc,415)};
+\addplot 
+	coordinates {(Retail vs Average Retail,78) (Retail vs Arrival,281)
+		 (Retail vs Wholesale,123) (Wholesale vs Arrival,413) (abc,415)};
+\addplot 
+	coordinates {(Retail vs Average Retail,78) (Retail vs Arrival,281)
+		 (Retail vs Wholesale,123) (Wholesale vs Arrival,413) (abc,415)};
+		
+\legend{User Defined Threshold (Mumbai VS Delhi), Two Center Results (Mumbai VS Delhi), Five Center Resuls}
+\end{axis}
+\end{tikzpicture}
+\caption{Article Distribution for Retail Price VS Average Retail Price}
+\label{fig:articleDistRvsR}
+\end{figure}
+
+\end{document}          
