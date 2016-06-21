@@ -1,8 +1,6 @@
+\usepackage[toc,page]{appendix}
 \chapter{Design and Framework}
-
-
 \section{System Design}
-
 \begin{sidewaysfigure}
     \centerline{
     \includegraphics[width=0.9\textwidth]{System_updated.JPG}
@@ -21,14 +19,10 @@ To verify result produced by system, we match it with the news articles present 
 
 \section{Anomaly Detection Library}
 Following methods are implemented in the library to detect anomalies in given timeseries:
-\\
-
 \subsection{Window Based Correlation}
 The method finds anomalies between two timeseries. If the two timeseries are supposed to be positively correlated, then it reports all the tenures where the timeseries deviates from showing positive correlation between them.
 \\
-Similarly if the two timeseries are supposed to be negatively correlated, then it reports all the tenures where the timeseries deviates from showing negative correlation between them. The significant deviations are reported based on either the default significance value of 0.01 or it can be customized based on the need.
-
-\
+Similarly if the two timeseries are supposed to be negatively correlated, then it reports all the tenures where the timeseries deviates from showing negative correlation between them. The significant deviations are reported based on either the default significance value of 0.01 or it can be customized based on the need. For more information 
 \subsection{Slope Based Detection}
 The  method calculates the rate of change of one timeseries with respect to the other. The tenures are reported where one timeseries varies to a large extent from the other.
 \\
@@ -45,10 +39,8 @@ The method also takes into account the trend, seasonality etc of timeseries. Top
 The method uses vector autoregressive framework for multivariate time-series analysis in order to forecast values. The framework treats all the variables as symmetrical and all the variables are modeled as if they influence each others equally.
 \\
 Error percentage is calculated between actual and forecasted values. These error values are used to filter anomalous conditions from non-anomalous conditions by setting a threshold value which can be automatically computed by MAD outlier detection test or it can be manually configured to the required value.
-
 \section{Hypothesis Testing}
 These methods can be used for testing various hypothesis by changing the parameters in the library functions. The details are as following:
-
 \begin{itemize}
 
 \item Hypothesis 1: If the two timeseries are expected to be not in tandem then the tenures where they don't, needs to be reported as anomaly. It can be tested using above mentioned methods by changing some parameters. The details as follows:
