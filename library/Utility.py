@@ -468,6 +468,8 @@ def placeMapping(i):
     	return "Banglore"
     elif(i==4):
     	return "Patna"
+    elif(i==5):
+    	return "India"
     
 
 '''
