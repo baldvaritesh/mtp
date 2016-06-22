@@ -15,7 +15,7 @@ Figure \ref{fig:SystemDesign} explains the overall design of the system and its 
 \\
 We have multiple time-series as input. These time-series are to be read from file manually using python script and generate 2D list of the time-series. These 2D lists has first column as date and then we have one or more columns corresponding to one or more values for that date. In the next stage depending upon what time-series we need to compare, we select appropriate time-series and pass this as input to various functions. Note that it is required to have all time-series of equal length and time period for which time-series are considered should be same for all time-series.\\
 \\
-We have implemented 5 functions till now as shown in figure \ref{fig:SystemDesign} viz. Correlation, Slope Based, Linear Regression, Graph Based and Multivariate. Detail about each function is explained in the next section. These functions takes either 2 or multiple time-series as input and has various parameters. Depending upon how time-series should behave with respect to each other (directly propotional or inversaly propotional) parameteres are tuned. We take union of results of first three functions and rest of the two functions as shown in figure. After taking union, we take intersection of two results of union as shown in figure. This is final result produced by the system. This result states the anomalies in the time-series.\\
+We have implemented 5 functions till now as shown in figure \ref{fig:SystemDesign} viz. Correlation, Slope Based, Linear Regression, Graph Based and Multivariate. Detail about each function is explained in the next section. These functions takes either 2 or multiple time-series as input and has various parameters. Depending upon how time-series should behave with respect to each other (directly proportional or inversely proportional) parameters are tuned. We take union of results of first three functions and rest of the two functions as shown in figure. After taking union, we take intersection of two results of union as shown in figure. This is final result produced by the system. This result states the anomalies in the time-series.\\
 \\
 To verify result produced by system, we match it with the news articles present for the test case considered (here onion test case). We match system results with news articles present and check how well system is performing. Note that it is not necessary that for each and every anomaly case, we have news article present. If not, then we manually check behavior of time-series on that date. If some news articles do not match with system result then we also study, why they did not match and what are limitations of system.\\
 
@@ -34,7 +34,7 @@ The  method calculates the rate of change of one timeseries with respect to the 
 \\
 The threshold is decided based on the MAD outlier detection test or it could be set manually.
 \subsection{Linear Regression}
-The method builds a linear model between two timeseries. Values are predicted based on this linear model and error is calulated. All the tenures with error values breaching the threshold are reported as anomaly. 
+The method builds a linear model between two timeseries. Values are predicted based on this linear model and error is calculated. All the tenures with error values breaching the threshold are reported as anomaly. 
 \\
 The threshold can be decided by MAD outlier detection technique or it can be configured manually.
 \subsection{Graph Based Anomaly}
@@ -42,7 +42,7 @@ Graph based anomaly detection technique considers each day as a node of a graph.
 \\
 The method also takes into account the trend, seasonality etc of timeseries. Top few points (can be configured) are reported as anomaly by the system.
 \subsection{Multivariate- Vector Autoregressive}
-The method uses vector autoregressive framework for multivariate time-series analysis in order to forecast values. The framework treats all the variables as symmetrical and all the variables are modeled as if they influence each others equally.
+The method uses vector autoregressive framework for multivariate time-series analysis in order to forecast values. The framework treats all the variables as symmetrical and all the variables are modelled as if they influence each others equally.
 \\
 Error percentage is calculated between actual and forecasted values. These error values are used to filter anomalous conditions from non-anomalous conditions by setting a threshold value which can be automatically computed by MAD outlier detection test or it can be manually configured to the required value.
 
@@ -73,8 +73,8 @@ These methods can be used for testing various hypothesis by changing the paramet
     
 \item Hypothesis 4:
     \begin{itemize}
-      \item Since the slope based detection, window based detection and linear regression methods works only on the two timeseries at a time. So, in order to compare all the centres in one go, average of the timeseries of centers is computed and used for anomlay detection. 
-      \item For Graph based and multivaraite- autoregressive anomaly detection methods, all the timeseries of centers are used to find anomalies.
+      \item Since the slope based detection, window based detection and linear regression methods works only on the two timeseries at a time. So, in order to compare all the centres in one go, average of the timeseries of centers is computed and used for anomaly detection. 
+      \item For Graph based and multivariate- autoregressive anomaly detection methods, all the timeseries of centers are used to find anomalies.
     \end{itemize}
     
 
