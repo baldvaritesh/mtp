@@ -209,7 +209,7 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         # plotGraphForHypothesis(c_list, avgRetailTimeSeries, linearRegression_result, filteredResult_linear_regression, all_articles_graphBasedAnomaly)
         # plotGraphForHypothesis(c_list, avgRetailTimeSeries, graphBasedAnomaly_result, filteredResult_graph_based, all_articles_graphBasedAnomaly)
         print "Graph of System Result for Retail vs Average"
-        plotGraphForHypothesis(c_list, avgRetailTimeSeries, intersection_result_with_H3, filteredResult_intersection, all_articles_intersection_result_with_H3)
+        #plotGraphForHypothesis(c_list, avgRetailTimeSeries, intersection_result_with_H3, filteredResult_intersection, all_articles_intersection_result_with_H3)
         
         # Save system results in dictionary to process further
         RvsR_anomalies_union_of_H3[2*i]  = union_result_of_H3
@@ -333,7 +333,7 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         # plotGraphForHypothesisArrival(c_list, retailList[i], linearRegression_result, filteredResult_linear_regression, all_articles_graphBasedAnomaly)
         # plotGraphForHypothesisArrival(c_list, retailList[i], graphBasedAnomaly_result, filteredResult_graph_based, all_articles_graphBasedAnomaly)
         print "Graph of System result Retail vs Arrival"
-        plotGraphForHypothesis(c_list, retailList[i], intersection_result_with_H3, filteredResult_intersection, all_articles_intersection_result_with_H3)
+        plotGraphForHypothesisArrival(c_list, retailList[i], intersection_result_with_H3, filteredResult_intersection, all_articles_intersection_result_with_H3)
         
         # Save system results in dictionary to process further
         RvsA_anomalies_union_of_H3[2*i]  = union_result_of_H3
@@ -453,7 +453,7 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         # plotGraphForHypothesis(c_list, wholesaleList[i], graphBasedAnomaly_result, filteredResult_graph_based, all_articles_graphBasedAnomaly)
         
         print "System results for Retail vs Wholesale"
-        plotGraphForHypothesis(c_list, wholesaleList[i], intersection_result_with_H3, filteredResult_intersection, all_articles_intersection_result_with_H3)
+        #plotGraphForHypothesis(c_list, wholesaleList[i], intersection_result_with_H3, filteredResult_intersection, all_articles_intersection_result_with_H3)
         
         # Save system results in dictionary to process further
         RvsW_anomalies_union_of_H3[2*i]  = union_result_of_H3
@@ -575,7 +575,7 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         # plotGraphForHypothesisArrival(c_list, wholesaleList[i], graphBasedAnomaly_result, filteredResult_graph_based, all_articles_graphBasedAnomaly)
         
         print "System result for Wholesale vs Arrival"
-        plotGraphForHypothesis(c_list, wholesaleList[i], intersection_result_with_H3, filteredResult_intersection, all_articles_intersection_result_with_H3)
+        plotGraphForHypothesisArrival(c_list, wholesaleList[i], intersection_result_with_H3, filteredResult_intersection, all_articles_intersection_result_with_H3)
         
         # Save system results in dictionary to process further
         WvsA_anomalies_union_of_H3[2*i]  = union_result_of_H3
@@ -655,17 +655,18 @@ def localNationHelper(series1, series2, series3, series4, result1, result2, isAr
         print date
         
     print "News Dates Matched for Anomalies of Local Mumbai:"
-    for (date,) in filteredResult_localMumbai:
-        print date
+    for article in filteredResult_localMumbai:
+        print article
     
     print "News Dates Matched for Anomalies of Local Delhi:"
-    for (date,) in filteredResult_localDelhi:
-        print date
+    for article in filteredResult_localDelhi:
+        print article
         
     print "News Dates Matched for Anomalies of Nation:"
-    for (date,) in filteredResult_nation:
-        print date
-    
+    for article in filteredResult_nation:
+        print article
+        
+    '''
     if(isArrival == False):
         print "Graph for Local Mumbai"
         plotGraphForHypothesis(series1, series2, localMumbai, filteredResult_localMumbai, all_articles_Mumbai)
@@ -680,6 +681,7 @@ def localNationHelper(series1, series2, series3, series4, result1, result2, isAr
         plotGraphForHypothesisArrival(series3, series4, localDelhi, filteredResult_localDelhi, all_articles_Delhi)
         print "Graph for Nation"
         plotGraphForHypothesisArrival(series1, series2, nation, filteredResult_nation, all_articles)
+    '''
   
 def convertSetToList(s):
     lst = list(s)
