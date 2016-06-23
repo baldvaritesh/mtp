@@ -432,12 +432,44 @@ def plotGraphForHypothesisArrival(original,average,list1, list2, total_news_arti
 		ax.axvspan(row, row + timedelta(days=1), color='b', alpha=0.5, lw=0)
 	plt.show()
 
+'''
+
+This writes the list of tuples into the file provided as input.
+	* Input Parameters
+		1. lstData (list) : list of tuples that needs to be written in csv file.
+		2. fileName (string) : Name of file in which the list of tuples needs
+		to be written.
+	* Output (file):
+		Generates a csv file with data written in that.
+
+'''
 
 def writeToCSV(lstData,fileName):
 	with open(fileName,'w') as out:
 		csv_out=csv.writer(out)
 		for row in lstData:
 			csv_out.writerow(row)
+
+'''
+
+This function converts the list of lists into a single list of tuples.
+For example let,
+	timeSeriesCollection: [
+	[1,2,3], # Timeseries 1
+	[4,5,6], # Timeseries 2
+	[7,8,9] # Timeseries 3
+	]
+This function will return,
+	[
+	(1,4,7), # Timeseries 1
+	(2,5,8), # Timeseries 2
+	(3,6,9) # Timeseries 3
+	]
+	* Input Parameters
+		1. lstData (list) : list of different lists
+	* Output (file):
+		Return a single list of tuples.
+'''
 
 def concateLists(lstData):
 	return zip(*lstData)
@@ -456,7 +488,13 @@ def cleanArray(array):
             continue
         result.append(element)
     return result
-    
+
+
+'''
+
+Given Center number starting from 0, mapps to corresponding center Name. This is order in which files are passed to function "hypothesisForCenter" in file fullAnalysis.R
+
+'''       
 def placeMapping(i):
     if (i==0):
     	return "Mumbai"
@@ -468,6 +506,8 @@ def placeMapping(i):
     	return "Banglore"
     elif(i==4):
     	return "Patna"
+    elif(i==5):
+    	return "India"
     
 
 '''
@@ -519,6 +559,13 @@ def smoothArray(array, alpha = 2.0/15.0):
         prevVal = newVal   
     return new_data
 
+'''
+This function reads csv file into list
+	* Input Parameters
+		1. filePath (string) : Path of file to be read
+	* Output (list):
+		list of rows in the csv file
+'''
 def csv2array(filePath):
     result = []
     with open(filePath, 'rb') as csvfile:
@@ -527,6 +574,18 @@ def csv2array(filePath):
             result.append(row)
     return result
 
+
+'''
+This function fetches a particular column from a list of tuples.
+
+* Input Parameters
+	1. array (list) : List of tuples
+	2. column number (int) : The index of the column number to be
+	fetched from list of tuples
+* Output (list):
+	list of elements corresponding to the column
+
+'''
 def getColumn(array, column_number):
     temp = []
     for x in array:
@@ -548,69 +607,6 @@ def formatCSV2Array(z):
         result.append((row[0],float(row[1])))
     return result
 
-def plotGraph(series1,series2,anomalies):
-    dates = [datetime.datetime.strptime(x[0], "%Y-%m-%d").date() for x in series1]
-    s1 = [x[1] for x in series1]
-    s2 = [x[1] for x in series2]
-    html = '''
-    <html>
-        <body>
-            <img src="data:image/png;base64,{}"  height="800" width="1100"/>
-        </body>
-    </html>
-    '''
-    fig = plt.figure()
-    ax = fig.add_subplot(1,1,1)
-    ax.plot(dates,s1,'r')
-    ax.plot(dates,s2,'b')
-    
-    # Highlighting Anomalies
-    for i in range(0,len(anomalies)):
-        # ax.axvspan(datetime.datetime.strptime(anomalies[i][0], "%Y-%m-%d").date(), datetime.datetime.strptime(anomalies[i][1], "%Y-%m-%d").date(), color='y', alpha=0.5, lw=0)
-        ax.axvspan(anomalies[i][0], anomalies[i][1], color='y', alpha=0.5, lw=0)
-    
-    
-    fig.set_size_inches(20,12)
-    plt.show()
-    io = StringIO.StringIO()
-    fig.savefig(io, format='png')
-    data = io.getvalue().encode('base64')
-    
-    trace1 = go.Scatter(
-    x=dates,
-    y=s1,
-    name='Series 1'
-    )
-    trace2 = go.Scatter(
-        x=dates,
-        y=s2,
-        name='Series 2',
-        yaxis='y2'
-    )
-    data = [trace1, trace2]
-    layout = go.Layout(
-        title='Correlation Test',
-        yaxis=dict(
-            title='Series 1'
-        ),
-        yaxis2=dict(
-            title='Series 2',
-            titlefont=dict(
-                color='rgb(148, 103, 189)'
-            ),
-            tickfont=dict(
-                color='rgb(148, 103, 189)'
-            ),
-            overlaying='y',
-            side='right'
-        )
-    )
-    fig = go.Figure(data=data, layout=layout)
-    # plot_url = plotly.offline.plot(fig, filename='graph1', auto_open=False)
-    temp = plotly.offline.plot( fig, filename='graph1')
-    print "Kapil"
-    print temp
-    return template('graphPlot', graph=temp)
 
 '''
 

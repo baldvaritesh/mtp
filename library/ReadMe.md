@@ -1,27 +1,27 @@
+# implementation
+
 Hypothesis Methods:
 
 Hypothesis 1:
 
-Slope Based Detection
-Linear Regression Based Method
-Correlation based method
+	* Slope Based Detection
+	* Linear Regression Based Method
+	* Correlation based method
 
 Hypothesis 2:
 
-Slope Based Detection
-Linear Regression Based Method
-Correlation based method
-Spike Detection methods
+	* Slope Based Detection
+	* Linear Regression Based Method
+	* Correlation based method
 
 Hypothesis 3:
 
-Multiple ARIMA
-Graph based Anomaly Detection
+	* Multiple ARIMA
+	* Graph based Anomaly Detection
 
 Hypothesis 4:
 
-Methods stated for Hypothesis  1 and 2
+	* Methods stated for Hypothesis  1 and 2
 
-
-
-AnomalyDetection.py
+This folder contains implementation of all these methods. For more detail about this method refer:
+	- mtp/library_documentation/Anomaly Detection.pdf

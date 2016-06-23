@@ -1,0 +1,2040 @@
+STARTING WITH RETAIL VS AVERAGE 
+
+
+Local Mumbai Anomalies : 104
+Local Delhi Anomalies : 111
+Nation-wide anomalies : 21
+Dates for Anomalies of Local Mumbai:
+2010-03-26 00:00:00
+2010-03-27 00:00:00
+2010-03-28 00:00:00
+2010-03-29 00:00:00
+2010-03-30 00:00:00
+2010-03-31 00:00:00
+2010-11-29 00:00:00
+2010-12-01 00:00:00
+2010-12-07 00:00:00
+2010-12-09 00:00:00
+2010-12-27 00:00:00
+2010-12-28 00:00:00
+2010-12-29 00:00:00
+2011-06-14 00:00:00
+2011-06-15 00:00:00
+2011-12-05 00:00:00
+2011-12-06 00:00:00
+2011-12-07 00:00:00
+2011-12-08 00:00:00
+2011-12-09 00:00:00
+2011-12-10 00:00:00
+2012-04-16 00:00:00
+2012-04-20 00:00:00
+2012-04-21 00:00:00
+2012-04-22 00:00:00
+2012-04-23 00:00:00
+2013-05-19 00:00:00
+2013-06-10 00:00:00
+2013-06-11 00:00:00
+2013-06-12 00:00:00
+2013-06-13 00:00:00
+2013-06-14 00:00:00
+2013-06-15 00:00:00
+2013-06-16 00:00:00
+2013-06-17 00:00:00
+2013-06-18 00:00:00
+2013-08-11 00:00:00
+2013-08-12 00:00:00
+2013-08-13 00:00:00
+2013-08-14 00:00:00
+2013-08-15 00:00:00
+2013-08-16 00:00:00
+2013-08-17 00:00:00
+2013-08-18 00:00:00
+2013-08-20 00:00:00
+2013-08-21 00:00:00
+2013-08-22 00:00:00
+2013-09-08 00:00:00
+2013-10-03 00:00:00
+2013-10-04 00:00:00
+2013-10-05 00:00:00
+2013-10-06 00:00:00
+2013-10-07 00:00:00
+2013-10-08 00:00:00
+2013-10-09 00:00:00
+2013-10-10 00:00:00
+2013-10-11 00:00:00
+2013-10-12 00:00:00
+2013-10-20 00:00:00
+2013-10-21 00:00:00
+2013-10-22 00:00:00
+2013-10-23 00:00:00
+2013-10-24 00:00:00
+2013-10-25 00:00:00
+2013-10-26 00:00:00
+2013-11-03 00:00:00
+2013-11-04 00:00:00
+2013-11-08 00:00:00
+2013-11-09 00:00:00
+2013-11-17 00:00:00
+2013-11-18 00:00:00
+2013-11-19 00:00:00
+2013-11-20 00:00:00
+2013-11-21 00:00:00
+2013-11-22 00:00:00
+2013-11-23 00:00:00
+2013-12-10 00:00:00
+2013-12-11 00:00:00
+2013-12-12 00:00:00
+2013-12-13 00:00:00
+2013-12-14 00:00:00
+2013-12-15 00:00:00
+2013-12-16 00:00:00
+2013-12-17 00:00:00
+2013-12-18 00:00:00
+2013-12-19 00:00:00
+2013-12-20 00:00:00
+2013-12-21 00:00:00
+2013-12-22 00:00:00
+2013-12-23 00:00:00
+2013-12-24 00:00:00
+2013-12-25 00:00:00
+2013-12-26 00:00:00
+2013-12-27 00:00:00
+2013-12-28 00:00:00
+2013-12-29 00:00:00
+2014-10-14 00:00:00
+2014-10-16 00:00:00
+2014-11-05 00:00:00
+2014-11-06 00:00:00
+2014-12-03 00:00:00
+2014-12-04 00:00:00
+2014-12-05 00:00:00
+2014-12-06 00:00:00
+Dates for Anomalies of Local Delhi:
+2010-03-04 00:00:00
+2010-03-05 00:00:00
+2010-03-06 00:00:00
+2010-03-07 00:00:00
+2011-07-03 00:00:00
+2011-07-04 00:00:00
+2011-07-05 00:00:00
+2011-07-06 00:00:00
+2011-07-07 00:00:00
+2011-07-08 00:00:00
+2011-07-09 00:00:00
+2011-07-10 00:00:00
+2011-07-11 00:00:00
+2011-07-12 00:00:00
+2011-07-13 00:00:00
+2011-07-14 00:00:00
+2011-07-15 00:00:00
+2011-07-16 00:00:00
+2011-07-17 00:00:00
+2011-07-18 00:00:00
+2011-07-19 00:00:00
+2011-07-20 00:00:00
+2011-07-21 00:00:00
+2011-07-22 00:00:00
+2011-07-23 00:00:00
+2011-07-24 00:00:00
+2011-07-25 00:00:00
+2011-07-26 00:00:00
+2011-07-27 00:00:00
+2011-07-28 00:00:00
+2011-07-29 00:00:00
+2011-07-30 00:00:00
+2011-07-31 00:00:00
+2011-08-01 00:00:00
+2011-08-02 00:00:00
+2011-08-03 00:00:00
+2011-08-04 00:00:00
+2011-08-05 00:00:00
+2011-08-06 00:00:00
+2011-08-07 00:00:00
+2011-08-08 00:00:00
+2011-08-09 00:00:00
+2011-08-10 00:00:00
+2011-08-11 00:00:00
+2011-08-12 00:00:00
+2011-08-13 00:00:00
+2011-10-28 00:00:00
+2011-10-29 00:00:00
+2011-10-30 00:00:00
+2011-10-31 00:00:00
+2011-12-12 00:00:00
+2013-05-06 00:00:00
+2013-05-07 00:00:00
+2013-05-08 00:00:00
+2013-05-09 00:00:00
+2013-05-10 00:00:00
+2013-05-11 00:00:00
+2013-05-12 00:00:00
+2013-08-25 00:00:00
+2013-08-26 00:00:00
+2013-08-27 00:00:00
+2013-08-28 00:00:00
+2013-08-29 00:00:00
+2013-08-30 00:00:00
+2013-08-31 00:00:00
+2013-09-01 00:00:00
+2013-09-02 00:00:00
+2013-09-03 00:00:00
+2013-09-04 00:00:00
+2013-09-05 00:00:00
+2013-09-06 00:00:00
+2013-09-07 00:00:00
+2013-09-15 00:00:00
+2013-09-16 00:00:00
+2013-09-17 00:00:00
+2013-09-18 00:00:00
+2013-09-19 00:00:00
+2013-09-20 00:00:00
+2013-09-21 00:00:00
+2013-09-22 00:00:00
+2013-09-23 00:00:00
+2013-09-24 00:00:00
+2013-09-25 00:00:00
+2013-09-26 00:00:00
+2013-09-27 00:00:00
+2013-09-28 00:00:00
+2013-11-24 00:00:00
+2013-11-25 00:00:00
+2013-11-26 00:00:00
+2013-11-27 00:00:00
+2013-11-28 00:00:00
+2013-11-29 00:00:00
+2013-11-30 00:00:00
+2014-03-04 00:00:00
+2014-03-10 00:00:00
+2014-03-14 00:00:00
+2014-03-15 00:00:00
+2014-03-16 00:00:00
+2014-03-17 00:00:00
+2014-03-20 00:00:00
+2014-03-21 00:00:00
+2014-03-22 00:00:00
+2014-03-23 00:00:00
+2014-03-31 00:00:00
+2014-04-16 00:00:00
+2014-04-23 00:00:00
+2014-04-25 00:00:00
+2014-04-26 00:00:00
+2014-04-27 00:00:00
+2014-04-28 00:00:00
+2014-05-01 00:00:00
+Dates for Anomalies of Nation:
+2011-12-11 00:00:00
+2013-09-09 00:00:00
+2013-09-10 00:00:00
+2013-09-11 00:00:00
+2013-09-12 00:00:00
+2013-09-13 00:00:00
+2013-09-14 00:00:00
+2013-09-29 00:00:00
+2013-09-30 00:00:00
+2013-10-01 00:00:00
+2013-10-02 00:00:00
+2013-10-13 00:00:00
+2013-10-14 00:00:00
+2013-10-15 00:00:00
+2013-10-16 00:00:00
+2013-10-17 00:00:00
+2013-10-18 00:00:00
+2013-10-19 00:00:00
+2013-11-05 00:00:00
+2013-11-06 00:00:00
+2013-11-07 00:00:00
+News Dates Matched for Anomalies of Local Mumbai:
+(datetime.date(2010, 12, 27), datetime.date(2010, 12, 24), 'Business Standard', 'http://www.business-standard.com/article/economy-policy/wholesale-onion-prices-slide-20-in-lasalgaon-manmad-110122400137_1.html', -3, 'not stated', 'Prices went down, but for good quality prices went high', None)
+(datetime.date(2010, 12, 28), datetime.date(2010, 12, 24), 'Business Standard', 'http://www.business-standard.com/article/economy-policy/wholesale-onion-prices-slide-20-in-lasalgaon-manmad-110122400137_1.html', -4, 'not stated', 'Prices went down, but for good quality prices went high', None)
+(datetime.date(2010, 12, 29), datetime.date(2011, 1, 3), 'NDTV', 'http://www.ndtv.com/mumbai-news/mumbai-trader-sells-onions-at-rs-12-per-kg-443770', 5, 'not stated', '', 0)
+(datetime.date(2013, 8, 11), datetime.date(2013, 8, 11), 'DNA', 'http://www.dnaindia.com/india/report-onion-prices-rise-to-rs-55-60kg-hike-bring-tears-in-eyes-of-people-1873151', 0, 'low production', '', 10)
+(datetime.date(2013, 8, 12), datetime.date(2013, 8, 13), 'Telegraph', 'http://www.telegraphindia.com/1130813/jsp/odisha/story_17226115.jsp', 1, 'low supply', '', 30)
+(datetime.date(2013, 8, 13), datetime.date(2013, 8, 13), 'Telegraph', 'http://www.telegraphindia.com/1130813/jsp/odisha/story_17226115.jsp', 0, 'low supply', '', 30)
+(datetime.date(2013, 8, 14), datetime.date(2013, 8, 14), 'The Hindu', 'http://www.thehindu.com/news/national/cos-meeting-to-wipe-onion-tears/article5019702.ece', 0, 'low supply', 'Possiblity of hoarding highlighted clearly', 0)
+(datetime.date(2013, 8, 15), datetime.date(2013, 8, 14), 'The Hindu', 'http://www.thehindu.com/news/national/cos-meeting-to-wipe-onion-tears/article5019702.ece', -1, 'low supply', 'Possiblity of hoarding highlighted clearly', 0)
+(datetime.date(2013, 8, 16), datetime.date(2013, 8, 17), 'The Times of India', 'http://timesofindia.indiatimes.com/india/Hoarding-pushing-onion-prices-up-govt-finds/articleshow/21872501.cms', 1, 'traders nexus', 'Clear signs of traders fixing the prices by creating artificial deficit in jun- july 2013', 60)
+(datetime.date(2013, 8, 17), datetime.date(2013, 8, 17), 'The Times of India', 'http://timesofindia.indiatimes.com/india/Hoarding-pushing-onion-prices-up-govt-finds/articleshow/21872501.cms', 0, 'traders nexus', 'Clear signs of traders fixing the prices by creating artificial deficit in jun- july 2013', 60)
+(datetime.date(2013, 8, 18), datetime.date(2013, 8, 17), 'The Times of India', 'http://timesofindia.indiatimes.com/india/Hoarding-pushing-onion-prices-up-govt-finds/articleshow/21872501.cms', -1, 'traders nexus', 'Clear signs of traders fixing the prices by creating artificial deficit in jun- july 2013', 60)
+(datetime.date(2013, 8, 20), datetime.date(2013, 8, 21), 'The Hindu', 'http://www.thehindu.com/business/Industry/onion-prices-jump-to-rs-80kg-again/article5044776.ece', 1, 'low supply', 'Prices hiked again', 0)
+(datetime.date(2013, 8, 21), datetime.date(2013, 8, 21), 'The Hindu', 'http://www.thehindu.com/business/Industry/onion-prices-jump-to-rs-80kg-again/article5044776.ece', 0, 'low supply', 'Prices hiked again', 0)
+(datetime.date(2013, 8, 22), datetime.date(2013, 8, 22), 'Money Control', 'http://www.moneycontrol.com/news/economy/onion-prices-shoot-back-to-rs-80kgmany-partsindia_939103.html', 0, 'not stated', '', 1)
+(datetime.date(2013, 9, 8), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', -5, 'low supply', '', 0)
+(datetime.date(2013, 10, 5), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', 5, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 6), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', 4, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 7), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', 3, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 8), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', 2, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 9), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', 1, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 10), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', 0, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 11), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', -1, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 12), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', -2, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 20), datetime.date(2013, 10, 22), 'NDTV', 'http://profit.ndtv.com/news/cheat-sheet/article-why-onion-prices-are-inching-towards-rs-100-per-kg-370138', 2, 'low supply', '', 0)
+(datetime.date(2013, 10, 21), datetime.date(2013, 10, 22), 'NDTV', 'http://profit.ndtv.com/news/cheat-sheet/article-why-onion-prices-are-inching-towards-rs-100-per-kg-370138', 1, 'low supply', '', 0)
+(datetime.date(2013, 10, 22), datetime.date(2013, 10, 22), 'NDTV', 'http://profit.ndtv.com/news/cheat-sheet/article-why-onion-prices-are-inching-towards-rs-100-per-kg-370138', 0, 'low supply', '', 0)
+(datetime.date(2013, 10, 23), datetime.date(2013, 10, 23), 'The Hindustan Times', 'http://www.hindustantimes.com/india/rs-100-and-rising-onion-prices-surge-uncontrollably/story-sFzxWMO87KI5KnQ2FXdLFL.html', 0, 'bad weather', 'no', None)
+(datetime.date(2013, 10, 24), datetime.date(2013, 10, 24), 'The Hindu', 'http://www.thehindu.com/business/Industry/india-floats-tender-for-import-of-onions/article5264970.ece', 0, 'traders nexus', '', 10)
+(datetime.date(2013, 10, 25), datetime.date(2013, 10, 25), 'First Post', 'http://www.firstpost.com/india/why-onions-are-rs-100kg-despite-10-crop-increase-supply-traders-1194063.html', 0, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 26), datetime.date(2013, 10, 26), 'NDTV', 'http://www.ndtv.com/india-news/chief-ministers-onion-mission-begins-in-assam-538929', 0, 'Not mentioned', '', 0)
+(datetime.date(2013, 11, 3), datetime.date(2013, 11, 4), 'The Hindu', 'http://www.thehindu.com/business/markets/govt-hikes-onion-mep-to-1150-per-tonne-to-check-prices/article5313950.ece', 1, 'low supply', '', 30)
+(datetime.date(2013, 11, 4), datetime.date(2013, 11, 4), 'The Hindu', 'http://www.thehindu.com/business/markets/govt-hikes-onion-mep-to-1150-per-tonne-to-check-prices/article5313950.ece', 0, 'low supply', '', 30)
+(datetime.date(2013, 11, 8), datetime.date(2013, 11, 6), 'The Hindu', 'http://www.thehindu.com/business/Industry/after-onions-tomato-prices-soar/article5317582.ece', -2, 'Increased prices of onion', '', 0)
+(datetime.date(2013, 11, 9), datetime.date(2013, 11, 6), 'The Hindu', 'http://www.thehindu.com/business/Industry/after-onions-tomato-prices-soar/article5317582.ece', -3, 'Increased prices of onion', '', 0)
+(datetime.date(2013, 11, 17), datetime.date(2013, 11, 19), 'First Post', 'http://www.firstpost.com/politics/onion-tomato-price-hoardings-to-malign-party-cong-writes-to-ec-1238589.html', 2, 'traders nexus', '', 0)
+(datetime.date(2013, 11, 18), datetime.date(2013, 11, 19), 'First Post', 'http://www.firstpost.com/politics/onion-tomato-price-hoardings-to-malign-party-cong-writes-to-ec-1238589.html', 1, 'traders nexus', '', 0)
+(datetime.date(2013, 11, 19), datetime.date(2013, 11, 19), 'First Post', 'http://www.firstpost.com/politics/onion-tomato-price-hoardings-to-malign-party-cong-writes-to-ec-1238589.html', 0, 'traders nexus', '', 0)
+(datetime.date(2013, 11, 20), datetime.date(2013, 11, 19), 'First Post', 'http://www.firstpost.com/politics/onion-tomato-price-hoardings-to-malign-party-cong-writes-to-ec-1238589.html', -1, 'traders nexus', '', 0)
+(datetime.date(2013, 11, 21), datetime.date(2013, 11, 19), 'First Post', 'http://www.firstpost.com/politics/onion-tomato-price-hoardings-to-malign-party-cong-writes-to-ec-1238589.html', -2, 'traders nexus', '', 0)
+(datetime.date(2013, 11, 22), datetime.date(2013, 11, 19), 'First Post', 'http://www.firstpost.com/politics/onion-tomato-price-hoardings-to-malign-party-cong-writes-to-ec-1238589.html', -3, 'traders nexus', '', 0)
+(datetime.date(2013, 11, 23), datetime.date(2013, 11, 19), 'First Post', 'http://www.firstpost.com/politics/onion-tomato-price-hoardings-to-malign-party-cong-writes-to-ec-1238589.html', -4, 'traders nexus', '', 0)
+(datetime.date(2013, 12, 10), datetime.date(2013, 12, 13), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2015-09-11/news/66434886_1_lasalgaon-apmc-onion-prices-onion-exporters-association', 3, 'not stated', 'no', None)
+(datetime.date(2013, 12, 11), datetime.date(2013, 12, 13), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2015-09-11/news/66434886_1_lasalgaon-apmc-onion-prices-onion-exporters-association', 2, 'not stated', 'no', None)
+(datetime.date(2013, 12, 12), datetime.date(2013, 12, 13), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2015-09-11/news/66434886_1_lasalgaon-apmc-onion-prices-onion-exporters-association', 1, 'not stated', 'no', None)
+(datetime.date(2013, 12, 13), datetime.date(2013, 12, 13), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2015-09-11/news/66434886_1_lasalgaon-apmc-onion-prices-onion-exporters-association', 0, 'not stated', 'no', None)
+(datetime.date(2013, 12, 14), datetime.date(2013, 12, 13), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2015-09-11/news/66434886_1_lasalgaon-apmc-onion-prices-onion-exporters-association', -1, 'not stated', 'no', None)
+(datetime.date(2013, 12, 15), datetime.date(2013, 12, 13), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2015-09-11/news/66434886_1_lasalgaon-apmc-onion-prices-onion-exporters-association', -2, 'not stated', 'no', None)
+(datetime.date(2013, 12, 16), datetime.date(2013, 12, 13), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2015-09-11/news/66434886_1_lasalgaon-apmc-onion-prices-onion-exporters-association', -3, 'not stated', 'no', None)
+(datetime.date(2013, 12, 17), datetime.date(2013, 12, 13), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2015-09-11/news/66434886_1_lasalgaon-apmc-onion-prices-onion-exporters-association', -4, 'not stated', 'no', None)
+(datetime.date(2013, 12, 18), datetime.date(2013, 12, 13), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2015-09-11/news/66434886_1_lasalgaon-apmc-onion-prices-onion-exporters-association', -5, 'not stated', 'no', None)
+News Dates Matched for Anomalies of Local Delhi:
+(datetime.date(2013, 8, 25), datetime.date(2013, 8, 22), 'Money Control', 'http://www.moneycontrol.com/news/economy/onion-prices-shoot-back-to-rs-80kgmany-partsindia_939103.html', -3, 'not stated', '', 1)
+(datetime.date(2013, 8, 26), datetime.date(2013, 8, 22), 'Money Control', 'http://www.moneycontrol.com/news/economy/onion-prices-shoot-back-to-rs-80kgmany-partsindia_939103.html', -4, 'not stated', '', 1)
+(datetime.date(2013, 8, 27), datetime.date(2013, 8, 22), 'Money Control', 'http://www.moneycontrol.com/news/economy/onion-prices-shoot-back-to-rs-80kgmany-partsindia_939103.html', -5, 'not stated', '', 1)
+(datetime.date(2013, 8, 29), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', 5, 'low supply', '', 0)
+(datetime.date(2013, 8, 30), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', 4, 'low supply', '', 0)
+(datetime.date(2013, 8, 31), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', 3, 'low supply', '', 0)
+(datetime.date(2013, 9, 1), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', 2, 'low supply', '', 0)
+(datetime.date(2013, 9, 2), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', 1, 'low supply', '', 0)
+(datetime.date(2013, 9, 3), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', 0, 'low supply', '', 0)
+(datetime.date(2013, 9, 4), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', -1, 'low supply', '', 0)
+(datetime.date(2013, 9, 5), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', -2, 'low supply', '', 0)
+(datetime.date(2013, 9, 6), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', -3, 'low supply', '', 0)
+(datetime.date(2013, 9, 7), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', -4, 'low supply', '', 0)
+(datetime.date(2013, 9, 15), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/india/Onion-price-rise-may-be-due-to-hoarding-Centre/articleshow/22672225.cms', 3, 'traders nexus', 'no', None)
+(datetime.date(2013, 9, 16), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/india/Onion-price-rise-may-be-due-to-hoarding-Centre/articleshow/22672225.cms', 2, 'traders nexus', 'no', None)
+(datetime.date(2013, 9, 17), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/india/Onion-price-rise-may-be-due-to-hoarding-Centre/articleshow/22672225.cms', 1, 'traders nexus', 'no', None)
+(datetime.date(2013, 9, 18), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/india/Onion-price-rise-may-be-due-to-hoarding-Centre/articleshow/22672225.cms', 0, 'traders nexus', 'no', None)
+(datetime.date(2013, 9, 19), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/india/Onion-price-rise-may-be-due-to-hoarding-Centre/articleshow/22672225.cms', -1, 'traders nexus', 'no', None)
+(datetime.date(2013, 9, 20), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/india/Onion-price-rise-may-be-due-to-hoarding-Centre/articleshow/22672225.cms', -2, 'traders nexus', 'no', None)
+(datetime.date(2013, 9, 21), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/india/Onion-price-rise-may-be-due-to-hoarding-Centre/articleshow/22672225.cms', -3, 'traders nexus', 'no', None)
+(datetime.date(2013, 9, 22), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/india/Onion-price-rise-may-be-due-to-hoarding-Centre/articleshow/22672225.cms', -4, 'traders nexus', 'no', None)
+(datetime.date(2013, 9, 23), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/india/Onion-price-rise-may-be-due-to-hoarding-Centre/articleshow/22672225.cms', -5, 'traders nexus', 'no', None)
+(datetime.date(2013, 11, 24), datetime.date(2013, 11, 19), 'First Post', 'http://www.firstpost.com/politics/onion-tomato-price-hoardings-to-malign-party-cong-writes-to-ec-1238589.html', -5, 'traders nexus', '', 0)
+(datetime.date(2013, 11, 27), datetime.date(2013, 12, 2), 'First Post', 'http://www.firstpost.com/politics/the-onion-trackers-of-delhi-what-sheila-dikshit-should-have-been-watching-1261901.html', 5, 'not stated', '', 10)
+(datetime.date(2013, 11, 28), datetime.date(2013, 12, 2), 'First Post', 'http://www.firstpost.com/politics/the-onion-trackers-of-delhi-what-sheila-dikshit-should-have-been-watching-1261901.html', 4, 'not stated', '', 10)
+(datetime.date(2013, 11, 29), datetime.date(2013, 12, 2), 'First Post', 'http://www.firstpost.com/politics/the-onion-trackers-of-delhi-what-sheila-dikshit-should-have-been-watching-1261901.html', 3, 'not stated', '', 10)
+(datetime.date(2013, 11, 30), datetime.date(2013, 12, 2), 'First Post', 'http://www.firstpost.com/politics/the-onion-trackers-of-delhi-what-sheila-dikshit-should-have-been-watching-1261901.html', 2, 'not stated', '', 10)
+News Dates Matched for Anomalies of Nation:
+(datetime.date(2013, 9, 13), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/city/mumbai/Sharad-Pawars-speculation-leads-to-onion-price-increase-yet-again/articleshow/22673599.cms', 5, 'low supply', '', 0)
+(datetime.date(2013, 9, 14), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/city/mumbai/Sharad-Pawars-speculation-leads-to-onion-price-increase-yet-again/articleshow/22673599.cms', 4, 'low supply', '', 0)
+(datetime.date(2013, 10, 13), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', -3, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 14), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', -4, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 15), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', -5, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 17), datetime.date(2013, 10, 22), 'NDTV', 'http://profit.ndtv.com/news/cheat-sheet/article-why-onion-prices-are-inching-towards-rs-100-per-kg-370138', 5, 'low supply', '', 0)
+(datetime.date(2013, 10, 18), datetime.date(2013, 10, 22), 'NDTV', 'http://profit.ndtv.com/news/cheat-sheet/article-why-onion-prices-are-inching-towards-rs-100-per-kg-370138', 4, 'low supply', '', 0)
+(datetime.date(2013, 10, 19), datetime.date(2013, 10, 22), 'NDTV', 'http://profit.ndtv.com/news/cheat-sheet/article-why-onion-prices-are-inching-towards-rs-100-per-kg-370138', 3, 'low supply', '', 0)
+(datetime.date(2013, 11, 5), datetime.date(2013, 11, 6), 'The Hindu', 'http://www.thehindu.com/business/Industry/after-onions-tomato-prices-soar/article5317582.ece', 1, 'Increased prices of onion', '', 0)
+(datetime.date(2013, 11, 6), datetime.date(2013, 11, 6), 'The Hindu', 'http://www.thehindu.com/business/Industry/after-onions-tomato-prices-soar/article5317582.ece', 0, 'Increased prices of onion', '', 0)
+(datetime.date(2013, 11, 7), datetime.date(2013, 11, 6), 'The Hindu', 'http://www.thehindu.com/business/Industry/after-onions-tomato-prices-soar/article5317582.ece', -1, 'Increased prices of onion', '', 0)
+END OF RETAIL VS AVERAGE 
+
+
+
+STARTING WITH RETAIL VS ARRIVAL 
+
+
+Local Mumbai Anomalies : 170
+Local Delhi Anomalies : 162
+Nation-wide anomalies : 153
+Dates for Anomalies of Local Mumbai:
+2010-06-10 00:00:00
+2010-06-11 00:00:00
+2010-06-14 00:00:00
+2010-11-06 00:00:00
+2010-11-07 00:00:00
+2010-11-08 00:00:00
+2010-11-09 00:00:00
+2010-11-10 00:00:00
+2010-11-11 00:00:00
+2010-11-12 00:00:00
+2010-11-13 00:00:00
+2010-11-14 00:00:00
+2010-11-15 00:00:00
+2010-11-16 00:00:00
+2010-11-17 00:00:00
+2010-11-18 00:00:00
+2010-11-19 00:00:00
+2010-11-20 00:00:00
+2010-11-21 00:00:00
+2010-11-22 00:00:00
+2010-11-23 00:00:00
+2010-11-24 00:00:00
+2010-11-25 00:00:00
+2010-11-26 00:00:00
+2010-11-27 00:00:00
+2010-11-28 00:00:00
+2010-11-29 00:00:00
+2010-11-30 00:00:00
+2010-12-01 00:00:00
+2010-12-05 00:00:00
+2010-12-06 00:00:00
+2010-12-07 00:00:00
+2010-12-08 00:00:00
+2010-12-09 00:00:00
+2010-12-10 00:00:00
+2010-12-11 00:00:00
+2010-12-12 00:00:00
+2010-12-13 00:00:00
+2010-12-14 00:00:00
+2010-12-15 00:00:00
+2010-12-16 00:00:00
+2010-12-17 00:00:00
+2010-12-18 00:00:00
+2010-12-19 00:00:00
+2010-12-20 00:00:00
+2010-12-21 00:00:00
+2010-12-22 00:00:00
+2010-12-23 00:00:00
+2010-12-24 00:00:00
+2010-12-25 00:00:00
+2010-12-26 00:00:00
+2010-12-27 00:00:00
+2010-12-28 00:00:00
+2010-12-29 00:00:00
+2010-12-30 00:00:00
+2010-12-31 00:00:00
+2011-01-01 00:00:00
+2011-01-02 00:00:00
+2011-01-03 00:00:00
+2011-01-04 00:00:00
+2011-01-05 00:00:00
+2011-01-06 00:00:00
+2011-01-07 00:00:00
+2011-01-08 00:00:00
+2011-01-09 00:00:00
+2011-01-10 00:00:00
+2011-01-11 00:00:00
+2011-01-12 00:00:00
+2011-01-16 00:00:00
+2011-01-17 00:00:00
+2011-02-08 00:00:00
+2011-02-09 00:00:00
+2011-02-15 00:00:00
+2011-02-17 00:00:00
+2011-02-18 00:00:00
+2011-02-19 00:00:00
+2011-03-06 00:00:00
+2011-03-07 00:00:00
+2011-03-08 00:00:00
+2011-03-09 00:00:00
+2011-03-10 00:00:00
+2011-03-11 00:00:00
+2011-03-12 00:00:00
+2011-03-13 00:00:00
+2011-03-14 00:00:00
+2011-03-15 00:00:00
+2011-03-16 00:00:00
+2011-03-17 00:00:00
+2011-03-18 00:00:00
+2011-03-19 00:00:00
+2011-03-21 00:00:00
+2011-04-01 00:00:00
+2011-04-02 00:00:00
+2011-04-03 00:00:00
+2011-04-04 00:00:00
+2011-05-06 00:00:00
+2011-05-07 00:00:00
+2011-05-08 00:00:00
+2011-05-09 00:00:00
+2011-05-10 00:00:00
+2011-05-11 00:00:00
+2011-05-12 00:00:00
+2011-05-14 00:00:00
+2011-05-15 00:00:00
+2011-05-17 00:00:00
+2011-06-04 00:00:00
+2011-06-05 00:00:00
+2011-06-06 00:00:00
+2011-06-07 00:00:00
+2011-06-08 00:00:00
+2011-06-09 00:00:00
+2011-06-10 00:00:00
+2011-06-12 00:00:00
+2011-11-01 00:00:00
+2011-11-02 00:00:00
+2011-11-03 00:00:00
+2011-11-04 00:00:00
+2011-11-05 00:00:00
+2011-11-06 00:00:00
+2011-11-07 00:00:00
+2011-11-08 00:00:00
+2012-02-24 00:00:00
+2012-02-25 00:00:00
+2012-02-29 00:00:00
+2012-03-01 00:00:00
+2012-03-02 00:00:00
+2012-03-03 00:00:00
+2012-03-05 00:00:00
+2012-03-06 00:00:00
+2012-03-07 00:00:00
+2012-05-01 00:00:00
+2012-05-11 00:00:00
+2012-06-21 00:00:00
+2012-06-22 00:00:00
+2012-06-23 00:00:00
+2012-06-24 00:00:00
+2012-06-25 00:00:00
+2012-06-26 00:00:00
+2012-06-27 00:00:00
+2012-06-28 00:00:00
+2012-06-29 00:00:00
+2012-07-06 00:00:00
+2012-08-07 00:00:00
+2012-08-08 00:00:00
+2012-08-09 00:00:00
+2012-08-10 00:00:00
+2013-02-08 00:00:00
+2013-06-16 00:00:00
+2013-08-04 00:00:00
+2013-08-05 00:00:00
+2013-08-06 00:00:00
+2013-08-07 00:00:00
+2013-08-08 00:00:00
+2013-08-09 00:00:00
+2013-08-10 00:00:00
+2013-08-11 00:00:00
+2013-08-12 00:00:00
+2013-08-13 00:00:00
+2013-08-14 00:00:00
+2013-08-15 00:00:00
+2013-08-16 00:00:00
+2013-08-17 00:00:00
+2013-12-27 00:00:00
+2013-12-28 00:00:00
+2013-12-29 00:00:00
+2013-12-30 00:00:00
+2013-12-31 00:00:00
+2014-01-01 00:00:00
+2014-01-02 00:00:00
+2014-01-03 00:00:00
+Dates for Anomalies of Local Delhi:
+2010-05-10 00:00:00
+2010-05-11 00:00:00
+2010-05-12 00:00:00
+2010-05-13 00:00:00
+2010-05-14 00:00:00
+2010-05-15 00:00:00
+2010-05-16 00:00:00
+2010-05-17 00:00:00
+2010-05-18 00:00:00
+2010-05-19 00:00:00
+2010-05-20 00:00:00
+2010-05-21 00:00:00
+2010-05-22 00:00:00
+2010-05-23 00:00:00
+2010-05-24 00:00:00
+2010-05-25 00:00:00
+2010-05-26 00:00:00
+2010-05-27 00:00:00
+2010-05-28 00:00:00
+2010-05-29 00:00:00
+2010-05-30 00:00:00
+2010-05-31 00:00:00
+2010-06-01 00:00:00
+2010-06-02 00:00:00
+2010-06-03 00:00:00
+2010-06-04 00:00:00
+2010-06-05 00:00:00
+2010-06-06 00:00:00
+2010-10-17 00:00:00
+2010-10-18 00:00:00
+2011-01-13 00:00:00
+2013-01-07 00:00:00
+2013-01-08 00:00:00
+2013-01-24 00:00:00
+2013-01-25 00:00:00
+2013-01-26 00:00:00
+2013-01-27 00:00:00
+2013-01-28 00:00:00
+2013-01-29 00:00:00
+2013-01-30 00:00:00
+2013-01-31 00:00:00
+2013-02-01 00:00:00
+2013-02-02 00:00:00
+2013-02-03 00:00:00
+2013-02-04 00:00:00
+2013-02-05 00:00:00
+2013-02-06 00:00:00
+2013-02-07 00:00:00
+2013-03-10 00:00:00
+2013-03-11 00:00:00
+2013-03-12 00:00:00
+2013-03-13 00:00:00
+2013-03-14 00:00:00
+2013-03-15 00:00:00
+2013-03-16 00:00:00
+2013-03-17 00:00:00
+2013-03-18 00:00:00
+2013-03-19 00:00:00
+2013-03-24 00:00:00
+2013-04-28 00:00:00
+2013-04-29 00:00:00
+2013-04-30 00:00:00
+2013-05-01 00:00:00
+2013-05-02 00:00:00
+2013-05-03 00:00:00
+2013-05-04 00:00:00
+2013-05-12 00:00:00
+2013-05-13 00:00:00
+2013-05-14 00:00:00
+2013-05-15 00:00:00
+2013-05-16 00:00:00
+2013-05-17 00:00:00
+2013-05-18 00:00:00
+2013-06-23 00:00:00
+2013-06-24 00:00:00
+2013-06-25 00:00:00
+2013-06-26 00:00:00
+2013-06-27 00:00:00
+2013-06-28 00:00:00
+2013-06-29 00:00:00
+2013-06-30 00:00:00
+2013-07-01 00:00:00
+2013-07-02 00:00:00
+2013-07-03 00:00:00
+2013-07-04 00:00:00
+2013-07-05 00:00:00
+2013-07-06 00:00:00
+2013-07-07 00:00:00
+2013-07-08 00:00:00
+2013-07-09 00:00:00
+2013-07-10 00:00:00
+2013-07-11 00:00:00
+2013-07-12 00:00:00
+2013-07-13 00:00:00
+2013-07-14 00:00:00
+2013-07-15 00:00:00
+2013-07-16 00:00:00
+2013-07-17 00:00:00
+2013-07-18 00:00:00
+2014-01-06 00:00:00
+2014-01-07 00:00:00
+2014-01-08 00:00:00
+2014-01-09 00:00:00
+2014-01-10 00:00:00
+2014-01-11 00:00:00
+2014-01-12 00:00:00
+2014-01-13 00:00:00
+2014-01-14 00:00:00
+2014-01-15 00:00:00
+2014-01-16 00:00:00
+2014-01-17 00:00:00
+2014-01-18 00:00:00
+2014-03-05 00:00:00
+2014-03-06 00:00:00
+2014-03-07 00:00:00
+2014-03-08 00:00:00
+2014-03-09 00:00:00
+2014-03-10 00:00:00
+2014-03-11 00:00:00
+2014-03-12 00:00:00
+2014-03-13 00:00:00
+2014-03-14 00:00:00
+2014-03-15 00:00:00
+2014-03-16 00:00:00
+2014-03-17 00:00:00
+2014-03-18 00:00:00
+2014-03-19 00:00:00
+2014-03-23 00:00:00
+2014-03-24 00:00:00
+2014-03-25 00:00:00
+2014-03-26 00:00:00
+2014-03-27 00:00:00
+2014-03-28 00:00:00
+2014-03-29 00:00:00
+2014-05-11 00:00:00
+2014-05-12 00:00:00
+2014-05-13 00:00:00
+2014-05-14 00:00:00
+2014-05-15 00:00:00
+2014-05-16 00:00:00
+2014-05-17 00:00:00
+2014-05-18 00:00:00
+2014-05-19 00:00:00
+2014-05-20 00:00:00
+2014-05-21 00:00:00
+2014-05-22 00:00:00
+2014-05-23 00:00:00
+2014-05-24 00:00:00
+2014-06-29 00:00:00
+2014-06-30 00:00:00
+2014-07-01 00:00:00
+2014-07-02 00:00:00
+2014-07-03 00:00:00
+2014-07-04 00:00:00
+2014-07-05 00:00:00
+2014-07-13 00:00:00
+2014-07-14 00:00:00
+2014-07-15 00:00:00
+2014-07-16 00:00:00
+2014-07-17 00:00:00
+2014-07-18 00:00:00
+2014-07-19 00:00:00
+Dates for Anomalies of Nation:
+2013-03-20 00:00:00
+2013-03-21 00:00:00
+2013-03-22 00:00:00
+2013-03-23 00:00:00
+2013-07-19 00:00:00
+2013-07-20 00:00:00
+2013-07-21 00:00:00
+2013-07-22 00:00:00
+2013-07-23 00:00:00
+2013-07-24 00:00:00
+2013-07-25 00:00:00
+2013-07-26 00:00:00
+2013-07-27 00:00:00
+2013-07-28 00:00:00
+2013-07-29 00:00:00
+2013-07-30 00:00:00
+2013-07-31 00:00:00
+2013-08-01 00:00:00
+2013-08-02 00:00:00
+2013-08-03 00:00:00
+2013-08-18 00:00:00
+2013-08-19 00:00:00
+2013-08-20 00:00:00
+2013-08-21 00:00:00
+2013-08-22 00:00:00
+2013-08-23 00:00:00
+2013-08-24 00:00:00
+2013-08-25 00:00:00
+2013-08-26 00:00:00
+2013-08-27 00:00:00
+2013-08-28 00:00:00
+2013-08-29 00:00:00
+2013-08-30 00:00:00
+2013-08-31 00:00:00
+2013-09-01 00:00:00
+2013-09-02 00:00:00
+2013-09-03 00:00:00
+2013-09-04 00:00:00
+2013-09-05 00:00:00
+2013-09-06 00:00:00
+2013-09-07 00:00:00
+2013-09-08 00:00:00
+2013-09-09 00:00:00
+2013-09-10 00:00:00
+2013-09-11 00:00:00
+2013-09-12 00:00:00
+2013-09-13 00:00:00
+2013-09-14 00:00:00
+2013-09-15 00:00:00
+2013-09-16 00:00:00
+2013-09-17 00:00:00
+2013-09-18 00:00:00
+2013-09-19 00:00:00
+2013-09-20 00:00:00
+2013-09-21 00:00:00
+2013-09-22 00:00:00
+2013-09-23 00:00:00
+2013-09-24 00:00:00
+2013-09-25 00:00:00
+2013-09-26 00:00:00
+2013-09-27 00:00:00
+2013-09-28 00:00:00
+2013-09-29 00:00:00
+2013-09-30 00:00:00
+2013-10-01 00:00:00
+2013-10-02 00:00:00
+2013-10-03 00:00:00
+2013-10-04 00:00:00
+2013-10-05 00:00:00
+2013-10-06 00:00:00
+2013-10-07 00:00:00
+2013-10-08 00:00:00
+2013-10-09 00:00:00
+2013-10-10 00:00:00
+2013-10-11 00:00:00
+2013-10-12 00:00:00
+2013-10-13 00:00:00
+2013-10-14 00:00:00
+2013-10-15 00:00:00
+2013-10-16 00:00:00
+2013-10-17 00:00:00
+2013-10-18 00:00:00
+2013-10-19 00:00:00
+2013-10-20 00:00:00
+2013-10-21 00:00:00
+2013-10-22 00:00:00
+2013-10-23 00:00:00
+2013-10-24 00:00:00
+2013-10-25 00:00:00
+2013-10-26 00:00:00
+2013-10-27 00:00:00
+2013-10-28 00:00:00
+2013-10-29 00:00:00
+2013-10-30 00:00:00
+2013-10-31 00:00:00
+2013-11-01 00:00:00
+2013-11-02 00:00:00
+2013-11-03 00:00:00
+2013-11-04 00:00:00
+2013-11-05 00:00:00
+2013-11-06 00:00:00
+2013-11-07 00:00:00
+2013-11-08 00:00:00
+2013-11-09 00:00:00
+2013-11-10 00:00:00
+2013-11-11 00:00:00
+2013-11-12 00:00:00
+2013-11-13 00:00:00
+2013-11-14 00:00:00
+2013-11-15 00:00:00
+2013-11-16 00:00:00
+2013-11-17 00:00:00
+2013-11-18 00:00:00
+2013-11-19 00:00:00
+2013-11-20 00:00:00
+2013-11-21 00:00:00
+2013-11-22 00:00:00
+2013-11-23 00:00:00
+2013-11-24 00:00:00
+2013-11-25 00:00:00
+2013-11-26 00:00:00
+2013-11-27 00:00:00
+2013-11-28 00:00:00
+2013-11-29 00:00:00
+2013-11-30 00:00:00
+2013-12-01 00:00:00
+2013-12-02 00:00:00
+2013-12-03 00:00:00
+2013-12-04 00:00:00
+2013-12-05 00:00:00
+2013-12-06 00:00:00
+2013-12-07 00:00:00
+2013-12-08 00:00:00
+2013-12-09 00:00:00
+2013-12-10 00:00:00
+2013-12-11 00:00:00
+2013-12-12 00:00:00
+2013-12-13 00:00:00
+2013-12-14 00:00:00
+2013-12-15 00:00:00
+2013-12-16 00:00:00
+2013-12-17 00:00:00
+2013-12-18 00:00:00
+2013-12-19 00:00:00
+2013-12-20 00:00:00
+2013-12-21 00:00:00
+2013-12-22 00:00:00
+2013-12-23 00:00:00
+2013-12-24 00:00:00
+2013-12-25 00:00:00
+2013-12-26 00:00:00
+2014-01-04 00:00:00
+2014-01-05 00:00:00
+News Dates Matched for Anomalies of Local Mumbai:
+(datetime.date(2010, 12, 15), datetime.date(2010, 12, 20), 'The Hindu', 'http://www.thehindu.com/business/Economy/imported-onion-arrive-from-pakistan/article965607.ece', 5, 'not stated', '', 0)
+(datetime.date(2010, 12, 16), datetime.date(2010, 12, 20), 'The Hindu', 'http://www.thehindu.com/business/Economy/imported-onion-arrive-from-pakistan/article965607.ece', 4, 'not stated', '', 0)
+(datetime.date(2010, 12, 17), datetime.date(2010, 12, 20), 'The Hindu', 'http://www.thehindu.com/business/Economy/imported-onion-arrive-from-pakistan/article965607.ece', 3, 'not stated', '', 0)
+(datetime.date(2010, 12, 18), datetime.date(2010, 12, 20), 'The Hindu', 'http://www.thehindu.com/business/Economy/imported-onion-arrive-from-pakistan/article965607.ece', 2, 'not stated', '', 0)
+(datetime.date(2010, 12, 19), datetime.date(2010, 12, 20), 'The Hindu', 'http://www.thehindu.com/business/Economy/imported-onion-arrive-from-pakistan/article965607.ece', 1, 'not stated', '', 0)
+(datetime.date(2010, 12, 20), datetime.date(2010, 12, 20), 'The Hindu', 'http://www.thehindu.com/business/Economy/imported-onion-arrive-from-pakistan/article965607.ece', 0, 'not stated', '', 0)
+(datetime.date(2010, 12, 21), datetime.date(2010, 12, 21), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2010-12-21/news/27586208_1_minimum-export-price-onion-prices-mep', 0, 'traders nexus', '', 0)
+(datetime.date(2010, 12, 22), datetime.date(2010, 12, 22), 'NDTV', 'http://www.ndtv.com/india-news/why-onion-prices-are-so-high-442629', 0, 'unseasonal rainfall', '', 7)
+(datetime.date(2010, 12, 23), datetime.date(2010, 12, 23), 'The Times of India', 'http://timesofindia.indiatimes.com/city/pune/Onion-prices-still-leave-consumers-teary-eyed/articleshow/7147525.cms', 0, 'unseasonal rainfall', '', 0)
+(datetime.date(2010, 12, 24), datetime.date(2010, 12, 24), 'Business Standard', 'http://www.business-standard.com/article/economy-policy/wholesale-onion-prices-slide-20-in-lasalgaon-manmad-110122400137_1.html', 0, 'not stated', 'Prices went down, but for good quality prices went high', None)
+(datetime.date(2010, 12, 25), datetime.date(2010, 12, 24), 'Business Standard', 'http://www.business-standard.com/article/economy-policy/wholesale-onion-prices-slide-20-in-lasalgaon-manmad-110122400137_1.html', -1, 'not stated', 'Prices went down, but for good quality prices went high', None)
+(datetime.date(2010, 12, 26), datetime.date(2010, 12, 24), 'Business Standard', 'http://www.business-standard.com/article/economy-policy/wholesale-onion-prices-slide-20-in-lasalgaon-manmad-110122400137_1.html', -2, 'not stated', 'Prices went down, but for good quality prices went high', None)
+(datetime.date(2010, 12, 27), datetime.date(2010, 12, 24), 'Business Standard', 'http://www.business-standard.com/article/economy-policy/wholesale-onion-prices-slide-20-in-lasalgaon-manmad-110122400137_1.html', -3, 'not stated', 'Prices went down, but for good quality prices went high', None)
+(datetime.date(2010, 12, 28), datetime.date(2010, 12, 24), 'Business Standard', 'http://www.business-standard.com/article/economy-policy/wholesale-onion-prices-slide-20-in-lasalgaon-manmad-110122400137_1.html', -4, 'not stated', 'Prices went down, but for good quality prices went high', None)
+(datetime.date(2010, 12, 29), datetime.date(2011, 1, 3), 'NDTV', 'http://www.ndtv.com/mumbai-news/mumbai-trader-sells-onions-at-rs-12-per-kg-443770', 5, 'not stated', '', 0)
+(datetime.date(2010, 12, 30), datetime.date(2011, 1, 3), 'NDTV', 'http://www.ndtv.com/mumbai-news/mumbai-trader-sells-onions-at-rs-12-per-kg-443770', 4, 'not stated', '', 0)
+(datetime.date(2010, 12, 31), datetime.date(2011, 1, 3), 'NDTV', 'http://www.ndtv.com/mumbai-news/mumbai-trader-sells-onions-at-rs-12-per-kg-443770', 3, 'not stated', '', 0)
+(datetime.date(2011, 1, 1), datetime.date(2011, 1, 3), 'NDTV', 'http://www.ndtv.com/mumbai-news/mumbai-trader-sells-onions-at-rs-12-per-kg-443770', 2, 'not stated', '', 0)
+(datetime.date(2011, 1, 2), datetime.date(2011, 1, 3), 'NDTV', 'http://www.ndtv.com/mumbai-news/mumbai-trader-sells-onions-at-rs-12-per-kg-443770', 1, 'not stated', '', 0)
+(datetime.date(2011, 1, 3), datetime.date(2011, 1, 3), 'NDTV', 'http://www.ndtv.com/mumbai-news/mumbai-trader-sells-onions-at-rs-12-per-kg-443770', 0, 'not stated', '', 0)
+(datetime.date(2011, 1, 4), datetime.date(2011, 1, 3), 'NDTV', 'http://www.ndtv.com/mumbai-news/mumbai-trader-sells-onions-at-rs-12-per-kg-443770', -1, 'not stated', '', 0)
+(datetime.date(2011, 1, 5), datetime.date(2011, 1, 6), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/-Retail-onion-prices-up-by-Rs-5-10/kg-on-Pak-export-ban-reports/articleshow/7230895.cms', 1, 'Pak banned export', '', 0)
+(datetime.date(2011, 1, 6), datetime.date(2011, 1, 6), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/-Retail-onion-prices-up-by-Rs-5-10/kg-on-Pak-export-ban-reports/articleshow/7230895.cms', 0, 'Pak banned export', '', 0)
+(datetime.date(2011, 1, 7), datetime.date(2011, 1, 7), 'The Hindu', 'http://www.thehindu.com/business/act-swiftly-against-hoarders-pranab/article1051003.ece', 0, 'traders nexus', 'main article on inflation, but it says due to hoarding onion prices are high.', 0)
+(datetime.date(2011, 1, 8), datetime.date(2011, 1, 7), 'The Hindu', 'http://www.thehindu.com/business/act-swiftly-against-hoarders-pranab/article1051003.ece', -1, 'traders nexus', 'main article on inflation, but it says due to hoarding onion prices are high.', 0)
+(datetime.date(2011, 1, 9), datetime.date(2011, 1, 7), 'The Hindu', 'http://www.thehindu.com/business/act-swiftly-against-hoarders-pranab/article1051003.ece', -2, 'traders nexus', 'main article on inflation, but it says due to hoarding onion prices are high.', 0)
+(datetime.date(2011, 1, 10), datetime.date(2011, 1, 7), 'The Hindu', 'http://www.thehindu.com/business/act-swiftly-against-hoarders-pranab/article1051003.ece', -3, 'traders nexus', 'main article on inflation, but it says due to hoarding onion prices are high.', 0)
+(datetime.date(2011, 1, 11), datetime.date(2011, 1, 7), 'The Hindu', 'http://www.thehindu.com/business/act-swiftly-against-hoarders-pranab/article1051003.ece', -4, 'traders nexus', 'main article on inflation, but it says due to hoarding onion prices are high.', 0)
+(datetime.date(2011, 1, 12), datetime.date(2011, 1, 7), 'The Hindu', 'http://www.thehindu.com/business/act-swiftly-against-hoarders-pranab/article1051003.ece', -5, 'traders nexus', 'main article on inflation, but it says due to hoarding onion prices are high.', 0)
+(datetime.date(2013, 8, 4), datetime.date(2013, 8, 6), 'The Hindu', 'http://www.thehindu.com/news/cities/Delhi/onion-prices-bring-tears-yet-again/article4995124.ece', 2, 'low production', 'Even Hoaders are responsible to some extent', 0)
+(datetime.date(2013, 8, 5), datetime.date(2013, 8, 6), 'The Hindu', 'http://www.thehindu.com/news/cities/Delhi/onion-prices-bring-tears-yet-again/article4995124.ece', 1, 'low production', 'Even Hoaders are responsible to some extent', 0)
+(datetime.date(2013, 8, 6), datetime.date(2013, 8, 6), 'The Hindu', 'http://www.thehindu.com/news/cities/Delhi/onion-prices-bring-tears-yet-again/article4995124.ece', 0, 'low production', 'Even Hoaders are responsible to some extent', 0)
+(datetime.date(2013, 8, 7), datetime.date(2013, 8, 6), 'The Hindu', 'http://www.thehindu.com/news/cities/Delhi/onion-prices-bring-tears-yet-again/article4995124.ece', -1, 'low production', 'Even Hoaders are responsible to some extent', 0)
+(datetime.date(2013, 8, 8), datetime.date(2013, 8, 6), 'The Hindu', 'http://www.thehindu.com/news/cities/Delhi/onion-prices-bring-tears-yet-again/article4995124.ece', -2, 'low production', 'Even Hoaders are responsible to some extent', 0)
+(datetime.date(2013, 8, 9), datetime.date(2013, 8, 11), 'DNA', 'http://www.dnaindia.com/india/report-onion-prices-rise-to-rs-55-60kg-hike-bring-tears-in-eyes-of-people-1873151', 2, 'low production', '', 10)
+(datetime.date(2013, 8, 10), datetime.date(2013, 8, 11), 'DNA', 'http://www.dnaindia.com/india/report-onion-prices-rise-to-rs-55-60kg-hike-bring-tears-in-eyes-of-people-1873151', 1, 'low production', '', 10)
+(datetime.date(2013, 8, 11), datetime.date(2013, 8, 11), 'DNA', 'http://www.dnaindia.com/india/report-onion-prices-rise-to-rs-55-60kg-hike-bring-tears-in-eyes-of-people-1873151', 0, 'low production', '', 10)
+(datetime.date(2013, 8, 12), datetime.date(2013, 8, 13), 'Telegraph', 'http://www.telegraphindia.com/1130813/jsp/odisha/story_17226115.jsp', 1, 'low supply', '', 30)
+(datetime.date(2013, 8, 13), datetime.date(2013, 8, 13), 'Telegraph', 'http://www.telegraphindia.com/1130813/jsp/odisha/story_17226115.jsp', 0, 'low supply', '', 30)
+(datetime.date(2013, 8, 14), datetime.date(2013, 8, 14), 'The Hindu', 'http://www.thehindu.com/news/national/cos-meeting-to-wipe-onion-tears/article5019702.ece', 0, 'low supply', 'Possiblity of hoarding highlighted clearly', 0)
+(datetime.date(2013, 8, 15), datetime.date(2013, 8, 14), 'The Hindu', 'http://www.thehindu.com/news/national/cos-meeting-to-wipe-onion-tears/article5019702.ece', -1, 'low supply', 'Possiblity of hoarding highlighted clearly', 0)
+(datetime.date(2013, 8, 16), datetime.date(2013, 8, 17), 'The Times of India', 'http://timesofindia.indiatimes.com/india/Hoarding-pushing-onion-prices-up-govt-finds/articleshow/21872501.cms', 1, 'traders nexus', 'Clear signs of traders fixing the prices by creating artificial deficit in jun- july 2013', 60)
+(datetime.date(2013, 8, 17), datetime.date(2013, 8, 17), 'The Times of India', 'http://timesofindia.indiatimes.com/india/Hoarding-pushing-onion-prices-up-govt-finds/articleshow/21872501.cms', 0, 'traders nexus', 'Clear signs of traders fixing the prices by creating artificial deficit in jun- july 2013', 60)
+News Dates Matched for Anomalies of Local Delhi:
+(datetime.date(2013, 1, 24), datetime.date(2013, 1, 22), 'Business Standard', 'http://www.business-standard.com/article/markets/onion-prices-up-sharply-on-transport-cost-113012200072_1.html', -2, 'traders nexus', '', 14)
+(datetime.date(2013, 1, 25), datetime.date(2013, 1, 22), 'Business Standard', 'http://www.business-standard.com/article/markets/onion-prices-up-sharply-on-transport-cost-113012200072_1.html', -3, 'traders nexus', '', 14)
+(datetime.date(2013, 1, 26), datetime.date(2013, 1, 30), 'First Post', 'http://www.firstpost.com/business/economy/rise-in-onion-prices-temporary-phenomenon-pawar-607494.html', 4, 'low production', 'Low production bcz of drought and speculation of low production is leading to low supply', 0)
+(datetime.date(2013, 1, 27), datetime.date(2013, 1, 30), 'First Post', 'http://www.firstpost.com/business/economy/rise-in-onion-prices-temporary-phenomenon-pawar-607494.html', 3, 'low production', 'Low production bcz of drought and speculation of low production is leading to low supply', 0)
+(datetime.date(2013, 1, 28), datetime.date(2013, 1, 30), 'First Post', 'http://www.firstpost.com/business/economy/rise-in-onion-prices-temporary-phenomenon-pawar-607494.html', 2, 'low production', 'Low production bcz of drought and speculation of low production is leading to low supply', 0)
+(datetime.date(2013, 1, 29), datetime.date(2013, 1, 30), 'First Post', 'http://www.firstpost.com/business/economy/rise-in-onion-prices-temporary-phenomenon-pawar-607494.html', 1, 'low production', 'Low production bcz of drought and speculation of low production is leading to low supply', 0)
+(datetime.date(2013, 1, 30), datetime.date(2013, 1, 30), 'First Post', 'http://www.firstpost.com/business/economy/rise-in-onion-prices-temporary-phenomenon-pawar-607494.html', 0, 'low production', 'Low production bcz of drought and speculation of low production is leading to low supply', 0)
+(datetime.date(2013, 1, 31), datetime.date(2013, 1, 30), 'First Post', 'http://www.firstpost.com/business/economy/rise-in-onion-prices-temporary-phenomenon-pawar-607494.html', -1, 'low production', 'Low production bcz of drought and speculation of low production is leading to low supply', 0)
+(datetime.date(2013, 2, 1), datetime.date(2013, 2, 2), 'NDTV', 'http://www.ndtv.com/delhi-news/onions-rs-35-a-kg-govt-may-step-in-to-control-prices-512075', 1, 'poor monsoon', '', 30)
+(datetime.date(2013, 2, 2), datetime.date(2013, 2, 2), 'NDTV', 'http://www.ndtv.com/delhi-news/onions-rs-35-a-kg-govt-may-step-in-to-control-prices-512075', 0, 'poor monsoon', '', 30)
+(datetime.date(2013, 2, 3), datetime.date(2013, 2, 2), 'NDTV', 'http://www.ndtv.com/delhi-news/onions-rs-35-a-kg-govt-may-step-in-to-control-prices-512075', -1, 'poor monsoon', '', 30)
+(datetime.date(2013, 2, 4), datetime.date(2013, 2, 2), 'NDTV', 'http://www.ndtv.com/delhi-news/onions-rs-35-a-kg-govt-may-step-in-to-control-prices-512075', -2, 'poor monsoon', '', 30)
+(datetime.date(2013, 2, 5), datetime.date(2013, 2, 2), 'NDTV', 'http://www.ndtv.com/delhi-news/onions-rs-35-a-kg-govt-may-step-in-to-control-prices-512075', -3, 'poor monsoon', '', 30)
+(datetime.date(2013, 2, 6), datetime.date(2013, 2, 2), 'NDTV', 'http://www.ndtv.com/delhi-news/onions-rs-35-a-kg-govt-may-step-in-to-control-prices-512075', -4, 'poor monsoon', '', 30)
+(datetime.date(2013, 2, 7), datetime.date(2013, 2, 2), 'NDTV', 'http://www.ndtv.com/delhi-news/onions-rs-35-a-kg-govt-may-step-in-to-control-prices-512075', -5, 'poor monsoon', '', 30)
+(datetime.date(2013, 6, 28), datetime.date(2013, 7, 3), 'Business Standard', 'http://www.business-standard.com/article/markets/heavy-crop-damage-in-hilly-states-lifts-onion-potato-prices-113070300796_1.html', 5, 'traders nexus', 'North India affected basically because of flood', 15)
+(datetime.date(2013, 6, 29), datetime.date(2013, 7, 3), 'Business Standard', 'http://www.business-standard.com/article/markets/heavy-crop-damage-in-hilly-states-lifts-onion-potato-prices-113070300796_1.html', 4, 'traders nexus', 'North India affected basically because of flood', 15)
+(datetime.date(2013, 6, 30), datetime.date(2013, 7, 3), 'Business Standard', 'http://www.business-standard.com/article/markets/heavy-crop-damage-in-hilly-states-lifts-onion-potato-prices-113070300796_1.html', 3, 'traders nexus', 'North India affected basically because of flood', 15)
+(datetime.date(2013, 7, 1), datetime.date(2013, 7, 3), 'Business Standard', 'http://www.business-standard.com/article/markets/heavy-crop-damage-in-hilly-states-lifts-onion-potato-prices-113070300796_1.html', 2, 'traders nexus', 'North India affected basically because of flood', 15)
+(datetime.date(2013, 7, 2), datetime.date(2013, 7, 3), 'Business Standard', 'http://www.business-standard.com/article/markets/heavy-crop-damage-in-hilly-states-lifts-onion-potato-prices-113070300796_1.html', 1, 'traders nexus', 'North India affected basically because of flood', 15)
+(datetime.date(2013, 7, 3), datetime.date(2013, 7, 3), 'Business Standard', 'http://www.business-standard.com/article/markets/heavy-crop-damage-in-hilly-states-lifts-onion-potato-prices-113070300796_1.html', 0, 'traders nexus', 'North India affected basically because of flood', 15)
+(datetime.date(2013, 7, 4), datetime.date(2013, 7, 3), 'Business Standard', 'http://www.business-standard.com/article/markets/heavy-crop-damage-in-hilly-states-lifts-onion-potato-prices-113070300796_1.html', -1, 'traders nexus', 'North India affected basically because of flood', 15)
+(datetime.date(2013, 7, 5), datetime.date(2013, 7, 3), 'Business Standard', 'http://www.business-standard.com/article/markets/heavy-crop-damage-in-hilly-states-lifts-onion-potato-prices-113070300796_1.html', -2, 'traders nexus', 'North India affected basically because of flood', 15)
+(datetime.date(2013, 7, 6), datetime.date(2013, 7, 3), 'Business Standard', 'http://www.business-standard.com/article/markets/heavy-crop-damage-in-hilly-states-lifts-onion-potato-prices-113070300796_1.html', -3, 'traders nexus', 'North India affected basically because of flood', 15)
+(datetime.date(2013, 7, 7), datetime.date(2013, 7, 3), 'Business Standard', 'http://www.business-standard.com/article/markets/heavy-crop-damage-in-hilly-states-lifts-onion-potato-prices-113070300796_1.html', -4, 'traders nexus', 'North India affected basically because of flood', 15)
+(datetime.date(2013, 7, 8), datetime.date(2013, 7, 3), 'Business Standard', 'http://www.business-standard.com/article/markets/heavy-crop-damage-in-hilly-states-lifts-onion-potato-prices-113070300796_1.html', -5, 'traders nexus', 'North India affected basically because of flood', 15)
+(datetime.date(2013, 7, 12), datetime.date(2013, 7, 17), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Onion-prices-at-two-and-a-half-year-high/articleshow/21125776.cms', 5, 'unseasonal rainfall', 'no', None)
+(datetime.date(2013, 7, 13), datetime.date(2013, 7, 17), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Onion-prices-at-two-and-a-half-year-high/articleshow/21125776.cms', 4, 'unseasonal rainfall', 'no', None)
+(datetime.date(2013, 7, 14), datetime.date(2013, 7, 17), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Onion-prices-at-two-and-a-half-year-high/articleshow/21125776.cms', 3, 'unseasonal rainfall', 'no', None)
+(datetime.date(2013, 7, 15), datetime.date(2013, 7, 17), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Onion-prices-at-two-and-a-half-year-high/articleshow/21125776.cms', 2, 'unseasonal rainfall', 'no', None)
+(datetime.date(2013, 7, 16), datetime.date(2013, 7, 17), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Onion-prices-at-two-and-a-half-year-high/articleshow/21125776.cms', 1, 'unseasonal rainfall', 'no', None)
+(datetime.date(2013, 7, 17), datetime.date(2013, 7, 17), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Onion-prices-at-two-and-a-half-year-high/articleshow/21125776.cms', 0, 'unseasonal rainfall', 'no', None)
+(datetime.date(2013, 7, 18), datetime.date(2013, 7, 17), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Onion-prices-at-two-and-a-half-year-high/articleshow/21125776.cms', -1, 'unseasonal rainfall', 'no', None)
+(datetime.date(2014, 6, 29), datetime.date(2014, 6, 30), 'Money Control', 'http://www.moneycontrol.com/news/economy/risefood-prices-centre-swings-into-action_1115868.html', 1, 'not stated', 'no', None)
+(datetime.date(2014, 6, 30), datetime.date(2014, 6, 30), 'Money Control', 'http://www.moneycontrol.com/news/economy/risefood-prices-centre-swings-into-action_1115868.html', 0, 'not stated', 'no', None)
+(datetime.date(2014, 7, 1), datetime.date(2014, 7, 1), 'NDTV', 'http://www.ndtv.com/cheat-sheet/poor-rainfall-could-cause-drought-like-conditions-in-parts-of-west-india-agriculture-minister-582801', 0, 'not stated', '50% hike', 7)
+(datetime.date(2014, 7, 2), datetime.date(2014, 7, 2), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Govt-hikes-minimum-export-price-of-onion-to-US-500-per-tonne/articleshow/37630139.cms', 0, 'prediction of delayed monsoon', 'no', 30)
+(datetime.date(2014, 7, 3), datetime.date(2014, 7, 3), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2014-07-03/news/51057542_1_stock-limits-onions-ravi-shankar-prasad', 0, 'traders nexus', '', 0)
+(datetime.date(2014, 7, 4), datetime.date(2014, 7, 5), 'NDTV', 'http://www.ndtv.com/delhi-news/onion-sells-at-rs-40-kg-in-national-capital-region-on-drought-fears-584059', 1, 'Drought Fears', '', 0)
+(datetime.date(2014, 7, 5), datetime.date(2014, 7, 5), 'NDTV', 'http://www.ndtv.com/delhi-news/onion-sells-at-rs-40-kg-in-national-capital-region-on-drought-fears-584059', 0, 'Drought Fears', '', 0)
+(datetime.date(2014, 7, 13), datetime.date(2014, 7, 13), 'The Times of India', 'http://timesofindia.indiatimes.com/india/Govt-to-check-onion-prices-with-imports/articleshow/38282324.cms', 0, 'low production', '', 30)
+(datetime.date(2014, 7, 14), datetime.date(2014, 7, 15), 'First Post', 'http://www.firstpost.com/india/why-modi-sarkaar-should-ready-itself-for-another-fight-with-inflation-1619551.html', 1, 'not stated', 'Title : Why Modi sarkaar should ready itself for another fight with inflation , but stated that onion prices are high as compared to last year', 30)
+(datetime.date(2014, 7, 15), datetime.date(2014, 7, 15), 'First Post', 'http://www.firstpost.com/india/why-modi-sarkaar-should-ready-itself-for-another-fight-with-inflation-1619551.html', 0, 'not stated', 'Title : Why Modi sarkaar should ready itself for another fight with inflation , but stated that onion prices are high as compared to last year', 30)
+(datetime.date(2014, 7, 16), datetime.date(2014, 7, 17), 'Business Standard', 'http://www.business-standard.com/article/economy-policy/price-stabilization-fund-in-agriculture-to-be-used-for-cereals-and-vegetables-114071701051_1.html', 1, 'not stated', '', 40)
+(datetime.date(2014, 7, 17), datetime.date(2014, 7, 17), 'Business Standard', 'http://www.business-standard.com/article/economy-policy/price-stabilization-fund-in-agriculture-to-be-used-for-cereals-and-vegetables-114071701051_1.html', 0, 'not stated', '', 40)
+(datetime.date(2014, 7, 18), datetime.date(2014, 7, 17), 'Business Standard', 'http://www.business-standard.com/article/economy-policy/price-stabilization-fund-in-agriculture-to-be-used-for-cereals-and-vegetables-114071701051_1.html', -1, 'not stated', '', 40)
+(datetime.date(2014, 7, 19), datetime.date(2014, 7, 17), 'Business Standard', 'http://www.business-standard.com/article/economy-policy/price-stabilization-fund-in-agriculture-to-be-used-for-cereals-and-vegetables-114071701051_1.html', -2, 'not stated', '', 40)
+News Dates Matched for Anomalies of Nation:
+(datetime.date(2013, 7, 19), datetime.date(2013, 7, 17), 'NDTV', 'http://profit.ndtv.com/news/economy/article-wholesale-onion-price-jumps-5-times-to-push-up-retail-rates-324600', -2, 'low production', 'because of low production last year the prices of onion got high', 30)
+(datetime.date(2013, 7, 20), datetime.date(2013, 7, 23), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Onion-prices-more-than-double-to-Rs-36-40/kg-in-metros/articleshow/21272374.cms', 3, 'low production', '', 0)
+(datetime.date(2013, 7, 21), datetime.date(2013, 7, 23), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Onion-prices-more-than-double-to-Rs-36-40/kg-in-metros/articleshow/21272374.cms', 2, 'low production', '', 0)
+(datetime.date(2013, 7, 22), datetime.date(2013, 7, 23), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Onion-prices-more-than-double-to-Rs-36-40/kg-in-metros/articleshow/21272374.cms', 1, 'low production', '', 0)
+(datetime.date(2013, 7, 23), datetime.date(2013, 7, 23), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Onion-prices-more-than-double-to-Rs-36-40/kg-in-metros/articleshow/21272374.cms', 0, 'low production', '', 0)
+(datetime.date(2013, 7, 24), datetime.date(2013, 7, 23), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Onion-prices-more-than-double-to-Rs-36-40/kg-in-metros/articleshow/21272374.cms', -1, 'low production', '', 0)
+(datetime.date(2013, 7, 25), datetime.date(2013, 7, 23), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Onion-prices-more-than-double-to-Rs-36-40/kg-in-metros/articleshow/21272374.cms', -2, 'low production', '', 0)
+(datetime.date(2013, 7, 26), datetime.date(2013, 7, 23), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Onion-prices-more-than-double-to-Rs-36-40/kg-in-metros/articleshow/21272374.cms', -3, 'low production', '', 0)
+(datetime.date(2013, 7, 27), datetime.date(2013, 7, 23), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Onion-prices-more-than-double-to-Rs-36-40/kg-in-metros/articleshow/21272374.cms', -4, 'low production', '', 0)
+(datetime.date(2013, 7, 28), datetime.date(2013, 7, 23), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Onion-prices-more-than-double-to-Rs-36-40/kg-in-metros/articleshow/21272374.cms', -5, 'low production', '', 0)
+(datetime.date(2013, 8, 1), datetime.date(2013, 8, 6), 'The Hindu', 'http://www.thehindu.com/news/cities/Delhi/onion-prices-bring-tears-yet-again/article4995124.ece', 5, 'low production', 'Even Hoaders are responsible to some extent', 0)
+(datetime.date(2013, 8, 2), datetime.date(2013, 8, 6), 'The Hindu', 'http://www.thehindu.com/news/cities/Delhi/onion-prices-bring-tears-yet-again/article4995124.ece', 4, 'low production', 'Even Hoaders are responsible to some extent', 0)
+(datetime.date(2013, 8, 3), datetime.date(2013, 8, 6), 'The Hindu', 'http://www.thehindu.com/news/cities/Delhi/onion-prices-bring-tears-yet-again/article4995124.ece', 3, 'low production', 'Even Hoaders are responsible to some extent', 0)
+(datetime.date(2013, 8, 18), datetime.date(2013, 8, 17), 'The Times of India', 'http://timesofindia.indiatimes.com/india/Hoarding-pushing-onion-prices-up-govt-finds/articleshow/21872501.cms', -1, 'traders nexus', 'Clear signs of traders fixing the prices by creating artificial deficit in jun- july 2013', 60)
+(datetime.date(2013, 8, 19), datetime.date(2013, 8, 21), 'The Hindu', 'http://www.thehindu.com/business/Industry/onion-prices-jump-to-rs-80kg-again/article5044776.ece', 2, 'low supply', 'Prices hiked again', 0)
+(datetime.date(2013, 8, 20), datetime.date(2013, 8, 21), 'The Hindu', 'http://www.thehindu.com/business/Industry/onion-prices-jump-to-rs-80kg-again/article5044776.ece', 1, 'low supply', 'Prices hiked again', 0)
+(datetime.date(2013, 8, 21), datetime.date(2013, 8, 21), 'The Hindu', 'http://www.thehindu.com/business/Industry/onion-prices-jump-to-rs-80kg-again/article5044776.ece', 0, 'low supply', 'Prices hiked again', 0)
+(datetime.date(2013, 8, 22), datetime.date(2013, 8, 22), 'Money Control', 'http://www.moneycontrol.com/news/economy/onion-prices-shoot-back-to-rs-80kgmany-partsindia_939103.html', 0, 'not stated', '', 1)
+(datetime.date(2013, 8, 23), datetime.date(2013, 8, 22), 'Money Control', 'http://www.moneycontrol.com/news/economy/onion-prices-shoot-back-to-rs-80kgmany-partsindia_939103.html', -1, 'not stated', '', 1)
+(datetime.date(2013, 8, 24), datetime.date(2013, 8, 22), 'Money Control', 'http://www.moneycontrol.com/news/economy/onion-prices-shoot-back-to-rs-80kgmany-partsindia_939103.html', -2, 'not stated', '', 1)
+(datetime.date(2013, 8, 25), datetime.date(2013, 8, 22), 'Money Control', 'http://www.moneycontrol.com/news/economy/onion-prices-shoot-back-to-rs-80kgmany-partsindia_939103.html', -3, 'not stated', '', 1)
+(datetime.date(2013, 8, 26), datetime.date(2013, 8, 22), 'Money Control', 'http://www.moneycontrol.com/news/economy/onion-prices-shoot-back-to-rs-80kgmany-partsindia_939103.html', -4, 'not stated', '', 1)
+(datetime.date(2013, 8, 27), datetime.date(2013, 8, 22), 'Money Control', 'http://www.moneycontrol.com/news/economy/onion-prices-shoot-back-to-rs-80kgmany-partsindia_939103.html', -5, 'not stated', '', 1)
+(datetime.date(2013, 8, 29), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', 5, 'low supply', '', 0)
+(datetime.date(2013, 8, 30), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', 4, 'low supply', '', 0)
+(datetime.date(2013, 8, 31), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', 3, 'low supply', '', 0)
+(datetime.date(2013, 9, 1), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', 2, 'low supply', '', 0)
+(datetime.date(2013, 9, 2), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', 1, 'low supply', '', 0)
+(datetime.date(2013, 9, 3), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', 0, 'low supply', '', 0)
+(datetime.date(2013, 9, 4), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', -1, 'low supply', '', 0)
+(datetime.date(2013, 9, 5), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', -2, 'low supply', '', 0)
+(datetime.date(2013, 9, 6), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', -3, 'low supply', '', 0)
+(datetime.date(2013, 9, 7), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', -4, 'low supply', '', 0)
+(datetime.date(2013, 9, 8), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', -5, 'low supply', '', 0)
+(datetime.date(2013, 9, 13), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/city/mumbai/Sharad-Pawars-speculation-leads-to-onion-price-increase-yet-again/articleshow/22673599.cms', 5, 'low supply', '', 0)
+(datetime.date(2013, 9, 14), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/city/mumbai/Sharad-Pawars-speculation-leads-to-onion-price-increase-yet-again/articleshow/22673599.cms', 4, 'low supply', '', 0)
+(datetime.date(2013, 9, 15), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/city/mumbai/Sharad-Pawars-speculation-leads-to-onion-price-increase-yet-again/articleshow/22673599.cms', 3, 'low supply', '', 0)
+(datetime.date(2013, 9, 16), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/city/mumbai/Sharad-Pawars-speculation-leads-to-onion-price-increase-yet-again/articleshow/22673599.cms', 2, 'low supply', '', 0)
+(datetime.date(2013, 9, 17), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/city/mumbai/Sharad-Pawars-speculation-leads-to-onion-price-increase-yet-again/articleshow/22673599.cms', 1, 'low supply', '', 0)
+(datetime.date(2013, 9, 18), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/city/mumbai/Sharad-Pawars-speculation-leads-to-onion-price-increase-yet-again/articleshow/22673599.cms', 0, 'low supply', '', 0)
+(datetime.date(2013, 9, 19), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/city/mumbai/Sharad-Pawars-speculation-leads-to-onion-price-increase-yet-again/articleshow/22673599.cms', -1, 'low supply', '', 0)
+(datetime.date(2013, 9, 20), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/city/mumbai/Sharad-Pawars-speculation-leads-to-onion-price-increase-yet-again/articleshow/22673599.cms', -2, 'low supply', '', 0)
+(datetime.date(2013, 9, 21), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/city/mumbai/Sharad-Pawars-speculation-leads-to-onion-price-increase-yet-again/articleshow/22673599.cms', -3, 'low supply', '', 0)
+(datetime.date(2013, 9, 22), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/city/mumbai/Sharad-Pawars-speculation-leads-to-onion-price-increase-yet-again/articleshow/22673599.cms', -4, 'low supply', '', 0)
+(datetime.date(2013, 9, 23), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/city/mumbai/Sharad-Pawars-speculation-leads-to-onion-price-increase-yet-again/articleshow/22673599.cms', -5, 'low supply', '', 0)
+(datetime.date(2013, 10, 5), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', 5, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 6), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', 4, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 7), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', 3, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 8), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', 2, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 9), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', 1, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 10), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', 0, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 11), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', -1, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 12), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', -2, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 13), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', -3, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 14), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', -4, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 15), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', -5, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 17), datetime.date(2013, 10, 22), 'NDTV', 'http://profit.ndtv.com/news/cheat-sheet/article-why-onion-prices-are-inching-towards-rs-100-per-kg-370138', 5, 'low supply', '', 0)
+(datetime.date(2013, 10, 18), datetime.date(2013, 10, 22), 'NDTV', 'http://profit.ndtv.com/news/cheat-sheet/article-why-onion-prices-are-inching-towards-rs-100-per-kg-370138', 4, 'low supply', '', 0)
+(datetime.date(2013, 10, 19), datetime.date(2013, 10, 22), 'NDTV', 'http://profit.ndtv.com/news/cheat-sheet/article-why-onion-prices-are-inching-towards-rs-100-per-kg-370138', 3, 'low supply', '', 0)
+(datetime.date(2013, 10, 20), datetime.date(2013, 10, 22), 'NDTV', 'http://profit.ndtv.com/news/cheat-sheet/article-why-onion-prices-are-inching-towards-rs-100-per-kg-370138', 2, 'low supply', '', 0)
+(datetime.date(2013, 10, 21), datetime.date(2013, 10, 22), 'NDTV', 'http://profit.ndtv.com/news/cheat-sheet/article-why-onion-prices-are-inching-towards-rs-100-per-kg-370138', 1, 'low supply', '', 0)
+(datetime.date(2013, 10, 22), datetime.date(2013, 10, 22), 'NDTV', 'http://profit.ndtv.com/news/cheat-sheet/article-why-onion-prices-are-inching-towards-rs-100-per-kg-370138', 0, 'low supply', '', 0)
+(datetime.date(2013, 10, 23), datetime.date(2013, 10, 23), 'The Hindu', 'http://www.thehindu.com/business/Industry/monopoly-of-wholesale-trade-causing-onion-price-hike/article5264512.ece', 0, 'traders nexus', 'no', 2)
+(datetime.date(2013, 10, 24), datetime.date(2013, 10, 24), 'The Hindu', 'http://www.thehindu.com/business/Industry/india-floats-tender-for-import-of-onions/article5264970.ece', 0, 'traders nexus', '', 10)
+(datetime.date(2013, 10, 25), datetime.date(2013, 10, 25), 'Money Control', 'http://www.moneycontrol.com/news/economy/onion-prices-remain-high-at-rs-100kg-crisis-to-continue_976318.html', 0, 'traders nexus', '', 7)
+(datetime.date(2013, 10, 26), datetime.date(2013, 10, 26), 'NDTV', 'http://www.ndtv.com/india-news/chief-ministers-onion-mission-begins-in-assam-538929', 0, 'Not mentioned', '', 0)
+(datetime.date(2013, 10, 27), datetime.date(2013, 10, 28), 'DNA', 'http://www.dnaindia.com/mumbai/report-dna-exclusive-traders-not-farmers-making-the-most-of-soaring-onion-price-1909850', 1, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 28), datetime.date(2013, 10, 28), 'DNA', 'http://www.dnaindia.com/mumbai/report-dna-exclusive-traders-not-farmers-making-the-most-of-soaring-onion-price-1909850', 0, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 29), datetime.date(2013, 10, 28), 'DNA', 'http://www.dnaindia.com/mumbai/report-dna-exclusive-traders-not-farmers-making-the-most-of-soaring-onion-price-1909850', -1, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 30), datetime.date(2013, 10, 28), 'DNA', 'http://www.dnaindia.com/mumbai/report-dna-exclusive-traders-not-farmers-making-the-most-of-soaring-onion-price-1909850', -2, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 31), datetime.date(2013, 10, 28), 'DNA', 'http://www.dnaindia.com/mumbai/report-dna-exclusive-traders-not-farmers-making-the-most-of-soaring-onion-price-1909850', -3, 'traders nexus', '', 0)
+(datetime.date(2013, 11, 1), datetime.date(2013, 11, 4), 'The Hindu', 'http://www.thehindu.com/business/markets/govt-hikes-onion-mep-to-1150-per-tonne-to-check-prices/article5313950.ece', 3, 'low supply', '', 30)
+(datetime.date(2013, 11, 2), datetime.date(2013, 11, 4), 'The Hindu', 'http://www.thehindu.com/business/markets/govt-hikes-onion-mep-to-1150-per-tonne-to-check-prices/article5313950.ece', 2, 'low supply', '', 30)
+(datetime.date(2013, 11, 3), datetime.date(2013, 11, 4), 'The Hindu', 'http://www.thehindu.com/business/markets/govt-hikes-onion-mep-to-1150-per-tonne-to-check-prices/article5313950.ece', 1, 'low supply', '', 30)
+(datetime.date(2013, 11, 4), datetime.date(2013, 11, 4), 'The Hindu', 'http://www.thehindu.com/business/markets/govt-hikes-onion-mep-to-1150-per-tonne-to-check-prices/article5313950.ece', 0, 'low supply', '', 30)
+(datetime.date(2013, 11, 5), datetime.date(2013, 11, 6), 'The Hindu', 'http://www.thehindu.com/business/Industry/after-onions-tomato-prices-soar/article5317582.ece', 1, 'Increased prices of onion', '', 0)
+(datetime.date(2013, 11, 6), datetime.date(2013, 11, 6), 'The Hindu', 'http://www.thehindu.com/business/Industry/after-onions-tomato-prices-soar/article5317582.ece', 0, 'Increased prices of onion', '', 0)
+(datetime.date(2013, 11, 7), datetime.date(2013, 11, 6), 'The Hindu', 'http://www.thehindu.com/business/Industry/after-onions-tomato-prices-soar/article5317582.ece', -1, 'Increased prices of onion', '', 0)
+(datetime.date(2013, 11, 8), datetime.date(2013, 11, 6), 'The Hindu', 'http://www.thehindu.com/business/Industry/after-onions-tomato-prices-soar/article5317582.ece', -2, 'Increased prices of onion', '', 0)
+(datetime.date(2013, 11, 9), datetime.date(2013, 11, 6), 'The Hindu', 'http://www.thehindu.com/business/Industry/after-onions-tomato-prices-soar/article5317582.ece', -3, 'Increased prices of onion', '', 0)
+(datetime.date(2013, 11, 10), datetime.date(2013, 11, 13), 'The Times of India', 'http://timesofindia.indiatimes.com/india/No-let-up-in-prices-of-onion-potato-tomato/articleshow/25664320.cms', 3, 'traders nexus', '', 12)
+(datetime.date(2013, 11, 11), datetime.date(2013, 11, 13), 'The Times of India', 'http://timesofindia.indiatimes.com/india/No-let-up-in-prices-of-onion-potato-tomato/articleshow/25664320.cms', 2, 'traders nexus', '', 12)
+(datetime.date(2013, 11, 12), datetime.date(2013, 11, 13), 'The Times of India', 'http://timesofindia.indiatimes.com/india/No-let-up-in-prices-of-onion-potato-tomato/articleshow/25664320.cms', 1, 'traders nexus', '', 12)
+(datetime.date(2013, 11, 13), datetime.date(2013, 11, 13), 'The Times of India', 'http://timesofindia.indiatimes.com/india/No-let-up-in-prices-of-onion-potato-tomato/articleshow/25664320.cms', 0, 'traders nexus', '', 12)
+(datetime.date(2013, 11, 14), datetime.date(2013, 11, 15), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Onion-prices-up-278-tomato-122-in-one-year/articleshow/25780005.cms', 1, 'not stated', '', 365)
+(datetime.date(2013, 11, 15), datetime.date(2013, 11, 15), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Onion-prices-up-278-tomato-122-in-one-year/articleshow/25780005.cms', 0, 'not stated', '', 365)
+(datetime.date(2013, 11, 16), datetime.date(2013, 11, 15), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Onion-prices-up-278-tomato-122-in-one-year/articleshow/25780005.cms', -1, 'not stated', '', 365)
+(datetime.date(2013, 11, 17), datetime.date(2013, 11, 19), 'First Post', 'http://www.firstpost.com/politics/onion-tomato-price-hoardings-to-malign-party-cong-writes-to-ec-1238589.html', 2, 'traders nexus', '', 0)
+(datetime.date(2013, 11, 18), datetime.date(2013, 11, 19), 'First Post', 'http://www.firstpost.com/politics/onion-tomato-price-hoardings-to-malign-party-cong-writes-to-ec-1238589.html', 1, 'traders nexus', '', 0)
+(datetime.date(2013, 11, 19), datetime.date(2013, 11, 19), 'First Post', 'http://www.firstpost.com/politics/onion-tomato-price-hoardings-to-malign-party-cong-writes-to-ec-1238589.html', 0, 'traders nexus', '', 0)
+(datetime.date(2013, 11, 20), datetime.date(2013, 11, 19), 'First Post', 'http://www.firstpost.com/politics/onion-tomato-price-hoardings-to-malign-party-cong-writes-to-ec-1238589.html', -1, 'traders nexus', '', 0)
+(datetime.date(2013, 11, 21), datetime.date(2013, 11, 19), 'First Post', 'http://www.firstpost.com/politics/onion-tomato-price-hoardings-to-malign-party-cong-writes-to-ec-1238589.html', -2, 'traders nexus', '', 0)
+(datetime.date(2013, 11, 22), datetime.date(2013, 11, 19), 'First Post', 'http://www.firstpost.com/politics/onion-tomato-price-hoardings-to-malign-party-cong-writes-to-ec-1238589.html', -3, 'traders nexus', '', 0)
+(datetime.date(2013, 11, 23), datetime.date(2013, 11, 19), 'First Post', 'http://www.firstpost.com/politics/onion-tomato-price-hoardings-to-malign-party-cong-writes-to-ec-1238589.html', -4, 'traders nexus', '', 0)
+(datetime.date(2013, 11, 24), datetime.date(2013, 11, 19), 'First Post', 'http://www.firstpost.com/politics/onion-tomato-price-hoardings-to-malign-party-cong-writes-to-ec-1238589.html', -5, 'traders nexus', '', 0)
+END OF RETAIL VS ARRIVAL 
+
+
+
+STARTING WITH RETAIL VS WHOLESALE 
+
+
+Local Mumbai Anomalies : 125
+Local Delhi Anomalies : 61
+Nation-wide anomalies : 35
+Dates for Anomalies of Local Mumbai:
+2010-03-11 00:00:00
+2010-03-12 00:00:00
+2010-12-26 00:00:00
+2010-12-27 00:00:00
+2010-12-28 00:00:00
+2010-12-29 00:00:00
+2011-01-01 00:00:00
+2011-03-02 00:00:00
+2011-03-03 00:00:00
+2011-03-04 00:00:00
+2011-03-05 00:00:00
+2011-03-06 00:00:00
+2011-03-07 00:00:00
+2011-06-19 00:00:00
+2011-06-20 00:00:00
+2011-06-21 00:00:00
+2011-06-22 00:00:00
+2011-06-23 00:00:00
+2011-06-24 00:00:00
+2011-06-25 00:00:00
+2011-06-26 00:00:00
+2011-06-27 00:00:00
+2011-06-28 00:00:00
+2011-06-29 00:00:00
+2011-06-30 00:00:00
+2011-07-01 00:00:00
+2011-07-02 00:00:00
+2011-07-03 00:00:00
+2011-07-04 00:00:00
+2011-07-05 00:00:00
+2011-07-06 00:00:00
+2011-07-07 00:00:00
+2011-07-08 00:00:00
+2011-07-09 00:00:00
+2011-07-10 00:00:00
+2011-07-11 00:00:00
+2011-07-12 00:00:00
+2011-07-13 00:00:00
+2011-07-14 00:00:00
+2011-07-15 00:00:00
+2013-09-21 00:00:00
+2013-09-22 00:00:00
+2013-09-23 00:00:00
+2013-09-24 00:00:00
+2013-09-25 00:00:00
+2013-09-26 00:00:00
+2013-09-27 00:00:00
+2013-09-28 00:00:00
+2013-09-29 00:00:00
+2013-09-30 00:00:00
+2013-10-01 00:00:00
+2013-10-02 00:00:00
+2013-10-03 00:00:00
+2013-10-04 00:00:00
+2013-10-05 00:00:00
+2013-10-13 00:00:00
+2013-10-14 00:00:00
+2013-10-15 00:00:00
+2013-10-16 00:00:00
+2013-10-17 00:00:00
+2013-10-18 00:00:00
+2013-10-19 00:00:00
+2013-10-21 00:00:00
+2013-10-22 00:00:00
+2013-10-23 00:00:00
+2013-10-24 00:00:00
+2013-10-25 00:00:00
+2013-10-26 00:00:00
+2013-11-03 00:00:00
+2013-11-04 00:00:00
+2013-11-18 00:00:00
+2013-11-19 00:00:00
+2013-11-20 00:00:00
+2013-11-21 00:00:00
+2013-11-22 00:00:00
+2013-11-23 00:00:00
+2013-11-24 00:00:00
+2013-11-25 00:00:00
+2013-11-26 00:00:00
+2013-11-27 00:00:00
+2013-11-28 00:00:00
+2013-11-29 00:00:00
+2013-12-20 00:00:00
+2013-12-27 00:00:00
+2013-12-28 00:00:00
+2013-12-29 00:00:00
+2013-12-30 00:00:00
+2013-12-31 00:00:00
+2014-01-01 00:00:00
+2014-01-02 00:00:00
+2014-01-03 00:00:00
+2014-01-04 00:00:00
+2014-01-05 00:00:00
+2014-01-06 00:00:00
+2014-02-01 00:00:00
+2014-02-02 00:00:00
+2014-02-03 00:00:00
+2014-02-04 00:00:00
+2014-02-05 00:00:00
+2014-02-06 00:00:00
+2014-02-07 00:00:00
+2014-02-08 00:00:00
+2014-02-09 00:00:00
+2014-02-10 00:00:00
+2014-03-20 00:00:00
+2014-03-21 00:00:00
+2014-03-22 00:00:00
+2014-03-23 00:00:00
+2014-03-24 00:00:00
+2014-03-25 00:00:00
+2014-03-26 00:00:00
+2014-03-27 00:00:00
+2014-03-28 00:00:00
+2014-03-29 00:00:00
+2014-03-30 00:00:00
+2014-03-31 00:00:00
+2014-04-01 00:00:00
+2014-04-02 00:00:00
+2014-04-03 00:00:00
+2014-04-04 00:00:00
+2014-04-05 00:00:00
+2014-04-06 00:00:00
+2014-04-07 00:00:00
+2014-04-08 00:00:00
+2014-04-15 00:00:00
+Dates for Anomalies of Local Delhi:
+2010-12-20 00:00:00
+2011-01-04 00:00:00
+2011-01-05 00:00:00
+2011-01-06 00:00:00
+2011-01-07 00:00:00
+2011-01-08 00:00:00
+2011-01-09 00:00:00
+2011-01-10 00:00:00
+2011-01-11 00:00:00
+2011-01-12 00:00:00
+2011-01-13 00:00:00
+2011-01-14 00:00:00
+2011-01-15 00:00:00
+2011-01-16 00:00:00
+2011-01-17 00:00:00
+2011-01-18 00:00:00
+2011-11-27 00:00:00
+2011-11-28 00:00:00
+2011-11-29 00:00:00
+2011-11-30 00:00:00
+2011-12-04 00:00:00
+2012-11-04 00:00:00
+2012-11-05 00:00:00
+2012-11-06 00:00:00
+2012-11-07 00:00:00
+2012-11-08 00:00:00
+2012-11-09 00:00:00
+2012-11-10 00:00:00
+2012-11-11 00:00:00
+2012-11-12 00:00:00
+2012-11-13 00:00:00
+2012-11-14 00:00:00
+2012-11-15 00:00:00
+2012-11-16 00:00:00
+2012-11-18 00:00:00
+2012-11-19 00:00:00
+2013-06-04 00:00:00
+2013-06-05 00:00:00
+2013-06-06 00:00:00
+2013-06-07 00:00:00
+2013-08-25 00:00:00
+2013-08-26 00:00:00
+2013-08-27 00:00:00
+2013-08-28 00:00:00
+2013-08-29 00:00:00
+2013-08-30 00:00:00
+2013-08-31 00:00:00
+2013-09-01 00:00:00
+2013-09-02 00:00:00
+2013-09-03 00:00:00
+2013-09-04 00:00:00
+2013-09-05 00:00:00
+2013-09-06 00:00:00
+2013-09-07 00:00:00
+2013-09-08 00:00:00
+2013-09-09 00:00:00
+2013-09-10 00:00:00
+2013-09-11 00:00:00
+2013-09-12 00:00:00
+2013-09-13 00:00:00
+2013-09-14 00:00:00
+Dates for Anomalies of Nation:
+2010-12-30 00:00:00
+2010-12-31 00:00:00
+2013-10-27 00:00:00
+2013-10-28 00:00:00
+2013-10-29 00:00:00
+2013-10-30 00:00:00
+2013-10-31 00:00:00
+2013-11-01 00:00:00
+2013-11-02 00:00:00
+2013-11-30 00:00:00
+2013-12-01 00:00:00
+2013-12-02 00:00:00
+2013-12-03 00:00:00
+2013-12-04 00:00:00
+2013-12-05 00:00:00
+2013-12-06 00:00:00
+2013-12-07 00:00:00
+2013-12-08 00:00:00
+2013-12-09 00:00:00
+2013-12-10 00:00:00
+2013-12-11 00:00:00
+2013-12-12 00:00:00
+2013-12-13 00:00:00
+2013-12-14 00:00:00
+2013-12-15 00:00:00
+2013-12-16 00:00:00
+2013-12-17 00:00:00
+2013-12-18 00:00:00
+2013-12-19 00:00:00
+2013-12-21 00:00:00
+2013-12-22 00:00:00
+2013-12-23 00:00:00
+2013-12-24 00:00:00
+2013-12-25 00:00:00
+2013-12-26 00:00:00
+News Dates Matched for Anomalies of Local Mumbai:
+(datetime.date(2010, 12, 26), datetime.date(2010, 12, 24), 'Business Standard', 'http://www.business-standard.com/article/economy-policy/wholesale-onion-prices-slide-20-in-lasalgaon-manmad-110122400137_1.html', -2, 'not stated', 'Prices went down, but for good quality prices went high', None)
+(datetime.date(2010, 12, 27), datetime.date(2010, 12, 24), 'Business Standard', 'http://www.business-standard.com/article/economy-policy/wholesale-onion-prices-slide-20-in-lasalgaon-manmad-110122400137_1.html', -3, 'not stated', 'Prices went down, but for good quality prices went high', None)
+(datetime.date(2010, 12, 28), datetime.date(2010, 12, 24), 'Business Standard', 'http://www.business-standard.com/article/economy-policy/wholesale-onion-prices-slide-20-in-lasalgaon-manmad-110122400137_1.html', -4, 'not stated', 'Prices went down, but for good quality prices went high', None)
+(datetime.date(2010, 12, 29), datetime.date(2011, 1, 3), 'NDTV', 'http://www.ndtv.com/mumbai-news/mumbai-trader-sells-onions-at-rs-12-per-kg-443770', 5, 'not stated', '', 0)
+(datetime.date(2011, 1, 1), datetime.date(2011, 1, 3), 'NDTV', 'http://www.ndtv.com/mumbai-news/mumbai-trader-sells-onions-at-rs-12-per-kg-443770', 2, 'not stated', '', 0)
+(datetime.date(2013, 9, 21), datetime.date(2013, 9, 19), 'The Hindu', 'http://www.thehindu.com/news/cities/chennai/price-of-onions-on-the-rise-again/article5142858.ece', -2, 'not stated', 'no', None)
+(datetime.date(2013, 9, 22), datetime.date(2013, 9, 19), 'The Hindu', 'http://www.thehindu.com/news/cities/chennai/price-of-onions-on-the-rise-again/article5142858.ece', -3, 'not stated', 'no', None)
+(datetime.date(2013, 9, 23), datetime.date(2013, 9, 19), 'The Hindu', 'http://www.thehindu.com/news/cities/chennai/price-of-onions-on-the-rise-again/article5142858.ece', -4, 'not stated', 'no', None)
+(datetime.date(2013, 9, 24), datetime.date(2013, 9, 19), 'The Hindu', 'http://www.thehindu.com/news/cities/chennai/price-of-onions-on-the-rise-again/article5142858.ece', -5, 'not stated', 'no', None)
+(datetime.date(2013, 10, 5), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', 5, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 13), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', -3, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 14), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', -4, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 15), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', -5, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 17), datetime.date(2013, 10, 22), 'NDTV', 'http://profit.ndtv.com/news/cheat-sheet/article-why-onion-prices-are-inching-towards-rs-100-per-kg-370138', 5, 'low supply', '', 0)
+(datetime.date(2013, 10, 18), datetime.date(2013, 10, 22), 'NDTV', 'http://profit.ndtv.com/news/cheat-sheet/article-why-onion-prices-are-inching-towards-rs-100-per-kg-370138', 4, 'low supply', '', 0)
+(datetime.date(2013, 10, 19), datetime.date(2013, 10, 22), 'NDTV', 'http://profit.ndtv.com/news/cheat-sheet/article-why-onion-prices-are-inching-towards-rs-100-per-kg-370138', 3, 'low supply', '', 0)
+(datetime.date(2013, 10, 21), datetime.date(2013, 10, 22), 'NDTV', 'http://profit.ndtv.com/news/cheat-sheet/article-why-onion-prices-are-inching-towards-rs-100-per-kg-370138', 1, 'low supply', '', 0)
+(datetime.date(2013, 10, 22), datetime.date(2013, 10, 22), 'NDTV', 'http://profit.ndtv.com/news/cheat-sheet/article-why-onion-prices-are-inching-towards-rs-100-per-kg-370138', 0, 'low supply', '', 0)
+(datetime.date(2013, 10, 23), datetime.date(2013, 10, 23), 'The Hindustan Times', 'http://www.hindustantimes.com/india/rs-100-and-rising-onion-prices-surge-uncontrollably/story-sFzxWMO87KI5KnQ2FXdLFL.html', 0, 'bad weather', 'no', None)
+(datetime.date(2013, 10, 24), datetime.date(2013, 10, 24), 'The Hindu', 'http://www.thehindu.com/business/Industry/india-floats-tender-for-import-of-onions/article5264970.ece', 0, 'traders nexus', '', 10)
+(datetime.date(2013, 10, 25), datetime.date(2013, 10, 25), 'First Post', 'http://www.firstpost.com/india/why-onions-are-rs-100kg-despite-10-crop-increase-supply-traders-1194063.html', 0, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 26), datetime.date(2013, 10, 26), 'NDTV', 'http://www.ndtv.com/india-news/chief-ministers-onion-mission-begins-in-assam-538929', 0, 'Not mentioned', '', 0)
+(datetime.date(2013, 11, 3), datetime.date(2013, 11, 4), 'The Hindu', 'http://www.thehindu.com/business/markets/govt-hikes-onion-mep-to-1150-per-tonne-to-check-prices/article5313950.ece', 1, 'low supply', '', 30)
+(datetime.date(2013, 11, 4), datetime.date(2013, 11, 4), 'The Hindu', 'http://www.thehindu.com/business/markets/govt-hikes-onion-mep-to-1150-per-tonne-to-check-prices/article5313950.ece', 0, 'low supply', '', 30)
+(datetime.date(2013, 11, 18), datetime.date(2013, 11, 19), 'First Post', 'http://www.firstpost.com/politics/onion-tomato-price-hoardings-to-malign-party-cong-writes-to-ec-1238589.html', 1, 'traders nexus', '', 0)
+(datetime.date(2013, 11, 19), datetime.date(2013, 11, 19), 'First Post', 'http://www.firstpost.com/politics/onion-tomato-price-hoardings-to-malign-party-cong-writes-to-ec-1238589.html', 0, 'traders nexus', '', 0)
+(datetime.date(2013, 11, 20), datetime.date(2013, 11, 19), 'First Post', 'http://www.firstpost.com/politics/onion-tomato-price-hoardings-to-malign-party-cong-writes-to-ec-1238589.html', -1, 'traders nexus', '', 0)
+(datetime.date(2013, 11, 21), datetime.date(2013, 11, 19), 'First Post', 'http://www.firstpost.com/politics/onion-tomato-price-hoardings-to-malign-party-cong-writes-to-ec-1238589.html', -2, 'traders nexus', '', 0)
+(datetime.date(2013, 11, 22), datetime.date(2013, 11, 19), 'First Post', 'http://www.firstpost.com/politics/onion-tomato-price-hoardings-to-malign-party-cong-writes-to-ec-1238589.html', -3, 'traders nexus', '', 0)
+(datetime.date(2013, 11, 23), datetime.date(2013, 11, 19), 'First Post', 'http://www.firstpost.com/politics/onion-tomato-price-hoardings-to-malign-party-cong-writes-to-ec-1238589.html', -4, 'traders nexus', '', 0)
+(datetime.date(2013, 11, 24), datetime.date(2013, 11, 19), 'First Post', 'http://www.firstpost.com/politics/onion-tomato-price-hoardings-to-malign-party-cong-writes-to-ec-1238589.html', -5, 'traders nexus', '', 0)
+(datetime.date(2014, 4, 15), datetime.date(2014, 4, 18), 'The Economic Times', 'http://timesofindia.indiatimes.com/india/Onion-prices-rise-about-40-in-a-week/articleshow/33877660.cms', 3, 'unseasonal rainfall', 'no', None)
+News Dates Matched for Anomalies of Local Delhi:
+(datetime.date(2010, 12, 20), datetime.date(2010, 12, 20), 'The Hindu', 'http://www.thehindu.com/business/Economy/imported-onion-arrive-from-pakistan/article965607.ece', 0, 'not stated', '', 0)
+(datetime.date(2011, 1, 4), datetime.date(2011, 1, 5), 'NDTV', 'http://www.ndtv.com/india-news/bjp-slams-government-over-split-views-on-inflation-444119', 1, 'not stated', 'BJP slams government over split views on inflation', 365)
+(datetime.date(2011, 1, 5), datetime.date(2011, 1, 5), 'NDTV', 'http://www.ndtv.com/india-news/bjp-slams-government-over-split-views-on-inflation-444119', 0, 'not stated', 'BJP slams government over split views on inflation', 365)
+(datetime.date(2011, 1, 6), datetime.date(2011, 1, 6), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/-Retail-onion-prices-up-by-Rs-5-10/kg-on-Pak-export-ban-reports/articleshow/7230895.cms', 0, 'Pak banned export', '', 0)
+(datetime.date(2011, 1, 7), datetime.date(2011, 1, 7), 'The Hindu', 'http://www.thehindu.com/business/act-swiftly-against-hoarders-pranab/article1051003.ece', 0, 'traders nexus', 'main article on inflation, but it says due to hoarding onion prices are high.', 0)
+(datetime.date(2011, 1, 8), datetime.date(2011, 1, 7), 'The Hindu', 'http://www.thehindu.com/business/act-swiftly-against-hoarders-pranab/article1051003.ece', -1, 'traders nexus', 'main article on inflation, but it says due to hoarding onion prices are high.', 0)
+(datetime.date(2011, 1, 9), datetime.date(2011, 1, 7), 'The Hindu', 'http://www.thehindu.com/business/act-swiftly-against-hoarders-pranab/article1051003.ece', -2, 'traders nexus', 'main article on inflation, but it says due to hoarding onion prices are high.', 0)
+(datetime.date(2011, 1, 10), datetime.date(2011, 1, 7), 'The Hindu', 'http://www.thehindu.com/business/act-swiftly-against-hoarders-pranab/article1051003.ece', -3, 'traders nexus', 'main article on inflation, but it says due to hoarding onion prices are high.', 0)
+(datetime.date(2011, 1, 11), datetime.date(2011, 1, 7), 'The Hindu', 'http://www.thehindu.com/business/act-swiftly-against-hoarders-pranab/article1051003.ece', -4, 'traders nexus', 'main article on inflation, but it says due to hoarding onion prices are high.', 0)
+(datetime.date(2011, 1, 12), datetime.date(2011, 1, 7), 'The Hindu', 'http://www.thehindu.com/business/act-swiftly-against-hoarders-pranab/article1051003.ece', -5, 'traders nexus', 'main article on inflation, but it says due to hoarding onion prices are high.', 0)
+(datetime.date(2013, 8, 25), datetime.date(2013, 8, 22), 'Money Control', 'http://www.moneycontrol.com/news/economy/onion-prices-shoot-back-to-rs-80kgmany-partsindia_939103.html', -3, 'not stated', '', 1)
+(datetime.date(2013, 8, 26), datetime.date(2013, 8, 22), 'Money Control', 'http://www.moneycontrol.com/news/economy/onion-prices-shoot-back-to-rs-80kgmany-partsindia_939103.html', -4, 'not stated', '', 1)
+(datetime.date(2013, 8, 27), datetime.date(2013, 8, 22), 'Money Control', 'http://www.moneycontrol.com/news/economy/onion-prices-shoot-back-to-rs-80kgmany-partsindia_939103.html', -5, 'not stated', '', 1)
+(datetime.date(2013, 8, 29), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', 5, 'low supply', '', 0)
+(datetime.date(2013, 8, 30), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', 4, 'low supply', '', 0)
+(datetime.date(2013, 8, 31), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', 3, 'low supply', '', 0)
+(datetime.date(2013, 9, 1), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', 2, 'low supply', '', 0)
+(datetime.date(2013, 9, 2), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', 1, 'low supply', '', 0)
+(datetime.date(2013, 9, 3), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', 0, 'low supply', '', 0)
+(datetime.date(2013, 9, 4), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', -1, 'low supply', '', 0)
+(datetime.date(2013, 9, 5), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', -2, 'low supply', '', 0)
+(datetime.date(2013, 9, 6), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', -3, 'low supply', '', 0)
+(datetime.date(2013, 9, 7), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', -4, 'low supply', '', 0)
+(datetime.date(2013, 9, 8), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', -5, 'low supply', '', 0)
+(datetime.date(2013, 9, 13), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/india/Onion-price-rise-may-be-due-to-hoarding-Centre/articleshow/22672225.cms', 5, 'traders nexus', 'no', None)
+(datetime.date(2013, 9, 14), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/india/Onion-price-rise-may-be-due-to-hoarding-Centre/articleshow/22672225.cms', 4, 'traders nexus', 'no', None)
+News Dates Matched for Anomalies of Nation:
+(datetime.date(2013, 10, 27), datetime.date(2013, 10, 28), 'DNA', 'http://www.dnaindia.com/mumbai/report-dna-exclusive-traders-not-farmers-making-the-most-of-soaring-onion-price-1909850', 1, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 28), datetime.date(2013, 10, 28), 'DNA', 'http://www.dnaindia.com/mumbai/report-dna-exclusive-traders-not-farmers-making-the-most-of-soaring-onion-price-1909850', 0, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 29), datetime.date(2013, 10, 28), 'DNA', 'http://www.dnaindia.com/mumbai/report-dna-exclusive-traders-not-farmers-making-the-most-of-soaring-onion-price-1909850', -1, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 30), datetime.date(2013, 10, 28), 'DNA', 'http://www.dnaindia.com/mumbai/report-dna-exclusive-traders-not-farmers-making-the-most-of-soaring-onion-price-1909850', -2, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 31), datetime.date(2013, 10, 28), 'DNA', 'http://www.dnaindia.com/mumbai/report-dna-exclusive-traders-not-farmers-making-the-most-of-soaring-onion-price-1909850', -3, 'traders nexus', '', 0)
+(datetime.date(2013, 11, 1), datetime.date(2013, 11, 4), 'The Hindu', 'http://www.thehindu.com/business/markets/govt-hikes-onion-mep-to-1150-per-tonne-to-check-prices/article5313950.ece', 3, 'low supply', '', 30)
+(datetime.date(2013, 11, 2), datetime.date(2013, 11, 4), 'The Hindu', 'http://www.thehindu.com/business/markets/govt-hikes-onion-mep-to-1150-per-tonne-to-check-prices/article5313950.ece', 2, 'low supply', '', 30)
+END OF RETAIL VS WHOLESALE 
+
+
+
+STARTING WITH WHOLESALE VS ARRIVAL 
+
+Local Mumbai Anomalies : 160
+Local Delhi Anomalies : 140
+Nation-wide anomalies : 172
+Dates for Anomalies of Local Mumbai:
+2010-02-21 00:00:00
+2010-02-22 00:00:00
+2010-02-23 00:00:00
+2010-02-24 00:00:00
+2010-02-25 00:00:00
+2010-02-26 00:00:00
+2010-02-27 00:00:00
+2010-07-08 00:00:00
+2010-08-05 00:00:00
+2010-08-06 00:00:00
+2010-11-07 00:00:00
+2010-11-08 00:00:00
+2010-11-09 00:00:00
+2010-11-10 00:00:00
+2010-11-11 00:00:00
+2010-11-12 00:00:00
+2010-11-13 00:00:00
+2010-11-14 00:00:00
+2010-11-15 00:00:00
+2010-11-16 00:00:00
+2010-11-17 00:00:00
+2010-11-18 00:00:00
+2010-11-19 00:00:00
+2010-11-20 00:00:00
+2010-11-21 00:00:00
+2010-11-22 00:00:00
+2010-11-23 00:00:00
+2010-11-24 00:00:00
+2010-11-25 00:00:00
+2010-11-26 00:00:00
+2010-11-27 00:00:00
+2010-11-28 00:00:00
+2010-11-29 00:00:00
+2010-11-30 00:00:00
+2010-12-01 00:00:00
+2010-12-05 00:00:00
+2010-12-06 00:00:00
+2010-12-07 00:00:00
+2010-12-08 00:00:00
+2010-12-09 00:00:00
+2010-12-10 00:00:00
+2010-12-11 00:00:00
+2010-12-12 00:00:00
+2010-12-13 00:00:00
+2010-12-14 00:00:00
+2010-12-15 00:00:00
+2010-12-16 00:00:00
+2010-12-17 00:00:00
+2010-12-18 00:00:00
+2010-12-19 00:00:00
+2010-12-20 00:00:00
+2010-12-21 00:00:00
+2010-12-22 00:00:00
+2010-12-23 00:00:00
+2010-12-24 00:00:00
+2010-12-25 00:00:00
+2010-12-26 00:00:00
+2010-12-27 00:00:00
+2010-12-28 00:00:00
+2010-12-29 00:00:00
+2010-12-30 00:00:00
+2010-12-31 00:00:00
+2011-01-01 00:00:00
+2011-01-02 00:00:00
+2011-01-03 00:00:00
+2011-01-04 00:00:00
+2011-01-05 00:00:00
+2011-01-06 00:00:00
+2011-01-07 00:00:00
+2011-01-08 00:00:00
+2011-01-09 00:00:00
+2011-01-10 00:00:00
+2011-01-11 00:00:00
+2011-01-12 00:00:00
+2011-01-16 00:00:00
+2011-01-17 00:00:00
+2011-02-15 00:00:00
+2011-02-17 00:00:00
+2011-02-18 00:00:00
+2011-02-19 00:00:00
+2011-03-06 00:00:00
+2011-03-07 00:00:00
+2011-03-08 00:00:00
+2011-03-09 00:00:00
+2011-03-10 00:00:00
+2011-03-11 00:00:00
+2011-03-12 00:00:00
+2011-03-13 00:00:00
+2011-03-14 00:00:00
+2011-03-15 00:00:00
+2011-03-16 00:00:00
+2011-03-17 00:00:00
+2011-03-18 00:00:00
+2011-03-19 00:00:00
+2011-03-21 00:00:00
+2011-04-01 00:00:00
+2011-04-02 00:00:00
+2011-04-03 00:00:00
+2011-04-04 00:00:00
+2011-04-24 00:00:00
+2011-04-25 00:00:00
+2011-06-04 00:00:00
+2011-06-05 00:00:00
+2011-06-06 00:00:00
+2011-06-07 00:00:00
+2011-06-08 00:00:00
+2011-06-09 00:00:00
+2011-06-10 00:00:00
+2011-06-12 00:00:00
+2011-11-25 00:00:00
+2011-11-26 00:00:00
+2011-11-27 00:00:00
+2011-11-28 00:00:00
+2011-11-29 00:00:00
+2011-11-30 00:00:00
+2011-12-11 00:00:00
+2011-12-12 00:00:00
+2011-12-13 00:00:00
+2011-12-14 00:00:00
+2011-12-15 00:00:00
+2011-12-16 00:00:00
+2011-12-17 00:00:00
+2011-12-18 00:00:00
+2011-12-19 00:00:00
+2011-12-20 00:00:00
+2011-12-21 00:00:00
+2011-12-22 00:00:00
+2011-12-23 00:00:00
+2011-12-24 00:00:00
+2012-06-21 00:00:00
+2012-06-22 00:00:00
+2012-06-23 00:00:00
+2012-06-24 00:00:00
+2012-06-25 00:00:00
+2012-06-26 00:00:00
+2012-06-27 00:00:00
+2012-07-06 00:00:00
+2012-08-07 00:00:00
+2012-08-08 00:00:00
+2012-08-09 00:00:00
+2012-08-10 00:00:00
+2013-02-08 00:00:00
+2013-03-20 00:00:00
+2013-03-21 00:00:00
+2013-03-22 00:00:00
+2013-03-23 00:00:00
+2014-07-07 00:00:00
+2014-07-08 00:00:00
+2014-07-09 00:00:00
+2014-07-10 00:00:00
+2014-07-11 00:00:00
+2014-07-12 00:00:00
+2014-07-20 00:00:00
+2014-07-21 00:00:00
+2014-07-22 00:00:00
+2014-07-23 00:00:00
+2014-07-24 00:00:00
+2014-07-25 00:00:00
+2014-07-26 00:00:00
+2014-07-27 00:00:00
+Dates for Anomalies of Local Delhi:
+2010-05-10 00:00:00
+2010-05-11 00:00:00
+2010-05-12 00:00:00
+2010-05-13 00:00:00
+2010-05-14 00:00:00
+2010-05-15 00:00:00
+2010-05-16 00:00:00
+2010-05-17 00:00:00
+2010-05-18 00:00:00
+2010-05-19 00:00:00
+2010-05-20 00:00:00
+2010-05-21 00:00:00
+2010-05-22 00:00:00
+2010-05-23 00:00:00
+2010-05-24 00:00:00
+2010-05-25 00:00:00
+2010-05-26 00:00:00
+2010-05-27 00:00:00
+2010-05-28 00:00:00
+2010-05-29 00:00:00
+2010-05-30 00:00:00
+2010-05-31 00:00:00
+2010-06-01 00:00:00
+2010-06-02 00:00:00
+2010-06-03 00:00:00
+2010-06-04 00:00:00
+2010-06-05 00:00:00
+2010-06-06 00:00:00
+2011-01-13 00:00:00
+2013-03-25 00:00:00
+2013-03-26 00:00:00
+2013-03-27 00:00:00
+2013-03-28 00:00:00
+2013-03-29 00:00:00
+2013-03-30 00:00:00
+2013-03-31 00:00:00
+2013-04-01 00:00:00
+2013-04-02 00:00:00
+2013-04-03 00:00:00
+2013-04-04 00:00:00
+2013-04-05 00:00:00
+2013-04-06 00:00:00
+2013-04-07 00:00:00
+2013-04-08 00:00:00
+2013-04-21 00:00:00
+2013-04-22 00:00:00
+2013-04-23 00:00:00
+2013-04-24 00:00:00
+2013-04-25 00:00:00
+2013-04-26 00:00:00
+2013-04-27 00:00:00
+2013-04-28 00:00:00
+2013-04-29 00:00:00
+2013-04-30 00:00:00
+2013-05-01 00:00:00
+2013-05-02 00:00:00
+2013-05-03 00:00:00
+2013-05-04 00:00:00
+2013-06-23 00:00:00
+2013-06-24 00:00:00
+2013-06-25 00:00:00
+2013-06-26 00:00:00
+2013-06-27 00:00:00
+2013-06-28 00:00:00
+2013-06-29 00:00:00
+2013-06-30 00:00:00
+2013-07-01 00:00:00
+2013-07-02 00:00:00
+2013-07-03 00:00:00
+2013-07-04 00:00:00
+2013-07-05 00:00:00
+2013-07-06 00:00:00
+2013-07-07 00:00:00
+2013-07-08 00:00:00
+2013-07-09 00:00:00
+2013-07-10 00:00:00
+2013-07-11 00:00:00
+2013-07-12 00:00:00
+2013-07-13 00:00:00
+2013-12-13 00:00:00
+2013-12-14 00:00:00
+2013-12-15 00:00:00
+2013-12-16 00:00:00
+2013-12-17 00:00:00
+2013-12-18 00:00:00
+2013-12-19 00:00:00
+2013-12-20 00:00:00
+2013-12-22 00:00:00
+2013-12-23 00:00:00
+2014-02-09 00:00:00
+2014-02-10 00:00:00
+2014-02-11 00:00:00
+2014-02-12 00:00:00
+2014-02-13 00:00:00
+2014-02-14 00:00:00
+2014-02-15 00:00:00
+2014-06-29 00:00:00
+2014-06-30 00:00:00
+2014-07-01 00:00:00
+2014-07-02 00:00:00
+2014-07-03 00:00:00
+2014-07-04 00:00:00
+2014-07-05 00:00:00
+2014-08-10 00:00:00
+2014-08-11 00:00:00
+2014-08-12 00:00:00
+2014-08-13 00:00:00
+2014-08-14 00:00:00
+2014-08-15 00:00:00
+2014-08-16 00:00:00
+2014-08-17 00:00:00
+2014-08-18 00:00:00
+2014-08-19 00:00:00
+2014-08-20 00:00:00
+2014-08-21 00:00:00
+2014-08-22 00:00:00
+2014-08-23 00:00:00
+2014-08-24 00:00:00
+2014-08-25 00:00:00
+2014-08-26 00:00:00
+2014-08-27 00:00:00
+2014-08-28 00:00:00
+2014-08-29 00:00:00
+2014-08-30 00:00:00
+2014-08-31 00:00:00
+2014-09-01 00:00:00
+2014-09-02 00:00:00
+2014-09-03 00:00:00
+2014-09-04 00:00:00
+2014-09-05 00:00:00
+2014-09-06 00:00:00
+2014-09-07 00:00:00
+2014-09-08 00:00:00
+2014-09-09 00:00:00
+2014-09-14 00:00:00
+2014-09-15 00:00:00
+2014-09-16 00:00:00
+2014-09-17 00:00:00
+2015-04-25 00:00:00
+2015-04-26 00:00:00
+Dates for Anomalies of Nation:
+2013-07-14 00:00:00
+2013-07-15 00:00:00
+2013-07-16 00:00:00
+2013-07-17 00:00:00
+2013-07-18 00:00:00
+2013-07-19 00:00:00
+2013-07-20 00:00:00
+2013-07-21 00:00:00
+2013-07-22 00:00:00
+2013-07-23 00:00:00
+2013-07-24 00:00:00
+2013-07-25 00:00:00
+2013-07-26 00:00:00
+2013-07-27 00:00:00
+2013-07-28 00:00:00
+2013-07-29 00:00:00
+2013-07-30 00:00:00
+2013-07-31 00:00:00
+2013-08-01 00:00:00
+2013-08-02 00:00:00
+2013-08-03 00:00:00
+2013-08-04 00:00:00
+2013-08-05 00:00:00
+2013-08-06 00:00:00
+2013-08-07 00:00:00
+2013-08-08 00:00:00
+2013-08-09 00:00:00
+2013-08-10 00:00:00
+2013-08-11 00:00:00
+2013-08-12 00:00:00
+2013-08-13 00:00:00
+2013-08-14 00:00:00
+2013-08-15 00:00:00
+2013-08-16 00:00:00
+2013-08-17 00:00:00
+2013-08-18 00:00:00
+2013-08-19 00:00:00
+2013-08-20 00:00:00
+2013-08-21 00:00:00
+2013-08-22 00:00:00
+2013-08-23 00:00:00
+2013-08-24 00:00:00
+2013-08-25 00:00:00
+2013-08-26 00:00:00
+2013-08-27 00:00:00
+2013-08-28 00:00:00
+2013-08-29 00:00:00
+2013-08-30 00:00:00
+2013-08-31 00:00:00
+2013-09-01 00:00:00
+2013-09-02 00:00:00
+2013-09-03 00:00:00
+2013-09-04 00:00:00
+2013-09-05 00:00:00
+2013-09-06 00:00:00
+2013-09-07 00:00:00
+2013-09-08 00:00:00
+2013-09-09 00:00:00
+2013-09-10 00:00:00
+2013-09-11 00:00:00
+2013-09-12 00:00:00
+2013-09-13 00:00:00
+2013-09-14 00:00:00
+2013-09-15 00:00:00
+2013-09-16 00:00:00
+2013-09-17 00:00:00
+2013-09-18 00:00:00
+2013-09-19 00:00:00
+2013-09-20 00:00:00
+2013-09-21 00:00:00
+2013-09-22 00:00:00
+2013-09-23 00:00:00
+2013-09-24 00:00:00
+2013-09-25 00:00:00
+2013-09-26 00:00:00
+2013-09-27 00:00:00
+2013-09-28 00:00:00
+2013-09-29 00:00:00
+2013-09-30 00:00:00
+2013-10-01 00:00:00
+2013-10-02 00:00:00
+2013-10-03 00:00:00
+2013-10-04 00:00:00
+2013-10-05 00:00:00
+2013-10-06 00:00:00
+2013-10-07 00:00:00
+2013-10-08 00:00:00
+2013-10-09 00:00:00
+2013-10-10 00:00:00
+2013-10-11 00:00:00
+2013-10-12 00:00:00
+2013-10-13 00:00:00
+2013-10-14 00:00:00
+2013-10-15 00:00:00
+2013-10-16 00:00:00
+2013-10-17 00:00:00
+2013-10-18 00:00:00
+2013-10-19 00:00:00
+2013-10-20 00:00:00
+2013-10-21 00:00:00
+2013-10-22 00:00:00
+2013-10-23 00:00:00
+2013-10-24 00:00:00
+2013-10-25 00:00:00
+2013-10-26 00:00:00
+2013-10-27 00:00:00
+2013-10-28 00:00:00
+2013-10-29 00:00:00
+2013-10-30 00:00:00
+2013-10-31 00:00:00
+2013-11-01 00:00:00
+2013-11-02 00:00:00
+2013-11-03 00:00:00
+2013-11-04 00:00:00
+2013-11-05 00:00:00
+2013-11-06 00:00:00
+2013-11-07 00:00:00
+2013-11-08 00:00:00
+2013-11-09 00:00:00
+2013-11-10 00:00:00
+2013-11-11 00:00:00
+2013-11-12 00:00:00
+2013-11-13 00:00:00
+2013-11-14 00:00:00
+2013-11-15 00:00:00
+2013-11-16 00:00:00
+2013-11-17 00:00:00
+2013-11-18 00:00:00
+2013-11-19 00:00:00
+2013-11-20 00:00:00
+2013-11-21 00:00:00
+2013-11-22 00:00:00
+2013-11-23 00:00:00
+2013-11-24 00:00:00
+2013-11-25 00:00:00
+2013-11-26 00:00:00
+2013-11-27 00:00:00
+2013-11-28 00:00:00
+2013-11-29 00:00:00
+2013-11-30 00:00:00
+2013-12-01 00:00:00
+2013-12-02 00:00:00
+2013-12-03 00:00:00
+2013-12-04 00:00:00
+2013-12-05 00:00:00
+2013-12-06 00:00:00
+2013-12-07 00:00:00
+2013-12-08 00:00:00
+2013-12-09 00:00:00
+2013-12-10 00:00:00
+2013-12-11 00:00:00
+2013-12-12 00:00:00
+2014-07-13 00:00:00
+2014-07-14 00:00:00
+2014-07-15 00:00:00
+2014-07-16 00:00:00
+2014-07-17 00:00:00
+2014-07-18 00:00:00
+2014-07-19 00:00:00
+2014-07-28 00:00:00
+2014-07-29 00:00:00
+2014-07-30 00:00:00
+2014-07-31 00:00:00
+2014-08-01 00:00:00
+2014-08-02 00:00:00
+2014-08-03 00:00:00
+2014-08-04 00:00:00
+2014-08-05 00:00:00
+2014-08-06 00:00:00
+2014-08-07 00:00:00
+2014-08-08 00:00:00
+2014-08-09 00:00:00
+News Dates Matched for Anomalies of Local Mumbai:
+(datetime.date(2010, 12, 15), datetime.date(2010, 12, 20), 'The Hindu', 'http://www.thehindu.com/business/Economy/imported-onion-arrive-from-pakistan/article965607.ece', 5, 'not stated', '', 0)
+(datetime.date(2010, 12, 16), datetime.date(2010, 12, 20), 'The Hindu', 'http://www.thehindu.com/business/Economy/imported-onion-arrive-from-pakistan/article965607.ece', 4, 'not stated', '', 0)
+(datetime.date(2010, 12, 17), datetime.date(2010, 12, 20), 'The Hindu', 'http://www.thehindu.com/business/Economy/imported-onion-arrive-from-pakistan/article965607.ece', 3, 'not stated', '', 0)
+(datetime.date(2010, 12, 18), datetime.date(2010, 12, 20), 'The Hindu', 'http://www.thehindu.com/business/Economy/imported-onion-arrive-from-pakistan/article965607.ece', 2, 'not stated', '', 0)
+(datetime.date(2010, 12, 19), datetime.date(2010, 12, 20), 'The Hindu', 'http://www.thehindu.com/business/Economy/imported-onion-arrive-from-pakistan/article965607.ece', 1, 'not stated', '', 0)
+(datetime.date(2010, 12, 20), datetime.date(2010, 12, 20), 'The Hindu', 'http://www.thehindu.com/business/Economy/imported-onion-arrive-from-pakistan/article965607.ece', 0, 'not stated', '', 0)
+(datetime.date(2010, 12, 21), datetime.date(2010, 12, 21), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2010-12-21/news/27586208_1_minimum-export-price-onion-prices-mep', 0, 'traders nexus', '', 0)
+(datetime.date(2010, 12, 22), datetime.date(2010, 12, 22), 'NDTV', 'http://www.ndtv.com/india-news/why-onion-prices-are-so-high-442629', 0, 'unseasonal rainfall', '', 7)
+(datetime.date(2010, 12, 23), datetime.date(2010, 12, 23), 'The Times of India', 'http://timesofindia.indiatimes.com/city/pune/Onion-prices-still-leave-consumers-teary-eyed/articleshow/7147525.cms', 0, 'unseasonal rainfall', '', 0)
+(datetime.date(2010, 12, 24), datetime.date(2010, 12, 24), 'Business Standard', 'http://www.business-standard.com/article/economy-policy/wholesale-onion-prices-slide-20-in-lasalgaon-manmad-110122400137_1.html', 0, 'not stated', 'Prices went down, but for good quality prices went high', None)
+(datetime.date(2010, 12, 25), datetime.date(2010, 12, 24), 'Business Standard', 'http://www.business-standard.com/article/economy-policy/wholesale-onion-prices-slide-20-in-lasalgaon-manmad-110122400137_1.html', -1, 'not stated', 'Prices went down, but for good quality prices went high', None)
+(datetime.date(2010, 12, 26), datetime.date(2010, 12, 24), 'Business Standard', 'http://www.business-standard.com/article/economy-policy/wholesale-onion-prices-slide-20-in-lasalgaon-manmad-110122400137_1.html', -2, 'not stated', 'Prices went down, but for good quality prices went high', None)
+(datetime.date(2010, 12, 27), datetime.date(2010, 12, 24), 'Business Standard', 'http://www.business-standard.com/article/economy-policy/wholesale-onion-prices-slide-20-in-lasalgaon-manmad-110122400137_1.html', -3, 'not stated', 'Prices went down, but for good quality prices went high', None)
+(datetime.date(2010, 12, 28), datetime.date(2010, 12, 24), 'Business Standard', 'http://www.business-standard.com/article/economy-policy/wholesale-onion-prices-slide-20-in-lasalgaon-manmad-110122400137_1.html', -4, 'not stated', 'Prices went down, but for good quality prices went high', None)
+(datetime.date(2010, 12, 29), datetime.date(2011, 1, 3), 'NDTV', 'http://www.ndtv.com/mumbai-news/mumbai-trader-sells-onions-at-rs-12-per-kg-443770', 5, 'not stated', '', 0)
+(datetime.date(2010, 12, 30), datetime.date(2011, 1, 3), 'NDTV', 'http://www.ndtv.com/mumbai-news/mumbai-trader-sells-onions-at-rs-12-per-kg-443770', 4, 'not stated', '', 0)
+(datetime.date(2010, 12, 31), datetime.date(2011, 1, 3), 'NDTV', 'http://www.ndtv.com/mumbai-news/mumbai-trader-sells-onions-at-rs-12-per-kg-443770', 3, 'not stated', '', 0)
+(datetime.date(2011, 1, 1), datetime.date(2011, 1, 3), 'NDTV', 'http://www.ndtv.com/mumbai-news/mumbai-trader-sells-onions-at-rs-12-per-kg-443770', 2, 'not stated', '', 0)
+(datetime.date(2011, 1, 2), datetime.date(2011, 1, 3), 'NDTV', 'http://www.ndtv.com/mumbai-news/mumbai-trader-sells-onions-at-rs-12-per-kg-443770', 1, 'not stated', '', 0)
+(datetime.date(2011, 1, 3), datetime.date(2011, 1, 3), 'NDTV', 'http://www.ndtv.com/mumbai-news/mumbai-trader-sells-onions-at-rs-12-per-kg-443770', 0, 'not stated', '', 0)
+(datetime.date(2011, 1, 4), datetime.date(2011, 1, 3), 'NDTV', 'http://www.ndtv.com/mumbai-news/mumbai-trader-sells-onions-at-rs-12-per-kg-443770', -1, 'not stated', '', 0)
+(datetime.date(2011, 1, 5), datetime.date(2011, 1, 6), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/-Retail-onion-prices-up-by-Rs-5-10/kg-on-Pak-export-ban-reports/articleshow/7230895.cms', 1, 'Pak banned export', '', 0)
+(datetime.date(2011, 1, 6), datetime.date(2011, 1, 6), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/-Retail-onion-prices-up-by-Rs-5-10/kg-on-Pak-export-ban-reports/articleshow/7230895.cms', 0, 'Pak banned export', '', 0)
+(datetime.date(2011, 1, 7), datetime.date(2011, 1, 7), 'The Hindu', 'http://www.thehindu.com/business/act-swiftly-against-hoarders-pranab/article1051003.ece', 0, 'traders nexus', 'main article on inflation, but it says due to hoarding onion prices are high.', 0)
+(datetime.date(2011, 1, 8), datetime.date(2011, 1, 7), 'The Hindu', 'http://www.thehindu.com/business/act-swiftly-against-hoarders-pranab/article1051003.ece', -1, 'traders nexus', 'main article on inflation, but it says due to hoarding onion prices are high.', 0)
+(datetime.date(2011, 1, 9), datetime.date(2011, 1, 7), 'The Hindu', 'http://www.thehindu.com/business/act-swiftly-against-hoarders-pranab/article1051003.ece', -2, 'traders nexus', 'main article on inflation, but it says due to hoarding onion prices are high.', 0)
+(datetime.date(2011, 1, 10), datetime.date(2011, 1, 7), 'The Hindu', 'http://www.thehindu.com/business/act-swiftly-against-hoarders-pranab/article1051003.ece', -3, 'traders nexus', 'main article on inflation, but it says due to hoarding onion prices are high.', 0)
+(datetime.date(2011, 1, 11), datetime.date(2011, 1, 7), 'The Hindu', 'http://www.thehindu.com/business/act-swiftly-against-hoarders-pranab/article1051003.ece', -4, 'traders nexus', 'main article on inflation, but it says due to hoarding onion prices are high.', 0)
+(datetime.date(2011, 1, 12), datetime.date(2011, 1, 7), 'The Hindu', 'http://www.thehindu.com/business/act-swiftly-against-hoarders-pranab/article1051003.ece', -5, 'traders nexus', 'main article on inflation, but it says due to hoarding onion prices are high.', 0)
+(datetime.date(2014, 7, 7), datetime.date(2014, 7, 3), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2014-07-03/news/51057542_1_stock-limits-onions-ravi-shankar-prasad', -4, 'traders nexus', '', 0)
+(datetime.date(2014, 7, 8), datetime.date(2014, 7, 13), 'The Times of India', 'http://timesofindia.indiatimes.com/india/Govt-to-check-onion-prices-with-imports/articleshow/38282324.cms', 5, 'low production', '', 30)
+(datetime.date(2014, 7, 9), datetime.date(2014, 7, 13), 'The Times of India', 'http://timesofindia.indiatimes.com/india/Govt-to-check-onion-prices-with-imports/articleshow/38282324.cms', 4, 'low production', '', 30)
+(datetime.date(2014, 7, 10), datetime.date(2014, 7, 13), 'The Times of India', 'http://timesofindia.indiatimes.com/india/Govt-to-check-onion-prices-with-imports/articleshow/38282324.cms', 3, 'low production', '', 30)
+(datetime.date(2014, 7, 11), datetime.date(2014, 7, 13), 'The Times of India', 'http://timesofindia.indiatimes.com/india/Govt-to-check-onion-prices-with-imports/articleshow/38282324.cms', 2, 'low production', '', 30)
+(datetime.date(2014, 7, 12), datetime.date(2014, 7, 13), 'The Times of India', 'http://timesofindia.indiatimes.com/india/Govt-to-check-onion-prices-with-imports/articleshow/38282324.cms', 1, 'low production', '', 30)
+(datetime.date(2014, 7, 20), datetime.date(2014, 7, 17), 'Business Standard', 'http://www.business-standard.com/article/economy-policy/price-stabilization-fund-in-agriculture-to-be-used-for-cereals-and-vegetables-114071701051_1.html', -3, 'not stated', '', 40)
+(datetime.date(2014, 7, 21), datetime.date(2014, 7, 17), 'Business Standard', 'http://www.business-standard.com/article/economy-policy/price-stabilization-fund-in-agriculture-to-be-used-for-cereals-and-vegetables-114071701051_1.html', -4, 'not stated', '', 40)
+(datetime.date(2014, 7, 22), datetime.date(2014, 7, 17), 'Business Standard', 'http://www.business-standard.com/article/economy-policy/price-stabilization-fund-in-agriculture-to-be-used-for-cereals-and-vegetables-114071701051_1.html', -5, 'not stated', '', 40)
+News Dates Matched for Anomalies of Local Delhi:
+(datetime.date(2013, 6, 28), datetime.date(2013, 7, 3), 'Business Standard', 'http://www.business-standard.com/article/markets/heavy-crop-damage-in-hilly-states-lifts-onion-potato-prices-113070300796_1.html', 5, 'traders nexus', 'North India affected basically because of flood', 15)
+(datetime.date(2013, 6, 29), datetime.date(2013, 7, 3), 'Business Standard', 'http://www.business-standard.com/article/markets/heavy-crop-damage-in-hilly-states-lifts-onion-potato-prices-113070300796_1.html', 4, 'traders nexus', 'North India affected basically because of flood', 15)
+(datetime.date(2013, 6, 30), datetime.date(2013, 7, 3), 'Business Standard', 'http://www.business-standard.com/article/markets/heavy-crop-damage-in-hilly-states-lifts-onion-potato-prices-113070300796_1.html', 3, 'traders nexus', 'North India affected basically because of flood', 15)
+(datetime.date(2013, 7, 1), datetime.date(2013, 7, 3), 'Business Standard', 'http://www.business-standard.com/article/markets/heavy-crop-damage-in-hilly-states-lifts-onion-potato-prices-113070300796_1.html', 2, 'traders nexus', 'North India affected basically because of flood', 15)
+(datetime.date(2013, 7, 2), datetime.date(2013, 7, 3), 'Business Standard', 'http://www.business-standard.com/article/markets/heavy-crop-damage-in-hilly-states-lifts-onion-potato-prices-113070300796_1.html', 1, 'traders nexus', 'North India affected basically because of flood', 15)
+(datetime.date(2013, 7, 3), datetime.date(2013, 7, 3), 'Business Standard', 'http://www.business-standard.com/article/markets/heavy-crop-damage-in-hilly-states-lifts-onion-potato-prices-113070300796_1.html', 0, 'traders nexus', 'North India affected basically because of flood', 15)
+(datetime.date(2013, 7, 4), datetime.date(2013, 7, 3), 'Business Standard', 'http://www.business-standard.com/article/markets/heavy-crop-damage-in-hilly-states-lifts-onion-potato-prices-113070300796_1.html', -1, 'traders nexus', 'North India affected basically because of flood', 15)
+(datetime.date(2013, 7, 5), datetime.date(2013, 7, 3), 'Business Standard', 'http://www.business-standard.com/article/markets/heavy-crop-damage-in-hilly-states-lifts-onion-potato-prices-113070300796_1.html', -2, 'traders nexus', 'North India affected basically because of flood', 15)
+(datetime.date(2013, 7, 6), datetime.date(2013, 7, 3), 'Business Standard', 'http://www.business-standard.com/article/markets/heavy-crop-damage-in-hilly-states-lifts-onion-potato-prices-113070300796_1.html', -3, 'traders nexus', 'North India affected basically because of flood', 15)
+(datetime.date(2013, 7, 7), datetime.date(2013, 7, 3), 'Business Standard', 'http://www.business-standard.com/article/markets/heavy-crop-damage-in-hilly-states-lifts-onion-potato-prices-113070300796_1.html', -4, 'traders nexus', 'North India affected basically because of flood', 15)
+(datetime.date(2013, 7, 8), datetime.date(2013, 7, 3), 'Business Standard', 'http://www.business-standard.com/article/markets/heavy-crop-damage-in-hilly-states-lifts-onion-potato-prices-113070300796_1.html', -5, 'traders nexus', 'North India affected basically because of flood', 15)
+(datetime.date(2013, 7, 12), datetime.date(2013, 7, 17), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Onion-prices-at-two-and-a-half-year-high/articleshow/21125776.cms', 5, 'unseasonal rainfall', 'no', None)
+(datetime.date(2013, 7, 13), datetime.date(2013, 7, 17), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Onion-prices-at-two-and-a-half-year-high/articleshow/21125776.cms', 4, 'unseasonal rainfall', 'no', None)
+(datetime.date(2013, 12, 13), datetime.date(2013, 12, 13), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2015-09-11/news/66434886_1_lasalgaon-apmc-onion-prices-onion-exporters-association', 0, 'not stated', 'no', None)
+(datetime.date(2013, 12, 14), datetime.date(2013, 12, 13), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2015-09-11/news/66434886_1_lasalgaon-apmc-onion-prices-onion-exporters-association', -1, 'not stated', 'no', None)
+(datetime.date(2013, 12, 15), datetime.date(2013, 12, 13), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2015-09-11/news/66434886_1_lasalgaon-apmc-onion-prices-onion-exporters-association', -2, 'not stated', 'no', None)
+(datetime.date(2013, 12, 16), datetime.date(2013, 12, 13), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2015-09-11/news/66434886_1_lasalgaon-apmc-onion-prices-onion-exporters-association', -3, 'not stated', 'no', None)
+(datetime.date(2013, 12, 17), datetime.date(2013, 12, 13), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2015-09-11/news/66434886_1_lasalgaon-apmc-onion-prices-onion-exporters-association', -4, 'not stated', 'no', None)
+(datetime.date(2013, 12, 18), datetime.date(2013, 12, 13), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2015-09-11/news/66434886_1_lasalgaon-apmc-onion-prices-onion-exporters-association', -5, 'not stated', 'no', None)
+(datetime.date(2014, 6, 29), datetime.date(2014, 6, 30), 'Money Control', 'http://www.moneycontrol.com/news/economy/risefood-prices-centre-swings-into-action_1115868.html', 1, 'not stated', 'no', None)
+(datetime.date(2014, 6, 30), datetime.date(2014, 6, 30), 'Money Control', 'http://www.moneycontrol.com/news/economy/risefood-prices-centre-swings-into-action_1115868.html', 0, 'not stated', 'no', None)
+(datetime.date(2014, 7, 1), datetime.date(2014, 7, 1), 'NDTV', 'http://www.ndtv.com/cheat-sheet/poor-rainfall-could-cause-drought-like-conditions-in-parts-of-west-india-agriculture-minister-582801', 0, 'not stated', '50% hike', 7)
+(datetime.date(2014, 7, 2), datetime.date(2014, 7, 2), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Govt-hikes-minimum-export-price-of-onion-to-US-500-per-tonne/articleshow/37630139.cms', 0, 'prediction of delayed monsoon', 'no', 30)
+(datetime.date(2014, 7, 3), datetime.date(2014, 7, 3), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2014-07-03/news/51057542_1_stock-limits-onions-ravi-shankar-prasad', 0, 'traders nexus', '', 0)
+(datetime.date(2014, 7, 4), datetime.date(2014, 7, 5), 'NDTV', 'http://www.ndtv.com/delhi-news/onion-sells-at-rs-40-kg-in-national-capital-region-on-drought-fears-584059', 1, 'Drought Fears', '', 0)
+(datetime.date(2014, 7, 5), datetime.date(2014, 7, 5), 'NDTV', 'http://www.ndtv.com/delhi-news/onion-sells-at-rs-40-kg-in-national-capital-region-on-drought-fears-584059', 0, 'Drought Fears', '', 0)
+News Dates Matched for Anomalies of Nation:
+(datetime.date(2013, 7, 14), datetime.date(2013, 7, 17), 'NDTV', 'http://profit.ndtv.com/news/economy/article-wholesale-onion-price-jumps-5-times-to-push-up-retail-rates-324600', 3, 'low production', 'because of low production last year the prices of onion got high', 30)
+(datetime.date(2013, 7, 15), datetime.date(2013, 7, 17), 'NDTV', 'http://profit.ndtv.com/news/economy/article-wholesale-onion-price-jumps-5-times-to-push-up-retail-rates-324600', 2, 'low production', 'because of low production last year the prices of onion got high', 30)
+(datetime.date(2013, 7, 16), datetime.date(2013, 7, 17), 'NDTV', 'http://profit.ndtv.com/news/economy/article-wholesale-onion-price-jumps-5-times-to-push-up-retail-rates-324600', 1, 'low production', 'because of low production last year the prices of onion got high', 30)
+(datetime.date(2013, 7, 17), datetime.date(2013, 7, 17), 'NDTV', 'http://profit.ndtv.com/news/economy/article-wholesale-onion-price-jumps-5-times-to-push-up-retail-rates-324600', 0, 'low production', 'because of low production last year the prices of onion got high', 30)
+(datetime.date(2013, 7, 18), datetime.date(2013, 7, 17), 'NDTV', 'http://profit.ndtv.com/news/economy/article-wholesale-onion-price-jumps-5-times-to-push-up-retail-rates-324600', -1, 'low production', 'because of low production last year the prices of onion got high', 30)
+(datetime.date(2013, 7, 19), datetime.date(2013, 7, 17), 'NDTV', 'http://profit.ndtv.com/news/economy/article-wholesale-onion-price-jumps-5-times-to-push-up-retail-rates-324600', -2, 'low production', 'because of low production last year the prices of onion got high', 30)
+(datetime.date(2013, 7, 20), datetime.date(2013, 7, 23), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Onion-prices-more-than-double-to-Rs-36-40/kg-in-metros/articleshow/21272374.cms', 3, 'low production', '', 0)
+(datetime.date(2013, 7, 21), datetime.date(2013, 7, 23), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Onion-prices-more-than-double-to-Rs-36-40/kg-in-metros/articleshow/21272374.cms', 2, 'low production', '', 0)
+(datetime.date(2013, 7, 22), datetime.date(2013, 7, 23), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Onion-prices-more-than-double-to-Rs-36-40/kg-in-metros/articleshow/21272374.cms', 1, 'low production', '', 0)
+(datetime.date(2013, 7, 23), datetime.date(2013, 7, 23), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Onion-prices-more-than-double-to-Rs-36-40/kg-in-metros/articleshow/21272374.cms', 0, 'low production', '', 0)
+(datetime.date(2013, 7, 24), datetime.date(2013, 7, 23), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Onion-prices-more-than-double-to-Rs-36-40/kg-in-metros/articleshow/21272374.cms', -1, 'low production', '', 0)
+(datetime.date(2013, 7, 25), datetime.date(2013, 7, 23), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Onion-prices-more-than-double-to-Rs-36-40/kg-in-metros/articleshow/21272374.cms', -2, 'low production', '', 0)
+(datetime.date(2013, 7, 26), datetime.date(2013, 7, 23), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Onion-prices-more-than-double-to-Rs-36-40/kg-in-metros/articleshow/21272374.cms', -3, 'low production', '', 0)
+(datetime.date(2013, 7, 27), datetime.date(2013, 7, 23), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Onion-prices-more-than-double-to-Rs-36-40/kg-in-metros/articleshow/21272374.cms', -4, 'low production', '', 0)
+(datetime.date(2013, 7, 28), datetime.date(2013, 7, 23), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Onion-prices-more-than-double-to-Rs-36-40/kg-in-metros/articleshow/21272374.cms', -5, 'low production', '', 0)
+(datetime.date(2013, 8, 1), datetime.date(2013, 8, 6), 'The Hindu', 'http://www.thehindu.com/news/cities/Delhi/onion-prices-bring-tears-yet-again/article4995124.ece', 5, 'low production', 'Even Hoaders are responsible to some extent', 0)
+(datetime.date(2013, 8, 2), datetime.date(2013, 8, 6), 'The Hindu', 'http://www.thehindu.com/news/cities/Delhi/onion-prices-bring-tears-yet-again/article4995124.ece', 4, 'low production', 'Even Hoaders are responsible to some extent', 0)
+(datetime.date(2013, 8, 3), datetime.date(2013, 8, 6), 'The Hindu', 'http://www.thehindu.com/news/cities/Delhi/onion-prices-bring-tears-yet-again/article4995124.ece', 3, 'low production', 'Even Hoaders are responsible to some extent', 0)
+(datetime.date(2013, 8, 4), datetime.date(2013, 8, 6), 'The Hindu', 'http://www.thehindu.com/news/cities/Delhi/onion-prices-bring-tears-yet-again/article4995124.ece', 2, 'low production', 'Even Hoaders are responsible to some extent', 0)
+(datetime.date(2013, 8, 5), datetime.date(2013, 8, 6), 'The Hindu', 'http://www.thehindu.com/news/cities/Delhi/onion-prices-bring-tears-yet-again/article4995124.ece', 1, 'low production', 'Even Hoaders are responsible to some extent', 0)
+(datetime.date(2013, 8, 6), datetime.date(2013, 8, 6), 'The Hindu', 'http://www.thehindu.com/news/cities/Delhi/onion-prices-bring-tears-yet-again/article4995124.ece', 0, 'low production', 'Even Hoaders are responsible to some extent', 0)
+(datetime.date(2013, 8, 7), datetime.date(2013, 8, 6), 'The Hindu', 'http://www.thehindu.com/news/cities/Delhi/onion-prices-bring-tears-yet-again/article4995124.ece', -1, 'low production', 'Even Hoaders are responsible to some extent', 0)
+(datetime.date(2013, 8, 8), datetime.date(2013, 8, 6), 'The Hindu', 'http://www.thehindu.com/news/cities/Delhi/onion-prices-bring-tears-yet-again/article4995124.ece', -2, 'low production', 'Even Hoaders are responsible to some extent', 0)
+(datetime.date(2013, 8, 9), datetime.date(2013, 8, 11), 'DNA', 'http://www.dnaindia.com/india/report-onion-prices-rise-to-rs-55-60kg-hike-bring-tears-in-eyes-of-people-1873151', 2, 'low production', '', 10)
+(datetime.date(2013, 8, 10), datetime.date(2013, 8, 11), 'DNA', 'http://www.dnaindia.com/india/report-onion-prices-rise-to-rs-55-60kg-hike-bring-tears-in-eyes-of-people-1873151', 1, 'low production', '', 10)
+(datetime.date(2013, 8, 11), datetime.date(2013, 8, 11), 'DNA', 'http://www.dnaindia.com/india/report-onion-prices-rise-to-rs-55-60kg-hike-bring-tears-in-eyes-of-people-1873151', 0, 'low production', '', 10)
+(datetime.date(2013, 8, 12), datetime.date(2013, 8, 13), 'Telegraph', 'http://www.telegraphindia.com/1130813/jsp/odisha/story_17226115.jsp', 1, 'low supply', '', 30)
+(datetime.date(2013, 8, 13), datetime.date(2013, 8, 13), 'Telegraph', 'http://www.telegraphindia.com/1130813/jsp/odisha/story_17226115.jsp', 0, 'low supply', '', 30)
+(datetime.date(2013, 8, 14), datetime.date(2013, 8, 14), 'The Hindu', 'http://www.thehindu.com/news/national/cos-meeting-to-wipe-onion-tears/article5019702.ece', 0, 'low supply', 'Possiblity of hoarding highlighted clearly', 0)
+(datetime.date(2013, 8, 15), datetime.date(2013, 8, 14), 'The Hindu', 'http://www.thehindu.com/news/national/cos-meeting-to-wipe-onion-tears/article5019702.ece', -1, 'low supply', 'Possiblity of hoarding highlighted clearly', 0)
+(datetime.date(2013, 8, 16), datetime.date(2013, 8, 17), 'The Times of India', 'http://timesofindia.indiatimes.com/india/Hoarding-pushing-onion-prices-up-govt-finds/articleshow/21872501.cms', 1, 'traders nexus', 'Clear signs of traders fixing the prices by creating artificial deficit in jun- july 2013', 60)
+(datetime.date(2013, 8, 17), datetime.date(2013, 8, 17), 'The Times of India', 'http://timesofindia.indiatimes.com/india/Hoarding-pushing-onion-prices-up-govt-finds/articleshow/21872501.cms', 0, 'traders nexus', 'Clear signs of traders fixing the prices by creating artificial deficit in jun- july 2013', 60)
+(datetime.date(2013, 8, 18), datetime.date(2013, 8, 17), 'The Times of India', 'http://timesofindia.indiatimes.com/india/Hoarding-pushing-onion-prices-up-govt-finds/articleshow/21872501.cms', -1, 'traders nexus', 'Clear signs of traders fixing the prices by creating artificial deficit in jun- july 2013', 60)
+(datetime.date(2013, 8, 19), datetime.date(2013, 8, 21), 'The Hindu', 'http://www.thehindu.com/business/Industry/onion-prices-jump-to-rs-80kg-again/article5044776.ece', 2, 'low supply', 'Prices hiked again', 0)
+(datetime.date(2013, 8, 20), datetime.date(2013, 8, 21), 'The Hindu', 'http://www.thehindu.com/business/Industry/onion-prices-jump-to-rs-80kg-again/article5044776.ece', 1, 'low supply', 'Prices hiked again', 0)
+(datetime.date(2013, 8, 21), datetime.date(2013, 8, 21), 'The Hindu', 'http://www.thehindu.com/business/Industry/onion-prices-jump-to-rs-80kg-again/article5044776.ece', 0, 'low supply', 'Prices hiked again', 0)
+(datetime.date(2013, 8, 22), datetime.date(2013, 8, 22), 'Money Control', 'http://www.moneycontrol.com/news/economy/onion-prices-shoot-back-to-rs-80kgmany-partsindia_939103.html', 0, 'not stated', '', 1)
+(datetime.date(2013, 8, 23), datetime.date(2013, 8, 22), 'Money Control', 'http://www.moneycontrol.com/news/economy/onion-prices-shoot-back-to-rs-80kgmany-partsindia_939103.html', -1, 'not stated', '', 1)
+(datetime.date(2013, 8, 24), datetime.date(2013, 8, 22), 'Money Control', 'http://www.moneycontrol.com/news/economy/onion-prices-shoot-back-to-rs-80kgmany-partsindia_939103.html', -2, 'not stated', '', 1)
+(datetime.date(2013, 8, 25), datetime.date(2013, 8, 22), 'Money Control', 'http://www.moneycontrol.com/news/economy/onion-prices-shoot-back-to-rs-80kgmany-partsindia_939103.html', -3, 'not stated', '', 1)
+(datetime.date(2013, 8, 26), datetime.date(2013, 8, 22), 'Money Control', 'http://www.moneycontrol.com/news/economy/onion-prices-shoot-back-to-rs-80kgmany-partsindia_939103.html', -4, 'not stated', '', 1)
+(datetime.date(2013, 8, 27), datetime.date(2013, 8, 22), 'Money Control', 'http://www.moneycontrol.com/news/economy/onion-prices-shoot-back-to-rs-80kgmany-partsindia_939103.html', -5, 'not stated', '', 1)
+(datetime.date(2013, 8, 29), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', 5, 'low supply', '', 0)
+(datetime.date(2013, 8, 30), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', 4, 'low supply', '', 0)
+(datetime.date(2013, 8, 31), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', 3, 'low supply', '', 0)
+(datetime.date(2013, 9, 1), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', 2, 'low supply', '', 0)
+(datetime.date(2013, 9, 2), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', 1, 'low supply', '', 0)
+(datetime.date(2013, 9, 3), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', 0, 'low supply', '', 0)
+(datetime.date(2013, 9, 4), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', -1, 'low supply', '', 0)
+(datetime.date(2013, 9, 5), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', -2, 'low supply', '', 0)
+(datetime.date(2013, 9, 6), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', -3, 'low supply', '', 0)
+(datetime.date(2013, 9, 7), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', -4, 'low supply', '', 0)
+(datetime.date(2013, 9, 8), datetime.date(2013, 9, 3), 'NDTV', 'http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474', -5, 'low supply', '', 0)
+(datetime.date(2013, 9, 13), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/city/mumbai/Sharad-Pawars-speculation-leads-to-onion-price-increase-yet-again/articleshow/22673599.cms', 5, 'low supply', '', 0)
+(datetime.date(2013, 9, 14), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/city/mumbai/Sharad-Pawars-speculation-leads-to-onion-price-increase-yet-again/articleshow/22673599.cms', 4, 'low supply', '', 0)
+(datetime.date(2013, 9, 15), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/city/mumbai/Sharad-Pawars-speculation-leads-to-onion-price-increase-yet-again/articleshow/22673599.cms', 3, 'low supply', '', 0)
+(datetime.date(2013, 9, 16), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/city/mumbai/Sharad-Pawars-speculation-leads-to-onion-price-increase-yet-again/articleshow/22673599.cms', 2, 'low supply', '', 0)
+(datetime.date(2013, 9, 17), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/city/mumbai/Sharad-Pawars-speculation-leads-to-onion-price-increase-yet-again/articleshow/22673599.cms', 1, 'low supply', '', 0)
+(datetime.date(2013, 9, 18), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/city/mumbai/Sharad-Pawars-speculation-leads-to-onion-price-increase-yet-again/articleshow/22673599.cms', 0, 'low supply', '', 0)
+(datetime.date(2013, 9, 19), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/city/mumbai/Sharad-Pawars-speculation-leads-to-onion-price-increase-yet-again/articleshow/22673599.cms', -1, 'low supply', '', 0)
+(datetime.date(2013, 9, 20), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/city/mumbai/Sharad-Pawars-speculation-leads-to-onion-price-increase-yet-again/articleshow/22673599.cms', -2, 'low supply', '', 0)
+(datetime.date(2013, 9, 21), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/city/mumbai/Sharad-Pawars-speculation-leads-to-onion-price-increase-yet-again/articleshow/22673599.cms', -3, 'low supply', '', 0)
+(datetime.date(2013, 9, 22), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/city/mumbai/Sharad-Pawars-speculation-leads-to-onion-price-increase-yet-again/articleshow/22673599.cms', -4, 'low supply', '', 0)
+(datetime.date(2013, 9, 23), datetime.date(2013, 9, 18), 'The Times of India', 'http://timesofindia.indiatimes.com/city/mumbai/Sharad-Pawars-speculation-leads-to-onion-price-increase-yet-again/articleshow/22673599.cms', -5, 'low supply', '', 0)
+(datetime.date(2013, 10, 5), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', 5, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 6), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', 4, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 7), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', 3, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 8), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', 2, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 9), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', 1, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 10), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', 0, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 11), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', -1, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 12), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', -2, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 13), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', -3, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 14), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', -4, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 15), datetime.date(2013, 10, 10), 'The Economic Times', 'http://articles.economictimes.indiatimes.com/2013-10-10/news/42903314_1_export-price-price-rise-onion-prices', -5, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 17), datetime.date(2013, 10, 22), 'NDTV', 'http://profit.ndtv.com/news/cheat-sheet/article-why-onion-prices-are-inching-towards-rs-100-per-kg-370138', 5, 'low supply', '', 0)
+(datetime.date(2013, 10, 18), datetime.date(2013, 10, 22), 'NDTV', 'http://profit.ndtv.com/news/cheat-sheet/article-why-onion-prices-are-inching-towards-rs-100-per-kg-370138', 4, 'low supply', '', 0)
+(datetime.date(2013, 10, 19), datetime.date(2013, 10, 22), 'NDTV', 'http://profit.ndtv.com/news/cheat-sheet/article-why-onion-prices-are-inching-towards-rs-100-per-kg-370138', 3, 'low supply', '', 0)
+(datetime.date(2013, 10, 20), datetime.date(2013, 10, 22), 'NDTV', 'http://profit.ndtv.com/news/cheat-sheet/article-why-onion-prices-are-inching-towards-rs-100-per-kg-370138', 2, 'low supply', '', 0)
+(datetime.date(2013, 10, 21), datetime.date(2013, 10, 22), 'NDTV', 'http://profit.ndtv.com/news/cheat-sheet/article-why-onion-prices-are-inching-towards-rs-100-per-kg-370138', 1, 'low supply', '', 0)
+(datetime.date(2013, 10, 22), datetime.date(2013, 10, 22), 'NDTV', 'http://profit.ndtv.com/news/cheat-sheet/article-why-onion-prices-are-inching-towards-rs-100-per-kg-370138', 0, 'low supply', '', 0)
+(datetime.date(2013, 10, 23), datetime.date(2013, 10, 23), 'The Hindu', 'http://www.thehindu.com/business/Industry/monopoly-of-wholesale-trade-causing-onion-price-hike/article5264512.ece', 0, 'traders nexus', 'no', 2)
+(datetime.date(2013, 10, 24), datetime.date(2013, 10, 24), 'The Hindu', 'http://www.thehindu.com/business/Industry/india-floats-tender-for-import-of-onions/article5264970.ece', 0, 'traders nexus', '', 10)
+(datetime.date(2013, 10, 25), datetime.date(2013, 10, 25), 'Money Control', 'http://www.moneycontrol.com/news/economy/onion-prices-remain-high-at-rs-100kg-crisis-to-continue_976318.html', 0, 'traders nexus', '', 7)
+(datetime.date(2013, 10, 26), datetime.date(2013, 10, 26), 'NDTV', 'http://www.ndtv.com/india-news/chief-ministers-onion-mission-begins-in-assam-538929', 0, 'Not mentioned', '', 0)
+(datetime.date(2013, 10, 27), datetime.date(2013, 10, 28), 'DNA', 'http://www.dnaindia.com/mumbai/report-dna-exclusive-traders-not-farmers-making-the-most-of-soaring-onion-price-1909850', 1, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 28), datetime.date(2013, 10, 28), 'DNA', 'http://www.dnaindia.com/mumbai/report-dna-exclusive-traders-not-farmers-making-the-most-of-soaring-onion-price-1909850', 0, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 29), datetime.date(2013, 10, 28), 'DNA', 'http://www.dnaindia.com/mumbai/report-dna-exclusive-traders-not-farmers-making-the-most-of-soaring-onion-price-1909850', -1, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 30), datetime.date(2013, 10, 28), 'DNA', 'http://www.dnaindia.com/mumbai/report-dna-exclusive-traders-not-farmers-making-the-most-of-soaring-onion-price-1909850', -2, 'traders nexus', '', 0)
+(datetime.date(2013, 10, 31), datetime.date(2013, 10, 28), 'DNA', 'http://www.dnaindia.com/mumbai/report-dna-exclusive-traders-not-farmers-making-the-most-of-soaring-onion-price-1909850', -3, 'traders nexus', '', 0)
+(datetime.date(2013, 11, 1), datetime.date(2013, 11, 4), 'The Hindu', 'http://www.thehindu.com/business/markets/govt-hikes-onion-mep-to-1150-per-tonne-to-check-prices/article5313950.ece', 3, 'low supply', '', 30)
+(datetime.date(2013, 11, 2), datetime.date(2013, 11, 4), 'The Hindu', 'http://www.thehindu.com/business/markets/govt-hikes-onion-mep-to-1150-per-tonne-to-check-prices/article5313950.ece', 2, 'low supply', '', 30)
+(datetime.date(2013, 11, 3), datetime.date(2013, 11, 4), 'The Hindu', 'http://www.thehindu.com/business/markets/govt-hikes-onion-mep-to-1150-per-tonne-to-check-prices/article5313950.ece', 1, 'low supply', '', 30)
+(datetime.date(2013, 11, 4), datetime.date(2013, 11, 4), 'The Hindu', 'http://www.thehindu.com/business/markets/govt-hikes-onion-mep-to-1150-per-tonne-to-check-prices/article5313950.ece', 0, 'low supply', '', 30)
+(datetime.date(2013, 11, 5), datetime.date(2013, 11, 6), 'The Hindu', 'http://www.thehindu.com/business/Industry/after-onions-tomato-prices-soar/article5317582.ece', 1, 'Increased prices of onion', '', 0)
+(datetime.date(2013, 11, 6), datetime.date(2013, 11, 6), 'The Hindu', 'http://www.thehindu.com/business/Industry/after-onions-tomato-prices-soar/article5317582.ece', 0, 'Increased prices of onion', '', 0)
+(datetime.date(2013, 11, 7), datetime.date(2013, 11, 6), 'The Hindu', 'http://www.thehindu.com/business/Industry/after-onions-tomato-prices-soar/article5317582.ece', -1, 'Increased prices of onion', '', 0)
+(datetime.date(2013, 11, 8), datetime.date(2013, 11, 6), 'The Hindu', 'http://www.thehindu.com/business/Industry/after-onions-tomato-prices-soar/article5317582.ece', -2, 'Increased prices of onion', '', 0)
+(datetime.date(2013, 11, 9), datetime.date(2013, 11, 6), 'The Hindu', 'http://www.thehindu.com/business/Industry/after-onions-tomato-prices-soar/article5317582.ece', -3, 'Increased prices of onion', '', 0)
+(datetime.date(2013, 11, 10), datetime.date(2013, 11, 13), 'The Times of India', 'http://timesofindia.indiatimes.com/india/No-let-up-in-prices-of-onion-potato-tomato/articleshow/25664320.cms', 3, 'traders nexus', '', 12)
+(datetime.date(2013, 11, 11), datetime.date(2013, 11, 13), 'The Times of India', 'http://timesofindia.indiatimes.com/india/No-let-up-in-prices-of-onion-potato-tomato/articleshow/25664320.cms', 2, 'traders nexus', '', 12)
+(datetime.date(2013, 11, 12), datetime.date(2013, 11, 13), 'The Times of India', 'http://timesofindia.indiatimes.com/india/No-let-up-in-prices-of-onion-potato-tomato/articleshow/25664320.cms', 1, 'traders nexus', '', 12)
+(datetime.date(2013, 11, 13), datetime.date(2013, 11, 13), 'The Times of India', 'http://timesofindia.indiatimes.com/india/No-let-up-in-prices-of-onion-potato-tomato/articleshow/25664320.cms', 0, 'traders nexus', '', 12)
+(datetime.date(2013, 11, 14), datetime.date(2013, 11, 15), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Onion-prices-up-278-tomato-122-in-one-year/articleshow/25780005.cms', 1, 'not stated', '', 365)
+(datetime.date(2013, 11, 15), datetime.date(2013, 11, 15), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Onion-prices-up-278-tomato-122-in-one-year/articleshow/25780005.cms', 0, 'not stated', '', 365)
+(datetime.date(2013, 11, 16), datetime.date(2013, 11, 15), 'The Times of India', 'http://timesofindia.indiatimes.com/business/india-business/Onion-prices-up-278-tomato-122-in-one-year/articleshow/25780005.cms', -1, 'not stated', '', 365)
+(datetime.date(2013, 11, 17), datetime.date(2013, 11, 19), 'First Post', 'http://www.firstpost.com/politics/onion-tomato-price-hoardings-to-malign-party-cong-writes-to-ec-1238589.html', 2, 'traders nexus', '', 0)
+(datetime.date(2013, 11, 18), datetime.date(2013, 11, 19), 'First Post', 'http://www.firstpost.com/politics/onion-tomato-price-hoardings-to-malign-party-cong-writes-to-ec-1238589.html', 1, 'traders nexus', '', 0)
+(datetime.date(2013, 11, 19), datetime.date(2013, 11, 19), 'First Post', 'http://www.firstpost.com/politics/onion-tomato-price-hoardings-to-malign-party-cong-writes-to-ec-1238589.html', 0, 'traders nexus', '', 0)
+(datetime.date(2013, 11, 20), datetime.date(2013, 11, 19), 'First Post', 'http://www.firstpost.com/politics/onion-tomato-price-hoardings-to-malign-party-cong-writes-to-ec-1238589.html', -1, 'traders nexus', '', 0)
+(datetime.date(2013, 11, 21), datetime.date(2013, 11, 19), 'First Post', 'http://www.firstpost.com/politics/onion-tomato-price-hoardings-to-malign-party-cong-writes-to-ec-1238589.html', -2, 'traders nexus', '', 0)
+(datetime.date(2013, 11, 22), datetime.date(2013, 11, 19), 'First Post', 'http://www.firstpost.com/politics/onion-tomato-price-hoardings-to-malign-party-cong-writes-to-ec-1238589.html', -3, 'traders nexus', '', 0)
+(datetime.date(2013, 11, 23), datetime.date(2013, 11, 19), 'First Post', 'http://www.firstpost.com/politics/onion-tomato-price-hoardings-to-malign-party-cong-writes-to-ec-1238589.html', -4, 'traders nexus', '', 0)
+(datetime.date(2013, 11, 24), datetime.date(2013, 11, 19), 'First Post', 'http://www.firstpost.com/politics/onion-tomato-price-hoardings-to-malign-party-cong-writes-to-ec-1238589.html', -5, 'traders nexus', '', 0)
+(datetime.date(2014, 7, 13), datetime.date(2014, 7, 13), 'The Times of India', 'http://timesofindia.indiatimes.com/india/Govt-to-check-onion-prices-with-imports/articleshow/38282324.cms', 0, 'low production', '', 30)
+(datetime.date(2014, 7, 14), datetime.date(2014, 7, 15), 'First Post', 'http://www.firstpost.com/india/why-modi-sarkaar-should-ready-itself-for-another-fight-with-inflation-1619551.html', 1, 'not stated', 'Title : Why Modi sarkaar should ready itself for another fight with inflation , but stated that onion prices are high as compared to last year', 30)
+(datetime.date(2014, 7, 15), datetime.date(2014, 7, 15), 'First Post', 'http://www.firstpost.com/india/why-modi-sarkaar-should-ready-itself-for-another-fight-with-inflation-1619551.html', 0, 'not stated', 'Title : Why Modi sarkaar should ready itself for another fight with inflation , but stated that onion prices are high as compared to last year', 30)
+(datetime.date(2014, 7, 16), datetime.date(2014, 7, 17), 'Business Standard', 'http://www.business-standard.com/article/economy-policy/price-stabilization-fund-in-agriculture-to-be-used-for-cereals-and-vegetables-114071701051_1.html', 1, 'not stated', '', 40)
+(datetime.date(2014, 7, 17), datetime.date(2014, 7, 17), 'Business Standard', 'http://www.business-standard.com/article/economy-policy/price-stabilization-fund-in-agriculture-to-be-used-for-cereals-and-vegetables-114071701051_1.html', 0, 'not stated', '', 40)
+(datetime.date(2014, 7, 18), datetime.date(2014, 7, 17), 'Business Standard', 'http://www.business-standard.com/article/economy-policy/price-stabilization-fund-in-agriculture-to-be-used-for-cereals-and-vegetables-114071701051_1.html', -1, 'not stated', '', 40)
+(datetime.date(2014, 7, 19), datetime.date(2014, 7, 17), 'Business Standard', 'http://www.business-standard.com/article/economy-policy/price-stabilization-fund-in-agriculture-to-be-used-for-cereals-and-vegetables-114071701051_1.html', -2, 'not stated', '', 40)
+END OF RETAIL VS ARRIVAL 
+
+
+
+Center:Mumbai
+
+Anomalies Reported:
+,Slope Based,Correlation,Linear Regression,Graph Based,Multi Variate,1 U 2 U 3,4 U 5,(1 U 2 U 3) ^ (4 U 5)
+Retail Vs Average,742,255,353,300,177,1206,362,125
+Retail Vs Arrival,420,795,353,500,167,1381,573,323
+Retail Vs Wholesale,658,420,310,300,167,1243,367,160
+Wholesale Vs Arrival,448,705,282,500,186,1315,586,332
+
+
+News Article Analysis:
+
+,Slope Based,Correlation,Linear Regression,Graph Based,Multi Variate,1 U 2 U 3,4 U 5,(1 U 2 U 3) ^ (4 U 5)
+Retail Vs Average,67,47,50,122,122,142,162,64
+Retail Vs Arrival,42,74,167,121,119,220,159,153
+Retail Vs Wholesale,30,55,40,117,119,107,150,52
+Wholesale Vs Arrival,64,64,174,122,139,219,174,168
+
+
+Total Articles for Mumbai,99
+Center:Delhi
+
+Anomalies Reported:
+,Slope Based,Correlation,Linear Regression,Graph Based,Multi Variate,1 U 2 U 3,4 U 5,(1 U 2 U 3) ^ (4 U 5)
+Retail Vs Average,665,255,480,300,149,1248,336,132
+Retail Vs Arrival,546,450,246,500,144,1129,596,315
+Retail Vs Wholesale,644,225,407,300,145,1211,329,96
+Wholesale Vs Arrival,595,405,278,500,238,1144,651,312
+
+
+News Article Analysis:
+
+,Slope Based,Correlation,Linear Regression,Graph Based,Multi Variate,1 U 2 U 3,4 U 5,(1 U 2 U 3) ^ (4 U 5)
+Retail Vs Average,54,17,38,114,118,92,139,38
+Retail Vs Arrival,79,36,127,136,116,198,215,164
+Retail Vs Wholesale,23,0,70,119,116,93,141,53
+Wholesale Vs Arrival,108,15,138,136,139,196,216,163
+
+
+Total Articles for Delhi,91
