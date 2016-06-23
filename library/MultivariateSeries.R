@@ -1,65 +1,87 @@
 require(forecast)
 require(vars)
 
-MultivariateAnomaly <- function(fileName,hd= FALSE) {
+MultivariateAnomaly <- function(fileName,hd= FALSE, paramCount,fileStart) {
 var.data= read.csv(file = fileName,header=hd)
 head(var.data)
 
-centre.wp = ts(var.data[2], frequency=365, start=c(2006), end=c(2015))
-centre.rp = ts(var.data[3], frequency=365, start=c(2006), end=c(2015))
-centre.arrival = ts(var.data[4], frequency=365, start=c(2006), end=c(2015))
-noOfPredictions <- 3000
+objTimeSeries <- list()
+for (i in 1:paramCount) {
+objTimeSeries[[i]] <- ts(var.data[i])
+}
 
-WPcData = window(centre.wp, start=c(2006), end=c(2010))
-RPcData = window(centre.rp, start=c(2006), end=c(2010))
-ArrivalcData = window(centre.arrival, start=c(2006), end=c(2010))
-onion.ts = cbind(WPcData, RPcData,ArrivalcData)
-plot(onion.ts)
+percModelPoints <- 0.60
 
-ndiffs(WPcData, alpha = 0.05, test = c("adf"))
-ndiffs(RPcData, alpha = 0.05, test = c("adf"))
-ndiffs(ArrivalcData, alpha = 0.05, test = c("adf"))
+noOfModelPoints <- trunc(percModelPoints*length(objTimeSeries[[1]]))
+noOfRemPoints <- length(objTimeSeries[[1]])- noOfModelPoints
+noOfPredictions <- noOfRemPoints
 
-d.WPcData = diff(WPcData)
-d.RPcData = diff(RPcData)
-d.ArrivalcData = diff(ArrivalcData)
+if(noOfRemPoints< noOfPredictions)
+{
+noOfPredictions <- noOfRemPoints
+}
 
-onion2.ts = cbind(d.WPcData, d.RPcData,d.ArrivalcData)
-plot(onion2.ts)
+objSampleTimeSeries <- list()
+for (i in 1:paramCount) {
+objSampleTimeSeries[[i]] <- window(objTimeSeries[[i]],start=1,end=noOfModelPoints)
+if(i==1){
+sampleObjTimeseries <- objSampleTimeSeries[[i]]
+}
+else{
+sampleObjTimeseries <- cbind(sampleObjTimeseries,objSampleTimeSeries[[i]])
+}
+}
 
-VARselect(onion2.ts, lag.max=60)$selection
+plot(sampleObjTimeseries)
 
-var = VAR(onion.ts, p=29)
-#serial.test(centre.wp, lags.pt=60, type="PT.asymptotic")
+minStDiff <- length(objSampleTimeSeries[[1]])
+objStationaryTimeSeries <- list()
+for (i in 1:paramCount) {
+stDiff <- ndiffs(objSampleTimeSeries[[i]], alpha = 0.05, test = c("adf"))
+if(stDiff>0 & stDiff <= length(objSampleTimeSeries[[i]])){
+objStationaryTimeSeries[[i]] <- diff(objSampleTimeSeries[[i]],stDiff)
+}
+else{
+objStationaryTimeSeries[[i]] <- objSampleTimeSeries[[i]]
+}
+if(minStDiff > length(objStationaryTimeSeries[[i]])){
+minStDiff <- length(objStationaryTimeSeries[[i]])
+}
+}
 
-summary(var, equation="d.WPcData")
+for (i in 1:paramCount) {
+objStationaryTimeSeries[[i]] <- window(objSampleTimeSeries[[i]],1,minStDiff)
+if(i==1){
+allObjTimeseries <- objStationaryTimeSeries[[i]]
+}
+else{
+allObjTimeseries <- cbind(allObjTimeseries,objStationaryTimeSeries[[i]])
+}
+}
+
+LagFactors <- VARselect(allObjTimeseries, lag.max=60)$selection
+
+var = VAR(sampleObjTimeseries, p=LagFactors[1])
+
 p <- predict(var, n.ahead=noOfPredictions, ci=0.95)
 
-ArrivalcData = window(centre.arrival, start=c(2010), end=c(2015))
-padNeeded <- noOfPredictions - length(ArrivalcData)
-paddedList <- rep(-1,padNeeded)
 
-ArrivalForecast <- as.data.frame(p$fcst[3])
-ArrivalForecast[5] <- append(ArrivalcData,paddedList)
+for(i in 1:length(p$fcst))
+{
+strName <- paste("/home/kapil/Desktop/mtp/library/testingCSV/",fileStart,i,".csv",sep="")
+print(strName)
+objForecast <- as.data.frame(p$fcst[i])
+objForecast[5] <- window(objTimeSeries[[i]],start = noOfModelPoints, end = noOfModelPoints+noOfPredictions-1)
+write.csv(objForecast,strName,row.names=TRUE)
+}
 
-WPcData = window(centre.wp, start=c(2010), end=c(2015))
-WholeSaleForecast <- as.data.frame(p$fcst[1])
-WholeSaleForecast[5] <- append(WPcData,paddedList)
-
-RPcData = window(centre.rp, start=c(2010), end=c(2015))
-RetailForecast <- as.data.frame(p$fcst[2])
-RetailForecast[5] <- append(RPcData ,paddedList)
-
-write.csv(WholeSaleForecast,"/home/kapil/Desktop/mtp/library/testingCSV/Wolesaleresults.csv",row.names=TRUE)
-write.csv(RetailForecast,"/home/kapil/Desktop/mtp/library/testingCSV/Retailresults.csv",row.names=TRUE)
-write.csv(ArrivalForecast,"/home/kapil/Desktop/mtp/library/testingCSV/Arrivalresults.csv",row.names=TRUE)
 
 }
 
 myArgs <- commandArgs(trailingOnly = TRUE)
 myArgs[2]
 if(myArgs[2]=='TRUE'){
-	x <- MultivariateAnomaly(myArgs[1],TRUE)
+	x <- MultivariateAnomaly(myArgs[1],TRUE,as.integer(myArgs[3]),myAgrs[4])
 } else {
-	x <- MultivariateAnomaly(myArgs[1],FALSE)
+	x <- MultivariateAnomaly(myArgs[1],FALSE,as.integer(myArgs[3]),myArgs[4])
 }

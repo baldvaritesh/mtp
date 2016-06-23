@@ -28,11 +28,14 @@ under the guidance of Dr. Aaditeshwar Seth
 * Work done to collect news articles, fetching links from html search pages, fetching text and related data using AlchemyAPI and Diffbot can be found here:
 	- newsArticleWork
 
-
-To take backup of postgres databse, run following command:
-
-sudo -u postgres pg_dump -Fc -c db_name > file_name.pgdump
-
-To restore the database, first create that database and than run following command:
-
-sudo -u postgres pg_restore -U postgres -d db_name -v file_name.pgdump
+* For graph based anomaly, R packages are present in folder:
+	- mtp/library/R_Packages/
+	
+* Matlab Script for mapping mandis to center using voronoi diagram can be found here:
+	- mtp/matlabScript/clustering.m
+	
+* Crawlers written to fetch onion data are present here:
+	- Wholesale Price and Arrival: mtp/oniondataCollection/WholeSalePriceCrawler
+	- Retail Price: mtp/oniondataCollection/RetailPriceCrawer
+	- Location of Mandis and Centers: mtp/oniondataCollection/LocationScript
+	- Required JAR files: mtp/oniondataCollection/jarFiles

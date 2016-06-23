@@ -1,0 +1,531 @@
+16/01/2016 16:43:880Execution Stopped Failed to connect to binary FirefoxBinary(/usr/bin/firefox) on port 7055; process output follows: 
+e,"v":"2.45.0","st":1452942750000,"mt":1452942750000}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"/usr/lib/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"43.0","st":1451832252000,"mt":1449741438000}},"app-system-share":{"ubufox@ubuntu.com":{"d":"/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/ubufox@ubuntu.com.xpi","e":false,"v":"3.2","st":1442597167000}}}
+1452942757896	addons.xpi	DEBUG	Existing add-on fxdriver@googlecode.com in app-profile
+1452942757896	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1452942757897	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1452942757897	addons.xpi	DEBUG	Existing add-on ubufox@ubuntu.com in app-system-share
+1452942757897	addons.xpi	DEBUG	getInstallState changed: false, state: {"app-profile":{"fxdriver@googlecode.com":{"d":"/tmp/anonymous2934888276646310383webdriver-profile/extensions/fxdriver@googlecode.com","e":false,"v":"2.45.0","st":1452942750000,"mt":1452942750000}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"/usr/lib/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"43.0","st":1451832252000,"mt":1449741438000}},"app-system-share":{"ubufox@ubuntu.com":{"d":"/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/ubufox@ubuntu.com.xpi","e":false,"v":"3.2","st":1442597167000}}}
+1452942757898	addons.xpi	DEBUG	No changes found
+1452942757903	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1452942757903	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1452942757903	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1452942757903	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1452942757903	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1452942757904	addons.manager	DEBUG	Starting provider: GMPProvider
+1452942757906	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1452942757907	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1452942757907	addons.manager	DEBUG	Starting provider: PluginProvider
+1452942757907	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1452942757907	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1452942757907	addons.manager	DEBUG	Completed startup sequence
+1452942757932	addons.xpi-utils	DEBUG	Starting async load of XPI database /tmp/anonymous2934888276646310383webdriver-profile/extensions.json
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1452942757997	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1452942757997	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1452942757998	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1452942758050	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1452942758051	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1452942758051	addons.xpi-utils	DEBUG	Successfully read XPI database
+1452942758089	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1452942758089	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1452942758089	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1452942760577	addons.manager	DEBUG	shutdown
+1452942760578	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1452942760578	addons.xpi	DEBUG	shutdown
+1452942760578	addons.xpi-utils	DEBUG	shutdown
+1452942760578	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1452942760578	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1452942760580	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1452942760580	addons.manager	DEBUG	Calling shutdown blocker for <unnamed-provider>
+1452942760581	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1452942760584	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1452942760588	addons.manager	DEBUG	Async provider shutdown done
+
+Build info: version: '2.45.0', revision: '32a636c', time: '2015-03-05 22:01:35'
+System info: host: 'ictd', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-31-generic', java.version: '1.8.0_45'
+Driver info: driver.version: FirefoxDriver[Ljava.lang.StackTraceElement;@e056f20
+16/01/2016 16:44:522Execution Stopped Failed to connect to binary FirefoxBinary(/usr/bin/firefox) on port 7055; process output follows: 
+e,"v":"2.45.0","st":1452942821000,"mt":1452942821000}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"/usr/lib/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"43.0","st":1451832252000,"mt":1449741438000}},"app-system-share":{"ubufox@ubuntu.com":{"d":"/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/ubufox@ubuntu.com.xpi","e":false,"v":"3.2","st":1442597167000}}}
+1452942828573	addons.xpi	DEBUG	Existing add-on fxdriver@googlecode.com in app-profile
+1452942828573	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1452942828573	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1452942828574	addons.xpi	DEBUG	Existing add-on ubufox@ubuntu.com in app-system-share
+1452942828574	addons.xpi	DEBUG	getInstallState changed: false, state: {"app-profile":{"fxdriver@googlecode.com":{"d":"/tmp/anonymous6087896801047805677webdriver-profile/extensions/fxdriver@googlecode.com","e":false,"v":"2.45.0","st":1452942821000,"mt":1452942821000}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"/usr/lib/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"43.0","st":1451832252000,"mt":1449741438000}},"app-system-share":{"ubufox@ubuntu.com":{"d":"/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/ubufox@ubuntu.com.xpi","e":false,"v":"3.2","st":1442597167000}}}
+1452942828575	addons.xpi	DEBUG	No changes found
+1452942828579	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1452942828580	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1452942828580	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1452942828580	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1452942828580	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1452942828580	addons.manager	DEBUG	Starting provider: GMPProvider
+1452942828583	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1452942828583	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1452942828583	addons.manager	DEBUG	Starting provider: PluginProvider
+1452942828583	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1452942828584	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1452942828584	addons.manager	DEBUG	Completed startup sequence
+1452942828609	addons.xpi-utils	DEBUG	Starting async load of XPI database /tmp/anonymous6087896801047805677webdriver-profile/extensions.json
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1452942828673	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1452942828673	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1452942828673	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1452942828727	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1452942828727	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1452942828727	addons.xpi-utils	DEBUG	Successfully read XPI database
+1452942828766	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1452942828766	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1452942828766	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1452942862695	addons.manager	DEBUG	shutdown
+1452942862696	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1452942862696	addons.xpi	DEBUG	shutdown
+1452942862696	addons.xpi-utils	DEBUG	shutdown
+1452942862697	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1452942862697	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1452942862698	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1452942862699	addons.manager	DEBUG	Calling shutdown blocker for <unnamed-provider>
+1452942862700	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1452942862702	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1452942862704	addons.manager	DEBUG	Async provider shutdown done
+
+Build info: version: '2.45.0', revision: '32a636c', time: '2015-03-05 22:01:35'
+System info: host: 'ictd', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-31-generic', java.version: '1.8.0_45'
+Driver info: driver.version: FirefoxDriver[Ljava.lang.StackTraceElement;@e056f20
+16/01/2016 16:45:801Execution Stopped Failed to connect to binary FirefoxBinary(/usr/bin/firefox) on port 7055; process output follows: 
+e,"v":"2.45.0","st":1452942884000,"mt":1452942884000}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"/usr/lib/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"43.0","st":1451832252000,"mt":1449741438000}},"app-system-share":{"ubufox@ubuntu.com":{"d":"/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/ubufox@ubuntu.com.xpi","e":false,"v":"3.2","st":1442597167000}}}
+1452942891855	addons.xpi	DEBUG	Existing add-on fxdriver@googlecode.com in app-profile
+1452942891856	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1452942891856	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1452942891856	addons.xpi	DEBUG	Existing add-on ubufox@ubuntu.com in app-system-share
+1452942891857	addons.xpi	DEBUG	getInstallState changed: false, state: {"app-profile":{"fxdriver@googlecode.com":{"d":"/tmp/anonymous6130645578463439985webdriver-profile/extensions/fxdriver@googlecode.com","e":false,"v":"2.45.0","st":1452942884000,"mt":1452942884000}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"/usr/lib/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"43.0","st":1451832252000,"mt":1449741438000}},"app-system-share":{"ubufox@ubuntu.com":{"d":"/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/ubufox@ubuntu.com.xpi","e":false,"v":"3.2","st":1442597167000}}}
+1452942891858	addons.xpi	DEBUG	No changes found
+1452942891862	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1452942891863	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1452942891863	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1452942891863	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1452942891863	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1452942891863	addons.manager	DEBUG	Starting provider: GMPProvider
+1452942891866	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1452942891866	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1452942891866	addons.manager	DEBUG	Starting provider: PluginProvider
+1452942891866	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1452942891866	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1452942891867	addons.manager	DEBUG	Completed startup sequence
+1452942891892	addons.xpi-utils	DEBUG	Starting async load of XPI database /tmp/anonymous6130645578463439985webdriver-profile/extensions.json
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1452942891958	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1452942891958	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1452942891958	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1452942892011	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1452942892011	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1452942892012	addons.xpi-utils	DEBUG	Successfully read XPI database
+1452942892062	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1452942892063	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1452942892063	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1452942916094	addons.manager	DEBUG	shutdown
+1452942916095	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1452942916095	addons.xpi	DEBUG	shutdown
+1452942916095	addons.xpi-utils	DEBUG	shutdown
+1452942916095	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1452942916096	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1452942916097	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1452942916097	addons.manager	DEBUG	Calling shutdown blocker for <unnamed-provider>
+1452942916098	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1452942916102	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1452942916105	addons.manager	DEBUG	Async provider shutdown done
+
+Build info: version: '2.45.0', revision: '32a636c', time: '2015-03-05 22:01:35'
+System info: host: 'ictd', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-31-generic', java.version: '1.8.0_45'
+Driver info: driver.version: FirefoxDriver[Ljava.lang.StackTraceElement;@e056f20
+16/01/2016 16:50:261 Error:::16/01/2016 16:50:261Process aborting Since Another Process is already running16/01/2016 16:50:279Execution Stopped The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see http://code.google.com/p/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html[Ljava.lang.StackTraceElement;@2d38eb89
+16/01/2016 16:55:284Execution Stopped The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see http://code.google.com/p/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html[Ljava.lang.StackTraceElement;@2d38eb89
+16/01/2016 16:57:456Execution Stopped Failed to connect to binary FirefoxBinary(/usr/bin/firefox) on port 7055; process output follows: 
+pping fxdriver@googlecode.com to /tmp/anonymous744087197907112130webdriver-profile/extensions/fxdriver@googlecode.com
+1452943603495	addons.xpi	INFO	SystemAddonInstallLocation directory is missing
+1452943603496	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to /usr/lib/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1452943603496	addons.xpi	INFO	Mapping ubufox@ubuntu.com to /usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/ubufox@ubuntu.com.xpi
+1452943603496	addons.xpi	DEBUG	checkForChanges
+1452943603497	addons.xpi	DEBUG	Loaded add-on state from prefs: {"app-profile":{"fxdriver@googlecode.com":{"d":"/tmp/anonymous744087197907112130webdriver-profile/extensions/fxdriver@googlecode.com","e":false,"v":"2.45.0","st":1452943596000,"mt":1452943596000}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"/usr/lib/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"43.0","st":1451832252000,"mt":1449741438000}},"app-system-share":{"ubufox@ubuntu.com":{"d":"/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/ubufox@ubuntu.com.xpi","e":false,"v":"3.2","st":1442597167000}}}
+1452943603497	addons.xpi	DEBUG	Existing add-on fxdriver@googlecode.com in app-profile
+1452943603498	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1452943603498	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1452943603498	addons.xpi	DEBUG	Existing add-on ubufox@ubuntu.com in app-system-share
+1452943603499	addons.xpi	DEBUG	getInstallState changed: false, state: {"app-profile":{"fxdriver@googlecode.com":{"d":"/tmp/anonymous744087197907112130webdriver-profile/extensions/fxdriver@googlecode.com","e":false,"v":"2.45.0","st":1452943596000,"mt":1452943596000}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"/usr/lib/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"43.0","st":1451832252000,"mt":1449741438000}},"app-system-share":{"ubufox@ubuntu.com":{"d":"/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/ubufox@ubuntu.com.xpi","e":false,"v":"3.2","st":1442597167000}}}
+1452943603499	addons.xpi	DEBUG	No changes found
+1452943603504	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1452943603505	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1452943603505	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1452943603505	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1452943603505	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1452943603505	addons.manager	DEBUG	Starting provider: GMPProvider
+1452943603508	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1452943603508	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1452943603508	addons.manager	DEBUG	Starting provider: PluginProvider
+1452943603508	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1452943603509	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1452943603509	addons.manager	DEBUG	Completed startup sequence
+1452943603534	addons.xpi-utils	DEBUG	Starting async load of XPI database /tmp/anonymous744087197907112130webdriver-profile/extensions.json
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1452943603598	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1452943603598	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1452943603598	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1452943603656	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1452943603656	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1452943603657	addons.xpi-utils	DEBUG	Successfully read XPI database
+1452943603697	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1452943603697	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1452943603697	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+
+Build info: version: '2.45.0', revision: '32a636c', time: '2015-03-05 22:01:35'
+System info: host: 'ictd', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-31-generic', java.version: '1.8.0_45'
+Driver info: driver.version: FirefoxDriver[Ljava.lang.StackTraceElement;@e056f20
+16/01/2016 17:06:631Execution Stopped Failed to connect to binary FirefoxBinary(/usr/bin/firefox) on port 7055; process output follows: 
+e,"v":"2.45.0","st":1452944148000,"mt":1452944148000}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"/usr/lib/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"43.0","st":1451832252000,"mt":1449741438000}},"app-system-share":{"ubufox@ubuntu.com":{"d":"/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/ubufox@ubuntu.com.xpi","e":false,"v":"3.2","st":1442597167000}}}
+1452944155653	addons.xpi	DEBUG	Existing add-on fxdriver@googlecode.com in app-profile
+1452944155653	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1452944155654	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1452944155654	addons.xpi	DEBUG	Existing add-on ubufox@ubuntu.com in app-system-share
+1452944155654	addons.xpi	DEBUG	getInstallState changed: false, state: {"app-profile":{"fxdriver@googlecode.com":{"d":"/tmp/anonymous1630161070784691191webdriver-profile/extensions/fxdriver@googlecode.com","e":false,"v":"2.45.0","st":1452944148000,"mt":1452944148000}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"/usr/lib/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"43.0","st":1451832252000,"mt":1449741438000}},"app-system-share":{"ubufox@ubuntu.com":{"d":"/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/ubufox@ubuntu.com.xpi","e":false,"v":"3.2","st":1442597167000}}}
+1452944155655	addons.xpi	DEBUG	No changes found
+1452944155660	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1452944155660	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1452944155660	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1452944155660	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1452944155660	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1452944155660	addons.manager	DEBUG	Starting provider: GMPProvider
+1452944155663	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1452944155663	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1452944155663	addons.manager	DEBUG	Starting provider: PluginProvider
+1452944155663	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1452944155664	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1452944155664	addons.manager	DEBUG	Completed startup sequence
+1452944155689	addons.xpi-utils	DEBUG	Starting async load of XPI database /tmp/anonymous1630161070784691191webdriver-profile/extensions.json
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1452944155754	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1452944155754	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1452944155755	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1452944155809	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1452944155809	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1452944155810	addons.xpi-utils	DEBUG	Successfully read XPI database
+1452944155848	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1452944155849	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1452944155849	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1452944164100	addons.manager	DEBUG	shutdown
+1452944164100	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1452944164101	addons.xpi	DEBUG	shutdown
+1452944164101	addons.xpi-utils	DEBUG	shutdown
+1452944164101	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1452944164101	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1452944164102	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1452944164103	addons.manager	DEBUG	Calling shutdown blocker for <unnamed-provider>
+1452944164103	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1452944164105	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1452944164108	addons.manager	DEBUG	Async provider shutdown done
+
+Build info: version: '2.45.0', revision: '32a636c', time: '2015-03-05 22:01:35'
+System info: host: 'ictd', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-31-generic', java.version: '1.8.0_45'
+Driver info: driver.version: FirefoxDriver[Ljava.lang.StackTraceElement;@e056f20
+16/01/2016 17:07:113Execution Stopped Failed to connect to binary FirefoxBinary(/usr/bin/firefox) on port 7055; process output follows: 
+e,"v":"2.45.0","st":1452944214000,"mt":1452944214000}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"/usr/lib/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"43.0","st":1451832252000,"mt":1449741438000}},"app-system-share":{"ubufox@ubuntu.com":{"d":"/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/ubufox@ubuntu.com.xpi","e":false,"v":"3.2","st":1442597167000}}}
+1452944221178	addons.xpi	DEBUG	Existing add-on fxdriver@googlecode.com in app-profile
+1452944221179	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1452944221179	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1452944221179	addons.xpi	DEBUG	Existing add-on ubufox@ubuntu.com in app-system-share
+1452944221179	addons.xpi	DEBUG	getInstallState changed: false, state: {"app-profile":{"fxdriver@googlecode.com":{"d":"/tmp/anonymous3078847231083476134webdriver-profile/extensions/fxdriver@googlecode.com","e":false,"v":"2.45.0","st":1452944214000,"mt":1452944214000}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"/usr/lib/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"43.0","st":1451832252000,"mt":1449741438000}},"app-system-share":{"ubufox@ubuntu.com":{"d":"/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/ubufox@ubuntu.com.xpi","e":false,"v":"3.2","st":1442597167000}}}
+1452944221180	addons.xpi	DEBUG	No changes found
+1452944221185	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1452944221185	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1452944221186	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1452944221186	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1452944221186	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1452944221186	addons.manager	DEBUG	Starting provider: GMPProvider
+1452944221189	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1452944221189	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1452944221189	addons.manager	DEBUG	Starting provider: PluginProvider
+1452944221189	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1452944221189	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1452944221190	addons.manager	DEBUG	Completed startup sequence
+1452944221217	addons.xpi-utils	DEBUG	Starting async load of XPI database /tmp/anonymous3078847231083476134webdriver-profile/extensions.json
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1452944221294	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1452944221294	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1452944221295	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1452944221368	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1452944221368	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1452944221369	addons.xpi-utils	DEBUG	Successfully read XPI database
+1452944221409	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1452944221409	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1452944221410	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1452944230364	addons.manager	DEBUG	shutdown
+1452944230364	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1452944230364	addons.xpi	DEBUG	shutdown
+1452944230365	addons.xpi-utils	DEBUG	shutdown
+1452944230365	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1452944230365	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1452944230366	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1452944230366	addons.manager	DEBUG	Calling shutdown blocker for <unnamed-provider>
+1452944230367	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1452944230369	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1452944230372	addons.manager	DEBUG	Async provider shutdown done
+
+Build info: version: '2.45.0', revision: '32a636c', time: '2015-03-05 22:01:35'
+System info: host: 'ictd', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-31-generic', java.version: '1.8.0_45'
+Driver info: driver.version: FirefoxDriver[Ljava.lang.StackTraceElement;@e056f20
+16/01/2016 17:09:374Execution Stopped Failed to connect to binary FirefoxBinary(/usr/bin/firefox) on port 7055; process output follows: 
+e,"v":"2.45.0","st":1452944341000,"mt":1452944341000}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"/usr/lib/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"43.0","st":1451832252000,"mt":1449741438000}},"app-system-share":{"ubufox@ubuntu.com":{"d":"/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/ubufox@ubuntu.com.xpi","e":false,"v":"3.2","st":1442597167000}}}
+1452944348424	addons.xpi	DEBUG	Existing add-on fxdriver@googlecode.com in app-profile
+1452944348425	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1452944348425	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1452944348425	addons.xpi	DEBUG	Existing add-on ubufox@ubuntu.com in app-system-share
+1452944348426	addons.xpi	DEBUG	getInstallState changed: false, state: {"app-profile":{"fxdriver@googlecode.com":{"d":"/tmp/anonymous3470374860742871010webdriver-profile/extensions/fxdriver@googlecode.com","e":false,"v":"2.45.0","st":1452944341000,"mt":1452944341000}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"/usr/lib/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"43.0","st":1451832252000,"mt":1449741438000}},"app-system-share":{"ubufox@ubuntu.com":{"d":"/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/ubufox@ubuntu.com.xpi","e":false,"v":"3.2","st":1442597167000}}}
+1452944348426	addons.xpi	DEBUG	No changes found
+1452944348431	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1452944348431	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1452944348432	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1452944348432	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1452944348432	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1452944348432	addons.manager	DEBUG	Starting provider: GMPProvider
+1452944348435	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1452944348435	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1452944348435	addons.manager	DEBUG	Starting provider: PluginProvider
+1452944348435	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1452944348435	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1452944348435	addons.manager	DEBUG	Completed startup sequence
+1452944348461	addons.xpi-utils	DEBUG	Starting async load of XPI database /tmp/anonymous3470374860742871010webdriver-profile/extensions.json
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1452944348526	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1452944348526	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1452944348526	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1452944348579	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1452944348580	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1452944348580	addons.xpi-utils	DEBUG	Successfully read XPI database
+1452944348618	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1452944348618	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1452944348618	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1452944353291	addons.manager	DEBUG	shutdown
+1452944353291	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1452944353291	addons.xpi	DEBUG	shutdown
+1452944353291	addons.xpi-utils	DEBUG	shutdown
+1452944353292	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1452944353292	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1452944353293	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1452944353293	addons.manager	DEBUG	Calling shutdown blocker for <unnamed-provider>
+1452944353294	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1452944353296	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1452944353299	addons.manager	DEBUG	Async provider shutdown done
+
+Build info: version: '2.45.0', revision: '32a636c', time: '2015-03-05 22:01:35'
+System info: host: 'ictd', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-31-generic', java.version: '1.8.0_45'
+Driver info: driver.version: FirefoxDriver[Ljava.lang.StackTraceElement;@e056f20
+16/01/2016 17:12:237 Error:::16/01/2016 17:12:237Process aborting Since Another Process is already running16/01/2016 17:23:483 Error:::16/01/2016 17:23:482Process aborting Since Another Process is already running16/01/2016 17:24:483Execution Stopped Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 6 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.49.0', revision: '365eeb4', time: '2016-01-13 18:33:29'
+System info: host: 'ictd', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-31-generic', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 9b524464-9fb9-4583-994c-6eeb5035c3a9
+*** Element info: {Using=tag name, value=a}[Ljava.lang.StackTraceElement;@51dcb805
+16/01/2016 17:31:866Execution Stopped Unable to locate element: {"method":"id","selector":"drpDwnYear"}
+Command duration or timeout: 37 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.49.0', revision: '365eeb4', time: '2016-01-13 18:33:29'
+System info: host: 'ictd', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-31-generic', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c071ded2-69ac-45ff-a88a-33581627b5e8
+*** Element info: {Using=id, value=drpDwnYear}[Ljava.lang.StackTraceElement;@6e509ffa
+16/01/2016 17:32:193Execution Stopped Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 5 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.49.0', revision: '365eeb4', time: '2016-01-13 18:33:29'
+System info: host: 'ictd', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-31-generic', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0d39e1fb-5eec-4155-8920-caf24d5462c3
+*** Element info: {Using=tag name, value=a}[Ljava.lang.StackTraceElement;@51dcb805
+16/01/2016 17:36:653 Error:::16/01/2016 17:36:651Error in parsing Date Unparseable date: ""[Ljava.lang.StackTraceElement;@33a1078816/01/2016 17:36:967Execution Stopped Unable to locate element: {"method":"id","selector":"drpDwnYear"}
+Command duration or timeout: 35 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.49.0', revision: '365eeb4', time: '2016-01-13 18:33:29'
+System info: host: 'ictd', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-31-generic', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0b4725db-3ff7-4f7c-b934-e8886b2b2e69
+*** Element info: {Using=id, value=drpDwnYear}[Ljava.lang.StackTraceElement;@56c698e3
+16/01/2016 17:37:927 Error:::16/01/2016 17:37:924Error in parsing Date Unparseable date: ""[Ljava.lang.StackTraceElement;@33a1078816/01/2016 17:37:727Execution Stopped null[Ljava.lang.StackTraceElement;@4e70a728
+16/01/2016 17:37:374 Error:::16/01/2016 17:37:373Error in parsing Date Unparseable date: ""[Ljava.lang.StackTraceElement;@33a1078816/01/2016 17:37:890Execution Stopped null[Ljava.lang.StackTraceElement;@b7838a9
+16/01/2016 17:45:364Execution Stopped Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 21 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.49.0', revision: '365eeb4', time: '2016-01-13 18:33:29'
+System info: host: 'ictd', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-31-generic', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: be8ddd87-efbe-45b8-96e1-bce329b80749
+*** Element info: {Using=tag name, value=a}[Ljava.lang.StackTraceElement;@2ece4966
+16/01/2016 17:49:662 Error:::16/01/2016 17:49:659Error in parsing Date Unparseable date: ""[Ljava.lang.StackTraceElement;@33a1078816/01/2016 17:49:958Execution Stopped null[Ljava.lang.StackTraceElement;@4e70a728
+16/01/2016 17:51:597Execution Stopped Error communicating with the remote browser. It may have died.
+Build info: version: '2.49.0', revision: '365eeb4', time: '2016-01-13 18:33:29'
+System info: host: 'ictd', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-31-generic', java.version: '1.8.0_45'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 80fea0c6-fe08-4077-9a91-75d7c3ee909c[Ljava.lang.StackTraceElement;@784b990c
+16/01/2016 17:51:365 Error:::16/01/2016 17:51:364Error in parsing Date Unparseable date: ""[Ljava.lang.StackTraceElement;@448139f016/01/2016 17:51:541Execution Stopped null[Ljava.lang.StackTraceElement;@3c0be339
+16/01/2016 17:52:937Execution Stopped Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 5 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.49.0', revision: '365eeb4', time: '2016-01-13 18:33:29'
+System info: host: 'ictd', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-31-generic', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: baae503c-8249-4072-b0f9-0dd43d70b975
+*** Element info: {Using=tag name, value=a}[Ljava.lang.StackTraceElement;@51dcb805
+16/01/2016 17:55:273Execution Stopped Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 5 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.49.0', revision: '365eeb4', time: '2016-01-13 18:33:29'
+System info: host: 'ictd', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-31-generic', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b8cfb371-eebc-40c1-86f2-4d175149b9a2
+*** Element info: {Using=tag name, value=a}[Ljava.lang.StackTraceElement;@7894f09b
+16/01/2016 17:56:71Execution Stopped Window not found. The browser window may have been closed.
+Command duration or timeout: 96 milliseconds
+Build info: version: '2.49.0', revision: '365eeb4', time: '2016-01-13 18:33:29'
+System info: host: 'ictd', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-31-generic', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 1ec35a78-fae3-4181-9326-31e385e6e1d7[Ljava.lang.StackTraceElement;@1d8bd0de
+16/01/2016 17:57:95Execution Stopped Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 9 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.49.0', revision: '365eeb4', time: '2016-01-13 18:33:29'
+System info: host: 'ictd', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-31-generic', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a881c5d1-e007-4ab0-ab78-7ad17b4f259c
+*** Element info: {Using=tag name, value=a}[Ljava.lang.StackTraceElement;@47605f2f
+16/01/2016 18:20:754Execution Stopped Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 52 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.49.0', revision: '365eeb4', time: '2016-01-13 18:33:29'
+System info: host: 'ictd', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-31-generic', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 4bdc018d-4bd1-438d-88af-14940bb7bb12
+*** Element info: {Using=tag name, value=a}[Ljava.lang.StackTraceElement;@2ece4966
+16/01/2016 18:25:799 Error:::16/01/2016 18:25:799Process aborting Since Another Process is already running16/01/2016 18:26:445Execution Stopped Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 4 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.49.0', revision: '365eeb4', time: '2016-01-13 18:33:29'
+System info: host: 'ictd', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-31-generic', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 60b95150-25a0-4ec2-8ae4-4a55bd30f0a4[Ljava.lang.StackTraceElement;@693fe6c9
+16/01/2016 18:33:442 Error:::16/01/2016 18:33:440Error in parsing Date Unparseable date: ""[Ljava.lang.StackTraceElement;@448139f016/01/2016 18:33:540Execution Stopped null[Ljava.lang.StackTraceElement;@3c0be339
+16/01/2016 18:33:608Execution Stopped Unable to locate element: {"method":"tag name","selector":"a"}
+Command duration or timeout: 5 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.49.0', revision: '365eeb4', time: '2016-01-13 18:33:29'
+System info: host: 'ictd', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-31-generic', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0f2d7a12-9855-4fe1-a836-1cb266ce1b2d
+*** Element info: {Using=tag name, value=a}[Ljava.lang.StackTraceElement;@740773a3
+16/01/2016 18:34:502 Error:::16/01/2016 18:34:502Error in parsing Date Unparseable date: ""[Ljava.lang.StackTraceElement;@448139f016/01/2016 18:34:43Execution Stopped null[Ljava.lang.StackTraceElement;@3c0be339
+16/01/2016 18:35:638Execution Stopped Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 4 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.49.0', revision: '365eeb4', time: '2016-01-13 18:33:29'
+System info: host: 'ictd', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-31-generic', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 81423e29-2ee3-4b6c-87a1-040acc851b39[Ljava.lang.StackTraceElement;@693fe6c9
+16/01/2016 18:35:133Execution Stopped Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 7 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.49.0', revision: '365eeb4', time: '2016-01-13 18:33:29'
+System info: host: 'ictd', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-31-generic', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 81aa0973-abd1-456d-9d83-7919a322960d[Ljava.lang.StackTraceElement;@693fe6c9
+16/01/2016 18:37:388Execution Stopped Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 5 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.49.0', revision: '365eeb4', time: '2016-01-13 18:33:29'
+System info: host: 'ictd', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-31-generic', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a5e1e3de-f9a3-49a6-bcfd-3f1b9052ba39[Ljava.lang.StackTraceElement;@693fe6c9
+16/01/2016 18:39:687Execution Stopped Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 4 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.49.0', revision: '365eeb4', time: '2016-01-13 18:33:29'
+System info: host: 'ictd', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-31-generic', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b163cee4-4d0d-4481-b8cd-185dbc9d3b46[Ljava.lang.StackTraceElement;@693fe6c9
+16/01/2016 18:40:95Execution Stopped Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 4 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.49.0', revision: '365eeb4', time: '2016-01-13 18:33:29'
+System info: host: 'ictd', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-31-generic', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5259a94f-d29b-42ad-b39e-75dbe39803b0[Ljava.lang.StackTraceElement;@31e5415e
+16/01/2016 18:51:324 Error:::16/01/2016 18:51:323Error in parsing Date Unparseable date: ""[Ljava.lang.StackTraceElement;@448139f016/01/2016 18:51:345Execution Stopped null[Ljava.lang.StackTraceElement;@3c0be339
+16/01/2016 18:52:226Execution Stopped Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 5 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.49.0', revision: '365eeb4', time: '2016-01-13 18:33:29'
+System info: host: 'ictd', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-31-generic', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d498f2cf-3a0d-410f-85ad-cbe849a1accb
+*** Element info: {Using=tag name, value=a}[Ljava.lang.StackTraceElement;@51dcb805
+16/01/2016 18:53:244Execution Stopped Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 5 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.49.0', revision: '365eeb4', time: '2016-01-13 18:33:29'
+System info: host: 'ictd', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-31-generic', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 88f2c4fd-9b91-4110-87c0-2ef3da5119fc
+*** Element info: {Using=tag name, value=a}[Ljava.lang.StackTraceElement;@51dcb805
+16/01/2016 19:05:491 Error:::16/01/2016 19:05:490Error in parsing Date Unparseable date: ""[Ljava.lang.StackTraceElement;@448139f016/01/2016 19:05:922Execution Stopped null[Ljava.lang.StackTraceElement;@3c0be339
+16/01/2016 19:07:877Execution Stopped Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 5 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.49.0', revision: '365eeb4', time: '2016-01-13 18:33:29'
+System info: host: 'ictd', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-31-generic', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ed198b84-a3bb-4993-b3a1-5bd2ff2b9072
+*** Element info: {Using=tag name, value=a}[Ljava.lang.StackTraceElement;@51dcb805
+16/01/2016 19:09:319 Error:::16/01/2016 19:09:318Error in parsing Date Unparseable date: ""[Ljava.lang.StackTraceElement;@3d075dc016/01/2016 19:10:488 Error:::16/01/2016 19:10:487Process aborting Since Another Process is already running16/01/2016 19:11:608Execution Stopped Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 6 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.49.0', revision: '365eeb4', time: '2016-01-13 18:37:00'
+System info: host: 'ictd', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-31-generic', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c7b9aca7-9988-4c2a-be8c-40e860a6663c
+*** Element info: {Using=tag name, value=a}[Ljava.lang.StackTraceElement;@a2431d0
+16/01/2016 19:14:543 Error:::16/01/2016 19:14:543Process aborting Since Another Process is already running16/01/2016 19:14:830Execution Stopped Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 5 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.49.0', revision: '365eeb4', time: '2016-01-13 18:37:00'
+System info: host: 'ictd', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-31-generic', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d6a2d2d5-12f9-4696-82a4-dcf0a5a86746
+*** Element info: {Using=tag name, value=a}[Ljava.lang.StackTraceElement;@a2431d0
+16/01/2016 19:19:320 Error:::16/01/2016 19:19:319Error in parsing Date Unparseable date: ""[Ljava.lang.StackTraceElement;@6d31133416/01/2016 19:19:686Execution Stopped null[Ljava.lang.StackTraceElement;@a1cdc6d
+16/01/2016 19:20:716Execution Stopped Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 6 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.49.0', revision: '365eeb4', time: '2016-01-13 18:37:00'
+System info: host: 'ictd', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-31-generic', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 09f40876-6225-4b5b-8afa-d8288e96a756[Ljava.lang.StackTraceElement;@2accdbb5
