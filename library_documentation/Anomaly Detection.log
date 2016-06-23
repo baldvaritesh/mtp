@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.1.3)  17 JUN 2016 17:16
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.1.3)  23 JUN 2016 12:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -385,7 +385,19 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Anomaly Detection.toc
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (3.22298pt too wide) in paragraph at lines 29--30
+\OT1/cmr/m/n/10 used to per-form anal-y-sis and study-ing var-i-ous re-sults is
+ ``li-brary/fullAnalysis.py''.
+ []
+
+
+Overfull \hbox (13.44524pt too wide) in paragraph at lines 29--30
+\OT1/cmr/m/n/10 To study lo-cal and na-tional anoma-lies file used is ``li-brar
+y/fullAnalysisUpdated.py''.
+ []
+
+[1] (./Anomaly Detection.toc
 Overfull \hbox (53.85083pt too wide) in paragraph at lines 7--7
  [][] []\OT1/cmr/m/n/10 WindowCorrelationWithConstantLag(arr1, arr2, win-dow[]s
 ize,maxlag, 
@@ -455,58 +467,58 @@ Overfull \hbox (6.09789pt too wide) in paragraph at lines 28--28
 
  (./Chapter_1.tex
 Chapter 1.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 37.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 39.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 37.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 39.
  [3
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 50--52
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--67
+Underfull \hbox (badness 10000) in paragraph at lines 60--69
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 118--121
+Underfull \hbox (badness 10000) in paragraph at lines 120--123
 
  []
 
 
-Overfull \hbox (11.23064pt too wide) in paragraph at lines 126--126
+Overfull \hbox (11.23064pt too wide) in paragraph at lines 128--128
 []\OT1/cmr/bx/n/12 WindowCorrelationWithConstantLag(arr1, arr2, win-
  []
 
 
-Overfull \hbox (35.16396pt too wide) in paragraph at lines 169--169
+Overfull \hbox (35.16396pt too wide) in paragraph at lines 171--171
 []\OT1/cmr/bx/n/12 anomaliesFromWindowCorrelationWithConstantlag(arr1,
  []
 
 
-Overfull \hbox (54.81726pt too wide) in paragraph at lines 169--169
+Overfull \hbox (54.81726pt too wide) in paragraph at lines 171--171
 \OT1/cmr/bx/n/12 arr2, win-dow[]size=15,maxlag=15, pos-i-tive[]correlation=True
 ,
  []
 
 [5])
-Underfull \hbox (badness 10000) in paragraph at lines 226--29
+Underfull \hbox (badness 10000) in paragraph at lines 228--36
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--29
+Underfull \hbox (badness 10000) in paragraph at lines 228--36
 
  []
 
 
-Overfull \hbox (11.69522pt too wide) in paragraph at lines 226--29
+Overfull \hbox (11.69522pt too wide) in paragraph at lines 228--36
 \OT1/cmr/m/n/10 Function ``anoma-lies-FromWin-dow-Cor-re-la-tion-With-Con-stant
 -lag`` is the main driver.
  []
@@ -517,12 +529,12 @@ Overfull \hbox (11.69522pt too wide) in paragraph at lines 226--29
  (./Chapter_2.tex
 Chapter 2.
 
-Overfull \hbox (43.857pt too wide) in paragraph at lines 32--32
+Overfull \hbox (43.857pt too wide) in paragraph at lines 34--34
 []\OT1/cmr/bx/n/12 slopeBasedDetection(series1,smoothed1,series2,smoothed2, 
  []
 
 
-Overfull \hbox (95.93645pt too wide) in paragraph at lines 32--32
+Overfull \hbox (95.93645pt too wide) in paragraph at lines 34--34
 \OT1/cmr/bx/n/12 next[]val[]to[]consider, de-fault[]threshold, thresh-old, what
 []to[]consider) 
  []
@@ -532,324 +544,353 @@ Overfull \hbox (95.93645pt too wide) in paragraph at lines 32--32
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 53--55
+Underfull \hbox (badness 10000) in paragraph at lines 55--57
 
  []
 
 
-Overfull \hbox (70.10727pt too wide) in paragraph at lines 61--61
+Overfull \hbox (70.10727pt too wide) in paragraph at lines 63--63
 []\OT1/cmr/bx/n/12 anomalyDatesSlopeBaseddetetion(slopeBasedResult,any[]series)
  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--66
+Underfull \hbox (badness 10000) in paragraph at lines 65--68
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--71
+Underfull \hbox (badness 10000) in paragraph at lines 69--73
 
  []
 
-
-Overfull \hbox (108.24118pt too wide) in paragraph at lines 87--87
+[9]
+Overfull \hbox (108.24118pt too wide) in paragraph at lines 89--89
 []\OT1/cmr/bx/n/12 slopeBased(series1,smoothed1,series2,smoothed2,next[]val[]to
 []consider,
  []
 
-[9])
-Overfull \hbox (48.96747pt too wide) in paragraph at lines 115--30
+)
+Overfull \hbox (48.96747pt too wide) in paragraph at lines 117--37
 \OT1/cmr/m/n/10 anoma-ly-DatesS-lope-Based-de-te-tion is called which pro-vides
  (start[]date,end[]date,slope[]value)
  []
 
-[10]
+[10] [11]
 \openout2 = `Chapter_3.aux'.
 
  (./Chapter_3.tex
 Chapter 3.
-[11
+[12
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 74--82
+Underfull \hbox (badness 10000) in paragraph at lines 76--84
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--82
+Underfull \hbox (badness 10000) in paragraph at lines 76--84
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--82
+Underfull \hbox (badness 10000) in paragraph at lines 76--84
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--82
+Underfull \hbox (badness 10000) in paragraph at lines 76--84
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--94
+Underfull \hbox (badness 10000) in paragraph at lines 85--96
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--94
+Underfull \hbox (badness 10000) in paragraph at lines 85--96
 
  []
 
 
-Overfull \hbox (26.87538pt too wide) in paragraph at lines 97--97
+Overfull \hbox (26.87538pt too wide) in paragraph at lines 99--99
 []\OT1/cmr/bx/n/12 anomalies[]from[]linear[]regression(result[]of[]lr, any[]ser
 ies) 
  []
 
-[12]
-Overfull \hbox (15.79759pt too wide) in paragraph at lines 112--116
+[13]
+Overfull \hbox (15.79759pt too wide) in paragraph at lines 114--118
 []\OT1/cmr/m/n/10 result[]of[]lr \OT1/cmr/m/it/10 (list) \OT1/cmr/m/n/10 : This
  is list of anoma-lies re-ported by "lin-ear[]regression"
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--123
+Underfull \hbox (badness 10000) in paragraph at lines 123--125
 
  []
 
 
-Overfull \hbox (67.97311pt too wide) in paragraph at lines 124--126
+Overfull \hbox (67.97311pt too wide) in paragraph at lines 126--128
 []\OT1/cmr/m/n/10 (date,x[]value,y[]value,predicted[]y[]value, dif-fer-ence[]be
 tween[]predicted[]and[]actual[]y[]value) 
  []
 
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 162--164
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 164--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--169
+Underfull \hbox (badness 10000) in paragraph at lines 167--171
 
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 174--31
+Underfull \hbox (badness 10000) in paragraph at lines 176--38
 
  []
 
-[14]
+[15]
 \openout2 = `Chapter_4.aux'.
 
  (./Chapter_4.tex
 Chapter 4.
 
-Overfull \hbox (0.65277pt too wide) in paragraph at lines 36--36
+Overfull \hbox (115.69785pt too wide) in paragraph at lines 3--4
+\OT1/cmr/m/n/10 Refer file ``li-brary/graphBasedAnomaly.R'' for R script. Re-fe
+r file ``li-brary/callingGraphBasedAnomaly.py''
+ []
+
+
+Overfull \hbox (0.65277pt too wide) in paragraph at lines 38--38
 []\OT1/cmr/bx/n/12 graphBasedAnomalyCall(dependentVar, num-berOf-
  []
 
-[15
+[16
 
 
 
 ]
-Overfull \hbox (2.86394pt too wide) in paragraph at lines 68--68
+Overfull \hbox (2.86394pt too wide) in paragraph at lines 70--70
 []\OT1/cmr/bx/n/12 generateCSVsForGraphBasedAnomaly(lists, dateIn-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--98
+Underfull \hbox (badness 10000) in paragraph at lines 86--100
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--98
+Underfull \hbox (badness 10000) in paragraph at lines 86--100
 
  []
 
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 99--111
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 99--111
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 101--113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--131
+Underfull \hbox (badness 10000) in paragraph at lines 101--113
 
  []
 
-[17])
-Underfull \hbox (badness 10000) in paragraph at lines 201--32
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--133
 
  []
 
-[18]
+[18])
+Underfull \hbox (badness 10000) in paragraph at lines 203--39
+
+ []
+
+[19]
 \openout2 = `Chapter_5.aux'.
 
  (./Chapter_5.tex
 Chapter 5.
+[20
 
-Overfull \hbox (35.84865pt too wide) in paragraph at lines 36--36
+
+
+]
+Overfull \hbox (35.84865pt too wide) in paragraph at lines 38--38
 []\OT1/cmr/bx/n/12 MultivariateAnomaly(fileName,hd, param-Count,fileStart) 
  []
 
-[19
-
-
-
-])
-Underfull \hbox (badness 10000) in paragraph at lines 104--33
+[21])
+Underfull \hbox (badness 10000) in paragraph at lines 106--40
 
  []
 
-[20] [21]
+[22]
 \openout2 = `Chapter_6.aux'.
 
  (./Chapter_6.tex
 Chapter 6.
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--57
+Underfull \hbox (badness 10000) in paragraph at lines 56--59
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--67
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--67
-
- []
-
-[22
+[23
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
+Underfull \hbox (badness 10000) in paragraph at lines 60--69
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--100
+Underfull \hbox (badness 10000) in paragraph at lines 60--69
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--116
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--116
-
- []
-
-[23]
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
+Underfull \hbox (badness 10000) in paragraph at lines 105--118
 
  []
 
 
-Overfull \hbox (1.1031pt too wide) in paragraph at lines 171--172
+Underfull \hbox (badness 10000) in paragraph at lines 105--118
+
+ []
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
+
+ []
+
+
+Overfull \hbox (1.1031pt too wide) in paragraph at lines 173--174
 []\OT1/cmr/m/n/10 alpha \OT1/cmr/m/it/10 (float) \OT1/cmr/m/n/10 : smoothen-ing
  fac-tor of ex-po-nen-tial av-er-age smooth-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
 
  []
 
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
 
  []
 
 
-Overfull \hbox (4.7672pt too wide) in paragraph at lines 254--258
+Overfull \hbox (0.62744pt too wide) in paragraph at lines 242--247
+[]\OT1/cmr/bx/n/10 intersection(numOfResults, list1, re-sultOf1, list2, re-sult
+Of2, list3
+ []
+
+
+Overfull \hbox (34.43507pt too wide) in paragraph at lines 242--247
+\OT1/cmr/bx/n/10 = [], re-sultOf3="linear[]regression", list4=[], re-sultOf4="g
+raph[]based",
+ []
+
+
+Overfull \hbox (62.80853pt too wide) in paragraph at lines 242--247
+\OT1/cmr/bx/n/10 list5=[], re-sultOf5="spike[]detection" , list6=[], re-sultOf6
+="multiple[]arima")
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 242--247
+
+ []
+
+
+Overfull \hbox (4.7672pt too wide) in paragraph at lines 256--260
 \OT1/cmr/m/n/10 (slope[]based, lin-ear[]regression, graph[]based, spike[]detect
 ion, mul-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
 
  []
 
 
-Overfull \hbox (3.92833pt too wide) in paragraph at lines 281--284
+Overfull \hbox (3.92833pt too wide) in paragraph at lines 283--286
 \OT1/cmr/m/n/10 (date, cor-re-la-tion value, slope[]based value, lin-ear[]regre
 ssion value,
- []
-
-[25]
-Overfull \hbox (3.92833pt too wide) in paragraph at lines 284--287
-\OT1/cmr/m/n/10 (date, cor-re-la-tion value, slope[]based value, lin-ear[]regre
-ssion value,
- []
-
-
-Overfull \hbox (3.92833pt too wide) in paragraph at lines 308--311
-\OT1/cmr/m/n/10 (date, cor-re-la-tion value, slope[]based value, lin-ear[]regre
-ssion value,
- []
-
-
-Overfull \hbox (3.92833pt too wide) in paragraph at lines 311--314
-\OT1/cmr/m/n/10 (date, cor-re-la-tion value, slope[]based value, lin-ear[]regre
-ssion value,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 328--329
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 331--339
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 359--360
-
  []
 
 [26]
-Underfull \hbox (badness 10000) in paragraph at lines 362--370
+Overfull \hbox (3.92833pt too wide) in paragraph at lines 286--289
+\OT1/cmr/m/n/10 (date, cor-re-la-tion value, slope[]based value, lin-ear[]regre
+ssion value,
+ []
+
+
+Overfull \hbox (3.92833pt too wide) in paragraph at lines 310--313
+\OT1/cmr/m/n/10 (date, cor-re-la-tion value, slope[]based value, lin-ear[]regre
+ssion value,
+ []
+
+
+Overfull \hbox (3.92833pt too wide) in paragraph at lines 313--316
+\OT1/cmr/m/n/10 (date, cor-re-la-tion value, slope[]based value, lin-ear[]regre
+ssion value,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 330--331
 
  []
 
-) [27] (./Anomaly Detection.bbl) [28
+
+Underfull \hbox (badness 10000) in paragraph at lines 333--341
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--362
+
+ []
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 364--372
+
+ []
+
+) [28] (./Anomaly Detection.bbl) [29
 
 
 ] (./Anomaly Detection.aux (./Chapter_1.aux) (./Chapter_2.aux) (./Chapter_3.aux
@@ -862,7 +903,7 @@ Here is how much of TeX's memory you used:
  5110 multiletter control sequences out of 15000+600000
  10749 words of font info for 39 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 34i,6n,22p,348b,311s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,6n,22p,603b,315s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
 x12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pf
@@ -874,10 +915,10 @@ dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmtt10.pfb>
-Output written on "Anomaly Detection.pdf" (29 pages, 191084 bytes).
+Output written on "Anomaly Detection.pdf" (31 pages, 195783 bytes).
 PDF statistics:
- 141 PDF objects out of 1000 (max. 8388607)
- 98 compressed objects within 1 object stream
+ 149 PDF objects out of 1000 (max. 8388607)
+ 103 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

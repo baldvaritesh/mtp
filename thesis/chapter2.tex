@@ -1,0 +1,87 @@
+\chapter{Literature Survey}
+
+%Replace \lipsum with text.
+% You may have as many sections as you please. This is just for reference.
+
+\section{What is Anomaly Detection?}
+
+According to Wikipedia, anomaly detection (or outliers detection) is the identification of items, events or observations which do not conform to an expected pattern or other items in a dataset.\\
+\\
+Here, our major focus is on detecting anomalies in the time series data. Time series usually considers data about price of some commodity, production, sell, etc. Usually, these time series follow some normal pattern. Some time series may be independent or behaviour of some may depend on other time series. It may also consist of seasonality and trend along with some noise. So, considering all these factors our aim will be to detect some points on time line during which these time series does not follow a normal pattern.\\
+\\
+Reasons for presence of anomaly may be different depending upon the type of time series. We have considered time series of onion data as a use case. In case of onion presence of anomalies could be because of unseasonal rainfall, hoarding, price manipulation by traders' nexus, effect of import/export of onions, variation in production, etc. Being a seasonal crop, some part of onions are stored during harvest, so that demand can be met in lean season. But some traders hoard huge stocks for the purpose of profiteering. According to Wikipedia, in economics, hoarding is the practice of obtaining and holding scarce resources, possibly so that they can be sold later to customers for more profit. So during this time also, we are able to see anomalies.
+
+
+\section{Onion Case}
+
+
+Onion is a staple ingredient for almost every Indian kitchen and hence its demand is almost constant throughout the year but not the supply. In order to supply onions throughout the year, they are stored during harvest and released into markets in lean seasons. Its importance can be well estimated by the fact that it is one among few essential commodities and often rise in its price has resulted into downfall of state and central government.
+
+One major tragedy in onion market occurred in end of year 2010. The prices of the onion increased so much that it was out of reach from poor people. There was a study conducted by the CCI (Competitive Commission of India) for this case and they created report on that \cite{CCI}. In this \cite{CCI}, they tried to find out the reasons behind this scenario. They came with the following things in their study:
+
+\begin{itemize}
+
+\item Large wholesalers/traders mainly operates in metropolitan city markets and large number of farmers dispose their bulk of produce in nearby markets because of absence of storage facility, immediate cash need for loans, family expenses, purchase of inputs of next season, etc.
+
+\item Concentration of large storage capacities with traders, Vertical Integration of various market functions by onion traders(one name, many roles), existence of established traders and barrier to new entry
+
+\item On December 23 of 2010, The Times of India published in an article that on Tuesday alone, wholesale traders in Delhi bought onion at about Rs.34 per kg while it was sold in retail at Rs. 80 per kg, the margin of Rs. 46 per kg or 135 \%.
+
+\item In the weeks of November and December, wholesale price remains high, so retailers do not get much profit, but even after that when wholesale price go down, retailers particularly in metro cities, show strong rigidity in holding price and earn margin from 60 to 110 \%. This clearly shows that along with traders, retailers also exploit the situation of crisis for their own benefits.
+
+\item If we take this forward, then government policies also had a great role in the December 2010 high price episode (export of 1.33 lakh tones onion in October 2010).
+
+\end{itemize}
+
+So if we consider its overall picture, then there was unseasonal rainfall in the month of September and October 2010, but after that also government policy regarding export of onion was unexplainable. The news article published in Times of India also questions why there is so much difference in the wholesale and retail price of onions. Study also suggests that all the traders operating in the market have experience of many years (20 years on an average) and this is sort of family business for them. Due to limited entries, there is also barrier for new traders in entering to the market. So no new person enters and because of existing traders monopoly, they operate in the market together by forming the nexus. So many times they can alter the prices in many regions so that farmer has to pay money they decide. Traders have monopoly in onion markets and due that prices do not follow normal behavior of demand-supply and goes out of the way.
+
+
+
+\section{ Other Cases}
+
+\subsection{Sugarcane Case}
+
+This \cite{sugarcane} study on sugarcane shows the connections between Politicians and Sugar Mills in Maharashtra and explains how such connection may benefit to firms and politicians. Sugar mills are cooperatives and regions are formed according to mills present. Each sugarcane farmer has to sell his produce to the mill present in his region, he can not sell it to some other mill. Each mill pays its farmers a single price per metric tonne of cane every year, based on weight (not on the quality).
+
+This study investigates how price of the sugarcane, paid to farmers, changes in the election year. Usually, chairman of the sugar mills are politicians who stands in election. They need funding for elections, so here author explains how sugarcane mills and election funding may be related. And if some chair person wins the election then what is effect on prices offered to farmers. Some findings are:
+
+\begin{itemize}
+
+\item Prices are lowered by about Rs. 20 a ton in politically controlled mills during election years
+
+\item The results were robust to including rainfall and mill capacity as controls, as well as including mill-specific outcomes such as the recovery rate - sugar produced per unit cane, a measure of productivity - as well as various other mill level shocks such as mill breakdowns and cane shortages
+
+\item Price fall may be due to mill closure, i.e. mill is not operating for profitably, but politicians has kept mill open as a way to gain votes. But analysis shows that mill closure is not affected by political control
+
+\item Paying farmers Rs. 20 per ton less for their cane amounts to a total of Rs. 6 million
+
+\item Mills whose chairmen won national elections pay Rs. 80 per ton more in the year after elections
+
+\item Author finds that when the party affiliated with the mill chairmen is in power in Maharashtra, the mill pays Rs. 23 more in cane price and also Chairmen who win national elections seem to be able to keep their mills open far more successfully than chairmen who lose
+
+\end{itemize}
+
+So here author has strong belief that all facts indicates that funding for election campaign comes from these sugarcane mills if mill is  politically controlled. Reason why farmers supports this may be that, with average probability 1/3rd of winning election, on an average farmer gets Rs. 27 on their principal of Rs. 20, so still in profit. The overall effect on farmer welfare is difficult to determine. On average, cane prices and recovery rates in politically connected mills are no different than those in non-politically connected mills, and the levels of public goods are no different either.
+
+So this example explains how time series may go out of their normal behavior though there is no supply-demand crisis or any other case.
+
+\subsection{Builder-Politician Case}
+
+This \cite{kapur2011quid} study shows in developing countries like India, where elections are costly and accountability mechanisms are poor, politicians often turn to private firms for illicit election finance. Land is one of the highly regularized sector in India which provides discretionary power in the hands of state (indirectly in the hands of politicians). It is easy for politicians to accumulate resources than to hide them. To hide these assets from scrutiny politicians often use real estates as medium because of its features which are absorptive capacity, liquid asset and Contract enforcement.
+As elections approach, however, builders are often compelled to provide politicians with money with which to contest elections; the mechanism can be a simple under-the-table transfer or an in-kind contribution. Although builders have to transfer funds back to politicians around elections, the transaction brings long-term benefits in terms of future goodwill. Based on this author have quoted following hypothesis:
+
+\begin{itemize}
+
+\item Cement consumption should exhibit a significant contraction during the month of the state election. Because builders are a leading source of election finance, one would expect activity in the sector to slow down during the month-long campaign period prior to Election Day.
+
+\item Contraction in cement consumption will be significant in national elections, though of a smaller magnitude than in state-level elections
+
+\item The magnitude of the contraction in cement consumption to be larger for dual elections than if only a state or national election is being held.
+
+\item cement consumption should exhibit a larger contraction in urban versus rural states.
+
+\item The contraction in cement consumption should be comparatively larger in more competitive elections
+
+\end{itemize}
+ 
+ The paper was able to bring the quid pro quo relation between builders and politicians quantitatively.

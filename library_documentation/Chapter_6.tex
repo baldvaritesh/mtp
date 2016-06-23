@@ -1,5 +1,7 @@
 \chapter{Utility}
 
+Refer file ``library/Utility.py''.
+
 \section{Introduction}
          
 Here, we explain some related funtions which are used by stated anomaly 
@@ -9,7 +11,7 @@ the results of the anomaly techniques.
 \subsection{Functions used by Anomaly detection techniques}
 
 \begin{itemize}
- \item convertListToFloat(li) \\
+ \item \textbf{convertListToFloat(li)} \\
 	Given list of elements, this function type casts all the elements to 
 float type.
 	
@@ -29,7 +31,7 @@ float type.
 	
 	
 	
- \item getColumnFromListOfTuples(lstTuples,i) \\
+ \item \textbf{getColumnFromListOfTuples(lstTuples,i)} \\
  
     This function returns i'th element of all tuples as a list.
     
@@ -49,7 +51,7 @@ index starting from zero
     \end{itemize}
  
  
- \item findAverageTimeSeries(timeSeriesCollection) \\
+ \item \textbf{findAverageTimeSeries(timeSeriesCollection)} \\
  
 	It takes 2D list of element, where each element of timeSeriesCollection 
 is one time series. It returns average of all time series. (first element of 
@@ -80,7 +82,7 @@ elements.
  
  
  
- \item writeToCSV(lstData,fileName) \\
+ \item \textbf{writeToCSV(lstData,fileName)} \\
  
  This writes the list of tuples into the file provided as input.
  \begin{itemize}
@@ -96,7 +98,7 @@ elements.
 	  
 	\end{itemize}
 
- \item concateLists(lstData) \\
+ \item \textbf{concateLists(lstData)} \\
  
   This function converts the list of lists into a single list of tuples. 
   
@@ -126,7 +128,7 @@ elements.
 	  
 	\end{itemize}
 	
- \item cleanArray(array) \\
+ \item \textbf{cleanArray(array)} \\
  
 	This function removes ``nan'' (Not a number values) from the list.
 	
@@ -144,7 +146,7 @@ elements.
 	\end{itemize}
  
  
- \item MADThreshold(array) \\
+ \item \textbf{MADThreshold(array)} \\
  
  This function is used to calculate threshold value using Median Absolute Deviation outlier detection method.
  
@@ -160,7 +162,7 @@ elements.
 	  
 	\end{itemize}
  
- \item smoothArray(array, alpha = 2.0/15.0) \\
+ \item \textbf{smoothArray(array, alpha = 2.0/15.0)} \\
  This function smooths input array by exponential moving average technique.
  
  \begin{itemize}
@@ -177,7 +179,7 @@ elements.
 	\end{itemize}
  
  
- \item csv2array(filePath) \\
+ \item \textbf{csv2array(filePath) }\\
  
   This function reads csv file into list
  
@@ -193,7 +195,7 @@ elements.
 	  
 	\end{itemize}
  
- \item getColumn(array, column\_number) \\
+ \item \textbf{getColumn(array, column\_number)} \\
  
    This function fetches a particular column from a list of tuples.
  
@@ -210,7 +212,7 @@ elements.
 	  
 	\end{itemize}
 	
- \item formatCSV2Array(z) \\
+ \item \textbf{formatCSV2Array(z)} \\
  
     This function returns the same list with changed datatypes of elements within it.
  
@@ -235,9 +237,9 @@ elements.
 \begin{itemize}
    
    
-   \item intersection(numOfResults, list1, resultOf1, list2, resultOf2, list3 = 
+   \item \textbf{intersection(numOfResults, list1, resultOf1, list2, resultOf2, list3 = 
 [], resultOf3="linear\_regression", list4=[], resultOf4="graph\_based", 
-list5=[], resultOf5="spike\_detection" , list6=[], resultOf6="multiple\_arima") 
+list5=[], resultOf5="spike\_detection" , list6=[], resultOf6="multiple\_arima") }
 \\
   This function is used to take intersection of results of multiple methods (2 
 or more), which are passed as list here. This function requires minimum of 5 
@@ -269,7 +271,7 @@ graph\_based value, spike\_detection value, multiple\_arima value)
    
    
    
-   \item intersectionOfFinalResults(list1, list2) \\
+   \item \textbf{intersectionOfFinalResults(list1, list2)} \\
   
   This function takes intersection of 2 lists (where each list is list of 
 tuple) and returns result. Note that these input lists are generated as a output 
@@ -297,7 +299,7 @@ graph\_based value, spike\_detection value, multiple\_arima value)
  
  
  
- \item unionOfFinalResults(list1, list2) \\
+ \item \textbf{unionOfFinalResults(list1, list2) }\\
  This function takes union of 2 lists (where each list is list of tuple) and 
 returns result. Note that these input lists are generated as a output of 
 ``intersection'' method.
@@ -325,7 +327,7 @@ graph\_based value, spike\_detection value, multiple\_arima value)
  
  
  
-  \item mergeDates(li) \\
+  \item \textbf{mergeDates(li)} \\
   
   
   This function merges overlapping time period. The list, which it takes as 
@@ -356,7 +358,7 @@ is of type \textit{float}.
   
   
   
- \item resultOfOneMethod(array) \\
+ \item \textbf{resultOfOneMethod(array)} \\
  
  
  This function just converts format of the result list. Usually, anomaly 
