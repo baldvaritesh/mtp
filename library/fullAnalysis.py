@@ -206,7 +206,15 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         (filteredResult_union_of_h3, union_result_of_H3_news_article, all_articles_union_result_of_H3) = fetchNewsForCenter(union_result_of_H3, i)
         (filteredResult_intersection, intersection_result_with_H3_news_article_result,all_articles_intersection_result_with_H3) = fetchNewsForCenter(intersection_result_with_H3, i)
         
-       
+        print "Not matched for Retail vs Retail Average"
+        notMatched = articlesNotMatched(intersection_result_with_H3_news_article_result,all_articles_intersection_result_with_H3)
+        print "Count: " + str(len(notMatched))
+        for row in notMatched:
+            print str(row[0]) + "," + str(row[3]) + "," + str(row[2])
+        print "\n\n\n\n"
+        
+        # sys.exit(0)
+        
         # Plot Graph for i'th center
         # plotGraphForHypothesis(c_list, avgRetailTimeSeries, slopeBased_result, filteredResult_slope_based, all_articles_graphBasedAnomaly)
         # plotGraphForHypothesis(c_list, avgRetailTimeSeries, linearRegression_result, filteredResult_linear_regression, all_articles_graphBasedAnomaly)
@@ -326,6 +334,12 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         (filteredResult_union_of_h3, union_result_of_H3_news_article, all_articles_union_result_of_H3) = fetchNewsForCenter(union_result_of_H3, i)
         (filteredResult_intersection, intersection_result_with_H3_news_article_result,all_articles_intersection_result_with_H3) = fetchNewsForCenter(intersection_result_with_H3, i)
         
+        print "Not matched for Retail vs Arrival"
+        notMatched = articlesNotMatched(intersection_result_with_H3_news_article_result,all_articles_intersection_result_with_H3)
+        print "Count: " + str(len(notMatched))
+        for row in notMatched:
+            print str(row[0]) + "," + str(row[3]) + "," + str(row[2])
+        print "\n\n\n\n"
         
         # Plot Graph for i'th center
         # plotGraphForHypothesisArrival(c_list, retailList[i], slopeBased_result, filteredResult_slope_based, all_articles_graphBasedAnomaly)
@@ -442,6 +456,12 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         (filteredResult_union_of_h3, union_result_of_H3_news_article, all_articles_union_result_of_H3) = fetchNewsForCenter(union_result_of_H3, i)
         (filteredResult_intersection, intersection_result_with_H3_news_article_result,all_articles_intersection_result_with_H3) = fetchNewsForCenter(intersection_result_with_H3, i)
         
+        print "Not matched for Retail vs Wholesale"
+        notMatched = articlesNotMatched(intersection_result_with_H3_news_article_result,all_articles_intersection_result_with_H3)
+        print "Count: " + str(len(notMatched))
+        for row in notMatched:
+            print str(row[0]) + "," + str(row[3]) + "," + str(row[2])
+        print "\n\n\n\n"
         
         # Plot Graph for i'th center
         # plotGraphForHypothesis(c_list, wholesaleList[i], slopeBased_result, filteredResult_slope_based, all_articles_graphBasedAnomaly)
@@ -559,6 +579,13 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         (filteredResult_union_of_h1, union_result_of_H1_news_article,all_articles_union_result_of_H1) = fetchNewsForCenter(union_result_of_H1, i)
         (filteredResult_union_of_h3, union_result_of_H3_news_article, all_articles_union_result_of_H3) = fetchNewsForCenter(union_result_of_H3, i)
         (filteredResult_intersection, intersection_result_with_H3_news_article_result,all_articles_intersection_result_with_H3) = fetchNewsForCenter(intersection_result_with_H3, i)
+        
+        print "Not matched for Wholesale vs Arrival"
+        notMatched = articlesNotMatched(intersection_result_with_H3_news_article_result,all_articles_intersection_result_with_H3)
+        print "Count: " + str(len(notMatched))
+        for row in notMatched:
+            print str(row[0]) + "," + str(row[3]) + "," + str(row[2])
+        print "\n\n\n\n"
         
         # Plot Graph for i'th center
         # plotGraphForHypothesisArrival(c_list, wholesaleList[i], slopeBased_result, filteredResult_slope_based, all_articles_graphBasedAnomaly)
@@ -988,6 +1015,23 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         # print "size:" + str(len(WvsA_anomalies_intersection[2*i+1]))
         
 # hypothesisForCenter(5,"testingCSV/MumbaiSILData.csv","testingCSV/DelhiSILData.csv", "testingCSV/AhmedabadSILData.csv","testingCSV/BengaluruSILData.csv","testingCSV/PatnaSILData.csv")
+
+
+def articlesNotMatched(matched, allArticles):
+    matchedSet = set()
+    for row in matched:
+        # print row[3]
+        matchedSet.add(row[3])
+    notMatched = []
+    uniqueDates = set()
+    for row in allArticles:
+        # print "Matching " + str(row[2])
+        if(row[2] not in matchedSet):
+            notMatched.append(row)
+            uniqueDates.add(row[0])
+    print "Unique Dates Not matched: " + str(len(uniqueDates))
+    return notMatched
+    pass
 
 hypothesisForCenter(2,"testingCSV/MumbaiSILData.csv","testingCSV/DelhiSILData.csv")
 

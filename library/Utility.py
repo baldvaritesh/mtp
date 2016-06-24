@@ -11,6 +11,135 @@ import math
 import psycopg2
 
 
+
+'''
+
+This function takes 3 arguments:
+
+resultsOfSystem: List of tupls/list of the format (date, ... ,...)
+centerNumber: Center Number
+intervalToConsider: News will be fetched from news articles for a particular date(given by system as anomaly) in interval [date-intervalToConsider, date+intervalToConsider]
+
+Following is assumed for center Numbers:
+
+0: Ahmedabad
+1: Bengaluru
+2: Mumbai
+3: Patna
+4: Delhi
+
+
+returns result of the following form....
+A tuple:
+
+	(resultList, allArticlesQueryResult)
+	
+Where:
+
+* resultList : This is of tuples with following fields:
+				(System_anomaly_date, news_article_date, news_source, source_url, difference_between_system_date_and_news_article_date ,reason, comment, days_compared_in_article)
+				1. System_anomaly_date: date reported by our system which is reported as anomolous date
+				2. news_article_date: date of news article correpsonding to above System_anomaly_date
+				3. news_source: souce of news (which media?)
+				4. source_url: link of the news article
+				5. difference_between_system_date_and_news_article_date: difference between dates of (news_article_date - System_anomaly_date)
+				6. reason: what reason is stated by article
+				7. comment: any comment on article if present
+				8. days_compared_in_article: Article has compared data between how many days to state that it is anomaly?
+				
+* allArticlesQueryResult: List of dates of all news articles for this center which is present in the database
+
+
+'''
+
+def fetchNewsForCenter(resultsOfSystem, centerNumber, intervalToConsider=5):
+	center = placeMapping(centerNumber)
+	
+	# Create connection to Database
+	conn = psycopg2.connect(database="news_articles", user="postgres", password="password", host="127.0.0.1", port="5432")
+	cur = conn.cursor()
+	
+	# Result dictionary
+	result = dict()
+	
+	# Let's see details for each date...
+	for row_resultsOfSystem in resultsOfSystem:
+		# date = row_resultsOfSystem[0].date()
+		date = row_resultsOfSystem[0].date()
+		
+		start_date = date - timedelta(days=intervalToConsider)
+		start_date = start_date.strftime('%Y/%m/%d')
+		end_date = date + timedelta(days=intervalToConsider)
+		end_date = end_date.strftime('%Y/%m/%d')
+		query = "select publish_date, name, source_url, article_hash_url, an.reason, an.comment, an.days  from articlemetadata amd, newssource ns, analysis an where amd.source_id = ns.id and publish_date >= '"+start_date+"' and publish_date<= '"+end_date+"' and article_hash_url = an.article_id and article_hash_url in (select distinct(article_id) from analysis where comment not ilike '%delete%' and reason not ilike '%prices dropped%' and (place iLike '"+center+"' or place iLike 'india') )"
+
+		cur.execute(query)
+		queryResult = cur.fetchall()
+		
+		resultOfThisDate = []
+		for row_queryResult in queryResult:		
+			# Find All keyword corresponding to that article using : article_hash_url
+			# query = "select keyword from alchemykeyword where article_id = '" + row_queryResult[3] + "'"
+			# keywordQueryResult = cur.fetchall()
+			# smallTuple = (row_queryResult[0], row_queryResult[1], row_queryResult[2], (row_queryResult[0] - date).days, keywordQueryResult)
+			smallTuple = (row_queryResult[0], row_queryResult[1], row_queryResult[2], (row_queryResult[0] - date).days , row_queryResult[4], row_queryResult[5], row_queryResult[6])
+			resultOfThisDate.append(smallTuple)
+		result[date] = resultOfThisDate
+		
+	# Fetch all dates of news articles corresponding to this center
+	query = "select distinct publish_date, article_hash_url, source_url, an.reason, an.comment, an.days  from articlemetadata, analysis an where  article_hash_url = an.article_id and article_hash_url in (select distinct(article_id) from analysis where  comment not ilike '%delete%' and reason not ilike '%prices dropped%' and publish_date <= '2015-07-06' and (place iLike '"+center+"' or place iLike 'india') ) order by publish_date"
+	
+	cur.execute(query)
+	allArticlesQueryResult = cur.fetchall()
+	
+	# Convert result to list from dictionary
+	resultList = []
+	for date in result:
+		temp_list = result[date]
+		for row_temp_list in temp_list:
+			(a,b,c,d,e,f,g) = row_temp_list
+			resultList.append((date,a,b,c,d,e,f,g))
+	# Sort by anomaly date
+	# resultList = sorted(resultList, key=lambda x: (x[0],x[1]))
+	resultList = sorted(sorted(resultList, key = lambda x : x[0]), key = lambda x : x[1], reverse = True) 
+	
+	
+	'''
+	# Previous logic: just basic sort
+	# Filter resultList for duplicates
+	filteredResult = []
+	newsSet = set()
+	for Tuple in resultList:
+		if(Tuple[0] in newsSet):
+			continue
+		else:
+			filteredResult.append(Tuple)
+			newsSet.add(Tuple[0])
+	'''
+	
+	# New logic for filteredResult, we will keep nearest article
+	filteredResult = []
+	newsSet = dict()
+	for Tuple in resultList:
+		if(Tuple[0] in newsSet):
+			existingTuple = newsSet[Tuple[0]]
+			currentDiff = Tuple[4]
+			existingDiff = existingTuple[4]
+			if(abs(currentDiff) < abs(existingDiff)):
+				newsSet[Tuple[0]] = Tuple
+			elif(abs(currentDiff) == abs(existingDiff) and currentDiff > existingDiff):
+				newsSet[Tuple[0]] = Tuple				
+		else:
+			newsSet[Tuple[0]] = Tuple
+		
+	for key in newsSet:
+		filteredResult.append(newsSet[key])
+	filteredResult = sorted(filteredResult, key = lambda x : x[0], reverse = False) 
+	
+	return(filteredResult, resultList, allArticlesQueryResult)
+
+
+
 '''
 
 This function takes 3 arguments:
@@ -168,132 +297,6 @@ def statsPrintHelperUnion(result1, result2, methodName, centerID):
     print "**********"
     pass
 
-'''
-
-This function takes 3 arguments:
-
-resultsOfSystem: List of tupls/list of the format (date, ... ,...)
-centerNumber: Center Number
-intervalToConsider: News will be fetched from news articles for a particular date(given by system as anomaly) in interval [date-intervalToConsider, date+intervalToConsider]
-
-Following is assumed for center Numbers:
-
-0: Ahmedabad
-1: Bengaluru
-2: Mumbai
-3: Patna
-4: Delhi
-
-
-returns result of the following form....
-A tuple:
-
-	(resultList, allArticlesQueryResult)
-	
-Where:
-
-* resultList : This is of tuples with following fields:
-				(System_anomaly_date, news_article_date, news_source, source_url, difference_between_system_date_and_news_article_date ,reason, comment, days_compared_in_article)
-				1. System_anomaly_date: date reported by our system which is reported as anomolous date
-				2. news_article_date: date of news article correpsonding to above System_anomaly_date
-				3. news_source: souce of news (which media?)
-				4. source_url: link of the news article
-				5. difference_between_system_date_and_news_article_date: difference between dates of (news_article_date - System_anomaly_date)
-				6. reason: what reason is stated by article
-				7. comment: any comment on article if present
-				8. days_compared_in_article: Article has compared data between how many days to state that it is anomaly?
-				
-* allArticlesQueryResult: List of dates of all news articles for this center which is present in the database
-
-
-'''
-
-def fetchNewsForCenter(resultsOfSystem, centerNumber, intervalToConsider=5):
-	center = placeMapping(centerNumber)
-	
-	# Create connection to Database
-	conn = psycopg2.connect(database="news_articles", user="postgres", password="password", host="127.0.0.1", port="5432")
-	cur = conn.cursor()
-	
-	# Result dictionary
-	result = dict()
-	
-	# Let's see details for each date...
-	for row_resultsOfSystem in resultsOfSystem:
-		# date = row_resultsOfSystem[0].date()
-		date = row_resultsOfSystem[0].date()
-		
-		start_date = date - timedelta(days=intervalToConsider)
-		start_date = start_date.strftime('%Y/%m/%d')
-		end_date = date + timedelta(days=intervalToConsider)
-		end_date = end_date.strftime('%Y/%m/%d')
-		query = "select publish_date, name, source_url, article_hash_url, an.reason, an.comment, an.days  from articlemetadata amd, newssource ns, analysis an where amd.source_id = ns.id and publish_date >= '"+start_date+"' and publish_date<= '"+end_date+"' and article_hash_url = an.article_id and article_hash_url in (select distinct(article_id) from analysis where comment not ilike '%delete%' and reason not ilike '%prices dropped%' and (place iLike '"+center+"' or place iLike 'india') )"
-
-		cur.execute(query)
-		queryResult = cur.fetchall()
-		
-		resultOfThisDate = []
-		for row_queryResult in queryResult:		
-			# Find All keyword corresponding to that article using : article_hash_url
-			# query = "select keyword from alchemykeyword where article_id = '" + row_queryResult[3] + "'"
-			# keywordQueryResult = cur.fetchall()
-			# smallTuple = (row_queryResult[0], row_queryResult[1], row_queryResult[2], (row_queryResult[0] - date).days, keywordQueryResult)
-			smallTuple = (row_queryResult[0], row_queryResult[1], row_queryResult[2], (row_queryResult[0] - date).days , row_queryResult[4], row_queryResult[5], row_queryResult[6])
-			resultOfThisDate.append(smallTuple)
-		result[date] = resultOfThisDate
-		
-	# Fetch all dates of news articles corresponding to this center
-	query = "select distinct publish_date,  an.reason, an.comment, an.days  from articlemetadata, analysis an where  article_hash_url = an.article_id and article_hash_url in (select distinct(article_id) from analysis where  comment not ilike '%delete%' and reason not ilike '%prices dropped%' and publish_date <= '2015-07-06' and (place iLike '"+center+"' or place iLike 'india') ) order by publish_date"
-	
-	cur.execute(query)
-	allArticlesQueryResult = cur.fetchall()
-	
-	# Convert result to list from dictionary
-	resultList = []
-	for date in result:
-		temp_list = result[date]
-		for row_temp_list in temp_list:
-			(a,b,c,d,e,f,g) = row_temp_list
-			resultList.append((date,a,b,c,d,e,f,g))
-	# Sort by anomaly date
-	# resultList = sorted(resultList, key=lambda x: (x[0],x[1]))
-	resultList = sorted(sorted(resultList, key = lambda x : x[0]), key = lambda x : x[1], reverse = True) 
-	
-	
-	'''
-	# Previous logic: just basic sort
-	# Filter resultList for duplicates
-	filteredResult = []
-	newsSet = set()
-	for Tuple in resultList:
-		if(Tuple[0] in newsSet):
-			continue
-		else:
-			filteredResult.append(Tuple)
-			newsSet.add(Tuple[0])
-	'''
-	
-	# New logic for filteredResult, we will keep nearest article
-	filteredResult = []
-	newsSet = dict()
-	for Tuple in resultList:
-		if(Tuple[0] in newsSet):
-			existingTuple = newsSet[Tuple[0]]
-			currentDiff = Tuple[4]
-			existingDiff = existingTuple[4]
-			if(abs(currentDiff) < abs(existingDiff)):
-				newsSet[Tuple[0]] = Tuple
-			elif(abs(currentDiff) == abs(existingDiff) and currentDiff > existingDiff):
-				newsSet[Tuple[0]] = Tuple				
-		else:
-			newsSet[Tuple[0]] = Tuple
-		
-	for key in newsSet:
-		filteredResult.append(newsSet[key])
-	filteredResult = sorted(filteredResult, key = lambda x : x[0], reverse = False) 
-	
-	return(filteredResult, resultList, allArticlesQueryResult)
-
 
 '''
 
@@ -387,7 +390,7 @@ def plotGraphForHypothesis(original,average,list1, list2, total_news_articles):
 	not_found_articles = list(not_found_articles)
 	not_found_articles.sort()
 	for row in not_found_articles:
-		ax.axvspan(row, row + timedelta(days=1), color='b', alpha=0.5, lw=0)
+		ax.axvspan(row, row + timedelta(days=1), color='lightgrey', alpha=0.5, lw=0)
 	plt.show()
 
 
@@ -429,7 +432,7 @@ def plotGraphForHypothesisArrival(original,average,list1, list2, total_news_arti
 	not_found_articles = list(not_found_articles)
 	not_found_articles.sort()
 	for row in not_found_articles:
-		ax.axvspan(row, row + timedelta(days=1), color='b', alpha=0.5, lw=0)
+		ax.axvspan(row, row + timedelta(days=1), color='lightgrey', alpha=0.5, lw=0)
 	plt.show()
 
 '''

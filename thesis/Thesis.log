@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.1.3)  17 JUN 2016 17:50
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.1.3)  23 JUN 2016 19:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -852,7 +852,7 @@ less on input line 64.
 \c@fact=\count183
 (./Thesis.aux (./titlepage.aux) (./certificate.aux) (./abstract.aux)
 (./acknowledgement.aux) (./chapter1.aux) (./chapter2.aux) (./chapter3.aux)
-(./chapter4.aux) (./chapter5.aux) (./chapter6.aux))
+(./chapter4.aux) (./chapter5.aux) (./chapter6.aux) (./chapter7.aux))
 \openout1 = `Thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 109.
@@ -933,7 +933,7 @@ our preamble.
 
 \openout2 = `titlepage.aux'.
 
-(./titlepage.tex <./Figures/iit_logo.pdf, id=332, 523.60315pt x 553.20177pt>
+(./titlepage.tex <./Figures/iit_logo.pdf, id=328, 523.60315pt x 553.20177pt>
 File: ./Figures/iit_logo.pdf Graphic file (type pdf)
 
 <use ./Figures/iit_logo.pdf>
@@ -1004,29 +1004,29 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 
 
 ] [5]
-Overfull \hbox (44.88908pt too wide) in paragraph at lines 59--59
+Overfull \hbox (44.88908pt too wide) in paragraph at lines 62--62
  [][] [][]\OT1/cmr/m/n/12 linear[]regression(x[]series, y[]series, param = 0, d
 e-fault[]threshold 
  []
 
 [6]
-Overfull \hbox (7.68617pt too wide) in paragraph at lines 66--66
+Overfull \hbox (7.68617pt too wide) in paragraph at lines 69--69
  [][] [][]\OT1/cmr/m/n/12 graphBasedAnomalyCall(dependentVar, num-berOf-Vals, 
  []
 
 
-Overfull \hbox (5.77371pt too wide) in paragraph at lines 67--67
+Overfull \hbox (5.77371pt too wide) in paragraph at lines 70--70
  [][] [][]\OT1/cmr/m/n/12 generateCSVsForGraphBasedAnomaly(lists, dateIn-dex, 
  []
 
 
-Overfull \hbox (2.464pt too wide) in paragraph at lines 69--69
+Overfull \hbox (2.464pt too wide) in paragraph at lines 72--72
  [][] [][]\OT1/cmr/m/n/12 graphBasedAnomalyMain(lists, de-pen-dent-Var, nu-mOf-
  
  []
 
 
-Overfull \hbox (5.1098pt too wide) in paragraph at lines 74--74
+Overfull \hbox (5.1098pt too wide) in paragraph at lines 77--77
  [][] [][]\OT1/cmr/m/n/12 MultivariateAnomaly(fileName,hd, param-Count,fileStar
 t)[] [][]  
  []
@@ -1145,7 +1145,7 @@ l.156 \include{chapter2}
 
  (./chapter3.tex
 Chapter 3.
-<./Figures/3_1.png, id=747, 836.12375pt x 596.2275pt>
+<./Figures/3_1.png, id=736, 836.12375pt x 596.2275pt>
 File: ./Figures/3_1.png Graphic file (type png)
  <use ./Figures/3_1.png>
 Package pdftex.def Info: ./Figures/3_1.png used on input line 10.
@@ -1189,7 +1189,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.10}) has
                    \relax 
 l.59 \item \textbf
                   {Government Policies:} When the production is low in the c...
-[10] <./Figures/3_2.png, id=768, 493.0922pt x 431.36156pt>
+[10] <./Figures/3_2.png, id=757, 493.0922pt x 431.36156pt>
 File: ./Figures/3_2.png Graphic file (type png)
 
 <use ./Figures/3_2.png>
@@ -1208,25 +1208,25 @@ l.84
 e.12}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.91 
-      [12 <./Figures/3_2.png>]
-<./Figures/2010_dec_delhi.png, id=785, 1219.55624pt x 1003.75pt>
+l.94 ... band in different parts of the country."}
+                                                   [12 <./Figures/3_2.png>]
+<./Figures/2010_dec_delhi.png, id=773, 1219.55624pt x 1003.75pt>
 File: ./Figures/2010_dec_delhi.png Graphic file (type png)
 
 <use ./Figures/2010_dec_delhi.png>
-Package pdftex.def Info: ./Figures/2010_dec_delhi.png used on input line 111.
+Package pdftex.def Info: ./Figures/2010_dec_delhi.png used on input line 108.
 (pdftex.def)             Requested size: 365.86969pt x 301.12732pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<./Figures/2010_dec_delhi_with_relative_diff.png, id=786, 1219.55624pt x 1003.7
+<./Figures/2010_dec_delhi_with_relative_diff.png, id=774, 1219.55624pt x 1003.7
 5pt>
 File: ./Figures/2010_dec_delhi_with_relative_diff.png Graphic file (type png)
  <use ./Figures/2010_dec_delhi_with_relative_diff.png>
 Package pdftex.def Info: ./Figures/2010_dec_delhi_with_relative_diff.png used o
-n input line 119.
+n input line 116.
 (pdftex.def)             Requested size: 365.86969pt x 301.12732pt.
 
 
@@ -1236,13 +1236,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.13}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.130 
+l.129 
        [13]
 Missing character: There is no ‚ in font cmti12!
 Missing character: There is no Ä in font cmti12!
 Missing character: There is no ú in font cmti12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
 
  []
 
@@ -1251,172 +1251,169 @@ Missing character: There is no ‚ in font cmti12!
 Missing character: There is no Ä in font cmti12!
 Missing character: There is no ù in font cmti12!
 
-<./Figures/2010_dec_maha.png, id=797, 1219.55624pt x 1003.75pt>
+<./Figures/2010_dec_maha.png, id=786, 1219.55624pt x 1003.75pt>
 File: ./Figures/2010_dec_maha.png Graphic file (type png)
 
 <use ./Figures/2010_dec_maha.png>
-Package pdftex.def Info: ./Figures/2010_dec_maha.png used on input line 151.
+Package pdftex.def Info: ./Figures/2010_dec_maha.png used on input line 148.
 (pdftex.def)             Requested size: 365.86969pt x 301.12732pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Figures/2010_dec_maha_relative.png, id=798, 1219.55624pt x 1003.75pt>
+<./Figures/2010_dec_maha_relative.png, id=787, 1219.55624pt x 1003.75pt>
 File: ./Figures/2010_dec_maha_relative.png Graphic file (type png)
 
 <use ./Figures/2010_dec_maha_relative.png>
 Package pdftex.def Info: ./Figures/2010_dec_maha_relative.png used on input lin
-e 159.
+e 156.
 (pdftex.def)             Requested size: 365.86969pt x 301.12732pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Figures/2010_dec_mumbai.png, id=799, 1219.55624pt x 1003.75pt>
+<./Figures/2010_dec_mumbai.png, id=788, 1219.55624pt x 1003.75pt>
 File: ./Figures/2010_dec_mumbai.png Graphic file (type png)
 
 <use ./Figures/2010_dec_mumbai.png>
-Package pdftex.def Info: ./Figures/2010_dec_mumbai.png used on input line 167.
+Package pdftex.def Info: ./Figures/2010_dec_mumbai.png used on input line 164.
 (pdftex.def)             Requested size: 365.86969pt x 301.12732pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Figures/2010_dec_mumbai_relative.png, id=800, 1219.55624pt x 1003.75pt>
+<./Figures/2010_dec_mumbai_relative.png, id=789, 1219.55624pt x 1003.75pt>
 File: ./Figures/2010_dec_mumbai_relative.png Graphic file (type png)
 
 <use ./Figures/2010_dec_mumbai_relative.png>
 Package pdftex.def Info: ./Figures/2010_dec_mumbai_relative.png used on input l
-ine 175.
+ine 172.
 (pdftex.def)             Requested size: 365.86969pt x 301.12732pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--182
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
+
+ []
+
+<./Figures/2011_jan_mumbai.png, id=797, 1219.55624pt x 1003.75pt>
+File: ./Figures/2011_jan_mumbai.png Graphic file (type png)
+
+<use ./Figures/2011_jan_mumbai.png>
+Package pdftex.def Info: ./Figures/2011_jan_mumbai.png used on input line 182.
+(pdftex.def)             Requested size: 365.86969pt x 301.12732pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+<./Figures/2011_jan_mumbai_relative_diff.png, id=799, 1219.55624pt x 1003.75pt>
+File: ./Figures/2011_jan_mumbai_relative_diff.png Graphic file (type png)
+<use ./Figures/2011_jan_mumbai_relative_diff.png>
+Package pdftex.def Info: ./Figures/2011_jan_mumbai_relative_diff.png used on in
+put line 190.
+(pdftex.def)             Requested size: 365.86969pt x 301.12732pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
 
  []
 
 [15 <./Figures/2010_dec_delhi_with_relative_diff.png>]
-<./Figures/2011_jan_mumbai.png, id=813, 1219.55624pt x 1003.75pt>
-File: ./Figures/2011_jan_mumbai.png Graphic file (type png)
-
-<use ./Figures/2011_jan_mumbai.png>
-Package pdftex.def Info: ./Figures/2011_jan_mumbai.png used on input line 185.
-(pdftex.def)             Requested size: 365.86969pt x 301.12732pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-<./Figures/2011_jan_mumbai_relative_diff.png, id=815, 1219.55624pt x 1003.75pt>
-File: ./Figures/2011_jan_mumbai_relative_diff.png Graphic file (type png)
-<use ./Figures/2011_jan_mumbai_relative_diff.png>
-Package pdftex.def Info: ./Figures/2011_jan_mumbai_relative_diff.png used on in
-put line 193.
-(pdftex.def)             Requested size: 365.86969pt x 301.12732pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 199--200
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 201--202
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
 
  []
 
 [16 <./Figures/2010_dec_maha.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
+
+ []
+
+<./Figures/2012_jul_mumbai.png, id=823, 1219.55624pt x 1003.75pt>
+File: ./Figures/2012_jul_mumbai.png Graphic file (type png)
+
+<use ./Figures/2012_jul_mumbai.png>
+Package pdftex.def Info: ./Figures/2012_jul_mumbai.png used on input line 208.
+(pdftex.def)             Requested size: 365.86969pt x 301.12732pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./Figures/2013_july_mumbai.png, id=824, 1219.55624pt x 1003.75pt>
+File: ./Figures/2013_july_mumbai.png Graphic file (type png)
+
+<use ./Figures/2013_july_mumbai.png>
+Package pdftex.def Info: ./Figures/2013_july_mumbai.png used on input line 216.
+
+(pdftex.def)             Requested size: 365.86969pt x 301.12732pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
 
  []
 
 [17 <./Figures/2010_dec_maha_relative.png>]
-<./Figures/2012_jul_mumbai.png, id=839, 1219.55624pt x 1003.75pt>
-File: ./Figures/2012_jul_mumbai.png Graphic file (type png)
-
-<use ./Figures/2012_jul_mumbai.png>
-Package pdftex.def Info: ./Figures/2012_jul_mumbai.png used on input line 211.
-(pdftex.def)             Requested size: 365.86969pt x 301.12732pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./Figures/2013_july_mumbai.png, id=840, 1219.55624pt x 1003.75pt>
-File: ./Figures/2013_july_mumbai.png Graphic file (type png)
-
-<use ./Figures/2013_july_mumbai.png>
-Package pdftex.def Info: ./Figures/2013_july_mumbai.png used on input line 219.
-
-(pdftex.def)             Requested size: 365.86969pt x 301.12732pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
-
- []
-
-<./Figures/2013_aug_ahmdb.png, id=843, 1219.55624pt x 1003.75pt>
+<./Figures/2013_aug_ahmdb.png, id=832, 1219.55624pt x 1003.75pt>
 File: ./Figures/2013_aug_ahmdb.png Graphic file (type png)
 
 <use ./Figures/2013_aug_ahmdb.png>
-Package pdftex.def Info: ./Figures/2013_aug_ahmdb.png used on input line 230.
+Package pdftex.def Info: ./Figures/2013_aug_ahmdb.png used on input line 227.
 (pdftex.def)             Requested size: 365.86969pt x 301.12732pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Figures/2013_aug_rajkot.png, id=844, 1219.55624pt x 1003.75pt>
+<./Figures/2013_aug_rajkot.png, id=833, 1219.55624pt x 1003.75pt>
 File: ./Figures/2013_aug_rajkot.png Graphic file (type png)
 
 <use ./Figures/2013_aug_rajkot.png>
-Package pdftex.def Info: ./Figures/2013_aug_rajkot.png used on input line 238.
+Package pdftex.def Info: ./Figures/2013_aug_rajkot.png used on input line 235.
 (pdftex.def)             Requested size: 365.86969pt x 301.12732pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--245
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
 
  []
 
-[18 <./Figures/2010_dec_mumbai.png>]
-<./Figures/2014_mumbai.png, id=856, 1219.55624pt x 1003.75pt>
+<./Figures/2014_mumbai.png, id=838, 1219.55624pt x 1003.75pt>
 File: ./Figures/2014_mumbai.png Graphic file (type png)
 
 <use ./Figures/2014_mumbai.png>
-Package pdftex.def Info: ./Figures/2014_mumbai.png used on input line 249.
+Package pdftex.def Info: ./Figures/2014_mumbai.png used on input line 246.
 (pdftex.def)             Requested size: 365.86969pt x 301.12732pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[19 <./Figures/2010_dec_mumbai_relative.png>]
+[18 <./Figures/2010_dec_mumbai.png>]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
- [20 <./Figures/2011_jan_mumbai.png>] [21 <./Figures/2011_jan_mumbai_relative_d
-iff.png>] [22 <./Figures/2012_jul_mumbai.png>] [23 <./Figures/2013_july_mumbai.
-png>] [24 <./Figures/2013_aug_ahmdb.png>]) [25 <./Figures/2013_aug_rajkot.png>]
- [26 <./Figures/2014_mumbai.png>]
+ [19 <./Figures/2010_dec_mumbai_relative.png>] [20 <./Figures/2011_jan_mumbai.p
+ng>] [21 <./Figures/2011_jan_mumbai_relative_diff.png>] [22 <./Figures/2012_jul
+_mumbai.png>] [23 <./Figures/2013_july_mumbai.png>]) [24 <./Figures/2013_aug_ah
+mdb.png>] [25 <./Figures/2013_aug_rajkot.png>] [26 <./Figures/2014_mumbai.png>]
 \openout2 = `chapter4.aux'.
 
-
-(./chapter4.tex
+ (./chapter4.tex
 Chapter 4.
-<./Figures/System_updated.JPG, id=902, 773.13844pt x 390.70969pt>
+<./Figures/System_updated.JPG, id=891, 773.13844pt x 390.70969pt>
 File: ./Figures/System_updated.JPG Graphic file (type jpg)
 
 <use ./Figures/System_updated.JPG>
@@ -1469,134 +1466,13 @@ ault[]threshold
 
  (./chapter5.tex
 Chapter 5.
-Missing character: There is no b in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no ! in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no ! in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no w in font nullfont!
-Missing character: There is no ! in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no ! in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no ! in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no ! in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no ! in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no ! in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no ! in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no ! in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no w in font nullfont!
-Missing character: There is no ! in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no ! in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no ! in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no ! in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no ! in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no ! in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--27
+Underfull \hbox (badness 10000) in paragraph at lines 10--15
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--27
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--27
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--27
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--27
+Underfull \hbox (badness 10000) in paragraph at lines 10--15
 
  []
 
@@ -1605,463 +1481,565 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--27
 
 
 
-] [34] [35]
-Underfull \hbox (badness 10000) in paragraph at lines 123--128
+]
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ! in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ! in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no ! in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ! in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no ! in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ! in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no ! in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ! in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ! in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ! in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no ! in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ! in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no ! in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ! in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no ! in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ! in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--70
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--128
+Underfull \hbox (badness 10000) in paragraph at lines 61--70
+
+ []
+
+[34] [35]
+Underfull \hbox (badness 10000) in paragraph at lines 171--174
 
  []
 
 [36]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 130.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 151.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 174.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 200.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 227.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 253.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 280.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 315.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 348.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 381.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 416--419
+Underfull \hbox (badness 10000) in paragraph at lines 177--181
 
  []
 
-[37] [38]
-Underfull \hbox (badness 10000) in paragraph at lines 422--426
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--190
 
  []
 
-[39]
-Underfull \hbox (badness 10000) in paragraph at lines 432--435
-
- []
-
-<graphs/12111.png, id=976, 1675.2186pt x 922.8879pt>
+[37] <graphs/12111.png, id=950, 1675.2186pt x 922.8879pt>
 File: graphs/12111.png Graphic file (type png)
- <use graphs/12111.png>
-Package pdftex.def Info: graphs/12111.png used on input line 447.
-(pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-[40] <graphs/12131.png, id=982, 1675.2186pt x 922.8879pt>
+<use graphs/12111.png>
+Package pdftex.def Info: graphs/12111.png used on input line 202.
+(pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
+ [38]
+<graphs/12131.png, id=955, 1675.2186pt x 922.8879pt>
 File: graphs/12131.png Graphic file (type png)
-
-<use graphs/12131.png>
-Package pdftex.def Info: graphs/12131.png used on input line 454.
+ <use graphs/12131.png>
+Package pdftex.def Info: graphs/12131.png used on input line 209.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
- [41 <./graphs/12111.png> <./graphs/12131.png>]
-<graphs/12112.png, id=992, 1675.2186pt x 922.8879pt>
+
+[39 <./graphs/12111.png> <./graphs/12131.png>]
+<graphs/12112.png, id=964, 1675.2186pt x 922.8879pt>
 File: graphs/12112.png Graphic file (type png)
  <use graphs/12112.png>
-Package pdftex.def Info: graphs/12112.png used on input line 472.
+Package pdftex.def Info: graphs/12112.png used on input line 227.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-<graphs/12132.png, id=993, 1675.2186pt x 922.8879pt>
+<graphs/12132.png, id=965, 1675.2186pt x 922.8879pt>
 File: graphs/12132.png Graphic file (type png)
  <use graphs/12132.png>
-Package pdftex.def Info: graphs/12132.png used on input line 479.
+Package pdftex.def Info: graphs/12132.png used on input line 234.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-[42 <./graphs/12112.png> <./graphs/12132.png>]
-<graphs/12113.png, id=1002, 1675.2186pt x 922.8879pt>
+[40 <./graphs/12112.png> <./graphs/12132.png>]
+<graphs/12113.png, id=974, 1675.2186pt x 922.8879pt>
 File: graphs/12113.png Graphic file (type png)
  <use graphs/12113.png>
-Package pdftex.def Info: graphs/12113.png used on input line 498.
+Package pdftex.def Info: graphs/12113.png used on input line 253.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-<graphs/12133.png, id=1003, 1675.2186pt x 922.8879pt>
+<graphs/12133.png, id=975, 1675.2186pt x 922.8879pt>
 File: graphs/12133.png Graphic file (type png)
  <use graphs/12133.png>
-Package pdftex.def Info: graphs/12133.png used on input line 505.
+Package pdftex.def Info: graphs/12133.png used on input line 260.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-[43 <./graphs/12113.png>]
-<graphs/12114.png, id=1011, 1675.2186pt x 922.8879pt>
+[41 <./graphs/12113.png>] <graphs/12114.png, id=983, 1675.2186pt x 922.8879pt>
 File: graphs/12114.png Graphic file (type png)
- <use graphs/12114.png>
-Package pdftex.def Info: graphs/12114.png used on input line 514.
-(pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-[44 <./graphs/12133.png> <./graphs/12114.png>]
-<graphs/12115.png, id=1019, 1675.2186pt x 922.8879pt>
+<use graphs/12114.png>
+Package pdftex.def Info: graphs/12114.png used on input line 269.
+(pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
+ [42 <./graphs/12133.png> <./graphs/12114.png>]
+<graphs/12115.png, id=991, 1675.2186pt x 922.8879pt>
 File: graphs/12115.png Graphic file (type png)
  <use graphs/12115.png>
-Package pdftex.def Info: graphs/12115.png used on input line 523.
+Package pdftex.def Info: graphs/12115.png used on input line 278.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-<graphs/12116.png, id=1021, 1675.2186pt x 922.8879pt>
+<graphs/12116.png, id=993, 1675.2186pt x 922.8879pt>
 File: graphs/12116.png Graphic file (type png)
  <use graphs/12116.png>
-Package pdftex.def Info: graphs/12116.png used on input line 532.
+Package pdftex.def Info: graphs/12116.png used on input line 287.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-[45 <./graphs/12115.png> <./graphs/12116.png>]
-<graphs/12134.png, id=1029, 1675.2186pt x 922.8879pt>
+[43 <./graphs/12115.png> <./graphs/12116.png>]
+<graphs/12134.png, id=1001, 1675.2186pt x 922.8879pt>
 File: graphs/12134.png Graphic file (type png)
  <use graphs/12134.png>
-Package pdftex.def Info: graphs/12134.png used on input line 542.
+Package pdftex.def Info: graphs/12134.png used on input line 297.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 553--554
+Underfull \hbox (badness 10000) in paragraph at lines 308--309
 
  []
 
-<graphs/12121.png, id=1032, 1675.2186pt x 922.8879pt>
+<graphs/12121.png, id=1004, 1675.2186pt x 922.8879pt>
 File: graphs/12121.png Graphic file (type png)
  <use graphs/12121.png>
-Package pdftex.def Info: graphs/12121.png used on input line 563.
+Package pdftex.def Info: graphs/12121.png used on input line 318.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-[46 <./graphs/12134.png>]
-<graphs/12141.png, id=1038, 1675.2186pt x 922.8879pt>
+[44 <./graphs/12134.png>]
+<graphs/12141.png, id=1010, 1675.2186pt x 922.8879pt>
 File: graphs/12141.png Graphic file (type png)
  <use graphs/12141.png>
-Package pdftex.def Info: graphs/12141.png used on input line 570.
+Package pdftex.def Info: graphs/12141.png used on input line 325.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-<graphs/12122.png, id=1041, 1675.2186pt x 922.8879pt>
+<graphs/12122.png, id=1013, 1675.2186pt x 922.8879pt>
 File: graphs/12122.png Graphic file (type png)
  <use graphs/12122.png>
-Package pdftex.def Info: graphs/12122.png used on input line 585.
+Package pdftex.def Info: graphs/12122.png used on input line 340.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-[47 <./graphs/12121.png> <./graphs/12141.png>]
-<graphs/12142.png, id=1049, 1675.2186pt x 922.8879pt>
+[45 <./graphs/12121.png> <./graphs/12141.png>]
+<graphs/12142.png, id=1021, 1675.2186pt x 922.8879pt>
 File: graphs/12142.png Graphic file (type png)
  <use graphs/12142.png>
-Package pdftex.def Info: graphs/12142.png used on input line 592.
+Package pdftex.def Info: graphs/12142.png used on input line 347.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 597--598
+Underfull \hbox (badness 10000) in paragraph at lines 352--353
 
  []
 
-[48 <./graphs/12122.png> <./graphs/12142.png>]
-<graphs/12123.png, id=1058, 1675.2186pt x 922.8879pt>
+[46 <./graphs/12122.png> <./graphs/12142.png>]
+<graphs/12123.png, id=1030, 1675.2186pt x 922.8879pt>
 File: graphs/12123.png Graphic file (type png)
  <use graphs/12123.png>
-Package pdftex.def Info: graphs/12123.png used on input line 607.
+Package pdftex.def Info: graphs/12123.png used on input line 362.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-<graphs/12143.png, id=1059, 1675.2186pt x 922.8879pt>
+<graphs/12143.png, id=1031, 1675.2186pt x 922.8879pt>
 File: graphs/12143.png Graphic file (type png)
  <use graphs/12143.png>
-Package pdftex.def Info: graphs/12143.png used on input line 614.
+Package pdftex.def Info: graphs/12143.png used on input line 369.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-[49 <./graphs/12123.png> <./graphs/12143.png>]
-<graphs/12124.png, id=1068, 1675.2186pt x 922.8879pt>
+[47 <./graphs/12123.png> <./graphs/12143.png>]
+<graphs/12124.png, id=1041, 1675.2186pt x 922.8879pt>
 File: graphs/12124.png Graphic file (type png)
  <use graphs/12124.png>
-Package pdftex.def Info: graphs/12124.png used on input line 623.
+Package pdftex.def Info: graphs/12124.png used on input line 378.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-<graphs/12144.png, id=1069, 1675.2186pt x 922.8879pt>
+<graphs/12144.png, id=1042, 1675.2186pt x 922.8879pt>
 File: graphs/12144.png Graphic file (type png)
  <use graphs/12144.png>
-Package pdftex.def Info: graphs/12144.png used on input line 630.
+Package pdftex.def Info: graphs/12144.png used on input line 385.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-[50 <./graphs/12124.png> <./graphs/12144.png>]
-<graphs/12125.png, id=1077, 1675.2186pt x 922.8879pt>
+[48 <./graphs/12124.png> <./graphs/12144.png>]
+<graphs/12125.png, id=1050, 1675.2186pt x 922.8879pt>
 File: graphs/12125.png Graphic file (type png)
  <use graphs/12125.png>
-Package pdftex.def Info: graphs/12125.png used on input line 639.
+Package pdftex.def Info: graphs/12125.png used on input line 394.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-<graphs/12126.png, id=1079, 1675.2186pt x 922.8879pt>
+<graphs/12126.png, id=1052, 1675.2186pt x 922.8879pt>
 File: graphs/12126.png Graphic file (type png)
  <use graphs/12126.png>
-Package pdftex.def Info: graphs/12126.png used on input line 648.
+Package pdftex.def Info: graphs/12126.png used on input line 403.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-[51 <./graphs/12125.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 661--665
+[49 <./graphs/12125.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 416--420
 
  []
 
-[52 <./graphs/12126.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 671--674
+[50 <./graphs/12126.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 426--429
 
  []
 
-<graphs/12211.png, id=1094, 1675.2186pt x 922.8879pt>
+<graphs/12211.png, id=1067, 1675.2186pt x 922.8879pt>
 File: graphs/12211.png Graphic file (type png)
  <use graphs/12211.png>
-Package pdftex.def Info: graphs/12211.png used on input line 687.
+Package pdftex.def Info: graphs/12211.png used on input line 442.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-[53] <graphs/12231.png, id=1102, 1675.2186pt x 922.8879pt>
+[51] <graphs/12231.png, id=1074, 1675.2186pt x 922.8879pt>
 File: graphs/12231.png Graphic file (type png)
 
 <use graphs/12231.png>
-Package pdftex.def Info: graphs/12231.png used on input line 694.
+Package pdftex.def Info: graphs/12231.png used on input line 449.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 699--702
+Underfull \hbox (badness 10000) in paragraph at lines 454--457
 
  []
 
-[54 <./graphs/12211.png> <./graphs/12231.png>]
-<graphs/12212.png, id=1111, 1675.2186pt x 922.8879pt>
+[52 <./graphs/12211.png> <./graphs/12231.png>]
+<graphs/12212.png, id=1083, 1675.2186pt x 922.8879pt>
 File: graphs/12212.png Graphic file (type png)
  <use graphs/12212.png>
-Package pdftex.def Info: graphs/12212.png used on input line 708.
+Package pdftex.def Info: graphs/12212.png used on input line 463.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-<graphs/12232.png, id=1112, 1675.2186pt x 922.8879pt>
+<graphs/12232.png, id=1084, 1675.2186pt x 922.8879pt>
 File: graphs/12232.png Graphic file (type png)
  <use graphs/12232.png>
-Package pdftex.def Info: graphs/12232.png used on input line 715.
+Package pdftex.def Info: graphs/12232.png used on input line 470.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-[55 <./graphs/12212.png> <./graphs/12232.png>]
-<graphs/12221.png, id=1122, 1675.2186pt x 922.8879pt>
+[53 <./graphs/12212.png> <./graphs/12232.png>]
+<graphs/12221.png, id=1095, 1675.2186pt x 922.8879pt>
 File: graphs/12221.png Graphic file (type png)
  <use graphs/12221.png>
-Package pdftex.def Info: graphs/12221.png used on input line 739.
+Package pdftex.def Info: graphs/12221.png used on input line 494.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-<graphs/12241.png, id=1123, 1675.2186pt x 922.8879pt>
+<graphs/12241.png, id=1096, 1675.2186pt x 922.8879pt>
 File: graphs/12241.png Graphic file (type png)
  <use graphs/12241.png>
-Package pdftex.def Info: graphs/12241.png used on input line 746.
+Package pdftex.def Info: graphs/12241.png used on input line 501.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-[56 <./graphs/12221.png>]
-<graphs/12222.png, id=1131, 1675.2186pt x 922.8879pt>
+[54 <./graphs/12221.png>]
+<graphs/12222.png, id=1104, 1675.2186pt x 922.8879pt>
 File: graphs/12222.png Graphic file (type png)
  <use graphs/12222.png>
-Package pdftex.def Info: graphs/12222.png used on input line 762.
+Package pdftex.def Info: graphs/12222.png used on input line 517.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-[57 <./graphs/12241.png>]
-<graphs/12242.png, id=1137, 1675.2186pt x 922.8879pt>
+[55 <./graphs/12241.png>]
+<graphs/12242.png, id=1110, 1675.2186pt x 922.8879pt>
 File: graphs/12242.png Graphic file (type png)
  <use graphs/12242.png>
-Package pdftex.def Info: graphs/12242.png used on input line 769.
+Package pdftex.def Info: graphs/12242.png used on input line 524.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--783
+Underfull \hbox (badness 10000) in paragraph at lines 533--538
 
  []
 
-[58 <./graphs/12222.png> <./graphs/12242.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 789--793
+[56 <./graphs/12222.png> <./graphs/12242.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 544--548
 
  []
 
-<graphs/20080306_0320.png, id=1147, 1675.2186pt x 922.8879pt>
+<graphs/20080306_0320.png, id=1120, 1675.2186pt x 922.8879pt>
 File: graphs/20080306_0320.png Graphic file (type png)
 
 <use graphs/20080306_0320.png>
-Package pdftex.def Info: graphs/20080306_0320.png used on input line 806.
+Package pdftex.def Info: graphs/20080306_0320.png used on input line 561.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
- [59]
-<graphs/20090912_0926.png, id=1158, 1675.2186pt x 922.8879pt>
+ [57]
+<graphs/20090912_0926.png, id=1129, 1675.2186pt x 922.8879pt>
 File: graphs/20090912_0926.png Graphic file (type png)
 
 <use graphs/20090912_0926.png>
-Package pdftex.def Info: graphs/20090912_0926.png used on input line 813.
+Package pdftex.def Info: graphs/20090912_0926.png used on input line 568.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-<graphs/20110704_0802.png, id=1159, 1675.2186pt x 922.8879pt>
+<graphs/20110704_0802.png, id=1130, 1675.2186pt x 922.8879pt>
 File: graphs/20110704_0802.png Graphic file (type png)
 
 <use graphs/20110704_0802.png>
-Package pdftex.def Info: graphs/20110704_0802.png used on input line 820.
+Package pdftex.def Info: graphs/20110704_0802.png used on input line 575.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
- [60 <./graphs/20080306_0320.png> <./graphs/20090912_0926.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 825--829
+ [58 <./graphs/20080306_0320.png> <./graphs/20090912_0926.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 580--584
 
  []
 
-<graphs/20101220_1225.png, id=1169, 1675.2186pt x 922.8879pt>
+<graphs/20101220_1225.png, id=1140, 1675.2186pt x 922.8879pt>
 File: graphs/20101220_1225.png Graphic file (type png)
 
 <use graphs/20101220_1225.png>
-Package pdftex.def Info: graphs/20101220_1225.png used on input line 837.
+Package pdftex.def Info: graphs/20101220_1225.png used on input line 592.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
- [61 <./graphs/20110704_0802.png>]
-<graphs/20110106_0108.png, id=1175, 1675.2186pt x 922.8879pt>
+ [59 <./graphs/20110704_0802.png>]
+<graphs/20110106_0108.png, id=1147, 1675.2186pt x 922.8879pt>
 File: graphs/20110106_0108.png Graphic file (type png)
 
 <use graphs/20110106_0108.png>
-Package pdftex.def Info: graphs/20110106_0108.png used on input line 844.
+Package pdftex.def Info: graphs/20110106_0108.png used on input line 599.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-<graphs/20121227_0105.png, id=1176, 1675.2186pt x 922.8879pt>
+<graphs/20121227_0105.png, id=1148, 1675.2186pt x 922.8879pt>
 File: graphs/20121227_0105.png Graphic file (type png)
 
 <use graphs/20121227_0105.png>
-Package pdftex.def Info: graphs/20121227_0105.png used on input line 851.
+Package pdftex.def Info: graphs/20121227_0105.png used on input line 606.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
- [62 <./graphs/20101220_1225.png> <./graphs/20110106_0108.png>]
-<graphs/20131006_1015_1021.png, id=1185, 1675.2186pt x 922.8879pt>
+ [60 <./graphs/20101220_1225.png> <./graphs/20110106_0108.png>]
+<graphs/20131006_1015_1021.png, id=1157, 1675.2186pt x 922.8879pt>
 File: graphs/20131006_1015_1021.png Graphic file (type png)
 
 <use graphs/20131006_1015_1021.png>
-Package pdftex.def Info: graphs/20131006_1015_1021.png used on input line 864.
+Package pdftex.def Info: graphs/20131006_1015_1021.png used on input line 619.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
- [63 <./graphs/20121227_0105.png> <./graphs/20131006_1015_1021.png>]
-Overfull \hbox (31.0373pt too wide) in paragraph at lines 890--895
-\OT1/cmr/m/n/12 series anal-y-sis in or-der to fore-cast val-ues by us-ing all 
-the re-lated vari-ables/timeseries
+ [61 <./graphs/20121227_0105.png> <./graphs/20131006_1015_1021.png>]
+Overfull \hbox (0.87927pt too wide) in paragraph at lines 645--650
+\OT1/cmr/m/n/12 anal-y-sis in or-der to fore-cast val-ues by us-ing all the re-
+lated vari-ables/timeseries
  []
 
-[64]
-Overfull \hbox (6.81949pt too wide) in paragraph at lines 904--905
+[62]
+Overfull \hbox (6.81949pt too wide) in paragraph at lines 659--660
 []\OT1/cmr/m/n/12 The thresh-old se-lected by this method for er-ror val-ues ar
 e -19.0358099572
  []
 
-[65] <graphs/20130719_0911.png, id=1208, 1675.2186pt x 922.8879pt>
+[63] <graphs/20130719_0911.png, id=1180, 1675.2186pt x 922.8879pt>
 File: graphs/20130719_0911.png Graphic file (type png)
 
 <use graphs/20130719_0911.png>
-Package pdftex.def Info: graphs/20130719_0911.png used on input line 915.
+Package pdftex.def Info: graphs/20130719_0911.png used on input line 670.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-<graphs/20130917_0106.png, id=1209, 1675.2186pt x 922.8879pt>
+<graphs/20130917_0106.png, id=1181, 1675.2186pt x 922.8879pt>
 File: graphs/20130917_0106.png Graphic file (type png)
 
 <use graphs/20130917_0106.png>
-Package pdftex.def Info: graphs/20130917_0106.png used on input line 922.
+Package pdftex.def Info: graphs/20130917_0106.png used on input line 677.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-<graphs/20141203_1215.png, id=1210, 1675.2186pt x 922.8879pt>
+<graphs/20141203_1215.png, id=1182, 1675.2186pt x 922.8879pt>
 File: graphs/20141203_1215.png Graphic file (type png)
 
 <use graphs/20141203_1215.png>
-Package pdftex.def Info: graphs/20141203_1215.png used on input line 929.
+Package pdftex.def Info: graphs/20141203_1215.png used on input line 684.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
- [66 <./graphs/20130719_0911.png> <./graphs/20130917_0106.png>]
+ [64 <./graphs/20130719_0911.png> <./graphs/20130917_0106.png>]
 
-LaTeX Warning: Reference `nasa' on page 67 undefined on input line 954.
+LaTeX Warning: Reference `nasa' on page 65 undefined on input line 709.
 
-<graphs/1231.png, id=1219, 1675.2186pt x 922.8879pt>
+<graphs/1231.png, id=1191, 1675.2186pt x 922.8879pt>
 File: graphs/1231.png Graphic file (type png)
  <use graphs/1231.png>
-Package pdftex.def Info: graphs/1231.png used on input line 965.
+Package pdftex.def Info: graphs/1231.png used on input line 720.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 952--968
+Underfull \hbox (badness 10000) in paragraph at lines 707--723
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 952--968
+Underfull \hbox (badness 10000) in paragraph at lines 707--723
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 952--968
+Underfull \hbox (badness 10000) in paragraph at lines 707--723
 
  []
 
-[67 <./graphs/20141203_1215.png>] [68]
-<graphs/12331.png, id=1229, 1675.2186pt x 922.8879pt>
+[65 <./graphs/20141203_1215.png>] [66]
+<graphs/12331.png, id=1202, 1675.2186pt x 922.8879pt>
 File: graphs/12331.png Graphic file (type png)
  <use graphs/12331.png>
-Package pdftex.def Info: graphs/12331.png used on input line 972.
+Package pdftex.def Info: graphs/12331.png used on input line 727.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-<graphs/12321.png, id=1234, 1675.2186pt x 922.8879pt>
+<graphs/12321.png, id=1207, 1675.2186pt x 922.8879pt>
 File: graphs/12321.png Graphic file (type png)
  <use graphs/12321.png>
-Package pdftex.def Info: graphs/12321.png used on input line 980.
+Package pdftex.def Info: graphs/12321.png used on input line 735.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-[69 <./graphs/1231.png> <./graphs/12331.png>]
-<graphs/12341.png, id=1241, 1675.2186pt x 922.8879pt>
+[67 <./graphs/1231.png> <./graphs/12331.png>]
+<graphs/12341.png, id=1214, 1675.2186pt x 922.8879pt>
 File: graphs/12341.png Graphic file (type png)
  <use graphs/12341.png>
-Package pdftex.def Info: graphs/12341.png used on input line 987.
+Package pdftex.def Info: graphs/12341.png used on input line 742.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-<graphs/12322_delhi.png, id=1242, 1675.2186pt x 922.8879pt>
+<graphs/12322_delhi.png, id=1215, 1675.2186pt x 922.8879pt>
 File: graphs/12322_delhi.png Graphic file (type png)
 
 <use graphs/12322_delhi.png>
-Package pdftex.def Info: graphs/12322_delhi.png used on input line 995.
+Package pdftex.def Info: graphs/12322_delhi.png used on input line 750.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
- [70 <./graphs/12321.png> <./graphs/12341.png>]
-<graphs/12442_delhi.png, id=1249, 1675.2186pt x 922.8879pt>
+ [68 <./graphs/12321.png> <./graphs/12341.png>]
+<graphs/12442_delhi.png, id=1222, 1675.2186pt x 922.8879pt>
 File: graphs/12442_delhi.png Graphic file (type png)
 
 <use graphs/12442_delhi.png>
-Package pdftex.def Info: graphs/12442_delhi.png used on input line 1002.
+Package pdftex.def Info: graphs/12442_delhi.png used on input line 757.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
-) [71 <./graphs/12322_delhi.png> <./graphs/12442_delhi.png>]
+) [69 <./graphs/12322_delhi.png> <./graphs/12442_delhi.png>]
 \openout2 = `chapter6.aux'.
 
  (./chapter6.tex
 Chapter 6.
+<graphs/MumbaiRetailVsAverageRetail.png, id=1229, 1675.2186pt x 922.8879pt>
+File: graphs/MumbaiRetailVsAverageRetail.png Graphic file (type png)
+
+<use graphs/MumbaiRetailVsAverageRetail.png>
+Package pdftex.def Info: graphs/MumbaiRetailVsAverageRetail.png used on input l
+ine 12.
+(pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
+
+<graphs/mumbaiRvsA.png, id=1230, 1675.2186pt x 922.8879pt>
+File: graphs/mumbaiRvsA.png Graphic file (type png)
+
+<use graphs/mumbaiRvsA.png>
+Package pdftex.def Info: graphs/mumbaiRvsA.png used on input line 22.
+(pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
+ [70
+
+
+
+
+ <./graphs/MumbaiRetailVsAverageRetail.png>]
+<graphs/MumbaiRvsW.png, id=1236, 1675.2186pt x 922.8879pt>
+File: graphs/MumbaiRvsW.png Graphic file (type png)
+
+<use graphs/MumbaiRvsW.png>
+Package pdftex.def Info: graphs/MumbaiRvsW.png used on input line 32.
+(pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
+
+<graphs/mumbaiWvsA.png, id=1237, 1675.2186pt x 922.8879pt>
+File: graphs/mumbaiWvsA.png Graphic file (type png)
+
+<use graphs/mumbaiWvsA.png>
+Package pdftex.def Info: graphs/mumbaiWvsA.png used on input line 42.
+(pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
+ [71 <./graphs/mumbaiRvsA.png> <./graphs/MumbaiRvsW.png>]
+<graphs/localDelhiRegionalNewsPlusNexus.png, id=1257, 1675.2186pt x 922.8879pt>
+File: graphs/localDelhiRegionalNewsPlusNexus.png Graphic file (type png)
+<use graphs/localDelhiRegionalNewsPlusNexus.png>
+Package pdftex.def Info: graphs/localDelhiRegionalNewsPlusNexus.png used on inp
+ut line 83.
+(pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
+ [72 <./graphs/mumbaiWvsA.png>]) [73 <./graphs/localDelhiRegionalNewsPlusNexus.
+png>]
+\openout2 = `chapter7.aux'.
+
+ (./chapter7.tex
+Chapter 7.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 3--164
+Underfull \hbox (badness 10000) in paragraph at lines 9--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--164
+Underfull \hbox (badness 10000) in paragraph at lines 9--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--164
+Underfull \hbox (badness 10000) in paragraph at lines 9--166
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--164
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--164
-
- []
-
-[72
+[74
 
 
 
 
-] [73] (./Thesis.bbl
+] [75] (./Thesis.bbl
 Underfull \hbox (badness 3407) in paragraph at lines 9--12
 []\OT1/cmr/m/n/12 fcainfoweb.nic.in/pmsver2/reports/report[]menu[]web.aspx.  []
 $\OT1/cmtt/m/n/12 http : / /
@@ -2153,7 +2131,7 @@ Underfull \hbox (badness 2809) in paragraph at lines 51--55
 tp : / / www . ndtv . com /
  []
 
-[74
+[76
 
 
 
@@ -2232,7 +2210,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--81
 /12 .  (Vis-ited on
  []
 
-[75]) (./appendix.tex (./libraryAppendix/Chapter_1.tex [76]
+[77]) (./appendix.tex (./libraryAppendix/Chapter_1.tex [78]
 Appendix A.
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--27
@@ -2249,7 +2227,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--27
 
  []
 
-[77
+[79
 
 
 ]
@@ -2262,7 +2240,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--66
 
  []
 
-[78]
+[80]
 Overfull \hbox (20.50323pt too wide) in paragraph at lines 92--92
  |[]\OT1/cmr/bx/n/14.4 correlationAtLag(series1, se-ries2, lag, win-dow[]size)|
  
@@ -2278,7 +2256,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 94--104
 
  []
 
-[79]
+[81]
 Underfull \hbox (badness 10000) in paragraph at lines 117--120
 
  []
@@ -2293,7 +2271,7 @@ Overfull \hbox (20.27177pt too wide) in paragraph at lines 125--125
  \OT1/cmr/bx/n/14.4 win-dow[]size,maxlag, pos-i-tive[]correlation, pos, neg)| 
  []
 
-[80]
+[82]
 Overfull \hbox (30.3211pt too wide) in paragraph at lines 168--168
  |[]\OT1/cmr/bx/n/14.4 anomaliesFromWindowCorrelationWithConstantlag 
  []
@@ -2320,7 +2298,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 171--180
 
  []
 
-[81]) (./libraryAppendix/Chapter_2.tex
+[83]) (./libraryAppendix/Chapter_2.tex
 Underfull \hbox (badness 10000) in paragraph at lines 225--1
 
  []
@@ -2330,7 +2308,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 225--1
 
  []
 
-[82] [83]
+[84] [85]
 Appendix B.
 
 Underfull \hbox (badness 10000) in paragraph at lines 18--29
@@ -2350,7 +2328,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 32.
 
-[84
+[86
 
 
 ]
@@ -2358,7 +2336,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--55
 
  []
 
-[85]
+[87]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 61.
@@ -2410,7 +2388,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 87.
 
-[86]) (./libraryAppendix/Chapter_3.tex
+[88]) (./libraryAppendix/Chapter_3.tex
 Underfull \hbox (badness 10000) in paragraph at lines 115--1
 
  []
@@ -2421,7 +2399,7 @@ Overfull \hbox (72.83658pt too wide) in paragraph at lines 115--1
  (start[]date,end[]date,slope[]value)
  []
 
-[87] [88]
+[89] [90]
 Appendix C.
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--28
@@ -2443,10 +2421,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--48
 
  []
 
-[89
+[91
 
 
-] [90]
+] [92]
 Underfull \hbox (badness 10000) in paragraph at lines 74--82
 
  []
@@ -2487,7 +2465,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 99--107
 
  []
 
-[91]
+[93]
 Underfull \hbox (badness 10000) in paragraph at lines 121--123
 
  []
@@ -2498,7 +2476,7 @@ Overfull \hbox (95.13934pt too wide) in paragraph at lines 124--126
 tween[]predicted[]and[]actual[]y[]value) 
  []
 
-[92]
+[94]
 Underfull \hbox (badness 10000) in paragraph at lines 162--164
 
  []
@@ -2513,7 +2491,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 174--1
 
  []
 
-[93]
+[95]
 Appendix D.
 
 Overfull \hbox (8.35077pt too wide) in paragraph at lines 1--1
@@ -2521,7 +2499,7 @@ Overfull \hbox (8.35077pt too wide) in paragraph at lines 1--1
  []
 
 
-LaTeX Warning: Citation `nasarbook' on page 94 undefined on input line 6.
+LaTeX Warning: Citation `nasarbook' on page 96 undefined on input line 6.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--32
@@ -2538,7 +2516,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--32
 
  []
 
-[94
+[96
 
 
 ]
@@ -2596,22 +2574,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--113
 
  []
 
-[95] [96]
+[97] [98]
 Underfull \hbox (badness 10000) in paragraph at lines 129--131
 
  []
 
-[97]
+[99]
 Overfull \hbox (20.18118pt too wide) in paragraph at lines 173--173
  |[]\OT1/cmr/bx/n/14.4 graphBasedAnomalyMain(lists, de-pen-dent-Var, nu-
  []
 
-[98]) (./libraryAppendix/Chapter_5.tex
+[100]) (./libraryAppendix/Chapter_5.tex
 Underfull \hbox (badness 10000) in paragraph at lines 201--1
 
  []
 
-[99]
+[101]
 Appendix E.
 
 Overfull \hbox (25.32614pt too wide) in paragraph at lines 1--1
@@ -2619,7 +2597,7 @@ Overfull \hbox (25.32614pt too wide) in paragraph at lines 1--1
  []
 
 
-LaTeX Warning: Citation `var' on page 100 undefined on input line 32.
+LaTeX Warning: Citation `var' on page 102 undefined on input line 32.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--33
@@ -2651,7 +2629,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--33
 
  []
 
-[100
+[102
 
 
 ]
@@ -2665,152 +2643,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--46
 
  []
 
-[101]) (./libraryAppendix/Chapter_6.tex
-Underfull \hbox (badness 10000) in paragraph at lines 104--1
+[103])
+Underfull \hbox (badness 10000) in paragraph at lines 104--9
 
  []
 
-[102] [103]
-Appendix F.
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
-
- []
-
-[104
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 54--57
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--67
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--67
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 99--100
-
- []
-
-[105]
-Underfull \hbox (badness 10000) in paragraph at lines 103--116
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 103--116
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
-
- []
-
-[106]
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
-
- []
-
-[107]
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
-
- []
-
-
-Overfull \hbox (17.89047pt too wide) in paragraph at lines 238--245
-\OT1/cmr/m/n/12 re-sultOf3="linear[]regression", list4=[], re-sultOf4="graph[]b
-ased", list5=[],
- []
-
-[108]
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
-
- []
-
-
-Overfull \hbox (4.99161pt too wide) in paragraph at lines 281--284
-\OT1/cmr/m/n/12 value, graph[]based value, spike[]detection value, mul-ti-ple[]
-arima
- []
-
-
-Overfull \hbox (4.99161pt too wide) in paragraph at lines 284--287
-\OT1/cmr/m/n/12 value, graph[]based value, spike[]detection value, mul-ti-ple[]
-arima
- []
-
-
-Overfull \hbox (4.99161pt too wide) in paragraph at lines 308--311
-\OT1/cmr/m/n/12 value, graph[]based value, spike[]detection value, mul-ti-ple[]
-arima
- []
-
-[109]
-Overfull \hbox (4.99161pt too wide) in paragraph at lines 311--314
-\OT1/cmr/m/n/12 value, graph[]based value, spike[]detection value, mul-ti-ple[]
-arima
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 328--329
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 331--339
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 359--360
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 362--370
-
- []
-
-[110]))
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 172.
- [111]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 172.
+[104])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 174.
+ [105]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 174.
  (./Thesis.aux (./titlepage.aux) (./certificate.aux)
 (./abstract.aux) (./acknowledgement.aux) (./chapter1.aux) (./chapter2.aux)
-(./chapter3.aux) (./chapter4.aux) (./chapter5.aux) (./chapter6.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 172.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 172.
+(./chapter3.aux) (./chapter4.aux) (./chapter5.aux) (./chapter6.aux)
+(./chapter7.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 174.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 174.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: E20335A4C02CA2D30D82471A0B153B7C;6615.
+(rerunfilecheck)             Checksum: 582A877DB0D57436A0B6AE2A3B2AB6D2;6536.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2818,31 +2667,33 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 172.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 174.
  ) 
 Here is how much of TeX's memory you used:
- 26110 strings out of 493304
- 563144 string characters out of 6139872
- 859868 words of memory out of 5000000
- 28482 multiletter control sequences out of 15000+600000
+ 26105 strings out of 493304
+ 563514 string characters out of 6139872
+ 822868 words of memory out of 5000000
+ 28501 multiletter control sequences out of 15000+600000
  13472 words of font info for 49 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  56i,20n,86p,1210b,1903s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmtt12.pfb>
-Output written on Thesis.pdf (125 pages, 6959169 bytes).
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmtt12.pfb>
+Output written on Thesis.pdf (119 pages, 8129117 bytes).
 PDF statistics:
- 1704 PDF objects out of 1728 (max. 8388607)
- 1438 compressed objects within 15 object streams
- 425 named destinations out of 1000 (max. 500000)
- 966 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1648 PDF objects out of 1728 (max. 8388607)
+ 1380 compressed objects within 14 object streams
+ 392 named destinations out of 1000 (max. 500000)
+ 983 words of extra memory for PDF output out of 10000 (max. 10000000)
 
