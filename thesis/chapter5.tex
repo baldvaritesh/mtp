@@ -1,26 +1,69 @@
-\chapter{Results and Analysis}
+\chapter{Analysis of System Results}
 
 We executed our library functions on the onion data. This data consists of 
 Wholesale Price, Retail Price and Arrival since 1st January 2006 to 6th July 
 2015. In this chapter, we will show results produced by our system and will 
 analyse these results along with each method.
 
-\section{Results}
+\section{Overview of System Results}
 
 We have performed 4 types of analysis and result for each of this method is as 
 follows. Note that these are primary results. Data for 2 centres are considered 
 - Mumbai and Delhi.\\
 \\
 Here are some results related with Mumbai Center. Table \ref{AnomaliesReported} shows the result of anomalies reported by our system, with details about anomalies reported by each method. So here First 5 columns corresponds to each method. Column 6 is union of results of first 3 methods and column 7 is union of results of method 4 and 5, as described in table. Column 8 is intersection of results of column 6 and column 7, which is final result of our system.\\
-\\
-Table \ref{ArticlesMatched} shows the result of number of articles matched with the dates reported by our system as anomaly for each method. So here First 5 columns corresponds to each method. Column 6 is union of results of first 3 methods and column 7 is union of result of method 4 and 5, as described in table. Column 8 is intersection of results of column 6 and column 7, which is final result of our system.\\
-\\
+  
+	\begin{table}[H]
+	\centering
+	
+	\resizebox{\textwidth}{!}
+	{\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
+	\hline
+	Methods              & Slope Based (1) & Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6 $\cap$ 7  \\
+	\hline
+	Retail Vs Average    & 471 & 180 & 258 & 300 & 177 & 806 & 362 & 125 \\
+	\hline
+	Retail Vs Arrival    & 266 & 375 & 353 & 500 & 167 & 835 & 573 & 323 \\
+	\hline
+	Retail Vs Wholesale  & 322 & 300 & 310 & 300 & 167 & 799 & 367 & 160 \\
+	\hline
+	Wholesale Vs Arrival & 329 & 360 & 282 & 500 & 186 & 858 & 586 & 332 \\
+	\hline
+	\end{tabular}}
+	\caption{Anomalies Reported}
+	\label{AnomaliesReported}
+	\end{table}
+      
+
+Table \ref{ArticlesMatched} shows the result of number of articles matched with the dates reported by our system as anomaly for each method. So here First 5 columns corresponds to each method. Column 6 is union of results of first 3 methods and column 7 is union of result of method 4 and 5, as described in table. Column 8 is intersection of results of column 6 and column 7, which is final result of our system.
+	
+	\begin{table}[H]
+	\centering
+	
+	\resizebox{\textwidth}{!}
+	{\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
+	\hline
+	Methods              & Slope Based (1) & Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6 $\cap$ 7   \\
+	\hline
+	Retail Vs Average    & 67 & 47 & 50  & 122 & 122 & 142 & 162 & 64  \\
+	\hline
+	Retail Vs Arrival    & 42 & 74 & 167 & 121 & 119 & 220 & 159 & 153 \\
+	\hline
+	Retail Vs Wholesale  & 30 & 55 & 40  & 117 & 119 & 107 & 150 & 52  \\
+	\hline
+	Wholesale Vs Arrival & 64 & 64 & 174 & 122 & 139 & 219 & 174 & 168 \\
+	\hline
+	\end{tabular}}
+	\caption{Number of news articles matched with system}
+	\label{ArticlesMatched}
+	\end{table}
+	
 Note that total number of articles present for center Mumbai is \textbf{99} and all these articles are present after 2010. Apart from Graph Based Anomaly and Multivariate- vector autoregressive method, all methods are producing results from 2006 onwards as input data is from that time. The following pie chart(see figure \ref{fig:pieReasons}) shows the analysis of article showing what news articles states as the reason for the price hikes of onion.\\
 \\
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}
-   \pie[ text = legend ]{32/Traders Nexus, 18/Not Stated, 10/Unseasonal Rainfall, 12/Low Production, 18/Low Supply, 10/Other  }
+   \pie[ text = legend ]{32/Traders Nexus or Hoarding, 18/Not Stated, 10/Unseasonal Rainfall, 12/Low Production, 18/Low Supply, 10/Other  }
 \end{tikzpicture}
 \caption{Reasons stated by news articles for onion price hike}
 \label{fig:pieReasons}
@@ -119,297 +162,9 @@ While finding the news article match for every anomaly, we check for all the new
 \label{fig:articleDistWvsA}
 \end{figure}
 
-
-Now, we present detailed analysis for each of the different type of time-series. First type of such analysis is in table \ref{RetailVsAverage}. This table shows distribution of news articles present (that matched with system results) year-wise for each method when retail price time series is compared with average retail price time series. Second type of such analysis is in table \ref{RetailVsArrival}. This table shows distribution of news articles present year-wise for each method when retail price time series is compared with arrival data of onion time series. Third type of such analysis is in table \ref{RetailVsWholesale}. This table shows distribution of news articles present year-wise for each method when retail price time series is compared with wholesale price time series. Fourth type of such analysis is in table \ref{WholesaleVsArrival}. This table shows distribution of news articles present year-wise for each method when wholesale price time series is compared with arrival data of onion time series.\\
-\\
-Distribution of anomalies present year-wise, for each method is also shown in table. Result for various analysis is described in tables  \ref{RetailVsAverageDist}, \ref{RetailVsArrivalDist}, \ref{RetailVsWholesaleDist} and \ref{WholesaleVsArrivalDist}.\\
-\\
 Such results for different cities can also be calculated.
 
-  
-	\begin{table}[]
-	\centering
-	
-	\resizebox{\textwidth}{!}
-	{\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
-	\hline
-	Methods              & Slope Based (1) & Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6 $\cap$ 7  \\
-	\hline
-	Retail Vs Average    & 742 & 255 & 353 & 300 & 177 & 1206 & 362 & 125 \\
-	\hline
-	Retail Vs Arrival    & 420 & 795 & 353 & 500 & 167 & 1381 & 573 & 323 \\
-	\hline
-	Retail Vs Wholesale  & 658 & 420 & 310 & 300 & 167 & 1243 & 367 & 160 \\
-	\hline
-	Wholesale Vs Arrival & 448 & 705 & 282 & 500 & 186 & 1315 & 586 & 332 \\
-	\hline
-	\end{tabular}}
-	\caption{Anomalies Reported}
-	\label{AnomaliesReported}
-	\end{table}
       
-	\begin{table}[]
-	\centering
-	
-	\resizebox{\textwidth}{!}
-	{\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
-	\hline
-	Methods              & Slope Based (1) & Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6 $\cap$ 7   \\
-	\hline
-	Retail Vs Average    & 67 & 47 & 50  & 122 & 122 & 142 & 162 & 64  \\
-	\hline
-	Retail Vs Arrival    & 42 & 74 & 167 & 121 & 119 & 220 & 159 & 153 \\
-	\hline
-	Retail Vs Wholesale  & 30 & 55 & 40  & 117 & 119 & 107 & 150 & 52  \\
-	\hline
-	Wholesale Vs Arrival & 64 & 64 & 174 & 122 & 139 & 219 & 174 & 168 \\
-	\hline
-	\end{tabular}}
-	\caption{Number of news articles matched with system}
-	\label{ArticlesMatched}
-	\end{table}
-	
-      
-
-	\begin{table}[]
-	\centering
-	\resizebox{\textwidth}{!}
-	{\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
-	\hline
-	Distribution of All Articles & Articles Present & Slope Based (1) & Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6 $\cap$ 7 \\
-	\hline
-	2010 & 6  & 0  & 0  & 8  & 10 & 0   & 8  & 10  & 3  \\
-	\hline
-	2011 & 3  & 0  & 0  & 0  & 12 & 0   & 0  & 12  & 0  \\
-	\hline
-	2012 & 2  & 1  & 0  & 0  & 0  & 0   & 1  & 0   & 0  \\
-	\hline
-	2013 & 54 & 42 & 14 & 18 & 86 & 119 & 61 & 125 & 61 \\
-	\hline
-	2014 & 23 & 24 & 0  & 24 & 14 & 3   & 39 & 15  & 0  \\
-	\hline
-	2015 & 11 & 0  & 33 & 0  & 0  & 0   & 33 & 0   & 0  \\
-	\hline
-	\end{tabular}}	
-	\caption{Retail Price VS Average Retail Price}
-	\label{RetailVsAverage}
-	\end{table}
-	
-	
-	
-	\begin{table}[]
-	\centering
-	\resizebox{\textwidth}{!}
-	{\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
-	\hline
-	Distribution of All Articles & Articles Present & Slope Based (1) & Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6 $\cap$ 7  \\
-	\hline
-	2010 & 6  & 17 & 0  & 17  & 17 & 0   & 17  & 17  & 17  \\
-	\hline
-	2011 & 3  & 1  & 0  & 12  & 12 & 0   & 12  & 12  & 12  \\
-	\hline
-	2012 & 2  & 0  & 0  & 0   & 0  & 0   & 0   & 0   & 0   \\
-	\hline
-	2013 & 54 & 10 & 39 & 126 & 92 & 119 & 137 & 130 & 124 \\
-	\hline
-	2014 & 23 & 14 & 35 & 12  & 0  & 0   & 54  & 0   & 0   \\
-	\hline
-	2015 & 11 & 0  & 0  & 0   & 0  & 0   & 0   & 0   & 0  \\
-	\hline
-	\end{tabular}}	
-	\caption{Retail Price VS Arrival data of onion}
-	\label{RetailVsArrival}
-	\end{table}
-
-	
-	
-	
-	\begin{table}[]
-	\centering
-	\resizebox{\textwidth}{!}
-	{\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
-	\hline
-	Distribution of All Articles & Articles Present & Slope Based (1) & Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6 $\cap$ 7 \\
-	\hline
-	2010 & 6  & 6  & 0  & 2  & 11 & 0   & 6  & 11  & 6  \\
-	\hline
-	2011 & 3  & 1  & 0  & 0  & 4  & 0   & 1  & 4   & 1  \\
-	\hline
-	2012 & 2  & 2  & 7  & 0  & 0  & 0   & 7  & 0   & 0  \\
-	\hline
-	2013 & 54 & 7  & 21 & 18 & 91 & 119 & 45 & 124 & 44 \\
-	\hline
-	2014 & 23 & 14 & 27 & 20 & 11 & 0   & 48 & 11  & 1  \\
-	\hline
-	2015 & 11 & 0  & 0  & 0  & 0  & 0   & 0  & 0   & 0 \\
-	\hline
-	\end{tabular}}	
-	\caption{Retail Price VS Wholesale Price}
-	\label{RetailVsWholesale}
-	\end{table}
-
-	
-	
-	\begin{table}[]
-	\centering
-	\resizebox{\textwidth}{!}
-	{\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
-	\hline
-	Distribution of All Articles & Articles Present & Slope Based (1) & Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6 $\cap$ 7  \\
-	\hline
-	2010 & 6  & 17 & 0  & 17  & 17 & 0   & 17  & 17  & 17  \\
-	\hline
-	2011 & 3  & 1  & 0  & 12  & 12 & 0   & 12  & 12  & 12  \\
-	\hline
-	2012 & 2  & 0  & 0  & 0   & 0  & 0   & 0   & 0   & 0   \\
-	\hline
-	2013 & 54 & 25 & 15 & 125 & 93 & 123 & 129 & 129 & 123 \\
-	\hline
-	2014 & 23 & 21 & 49 & 20  & 0  & 16  & 61  & 16  & 16  \\
-	\hline
-	2015 & 11 & 0  & 0  & 0   & 0  & 0   & 0   & 0   & 0   \\
-	\hline
-	\end{tabular}}	
-	\caption{ Wholesale Price VS Arrival data of onion}
-	\label{WholesaleVsArrival}
-	\end{table}
-	
-	
-	
-	
-	\begin{table}[]
-	\centering
-	\resizebox{\textwidth}{!}
-	{\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
-	\hline
-	Distribution of All Articles & Slope Based (1) & Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6 $\cap$ 7 \\
-	\hline
-	2006 & 133 & 30 & 65  & 0   & 0   & 204 & 0   & 0  \\
-	\hline
-	2007 & 14  & 15 & 30  & 0   & 0   & 53  & 0   & 0  \\
-	\hline
-	2008 & 42  & 15 & 0   & 0   & 0   & 47  & 0   & 0  \\
-	\hline
-	2009 & 82  & 15 & 0   & 0   & 0   & 96  & 0   & 0  \\
-	\hline
-	2010 & 72  & 45 & 28  & 37  & 0   & 142 & 37  & 13 \\
-	\hline
-	2011 & 56  & 60 & 115 & 57  & 0   & 182 & 57  & 9  \\
-	\hline
-	2012 & 84  & 0  & 33  & 13  & 0   & 100 & 13  & 5  \\
-	\hline
-	2013 & 77  & 15 & 56  & 134 & 161 & 125 & 189 & 90 \\
-	\hline
-	2014 & 140 & 0  & 26  & 40  & 16  & 155 & 47  & 8  \\
-	\hline
-	2015 & 42  & 60 & 0   & 19  & 0   & 102 & 19  & 0  \\
-	\hline
-	\end{tabular}}
-	\caption{Distribution of Anomalies reported by system for Retail Price VS Average Retail Price}
-	\label{RetailVsAverageDist}
-	\end{table}
-	  
-	  
-	  
-	
-	\begin{table}[]
-	\centering
-	\resizebox{\textwidth}{!}
-	{\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
-	\hline
-	Distribution of All Articles & Slope Based (1) & Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6 $\cap$ 7  \\
-	\hline
-	2006 & 35 & 185 & 0   & 0   & 0   & 199 & 0   & 0   \\
-	\hline
-	2007 & 63 & 85  & 0   & 0   & 0   & 148 & 0   & 0   \\
-	\hline
-	2008 & 28 & 105 & 0   & 0   & 0   & 126 & 0   & 0   \\
-	\hline
-	2009 & 28 & 45  & 0   & 0   & 0   & 73  & 0   & 0   \\
-	\hline
-	2010 & 48 & 60  & 46  & 143 & 0   & 107 & 143 & 56  \\
-	\hline
-	2011 & 36 & 60  & 40  & 165 & 0   & 128 & 165 & 65  \\
-	\hline
-	2012 & 77 & 45  & 0   & 81  & 0   & 118 & 81  & 25  \\
-	\hline
-	2013 & 59 & 90  & 168 & 111 & 161 & 263 & 178 & 172 \\
-	\hline
-	2014 & 46 & 105 & 99  & 0   & 6   & 204 & 6   & 5   \\
-	\hline
-	2015 & 0  & 15  & 0   & 0   & 0   & 15  & 0   & 0   \\
-	\hline
-	\end{tabular}}
-	\caption{Distribution of Anomalies reported by system for Retail Price VS Arrival data of onion }
-	\label{RetailVsArrivalDist}
-	\end{table}
-	
-	
-	\begin{table}[]
-	\centering
-	\resizebox{\textwidth}{!}
-	{\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
-	\hline
-	Distribution of All Articles & Slope Based (1) & Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6 $\cap$ 7  \\
-	\hline
-	2006 & 126 & 0  & 0  & 0   & 0   & 126 & 0   & 0  \\
-	\hline
-	2007 & 77  & 30 & 0  & 0   & 0   & 107 & 0   & 0  \\
-	\hline
-	2008 & 70  & 15 & 0  & 0   & 0   & 85  & 0   & 0  \\
-	\hline
-	2009 & 63  & 75 & 0  & 0   & 0   & 126 & 0   & 0  \\
-	\hline
-	2010 & 62  & 30 & 2  & 53  & 0   & 92  & 53  & 8  \\
-	\hline
-	2011 & 50  & 45 & 67 & 75  & 0   & 155 & 75  & 34 \\
-	\hline
-	2012 & 72  & 82 & 64 & 7   & 0   & 160 & 7   & 0  \\
-	\hline
-	2013 & 50  & 38 & 44 & 105 & 161 & 124 & 166 & 81 \\
-	\hline
-	2014 & 60  & 75 & 99 & 60  & 6   & 182 & 66  & 37 \\
-	\hline
-	2015 & 28  & 30 & 34 & 0   & 0   & 86  & 0   & 0  \\
-	\hline
-	\end{tabular}}
-	\caption{Distribution of Anomalies reported by system for Retail Price VS Wholesale Price }
-	\label{RetailVsWholesaleDist}
-	\end{table}
-	
-	
-	\begin{table}[]
-	\centering
-	\resizebox{\textwidth}{!}
-	{\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
-	\hline
-	Distribution of All Articles & Slope Based (1) & Correlation (2) & Linear Regression (3) & Graph Based (4) & Multivariate (5) & 1 U 2 U 3 (6) & 4 U 5 (7) & 6 $\cap$ 7  \\
-	\hline
-	2006 & 0  & 65  & 0   & 0   & 0   & 65  & 0   & 0   \\
-	\hline
-	2007 & 42 & 100 & 0   & 0   & 0   & 142 & 0   & 0   \\
-	\hline
-	2008 & 21 & 120 & 0   & 0   & 0   & 141 & 0   & 0   \\
-	\hline
-	2009 & 56 & 60  & 0   & 0   & 0   & 109 & 0   & 0   \\
-	\hline
-	2010 & 83 & 75  & 51  & 142 & 0   & 162 & 142 & 62  \\
-	\hline
-	2011 & 64 & 60  & 34  & 165 & 0   & 157 & 165 & 67  \\
-	\hline
-	2012 & 42 & 45  & 0   & 81  & 0   & 87  & 81  & 12  \\
-	\hline
-	2013 & 80 & 45  & 157 & 112 & 152 & 246 & 164 & 157 \\
-	\hline
-	2014 & 46 & 105 & 40  & 0   & 34  & 162 & 34  & 34  \\
-	\hline
-	2015 & 14 & 30  & 0   & 0   & 0   & 44  & 0   & 0   \\
-	\hline
-	\end{tabular}}
-	\caption{Distribution of Anomalies reported by system for Wholesale Price VS Arrival data of onion }
-	\label{WholesaleVsArrivalDist}
-	\end{table}
-	
 
 \section{Analysis of Each Method}
 
