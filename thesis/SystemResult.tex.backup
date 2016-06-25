@@ -73,14 +73,14 @@ Following are the inferences from the above table:
 
 Following figures are the pictorical representation of the above results on timeline.
 
-\textbf{Note:} In following figures, Yellow highlighted regions are system reported anomalies for which no corresponding news article was present, Blue highlighted region represents news article for which our system did not report any anomaly and Red highlighted region represents anomalies reported by system for which news articles were present.
+\textbf{Note:} In following figures, Yellow highlighted regions are system reported anomalies for which no corresponding news article was present, Grey highlighted region represents news article for which our system did not report any anomaly and Red highlighted region represents anomalies reported by system for which news articles were present.
 
 \begin{itemize}
  \item Retail Price vs Average Retail Price
 			
 			\begin{figure}[H]
 		    	\centering
-  		    	\includegraphics[width=1.1\textwidth]{graphs/MumbaiRetailVsAverageRetail.png}
+  		    	\includegraphics[width=1.1\textwidth]{graphs/RvsAvg_Whole.png}
 		    	\caption{System Result (Green line - Centre Retail Price, Blue Line - Average Retail Price)}
 		    	\label{fig:RvsR}
 			\end{figure}
@@ -90,7 +90,7 @@ Following figures are the pictorical representation of the above results on time
 			
 			\begin{figure}[H]
 		    	\centering
-  		    	\includegraphics[width=1.1\textwidth]{graphs/mumbaiRvsA.png}
+  		    	\includegraphics[width=1.1\textwidth]{graphs/RetailVsArrival_whole.png}
 		    	\caption{System Result (Green line - Arrival Data of Onion, Blue Line - Retail Price)}
 		    	\label{fig:RvsA}
 			\end{figure}
@@ -100,7 +100,7 @@ Following figures are the pictorical representation of the above results on time
 			
 			\begin{figure}[H]
 		    	\centering
-  		    	\includegraphics[width=1.1\textwidth]{graphs/MumbaiRvsW.png}
+  		    	\includegraphics[width=1.1\textwidth]{graphs/retailVsWS_Whole.png}
 		    	\caption{System Result (Green line - Retail Price, Blue Line - Wholesale Price)}
 		    	\label{fig:RvsW}
 			\end{figure}
@@ -110,7 +110,7 @@ Following figures are the pictorical representation of the above results on time
 			
 			\begin{figure}[H]
 		    	\centering
-  		    	\includegraphics[width=1.1\textwidth]{graphs/mumbaiWvsA.png}
+  		    	\includegraphics[width=1.1\textwidth]{graphs/WSvsArrival.png}
 		    	\caption{System Result (Green line - Arrival Data of Onion, Blue Line - Wholesale Price)}
 		    	\label{fig:WvsA}
 			\end{figure}

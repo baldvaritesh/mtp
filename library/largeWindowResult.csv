@@ -1,0 +1,214 @@
+STARTING WITH RETAIL VS AVERAGE 
+
+
+
+Possitive Threshold of Slope Based : 1.85729031177
+Correlation Results::::::::::::::::
+[(-15, 0.94846390246867951), (-14, 0.95240409148200567), (-13, 0.95613559943617366), (-12, 0.95980046952661502), (-11, 0.96326412215596979), (-10, 0.96641460146627056), (-9, 0.96947564348462434), (-8, 0.97234397893597646), (-7, 0.97508435590900366), (-6, 0.9775266804916668), (-5, 0.97973140801987746), (-4, 0.98180501216814886), (-3, 0.98361288736721142), (-2, 0.98509823423009679), (-1, 0.98632568667983955), (0, 0.98698914038394914), (1, 0.98569547701427418), (2, 0.98386503048592477), (3, 0.98181621504408034), (4, 0.97944758286135147), (5, 0.97683694310037705), (6, 0.97406986009353846), (7, 0.97106011626008215), (8, 0.96772308896497905), (9, 0.96421977239064294), (10, 0.96056247125406924), (11, 0.95675727613781769), (12, 0.95270298518795682), (13, 0.94854955042724221), (14, 0.94424028703369545), (15, 0.93967268964399697)]
+Correlation Results End::::::::::::::::
+Lag At which Series are shifted........................
+0
+Upper Threshold of Linear Regression : 11.0685657618
+input0GBA.csvinput0GBA.csv input1GBA.csv[1] "coverged after 15 iterations"
+
+Var Percentage Threshold
+-19.0358099572:::107.697818954
+Not matched for Retail vs Retail Average
+Unique Dates Not matched: 38
+Count: 54
+2010-12-20,not stated,http://www.thehindu.com/business/Economy/imported-onion-arrive-from-pakistan/article965607.ece
+2010-12-21,traders nexus,http://articles.economictimes.indiatimes.com/2010-12-21/news/27586208_1_minimum-export-price-onion-prices-mep
+2011-01-06,Pak banned export,http://timesofindia.indiatimes.com/business/india-business/-Retail-onion-prices-up-by-Rs-5-10/kg-on-Pak-export-ban-reports/articleshow/7230895.cms
+2011-01-07,traders nexus,http://www.thehindu.com/business/act-swiftly-against-hoarders-pranab/article1051003.ece
+2012-12-27,traders nexus,http://timesofindia.indiatimes.com/india/Onion-prices-80-higher-than-last-year/articleshow/17774280.cms
+2012-12-27,traders nexus,http://timesofindia.indiatimes.com/india/Onion-prices-80-higher-than-last-year/articleshow/17774280.cms
+2013-01-22,traders nexus,http://www.business-standard.com/article/markets/onion-prices-up-sharply-on-transport-cost-113012200072_1.html
+2013-01-25,low supply,http://www.business-standard.com/article/markets/minimum-export-price-for-onion-likely-113012500082_1.html
+2013-01-30,low production,http://www.firstpost.com/business/economy/rise-in-onion-prices-temporary-phenomenon-pawar-607494.html
+2013-01-30,traders nexus,http://www.firstpost.com/business/economy/rise-in-onion-prices-temporary-phenomenon-pawar-607494.html
+2013-02-02,poor monsoon,http://www.ndtv.com/delhi-news/onions-rs-35-a-kg-govt-may-step-in-to-control-prices-512075
+2013-02-02,unseasonal rainfall,http://www.ndtv.com/mumbai-news/shortage-of-onion-supply-fuels-spike-in-prices-512204
+2013-07-03,traders nexus,http://www.business-standard.com/article/markets/heavy-crop-damage-in-hilly-states-lifts-onion-potato-prices-113070300796_1.html
+2013-07-17,unseasonal rainfall,http://timesofindia.indiatimes.com/business/india-business/Onion-prices-at-two-and-a-half-year-high/articleshow/21125776.cms
+2013-07-17,low production,http://profit.ndtv.com/news/economy/article-wholesale-onion-price-jumps-5-times-to-push-up-retail-rates-324600
+2013-07-23,traders nexus,http://www.business-standard.com/article/markets/ban-on-onion-exports-won-t-impact-domestic-prices-113072300848_1.html
+2013-07-23,low production,http://timesofindia.indiatimes.com/business/india-business/Onion-prices-more-than-double-to-Rs-36-40/kg-in-metros/articleshow/21272374.cms
+2013-09-03,low supply,http://www.ndtv.com/india-news/onion-prices-may-ease-when-south-india-crop-hits-market-government-533474
+2014-02-26,farmers hoarded onions to control falling prices and price got increased by 50% in 2 weeks,http://www.business-standard.com/article/markets/onion-price-rises-50-in-2-weeks-114022601022_1.html
+2014-04-18,unseasonal rainfall,http://timesofindia.indiatimes.com/india/Onion-prices-rise-about-40-in-a-week/articleshow/33877660.cms
+2014-05-12,unseasonal rainfall,http://www.business-standard.com/article/markets/onion-spot-prices-soar-31-in-2-days-likely-to-stay-high-114051200815_1.html
+2014-06-11,speculation of weak monsoon,http://timesofindia.indiatimes.com/business/india-business/Food-prices-soar-on-speculation-over-delayed-monsoon-rains/articleshow/36367024.cms
+2014-06-13,not stated,http://www.business-standard.com/article/economy-policy/onion-prices-show-mixed-signals-114061301168_1.html
+2014-06-18,not stated,http://www.business-standard.com/article/economy-policy/govt-initiates-steps-to-cool-food-prices-114061800097_1.html
+2014-06-19,not stated,http://www.business-standard.com/article/markets/kharif-sowing-of-onion-delayed-as-rains-elude-114061900452_1.html
+2014-06-20,traders nexus,http://timesofindia.indiatimes.com/business/india-business/Despite-record-onion-yield-prices-shoot-up/articleshow/36853238.cms
+2014-06-23,unseasonal rainfall,http://www.business-standard.com/article/markets/onion-price-may-escalate-further-in-coming-days-114062301190_1.html
+2014-06-30,traders nexus,http://timesofindia.indiatimes.com/india/Retail-onion-prices-soar-to-double-of-wholesale-rates/articleshow/37490678.cms
+2014-06-30,traders nexus,http://timesofindia.indiatimes.com/india/Retail-onion-prices-soar-to-double-of-wholesale-rates/articleshow/37490678.cms
+2014-07-01,not stated,http://www.ndtv.com/cheat-sheet/poor-rainfall-could-cause-drought-like-conditions-in-parts-of-west-india-agriculture-minister-582801
+2014-07-01,not stated,http://www.ndtv.com/cheat-sheet/poor-rainfall-could-cause-drought-like-conditions-in-parts-of-west-india-agriculture-minister-582801
+2014-07-01,traders nexus,http://profit.ndtv.com/news/industries/article-onion-prices-shoot-up-no-relief-in-sight-574345
+2014-07-01,traders nexus,http://www.moneycontrol.com/news/economy/budget-carvan-how-will-modi-tackle-onion-pricing-web_1116723.html
+2014-07-02,prediction of delayed monsoon,http://timesofindia.indiatimes.com/business/india-business/Govt-hikes-minimum-export-price-of-onion-to-US-500-per-tonne/articleshow/37630139.cms
+2014-07-02,not stated,http://articles.economictimes.indiatimes.com/2014-07-02/news/51030862_1_wholesale-onion-prices-lasalgaon-kharif-crop
+2014-07-03,delayed monsoon,http://www.dnaindia.com/mumbai/report-dwindling-stocks-pushing-onion-prices-up-1999171
+2014-07-03,traders nexus,http://articles.economictimes.indiatimes.com/2014-07-03/news/51057542_1_stock-limits-onions-ravi-shankar-prasad
+2014-07-13,low production,http://timesofindia.indiatimes.com/india/Govt-to-check-onion-prices-with-imports/articleshow/38282324.cms
+2014-07-15,not stated,http://www.firstpost.com/india/why-modi-sarkaar-should-ready-itself-for-another-fight-with-inflation-1619551.html
+2014-07-17,not stated,http://www.business-standard.com/article/economy-policy/price-stabilization-fund-in-agriculture-to-be-used-for-cereals-and-vegetables-114071701051_1.html
+2014-12-18,unseasonal rainfall,http://www.business-standard.com/article/markets/onion-price-rises-65-this-month-as-rain-interrupts-harvest-114121800395_1.html
+2015-05-18,low supply,http://www.business-standard.com/article/markets/higher-onion-acreage-may-keep-prices-stable-115051800540_1.html
+2015-06-11,low supply,http://www.business-standard.com/article/markets/onion-price-moves-up-on-reduced-supply-rising-demand-115061100692_1.html
+2015-06-15,not stated,http://profit.ndtv.com/news/economy/article-headline-inflation-771716
+2015-06-22,not stated,http://food.ndtv.com/food-drinks/food-price-surge-puts-rajan-on-the-back-foot-774098
+2015-06-22,unseasonal rainfall,http://www.dnaindia.com/money/report-rbi-s-rajan-on-the-back-foot-as-food-prices-continue-to-surge-2097745
+2015-06-22,not stated,http://www.firstpost.com/business/forget-heavy-rains-food-prices-are-still-on-the-rise-putting-rbi-rajan-on-back-foot-2305394.html
+2015-06-26,low production,http://www.dnaindia.com/money/report-government-steeply-hikes-minimum-export-price-for-onion-to-425-per-tonne-2099136
+2015-06-26,low production,http://profit.ndtv.com/news/industries/article-government-hikes-minimum-export-price-for-onion-775672
+2015-06-27,low production,http://timesofindia.indiatimes.com/business/india-business/Govt-raises-minimum-export-price-of-onion-by-175/articleshow/47837967.cms
+2015-06-28,low supply,http://www.thehindu.com/business/govt-mulls-importing-onions-to-control-price-rise/article7363803.ece
+2015-06-29,low production,http://www.business-standard.com/article/pti-stories/govt-mulls-importing-onions-to-control-price-rise-115062800146_1.html
+2015-06-29,not stated,http://www.business-standard.com/article/pti-stories/govt-mulls-importing-onions-to-control-price-rise-115062800146_1.html
+2015-06-29,low production,http://www.moneycontrol.com/news/business/govt-hikes-minimum-export-price-for-onion-to-36425-per-ton_1673161.html
+
+
+
+
+
+Possitive Threshold of Slope Based : 1.74202517754
+Correlation Results::::::::::::::::
+[(-15, 0.94479615065008204), (-14, 0.94908483492106444), (-13, 0.95312526516087581), (-12, 0.9569846933637739), (-11, 0.96076556238127742), (-10, 0.96440907616984006), (-9, 0.96787190336224449), (-8, 0.97112491315079241), (-7, 0.9741208255124435), (-6, 0.97687443118053729), (-5, 0.97923238062569984), (-4, 0.98138323635859803), (-3, 0.983343006671064), (-2, 0.98493019160143203), (-1, 0.98625674843483324), (0, 0.98732489280624225), (1, 0.98687882605017385), (2, 0.98614748242751848), (3, 0.98511649523430256), (4, 0.9837102460533631), (5, 0.98208949617500352), (6, 0.98028664572979674), (7, 0.97809313749231852), (8, 0.97568617644294853), (9, 0.97305995415759927), (10, 0.97018569212160699), (11, 0.96718844586835107), (12, 0.96399059373875828), (13, 0.96061342590352905), (14, 0.95714329590761649), (15, 0.95347392410983534)]
+Correlation Results End::::::::::::::::
+Lag At which Series are shifted........................
+0
+Upper Threshold of Linear Regression : 7.19726385328
+input0GBA.csvinput0GBA.csv input1GBA.csv[1] "coverged after 16 iterations"
+
+Var Percentage Threshold
+-27.3105715933:::108.229036587
+Not matched for Retail vs Retail Average
+Unique Dates Not matched: 39
+Count: 67
+2010-12-20,not stated,http://www.thehindu.com/business/Economy/imported-onion-arrive-from-pakistan/article965607.ece
+2010-12-21,traders nexus,http://articles.economictimes.indiatimes.com/2010-12-21/news/27586208_1_minimum-export-price-onion-prices-mep
+2010-12-23,traders nexus,http://www.ndtv.com/india-news/food-inflation-spikes-govt-blames-the-onion-442821
+2011-01-05,not stated,http://www.ndtv.com/india-news/bjp-slams-government-over-split-views-on-inflation-444119
+2011-01-06,Pak banned export,http://timesofindia.indiatimes.com/business/india-business/-Retail-onion-prices-up-by-Rs-5-10/kg-on-Pak-export-ban-reports/articleshow/7230895.cms
+2011-01-07,not stated,http://www.ndtv.com/india-news/food-inflation-high-as-vegetable-prices-rise-444245
+2011-01-07,traders nexus,http://www.thehindu.com/business/act-swiftly-against-hoarders-pranab/article1051003.ece
+2012-12-27,traders nexus,http://timesofindia.indiatimes.com/india/Onion-prices-80-higher-than-last-year/articleshow/17774280.cms
+2012-12-27,traders nexus,http://timesofindia.indiatimes.com/india/Onion-prices-80-higher-than-last-year/articleshow/17774280.cms
+2013-01-22,traders nexus,http://www.business-standard.com/article/markets/onion-prices-up-sharply-on-transport-cost-113012200072_1.html
+2013-01-30,low production,http://www.firstpost.com/business/economy/rise-in-onion-prices-temporary-phenomenon-pawar-607494.html
+2013-01-30,traders nexus,http://www.firstpost.com/business/economy/rise-in-onion-prices-temporary-phenomenon-pawar-607494.html
+2013-02-02,poor monsoon,http://www.ndtv.com/delhi-news/onions-rs-35-a-kg-govt-may-step-in-to-control-prices-512075
+2013-07-03,traders nexus,http://www.business-standard.com/article/markets/heavy-crop-damage-in-hilly-states-lifts-onion-potato-prices-113070300796_1.html
+2013-07-17,unseasonal rainfall,http://timesofindia.indiatimes.com/business/india-business/Onion-prices-at-two-and-a-half-year-high/articleshow/21125776.cms
+2013-07-17,low production,http://profit.ndtv.com/news/economy/article-wholesale-onion-price-jumps-5-times-to-push-up-retail-rates-324600
+2013-08-06,low production,http://www.thehindu.com/news/cities/Delhi/onion-prices-bring-tears-yet-again/article4995124.ece
+2013-08-11,low production,http://www.dnaindia.com/india/report-onion-prices-rise-to-rs-55-60kg-hike-bring-tears-in-eyes-of-people-1873151
+2013-08-11,low production,http://www.thehindu.com/news/cities/Delhi/onion-prices-soars-to-rs-60-per-kg-in-delhi/article5012426.ece
+2013-08-13,low production,http://timesofindia.indiatimes.com/city/delhi/Onion-prices-soar-selling-at-up-to-Rs-80/kg/articleshow/21793386.cms
+2013-08-13,low supply,http://profit.ndtv.com/news/commodities/article-onion-prices-hit-record-high-selling-at-rs-80-kg-325721
+2013-08-13,low supply,http://www.ndtv.com/india-news/onion-prices-remain-high-at-rs-60-kg-in-delhi-wholesale-rates-soften-531528
+2013-08-13,low supply,http://articles.economictimes.indiatimes.com/2013-08-13/news/41375276_1_onion-exports-high-onion-prices-rs-35-40
+2013-08-13,low supply,http://www.firstpost.com/business/economy/onion-prices-hit-record-high-at-rs-80kg-may-hit-rs-100-in-a-week-1028881.html
+2013-08-13,low supply,http://www.dnaindia.com/india/report-as-onion-rates-rise-twitter-flooded-with-teary-jokes-on-the-vegetable-price-rise-1874070
+2013-08-13,low supply,http://www.dnaindia.com/mumbai/report-onion-prices-to-touch-r100kg-supply-hit-as-rain-wreaks-havoc-1873670
+2013-08-13,low supply,http://www.telegraphindia.com/1130813/jsp/odisha/story_17226115.jsp
+2013-08-14,low supply,http://www.thehindu.com/news/national/cos-meeting-to-wipe-onion-tears/article5019702.ece
+2013-08-14,traders nexus,http://www.thehindu.com/news/national/cos-meeting-to-wipe-onion-tears/article5019702.ece
+2013-08-14,low supply,http://www.business-standard.com/article/current-affairs/onion-price-soars-to-rs-80-kg-despite-normal-supply-113081400545_1.html
+2013-08-17,traders nexus,http://zeenews.india.com/news/nation/will-give-onions-as-rakhi-gift-to-my-sisters-yashwant-sinha_869682.html
+2013-08-17,traders nexus,http://timesofindia.indiatimes.com/india/Hoarding-pushing-onion-prices-up-govt-finds/articleshow/21872501.cms
+2013-08-21,low supply,http://www.thehindu.com/business/Industry/onion-prices-jump-to-rs-80kg-again/article5044776.ece
+2013-08-22,not stated,http://www.moneycontrol.com/news/economy/onion-prices-shoot-back-to-rs-80kgmany-partsindia_939103.html
+2013-08-22,low supply,http://www.ndtv.com/india-news/onion-prices-jump-back-to-rs-80-per-kilogram-532357
+2013-10-28,unseasonal rainfall,http://zeenews.india.com/news/nation/onion-prices-continue-to-rule-upto-rs-90/kg_886469.html
+2013-10-28,traders nexus,http://www.dnaindia.com/mumbai/report-dna-exclusive-traders-not-farmers-making-the-most-of-soaring-onion-price-1909850
+2013-12-13,not stated,http://articles.economictimes.indiatimes.com/2015-09-11/news/66434886_1_lasalgaon-apmc-onion-prices-onion-exporters-association
+2014-06-11,speculation of weak monsoon,http://timesofindia.indiatimes.com/business/india-business/Food-prices-soar-on-speculation-over-delayed-monsoon-rains/articleshow/36367024.cms
+2014-06-13,not stated,http://www.business-standard.com/article/economy-policy/onion-prices-show-mixed-signals-114061301168_1.html
+2014-06-18,not stated,http://www.telegraphindia.com/1140618/jsp/frontpage/story_18524316.jsp
+2014-06-18,not stated,http://www.business-standard.com/article/economy-policy/govt-initiates-steps-to-cool-food-prices-114061800097_1.html
+2014-06-20,traders nexus,http://timesofindia.indiatimes.com/business/india-business/Despite-record-onion-yield-prices-shoot-up/articleshow/36853238.cms
+2014-06-23,unseasonal rainfall,http://www.business-standard.com/article/markets/onion-price-may-escalate-further-in-coming-days-114062301190_1.html
+2014-06-30,glut in supply chain,http://www.firstpost.com/politics/rise-food-prices-modi-tells-states-take-urgent-measures-1596495.html
+2014-06-30,not stated,http://www.moneycontrol.com/news/economy/risefood-prices-centre-swings-into-action_1115868.html
+2014-06-30,traders nexus,http://timesofindia.indiatimes.com/india/Retail-onion-prices-soar-to-double-of-wholesale-rates/articleshow/37490678.cms
+2014-06-30,traders nexus,http://timesofindia.indiatimes.com/india/Retail-onion-prices-soar-to-double-of-wholesale-rates/articleshow/37490678.cms
+2014-07-01,not stated,http://www.ndtv.com/cheat-sheet/poor-rainfall-could-cause-drought-like-conditions-in-parts-of-west-india-agriculture-minister-582801
+2014-07-01,not stated,http://www.ndtv.com/cheat-sheet/poor-rainfall-could-cause-drought-like-conditions-in-parts-of-west-india-agriculture-minister-582801
+2014-07-01,traders nexus,http://profit.ndtv.com/news/industries/article-onion-prices-shoot-up-no-relief-in-sight-574345
+2014-07-02,prediction of delayed monsoon,http://timesofindia.indiatimes.com/business/india-business/Govt-hikes-minimum-export-price-of-onion-to-US-500-per-tonne/articleshow/37630139.cms
+2014-07-02,traders nexus,http://www.ndtv.com/india-news/price-rise-government-cracks-down-on-hoarders-will-sell-onions-at-wholesale-rates-582928
+2014-07-02,not stated,http://www.thehindu.com/business/Economy/govt-hikes-onion-mep-to-500-per-tonne/article6169766.ece
+2014-07-03,not stated,http://www.moneycontrol.com/news/cnbc-tv18-comments/govt-includes-potato-onionessential-commodities-act_1117950.html
+2014-07-03,not stated,http://www.business-standard.com/article/economy-policy/govt-moves-to-rein-in-onion-potato-prices-114070300114_1.html
+2014-07-03,traders nexus,http://articles.economictimes.indiatimes.com/2014-07-03/news/51057542_1_stock-limits-onions-ravi-shankar-prasad
+2014-07-05,Drought Fears,http://www.ndtv.com/delhi-news/onion-sells-at-rs-40-kg-in-national-capital-region-on-drought-fears-584059
+2014-07-13,low production,http://timesofindia.indiatimes.com/india/Govt-to-check-onion-prices-with-imports/articleshow/38282324.cms
+2014-07-15,not stated,http://www.firstpost.com/india/why-modi-sarkaar-should-ready-itself-for-another-fight-with-inflation-1619551.html
+2014-07-17,not stated,http://www.business-standard.com/article/economy-policy/price-stabilization-fund-in-agriculture-to-be-used-for-cereals-and-vegetables-114071701051_1.html
+2015-01-06,bad weather,http://zeenews.india.com/business/news/economy/vegetable-prices-again-spike-in-delhi-retailers-blame-bad-weather_115654.html
+2015-06-15,not stated,http://profit.ndtv.com/news/economy/article-headline-inflation-771716
+2015-06-27,low production,http://timesofindia.indiatimes.com/business/india-business/Govt-raises-minimum-export-price-of-onion-by-175/articleshow/47837967.cms
+2015-06-28,low supply,http://www.thehindu.com/business/govt-mulls-importing-onions-to-control-price-rise/article7363803.ece
+2015-06-29,low production,http://www.business-standard.com/article/pti-stories/govt-mulls-importing-onions-to-control-price-rise-115062800146_1.html
+2015-06-29,not stated,http://www.business-standard.com/article/pti-stories/govt-mulls-importing-onions-to-control-price-rise-115062800146_1.html
+
+
+
+
+
+END OF RETAIL VS AVERAGE 
+
+
+
+STARTING WITH RETAIL VS ARRIVAL 
+
+
+
+Negative Threshold of Slope Based : -1.00220676975
+Correlation Results::::::::::::::::
+[(-15, 0.14284906141336645), (-14, 0.13864004263668242), (-13, 0.13470385427290973), (-12, 0.13086746540710159), (-11, 0.12713758431350225), (-10, 0.12336811226520054), (-9, 0.11967820398608389), (-8, 0.11602601934695252), (-7, 0.11258045245483202), (-6, 0.10946326524579038), (-5, 0.10651795348122813), (-4, 0.10368578911066396), (-3, 0.10106944338113412), (-2, 0.098729345345569278), (-1, 0.0963952694371778), (0, 0.094077930076114147), (1, 0.090884287811595271), (2, 0.087586756588996298), (3, 0.084066782026852929), (4, 0.080622835070232782), (5, 0.077323987544348396), (6, 0.074010964621855635), (7, 0.070936804099085829), (8, 0.068141378057459706), (9, 0.065563428699420959), (10, 0.062904500232685262), (11, 0.060342863622041221), (12, 0.057904691390967156), (13, 0.055424237623346473), (14, 0.053131562294076624), (15, 0.0509320147654483)]
+Correlation Results End::::::::::::::::
+Lag At which Series are shifted........................
+15
+Upper Threshold of Linear Regression : 59.6237453101
+input0GBA.csvinput0GBA.csv input1GBA.csv[1] "coverged after 267 iterations"
+
+Var Percentage Threshold
+-17.5157159383:::100.551628767
+Not matched for Retail vs Arrival
+Unique Dates Not matched: 29
+Count: 43
+2012-12-27,traders nexus,http://timesofindia.indiatimes.com/india/Onion-prices-80-higher-than-last-year/articleshow/17774280.cms
+2012-12-27,traders nexus,http://timesofindia.indiatimes.com/india/Onion-prices-80-higher-than-last-year/articleshow/17774280.cms
+2013-01-30,low production,http://www.firstpost.com/business/economy/rise-in-onion-prices-temporary-phenomenon-pawar-607494.html
+2013-01-30,traders nexus,http://www.firstpost.com/business/economy/rise-in-onion-prices-temporary-phenomenon-pawar-607494.html
+2013-02-02,poor monsoon,http://www.ndtv.com/delhi-news/onions-rs-35-a-kg-govt-may-step-in-to-control-prices-512075
+2013-02-02,unseasonal rainfall,http://www.ndtv.com/mumbai-news/shortage-of-onion-supply-fuels-spike-in-prices-512204
+2013-07-03,traders nexus,http://www.business-standard.com/article/markets/heavy-crop-damage-in-hilly-states-lifts-onion-potato-prices-113070300796_1.html
+2014-02-26,farmers hoarded onions to control falling prices and price got increased by 50% in 2 weeks,http://www.business-standard.com/article/markets/onion-price-rises-50-in-2-weeks-114022601022_1.html
+2014-04-18,unseasonal rainfall,http://timesofindia.indiatimes.com/india/Onion-prices-rise-about-40-in-a-week/articleshow/33877660.cms
+2014-05-12,unseasonal rainfall,http://www.business-standard.com/article/markets/onion-spot-prices-soar-31-in-2-days-likely-to-stay-high-114051200815_1.html
+2014-06-11,speculation of weak monsoon,http://timesofindia.indiatimes.com/business/india-business/Food-prices-soar-on-speculation-over-delayed-monsoon-rains/articleshow/36367024.cms
+2014-06-13,not stated,http://www.business-standard.com/article/economy-policy/onion-prices-show-mixed-signals-114061301168_1.html
+2014-06-18,not stated,http://www.business-standard.com/article/economy-policy/govt-initiates-steps-to-cool-food-prices-114061800097_1.html
+2014-06-19,not stated,http://www.business-standard.com/article/markets/kharif-sowing-of-onion-delayed-as-rains-elude-114061900452_1.html
+2014-06-20,traders nexus,http://timesofindia.indiatimes.com/business/india-business/Despite-record-onion-yield-prices-shoot-up/articleshow/36853238.cms
+2014-06-23,unseasonal rainfall,http://www.business-standard.com/article/markets/onion-price-may-escalate-further-in-coming-days-114062301190_1.html
+2014-06-30,traders nexus,http://timesofindia.indiatimes.com/india/Retail-onion-prices-soar-to-double-of-wholesale-rates/articleshow/37490678.cms
+2014-06-30,traders nexus,http://timesofindia.indiatimes.com/india/Retail-onion-prices-soar-to-double-of-wholesale-rates/articleshow/37490678.cms
+2014-07-01,not stated,http://www.ndtv.com/cheat-sheet/poor-rainfall-could-cause-drought-like-conditions-in-parts-of-west-india-agriculture-minister-582801
+2014-07-01,not stated,http://www.ndtv.com/cheat-sheet/poor-rainfall-could-cause-drought-like-conditions-in-parts-of-west-india-agriculture-minister-582801
+2014-07-01,traders nexus,http://profit.ndtv.com/news/industries/article-onion-prices-shoot-up-no-relief-in-sight-574345
+2014-07-01,traders nexus,http://www.moneycontrol.com/news/economy/budget-carvan-how-will-modi-tackle-onion-pricing-web_1116723.html
+2014-07-02,prediction of delayed monsoon,http://timesofindia.indiatimes.com/business/india-business/Govt-hikes-minimum-export-price-of-onion-to-US-500-per-tonne/articleshow/37630139.cms
+2014-07-02,not stated,http://articles.economictimes.indiatimes.com/2014-07-02/news/51030862_1_wholesale-onion-prices-lasalgaon-kharif-crop
+2014-07-03,delayed monsoon,http://www.dnaindia.com/mumbai/report-dwindling-stocks-pushing-onion-prices-up-1999171
+2014-07-03,traders nexus,http://articles.economictimes.indiatimes.com/2014-07-03/news/51057542_1_stock-limits-onions-ravi-shankar-prasad
+2014-07-13,low production,http://timesofindia.indiatimes.com/india/Govt-to-check-onion-prices-with-imports/articleshow/38282324.cms
+2014-07-15,not stated,http://www.firstpost.com/india/why-modi-sarkaar-should-ready-itself-for-another-fight-with-inflation-1619551.html
+2014-07-17,not stated,http://www.busi
