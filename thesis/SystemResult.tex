@@ -58,7 +58,7 @@ Following analysis is for Mumbai. In case of Mumbai, there are total of 66 disti
 \textbf{Wholesale Vs Arrival}     & 332                         & 168                         &  29                		&  7  (24.13\%)              \\ \hline
 \end{tabular}
 \caption{System Result for Mumbai}
-\label{table:result}
+\label{result}
 \end{table}
 
 Following are the inferences from the above table:
@@ -69,40 +69,9 @@ Following are the inferences from the above table:
  \item This also indirectly indicates that the most of the problem exists at the wholesale level where traders operate who are usually accused by the news reports for manipulating the price of commodity.
 \end{itemize}
 
-As shown in the above table \ref{table:result}, from the number of news articles which are missed by system, almost 25\% of them are of traders nexus. Rest 75\% are because of low production, unseasonal rainfall, low supply, etc. Now, one of the reason why these articles were missed may be because of arrival will be low during this tenure and it is normal to have price hike. So, that might be reason that system might have considered them as normal that prices are high. Usually news sources report in article whenever prices goes high, but system only detects anomalous cases.
 
-\begin{table}[H]
-	\centering	
-	\begin{tabular}{|l|}
-		\hline
-		\textbf{Dates with article trader nexus missed by system} \\ \hline
-		2012-12-27                                                \\ \hline
-		2013-01-22                                                \\ \hline
-		2013-01-30                                                \\ \hline
-		2013-07-03                                                \\ \hline
-		2014-06-20                                                \\ \hline
-		2014-06-30                                                \\ \hline
-		2014-07-01                                                \\ \hline
-	\end{tabular}
-	\caption{Common 7 Dates with article trader nexus missed by system}
-	\label{table:missed7}
-\end{table}
 
-Now, the one which are stating traders nexus as reason, and are missed by system were studied. There are 7 cases which are common to all four type of analysis. These 7 dates are shown in table \ref{table:missed7}. Note that there exist 24 unique dates for which trader nexus articles are present. So 71\% of traders nexus article were reported by system overall. So, we tried to dig up why system missed them. On studying those cases, we found following:
-
-\begin{itemize}
-
-	\item When we looked for Retail vs Average Retail series, we found that all centers were behaving similar. Where as this analysis detects when one center deviates from other. That's why system might have missed them. One more point to note is that these articles are for traders nexus and it is quite common that traders will be communucating among themselves and controlling the prices and that is the reason why we observed that centers are behaving similar.
-	
-	\item For Retail vs Arrival analysis, Hypothesis 1 reported some of the anomalies, but Hypothesis 3 did not. Hypothesis reports anomalies date-wise and Hypothesis 1 reports anomalies window-wise. So, we found that while taking intersection these anomalies got removed. Note that in Hypothsis 3 not exact date, but nearby dates were reported.
-	
-	\item When we studied Retail vs Wholesale Analysis, we found that in all cases, both prices were moving hand in hand. So, this analysis could not capture these anomalies. \textbf{ Note that this might be the reason, why Retail vs Average Retail and Retail vs Wholesale are not producing promising results because they usually go hand in hand. But when arrival comes into picture, then we can have better estimate of prices. So analysis which is which arrival are performing better as compared to others}
-	
-	\item For Wholesale vs Arrival, 3 of the anomalies were reported by Hypothesis 1. But as stated above for Retail vs Arrival, here too Hypothesis 3 results could not report exact date and we missed them. For the remaining cases in this analysis, we could not find particular reason why they are not reported.
-	
-\end{itemize}
-
-Following figures are the pictorical representation of the above results (See table \ref{table:result}) on timeline.
+Following figures are the pictorical representation of the above results on timeline.
 
 \textbf{Note:} In following figures, Yellow highlighted regions are system reported anomalies for which no corresponding news article was present, Grey highlighted region represents news article for which our system did not report any anomaly and Red highlighted region represents anomalies reported by system for which news articles were present.
 
