@@ -390,7 +390,7 @@ def plotGraphForHypothesis(original,average,list1, list2, total_news_articles):
 	not_found_articles = list(not_found_articles)
 	not_found_articles.sort()
 	for row in not_found_articles:
-		ax.axvspan(row, row + timedelta(days=1), color='lightgrey', alpha=0.5, lw=0)
+		ax.axvspan(row, row + timedelta(days=1), color='mediumpurple', alpha=0.5, lw=0)
 	plt.show()
 
 
@@ -432,7 +432,7 @@ def plotGraphForHypothesisArrival(original,average,list1, list2, total_news_arti
 	not_found_articles = list(not_found_articles)
 	not_found_articles.sort()
 	for row in not_found_articles:
-		ax.axvspan(row, row + timedelta(days=1), color='lightgrey', alpha=0.5, lw=0)
+		ax.axvspan(row, row + timedelta(days=1), color='mediumpurple', alpha=0.5, lw=0)
 	plt.show()
 
 '''
