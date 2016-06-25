@@ -1,0 +1,167 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}    
+\usepackage{color}
+%\usepackage{epsfig}   
+\usepackage[font=footnotesize]{subfig}
+\usepackage{float}
+\usepackage{fancyhdr}                              
+\usepackage{makeidx}
+\usepackage[nottoc,notlot,notlof]{tocbibind}     
+\usepackage{supertabular}
+\usepackage{array}              
+\usepackage{setspace} 
+\usepackage{enumerate}
+\usepackage{rotating}
+\usepackage{moreverb}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{captcont}
+\usepackage{verbatim}
+\usepackage{titlesec}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{lipsum}
+\usepackage{tikz}
+\usepackage{pgf-pie}
+\usepackage{pgfplots}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{blindtext}
+\usepackage{tabularx}
+%\usepackage[utf8]{inputenc}
+\usepackage{commath}
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\usepackage[margin=1in]{geometry}
+\begin{document}
+
+
+\section{Results and Findings}
+
+
+
+The analysis was performed for differnet timeseries of two centers- Delhi and Mumbai.
+
+Following analysis is for Mumbai. In case of Mumbai, there are total of 66 distinct days for which news articles exist. Here, articles not matched represents unique dates for which articles were present but system failed to report anomaly against that date.
+\begin{table}[H]
+\centering
+
+\begin{tabular}{| L{3cm} | L{3cm} | L{3cm} | L{3cm} | L{3cm} |}
+\hline                                 
+				  & \textbf{Anomalies \newline Reported} & \textbf{Anomalies \newline Matched}  & \textbf{Articles \newline Not Matched}   & \textbf{Articles Not Matched which stated traders nexus as reason} \\ \hline
+\textbf{Retail Vs Average Retail} & 125                         & 64                          &  49                		&  12 (24.49\%)                \\ \hline
+\textbf{Retail Vs Arrival}        & 323                         & 153                         &  33                		&  9  (27.27\%)              \\ \hline
+\textbf{Retail Vs Wholesale}      & 160                         & 52                          &  52                		&  14 (26.92\%)               \\ \hline
+\textbf{Wholesale Vs Arrival}     & 332                         & 168                         &  29                		&  7  (24.13\%)              \\ \hline
+\end{tabular}
+\caption{System Result for Mumbai}
+\label{result}
+\end{table}
+
+Following are the inferences from the above table:
+\begin{itemize}
+ \item Analysis involving arrival timeseries tends to produce better matches. This could be because arrival is one of the determining factor for the price of commodity. Also, news often compare arrival data to explain the suspicous scenarios.
+ \item Retail vs Average Retail does not produce good matches which shows that the prices at differnet centers tend to go in tendum which might be because of strong traders nexus.
+ \item Retail vs Wholesale is not performing good results which gives a clear indication that usually retail prices align with the wholesale prices. So, retailers don't tend to get involved in the fixing of prices because they are forced to align the price of commodity with the wholesale prices.
+ \item This also indirectly indicates that the most of the problem exists at the wholesale level where traders operate who are usually accused by the news reports for manipulating the price of commodity.
+\end{itemize}
+
+
+
+Following figures are the pictorical representation of the above results on timeline.
+
+\textbf{Note:} In following figures, Yellow highlighted regions are system reported anomalies for which no corresponding news article was present, Blue highlighted region represents news article for which our system did not report any anomaly and Red highlighted region represents anomalies reported by system for which news articles were present.
+
+\begin{itemize}
+ \item Retail Price vs Average Retail Price
+			
+			\begin{figure}[H]
+		    	\centering
+  		    	\includegraphics[width=1.1\textwidth]{graphs/MumbaiRetailVsAverageRetail.png}
+		    	\caption{System Result (Green line - Centre Retail Price, Blue Line - Average Retail Price)}
+		    	\label{fig:RvsR}
+			\end{figure}
+			
+	
+ \item Retail Price vs Arrival Data
+			
+			\begin{figure}[H]
+		    	\centering
+  		    	\includegraphics[width=1.1\textwidth]{graphs/mumbaiRvsA.png}
+		    	\caption{System Result (Green line - Arrival Data of Onion, Blue Line - Retail Price)}
+		    	\label{fig:RvsA}
+			\end{figure}
+			
+	
+ \item Retail Price vs Wholesale Price
+			
+			\begin{figure}[H]
+		    	\centering
+  		    	\includegraphics[width=1.1\textwidth]{graphs/MumbaiRvsW.png}
+		    	\caption{System Result (Green line - Retail Price, Blue Line - Wholesale Price)}
+		    	\label{fig:RvsW}
+			\end{figure}
+			
+	
+ \item Wholesale Price vs Arrival Data
+			
+			\begin{figure}[H]
+		    	\centering
+  		    	\includegraphics[width=1.1\textwidth]{graphs/mumbaiWvsA.png}
+		    	\caption{System Result (Green line - Arrival Data of Onion, Blue Line - Wholesale Price)}
+		    	\label{fig:WvsA}
+			\end{figure}
+			
+	
+\end{itemize}
+
+
+Here are few examples comparing system results with the news articles and what news articles are saying about price hike.
+
+
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}{|l|l|l|l|}
+\hline
+System Reported Date & Analysis                 & Reason                        & Title                                                                  \\ \hline
+2010-12-23           & Wholesale vs Arrival     & unseasonal rainfall           & \href{http://timesofindia.indiatimes.com/city/pune/Onion-prices-still-leave-consumers-teary-eyed/articleshow/7147525.cms}{Onion prices still leave consumers teary-eyed}                          \\ \hline
+2010-12-21           & Wholesale vs Arrival     & traders nexus/hoarding        & \href{http://articles.economictimes.indiatimes.com/2010-12-21/news/27586208_1_minimum-export-price-onion-prices-mep}{Sharp rise in onion price due to hoarding}                              \\ \hline
+2013-10-23           & Retail vs Wholesale      & bad weather                   & \href{http://www.hindustantimes.com/india/rs-100-and-rising-onion-prices-surge-uncontrollably/story-sFzxWMO87KI5KnQ2FXdLFL.html}{Rs 100 and rising: onion prices surge uncontrollably}                   \\ \hline
+2013-10-24           & Retail vs Wholesale      & traders nexus/hoarding        & \href{http://www.thehindu.com/business/Industry/india-floats-tender-for-import-of-onions/article5264970.ece}{India floats tender for import of onions}                              \\ \hline
+2013-07-23           & Retail vs Arrival        & low production                & \href{http://timesofindia.indiatimes.com/business/india-business/Onion-prices-more-than-double-to-Rs-36-40/kg-in-metros/articleshow/21272374.cms}{Onion prices more than double to Rs 36-40/kg in metros}                 \\ \hline
+2013-07-23           & Retail vs Arrival        & traders nexus/hoarding        & \href{http://www.business-standard.com/article/markets/ban-on-onion-exports-won-t-impact-domestic-prices-113072300848_1.html}{Ban on onion exports won't impact domestic prices}                      \\ \hline
+2014-07-07           & Wholesale vs Arrival     & prediction of delayed monsoon & \href{http://timesofindia.indiatimes.com/business/india-business/Govt-hikes-minimum-export-price-of-onion-to-US-500-per-tonne/articleshow/37630139.cms}{Govt to check onion prices with imports}                                \\ \hline
+2014-07-07           & Wholesale vs Arrival     & traders nexus/hoarding        & \href{http://articles.economictimes.indiatimes.com/2014-07-03/news/51057542_1_stock-limits-onions-ravi-shankar-prasad}{Government puts stock limits on onions \& potatoes to check prices}     \\ \hline
+2014-07-13           & Wholesale vs Arrival     & low production                & \href{http://timesofindia.indiatimes.com/india/Govt-to-check-onion-prices-with-imports/articleshow/38282324.cms}{Govt hikes minimum export price of onion to US\$ 500 per tonne}         \\ \hline
+2013-08-11           & Retail vs Average Retail & low production                & \href{http://www.dnaindia.com/india/report-onion-prices-rise-to-rs-55-60kg-hike-bring-tears-in-eyes-of-people-1873151}{Onion prices rise to Rs 55-60/kg, hike bring 'tears' in eyes of people} \\ \hline
+2013-08-17           & Retail vs Average Retail & traders nexus/hoarding        & \href{http://timesofindia.indiatimes.com/india/Hoarding-pushing-onion-prices-up-govt-finds/articleshow/21872501.cms}{Hoarding pushing onion prices up, govt finds}                           \\ \hline
+\end{tabular}}
+
+\caption{Few Examples}
+\label{examples}
+
+\end{table}
+
+Few of the analysis which were local to center could not be matched with national news articles, but on digging more in regional news article, we could justify the anomaly. One of such case is the anomaly reported on 7th and 8th January 2013, in Delhi, for which news was reported in \href{http://www.jagran.com/news/business-onion-price-affected-from-fog-9987751.html}{Jagran local news paper} on 28th December 2012 which says due to fog there was disruption in the supply of onions. Despite of the speculation on low arrival of onion we observed considerable hike in arrival (which could be hoarded onion stocks brought into market) to earn better profits to take advantage of increased price of onion. Also, we have observed 2 news articles suspecting traders' nexus as the reason for the increased onion prices.
+
+
+			\begin{figure}[H]
+		    	\centering
+  		    	\includegraphics[width=1.1\textwidth]{graphs/localDelhiRegionalNewsPlusNexus.png}
+		    	\caption{System Result (Green line - Arrival Data of Onion, Blue Line - Retail Price)}
+		    	\label{fig:localExample}
+			\end{figure}
+			
+News Article stated the following,
+
+		\begin{figure}[H]
+		    	\centering
+  		    	\includegraphics[width=1.1\textwidth]{graphs/localDelhiFog.png}
+		    	\caption{Jagran News paper article}
+		    	\label{fig:localDelhiFog}
+		\end{figure}
+\end{document}   
