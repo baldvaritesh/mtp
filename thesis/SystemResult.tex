@@ -69,7 +69,7 @@ Following are the inferences from the above table:
  \item This also indirectly indicates that the most of the problem exists at the wholesale level where traders operate who are usually accused by the news reports for manipulating the price of commodity.
 \end{itemize}
 
-As shown in the above table \ref{result}, from the number of news articles which are missed by system, almost 25\% of them are of traders nexus. Rest 75\% are because of low production, unseasonal rainfall, low supply, etc. Now, one of the reason why these articles were missed may be because of arrival will be low during this tenure and it is normal to have price hike. So, that might be reason that system might have considered them as normal that prices are high. Usually news sources report in article whenever prices goes high, but system only detects anomalous cases.
+As shown in the above table \ref{result}, from the number of news articles which are missed by system, almost 25\% of them are of traders nexus. Rest 75\% are because of low production, unseasonal rainfall, low supply, etc. Now, one of the reason why these articles were missed may be because of arrival was low during this tenure and it is normal to have price hike. So, that might be reason that system might have considered them as normal that prices are high. Usually news sources report in article whenever prices goes high.
 
 \begin{table}[H]
 	\centering	
@@ -88,15 +88,15 @@ As shown in the above table \ref{result}, from the number of news articles which
 	\label{table:missed7}
 \end{table}
 
-Now, the one which are stating traders nexus as reason, and are missed by system were studied. There are 7 cases which are common to all four type of analysis. These 7 dates are shown in table \ref{table:missed7}. Note that there exist 24 unique dates for which trader nexus articles are present. So 71\% of traders nexus article were reported by system overall. So, we tried to dig up why system missed them. On studying those cases, we found following:
+Now, the one which are stating traders nexus as reason, and are missed by system were studied. There are 7 cases which are common to all four type of analysis. These 7 dates are shown in table \ref{table:missed7}. Note that there exist 24 unique dates for which trader nexus articles are present. So 71\% of traders nexus article were reported by system overall. So, we tried to dig up why system missed remaining ones. On studying those cases, we found following:
 
 \begin{itemize}
 
-	\item When we looked for Retail vs Average Retail series, we found that all centers were behaving similar. Where as this analysis detects when one center deviates from other. That's why system might have missed them. One more point to note is that these articles are for traders nexus and it is quite common that traders will be communucating among themselves and controlling the prices and that is the reason why we observed that centers are behaving similar.
+	\item When we looked for Retail vs Average Retail series, we found that all centers were behaving similar. Whereas this analysis detects when one center deviates from other. That's why system might have missed them. One more point to note is that these articles are for traders nexus and it is quite common that traders will be communucating among themselves and controlling the prices and that is the reason why we observed that centers are behaving similar.
 	
-	\item For Retail vs Arrival analysis, Hypothesis 1 reported some of the anomalies, but Hypothesis 3 did not. Hypothesis reports anomalies date-wise and Hypothesis 1 reports anomalies window-wise. So, we found that while taking intersection these anomalies got removed. Note that in Hypothsis 3 not exact date, but nearby dates were reported.
+	\item For Retail vs Arrival analysis, Hypothesis 1 reported some of the anomalies, but Hypothesis 3 did not. Hypothesis 3 reports anomalies date-wise and Hypothesis 1 reports anomalies window-wise. So, we found that while taking intersection these anomalies got removed. Note that in Hypothsis 3 not exact date, but nearby dates were reported.
 	
-	\item When we studied Retail vs Wholesale Analysis, we found that in all cases, both prices were moving hand in hand. So, this analysis could not capture these anomalies. \textbf{ Note that this might be the reason, why Retail vs Average Retail and Retail vs Wholesale are not producing promising results because they usually go hand in hand. But when arrival comes into picture, then we can have better estimate of prices. So analysis which is which arrival are performing better as compared to others}
+	\item When we studied Retail vs Wholesale Analysis, we found that in all cases, both prices were moving hand in hand. So, this analysis could not capture these anomalies. \textbf{ Note that this might be the reason, why Retail vs Average Retail and Retail vs Wholesale are not producing promising results because they usually go hand in hand. But when arrival comes into picture, then we can have better estimate of prices. So analysis which is with arrival are performing better as compared to others}
 	
 	\item For Wholesale vs Arrival, 3 of the anomalies were reported by Hypothesis 1. But as stated above for Retail vs Arrival, here too Hypothesis 3 results could not report exact date and we missed them. For the remaining cases in this analysis, we could not find particular reason why they are not reported.
 	
@@ -179,7 +179,7 @@ Following table has few examples showing system reported anomalies and an articl
 Explaination of all the cases listed in table are as following:
 
 \begin{itemize}
- \item 27-Dec-2010 to 29-Dec-2010 : According to our hypothesis 4, price trends at differnet centers should behave similar. But, here retail price of onion in mumbai took a sharp rise then faced a downfall which was not seen being followed by Delhi. Instead retail prices at Delhi continued to grow. There were multiple news articles for the same tenure which claimed traders nexus as reason for anomaly. One of the article link is given in table. (See Figure \ref{fig:Mumbai_RetailvsAvg_ill1})
+ \item 27-Dec-2010 to 29-Dec-2010 : According to our hypothesis 4, price trends at differnet centers should behave similar. But, here retail price of onion in Mumbai took a sharp rise then faced a downfall which was not seen being followed by Delhi. Instead retail prices at Delhi continued to grow. There were multiple news articles for the same tenure which claimed traders nexus as reason for anomaly. One of the article link is given in table. (See Figure \ref{fig:Mumbai_RetailvsAvg_ill1})
  
 	\begin{figure}[H]
 	\centering
@@ -196,7 +196,7 @@ Explaination of all the cases listed in table are as following:
 	\caption{Case: 17-Oct-2013 to 27-Oct-2013 (Green line - Centre Retail Price, Blue Line - Average Retail Price)}
 	\label{fig:Mumbai_RetailvsAvg_ill2}
 	\end{figure}
-\item 15-Dec-2010 to 13-Jan-2011 : There was a decrease in the arrival of onion at the start of December which resulted in the increase of retail price. Later arrival seemed nearly constant or increasing but prices continued to grow high. The arrival also increased when the prices were very high which could be the arrival of hoarded stock in market for profiteering.
+\item 15-Dec-2010 to 13-Jan-2011 : There was a decrease in the arrival of onion in Mumbai at the start of December which resulted in the increase of retail price. Later arrival seemed nearly constant or increasing but prices continued to grow high. The arrival also increased when the prices were very high which could be the arrival of hoarded stock in market for profiteering.
 
 	\begin{figure}[H]
 	\centering
@@ -223,7 +223,7 @@ Similar is observed for 29-Jun-2014 to 06-July-2014 in Delhi. (See Figure \ref{f
 	\label{fig:Delhi_RetailvsArrival_ill1}
 	\end{figure}
 
-\item 18-Nov-2013 to 24-Nov-2013 : Retail prices are decided by wholesale price. But here, retail price continued to remain high despite of decrease in the wholesale price. (See Figure \ref{fig:Mumbai_RetailvsWS_ill1})
+\item 18-Nov-2013 to 24-Nov-2013 : Retail prices are decided by wholesale price. But here in Mumbai, retail price continued to remain high despite of decrease in the wholesale price. (See Figure \ref{fig:Mumbai_RetailvsWS_ill1})
 
 	\begin{figure}[H]
 	\centering
@@ -249,7 +249,7 @@ Similar is observed for 27-Oct-2013 to 03-Nov-2013 in Delhi. (See Figure \ref{fi
 	\label{fig:Delhi_RetailvsWS_ill1}
 	\end{figure}
 
-\item 17-Oct-2013 to 24-Nov-2013 : Market observed increase in the arrival on increase of wholesale. The supply crunch could be man-made which resulted in increase in wholesale price and then to take advantage of increased prices, stocks were released in market. (See Figure \ref{fig:Mumbai_WSvsArrival_ill1})
+\item 17-Oct-2013 to 24-Nov-2013 : Market observed increase in the arrival on increase of wholesale in Mumbai. The supply crunch could be man-made which resulted in increase in wholesale price and then to take advantage of increased prices, stocks were released in market. (See Figure \ref{fig:Mumbai_WSvsArrival_ill1})
       \begin{figure}[H]
       \centering
       \includegraphics[width=0.8\textwidth]{graphs/Mumbai_WSvsArrival_ill1.png}
@@ -337,5 +337,5 @@ Where,
 \end{itemize}
 
 
-Figure \ref{fig:comparisonMultipleWindows} shows comparison of system result taking different window size for correlation and slope based anomaly detection mathod. Note that for all of these methods, default threshold value was considered, user did not provided threshold value in any. From this figure \ref{fig:comparisonMultipleWindows}, we can see that analysis where both series are inversely proportional to each other, A is performing better. Where both series are directly proportional to each other reducing window size for correlation method does help as we can see by comparing A, B and D.
+Figure \ref{fig:comparisonMultipleWindows} shows comparison of system result taking different window size for correlation and slope based anomaly detection mathod. Note that for all of these methods, default threshold value was considered, user did not provided any threshold value. From this figure \ref{fig:comparisonMultipleWindows}, we can see that analysis where both series are inversely proportional to each other, A is performing better. Where both series are directly proportional to each other reducing window size for correlation method does help as we can see by comparing A, B and D.
 \end{document}   
