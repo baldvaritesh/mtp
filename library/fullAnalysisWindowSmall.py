@@ -30,7 +30,7 @@ defaultThresholdCentre1 = [6, 14, -5, 100, 6, 50, -7, 100] # For Mumbai
 defaultThresholdCentre2 = [6, 14, -4, 100, 6, 20, -5, 100] # For Delhi
 
 # This variable is set true if we want to use user defined threshold. If True, values of threshold for methods linear regression and slope based method will be fetched from above array by referring corresponding index
-userThreshold = True 
+userThreshold = False 
 
 
 def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
