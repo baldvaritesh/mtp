@@ -6,7 +6,7 @@ from datetime import timedelta
 
 def multivaraiateAnalysis(args):
     command = 'Rscript'
-    path2script = '/home/kapil/Desktop/mtp/library/MultivariateSeries.R'
+    path2script = 'MultivariateSeries.R'
     
     # Variable number of args in a list
     # 2000 : number of forecast
