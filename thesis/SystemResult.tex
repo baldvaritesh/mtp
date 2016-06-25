@@ -69,13 +69,13 @@ Following are the inferences from the above table:
  \item This also indirectly indicates that the most of the problem exists at the wholesale level where traders operate who are usually accused by the news reports for manipulating the price of commodity.
 \end{itemize}
 
-As shown in the above table \ref{result}, from the number of news articles which are missed by system, almost 25\% of them are of traders nexus. Rest 75\% are because of low production, unseasonal rainfall, low supply, etc. Now, one of the reason why these articles were missed may be because of arrival was low during this tenure and it is normal to have price hike. So, that might be reason that system might have considered them as normal that prices are high. Usually news sources report in article whenever prices goes high.
+As shown in the above table \ref{result}, from the number of news articles which are missed by system, almost 25\% of them are of traders nexus. Rest 75\% are because of low production, unseasonal rainfall, low supply, etc. Now, one of the reason why these articles were missed may be because of arrival was low during this tenure and it is normal to have price hike. So, that might be reason that system might have considered them as normal. Usually news sources report in article whenever prices goes high.
 
 \begin{table}[H]
 	\centering	
 	\begin{tabular}{|c|}
 		\hline
-		\textbf{Dates with article trader nexus missed by system} \\ \hline
+		\textbf{News articles with trader nexus as reason missed by system} \\ \hline
 		2012-12-27                                                \\ \hline
 		2013-01-22                                                \\ \hline
 		2013-01-30                                                \\ \hline
@@ -88,7 +88,7 @@ As shown in the above table \ref{result}, from the number of news articles which
 	\label{table:missed7}
 \end{table}
 
-Now, the one which are stating traders nexus as reason, and are missed by system were studied. There are 7 cases which are common to all four type of analysis. These 7 dates are shown in table \ref{table:missed7}. Note that there exist 24 unique dates for which trader nexus articles are present. So 71\% of traders nexus article were reported by system overall. So, we tried to dig up why system missed remaining ones. On studying those cases, we found following:
+Now, the one which are stating traders nexus as reason, and are missed by system were studied. There are 7 cases which were excluded from all the analysis. These 7 dates are shown in table \ref{table:missed7}. Note that there exist 24 unique dates for which trader nexus articles are present. So 71\% of traders nexus article were reported by system overall. So, we tried to dig up why system missed remaining ones. On studying those cases, we found following:
 
 \begin{itemize}
 
@@ -293,7 +293,7 @@ News Article stated the following,
 		\end{figure}
 		
 
-We also tried to run system by changing window size. We got the following results:
+We also tried to run system by changing window size for differnet methods. We got the following results:
 		
 \begin{figure}[H]
 \centering
@@ -330,12 +330,12 @@ We also tried to run system by changing window size. We got the following result
 
 Where,
 \begin{itemize}
- \item A - System result when Correlation Window: 15 and Slope Based Window: 7
- \item B - System result when Correlation Window: 10 and Slope Based Window: 4
- \item C - System result when Correlation Window: 20 and Slope Based Window: 4
- \item D - System result when Correlation Window: 7 and Slope Based Window: 4
+ \item A - Result with 15 as Correlation Window and 7 as Slope Based Window
+ \item B - Result with 10 as Correlation Window and 4 as Slope Based Window
+ \item C - Result with 20 as Correlation Window and 4 as Slope Based Window
+ \item D - Result with 7 as Correlation Window and 4 as Slope Based Window
 \end{itemize}
 
 
-Figure \ref{fig:comparisonMultipleWindows} shows comparison of system result taking different window size for correlation and slope based anomaly detection mathod. Note that for all of these methods, default threshold value was considered, user did not provided any threshold value. From this figure \ref{fig:comparisonMultipleWindows}, we can see that analysis where both series are inversely proportional to each other, A is performing better. Where both series are directly proportional to each other reducing window size for correlation method does help as we can see by comparing A, B and D.
+Figure \ref{fig:comparisonMultipleWindows} shows comparison of system result taking different window size for correlation and slope based anomaly detection mathod. Note that for all of these methods, default threshold value was considered, user did not provided any threshold value. From figure \ref{fig:comparisonMultipleWindows}, we see that some window size performs better for some type of analysis and may not be for other. So, user may need to run the system with differnt window sizes for differnt analysis. 
 \end{document}   
