@@ -23,9 +23,7 @@
 \begin{document}
 \maketitle
 
-\chapter{Results and Analysis}
-
-
+% \chapter{Results and Analysis}
 
 \begin{figure}[H]
 \centering
@@ -33,27 +31,40 @@
 \begin{axis}[
 	x tick label style={
 		/pgf/number format/1000 sep=},
-	ylabel=Year,
 	enlargelimits=0.05,
 	legend style={at={(0.5,-0.1)},
 	anchor=north,legend columns=-1},
 	ybar interval=0.7,
 ]
+
 \addplot 
-	coordinates {(Retail vs Average Retail,78) (Retail vs Arrival,281)
-		 (Retail vs Wholesale,123) (Wholesale vs Arrival,413) (abc,415)};
+	coordinates {(1,51.2) (2,47.37)
+		 (3,32.5) (4,50.6) (5,60)};
 \addplot 
-	coordinates {(Retail vs Average Retail,78) (Retail vs Arrival,281)
-		 (Retail vs Wholesale,123) (Wholesale vs Arrival,413) (abc,415)};
+	coordinates {(1,53.78) (2,47.24)
+		 (3,35.26) (4,47.74) (5,60)};
 \addplot 
-	coordinates {(Retail vs Average Retail,78) (Retail vs Arrival,281)
-		 (Retail vs Wholesale,123) (Wholesale vs Arrival,413) (abc,415)};
-		
-\legend{User Defined Threshold (Mumbai VS Delhi), Two Center Results (Mumbai VS Delhi), Five Center Resuls}
+	coordinates {(1,48.45) (2,45.37)
+		 (3,37.72) (4,46.02) (5,60)};
+\addplot 
+	coordinates {(1,55.4) (2,45.16)
+		 (3,35.09) (4,52.98) (5,60)};	
+		 
+		 
+\legend{A, B, C, D}
 \end{axis}
 \end{tikzpicture}
-\caption{Article Distribution for Retail Price VS Average Retail Price}
-\label{fig:articleDistRvsR}
+\caption{Anomaly Reported, (Retail vs Average Retail - 1, Retail vs Arrival - 2, Retail vs Wholesale - 3, Wholesale vs Arrival - 4)}
+\label{fig:anomaliesReported}
 \end{figure}
+
+Where,
+\begin{itemize}
+ \item A - System result when Correlation Window: 15 and Slope Based Window: 7
+ \item B - System result when Correlation Window: 10 and Slope Based Window: 4
+ \item C - System result when Correlation Window: 20 and Slope Based Window: 4
+ \item D - System result when Correlation Window: 7 and Slope Based Window: 4
+\end{itemize}
+
 
 \end{document}          
