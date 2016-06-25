@@ -148,7 +148,7 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
             slopeBasedResult = mergeDates(slopeBasedResult)     
             
             # Correlation
-            correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,avgRetailTimeSeries,10)
+            correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,avgRetailTimeSeries,7)
             correlationResult = mergeDates(correlationResult)
             
             # Linear Regression
@@ -163,7 +163,7 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
             slopeBasedResult = mergeDates(slopeBasedResult)     
             
             # Correlation
-            correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,avgRetailTimeSeries,10)
+            correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,avgRetailTimeSeries,7)
             correlationResult = mergeDates(correlationResult)
             
             # Linear Regression
@@ -261,7 +261,7 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
             slopeBasedResult = mergeDates(slopeBasedResult)
             
             # Correlation
-            correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,retailList[i],10,15,False)
+            correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,retailList[i],7,15,False)
             correlationResult = mergeDates(correlationResult)
             
             # Linear Regression
@@ -276,7 +276,7 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
             slopeBasedResult = mergeDates(slopeBasedResult)
             
             # Correlation
-            correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,retailList[i],10,15,False)
+            correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,retailList[i],7,15,False)
             correlationResult = mergeDates(correlationResult)
             
             # Linear Regression
@@ -384,7 +384,7 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
             slopeBasedResult = mergeDates(slopeBasedResult)     
             
             # Correlation
-            correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,wholesaleList[i],10)
+            correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,wholesaleList[i],7)
             correlationResult = mergeDates(correlationResult)
             
             # Linear Regression
@@ -399,7 +399,7 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
             slopeBasedResult = mergeDates(slopeBasedResult)     
             
             # Correlation
-            correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,wholesaleList[i],10)
+            correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,wholesaleList[i],7)
             correlationResult = mergeDates(correlationResult)
             
             # Linear Regression
@@ -508,7 +508,7 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
             slopeBasedResult = mergeDates(slopeBasedResult)
             
             # Correlation
-            correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,wholesaleList[i],10,15,False)
+            correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,wholesaleList[i],7,15,False)
             correlationResult = mergeDates(correlationResult)
             
             # Linear Regression
@@ -523,7 +523,7 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
             slopeBasedResult = mergeDates(slopeBasedResult)
             
             # Correlation
-            correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,wholesaleList[i],10,15,False)
+            correlationResult = anomaliesFromWindowCorrelationWithConstantlag(c_list,wholesaleList[i],7,15,False)
             correlationResult = mergeDates(correlationResult)
             
             # Linear Regression
