@@ -148,15 +148,97 @@ Following table has few examples showing system reported anomalies and an articl
 Explaination of all the cases listed in table are as following:
 
 \begin{itemize}
- \item 27-Dec-2010 to 29-Dec-2010 : According to our hypothesis 4, price trends at differnet centers should behave similar. But, here retail price of onion in mumbai took a sharp rise then faced a downfall which was not seen being followed by Delhi. Instead retail prices at Delhi continued to grow. (See Figure \ref{fig:Mumbai_RetailvsAvg_ill1})
+ \item 27-Dec-2010 to 29-Dec-2010 : According to our hypothesis 4, price trends at differnet centers should behave similar. But, here retail price of onion in mumbai took a sharp rise then faced a downfall which was not seen being followed by Delhi. Instead retail prices at Delhi continued to grow. There were multiple news articles for the same tenure which claimed traders nexus as reason for anomaly. One of the article link is given in table. (See Figure \ref{fig:Mumbai_RetailvsAvg_ill1})
  
 	\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{graphs/Mumbai_RetailvsAvg_ill1.png}
-	\caption{Slope Based Anomaly Detection (Green line - Centre Retail Price, Blue Line - Average Retail Price)}
+	\caption{Case: 27-Dec-2010 to 29-Dec-2010 (Green line - Centre Retail Price, Blue Line - Average Retail Price)}
 	\label{fig:Mumbai_RetailvsAvg_ill1}
 	\end{figure}
- \item 17-Oct-2013 to 27-Oct-2013 : 
+  
+  
+  Similar is observed for 17-Oct-2013 to 27-Oct-2013. (See Figure \ref{fig:Mumbai_RetailvsAvg_ill2})
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{graphs/Mumbai_RetailvsAvg_ill2.png}
+	\caption{Case: 17-Oct-2013 to 27-Oct-2013 (Green line - Centre Retail Price, Blue Line - Average Retail Price)}
+	\label{fig:Mumbai_RetailvsAvg_ill2}
+	\end{figure}
+\item 15-Dec-2010 to 13-Jan-2011 : There was a decrease in the arrival of onion at the start of December which resulted in the increase of retail price. Later arrival seemed nearly constant or increasing but prices continued to grow high. The arrival also increased when the prices were very high which could be the arrival of hoarded stock in market for profiteering.
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{graphs/Mumbai_RetailvsArrival_ill1.png}
+	\caption{Case: 15-Dec-2010 to 13-Jan-2011 (Green line - Arrival Data of Onion, Blue Line - Retail Price)}
+	\label{fig:Mumbai_RetailvsArrival_ill1}
+	\end{figure}
+
+Similar is observed for 17-Oct-2013 to 25-Nov-2013. (See Figure \ref{fig:Mumbai_RetailvsArrival_ill2})
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{graphs/Mumbai_RetailvsArrival_ill2.png}
+	\caption{Case: 17-Oct-2013 to 25-Nov-2013 (Green line - Arrival Data of Onion, Blue Line - Retail Price)}
+	\label{fig:Mumbai_RetailvsArrival_ill2}
+	\end{figure}
+
+Similar is observed for 29-Jun-2014 to 06-July-2014 in Delhi. (See Figure \ref{fig:Delhi_RetailvsArrival_ill1})
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{graphs/Delhi_RetailvsArrival_ill1.png}
+	\caption{Case: 29-Jun-2014 to 06-July-2014 (Green line - Arrival Data of Onion, Blue Line - Retail Price)}
+	\label{fig:Delhi_RetailvsArrival_ill1}
+	\end{figure}
+
+\item 18-Nov-2013 to 24-Nov-2013 : Retail prices are decided by wholesale price. But here, retail price continued to remain high despite of decrease in the wholesale price. (See Figure \ref{fig:Mumbai_RetailvsWS_ill1})
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{graphs/Mumbai_RetailvsWS_ill1.png}
+	\caption{Case: 18-Nov-2013 to 24-Nov-2013 (Green line - Retail Price, Blue Line - Wholesale Price)}
+	\label{fig:Mumbai_RetailvsWS_ill1}
+	\end{figure}	
+Similar is observed for 21-Oct-2013 to 04-Nov-2013. (See Figure \ref{fig:Mumbai_RetailvsWS_ill2})
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{graphs/Mumbai_RetailvsWS_ill2.png}
+	\caption{Case: 21-Oct-2013 to 04-Nov-2013 (Green line - Retail Price, Blue Line - Wholesale Price)}
+	\label{fig:Mumbai_RetailvsWS_ill2}
+	\end{figure}
+
+Similar is observed for 27-Oct-2013 to 03-Nov-2013 in Delhi. (See Figure \ref{fig:Delhi_RetailvsWS_ill1})
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{graphs/Delhi_RetailvsWS_ill1.png}
+	\caption{Case: 27-Oct-2013 to 03-Nov-2013 (Green line - Retail Price, Blue Line - Wholesale Price)}
+	\label{fig:Delhi_RetailvsWS_ill1}
+	\end{figure}
+
+\item 17-Oct-2013 to 24-Nov-2013 : Market observed increase in the arrival on increase of wholesale. The supply crunch could be man-made which resulted in increase in wholesale price and then to take advantage of increased prices, stocks were released in market. (See Figure \ref{fig:Mumbai_WSvsArrival_ill1})
+      \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.8\textwidth]{graphs/Mumbai_WSvsArrival_ill1.png}
+      \caption{Case : 17-Oct-2013 to 24-Nov-2013 (Green line - Arrival Data of Onion, Blue Line - Wholesale Price)}
+      \label{fig:Mumbai_WSvsArrival_ill1}
+      \end{figure}
+Similar is observed for 15-Dec-2010 to 12-Jan-2011. (See Figure \ref{fig:Mumbai_WSvsArrival_ill2})
+      \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.8\textwidth]{graphs/Mumbai_WSvsArrival_ill2.png}
+      \caption{Case : 15-Dec-2010 to 12-Jan-2011 (Green line - Arrival Data of Onion, Blue Line - Wholesale Price)}
+      \label{fig:Mumbai_WSvsArrival_ill2}
+      \end{figure}
+Similar is observed for 29-Jun-2014 to 05-July-2014 in Delhi. (See Figure \ref{fig:Delhi_WSvsArrival_ill1})
+      \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.8\textwidth]{graphs/Delhi_WSvsArrival_ill1.png}
+      \caption{Case : 29-Jun-2014 to 05-July-2014 (Green line - Arrival Data of Onion, Blue Line - Wholesale Price)}
+      \label{fig:Delhi_WSvsArrival_ill1}
+      \end{figure}
 \end{itemize}
 
 
