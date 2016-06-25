@@ -31,6 +31,7 @@
 \usepackage{booktabs}
 \usepackage{blindtext}
 \usepackage{tabularx}
+\usepackage{pbox}
 %\usepackage[utf8]{inputenc}
 \usepackage{commath}
 
@@ -73,18 +74,19 @@ As shown in the above table \ref{result}, from the number of news articles which
 
 \begin{table}[H]
 	\centering	
-	\begin{tabular}{|c|}
+	\resizebox{\textwidth}{!}{
+	\begin{tabular}{|c|c|}
 		\hline
-		\textbf{News articles with trader nexus as reason missed by system} \\ \hline
-		2012-12-27                                                \\ \hline
-		2013-01-22                                                \\ \hline
-		2013-01-30                                                \\ \hline
-		2013-07-03                                                \\ \hline
-		2014-06-20                                                \\ \hline
-		2014-06-30                                                \\ \hline
-		2014-07-01                                                \\ \hline
-	\end{tabular}
-	\caption{Common 7 Dates with article trader nexus missed by system}
+		\textbf{Date} & \textbf{News article}\\ \hline
+		2012-12-27   &  http://timesofindia.indiatimes.com/india/Onion-prices-80-higher-than-last-year/articleshow/17774280.cms                                            \\ \hline
+		2013-01-22   & http://www.business-standard.com/article/markets/onion-prices-up-sharply-on-transport-cost-113012200072\_1.html                                            \\ \hline
+		2013-01-30   & http://www.firstpost.com/business/economy/rise-in-onion-prices-temporary-phenomenon-pawar-607494.html                                             \\ \hline
+		2013-07-03   & http://www.business-standard.com/article/markets/heavy-crop-damage-in-hilly-states-lifts-onion-potato-prices-113070300796\_1.html                                            \\ \hline
+		2014-06-20   & http://timesofindia.indiatimes.com/business/india-business/Despite-record-onion-yield-prices-shoot-up/articleshow/36853238.cms                                            \\ \hline
+		2014-06-30   & http://timesofindia.indiatimes.com/india/Retail-onion-prices-soar-to-double-of-wholesale-rates/articleshow/37490678.cms                                            \\ \hline
+		2014-07-01   & \pbox{20cm}{http://profit.ndtv.com/news/industries/article-onion-prices-shoot-up-no-relief-in-sight-574345 \\ http://www.moneycontrol.com/news/economy/budget-carvan-how-will-modi-tackle-onion-pricing-web\_1116723.html}                                \\ \hline
+	\end{tabular}}
+	\caption{Common 7 News articles with trader nexus as reason missed by system}
 	\label{table:missed7}
 \end{table}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.1.3)  25 JUN 2016 18:59
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.1.3)  25 JUN 2016 23:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1064,52 +1064,70 @@ Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
 \TX@cols=\count179
 \TX@ftn=\toks52
 )
+(/usr/share/texlive/texmf-dist/tex/latex/pbox/pbox.sty
+Package: pbox 2011/12/07 v1.2 Dynamic parboxes
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count180
+\calc@Bcount=\count181
+\calc@Adimen=\dimen221
+\calc@Bdimen=\dimen222
+\calc@Askip=\skip74
+\calc@Bskip=\skip75
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count182
+\calc@Cskip=\skip76
+)
+\pb@xlen=\skip77
+)
 (/usr/share/texlive/texmf-dist/tex/latex/commath/commath.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
-\Gm@cnth=\count180
-\Gm@cntv=\count181
-\c@Gm@tempcnt=\count182
-\Gm@bindingoffset=\dimen221
-\Gm@wd@mp=\dimen222
-\Gm@odd@mp=\dimen223
-\Gm@even@mp=\dimen224
-\Gm@layoutwidth=\dimen225
-\Gm@layoutheight=\dimen226
-\Gm@layouthoffset=\dimen227
-\Gm@layoutvoffset=\dimen228
+\Gm@cnth=\count183
+\Gm@cntv=\count184
+\c@Gm@tempcnt=\count185
+\Gm@bindingoffset=\dimen223
+\Gm@wd@mp=\dimen224
+\Gm@odd@mp=\dimen225
+\Gm@even@mp=\dimen226
+\Gm@layoutwidth=\dimen227
+\Gm@layoutheight=\dimen228
+\Gm@layouthoffset=\dimen229
+\Gm@layoutvoffset=\dimen230
 \Gm@dimlist=\toks53
 )
 (./SystemResult.aux)
 \openout1 = `SystemResult.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count183
-\scratchdimen=\dimen229
+\scratchcounter=\count186
+\scratchdimen=\dimen231
 \scratchbox=\box46
-\nofMPsegments=\count184
-\nofMParguments=\count185
+\nofMPsegments=\count187
+\nofMParguments=\count188
 \everyMPshowfont=\toks54
-\MPscratchCnt=\count186
-\MPscratchDim=\dimen230
-\MPnumerator=\count187
-\makeMPintoPDFobject=\count188
+\MPscratchCnt=\count189
+\MPscratchDim=\dimen232
+\MPnumerator=\count190
+\makeMPintoPDFobject=\count191
 \everyMPtoPDFconversion=\toks55
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -1134,7 +1152,7 @@ Package caption Info: rotating package is loaded.
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box47
-Package hyperref Info: Link coloring OFF on input line 39.
+Package hyperref Info: Link coloring OFF on input line 40.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1142,11 +1160,11 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count189
+\c@section@level=\count192
 )
-LaTeX Info: Redefining \ref on input line 39.
-LaTeX Info: Redefining \pageref on input line 39.
-LaTeX Info: Redefining \nameref on input line 39.
+LaTeX Info: Redefining \ref on input line 40.
+LaTeX Info: Redefining \pageref on input line 40.
+LaTeX Info: Redefining \nameref on input line 40.
 
 (./SystemResult.out) (./SystemResult.out)
 \@outlinefile=\write4
@@ -1158,7 +1176,7 @@ ABD: EveryShipout initializing macros
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.9} into y
 our preamble.
- on input line 39.
+ on input line 40.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1194,25 +1212,25 @@ our preamble.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 52.
+LaTeX Font Info:    Try loading font information for U+msa on input line 53.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 52.
+LaTeX Font Info:    Try loading font information for U+msb on input line 53.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (36.22337pt too wide) in paragraph at lines 52--60
+Overfull \hbox (36.22337pt too wide) in paragraph at lines 53--61
  [][] 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 66.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 67.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 66.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 67.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
@@ -1220,10 +1238,10 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 File: graphs/RvsAvg_Whole.png Graphic file (type png)
 
 <use graphs/RvsAvg_Whole.png>
-Package pdftex.def Info: graphs/RvsAvg_Whole.png used on input line 114.
+Package pdftex.def Info: graphs/RvsAvg_Whole.png used on input line 116.
 (pdftex.def)             Requested size: 498.26744pt x 284.77107pt.
 
-Overfull \hbox (45.29955pt too wide) in paragraph at lines 114--115
+Overfull \hbox (45.29955pt too wide) in paragraph at lines 116--117
  [][] 
  []
 
@@ -1232,10 +1250,10 @@ File: graphs/RetailVsArrival_whole.png Graphic file (type png)
 
 <use graphs/RetailVsArrival_whole.png>
 Package pdftex.def Info: graphs/RetailVsArrival_whole.png used on input line 12
-4.
+6.
 (pdftex.def)             Requested size: 498.26744pt x 272.2214pt.
 
-Overfull \hbox (45.29955pt too wide) in paragraph at lines 124--125
+Overfull \hbox (45.29955pt too wide) in paragraph at lines 126--127
  [][] 
  []
 
@@ -1244,10 +1262,10 @@ Overfull \hbox (45.29955pt too wide) in paragraph at lines 124--125
 File: graphs/retailVsWS_Whole.png Graphic file (type png)
 
 <use graphs/retailVsWS_Whole.png>
-Package pdftex.def Info: graphs/retailVsWS_Whole.png used on input line 134.
+Package pdftex.def Info: graphs/retailVsWS_Whole.png used on input line 136.
 (pdftex.def)             Requested size: 498.26744pt x 285.4511pt.
 
-Overfull \hbox (45.29955pt too wide) in paragraph at lines 134--135
+Overfull \hbox (45.29955pt too wide) in paragraph at lines 136--137
  [][] 
  []
 
@@ -1255,10 +1273,10 @@ Overfull \hbox (45.29955pt too wide) in paragraph at lines 134--135
 File: graphs/WSvsArrival_Whole.png Graphic file (type png)
 
 <use graphs/WSvsArrival_Whole.png>
-Package pdftex.def Info: graphs/WSvsArrival_Whole.png used on input line 144.
+Package pdftex.def Info: graphs/WSvsArrival_Whole.png used on input line 146.
 (pdftex.def)             Requested size: 498.26744pt x 272.75983pt.
 
-Overfull \hbox (45.29955pt too wide) in paragraph at lines 144--145
+Overfull \hbox (45.29955pt too wide) in paragraph at lines 146--147
  [][] 
  []
 
@@ -1268,7 +1286,7 @@ File: graphs/Mumbai_RetailvsAvg_ill1.png Graphic file (type png)
 
 <use graphs/Mumbai_RetailvsAvg_ill1.png>
 Package pdftex.def Info: graphs/Mumbai_RetailvsAvg_ill1.png used on input line 
-186.
+188.
 (pdftex.def)             Requested size: 362.37569pt x 208.12886pt.
  [4 <./graphs/WSvsArrival_Whole.png>]
 <graphs/Mumbai_RetailvsAvg_ill2.png, id=50, 1419.3025pt x 841.1425pt>
@@ -1276,7 +1294,7 @@ File: graphs/Mumbai_RetailvsAvg_ill2.png Graphic file (type png)
 
 <use graphs/Mumbai_RetailvsAvg_ill2.png>
 Package pdftex.def Info: graphs/Mumbai_RetailvsAvg_ill2.png used on input line 
-195.
+197.
 (pdftex.def)             Requested size: 362.37569pt x 214.75162pt.
 
 <graphs/Mumbai_RetailvsArrival_ill1.png, id=51, 1531.7225pt x 845.1575pt>
@@ -1284,7 +1302,7 @@ File: graphs/Mumbai_RetailvsArrival_ill1.png Graphic file (type png)
 
 <use graphs/Mumbai_RetailvsArrival_ill1.png>
 Package pdftex.def Info: graphs/Mumbai_RetailvsArrival_ill1.png used on input l
-ine 203.
+ine 205.
 (pdftex.def)             Requested size: 362.37569pt x 199.94032pt.
  [5 <./graphs/Mumbai_RetailvsAvg_ill1.png> <./graphs/Mumbai_RetailvsAvg_ill2.pn
 g>]
@@ -1293,7 +1311,7 @@ File: graphs/Mumbai_RetailvsArrival_ill2.png Graphic file (type png)
 
 <use graphs/Mumbai_RetailvsArrival_ill2.png>
 Package pdftex.def Info: graphs/Mumbai_RetailvsArrival_ill2.png used on input l
-ine 212.
+ine 214.
 (pdftex.def)             Requested size: 362.37569pt x 199.09946pt.
 
 <graphs/Delhi_RetailvsArrival_ill1.png, id=60, 1529.715pt x 845.1575pt>
@@ -1301,7 +1319,7 @@ File: graphs/Delhi_RetailvsArrival_ill1.png Graphic file (type png)
 
 <use graphs/Delhi_RetailvsArrival_ill1.png>
 Package pdftex.def Info: graphs/Delhi_RetailvsArrival_ill1.png used on input li
-ne 221.
+ne 223.
 (pdftex.def)             Requested size: 362.37569pt x 200.21115pt.
  [6 <./graphs/Mumbai_RetailvsArrival_ill1.png> <./graphs/Mumbai_RetailvsArrival
 _ill2.png>]
@@ -1310,7 +1328,7 @@ File: graphs/Mumbai_RetailvsWS_ill1.png Graphic file (type png)
 
 <use graphs/Mumbai_RetailvsWS_ill1.png>
 Package pdftex.def Info: graphs/Mumbai_RetailvsWS_ill1.png used on input line 2
-30.
+32.
 (pdftex.def)             Requested size: 362.37569pt x 207.81183pt.
 
 <graphs/Mumbai_RetailvsWS_ill2.png, id=71, 1332.98pt x 843.15pt>
@@ -1318,7 +1336,7 @@ File: graphs/Mumbai_RetailvsWS_ill2.png Graphic file (type png)
 
 <use graphs/Mumbai_RetailvsWS_ill2.png>
 Package pdftex.def Info: graphs/Mumbai_RetailvsWS_ill2.png used on input line 2
-38.
+40.
 (pdftex.def)             Requested size: 362.37569pt x 229.21025pt.
  [7 <./graphs/Delhi_RetailvsArrival_ill1.png> <./graphs/Mumbai_RetailvsWS_ill1.
 png>]
@@ -1327,7 +1345,7 @@ File: graphs/Delhi_RetailvsWS_ill1.png Graphic file (type png)
 
 <use graphs/Delhi_RetailvsWS_ill1.png>
 Package pdftex.def Info: graphs/Delhi_RetailvsWS_ill1.png used on input line 24
-7.
+9.
 (pdftex.def)             Requested size: 362.37569pt x 206.43468pt.
 
 <graphs/Mumbai_WSvsArrival_ill1.png, id=82, 1539.7525pt x 842.14626pt>
@@ -1335,7 +1353,7 @@ File: graphs/Mumbai_WSvsArrival_ill1.png Graphic file (type png)
 
 <use graphs/Mumbai_WSvsArrival_ill1.png>
 Package pdftex.def Info: graphs/Mumbai_WSvsArrival_ill1.png used on input line 
-255.
+257.
 (pdftex.def)             Requested size: 362.37569pt x 198.19995pt.
  [8 <./graphs/Mumbai_RetailvsWS_ill2.png> <./graphs/Delhi_RetailvsWS_ill1.png>]
 
@@ -1344,7 +1362,7 @@ File: graphs/Mumbai_WSvsArrival_ill2.png Graphic file (type png)
 
 <use graphs/Mumbai_WSvsArrival_ill2.png>
 Package pdftex.def Info: graphs/Mumbai_WSvsArrival_ill2.png used on input line 
-262.
+264.
 (pdftex.def)             Requested size: 362.37569pt x 199.09946pt.
 
 <graphs/Delhi_WSvsArrival_ill1.png, id=92, 1526.70375pt x 843.15pt>
@@ -1352,7 +1370,7 @@ File: graphs/Delhi_WSvsArrival_ill1.png Graphic file (type png)
 
 <use graphs/Delhi_WSvsArrival_ill1.png>
 Package pdftex.def Info: graphs/Delhi_WSvsArrival_ill1.png used on input line 2
-69.
+71.
 (pdftex.def)             Requested size: 362.37569pt x 200.12155pt.
  [9 <./graphs/Mumbai_WSvsArrival_ill1.png> <./graphs/Mumbai_WSvsArrival_ill2.pn
 g>]
@@ -1361,10 +1379,10 @@ g>]
 File: graphs/localDelhiRegionalNewsPlusNexus.png Graphic file (type png)
  <use graphs/localDelhiRegionalNewsPlusNexus.png>
 Package pdftex.def Info: graphs/localDelhiRegionalNewsPlusNexus.png used on inp
-ut line 281.
+ut line 283.
 (pdftex.def)             Requested size: 498.26744pt x 280.62933pt.
 
-Overfull \hbox (45.29955pt too wide) in paragraph at lines 281--282
+Overfull \hbox (45.29955pt too wide) in paragraph at lines 283--284
  [][] 
  []
 
@@ -1372,38 +1390,38 @@ Overfull \hbox (45.29955pt too wide) in paragraph at lines 281--282
 File: graphs/localDelhiFog.png Graphic file (type png)
 
 <use graphs/localDelhiFog.png>
-Package pdftex.def Info: graphs/localDelhiFog.png used on input line 290.
+Package pdftex.def Info: graphs/localDelhiFog.png used on input line 292.
 (pdftex.def)             Requested size: 498.26744pt x 78.67542pt.
 
-Overfull \hbox (45.29955pt too wide) in paragraph at lines 290--291
+Overfull \hbox (45.29955pt too wide) in paragraph at lines 292--293
  [][] 
  []
 
 [10 <./graphs/Delhi_WSvsArrival_ill1.png> <./graphs/localDelhiRegionalNewsPlusN
 exus.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 341.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 343.
  [11 <./graphs/localDelhiFog.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 341.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 343.
  (./SystemResult.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 341.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 341.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 343.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 343.
 Package rerunfilecheck Info: File `SystemResult.out' has not changed.
 (rerunfilecheck)             Checksum: 93F76469672F62A0FA8C79D92C1DCFAB;55.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 341.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 343.
  ) 
 Here is how much of TeX's memory you used:
- 25592 strings out of 493304
- 554057 string characters out of 6139872
- 813774 words of memory out of 5000000
- 28493 multiletter control sequences out of 15000+600000
+ 25685 strings out of 493304
+ 555393 string characters out of 6139872
+ 814774 words of memory out of 5000000
+ 28579 multiletter control sequences out of 15000+600000
  6252 words of font info for 25 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 56i,19n,84p,853b,2072s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,19n,84p,853b,2079s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on SystemResult.pdf (11 pages, 1593727 bytes).
+Output written on SystemResult.pdf (11 pages, 1594529 bytes).
 PDF statistics:
  142 PDF objects out of 1000 (max. 8388607)
  105 compressed objects within 2 object streams
