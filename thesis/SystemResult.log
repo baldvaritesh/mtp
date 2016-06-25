@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.1.3)  25 JUN 2016 16:50
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.1.3)  25 JUN 2016 17:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1264,47 +1264,52 @@ Overfull \hbox (45.29955pt too wide) in paragraph at lines 113--114
  []
 
 [3 <./graphs/retailVsWS_Whole.png> <./graphs/WSvsArrival_Whole.png>]
-<graphs/localDelhiRegionalNewsPlusNexus.png, id=38, 1905.1175pt x 1073.00874pt>
+<graphs/Mumbai_RetailvsAvg_ill1.png, id=38, 1464.47125pt x 841.1425pt>
+File: graphs/Mumbai_RetailvsAvg_ill1.png Graphic file (type png)
+
+<use graphs/Mumbai_RetailvsAvg_ill1.png>
+Package pdftex.def Info: graphs/Mumbai_RetailvsAvg_ill1.png used on input line 
+155.
+(pdftex.def)             Requested size: 362.37569pt x 208.12886pt.
+
+<graphs/localDelhiRegionalNewsPlusNexus.png, id=40, 1905.1175pt x 1073.00874pt>
 File: graphs/localDelhiRegionalNewsPlusNexus.png Graphic file (type png)
 <use graphs/localDelhiRegionalNewsPlusNexus.png>
 Package pdftex.def Info: graphs/localDelhiRegionalNewsPlusNexus.png used on inp
-ut line 155.
+ut line 167.
 (pdftex.def)             Requested size: 498.26744pt x 280.62933pt.
 
-Overfull \hbox (45.29955pt too wide) in paragraph at lines 155--156
+Overfull \hbox (45.29955pt too wide) in paragraph at lines 167--168
  [][] 
  []
 
-<graphs/localDelhiFog.png, id=40, 648.4225pt x 102.3825pt>
+[4 <./graphs/Mumbai_RetailvsAvg_ill1.png>]
+<graphs/localDelhiFog.png, id=48, 648.4225pt x 102.3825pt>
 File: graphs/localDelhiFog.png Graphic file (type png)
 
 <use graphs/localDelhiFog.png>
-Package pdftex.def Info: graphs/localDelhiFog.png used on input line 164.
+Package pdftex.def Info: graphs/localDelhiFog.png used on input line 176.
 (pdftex.def)             Requested size: 498.26744pt x 78.67542pt.
 
-Overfull \hbox (45.29955pt too wide) in paragraph at lines 164--165
+Overfull \hbox (45.29955pt too wide) in paragraph at lines 176--177
  [][] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 168.
-[4 <./graphs/localDelhiRegionalNewsPlusNexus.png> <./graphs/localDelhiFog.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 168.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 180.
+[5 <./graphs/localDelhiRegionalNewsPlusNexus.png> <./graphs/localDelhiFog.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 180.
 (./SystemResult.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 168.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 168.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 180.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 180.
 Package rerunfilecheck Info: File `SystemResult.out' has not changed.
 (rerunfilecheck)             Checksum: 93F76469672F62A0FA8C79D92C1DCFAB;55.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 168.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
  ) 
 Here is how much of TeX's memory you used:
- 24955 strings out of 493304
- 536188 string characters out of 6139872
+ 24963 strings out of 493304
+ 536421 string characters out of 6139872
  811774 words of memory out of 5000000
- 27887 multiletter control sequences out of 15000+600000
+ 27892 multiletter control sequences out of 15000+600000
  6252 words of font info for 25 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  56i,12n,74p,853b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1312,10 +1317,10 @@ Here is how much of TeX's memory you used:
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on SystemResult.pdf (4 pages, 898947 bytes).
+Output written on SystemResult.pdf (5 pages, 955498 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 51 compressed objects within 1 object stream
- 14 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 PDF objects out of 1000 (max. 8388607)
+ 56 compressed objects within 1 object stream
+ 16 named destinations out of 1000 (max. 500000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

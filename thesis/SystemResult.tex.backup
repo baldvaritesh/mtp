@@ -73,7 +73,7 @@ Following are the inferences from the above table:
 
 Following figures are the pictorical representation of the above results on timeline.
 
-\textbf{Note:} In following figures, Yellow highlighted regions are system reported anomalies for which no corresponding news article was present, Grey highlighted region represents news article for which our system did not report any anomaly and Red highlighted region represents anomalies reported by system for which news articles were present.
+\textbf{Note:} In following figures, Yellow highlighted regions are system reported anomalies for which no corresponding news article was present, Violet highlighted region represents news article for which our system did not report any anomaly and Red highlighted region represents anomalies reported by system for which news articles were present.
 
 \begin{itemize}
  \item Retail Price vs Average Retail Price
@@ -119,8 +119,7 @@ Following figures are the pictorical representation of the above results on time
 \end{itemize}
 
 
-Here are few examples comparing system results with the news articles and what news articles are saying about price hike.
-
+Following table has few examples showing system reported anomalies and an article supporting it.
 
 \begin{table}[H]
 \centering
@@ -145,6 +144,20 @@ Here are few examples comparing system results with the news articles and what n
 \label{examples}
 
 \end{table}
+
+Explaination of all the cases listed in table are as following:
+
+\begin{itemize}
+ \item 27-Dec-2010 to 29-Dec-2010 : According to our hypothesis 4, price trends at differnet centers should behave similar. But, here retail price of onion took a sharp rise then faced a downfall which was not seen being followed by Delhi. Instead retail prices at Delhi continued to grow. (See Figure \ref{fig:Mumbai_RetailvsAvg_ill1})
+ 
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{graphs/Mumbai_RetailvsAvg_ill1.png}
+	\caption{Slope Based Anomaly Detection (Green line - Centre Retail Price, Blue Line - Average Retail Price)}
+	\label{fig:Mumbai_RetailvsAvg_ill1}
+	\end{figure}
+ \item 
+\end{itemize}
 
 
 Few of the analysis which were local to center could not be matched with national news articles, but on digging more in regional news article, we could justify the anomaly. One of such case is the anomaly reported on 7th and 8th January 2013, in Delhi, for which news was reported in \href{http://www.jagran.com/news/business-onion-price-affected-from-fog-9987751.html}{Jagran local news paper} on 28th December 2012 which says due to fog there was disruption in the supply of onions. Despite of the speculation on low arrival of onion we observed considerable hike in arrival (which could be hoarded onion stocks brought into market) to earn better profits to take advantage of increased price of onion. Also, we have observed 2 news articles suspecting traders' nexus as the reason for the increased onion prices.
