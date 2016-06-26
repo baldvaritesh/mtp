@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.15)  26 JUN 2016 23:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.15)  26 JUN 2016 23:43
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -1735,4 +1735,1137 @@ Package pdftex.def Info: graphs/12141.png used on input line 325.
 (pdftex.def)             Requested size: 312.00119pt x 173.65114pt.
 
 <graphs/12122.png, id=1060, 1916.15875pt x 1064.97874pt>
-File: graphs/12122.
+File: graphs/12122.png Graphic file (type png)
+
+<use graphs/12122.png>
+Package pdftex.def Info: graphs/12122.png used on input line 340.
+(pdftex.def)             Requested size: 312.00119pt x 173.40637pt.
+ [45 <./graphs/12121.png> <./graphs/12141.png>]
+<graphs/12142.png, id=1067, 1910.13625pt x 1067.99pt>
+File: graphs/12142.png Graphic file (type png)
+ <use graphs/12142.png>
+Package pdftex.def Info: graphs/12142.png used on input line 347.
+(pdftex.def)             Requested size: 312.00119pt x 174.43446pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--353
+
+ []
+
+[46 <./graphs/12122.png> <./graphs/12142.png>]
+<graphs/12123.png, id=1077, 1909.1325pt x 1066.98625pt>
+File: graphs/12123.png Graphic file (type png)
+ <use graphs/12123.png>
+Package pdftex.def Info: graphs/12123.png used on input line 362.
+(pdftex.def)             Requested size: 312.00119pt x 174.3682pt.
+
+<graphs/12143.png, id=1078, 1913.1475pt x 1061.9675pt>
+File: graphs/12143.png Graphic file (type png)
+ <use graphs/12143.png>
+Package pdftex.def Info: graphs/12143.png used on input line 369.
+(pdftex.def)             Requested size: 312.00119pt x 173.17532pt.
+
+[47 <./graphs/12123.png> <./graphs/12143.png>]
+<graphs/12124.png, id=1087, 1921.1775pt x 1067.99pt>
+File: graphs/12124.png Graphic file (type png)
+ <use graphs/12124.png>
+Package pdftex.def Info: graphs/12124.png used on input line 378.
+(pdftex.def)             Requested size: 312.00119pt x 173.4404pt.
+
+<graphs/12144.png, id=1088, 1920.17375pt x 1057.9525pt>
+File: graphs/12144.png Graphic file (type png)
+ <use graphs/12144.png>
+Package pdftex.def Info: graphs/12144.png used on input line 385.
+(pdftex.def)             Requested size: 312.00119pt x 171.89102pt.
+
+[48 <./graphs/12124.png> <./graphs/12144.png>]
+<graphs/12125.png, id=1096, 1914.15125pt x 1058.95625pt>
+File: graphs/12125.png Graphic file (type png)
+
+<use graphs/12125.png>
+Package pdftex.def Info: graphs/12125.png used on input line 394.
+(pdftex.def)             Requested size: 312.00119pt x 172.6035pt.
+ <graphs/12126.png, id=1098, 1923.185pt x 1062.97125pt>
+File: graphs/12126.png Graphic file (type png)
+
+<use graphs/12126.png>
+Package pdftex.def Info: graphs/12126.png used on input line 403.
+(pdftex.def)             Requested size: 312.00119pt x 172.44693pt.
+ [49 <./graphs/12125.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 416--420
+
+ []
+
+[50 <./graphs/12126.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 426--429
+
+ []
+
+<graphs/12211.png, id=1113, 1845.89626pt x 1057.9525pt>
+File: graphs/12211.png Graphic file (type png)
+ <use graphs/12211.png>
+Package pdftex.def Info: graphs/12211.png used on input line 442.
+(pdftex.def)             Requested size: 312.00119pt x 178.81639pt.
+
+[51] <graphs/12231.png, id=1120, 1850.915pt x 1062.97125pt>
+File: graphs/12231.png Graphic file (type png)
+
+<use graphs/12231.png>
+Package pdftex.def Info: graphs/12231.png used on input line 449.
+(pdftex.def)             Requested size: 312.00119pt x 179.17807pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 454--457
+
+ []
+
+[52 <./graphs/12211.png> <./graphs/12231.png>]
+<graphs/12212.png, id=1130, 1849.91125pt x 1065.9825pt>
+File: graphs/12212.png Graphic file (type png)
+ <use graphs/12212.png>
+Package pdftex.def Info: graphs/12212.png used on input line 463.
+(pdftex.def)             Requested size: 312.00119pt x 179.78325pt.
+
+<graphs/12232.png, id=1131, 1846.9pt x 1056.94875pt>
+File: graphs/12232.png Graphic file (type png)
+ <use graphs/12232.png>
+Package pdftex.def Info: graphs/12232.png used on input line 470.
+(pdftex.def)             Requested size: 312.00119pt x 178.54997pt.
+
+[53 <./graphs/12212.png> <./graphs/12232.png>]
+<graphs/12221.png, id=1141, 1922.18124pt x 1058.95625pt>
+File: graphs/12221.png Graphic file (type png)
+
+<use graphs/12221.png>
+Package pdftex.def Info: graphs/12221.png used on input line 494.
+(pdftex.def)             Requested size: 312.00119pt x 171.87637pt.
+ <graphs/12241.png, id=1142, 1917.1625pt x 1053.9375pt>
+File: graphs/12241.png Graphic file (type png)
+
+<use graphs/12241.png>
+Package pdftex.def Info: graphs/12241.png used on input line 501.
+(pdftex.def)             Requested size: 312.00119pt x 171.51208pt.
+ [54 <./graphs/12221.png>]
+<graphs/12222.png, id=1150, 1915.155pt x 1061.9675pt>
+File: graphs/12222.png Graphic file (type png)
+ <use graphs/12222.png>
+Package pdftex.def Info: graphs/12222.png used on input line 517.
+(pdftex.def)             Requested size: 312.00119pt x 172.99709pt.
+
+[55 <./graphs/12241.png>]
+<graphs/12242.png, id=1156, 1909.1325pt x 1055.945pt>
+File: graphs/12242.png Graphic file (type png)
+ <use graphs/12242.png>
+Package pdftex.def Info: graphs/12242.png used on input line 524.
+(pdftex.def)             Requested size: 312.00119pt x 172.56383pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 533--538
+
+ []
+
+[56 <./graphs/12222.png> <./graphs/12242.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 544--548
+
+ []
+
+<graphs/20080306_0320.png, id=1166, 1851.91875pt x 1063.975pt>
+File: graphs/20080306_0320.png Graphic file (type png)
+
+<use graphs/20080306_0320.png>
+Package pdftex.def Info: graphs/20080306_0320.png used on input line 561.
+(pdftex.def)             Requested size: 312.00119pt x 179.24986pt.
+ [57]
+<graphs/20090912_0926.png, id=1175, 1870.99pt x 1062.97125pt>
+File: graphs/20090912_0926.png Graphic file (type png)
+
+<use graphs/20090912_0926.png>
+Package pdftex.def Info: graphs/20090912_0926.png used on input line 568.
+(pdftex.def)             Requested size: 312.00119pt x 177.24794pt.
+
+<graphs/20110704_0802.png, id=1176, 1675.2186pt x 922.8879pt>
+File: graphs/20110704_0802.png Graphic file (type png)
+
+<use graphs/20110704_0802.png>
+Package pdftex.def Info: graphs/20110704_0802.png used on input line 575.
+(pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
+ [58 <./graphs/20080306_0320.png> <./graphs/20090912_0926.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 580--584
+
+ []
+
+<graphs/20101220_1225.png, id=1187, 1847.90375pt x 1063.975pt>
+File: graphs/20101220_1225.png Graphic file (type png)
+
+<use graphs/20101220_1225.png>
+Package pdftex.def Info: graphs/20101220_1225.png used on input line 592.
+(pdftex.def)             Requested size: 312.00119pt x 179.6395pt.
+ [59 <./graphs/20110704_0802.png>]
+<graphs/20110106_0108.png, id=1193, 1675.2186pt x 922.8879pt>
+File: graphs/20110106_0108.png Graphic file (type png)
+
+<use graphs/20110106_0108.png>
+Package pdftex.def Info: graphs/20110106_0108.png used on input line 599.
+(pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
+
+<graphs/20121227_0105.png, id=1194, 1675.2186pt x 922.8879pt>
+File: graphs/20121227_0105.png Graphic file (type png)
+
+<use graphs/20121227_0105.png>
+Package pdftex.def Info: graphs/20121227_0105.png used on input line 606.
+(pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
+ [60 <./graphs/20101220_1225.png> <./graphs/20110106_0108.png>]
+<graphs/20131006_1015_1021.png, id=1203, 1675.2186pt x 922.8879pt>
+File: graphs/20131006_1015_1021.png Graphic file (type png)
+
+<use graphs/20131006_1015_1021.png>
+Package pdftex.def Info: graphs/20131006_1015_1021.png used on input line 619.
+(pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
+ [61 <./graphs/20121227_0105.png> <./graphs/20131006_1015_1021.png>]
+Overfull \hbox (0.87927pt too wide) in paragraph at lines 645--650
+\OT1/cmr/m/n/12 anal-y-sis in or-der to fore-cast val-ues by us-ing all the re-
+lated vari-ables/timeseries
+ []
+
+[62]
+Overfull \hbox (6.81949pt too wide) in paragraph at lines 659--660
+[]\OT1/cmr/m/n/12 The thresh-old se-lected by this method for er-ror val-ues ar
+e -19.0358099572
+ []
+
+[63] <graphs/20130719_0911.png, id=1225, 1675.2186pt x 922.8879pt>
+File: graphs/20130719_0911.png Graphic file (type png)
+
+<use graphs/20130719_0911.png>
+Package pdftex.def Info: graphs/20130719_0911.png used on input line 670.
+(pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
+
+<graphs/20130917_0106.png, id=1226, 1675.2186pt x 922.8879pt>
+File: graphs/20130917_0106.png Graphic file (type png)
+
+<use graphs/20130917_0106.png>
+Package pdftex.def Info: graphs/20130917_0106.png used on input line 677.
+(pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
+
+<graphs/20141203_1215.png, id=1227, 1675.2186pt x 922.8879pt>
+File: graphs/20141203_1215.png Graphic file (type png)
+
+<use graphs/20141203_1215.png>
+Package pdftex.def Info: graphs/20141203_1215.png used on input line 684.
+(pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
+ [64 <./graphs/20130719_0911.png> <./graphs/20130917_0106.png>]
+
+LaTeX Warning: Reference `nasa' on page 65 undefined on input line 709.
+
+<graphs/1231.png, id=1237, 1844.8925pt x 1059.96pt>
+File: graphs/1231.png Graphic file (type png)
+ <use graphs/1231.png>
+Package pdftex.def Info: graphs/1231.png used on input line 720.
+(pdftex.def)             Requested size: 312.00119pt x 179.25275pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 707--723
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 707--723
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 707--723
+
+ []
+
+[65 <./graphs/20141203_1215.png>] [66]
+<graphs/12331.png, id=1247, 1844.8925pt x 1061.9675pt>
+File: graphs/12331.png Graphic file (type png)
+ <use graphs/12331.png>
+Package pdftex.def Info: graphs/12331.png used on input line 727.
+(pdftex.def)             Requested size: 312.00119pt x 179.59224pt.
+
+<graphs/12321.png, id=1252, 1912.14375pt x 1056.94875pt>
+File: graphs/12321.png Graphic file (type png)
+
+<use graphs/12321.png>
+Package pdftex.def Info: graphs/12321.png used on input line 735.
+(pdftex.def)             Requested size: 312.00119pt x 172.45369pt.
+ [67 <./graphs/1231.png> <./graphs/12331.png>]
+<graphs/12341.png, id=1259, 1899.095pt x 1059.96pt>
+File: graphs/12341.png Graphic file (type png)
+ <use graphs/12341.png>
+Package pdftex.def Info: graphs/12341.png used on input line 742.
+(pdftex.def)             Requested size: 312.00119pt x 174.14186pt.
+
+<graphs/12322_delhi.png, id=1260, 1907.125pt x 1055.945pt>
+File: graphs/12322_delhi.png Graphic file (type png)
+
+<use graphs/12322_delhi.png>
+Package pdftex.def Info: graphs/12322_delhi.png used on input line 750.
+(pdftex.def)             Requested size: 312.00119pt x 172.74106pt.
+ [68 <./graphs/12321.png> <./graphs/12341.png>]
+<graphs/12442_delhi.png, id=1267, 1907.125pt x 1061.9675pt>
+File: graphs/12442_delhi.png Graphic file (type png)
+
+<use graphs/12442_delhi.png>
+Package pdftex.def Info: graphs/12442_delhi.png used on input line 757.
+(pdftex.def)             Requested size: 312.00119pt x 173.72627pt.
+) [69 <./graphs/12322_delhi.png> <./graphs/12442_delhi.png>]
+\openout2 = `chapter6.aux'.
+
+ (chapter6.tex
+Chapter 6.
+[70
+
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+\OT1/cmr/m/n/12 http://www.moneycontrol.com/news/economy/budget-carvan-how-will
+-modi-tackle-onion-pricing-
+ []
+
+[71]
+Overfull \hbox (1.65012pt too wide) in paragraph at lines 58--59
+[]\OT1/cmr/m/n/12 For Re-tail vs Ar-rival anal-y-sis, Hy-poth-e-sis 1 re-ported
+ some of the anoma-
+ []
+
+<graphs/RvsAvg_Whole.png, id=1286, 1473.505pt x 842.14626pt>
+File: graphs/RvsAvg_Whole.png Graphic file (type png)
+
+<use graphs/RvsAvg_Whole.png>
+Package pdftex.def Info: graphs/RvsAvg_Whole.png used on input line 75.
+(pdftex.def)             Requested size: 429.00238pt x 245.17992pt.
+
+Overfull \hbox (39.00238pt too wide) in paragraph at lines 75--76
+ [][] 
+ []
+
+[72] <graphs/RetailVsArrival_whole.png, id=1291, 1537.745pt x 840.13875pt>
+File: graphs/RetailVsArrival_whole.png Graphic file (type png)
+
+<use graphs/RetailVsArrival_whole.png>
+Package pdftex.def Info: graphs/RetailVsArrival_whole.png used on input line 85
+.
+(pdftex.def)             Requested size: 429.00238pt x 234.37834pt.
+
+Overfull \hbox (39.00238pt too wide) in paragraph at lines 85--86
+ [][] 
+ []
+
+<graphs/retailVsWS_Whole.png, id=1292, 1466.47874pt x 840.13875pt>
+File: graphs/retailVsWS_Whole.png Graphic file (type png)
+
+<use graphs/retailVsWS_Whole.png>
+Package pdftex.def Info: graphs/retailVsWS_Whole.png used on input line 95.
+(pdftex.def)             Requested size: 429.00238pt x 245.76202pt.
+
+Overfull \hbox (39.00238pt too wide) in paragraph at lines 95--96
+ [][] 
+ []
+
+[73 <./graphs/RvsAvg_Whole.png> <./graphs/RetailVsArrival_whole.png>]
+<graphs/WSvsArrival_Whole.png, id=1297, 1534.73375pt x 840.13875pt>
+File: graphs/WSvsArrival_Whole.png Graphic file (type png)
+
+<use graphs/WSvsArrival_Whole.png>
+Package pdftex.def Info: graphs/WSvsArrival_Whole.png used on input line 105.
+(pdftex.def)             Requested size: 429.00238pt x 234.83984pt.
+
+Overfull \hbox (39.00238pt too wide) in paragraph at lines 105--106
+ [][] 
+ []
+
+[74 <./graphs/retailVsWS_Whole.png>]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no î in font cmr12!
+
+<graphs/Mumbai_RetailvsAvg_ill1.png, id=1303, 1464.47125pt x 841.1425pt>
+File: graphs/Mumbai_RetailvsAvg_ill1.png Graphic file (type png)
+
+<use graphs/Mumbai_RetailvsAvg_ill1.png>
+Package pdftex.def Info: graphs/Mumbai_RetailvsAvg_ill1.png used on input line 
+147.
+(pdftex.def)             Requested size: 312.00119pt x 179.19926pt.
+ [75 <./graphs/WSvsArrival_Whole.png>]
+<graphs/Mumbai_RetailvsAvg_ill2.png, id=1309, 1419.3025pt x 841.1425pt>
+File: graphs/Mumbai_RetailvsAvg_ill2.png Graphic file (type png)
+
+<use graphs/Mumbai_RetailvsAvg_ill2.png>
+Package pdftex.def Info: graphs/Mumbai_RetailvsAvg_ill2.png used on input line 
+156.
+(pdftex.def)             Requested size: 312.00119pt x 184.8979pt.
+
+<graphs/Mumbai_RetailvsArrival_ill1.png, id=1310, 1531.7225pt x 845.1575pt>
+File: graphs/Mumbai_RetailvsArrival_ill1.png Graphic file (type png)
+
+<use graphs/Mumbai_RetailvsArrival_ill1.png>
+Package pdftex.def Info: graphs/Mumbai_RetailvsArrival_ill1.png used on input l
+ine 164.
+(pdftex.def)             Requested size: 312.00119pt x 172.14934pt.
+ [76 <./graphs/Mumbai_RetailvsAvg_ill1.png> <./graphs/Mumbai_RetailvsAvg_ill2.p
+ng>]
+<graphs/Mumbai_RetailvsArrival_ill2.png, id=1317, 1532.72626pt x 842.14626pt>
+File: graphs/Mumbai_RetailvsArrival_ill2.png Graphic file (type png)
+
+<use graphs/Mumbai_RetailvsArrival_ill2.png>
+Package pdftex.def Info: graphs/Mumbai_RetailvsArrival_ill2.png used on input l
+ine 173.
+(pdftex.def)             Requested size: 312.00119pt x 171.42033pt.
+
+<graphs/Delhi_RetailvsArrival_ill1.png, id=1319, 1529.715pt x 845.1575pt>
+File: graphs/Delhi_RetailvsArrival_ill1.png Graphic file (type png)
+
+<use graphs/Delhi_RetailvsArrival_ill1.png>
+Package pdftex.def Info: graphs/Delhi_RetailvsArrival_ill1.png used on input li
+ne 182.
+(pdftex.def)             Requested size: 312.00119pt x 172.36858pt.
+ [77 <./graphs/Mumbai_RetailvsArrival_ill1.png> <./graphs/Mumbai_RetailvsArriva
+l_ill2.png>]
+<graphs/Mumbai_RetailvsWS_ill1.png, id=1325, 1468.48625pt x 842.14626pt>
+File: graphs/Mumbai_RetailvsWS_ill1.png Graphic file (type png)
+
+<use graphs/Mumbai_RetailvsWS_ill1.png>
+Package pdftex.def Info: graphs/Mumbai_RetailvsWS_ill1.png used on input line 1
+91.
+(pdftex.def)             Requested size: 312.00119pt x 178.92479pt.
+
+<graphs/Mumbai_RetailvsWS_ill2.png, id=1327, 1332.98pt x 843.15pt>
+File: graphs/Mumbai_RetailvsWS_ill2.png Graphic file (type png)
+
+<use graphs/Mumbai_RetailvsWS_ill2.png>
+Package pdftex.def Info: graphs/Mumbai_RetailvsWS_ill2.png used on input line 1
+99.
+(pdftex.def)             Requested size: 312.00119pt x 197.34262pt.
+ [78 <./graphs/Delhi_RetailvsArrival_ill1.png> <./graphs/Mumbai_RetailvsWS_ill1
+.png>]
+<graphs/Delhi_RetailvsWS_ill1.png, id=1333, 1476.51625pt x 841.1425pt>
+File: graphs/Delhi_RetailvsWS_ill1.png Graphic file (type png)
+
+<use graphs/Delhi_RetailvsWS_ill1.png>
+Package pdftex.def Info: graphs/Delhi_RetailvsWS_ill1.png used on input line 20
+8.
+(pdftex.def)             Requested size: 312.00119pt x 177.7361pt.
+
+<graphs/Mumbai_WSvsArrival_ill1.png, id=1335, 1539.7525pt x 842.14626pt>
+File: graphs/Mumbai_WSvsArrival_ill1.png Graphic file (type png)
+
+<use graphs/Mumbai_WSvsArrival_ill1.png>
+Package pdftex.def Info: graphs/Mumbai_WSvsArrival_ill1.png used on input line 
+216.
+(pdftex.def)             Requested size: 312.00119pt x 170.63647pt.
+ [79 <./graphs/Mumbai_RetailvsWS_ill2.png> <./graphs/Delhi_RetailvsWS_ill1.png>
+]
+<graphs/Mumbai_WSvsArrival_ill2.png, id=1341, 1532.72626pt x 842.14626pt>
+File: graphs/Mumbai_WSvsArrival_ill2.png Graphic file (type png)
+
+<use graphs/Mumbai_WSvsArrival_ill2.png>
+Package pdftex.def Info: graphs/Mumbai_WSvsArrival_ill2.png used on input line 
+223.
+(pdftex.def)             Requested size: 312.00119pt x 171.42033pt.
+
+<graphs/Delhi_WSvsArrival_ill1.png, id=1343, 1526.70375pt x 843.15pt>
+File: graphs/Delhi_WSvsArrival_ill1.png Graphic file (type png)
+
+<use graphs/Delhi_WSvsArrival_ill1.png>
+Package pdftex.def Info: graphs/Delhi_WSvsArrival_ill1.png used on input line 2
+30.
+(pdftex.def)             Requested size: 312.00119pt x 172.30652pt.
+ [80 <./graphs/Mumbai_WSvsArrival_ill1.png> <./graphs/Mumbai_WSvsArrival_ill2.p
+ng>]
+<graphs/localDelhiRegionalNewsPlusNexus.png, id=1349, 1905.1175pt x 1073.00874p
+t>
+File: graphs/localDelhiRegionalNewsPlusNexus.png Graphic file (type png)
+ <use graphs/localDelhiRegionalNewsPlusNexus.png>
+Package pdftex.def Info: graphs/localDelhiRegionalNewsPlusNexus.png used on inp
+ut line 242.
+(pdftex.def)             Requested size: 429.00238pt x 241.61302pt.
+
+Overfull \hbox (39.00238pt too wide) in paragraph at lines 242--243
+ [][] 
+ []
+
+[81 <./graphs/Delhi_WSvsArrival_ill1.png>]
+<graphs/localDelhiFog.png, id=1355, 648.4225pt x 102.3825pt>
+File: graphs/localDelhiFog.png Graphic file (type png)
+
+<use graphs/localDelhiFog.png>
+Package pdftex.def Info: graphs/localDelhiFog.png used on input line 251.
+(pdftex.def)             Requested size: 429.00238pt x 67.73825pt.
+
+Overfull \hbox (39.00238pt too wide) in paragraph at lines 251--252
+ [][] 
+ []
+
+[82 <./graphs/localDelhiRegionalNewsPlusNexus.png> <./graphs/localDelhiFog.png>
+]) [83]
+\openout2 = `chapter7.aux'.
+
+ (chapter7.tex
+Chapter 7.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 9--167
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--167
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--167
+
+ []
+
+[84
+
+
+
+
+] [85] (Thesis.bbl
+Underfull \hbox (badness 3407) in paragraph at lines 13--16
+[]\OT1/cmr/m/n/12 fcainfoweb.nic.in/pmsver2/reports/report[]menu[]web.aspx.  []
+$\OT1/cmtt/m/n/12 http : / /$
+ []
+
+
+Overfull \hbox (51.87773pt too wide) in paragraph at lines 18--22
+$\OT1/cmtt/m/n/12 flying-[]squads-[]to-[]tackle-[]onion-[]hoarding-[]in-[]mahar
+ashtra-[]113072200152 _$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--29
+[]\OT1/cmr/m/n/12 Govt wakes up from slum-ber to pre-vent onion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--29
+\OT1/cmr/m/n/12 hoard-ing | lat-est news & up-dates at daily news
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--29
+\OT1/cmr/m/n/12 & anal-y-sis.  []$\OT1/cmtt/m/n/12 http : / / www . dnaindia . 
+com / ahmedabad /$
+ []
+
+
+Overfull \hbox (56.14159pt too wide) in paragraph at lines 24--29
+$\OT1/cmtt/m/n/12 report-[]govt-[]wakes-[]up-[]from-[]slumber-[]to-[]prevent-[]
+onion-[]hoarding-[]1876027$[]\OT1/cmr/m/n/12 .
+ []
+
+
+Underfull \hbox (badness 4217) in paragraph at lines 31--35
+\OT1/cmr/m/n/12 times of in-dia.  []$\OT1/cmtt/m/n/12 http : / / timesofindia .
+ indiatimes . com / india /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--35
+$\OT1/cmtt/m/n/12 The-[]great-[]onion-[]robbery-[]135-[]mark-[]up-[]from-[]mand
+i-[]to-[]retail /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--41
+[]\OT1/cmr/m/n/12 Hoarding push-ing onion prices up, govt finds - times
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--41
+\OT1/cmr/m/n/12 of in-dia.  []$\OT1/cmtt/m/n/12 http : / / timesofindia . india
+times . com / india /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--41
+$\OT1/cmtt/m/n/12 Hoarding-[]pushing-[]onion-[]prices-[]up-[]govt-[]finds / art
+icleshow /$
+ []
+
+
+Underfull \hbox (badness 7362) in paragraph at lines 43--47
+[]\OT1/cmr/m/n/12 Kerala yet to ini-ti-ate ac-tion against onion hoard-ers - th
+e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--47
+\OT1/cmr/m/n/12 hindu.  []$\OT1/cmtt/m/n/12 http : / / www . thehindu . com / n
+ews / national / kerala /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--47
+$\OT1/cmtt/m/n/12 kerala-[]yet-[]to-[]initiate-[]action-[]against-[]onion-[]hoa
+rders /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--53
+[]\OT1/cmr/m/n/12 No onion hoard-ing in delhi, don't politi-cise price rise:
+ []
+
+[86
+
+
+
+]
+Underfull \hbox (badness 2809) in paragraph at lines 55--59
+[]\OT1/cmr/m/n/12 Onion cri-sis wors-ened by hoard-ing?  []$\OT1/cmtt/m/n/12 ht
+tp : / / www . ndtv . com /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--65
+[]\OT1/cmr/m/n/12 Onion price rise may be due to hoard-ing: Cen-tre -
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--65
+\OT1/cmr/m/n/12 times of in-dia.  []$\OT1/cmtt/m/n/12 http : / / timesofindia .
+ indiatimes . com /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--65
+$\OT1/cmtt/m/n/12 india / Onion-[]price-[]rise-[]may-[]be-[]due-[]to-[]hoarding
+-[]Centre /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--72
+[]\OT1/cmr/m/n/12 Onion price rise: Nashik farm-ers put blame on hoard-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--72
+\OT1/cmr/m/n/12 ers - timesofindia-economictimes.  []$\OT1/cmtt/m/n/12 http : /
+ / articles .$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--72
+$\OT1/cmtt/m/n/12 economictimes . indiatimes . com / 2014-[]06-[]20 / news / 50
+739208 _ 1 _$
+ []
+
+
+Underfull \hbox (badness 8151) in paragraph at lines 74--79
+[]\OT1/cmr/m/n/12 Onion prices rise again at vashi agri-cul-tural pro-duce mar-
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--79
+\OT1/cmr/m/n/12 ket-ing com-mit-tee | lat-est news & up-dates at daily
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--79
+\OT1/cmr/m/n/12 news & anal-y-sis.  []$\OT1/cmtt/m/n/12 http : / / www . dnaind
+ia . com / mumbai /$
+ []
+
+
+Overfull \hbox (186.31665pt too wide) in paragraph at lines 74--79
+$\OT1/cmtt/m/n/12 report-[]onion-[]prices-[]rise-[]again-[]at-[]vashi-[]agricul
+tural-[]produce-[]marketing-[]committee-[]1493407$[]\OT1/cmr/m/n/12 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--85
+[]\OT1/cmr/m/n/12 Rains, hoard-ing make veg-eta-bles costlier.  []$\OT1/cmtt/m/
+n/12 http : / / www .$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--85
+$\OT1/cmtt/m/n/12 deccanchronicle . com / 140720 / nation-[]current-[]affairs /
+ article /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--85
+$\OT1/cmtt/m/n/12 rains-[]hoarding-[]make-[]vegetables-[]costlier$[]\OT1/cmr/m/
+n/12 .  (Vis-ited on
+ []
+
+[87]) (appendix.tex (libraryAppendix/Chapter_1.tex [88]
+Appendix A.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--27
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--27
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--27
+
+ []
+
+[89
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--66
+
+ []
+
+[90]
+Overfull \hbox (20.50323pt too wide) in paragraph at lines 92--92
+|[]\OT1/cmr/bx/n/14.4 correlationAtLag(series1, se-ries2, lag, win-dow[]size)| 
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--104
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--104
+
+ []
+
+[91]
+Underfull \hbox (badness 10000) in paragraph at lines 117--120
+
+ []
+
+
+Overfull \hbox (7.0495pt too wide) in paragraph at lines 125--125
+|[]\OT1/cmr/bx/n/14.4 WindowCorrelationWithConstantLag(arr1, arr2,
+ []
+
+
+Overfull \hbox (20.27177pt too wide) in paragraph at lines 125--125
+\OT1/cmr/bx/n/14.4 win-dow[]size,maxlag, pos-i-tive[]correlation, pos, neg)| 
+ []
+
+[92]
+Overfull \hbox (30.3211pt too wide) in paragraph at lines 168--168
+|[]\OT1/cmr/bx/n/14.4 anomaliesFromWindowCorrelationWithConstantlag 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 168.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 168.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 168.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--180
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--180
+
+ []
+
+[93]) (libraryAppendix/Chapter_2.tex
+Underfull \hbox (badness 10000) in paragraph at lines 225--1
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--1
+
+ []
+
+[94] [95]
+Appendix B.
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--29
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--29
+
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 32.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 32.
+
+[96
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 53--55
+
+ []
+
+[97]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 61.
+
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ù in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ù in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--66
+
+ []
+
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ù in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ù in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--71
+
+ []
+
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ù in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ù in font cmr12!
+
+Overfull \hbox (11.94296pt too wide) in paragraph at lines 77--78
+[]\OT1/cmr/m/n/12 any[]series \OT1/cmr/m/it/12 (list) \OT1/cmr/m/n/12 : Any lis
+t/series of tu-ples in the for-mat (Date,Value),
+ []
+
+
+Overfull \hbox (11.44464pt too wide) in paragraph at lines 87--87
+|[]\OT1/cmr/bx/n/14.4 slopeBased(series1,smoothed1,series2,smoothed2, 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 87.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 87.
+
+[98]) (libraryAppendix/Chapter_3.tex
+Underfull \hbox (badness 10000) in paragraph at lines 115--1
+
+ []
+
+
+Overfull \hbox (72.83658pt too wide) in paragraph at lines 115--1
+\OT1/cmr/m/n/12 anoma-ly-DatesS-lope-Based-de-te-tion is called which pro-vides
+ (start[]date,end[]date,slope[]value)
+ []
+
+[99] [100]
+Appendix C.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--28
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--28
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--48
+
+ []
+
+[101
+
+
+] [102]
+Underfull \hbox (badness 10000) in paragraph at lines 74--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--94
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--94
+
+ []
+
+
+Overfull \hbox (59.84982pt too wide) in paragraph at lines 97--97
+|[]\OT1/cmr/bx/n/14.4 anomalies[]from[]linear[]regression(result[]of[]lr, any[]
+series)| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--107
+
+ []
+
+[103]
+Underfull \hbox (badness 10000) in paragraph at lines 121--123
+
+ []
+
+
+Overfull \hbox (95.13934pt too wide) in paragraph at lines 124--126
+[]\OT1/cmr/m/n/12 (date,x[]value,y[]value,predicted[]y[]value, dif-fer-ence[]be
+tween[]predicted[]and[]actual[]y[]value) 
+ []
+
+[104]
+Underfull \hbox (badness 10000) in paragraph at lines 162--164
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--169
+
+ []
+
+) (libraryAppendix/Chapter_4.tex
+Underfull \hbox (badness 10000) in paragraph at lines 174--1
+
+ []
+
+[105]
+Appendix D.
+
+Overfull \hbox (8.35077pt too wide) in paragraph at lines 1--1
+|\OT1/cmr/bx/n/24.88 Graph Based Anomaly De-tec-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--32
+
+ []
+
+[106
+
+
+]
+Overfull \hbox (29.09944pt too wide) in paragraph at lines 36--36
+|[]\OT1/cmr/bx/n/14.4 graphBasedAnomalyCall(dependentVar, num-berOf-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--47
+
+ []
+
+
+Overfull \hbox (31.75291pt too wide) in paragraph at lines 68--68
+|[]\OT1/cmr/bx/n/14.4 generateCSVsForGraphBasedAnomaly(lists, dateIn-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--113
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--113
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--113
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--113
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--113
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--113
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--113
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--113
+
+ []
+
+[107] [108]
+Underfull \hbox (badness 10000) in paragraph at lines 129--131
+
+ []
+
+[109]
+Overfull \hbox (20.18118pt too wide) in paragraph at lines 173--173
+|[]\OT1/cmr/bx/n/14.4 graphBasedAnomalyMain(lists, de-pen-dent-Var, nu-
+ []
+
+[110]) (libraryAppendix/Chapter_5.tex
+Underfull \hbox (badness 10000) in paragraph at lines 201--1
+
+ []
+
+[111]
+Appendix E.
+
+Overfull \hbox (25.32614pt too wide) in paragraph at lines 1--1
+|\OT1/cmr/bx/n/24.88 Multivariate Time Se-ries Anomaly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--33
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--33
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--33
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--33
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--33
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--33
+
+ []
+
+[112
+
+
+]
+Overfull \hbox (69.551pt too wide) in paragraph at lines 36--36
+|[]\OT1/cmr/bx/n/14.4 MultivariateAnomaly(fileName,hd, param-Count,fileStart)| 
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--46
+
+ []
+
+[113])
+Underfull \hbox (badness 10000) in paragraph at lines 104--8
+
+ []
+
+[114]) [115]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 175.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 175.
+ (Thesis.aux (titlepage.aux) (certificate.aux) (abstract.aux)
+(acknowledgement.aux) (chapter1.aux) (chapter2.aux) (chapter3.aux)
+(chapter4.aux) (chapter5.aux) (chapter6.aux) (chapter7.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 175.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 175.
+Package rerunfilecheck Info: File `Thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 1F08F42EA4B9B539C084E5052B9685C5;6616.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 175.
+ ) 
+Here is how much of TeX's memory you used:
+ 29930 strings out of 493634
+ 694852 string characters out of 3141288
+ 982603 words of memory out of 3000000
+ 32213 multiletter control sequences out of 15000+200000
+ 13472 words of font info for 49 fonts, out of 3000000 for 9000
+ 1025 hyphenation exceptions out of 8191
+ 57i,20n,102p,1213b,2239s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Thesis.pdf (130 pages, 8262239 bytes).
+PDF statistics:
+ 1750 PDF objects out of 2073 (max. 8388607)
+ 417 named destinations out of 1000 (max. 500000)
+ 1043 words of extra memory for PDF output out of 10000 (max. 10000000)
+
