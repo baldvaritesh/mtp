@@ -23,10 +23,10 @@
 \contentsline {section}{\numberline {4.2}Anomaly Detection Library}{29}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Window Based Correlation}{29}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}Slope Based Detection}{29}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Linear Regression}{30}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.3}Linear Regression}{29}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4}Graph Based Anomaly}{30}{subsection.4.2.4}
 \contentsline {subsection}{\numberline {4.2.5}Multivariate- Vector Autoregressive}{30}{subsection.4.2.5}
-\contentsline {section}{\numberline {4.3}Hypothesis Testing}{31}{section.4.3}
+\contentsline {section}{\numberline {4.3}Hypothesis Testing}{30}{section.4.3}
 \contentsline {chapter}{\numberline {5}Analysis of System Results}{33}{chapter.5}
 \contentsline {section}{\numberline {5.1}Overview of System Results}{33}{section.5.1}
 \contentsline {section}{\numberline {5.2}Analysis of Each Method}{36}{section.5.2}
