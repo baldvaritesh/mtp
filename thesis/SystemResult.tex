@@ -44,7 +44,7 @@
 
 
 
-The analysis was performed for differnet timeseries of two centers- Delhi and Mumbai.
+The analysis was performed for different time-series of two centers- Delhi and Mumbai.
 
 Following analysis is for Mumbai. In case of Mumbai, there are total of 66 distinct days for which news articles exist. Here, articles not matched represents unique dates for which articles were present but system failed to report anomaly against that date.
 \begin{table}[H]
@@ -64,8 +64,8 @@ Following analysis is for Mumbai. In case of Mumbai, there are total of 66 disti
 
 Following are the inferences from the above table:
 \begin{itemize}
- \item Analysis involving arrival timeseries tends to produce better matches. This could be because arrival is one of the determining factor for the price of commodity. Also, news often compare arrival data to explain the suspicous scenarios.
- \item Retail vs Average Retail does not produce good matches which shows that the prices at differnet centers tend to go in tendum which might be because of strong traders nexus.
+ \item Analysis involving arrival timeseries tends to produce better matches. This could be because arrival is one of the determining factor for the price of commodity. Also, news often compare arrival data to explain the suspicious scenarios.
+ \item Retail vs Average Retail does not produce good matches which shows that the prices at different centers tend to go in tendum which might be because of strong traders nexus.
  \item Retail vs Wholesale is not performing good results which gives a clear indication that usually retail prices align with the wholesale prices. So, retailers don't tend to get involved in the fixing of prices because they are forced to align the price of commodity with the wholesale prices.
  \item This also indirectly indicates that the most of the problem exists at the wholesale level where traders operate who are usually accused by the news reports for manipulating the price of commodity.
 \end{itemize}
@@ -94,9 +94,9 @@ Now, the one which are stating traders nexus as reason, and are missed by system
 
 \begin{itemize}
 
-	\item When we looked for Retail vs Average Retail series, we found that all centers were behaving similar. Whereas this analysis detects when one center deviates from other. That's why system might have missed them. One more point to note is that these articles are for traders nexus and it is quite common that traders will be communucating among themselves and controlling the prices and that is the reason why we observed that centers are behaving similar.
+	\item When we looked for Retail vs Average Retail series, we found that all centers were behaving similar. Whereas this analysis detects when one center deviates from other. That's why system might have missed them. One more point to note is that these articles are for traders nexus and it is quite common that traders will be communicating among themselves and controlling the prices and that is the reason why we observed that centers are behaving similar.
 	
-	\item For Retail vs Arrival analysis, Hypothesis 1 reported some of the anomalies, but Hypothesis 3 did not. Hypothesis 3 reports anomalies date-wise and Hypothesis 1 reports anomalies window-wise. So, we found that while taking intersection these anomalies got removed. Note that in Hypothsis 3 not exact date, but nearby dates were reported.
+	\item For Retail vs Arrival analysis, Hypothesis 1 reported some of the anomalies, but Hypothesis 3 did not. Hypothesis 3 reports anomalies date-wise and Hypothesis 1 reports anomalies window-wise. So, we found that while taking intersection these anomalies got removed. Note that in Hypothesis 3 not exact date, but nearby dates were reported.
 	
 	\item When we studied Retail vs Wholesale Analysis, we found that in all cases, both prices were moving hand in hand. So, this analysis could not capture these anomalies. \textbf{ Note that this might be the reason, why Retail vs Average Retail and Retail vs Wholesale are not producing promising results because they usually go hand in hand. But when arrival comes into picture, then we can have better estimate of prices. So analysis which is with arrival are performing better as compared to others}
 	
@@ -104,7 +104,7 @@ Now, the one which are stating traders nexus as reason, and are missed by system
 	
 \end{itemize}
 
-Following figures are the pictorical representation of the above (Table \ref{result}) results on timeline.
+Following figures are the pictorial representation of the above (Table \ref{result}) results on time-line.
 
 \textbf{Note:} In following figures, Yellow highlighted regions are system reported anomalies for which no corresponding news article was present, Violet highlighted region represents news article for which our system did not report any anomaly and Red highlighted region represents anomalies reported by system for which news articles were present.
 
@@ -181,7 +181,7 @@ Following table has few examples showing system reported anomalies and an articl
 Explaination of all the cases listed in table are as following:
 
 \begin{itemize}
- \item 27-Dec-2010 to 29-Dec-2010 : According to our hypothesis 4, price trends at differnet centers should behave similar. But, here retail price of onion in Mumbai took a sharp rise then faced a downfall which was not seen being followed by Delhi. Instead retail prices at Delhi continued to grow. There were multiple news articles for the same tenure which claimed traders nexus as reason for anomaly. One of the article link is given in table. (See Figure \ref{fig:Mumbai_RetailvsAvg_ill1})
+ \item 27-Dec-2010 to 29-Dec-2010 : According to our hypothesis 4, price trends at different centers should behave similar. But, here retail price of onion in Mumbai took a sharp rise then faced a downfall which was not seen being followed by Delhi. Instead retail prices at Delhi continued to grow. There were multiple news articles for the same tenure which claimed traders nexus as reason for anomaly. One of the article link is given in table. (See Figure \ref{fig:Mumbai_RetailvsAvg_ill1})
  
 	\begin{figure}[H]
 	\centering
@@ -295,7 +295,7 @@ News Article stated the following,
 		\end{figure}
 		
 
-We also tried to run system by changing window size for differnet methods. We got the following results:
+We also tried to run system by changing window size for different methods. We got the following results:
 		
 \begin{figure}[H]
 \centering
@@ -339,5 +339,5 @@ Where,
 \end{itemize}
 
 
-Figure \ref{fig:comparisonMultipleWindows} shows comparison of system result taking different window size for correlation and slope based anomaly detection mathod. Note that for all of these methods, default threshold value was considered, user did not provided any threshold value. From figure \ref{fig:comparisonMultipleWindows}, we see that some window size performs better for some type of analysis and may not be for other. So, user may need to run the system with differnt window sizes for differnt analysis. 
+Figure \ref{fig:comparisonMultipleWindows} shows comparison of system result taking different window size for correlation and slope based anomaly detection mathod. Note that for all of these methods, default threshold value was considered, user did not provided any threshold value. From figure \ref{fig:comparisonMultipleWindows}, we see that some window size performs better for some type of analysis and may not be for other. So, user may need to run the system with different window sizes for different analysis. 
 \end{document}   

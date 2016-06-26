@@ -1,15 +1,13 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.1.3)  26 JUN 2016 16:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.15)  26 JUN 2016 22:05
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
-**Thesis.tex
-(./Thesis.tex
-LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 78 languages loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
-Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+**./Thesis.tex
+(Thesis.tex
+LaTeX2e <2015/10/01> patch level 2
+Babel <3.9n> and hyphenation patterns for 69 languages loaded.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@chapter=\count80
@@ -24,31 +22,31 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 94.
 
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count88
@@ -56,23 +54,23 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 130.
+Package color Info: Driver file: pdftex.def on input line 142.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfig\subfig.sty"
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 57.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen105
 \captionmargin@=\dimen106
 \captionwidth=\dimen107
@@ -97,7 +95,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \sf@top=\skip46
 \sf@bottom=\skip47
 )
-(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count97
 \float@exts=\toks15
@@ -105,7 +103,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks16
 \@floatcapt=\box27
 )
-(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
 \fancy@headwidth=\skip48
 \f@ncyO@elh=\skip49
 \f@ncyO@erh=\skip50
@@ -116,17 +114,17 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \f@ncyO@olf=\skip55
 \f@ncyO@orf=\skip56
 )
-(/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
-Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\makeidx.sty"
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tocbibind/tocbibind.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tocbibind\tocbibind.sty"
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
 Package tocbibind Info: The document has chapter divisions on input line 50.
 
 
 Package tocbibind Note: Using chapter style headings, unless overridden.
 
-) (/usr/share/texlive/texmf-dist/tex/latex/supertabular/supertabular.sty
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\supertabular\supertabular.sty"
 Package: supertabular 2004/02/20 v4.1e the supertabular environment
 \c@tracingst=\count98
 \ST@wd=\dimen113
@@ -144,27 +142,26 @@ Package: supertabular 2004/02/20 v4.1e the supertabular environment
 \ST@toadd=\dimen122
 \ST@dimen=\dimen123
 \ST@pbox=\box28
-)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen124
 \extrarowheight=\dimen125
 \NC@list=\toks17
 \extratabsurround=\skip60
 \backup@length=\skip61
 )
-(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
-Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\enumerate.sty"
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks18
 )
-(/usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\rotating\rotating.sty"
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \c@r@tfl@t=\count99
 \rotFPtop=\skip62
@@ -172,11 +169,11 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \rot@float@box=\box29
 \rot@mess@toks=\toks19
 )
-(/usr/share/texlive/texmf-dist/tex/latex/moreverb/moreverb.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\moreverb\moreverb.sty"
 Package: moreverb 2008/06/03 v2.3a `more' verbatim facilities
 
-(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
-Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks20
 \verbatim@line=\toks21
 \verbatim@in@stream=\read1
@@ -185,27 +182,27 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \tab@size=\count101
 \listing@line=\count102
 )
-(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
 \bigstrutjot=\dimen126
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip64
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks22
 \ex@=\dimen127
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen128
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count103
@@ -246,8 +243,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
-Package: amsthm 2004/08/06 v2.20
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
+Package: amsthm 2015/03/04 v2.20.2
 \thm@style=\toks27
 \thm@bodyfont=\toks28
 \thm@headfont=\toks29
@@ -258,21 +255,21 @@ Package: amsthm 2004/08/06 v2.20
 \thm@headsep=\skip69
 \dth@everypar=\toks32
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/captcont/captcont.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\captcont\captcont.sty"
 Package: captcont 2002/02/14 v2.0 captcont package
 )
-(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
-Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\titlesec\titlesec.sty"
+Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \ttl@box=\box32
 \beforetitleunit=\skip70
 \aftertitleunit=\skip71
@@ -283,20 +280,20 @@ Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \titlewidthlast=\dimen139
 \titlewidthfirst=\dimen140
 )
-(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
-Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
 
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
-Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
 Package hobsub Info: Skipping package `ltxcmds' (already loaded).
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
@@ -327,7 +324,7 @@ Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
 )
 Package hobsub Info: Skipping package `hobsub' (already loaded).
 Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
-Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: hopatch 2011/06/24 v1.1 Wrapper for package hooks (HO)
 Package: xcolor-patch 2011/01/30 xcolor patch
 Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
@@ -335,25 +332,25 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen141
 \Hy@linkcounter=\count115
 \Hy@pagecounter=\count116
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count117
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4443.
@@ -385,89 +382,101 @@ LaTeX Info: Redefining \pageref on input line 6369.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count123
 \c@bookmark@seq@number=\count124
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip72
 )
-(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
-Package: lipsum 2011/04/14 v1.2 150 paragraphs of Lorem Ipsum dummy text
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty"
+Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count125
 )
-(/usr/share/texmf/tex/latex/pgf/frontendlayer/tikz.sty
-(/usr/share/texmf/tex/latex/pgf/basiclayer/pgf.sty
-(/usr/share/texmf/tex/latex/pgf/utilities/pgfrcs.sty
-(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-common.tex
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\frontendlayer\tikz.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common.te
+x"
 \pgfutil@everybye=\toks34
-)
-(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box33
+\pgfutil@tempdima=\dimen145
+\pgfutil@tempdimb=\dimen146
 
-(/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common-li
+sts.tex"))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-latex.def
+"
+\pgfutil@abb=\box33
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-(/usr/share/texmf/tex/generic/pgf/utilities/pgfrcs.code.tex
-Package: pgfrcs 2010/10/25 v2.10 (rcs-revision 1.24)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfrcs.code.tex"
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
 ))
-Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
-
-(/usr/share/texmf/tex/latex/pgf/basiclayer/pgfcore.sty
-(/usr/share/texmf/tex/latex/pgf/systemlayer/pgfsys.sty
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys.code.tex
-Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
-
-(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgfcore.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\systemlayer\pgfsys.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys.code.tex
+"
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex
+"
 \pgfkeys@pathtoks=\toks35
 \pgfkeys@temptoks=\toks36
 
-(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeysfiltered.c
+ode.tex"
 \pgfkeys@tmptoks=\toks37
 ))
-\pgf@x=\dimen145
-\pgf@y=\dimen146
-\pgf@xa=\dimen147
-\pgf@ya=\dimen148
-\pgf@xb=\dimen149
-\pgf@yb=\dimen150
-\pgf@xc=\dimen151
-\pgf@yc=\dimen152
+\pgf@x=\dimen147
+\pgf@y=\dimen148
+\pgf@xa=\dimen149
+\pgf@ya=\dimen150
+\pgf@xb=\dimen151
+\pgf@yb=\dimen152
+\pgf@xc=\dimen153
+\pgf@yc=\dimen154
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
 \c@pgf@counta=\count126
 \c@pgf@countb=\count127
 \c@pgf@countc=\count128
 \c@pgf@countd=\count129
+\t@pgf@toka=\toks38
+\t@pgf@tokb=\toks39
+\t@pgf@tokc=\toks40
 
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgf.cfg
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgf.cfg"
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
-Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 900.
+Driver file for pgf: pgfsys-pdftex.def
 
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2009/05/22  (rcs-revision 1.26)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-pdftex.d
+ef"
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
 
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
-File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-common-p
+df.def"
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.
+code.tex"
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
 \pgfsyssoftpath@smallbuffer@items=\count130
 \pgfsyssoftpath@bigbuffer@items=\count131
 )
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.
+code.tex"
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
-))
-(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+)) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -482,361 +491,385 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcore.code.tex
-Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
-
-(/usr/share/texmf/tex/generic/pgf/math/pgfmath.code.tex
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathcalc.code.tex
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathutil.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen153
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcore.code.tex
+"
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathcalc.code.tex"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathutil.code.tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathparser.code.tex
+"
+\pgfmath@dimen=\dimen155
 \pgfmath@count=\count132
 \pgfmath@box=\box34
-\pgfmath@toks=\toks38
-\pgfmath@stack@operand=\toks39
-\pgfmath@stack@operation=\toks40
+\pgfmath@toks=\toks41
+\pgfmath@stack@operand=\toks42
+\pgfmath@stack@operation=\toks43
 )
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.code.tex
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)))
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfloat.code.tex
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.code.
+tex"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.basic
+.code.tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.trigo
+nometric.code.tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.rando
+m.code.tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.compa
+rison.code.tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.base.
+code.tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.round
+.code.tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.misc.
+code.tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.integ
+erarithmetics.code.tex")))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfloat.code.tex"
 \c@pgfmathroundto@lastzeros=\count133
 ))
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
-File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
-\pgf@picminx=\dimen154
-\pgf@picmaxx=\dimen155
-\pgf@picminy=\dimen156
-\pgf@picmaxy=\dimen157
-\pgf@pathminx=\dimen158
-\pgf@pathmaxx=\dimen159
-\pgf@pathminy=\dimen160
-\pgf@pathmaxy=\dimen161
-\pgf@xx=\dimen162
-\pgf@xy=\dimen163
-\pgf@yx=\dimen164
-\pgf@yy=\dimen165
-\pgf@zx=\dimen166
-\pgf@zy=\dimen167
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepoints.co
+de.tex"
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen156
+\pgf@picmaxx=\dimen157
+\pgf@picminy=\dimen158
+\pgf@picmaxy=\dimen159
+\pgf@pathminx=\dimen160
+\pgf@pathmaxx=\dimen161
+\pgf@pathminy=\dimen162
+\pgf@pathmaxy=\dimen163
+\pgf@xx=\dimen164
+\pgf@xy=\dimen165
+\pgf@yx=\dimen166
+\pgf@yy=\dimen167
+\pgf@zx=\dimen168
+\pgf@zy=\dimen169
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
-\pgf@path@lastx=\dimen168
-\pgf@path@lasty=\dimen169
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathconst
+ruct.code.tex"
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen170
+\pgf@path@lasty=\dimen171
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
-File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
-\pgf@shorten@end@additional=\dimen170
-\pgf@shorten@start@additional=\dimen171
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathusage
+.code.tex"
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen172
+\pgf@shorten@start@additional=\dimen173
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
-File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorescopes.co
+de.tex"
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box35
 \pgf@hbox=\box36
 \pgf@layerbox@main=\box37
 \pgf@picture@serial@count=\count134
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
-\pgflinewidth=\dimen172
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoregraphicst
+ate.code.tex"
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen174
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
-File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
-\pgf@pt@x=\dimen173
-\pgf@pt@y=\dimen174
-\pgf@pt@temp=\dimen175
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransform
+ations.code.tex"
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen175
+\pgf@pt@y=\dimen176
+\pgf@pt@temp=\dimen177
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorequick.cod
+e.tex"
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreobjects.c
+ode.tex"
 File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2008/10/09  (rcs-revision 1.8)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathproce
+ssing.code.tex"
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
-File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorearrows.co
+de.tex"
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen178
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
-\pgf@max=\dimen176
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreshade.cod
+e.tex"
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen179
 \pgf@sys@shading@range@num=\count135
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
-File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreimage.cod
+e.tex"
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
-File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreexternal.
+code.tex"
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
 \pgfexternal@startupbox=\box38
 ))
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
-File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorelayers.co
+de.tex"
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
-File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretranspare
+ncy.code.tex"
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
-File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepatterns.
+code.tex"
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
-(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
-File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleshapes.cod
+e.tex"
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
 \pgfnodeparttextbox=\box39
 )
-(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleplot.code.
+tex"
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
-(/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
-Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen177
-\pgf@nodesepend=\dimen178
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version
+-0-65.sty"
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen180
+\pgf@nodesepend=\dimen181
 )
-(/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
-Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version
+-1-18.sty"
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 ))
-(/usr/share/texmf/tex/latex/pgf/utilities/pgffor.sty
-(/usr/share/texmf/tex/latex/pgf/utilities/pgfkeys.sty
-(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex))
-(/usr/share/texmf/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
-\pgffor@iter=\dimen179
-\pgffor@skip=\dimen180
-\pgffor@stack=\toks41
-\pgffor@toks=\toks42
-))
-(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\utilities\pgffor.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\utilities\pgfkeys.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"
+)) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\math\pgfmath.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex"))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgffor.code.tex"
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
-(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex")
+\pgffor@iter=\dimen182
+\pgffor@skip=\dimen183
+\pgffor@stack=\toks44
+\pgffor@toks=\toks45
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\tikz.cod
+e.tex"
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplothan
+dlers.code.tex"
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \pgf@plot@mark@count=\count136
-\pgfplotmarksize=\dimen181
+\pgfplotmarksize=\dimen184
 )
-\tikz@lastx=\dimen182
-\tikz@lasty=\dimen183
-\tikz@lastxsaved=\dimen184
-\tikz@lastysaved=\dimen185
-\tikzleveldistance=\dimen186
-\tikzsiblingdistance=\dimen187
+\tikz@lastx=\dimen185
+\tikz@lasty=\dimen186
+\tikz@lastxsaved=\dimen187
+\tikz@lastysaved=\dimen188
+\tikzleveldistance=\dimen189
+\tikzsiblingdistance=\dimen190
 \tikz@figbox=\box40
-\tikz@tempbox=\box41
+\tikz@figbox@bg=\box41
+\tikz@tempbox=\box42
+\tikz@tempbox@bg=\box43
 \tikztreelevel=\count137
 \tikznumberofchildren=\count138
 \tikznumberofcurrentchild=\count139
 \tikz@fig@count=\count140
 
-(/usr/share/texmf/tex/generic/pgf/modules/pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\modules\pgfmodulematrix.cod
+e.tex"
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 \pgfmatrixcurrentrow=\count141
 \pgfmatrixcurrentcolumn=\count142
 \pgf@matrix@numberofcolumns=\count143
 )
 \tikz@expandcount=\count144
 
-(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopat
-hs.code.tex
-File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
-))) (./pgf-pie.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
+s\tikzlibrarytopaths.code.tex"
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+))) (pgf-pie.sty
 Package: pgf-pie 2011/10/02 v0.2 Some LaTeX macros for pie chart by using PGF/T
 ikz package.
 
-(/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\carlisle\scalefnt.sty")
 \pgfpie@angleEnd=\skip73
 \c@pgfpie@explodeLength=\count145
 \c@pgfpie@colorLength=\count146
 \c@pgfpie@sliceLength=\count147
 )
-(/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
-Package: pgfplots 2013/10/03 v1.9 Data Visualization (1.9)
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
-\t@pgfplots@toka=\toks43
-\t@pgfplots@tokb=\toks44
-\t@pgfplots@tokc=\toks45
-\pgfplots@tmpa=\dimen188
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgfplots\pgfplots.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\pgfplots.revision.tex"
+)
+Package: pgfplots 2016/01/06 v1.13 Data Visualization (1.13)
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\pgfplots.code.tex"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\pgfplotscore.code.tex"
+\t@pgfplots@toka=\toks46
+\t@pgfplots@tokb=\toks47
+\t@pgfplots@tokc=\toks48
+\pgfplots@tmpa=\dimen191
 \c@pgfplots@coordindex=\count148
 \c@pgfplots@scanlineindex=\count149
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
-.tex))
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.t
-ex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
-gfsupp_loader.code.tex
-Package pgfplots: loading complementary code for your PGF version...
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\sys\pgfplotssysgeneric
+.code.tex"))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\libs\pgfplotslibrary.c
+ode.tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\oldpgfcompatib\pgfplot
+soldpgfsupp_loader.code.tex"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryfpu.cod
+e.tex")
+Package pgfplots: loading complementary arithmetics for your pgf version...
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
-gfsupp_misc.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
-gfsupp_pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks46
-\pgfkeys@temptoks=\toks47
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
-gfsupp_pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks48
-))
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
-gfsupp_pgfmathfloat.code.tex
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\oldpgfcompatib\pgfplot
+soldpgfsupp_pgflibraryfpu.code.tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\oldpgfcompatib\pgfplot
+soldpgfsupp_pgfmathfloat.code.tex"
 \c@pgfmathroundto@lastzeros=\count150
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
-gfsupp_pgflibraryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2012/09/11 v2.10 (rcs-revision 1.17)
-\pgf@plot@mark@count=\count151
-\pgfplotmarksize=\dimen189
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
-gfsupp_pgflibraryfpu.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
-gfsupp_pgfcorescopes.code.tex
-File: pgfcorescopes.code.tex 2012/11/30  (rcs-revision 1.38)
-\pgfpic=\box42
-\pgf@hbox=\box43
-\pgf@layerbox@main=\box44
-\pgf@picture@serial@count=\count152
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
-gfsupp_pgfcorelayers.code.tex
-File: pgfcorelayers.code.tex 2012/11/07  (rcs-revision 1.5)
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
-tructure.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
-tructureext.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray
-.code.tex
-\c@pgfplotsarray@tmp=\count153
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\util\pgfplotsutil.code
+.tex"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\liststructure\pgfplots
+liststructure.code.tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\liststructure\pgfplots
+liststructureext.code.tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\liststructure\pgfplots
+array.code.tex"
+\c@pgfplotsarray@tmp=\count151
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatri
-x.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
-d.code.tex
-\c@pgfplotstable@counta=\count154
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\liststructure\pgfplots
+matrix.code.tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\numtable\pgfplotstable
+shared.code.tex"
+\c@pgfplotstable@counta=\count152
 \t@pgfplotstable@a=\toks49
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
-.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.te
-x
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.co
-de.tex))
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code
-.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
-fshading.code.tex
-\c@pgfplotslibrarysurf@no=\count155
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\liststructure\pgfplots
+deque.code.tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\util\pgfplotsbinary.co
+de.tex"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\util\pgfplotsbinary.da
+ta.code.tex"))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\util\pgfplotsutil.verb
+.code.tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\libs\pgflibrarypgfplot
+s.surfshading.code.tex"
+\c@pgfplotslibrarysurf@no=\count153
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
-shading.pgfsys-pdftex.def)))
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.
-tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex
-))
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.t
-ex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.t
-ex
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.cod
-e.tex))
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.cod
-e.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex
-) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex
-) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex)
-(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecor
-ations.code.tex
-(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen190
-\pgfdecoratedremainingdistance=\dimen191
-\pgfdecoratedinputsegmentcompleteddistance=\dimen192
-\pgfdecoratedinputsegmentremainingdistance=\dimen193
-\pgf@decorate@distancetomove=\dimen194
-\pgf@decorate@repeatstate=\count156
-\pgfdecorationsegmentamplitude=\dimen195
-\pgfdecorationsegmentlength=\dimen196
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\sys\pgflibrarypgfplots
+.surfshading.pgfsys-pdftex.def")))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\util\pgfplotscolormap.
+code.tex"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\util\pgfplotscolor.cod
+e.tex"))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\pgfplotsstackedplots.c
+ode.tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\pgfplotsplothandlers.c
+ode.tex"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\pgfplotsmeshplothandle
+r.code.tex"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\pgfplotsmeshplotimage.
+code.tex")))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\pgfplots.scaling.code.
+tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\pgfplotscoordprocessin
+g.code.tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\pgfplots.errorbars.cod
+e.tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\pgfplots.markers.code.
+tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\pgfplotsticks.code.tex
+")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\pgfplots.paths.code.te
+x")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
+s\tikzlibrarydecorations.code.tex"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduledecoration
+s.code.tex"
+\pgfdecoratedcompleteddistance=\dimen192
+\pgfdecoratedremainingdistance=\dimen193
+\pgfdecoratedinputsegmentcompleteddistance=\dimen194
+\pgfdecoratedinputsegmentremainingdistance=\dimen195
+\pgf@decorate@distancetomove=\dimen196
+\pgf@decorate@repeatstate=\count154
+\pgfdecorationsegmentamplitude=\dimen197
+\pgfdecorationsegmentlength=\dimen198
 )
-\tikz@lib@dec@box=\box45
+\tikz@lib@dec@box=\box44
 )
-(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecor
-ations.pathmorphing.code.tex
-(/usr/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.p
-athmorphing.code.tex))
-(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecor
-ations.pathreplacing.code.tex
-(/usr/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.p
-athreplacing.code.tex))
-\pgfplots@numplots=\count157
-\pgfplots@xmin@reg=\dimen197
-\pgfplots@xmax@reg=\dimen198
-\pgfplots@ymin@reg=\dimen199
-\pgfplots@ymax@reg=\dimen200
-\pgfplots@zmin@reg=\dimen201
-\pgfplots@zmax@reg=\dimen202
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
+s\tikzlibrarydecorations.pathmorphing.code.tex"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\decorations\pgfli
+brarydecorations.pathmorphing.code.tex"))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
+s\tikzlibrarydecorations.pathreplacing.code.tex"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\decorations\pgfli
+brarydecorations.pathreplacing.code.tex"))
+\pgfplots@numplots=\count155
+\pgfplots@xmin@reg=\dimen199
+\pgfplots@xmax@reg=\dimen256
+\pgfplots@ymin@reg=\dimen257
+\pgfplots@ymax@reg=\dimen258
+\pgfplots@zmin@reg=\dimen259
+\pgfplots@zmax@reg=\dimen260
 )
-(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotm
-arks.code.tex
-File: tikzlibraryplotmarks.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
+s\tikzlibraryplotmarks.code.tex"
+File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 
-(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
-File: pgflibraryplotmarks.code.tex 2010/10/15 v2.10 (rcs-revision 1.12)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplotmar
+ks.code.tex"
+File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
 )))
-(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen203
-\lightrulewidth=\dimen204
-\cmidrulewidth=\dimen205
-\belowrulesep=\dimen206
-\belowbottomsep=\dimen207
-\aboverulesep=\dimen208
-\abovetopsep=\dimen209
-\cmidrulesep=\dimen210
-\cmidrulekern=\dimen211
-\defaultaddspace=\dimen212
-\@cmidla=\count158
-\@cmidlb=\count159
-\@aboverulesep=\dimen213
-\@belowrulesep=\dimen214
-\@thisruleclass=\count160
-\@lastruleclass=\count161
-\@thisrulewidth=\dimen215
+\heavyrulewidth=\dimen261
+\lightrulewidth=\dimen262
+\cmidrulewidth=\dimen263
+\belowrulesep=\dimen264
+\belowbottomsep=\dimen265
+\aboverulesep=\dimen266
+\abovetopsep=\dimen267
+\cmidrulesep=\dimen268
+\cmidrulekern=\dimen269
+\defaultaddspace=\dimen270
+\@cmidla=\count156
+\@cmidlb=\count157
+\@aboverulesep=\dimen271
+\@belowrulesep=\dimen272
+\@thisruleclass=\count158
+\@lastruleclass=\count159
+\@thisrulewidth=\dimen273
 )
-(/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\blindtext\blindtext.sty"
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
 
-(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
-Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\xspace.sty"
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count162
-\c@Blindtext=\count163
-\c@blind@countparstart=\count164
-\blind@countxx=\count165
-\blindtext@numBlindtext=\count166
-\blind@countyy=\count167
-\c@blindlist=\count168
-\c@blindlistlevel=\count169
-\c@blindlist@level=\count170
-\blind@listitem=\count171
-\c@blind@listcount=\count172
-\c@blind@levelcount=\count173
-\blind@mathformula=\count174
-\blind@Mathformula=\count175
-\c@blind@randomcount=\count176
-\c@blind@randommax=\count177
-\c@blind@pangramcount=\count178
-\c@blind@pangrammax=\count179
+\c@blindtext=\count160
+\c@Blindtext=\count161
+\c@blind@countparstart=\count162
+\blind@countxx=\count163
+\blindtext@numBlindtext=\count164
+\blind@countyy=\count165
+\c@blindlist=\count166
+\c@blindlistlevel=\count167
+\c@blindlist@level=\count168
+\blind@listitem=\count169
+\c@blind@listcount=\count170
+\c@blind@levelcount=\count171
+\blind@mathformula=\count172
+\blind@Mathformula=\count173
+\c@blind@randomcount=\count174
+\c@blind@randommax=\count175
+\c@blind@pangramcount=\count176
+\c@blind@pangrammax=\count177
 )
-(/usr/share/texlive/texmf-dist/tex/latex/commath/commath.sty)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\commath\commath.sty")
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 62.
@@ -846,13 +879,13 @@ Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 64.
 
 \@float@every@figure=\toks50
-\c@claim=\count180
-\c@theorem=\count181
-\c@defn=\count182
-\c@fact=\count183
-(./Thesis.aux (./titlepage.aux) (./certificate.aux) (./abstract.aux)
-(./acknowledgement.aux) (./chapter1.aux) (./chapter2.aux) (./chapter3.aux)
-(./chapter4.aux) (./chapter5.aux) (./chapter6.aux) (./chapter7.aux))
+\c@claim=\count178
+\c@theorem=\count179
+\c@defn=\count180
+\c@fact=\count181
+(Thesis.aux (titlepage.aux) (certificate.aux) (abstract.aux)
+(acknowledgement.aux) (chapter1.aux) (chapter2.aux) (chapter3.aux)
+(chapter4.aux) (chapter5.aux) (chapter6.aux) (chapter7.aux))
 \openout1 = `Thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 109.
@@ -870,34 +903,20 @@ LaTeX Font Info:    ... okay on input line 109.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 109.
 LaTeX Font Info:    ... okay on input line 109.
 
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count184
-\scratchdimen=\dimen216
-\scratchbox=\box46
-\nofMPsegments=\count185
-\nofMParguments=\count186
+\scratchcounter=\count182
+\scratchdimen=\dimen274
+\scratchbox=\box45
+\nofMPsegments=\count183
+\nofMParguments=\count184
 \everyMPshowfont=\toks51
-\MPscratchCnt=\count187
-\MPscratchDim=\dimen217
-\MPnumerator=\count188
-\makeMPintoPDFobject=\count189
+\MPscratchCnt=\count185
+\MPscratchDim=\dimen275
+\MPnumerator=\count186
+\makeMPintoPDFobject=\count187
 \everyMPtoPDFconversion=\toks52
-) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
@@ -905,35 +924,34 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box47
+\AtBeginShipoutBox=\box46
 Package hyperref Info: Link coloring OFF on input line 109.
-
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count190
+\c@section@level=\count188
 )
 LaTeX Info: Redefining \ref on input line 109.
 LaTeX Info: Redefining \pageref on input line 109.
 LaTeX Info: Redefining \nameref on input line 109.
 
-(./Thesis.out) (./Thesis.out)
+(Thesis.out) (Thesis.out)
 \@outlinefile=\write4
 \openout4 = `Thesis.out'.
 
  ABD: EveryShipout initializing macros
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
-ick labels; missing features). Consider writing \pgfplotsset{compat=1.9} into y
-our preamble.
+ick labels; missing features). Consider writing \pgfplotsset{compat=1.13} into 
+your preamble.
  on input line 109.
 
 \openout2 = `titlepage.aux'.
 
-(./titlepage.tex <./Figures/iit_logo.pdf, id=328, 523.60315pt x 553.20177pt>
+(titlepage.tex <./Figures/iit_logo.pdf, id=326, 523.60315pt x 553.20177pt>
 File: ./Figures/iit_logo.pdf Graphic file (type pdf)
 
 <use ./Figures/iit_logo.pdf>
@@ -947,10 +965,11 @@ LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
 [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Figures/iit_logo.pdf>])
+{C:/Users/Kapil Thakkar/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./F
+igures/iit_logo.pdf>])
 \openout2 = `certificate.aux'.
 
- (./certificate.tex)
+ (certificate.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 13--120
 
  []
@@ -966,30 +985,29 @@ l.120 \include{certificate}
 ]
 \openout2 = `abstract.aux'.
 
- (./abstract.tex) [2
+ (abstract.tex) [2
 
 
 ]
 \openout2 = `acknowledgement.aux'.
 
- (./acknowledgement.tex)
+ (acknowledgement.tex)
 [3
 
 
-] (./Thesis.toc
+] (Thesis.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 2.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 2.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 26.
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 26.
@@ -1031,7 +1049,7 @@ t)[] [][]
 \tf@toc=\write5
 \openout5 = `Thesis.toc'.
 
- [7] (./Thesis.lof [8
+ [7] (Thesis.lof [8
 
 
 ] [9]
@@ -1046,21 +1064,21 @@ Overfull \hbox (2.64049pt too wide) in paragraph at lines 50--50
  Line - Whole- 
  []
 
-[10] [11])
+[10] [11] [12])
 \tf@lof=\write6
 \openout6 = `Thesis.lof'.
 
- [12] (./Thesis.lot)
+ [13] (Thesis.lot)
 \tf@lot=\write7
 \openout7 = `Thesis.lot'.
 
- [13
+ [14
 
 
 ]
 \openout2 = `chapter1.aux'.
 
- (./chapter1.tex
+ (chapter1.tex
 Chapter 1.
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
@@ -1093,7 +1111,7 @@ l.154 \include{chapter1}
                          [2]
 \openout2 = `chapter2.aux'.
 
- (./chapter2.tex
+ (chapter2.tex
 Chapter 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 8--13
@@ -1139,9 +1157,9 @@ l.156 \include{chapter2}
                          [7]
 \openout2 = `chapter3.aux'.
 
- (./chapter3.tex
+ (chapter3.tex
 Chapter 3.
-<./Figures/3_1.png, id=739, 836.12375pt x 596.2275pt>
+<./Figures/3_1.png, id=781, 836.12375pt x 596.2275pt>
 File: ./Figures/3_1.png Graphic file (type png)
  <use ./Figures/3_1.png>
 Package pdftex.def Info: ./Figures/3_1.png used on input line 10.
@@ -1150,8 +1168,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.19 
-      [8
+l.18 U
+      nder APMC act, mandis were established at different places across coun...
+[8
 
 
 
@@ -1185,7 +1204,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.10}) has
                    \relax 
 l.59 \item \textbf
                   {Government Policies:} When the production is low in the c...
-[10] <./Figures/3_2.png, id=760, 493.0922pt x 431.36156pt>
+[10] <./Figures/3_2.png, id=803, 493.0922pt x 431.36156pt>
 File: ./Figures/3_2.png Graphic file (type png)
 
 <use ./Figures/3_2.png>
@@ -1204,25 +1223,25 @@ l.84
 e.12}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.94 ... band in different parts of the country."}
+l.97 ... band in different parts of the country."}
                                                    [12 <./Figures/3_2.png>]
-<./Figures/2010_dec_delhi.png, id=776, 1219.55624pt x 1003.75pt>
+<./Figures/2010_dec_delhi.png, id=818, 1219.55624pt x 1003.75pt>
 File: ./Figures/2010_dec_delhi.png Graphic file (type png)
 
 <use ./Figures/2010_dec_delhi.png>
-Package pdftex.def Info: ./Figures/2010_dec_delhi.png used on input line 108.
+Package pdftex.def Info: ./Figures/2010_dec_delhi.png used on input line 111.
 (pdftex.def)             Requested size: 365.86969pt x 301.12732pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<./Figures/2010_dec_delhi_with_relative_diff.png, id=777, 1219.55624pt x 1003.7
+<./Figures/2010_dec_delhi_with_relative_diff.png, id=819, 1219.55624pt x 1003.7
 5pt>
 File: ./Figures/2010_dec_delhi_with_relative_diff.png Graphic file (type png)
  <use ./Figures/2010_dec_delhi_with_relative_diff.png>
 Package pdftex.def Info: ./Figures/2010_dec_delhi_with_relative_diff.png used o
-n input line 116.
+n input line 119.
 (pdftex.def)             Requested size: 365.86969pt x 301.12732pt.
 
 
@@ -1232,124 +1251,129 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.13}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.129 
+l.132 
        [13]
 Missing character: There is no ‚ in font cmti12!
 Missing character: There is no Ä in font cmti12!
 Missing character: There is no ú in font cmti12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
  []
 
-[14 <./Figures/2010_dec_delhi.png>]
+pdfTeX warning (ext4): destination with the same identifier (name{page.14}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.145 ...t{Wednesday: Rs. 60 to Rs. 70 per kg‚Äù }
+                                                   [14 <./Figures/2010_dec_delh
+i.png>]
 Missing character: There is no ‚ in font cmti12!
 Missing character: There is no Ä in font cmti12!
 Missing character: There is no ù in font cmti12!
-
-<./Figures/2010_dec_maha.png, id=789, 1219.55624pt x 1003.75pt>
+ <./Figures/2010_dec_maha.png, id=829, 1219.55624pt x 1003.75pt>
 File: ./Figures/2010_dec_maha.png Graphic file (type png)
 
 <use ./Figures/2010_dec_maha.png>
-Package pdftex.def Info: ./Figures/2010_dec_maha.png used on input line 148.
+Package pdftex.def Info: ./Figures/2010_dec_maha.png used on input line 151.
 (pdftex.def)             Requested size: 365.86969pt x 301.12732pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Figures/2010_dec_maha_relative.png, id=790, 1219.55624pt x 1003.75pt>
+<./Figures/2010_dec_maha_relative.png, id=830, 1219.55624pt x 1003.75pt>
 File: ./Figures/2010_dec_maha_relative.png Graphic file (type png)
 
 <use ./Figures/2010_dec_maha_relative.png>
 Package pdftex.def Info: ./Figures/2010_dec_maha_relative.png used on input lin
-e 156.
+e 159.
 (pdftex.def)             Requested size: 365.86969pt x 301.12732pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Figures/2010_dec_mumbai.png, id=791, 1219.55624pt x 1003.75pt>
+<./Figures/2010_dec_mumbai.png, id=831, 1219.55624pt x 1003.75pt>
 File: ./Figures/2010_dec_mumbai.png Graphic file (type png)
 
 <use ./Figures/2010_dec_mumbai.png>
-Package pdftex.def Info: ./Figures/2010_dec_mumbai.png used on input line 164.
+Package pdftex.def Info: ./Figures/2010_dec_mumbai.png used on input line 167.
 (pdftex.def)             Requested size: 365.86969pt x 301.12732pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Figures/2010_dec_mumbai_relative.png, id=792, 1219.55624pt x 1003.75pt>
+<./Figures/2010_dec_mumbai_relative.png, id=832, 1219.55624pt x 1003.75pt>
 File: ./Figures/2010_dec_mumbai_relative.png Graphic file (type png)
 
 <use ./Figures/2010_dec_mumbai_relative.png>
 Package pdftex.def Info: ./Figures/2010_dec_mumbai_relative.png used on input l
-ine 172.
+ine 175.
 (pdftex.def)             Requested size: 365.86969pt x 301.12732pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--179
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
-<./Figures/2011_jan_mumbai.png, id=800, 1219.55624pt x 1003.75pt>
+<./Figures/2011_jan_mumbai.png, id=840, 1219.55624pt x 1003.75pt>
 File: ./Figures/2011_jan_mumbai.png Graphic file (type png)
 
 <use ./Figures/2011_jan_mumbai.png>
-Package pdftex.def Info: ./Figures/2011_jan_mumbai.png used on input line 182.
+Package pdftex.def Info: ./Figures/2011_jan_mumbai.png used on input line 185.
 (pdftex.def)             Requested size: 365.86969pt x 301.12732pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<./Figures/2011_jan_mumbai_relative_diff.png, id=802, 1219.55624pt x 1003.75pt>
+<./Figures/2011_jan_mumbai_relative_diff.png, id=842, 1219.55624pt x 1003.75pt>
 File: ./Figures/2011_jan_mumbai_relative_diff.png Graphic file (type png)
 <use ./Figures/2011_jan_mumbai_relative_diff.png>
 Package pdftex.def Info: ./Figures/2011_jan_mumbai_relative_diff.png used on in
-put line 190.
+put line 193.
 (pdftex.def)             Requested size: 365.86969pt x 301.12732pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
 
  []
 
 [15 <./Figures/2010_dec_delhi_with_relative_diff.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 198--199
+Underfull \hbox (badness 10000) in paragraph at lines 201--202
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
 
  []
 
 [16 <./Figures/2010_dec_maha.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 204--205
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
  []
 
-<./Figures/2012_jul_mumbai.png, id=826, 1219.55624pt x 1003.75pt>
+<./Figures/2012_jul_mumbai.png, id=867, 1219.55624pt x 1003.75pt>
 File: ./Figures/2012_jul_mumbai.png Graphic file (type png)
 
 <use ./Figures/2012_jul_mumbai.png>
-Package pdftex.def Info: ./Figures/2012_jul_mumbai.png used on input line 208.
+Package pdftex.def Info: ./Figures/2012_jul_mumbai.png used on input line 211.
 (pdftex.def)             Requested size: 365.86969pt x 301.12732pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Figures/2013_july_mumbai.png, id=827, 1219.55624pt x 1003.75pt>
+<./Figures/2013_july_mumbai.png, id=868, 1219.55624pt x 1003.75pt>
 File: ./Figures/2013_july_mumbai.png Graphic file (type png)
 
 <use ./Figures/2013_july_mumbai.png>
-Package pdftex.def Info: ./Figures/2013_july_mumbai.png used on input line 216.
+Package pdftex.def Info: ./Figures/2013_july_mumbai.png used on input line 219.
 
 (pdftex.def)             Requested size: 365.86969pt x 301.12732pt.
 
@@ -1357,41 +1381,41 @@ Package pdftex.def Info: ./Figures/2013_july_mumbai.png used on input line 216.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
 
  []
 
 [17 <./Figures/2010_dec_maha_relative.png>]
-<./Figures/2013_aug_ahmdb.png, id=835, 1219.55624pt x 1003.75pt>
+<./Figures/2013_aug_ahmdb.png, id=875, 1219.55624pt x 1003.75pt>
 File: ./Figures/2013_aug_ahmdb.png Graphic file (type png)
 
 <use ./Figures/2013_aug_ahmdb.png>
-Package pdftex.def Info: ./Figures/2013_aug_ahmdb.png used on input line 227.
+Package pdftex.def Info: ./Figures/2013_aug_ahmdb.png used on input line 230.
 (pdftex.def)             Requested size: 365.86969pt x 301.12732pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Figures/2013_aug_rajkot.png, id=836, 1219.55624pt x 1003.75pt>
+<./Figures/2013_aug_rajkot.png, id=876, 1219.55624pt x 1003.75pt>
 File: ./Figures/2013_aug_rajkot.png Graphic file (type png)
 
 <use ./Figures/2013_aug_rajkot.png>
-Package pdftex.def Info: ./Figures/2013_aug_rajkot.png used on input line 235.
+Package pdftex.def Info: ./Figures/2013_aug_rajkot.png used on input line 238.
 (pdftex.def)             Requested size: 365.86969pt x 301.12732pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--242
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
 
  []
 
-<./Figures/2014_mumbai.png, id=841, 1219.55624pt x 1003.75pt>
+<./Figures/2014_mumbai.png, id=881, 1219.55624pt x 1003.75pt>
 File: ./Figures/2014_mumbai.png Graphic file (type png)
 
 <use ./Figures/2014_mumbai.png>
-Package pdftex.def Info: ./Figures/2014_mumbai.png used on input line 246.
+Package pdftex.def Info: ./Figures/2014_mumbai.png used on input line 249.
 (pdftex.def)             Requested size: 365.86969pt x 301.12732pt.
 
 
@@ -1407,9 +1431,9 @@ _mumbai.png>] [23 <./Figures/2013_july_mumbai.png>]) [24 <./Figures/2013_aug_ah
 mdb.png>] [25 <./Figures/2013_aug_rajkot.png>] [26 <./Figures/2014_mumbai.png>]
 \openout2 = `chapter4.aux'.
 
- (./chapter4.tex
+ (chapter4.tex
 Chapter 4.
-<./Figures/System_updated.JPG, id=894, 773.13844pt x 390.70969pt>
+<./Figures/System_updated.JPG, id=934, 773.13844pt x 390.70969pt>
 File: ./Figures/System_updated.JPG Graphic file (type jpg)
 
 <use ./Figures/System_updated.JPG>
@@ -1455,7 +1479,7 @@ ault[]threshold
 [31]) [32]
 \openout2 = `chapter5.aux'.
 
- (./chapter5.tex
+ (chapter5.tex
 Chapter 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 10--15
@@ -1604,66 +1628,66 @@ Underfull \hbox (badness 10000) in paragraph at lines 187--190
 
  []
 
-[37] <graphs/12111.png, id=953, 1837.86626pt x 1061.9675pt>
+[37] <graphs/12111.png, id=992, 1837.86626pt x 1061.9675pt>
 File: graphs/12111.png Graphic file (type png)
 
 <use graphs/12111.png>
 Package pdftex.def Info: graphs/12111.png used on input line 202.
 (pdftex.def)             Requested size: 312.00119pt x 180.27281pt.
  [38]
-<graphs/12131.png, id=958, 1850.915pt x 1065.9825pt>
+<graphs/12131.png, id=997, 1850.915pt x 1065.9825pt>
 File: graphs/12131.png Graphic file (type png)
  <use graphs/12131.png>
 Package pdftex.def Info: graphs/12131.png used on input line 209.
 (pdftex.def)             Requested size: 312.00119pt x 179.68567pt.
 
 [39 <./graphs/12111.png> <./graphs/12131.png>]
-<graphs/12112.png, id=967, 1851.91875pt x 1053.9375pt>
+<graphs/12112.png, id=1006, 1851.91875pt x 1053.9375pt>
 File: graphs/12112.png Graphic file (type png)
  <use graphs/12112.png>
 Package pdftex.def Info: graphs/12112.png used on input line 227.
 (pdftex.def)             Requested size: 312.00119pt x 177.55882pt.
 
-<graphs/12132.png, id=968, 1845.89626pt x 1063.975pt>
+<graphs/12132.png, id=1007, 1845.89626pt x 1063.975pt>
 File: graphs/12132.png Graphic file (type png)
  <use graphs/12132.png>
 Package pdftex.def Info: graphs/12132.png used on input line 234.
 (pdftex.def)             Requested size: 312.00119pt x 179.83432pt.
 
 [40 <./graphs/12112.png> <./graphs/12132.png>]
-<graphs/12113.png, id=977, 1846.9pt x 1059.96pt>
+<graphs/12113.png, id=1017, 1846.9pt x 1059.96pt>
 File: graphs/12113.png Graphic file (type png)
  <use graphs/12113.png>
 Package pdftex.def Info: graphs/12113.png used on input line 253.
 (pdftex.def)             Requested size: 312.00119pt x 179.05865pt.
 
-<graphs/12133.png, id=978, 1844.8925pt x 1063.975pt>
+<graphs/12133.png, id=1018, 1844.8925pt x 1063.975pt>
 File: graphs/12133.png Graphic file (type png)
  <use graphs/12133.png>
 Package pdftex.def Info: graphs/12133.png used on input line 260.
 (pdftex.def)             Requested size: 312.00119pt x 179.93173pt.
 
-[41 <./graphs/12113.png>] <graphs/12114.png, id=986, 1842.885pt x 1059.96pt>
+[41 <./graphs/12113.png>] <graphs/12114.png, id=1025, 1842.885pt x 1059.96pt>
 File: graphs/12114.png Graphic file (type png)
 
 <use graphs/12114.png>
 Package pdftex.def Info: graphs/12114.png used on input line 269.
 (pdftex.def)             Requested size: 312.00119pt x 179.44682pt.
  [42 <./graphs/12133.png> <./graphs/12114.png>]
-<graphs/12115.png, id=994, 1838.87pt x 1059.96pt>
+<graphs/12115.png, id=1033, 1838.87pt x 1059.96pt>
 File: graphs/12115.png Graphic file (type png)
  <use graphs/12115.png>
 Package pdftex.def Info: graphs/12115.png used on input line 278.
 (pdftex.def)             Requested size: 312.00119pt x 179.83499pt.
 
-<graphs/12116.png, id=996, 1850.915pt x 1059.96pt>
+<graphs/12116.png, id=1035, 1850.915pt x 1059.96pt>
 File: graphs/12116.png Graphic file (type png)
  <use graphs/12116.png>
 Package pdftex.def Info: graphs/12116.png used on input line 287.
 (pdftex.def)             Requested size: 312.00119pt x 178.67049pt.
 
 [43 <./graphs/12115.png> <./graphs/12116.png>]
-<graphs/12134.png, id=1004, 1847.90375pt x 1063.975pt>
+<graphs/12134.png, id=1043, 1847.90375pt x 1063.975pt>
 File: graphs/12134.png Graphic file (type png)
  <use graphs/12134.png>
 Package pdftex.def Info: graphs/12134.png used on input line 297.
@@ -1673,27 +1697,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 308--309
 
  []
 
-<graphs/12121.png, id=1007, 1909.1325pt x 1069.9975pt>
+<graphs/12121.png, id=1046, 1909.1325pt x 1069.9975pt>
 File: graphs/12121.png Graphic file (type png)
  <use graphs/12121.png>
 Package pdftex.def Info: graphs/12121.png used on input line 318.
 (pdftex.def)             Requested size: 312.00119pt x 174.8603pt.
 
 [44 <./graphs/12134.png>]
-<graphs/12141.png, id=1013, 1915.155pt x 1065.9825pt>
+<graphs/12141.png, id=1052, 1915.155pt x 1065.9825pt>
 File: graphs/12141.png Graphic file (type png)
  <use graphs/12141.png>
 Package pdftex.def Info: graphs/12141.png used on input line 325.
 (pdftex.def)             Requested size: 312.00119pt x 173.65114pt.
 
-<graphs/12122.png, id=1016, 1916.15875pt x 1064.97874pt>
+<graphs/12122.png, id=1055, 1916.15875pt x 1064.97874pt>
 File: graphs/12122.png Graphic file (type png)
 
 <use graphs/12122.png>
 Package pdftex.def Info: graphs/12122.png used on input line 340.
 (pdftex.def)             Requested size: 312.00119pt x 173.40637pt.
  [45 <./graphs/12121.png> <./graphs/12141.png>]
-<graphs/12142.png, id=1024, 1910.13625pt x 1067.99pt>
+<graphs/12142.png, id=1062, 1910.13625pt x 1067.99pt>
 File: graphs/12142.png Graphic file (type png)
  <use graphs/12142.png>
 Package pdftex.def Info: graphs/12142.png used on input line 347.
@@ -1704,39 +1728,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 352--353
  []
 
 [46 <./graphs/12122.png> <./graphs/12142.png>]
-<graphs/12123.png, id=1033, 1909.1325pt x 1066.98625pt>
+<graphs/12123.png, id=1072, 1909.1325pt x 1066.98625pt>
 File: graphs/12123.png Graphic file (type png)
  <use graphs/12123.png>
 Package pdftex.def Info: graphs/12123.png used on input line 362.
 (pdftex.def)             Requested size: 312.00119pt x 174.3682pt.
 
-<graphs/12143.png, id=1034, 1913.1475pt x 1061.9675pt>
+<graphs/12143.png, id=1073, 1913.1475pt x 1061.9675pt>
 File: graphs/12143.png Graphic file (type png)
  <use graphs/12143.png>
 Package pdftex.def Info: graphs/12143.png used on input line 369.
 (pdftex.def)             Requested size: 312.00119pt x 173.17532pt.
 
 [47 <./graphs/12123.png> <./graphs/12143.png>]
-<graphs/12124.png, id=1044, 1921.1775pt x 1067.99pt>
+<graphs/12124.png, id=1082, 1921.1775pt x 1067.99pt>
 File: graphs/12124.png Graphic file (type png)
  <use graphs/12124.png>
 Package pdftex.def Info: graphs/12124.png used on input line 378.
 (pdftex.def)             Requested size: 312.00119pt x 173.4404pt.
 
-<graphs/12144.png, id=1045, 1920.17375pt x 1057.9525pt>
+<graphs/12144.png, id=1083, 1920.17375pt x 1057.9525pt>
 File: graphs/12144.png Graphic file (type png)
  <use graphs/12144.png>
 Package pdftex.def Info: graphs/12144.png used on input line 385.
 (pdftex.def)             Requested size: 312.00119pt x 171.89102pt.
 
 [48 <./graphs/12124.png> <./graphs/12144.png>]
-<graphs/12125.png, id=1053, 1914.15125pt x 1058.95625pt>
+<graphs/12125.png, id=1091, 1914.15125pt x 1058.95625pt>
 File: graphs/12125.png Graphic file (type png)
 
 <use graphs/12125.png>
 Package pdftex.def Info: graphs/12125.png used on input line 394.
 (pdftex.def)             Requested size: 312.00119pt x 172.6035pt.
- <graphs/12126.png, id=1055, 1923.185pt x 1062.97125pt>
+ <graphs/12126.png, id=1093, 1923.185pt x 1062.97125pt>
 File: graphs/12126.png Graphic file (type png)
 
 <use graphs/12126.png>
@@ -1752,13 +1776,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 426--429
 
  []
 
-<graphs/12211.png, id=1070, 1845.89626pt x 1057.9525pt>
+<graphs/12211.png, id=1108, 1845.89626pt x 1057.9525pt>
 File: graphs/12211.png Graphic file (type png)
  <use graphs/12211.png>
 Package pdftex.def Info: graphs/12211.png used on input line 442.
 (pdftex.def)             Requested size: 312.00119pt x 178.81639pt.
 
-[51] <graphs/12231.png, id=1077, 1850.915pt x 1062.97125pt>
+[51] <graphs/12231.png, id=1115, 1850.915pt x 1062.97125pt>
 File: graphs/12231.png Graphic file (type png)
 
 <use graphs/12231.png>
@@ -1770,40 +1794,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 454--457
  []
 
 [52 <./graphs/12211.png> <./graphs/12231.png>]
-<graphs/12212.png, id=1086, 1849.91125pt x 1065.9825pt>
+<graphs/12212.png, id=1125, 1849.91125pt x 1065.9825pt>
 File: graphs/12212.png Graphic file (type png)
  <use graphs/12212.png>
 Package pdftex.def Info: graphs/12212.png used on input line 463.
 (pdftex.def)             Requested size: 312.00119pt x 179.78325pt.
 
-<graphs/12232.png, id=1087, 1846.9pt x 1056.94875pt>
+<graphs/12232.png, id=1126, 1846.9pt x 1056.94875pt>
 File: graphs/12232.png Graphic file (type png)
  <use graphs/12232.png>
 Package pdftex.def Info: graphs/12232.png used on input line 470.
 (pdftex.def)             Requested size: 312.00119pt x 178.54997pt.
 
 [53 <./graphs/12212.png> <./graphs/12232.png>]
-<graphs/12221.png, id=1098, 1922.18124pt x 1058.95625pt>
+<graphs/12221.png, id=1136, 1922.18124pt x 1058.95625pt>
 File: graphs/12221.png Graphic file (type png)
 
 <use graphs/12221.png>
 Package pdftex.def Info: graphs/12221.png used on input line 494.
 (pdftex.def)             Requested size: 312.00119pt x 171.87637pt.
- <graphs/12241.png, id=1099, 1917.1625pt x 1053.9375pt>
+ <graphs/12241.png, id=1137, 1917.1625pt x 1053.9375pt>
 File: graphs/12241.png Graphic file (type png)
 
 <use graphs/12241.png>
 Package pdftex.def Info: graphs/12241.png used on input line 501.
 (pdftex.def)             Requested size: 312.00119pt x 171.51208pt.
  [54 <./graphs/12221.png>]
-<graphs/12222.png, id=1107, 1915.155pt x 1061.9675pt>
+<graphs/12222.png, id=1145, 1915.155pt x 1061.9675pt>
 File: graphs/12222.png Graphic file (type png)
  <use graphs/12222.png>
 Package pdftex.def Info: graphs/12222.png used on input line 517.
 (pdftex.def)             Requested size: 312.00119pt x 172.99709pt.
 
 [55 <./graphs/12241.png>]
-<graphs/12242.png, id=1113, 1909.1325pt x 1055.945pt>
+<graphs/12242.png, id=1151, 1909.1325pt x 1055.945pt>
 File: graphs/12242.png Graphic file (type png)
  <use graphs/12242.png>
 Package pdftex.def Info: graphs/12242.png used on input line 524.
@@ -1818,21 +1842,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 544--548
 
  []
 
-<graphs/20080306_0320.png, id=1123, 1851.91875pt x 1063.975pt>
+<graphs/20080306_0320.png, id=1161, 1851.91875pt x 1063.975pt>
 File: graphs/20080306_0320.png Graphic file (type png)
 
 <use graphs/20080306_0320.png>
 Package pdftex.def Info: graphs/20080306_0320.png used on input line 561.
 (pdftex.def)             Requested size: 312.00119pt x 179.24986pt.
  [57]
-<graphs/20090912_0926.png, id=1132, 1870.99pt x 1062.97125pt>
+<graphs/20090912_0926.png, id=1170, 1870.99pt x 1062.97125pt>
 File: graphs/20090912_0926.png Graphic file (type png)
 
 <use graphs/20090912_0926.png>
 Package pdftex.def Info: graphs/20090912_0926.png used on input line 568.
 (pdftex.def)             Requested size: 312.00119pt x 177.24794pt.
 
-<graphs/20110704_0802.png, id=1133, 1675.2186pt x 922.8879pt>
+<graphs/20110704_0802.png, id=1171, 1675.2186pt x 922.8879pt>
 File: graphs/20110704_0802.png Graphic file (type png)
 
 <use graphs/20110704_0802.png>
@@ -1843,28 +1867,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 580--584
 
  []
 
-<graphs/20101220_1225.png, id=1143, 1847.90375pt x 1063.975pt>
+<graphs/20101220_1225.png, id=1182, 1847.90375pt x 1063.975pt>
 File: graphs/20101220_1225.png Graphic file (type png)
 
 <use graphs/20101220_1225.png>
 Package pdftex.def Info: graphs/20101220_1225.png used on input line 592.
 (pdftex.def)             Requested size: 312.00119pt x 179.6395pt.
  [59 <./graphs/20110704_0802.png>]
-<graphs/20110106_0108.png, id=1150, 1675.2186pt x 922.8879pt>
+<graphs/20110106_0108.png, id=1188, 1675.2186pt x 922.8879pt>
 File: graphs/20110106_0108.png Graphic file (type png)
 
 <use graphs/20110106_0108.png>
 Package pdftex.def Info: graphs/20110106_0108.png used on input line 599.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-<graphs/20121227_0105.png, id=1151, 1675.2186pt x 922.8879pt>
+<graphs/20121227_0105.png, id=1189, 1675.2186pt x 922.8879pt>
 File: graphs/20121227_0105.png Graphic file (type png)
 
 <use graphs/20121227_0105.png>
 Package pdftex.def Info: graphs/20121227_0105.png used on input line 606.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
  [60 <./graphs/20101220_1225.png> <./graphs/20110106_0108.png>]
-<graphs/20131006_1015_1021.png, id=1160, 1675.2186pt x 922.8879pt>
+<graphs/20131006_1015_1021.png, id=1198, 1675.2186pt x 922.8879pt>
 File: graphs/20131006_1015_1021.png Graphic file (type png)
 
 <use graphs/20131006_1015_1021.png>
@@ -1882,21 +1906,21 @@ Overfull \hbox (6.81949pt too wide) in paragraph at lines 659--660
 e -19.0358099572
  []
 
-[63] <graphs/20130719_0911.png, id=1183, 1675.2186pt x 922.8879pt>
+[63] <graphs/20130719_0911.png, id=1220, 1675.2186pt x 922.8879pt>
 File: graphs/20130719_0911.png Graphic file (type png)
 
 <use graphs/20130719_0911.png>
 Package pdftex.def Info: graphs/20130719_0911.png used on input line 670.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-<graphs/20130917_0106.png, id=1184, 1675.2186pt x 922.8879pt>
+<graphs/20130917_0106.png, id=1221, 1675.2186pt x 922.8879pt>
 File: graphs/20130917_0106.png Graphic file (type png)
 
 <use graphs/20130917_0106.png>
 Package pdftex.def Info: graphs/20130917_0106.png used on input line 677.
 (pdftex.def)             Requested size: 312.00119pt x 171.87224pt.
 
-<graphs/20141203_1215.png, id=1185, 1675.2186pt x 922.8879pt>
+<graphs/20141203_1215.png, id=1222, 1675.2186pt x 922.8879pt>
 File: graphs/20141203_1215.png Graphic file (type png)
 
 <use graphs/20141203_1215.png>
@@ -1906,7 +1930,7 @@ Package pdftex.def Info: graphs/20141203_1215.png used on input line 684.
 
 LaTeX Warning: Reference `nasa' on page 65 undefined on input line 709.
 
-<graphs/1231.png, id=1194, 1844.8925pt x 1059.96pt>
+<graphs/1231.png, id=1232, 1844.8925pt x 1059.96pt>
 File: graphs/1231.png Graphic file (type png)
  <use graphs/1231.png>
 Package pdftex.def Info: graphs/1231.png used on input line 720.
@@ -1927,33 +1951,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 707--723
  []
 
 [65 <./graphs/20141203_1215.png>] [66]
-<graphs/12331.png, id=1205, 1844.8925pt x 1061.9675pt>
+<graphs/12331.png, id=1242, 1844.8925pt x 1061.9675pt>
 File: graphs/12331.png Graphic file (type png)
  <use graphs/12331.png>
 Package pdftex.def Info: graphs/12331.png used on input line 727.
 (pdftex.def)             Requested size: 312.00119pt x 179.59224pt.
 
-<graphs/12321.png, id=1210, 1912.14375pt x 1056.94875pt>
+<graphs/12321.png, id=1247, 1912.14375pt x 1056.94875pt>
 File: graphs/12321.png Graphic file (type png)
 
 <use graphs/12321.png>
 Package pdftex.def Info: graphs/12321.png used on input line 735.
 (pdftex.def)             Requested size: 312.00119pt x 172.45369pt.
  [67 <./graphs/1231.png> <./graphs/12331.png>]
-<graphs/12341.png, id=1217, 1899.095pt x 1059.96pt>
+<graphs/12341.png, id=1254, 1899.095pt x 1059.96pt>
 File: graphs/12341.png Graphic file (type png)
  <use graphs/12341.png>
 Package pdftex.def Info: graphs/12341.png used on input line 742.
 (pdftex.def)             Requested size: 312.00119pt x 174.14186pt.
 
-<graphs/12322_delhi.png, id=1218, 1907.125pt x 1055.945pt>
+<graphs/12322_delhi.png, id=1255, 1907.125pt x 1055.945pt>
 File: graphs/12322_delhi.png Graphic file (type png)
 
 <use graphs/12322_delhi.png>
 Package pdftex.def Info: graphs/12322_delhi.png used on input line 750.
 (pdftex.def)             Requested size: 312.00119pt x 172.74106pt.
  [68 <./graphs/12321.png> <./graphs/12341.png>]
-<graphs/12442_delhi.png, id=1225, 1907.125pt x 1061.9675pt>
+<graphs/12442_delhi.png, id=1262, 1907.125pt x 1061.9675pt>
 File: graphs/12442_delhi.png Graphic file (type png)
 
 <use graphs/12442_delhi.png>
@@ -1962,55 +1986,229 @@ Package pdftex.def Info: graphs/12442_delhi.png used on input line 757.
 ) [69 <./graphs/12322_delhi.png> <./graphs/12442_delhi.png>]
 \openout2 = `chapter6.aux'.
 
- (./chapter6.tex
+ (chapter6.tex
 Chapter 6.
 
-<graphs/MumbaiRetailVsAverageRetail.png, id=1232, 1863.96375pt x 1085.05376pt>
-File: graphs/MumbaiRetailVsAverageRetail.png Graphic file (type png)
+Overfull \hbox (99.19127pt too wide) in paragraph at lines 9--17
+ [][] 
+ []
 
-<use graphs/MumbaiRetailVsAverageRetail.png>
-Package pdftex.def Info: graphs/MumbaiRetailVsAverageRetail.png used on input l
-ine 12.
-(pdftex.def)             Requested size: 312.00119pt x 181.60896pt.
-
-<graphs/mumbaiRvsA.png, id=1233, 1919.17pt x 1061.9675pt>
-File: graphs/mumbaiRvsA.png Graphic file (type png)
-
-<use graphs/mumbaiRvsA.png>
-Package pdftex.def Info: graphs/mumbaiRvsA.png used on input line 22.
-(pdftex.def)             Requested size: 312.00119pt x 172.6406pt.
- [70
+[70
 
 
 
 
- <./graphs/MumbaiRetailVsAverageRetail.png>]
-<graphs/MumbaiRvsW.png, id=1239, 1847.90375pt x 1072.005pt>
-File: graphs/MumbaiRvsW.png Graphic file (type png)
+]
+! Undefined control sequence.
+<argument> ...78.cms \\ \hline 2014-07-01 & \pbox 
+                                                  {20cm}{http://profit.ndtv....
+l.44 	\end{tabular}}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-<use graphs/MumbaiRvsW.png>
-Package pdftex.def Info: graphs/MumbaiRvsW.png used on input line 32.
-(pdftex.def)             Requested size: 312.00119pt x 180.99527pt.
+! Missing } inserted.
+<inserted text> 
+                }
+l.44 	\end{tabular}}
+                    
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
 
-<graphs/mumbaiWvsA.png, id=1240, 1916.15875pt x 1075.01625pt>
-File: graphs/mumbaiWvsA.png Graphic file (type png)
+! Extra }, or forgotten \endgroup.
+<argument> ...kle-onion-pricing-web\_1116723.html}
+                                                   \\ \hline \end {tabular}
+l.44 	\end{tabular}}
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
 
-<use graphs/mumbaiWvsA.png>
-Package pdftex.def Info: graphs/mumbaiWvsA.png used on input line 42.
-(pdftex.def)             Requested size: 312.00119pt x 175.04074pt.
- [71 <./graphs/mumbaiRvsA.png> <./graphs/MumbaiRvsW.png>]
-<graphs/localDelhiRegionalNewsPlusNexus.png, id=1260, 1905.1175pt x 1073.00874p
+[71]
+Overfull \hbox (1.65012pt too wide) in paragraph at lines 55--56
+[]\OT1/cmr/m/n/12 For Re-tail vs Ar-rival anal-y-sis, Hy-poth-e-sis 1 re-ported
+ some of the anoma-
+ []
+
+<graphs/RvsAvg_Whole.png, id=1281, 1473.505pt x 842.14626pt>
+File: graphs/RvsAvg_Whole.png Graphic file (type png)
+
+<use graphs/RvsAvg_Whole.png>
+Package pdftex.def Info: graphs/RvsAvg_Whole.png used on input line 72.
+(pdftex.def)             Requested size: 429.00238pt x 245.17992pt.
+
+Overfull \hbox (39.00238pt too wide) in paragraph at lines 72--73
+ [][] 
+ []
+
+[72] <graphs/RetailVsArrival_whole.png, id=1286, 1537.745pt x 840.13875pt>
+File: graphs/RetailVsArrival_whole.png Graphic file (type png)
+
+<use graphs/RetailVsArrival_whole.png>
+Package pdftex.def Info: graphs/RetailVsArrival_whole.png used on input line 82
+.
+(pdftex.def)             Requested size: 429.00238pt x 234.37834pt.
+
+Overfull \hbox (39.00238pt too wide) in paragraph at lines 82--83
+ [][] 
+ []
+
+<graphs/retailVsWS_Whole.png, id=1287, 1466.47874pt x 840.13875pt>
+File: graphs/retailVsWS_Whole.png Graphic file (type png)
+
+<use graphs/retailVsWS_Whole.png>
+Package pdftex.def Info: graphs/retailVsWS_Whole.png used on input line 92.
+(pdftex.def)             Requested size: 429.00238pt x 245.76202pt.
+
+Overfull \hbox (39.00238pt too wide) in paragraph at lines 92--93
+ [][] 
+ []
+
+[73 <./graphs/RvsAvg_Whole.png> <./graphs/RetailVsArrival_whole.png>]
+<graphs/WSvsArrival_Whole.png, id=1292, 1534.73375pt x 840.13875pt>
+File: graphs/WSvsArrival_Whole.png Graphic file (type png)
+
+<use graphs/WSvsArrival_Whole.png>
+Package pdftex.def Info: graphs/WSvsArrival_Whole.png used on input line 102.
+(pdftex.def)             Requested size: 429.00238pt x 234.83984pt.
+
+Overfull \hbox (39.00238pt too wide) in paragraph at lines 102--103
+ [][] 
+ []
+
+[74 <./graphs/retailVsWS_Whole.png>]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no î in font cmr12!
+
+<graphs/Mumbai_RetailvsAvg_ill1.png, id=1298, 1464.47125pt x 841.1425pt>
+File: graphs/Mumbai_RetailvsAvg_ill1.png Graphic file (type png)
+
+<use graphs/Mumbai_RetailvsAvg_ill1.png>
+Package pdftex.def Info: graphs/Mumbai_RetailvsAvg_ill1.png used on input line 
+144.
+(pdftex.def)             Requested size: 312.00119pt x 179.19926pt.
+ [75 <./graphs/WSvsArrival_Whole.png>]
+<graphs/Mumbai_RetailvsAvg_ill2.png, id=1304, 1419.3025pt x 841.1425pt>
+File: graphs/Mumbai_RetailvsAvg_ill2.png Graphic file (type png)
+
+<use graphs/Mumbai_RetailvsAvg_ill2.png>
+Package pdftex.def Info: graphs/Mumbai_RetailvsAvg_ill2.png used on input line 
+153.
+(pdftex.def)             Requested size: 312.00119pt x 184.8979pt.
+
+<graphs/Mumbai_RetailvsArrival_ill1.png, id=1305, 1531.7225pt x 845.1575pt>
+File: graphs/Mumbai_RetailvsArrival_ill1.png Graphic file (type png)
+
+<use graphs/Mumbai_RetailvsArrival_ill1.png>
+Package pdftex.def Info: graphs/Mumbai_RetailvsArrival_ill1.png used on input l
+ine 161.
+(pdftex.def)             Requested size: 312.00119pt x 172.14934pt.
+ [76 <./graphs/Mumbai_RetailvsAvg_ill1.png> <./graphs/Mumbai_RetailvsAvg_ill2.p
+ng>]
+<graphs/Mumbai_RetailvsArrival_ill2.png, id=1312, 1532.72626pt x 842.14626pt>
+File: graphs/Mumbai_RetailvsArrival_ill2.png Graphic file (type png)
+
+<use graphs/Mumbai_RetailvsArrival_ill2.png>
+Package pdftex.def Info: graphs/Mumbai_RetailvsArrival_ill2.png used on input l
+ine 170.
+(pdftex.def)             Requested size: 312.00119pt x 171.42033pt.
+
+<graphs/Delhi_RetailvsArrival_ill1.png, id=1314, 1529.715pt x 845.1575pt>
+File: graphs/Delhi_RetailvsArrival_ill1.png Graphic file (type png)
+
+<use graphs/Delhi_RetailvsArrival_ill1.png>
+Package pdftex.def Info: graphs/Delhi_RetailvsArrival_ill1.png used on input li
+ne 179.
+(pdftex.def)             Requested size: 312.00119pt x 172.36858pt.
+ [77 <./graphs/Mumbai_RetailvsArrival_ill1.png> <./graphs/Mumbai_RetailvsArriva
+l_ill2.png>]
+<graphs/Mumbai_RetailvsWS_ill1.png, id=1320, 1468.48625pt x 842.14626pt>
+File: graphs/Mumbai_RetailvsWS_ill1.png Graphic file (type png)
+
+<use graphs/Mumbai_RetailvsWS_ill1.png>
+Package pdftex.def Info: graphs/Mumbai_RetailvsWS_ill1.png used on input line 1
+88.
+(pdftex.def)             Requested size: 312.00119pt x 178.92479pt.
+
+<graphs/Mumbai_RetailvsWS_ill2.png, id=1322, 1332.98pt x 843.15pt>
+File: graphs/Mumbai_RetailvsWS_ill2.png Graphic file (type png)
+
+<use graphs/Mumbai_RetailvsWS_ill2.png>
+Package pdftex.def Info: graphs/Mumbai_RetailvsWS_ill2.png used on input line 1
+96.
+(pdftex.def)             Requested size: 312.00119pt x 197.34262pt.
+ [78 <./graphs/Delhi_RetailvsArrival_ill1.png> <./graphs/Mumbai_RetailvsWS_ill1
+.png>]
+<graphs/Delhi_RetailvsWS_ill1.png, id=1328, 1476.51625pt x 841.1425pt>
+File: graphs/Delhi_RetailvsWS_ill1.png Graphic file (type png)
+
+<use graphs/Delhi_RetailvsWS_ill1.png>
+Package pdftex.def Info: graphs/Delhi_RetailvsWS_ill1.png used on input line 20
+5.
+(pdftex.def)             Requested size: 312.00119pt x 177.7361pt.
+
+<graphs/Mumbai_WSvsArrival_ill1.png, id=1330, 1539.7525pt x 842.14626pt>
+File: graphs/Mumbai_WSvsArrival_ill1.png Graphic file (type png)
+
+<use graphs/Mumbai_WSvsArrival_ill1.png>
+Package pdftex.def Info: graphs/Mumbai_WSvsArrival_ill1.png used on input line 
+213.
+(pdftex.def)             Requested size: 312.00119pt x 170.63647pt.
+ [79 <./graphs/Mumbai_RetailvsWS_ill2.png> <./graphs/Delhi_RetailvsWS_ill1.png>
+]
+<graphs/Mumbai_WSvsArrival_ill2.png, id=1336, 1532.72626pt x 842.14626pt>
+File: graphs/Mumbai_WSvsArrival_ill2.png Graphic file (type png)
+
+<use graphs/Mumbai_WSvsArrival_ill2.png>
+Package pdftex.def Info: graphs/Mumbai_WSvsArrival_ill2.png used on input line 
+220.
+(pdftex.def)             Requested size: 312.00119pt x 171.42033pt.
+
+<graphs/Delhi_WSvsArrival_ill1.png, id=1338, 1526.70375pt x 843.15pt>
+File: graphs/Delhi_WSvsArrival_ill1.png Graphic file (type png)
+
+<use graphs/Delhi_WSvsArrival_ill1.png>
+Package pdftex.def Info: graphs/Delhi_WSvsArrival_ill1.png used on input line 2
+27.
+(pdftex.def)             Requested size: 312.00119pt x 172.30652pt.
+ [80 <./graphs/Mumbai_WSvsArrival_ill1.png> <./graphs/Mumbai_WSvsArrival_ill2.p
+ng>]
+<graphs/localDelhiRegionalNewsPlusNexus.png, id=1344, 1905.1175pt x 1073.00874p
 t>
 File: graphs/localDelhiRegionalNewsPlusNexus.png Graphic file (type png)
  <use graphs/localDelhiRegionalNewsPlusNexus.png>
 Package pdftex.def Info: graphs/localDelhiRegionalNewsPlusNexus.png used on inp
-ut line 83.
-(pdftex.def)             Requested size: 312.00119pt x 175.7126pt.
- [72 <./graphs/mumbaiWvsA.png>]) [73 <./graphs/localDelhiRegionalNewsPlusNexus.
-png>]
+ut line 239.
+(pdftex.def)             Requested size: 429.00238pt x 241.61302pt.
+
+Overfull \hbox (39.00238pt too wide) in paragraph at lines 239--240
+ [][] 
+ []
+
+[81 <./graphs/Delhi_WSvsArrival_ill1.png>]
+<graphs/localDelhiFog.png, id=1350, 648.4225pt x 102.3825pt>
+File: graphs/localDelhiFog.png Graphic file (type png)
+
+<use graphs/localDelhiFog.png>
+Package pdftex.def Info: graphs/localDelhiFog.png used on input line 248.
+(pdftex.def)             Requested size: 429.00238pt x 67.73825pt.
+
+Overfull \hbox (39.00238pt too wide) in paragraph at lines 248--249
+ [][] 
+ []
+
+[82 <./graphs/localDelhiRegionalNewsPlusNexus.png> <./graphs/localDelhiFog.png>
+]) [83]
 \openout2 = `chapter7.aux'.
 
- (./chapter7.tex
+ (chapter7.tex
 Chapter 7.
 )
 Underfull \hbox (badness 10000) in paragraph at lines 9--166
@@ -2027,21 +2225,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--166
 
  []
 
-[74
+[84
 
 
 
 
-] [75] (./Thesis.bbl
+] [85] (Thesis.bbl
 Underfull \hbox (badness 3407) in paragraph at lines 9--12
 []\OT1/cmr/m/n/12 fcainfoweb.nic.in/pmsver2/reports/report[]menu[]web.aspx.  []
-$\OT1/cmtt/m/n/12 http : / /
+$\OT1/cmtt/m/n/12 http : / /$
  []
 
 
 Overfull \hbox (51.87773pt too wide) in paragraph at lines 14--18
-\OT1/cmtt/m/n/12 flying-[]squads-[]to-[]tackle-[]onion-[]hoarding-[]in-[]mahara
-shtra-[]113072200152 _
+$\OT1/cmtt/m/n/12 flying-[]squads-[]to-[]tackle-[]onion-[]hoarding-[]in-[]mahar
+ashtra-[]113072200152 _$
  []
 
 
@@ -2057,25 +2255,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--25
 
 Underfull \hbox (badness 10000) in paragraph at lines 20--25
 \OT1/cmr/m/n/12 & anal-y-sis.  []$\OT1/cmtt/m/n/12 http : / / www . dnaindia . 
-com / ahmedabad /
+com / ahmedabad /$
  []
 
 
 Overfull \hbox (56.14159pt too wide) in paragraph at lines 20--25
-\OT1/cmtt/m/n/12 report-[]govt-[]wakes-[]up-[]from-[]slumber-[]to-[]prevent-[]o
-nion-[]hoarding-[]1876027$[]\OT1/cmr/m/n/12 .
+$\OT1/cmtt/m/n/12 report-[]govt-[]wakes-[]up-[]from-[]slumber-[]to-[]prevent-[]
+onion-[]hoarding-[]1876027$[]\OT1/cmr/m/n/12 .
  []
 
 
 Underfull \hbox (badness 4217) in paragraph at lines 27--31
 \OT1/cmr/m/n/12 times of in-dia.  []$\OT1/cmtt/m/n/12 http : / / timesofindia .
- indiatimes . com / india /
+ indiatimes . com / india /$
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 27--31
-\OT1/cmtt/m/n/12 The-[]great-[]onion-[]robbery-[]135-[]mark-[]up-[]from-[]mandi
--[]to-[]retail /
+$\OT1/cmtt/m/n/12 The-[]great-[]onion-[]robbery-[]135-[]mark-[]up-[]from-[]mand
+i-[]to-[]retail /$
  []
 
 
@@ -2086,13 +2284,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--37
 
 Underfull \hbox (badness 10000) in paragraph at lines 33--37
 \OT1/cmr/m/n/12 of in-dia.  []$\OT1/cmtt/m/n/12 http : / / timesofindia . india
-times . com / india /
+times . com / india /$
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 33--37
-\OT1/cmtt/m/n/12 Hoarding-[]pushing-[]onion-[]prices-[]up-[]govt-[]finds / arti
-cleshow /
+$\OT1/cmtt/m/n/12 Hoarding-[]pushing-[]onion-[]prices-[]up-[]govt-[]finds / art
+icleshow /$
  []
 
 
@@ -2104,13 +2302,13 @@ e
 
 Underfull \hbox (badness 10000) in paragraph at lines 39--43
 \OT1/cmr/m/n/12 hindu.  []$\OT1/cmtt/m/n/12 http : / / www . thehindu . com / n
-ews / national / kerala /
+ews / national / kerala /$
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 39--43
-\OT1/cmtt/m/n/12 kerala-[]yet-[]to-[]initiate-[]action-[]against-[]onion-[]hoar
-ders /
+$\OT1/cmtt/m/n/12 kerala-[]yet-[]to-[]initiate-[]action-[]against-[]onion-[]hoa
+rders /$
  []
 
 
@@ -2121,10 +2319,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--49
 
 Underfull \hbox (badness 2809) in paragraph at lines 51--55
 []\OT1/cmr/m/n/12 Onion cri-sis wors-ened by hoard-ing?  []$\OT1/cmtt/m/n/12 ht
-tp : / / www . ndtv . com /
+tp : / / www . ndtv . com /$
  []
 
-[76
+[86
 
 
 
@@ -2136,13 +2334,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--61
 
 Underfull \hbox (badness 10000) in paragraph at lines 57--61
 \OT1/cmr/m/n/12 times of in-dia.  []$\OT1/cmtt/m/n/12 http : / / timesofindia .
- indiatimes . com /
+ indiatimes . com /$
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 57--61
-\OT1/cmtt/m/n/12 india / Onion-[]price-[]rise-[]may-[]be-[]due-[]to-[]hoarding-
-[]Centre /
+$\OT1/cmtt/m/n/12 india / Onion-[]price-[]rise-[]may-[]be-[]due-[]to-[]hoarding
+-[]Centre /$
  []
 
 
@@ -2153,13 +2351,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--68
 
 Underfull \hbox (badness 10000) in paragraph at lines 63--68
 \OT1/cmr/m/n/12 ers - timesofindia-economictimes.  []$\OT1/cmtt/m/n/12 http : /
- / articles .
+ / articles .$
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 63--68
-\OT1/cmtt/m/n/12 economictimes . indiatimes . com / 2014-[]06-[]20 / news / 507
-39208 _ 1 _
+$\OT1/cmtt/m/n/12 economictimes . indiatimes . com / 2014-[]06-[]20 / news / 50
+739208 _ 1 _$
  []
 
 
@@ -2176,34 +2374,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--75
 
 Underfull \hbox (badness 10000) in paragraph at lines 70--75
 \OT1/cmr/m/n/12 news & anal-y-sis.  []$\OT1/cmtt/m/n/12 http : / / www . dnaind
-ia . com / mumbai /
+ia . com / mumbai /$
  []
 
 
 Overfull \hbox (186.31665pt too wide) in paragraph at lines 70--75
-\OT1/cmtt/m/n/12 report-[]onion-[]prices-[]rise-[]again-[]at-[]vashi-[]agricult
-ural-[]produce-[]marketing-[]committee-[]1493407$[]\OT1/cmr/m/n/12 .
+$\OT1/cmtt/m/n/12 report-[]onion-[]prices-[]rise-[]again-[]at-[]vashi-[]agricul
+tural-[]produce-[]marketing-[]committee-[]1493407$[]\OT1/cmr/m/n/12 .
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 77--81
 []\OT1/cmr/m/n/12 Rains, hoard-ing make veg-eta-bles costlier.  []$\OT1/cmtt/m/
-n/12 http : / / www .
+n/12 http : / / www .$
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 77--81
-\OT1/cmtt/m/n/12 deccanchronicle . com / 140720 / nation-[]current-[]affairs / 
-article /
+$\OT1/cmtt/m/n/12 deccanchronicle . com / 140720 / nation-[]current-[]affairs /
+ article /$
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 77--81
-\OT1/cmtt/m/n/12 rains-[]hoarding-[]make-[]vegetables-[]costlier$[]\OT1/cmr/m/n
-/12 .  (Vis-ited on
+$\OT1/cmtt/m/n/12 rains-[]hoarding-[]make-[]vegetables-[]costlier$[]\OT1/cmr/m/
+n/12 .  (Vis-ited on
  []
 
-[77]) (./appendix.tex (./libraryAppendix/Chapter_1.tex [78]
+[87]) (appendix.tex (libraryAppendix/Chapter_1.tex [88]
 Appendix A.
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--27
@@ -2220,7 +2418,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--27
 
  []
 
-[79
+[89
 
 
 ]
@@ -2233,14 +2431,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--66
 
  []
 
-[80]
+[90]
 Overfull \hbox (20.50323pt too wide) in paragraph at lines 92--92
- |[]\OT1/cmr/bx/n/14.4 correlationAtLag(series1, se-ries2, lag, win-dow[]size)|
- 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 94--104
+|[]\OT1/cmr/bx/n/14.4 correlationAtLag(series1, se-ries2, lag, win-dow[]size)| 
 
  []
 
@@ -2249,24 +2442,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 94--104
 
  []
 
-[81]
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--104
+
+ []
+
+[91]
 Underfull \hbox (badness 10000) in paragraph at lines 117--120
 
  []
 
 
 Overfull \hbox (7.0495pt too wide) in paragraph at lines 125--125
- |[]\OT1/cmr/bx/n/14.4 WindowCorrelationWithConstantLag(arr1, arr2,
+|[]\OT1/cmr/bx/n/14.4 WindowCorrelationWithConstantLag(arr1, arr2,
  []
 
 
 Overfull \hbox (20.27177pt too wide) in paragraph at lines 125--125
- \OT1/cmr/bx/n/14.4 win-dow[]size,maxlag, pos-i-tive[]correlation, pos, neg)| 
+\OT1/cmr/bx/n/14.4 win-dow[]size,maxlag, pos-i-tive[]correlation, pos, neg)| 
  []
 
-[82]
+[92]
 Overfull \hbox (30.3211pt too wide) in paragraph at lines 168--168
- |[]\OT1/cmr/bx/n/14.4 anomaliesFromWindowCorrelationWithConstantlag 
+|[]\OT1/cmr/bx/n/14.4 anomaliesFromWindowCorrelationWithConstantlag 
  []
 
 
@@ -2291,7 +2489,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 171--180
 
  []
 
-[83]) (./libraryAppendix/Chapter_2.tex
+[93]) (libraryAppendix/Chapter_2.tex
 Underfull \hbox (badness 10000) in paragraph at lines 225--1
 
  []
@@ -2301,7 +2499,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 225--1
 
  []
 
-[84] [85]
+[94] [95]
 Appendix B.
 
 Underfull \hbox (badness 10000) in paragraph at lines 18--29
@@ -2321,7 +2519,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 32.
 
-[86
+[96
 
 
 ]
@@ -2329,7 +2527,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--55
 
  []
 
-[87]
+[97]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 61.
@@ -2370,7 +2568,7 @@ t/series of tu-ples in the for-mat (Date,Value),
 
 
 Overfull \hbox (11.44464pt too wide) in paragraph at lines 87--87
- |[]\OT1/cmr/bx/n/14.4 slopeBased(series1,smoothed1,series2,smoothed2, 
+|[]\OT1/cmr/bx/n/14.4 slopeBased(series1,smoothed1,series2,smoothed2, 
  []
 
 
@@ -2381,7 +2579,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 87.
 
-[88]) (./libraryAppendix/Chapter_3.tex
+[98]) (libraryAppendix/Chapter_3.tex
 Underfull \hbox (badness 10000) in paragraph at lines 115--1
 
  []
@@ -2392,7 +2590,7 @@ Overfull \hbox (72.83658pt too wide) in paragraph at lines 115--1
  (start[]date,end[]date,slope[]value)
  []
 
-[89] [90]
+[99] [100]
 Appendix C.
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--28
@@ -2414,10 +2612,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--48
 
  []
 
-[91
+[101
 
 
-] [92]
+] [102]
 Underfull \hbox (badness 10000) in paragraph at lines 74--82
 
  []
@@ -2449,8 +2647,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--94
 
 
 Overfull \hbox (59.84982pt too wide) in paragraph at lines 97--97
- |[]\OT1/cmr/bx/n/14.4 anomalies[]from[]linear[]regression(result[]of[]lr, any[
-]series)| 
+|[]\OT1/cmr/bx/n/14.4 anomalies[]from[]linear[]regression(result[]of[]lr, any[]
+series)| 
  []
 
 
@@ -2458,7 +2656,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 99--107
 
  []
 
-[93]
+[103]
 Underfull \hbox (badness 10000) in paragraph at lines 121--123
 
  []
@@ -2469,7 +2667,7 @@ Overfull \hbox (95.13934pt too wide) in paragraph at lines 124--126
 tween[]predicted[]and[]actual[]y[]value) 
  []
 
-[94]
+[104]
 Underfull \hbox (badness 10000) in paragraph at lines 162--164
 
  []
@@ -2479,12 +2677,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 165--169
 
  []
 
-) (./libraryAppendix/Chapter_4.tex
+) (libraryAppendix/Chapter_4.tex
 Underfull \hbox (badness 10000) in paragraph at lines 174--1
 
  []
 
-[95]
+[105]
 Appendix D.
 
 Overfull \hbox (8.35077pt too wide) in paragraph at lines 1--1
@@ -2492,7 +2690,7 @@ Overfull \hbox (8.35077pt too wide) in paragraph at lines 1--1
  []
 
 
-LaTeX Warning: Citation `nasarbook' on page 96 undefined on input line 6.
+LaTeX Warning: Citation `nasarbook' on page 106 undefined on input line 6.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--32
@@ -2509,12 +2707,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--32
 
  []
 
-[96
+[106
 
 
 ]
 Overfull \hbox (29.09944pt too wide) in paragraph at lines 36--36
- |[]\OT1/cmr/bx/n/14.4 graphBasedAnomalyCall(dependentVar, num-berOf-
+|[]\OT1/cmr/bx/n/14.4 graphBasedAnomalyCall(dependentVar, num-berOf-
  []
 
 
@@ -2524,7 +2722,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--47
 
 
 Overfull \hbox (31.75291pt too wide) in paragraph at lines 68--68
- |[]\OT1/cmr/bx/n/14.4 generateCSVsForGraphBasedAnomaly(lists, dateIn-
+|[]\OT1/cmr/bx/n/14.4 generateCSVsForGraphBasedAnomaly(lists, dateIn-
  []
 
 
@@ -2567,22 +2765,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--113
 
  []
 
-[97] [98]
+[107] [108]
 Underfull \hbox (badness 10000) in paragraph at lines 129--131
 
  []
 
-[99]
+[109]
 Overfull \hbox (20.18118pt too wide) in paragraph at lines 173--173
- |[]\OT1/cmr/bx/n/14.4 graphBasedAnomalyMain(lists, de-pen-dent-Var, nu-
+|[]\OT1/cmr/bx/n/14.4 graphBasedAnomalyMain(lists, de-pen-dent-Var, nu-
  []
 
-[100]) (./libraryAppendix/Chapter_5.tex
+[110]) (libraryAppendix/Chapter_5.tex
 Underfull \hbox (badness 10000) in paragraph at lines 201--1
 
  []
 
-[101]
+[111]
 Appendix E.
 
 Overfull \hbox (25.32614pt too wide) in paragraph at lines 1--1
@@ -2590,7 +2788,7 @@ Overfull \hbox (25.32614pt too wide) in paragraph at lines 1--1
  []
 
 
-LaTeX Warning: Citation `var' on page 102 undefined on input line 32.
+LaTeX Warning: Citation `var' on page 112 undefined on input line 32.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--33
@@ -2622,13 +2820,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--33
 
  []
 
-[102
+[112
 
 
 ]
 Overfull \hbox (69.551pt too wide) in paragraph at lines 36--36
- |[]\OT1/cmr/bx/n/14.4 MultivariateAnomaly(fileName,hd, param-Count,fileStart)|
- 
+|[]\OT1/cmr/bx/n/14.4 MultivariateAnomaly(fileName,hd, param-Count,fileStart)| 
+
  []
 
 
@@ -2636,23 +2834,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--46
 
  []
 
-[103])
+[113])
 Underfull \hbox (badness 10000) in paragraph at lines 104--8
 
  []
 
-[104])
+[114]) [115]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 174.
- [105]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 174.
- (./Thesis.aux (./titlepage.aux) (./certificate.aux)
-(./abstract.aux) (./acknowledgement.aux) (./chapter1.aux) (./chapter2.aux)
-(./chapter3.aux) (./chapter4.aux) (./chapter5.aux) (./chapter6.aux)
-(./chapter7.aux))
+ (Thesis.aux (titlepage.aux) (certificate.aux) (abstract.aux)
+(acknowledgement.aux) (chapter1.aux) (chapter2.aux) (chapter3.aux)
+(chapter4.aux) (chapter5.aux) (chapter6.aux) (chapter7.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 174.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 174.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 582A877DB0D57436A0B6AE2A3B2AB6D2;6536.
+(rerunfilecheck)             Checksum: 1F08F42EA4B9B539C084E5052B9685C5;6616.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2663,27 +2859,26 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 174.
  ) 
 Here is how much of TeX's memory you used:
- 26105 strings out of 493304
- 563514 string characters out of 6139872
- 822868 words of memory out of 5000000
- 28501 multiletter control sequences out of 15000+600000
- 13472 words of font info for 49 fonts, out of 8000000 for 9000
- 957 hyphenation exceptions out of 8191
- 56i,20n,86p,1210b,1903s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmtt12.pfb>
-Output written on Thesis.pdf (119 pages, 7695779 bytes).
+ 29744 strings out of 493634
+ 692055 string characters out of 3141288
+ 982603 words of memory out of 3000000
+ 32037 multiletter control sequences out of 15000+200000
+ 13472 words of font info for 49 fonts, out of 3000000 for 9000
+ 1025 hyphenation exceptions out of 8191
+ 57i,20n,102p,1213b,2230s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Thesis.pdf (130 pages, 8260418 bytes).
 PDF statistics:
- 1650 PDF objects out of 1728 (max. 8388607)
- 1382 compressed objects within 14 object streams
- 392 named destinations out of 1000 (max. 500000)
- 983 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1741 PDF objects out of 2073 (max. 8388607)
+ 417 named destinations out of 1000 (max. 500000)
+ 1043 words of extra memory for PDF output out of 10000 (max. 10000000)
 
