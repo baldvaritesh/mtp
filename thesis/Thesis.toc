@@ -16,8 +16,8 @@
 \contentsline {section}{\numberline {3.5}Mapping of wholesale price to retail price}{11}{section.3.5}
 \contentsline {section}{\numberline {3.6}How to Define Anomaly?}{12}{section.3.6}
 \contentsline {subsection}{\numberline {3.6.1}Summary Of News Articles}{13}{subsection.3.6.1}
-\contentsline {section}{\numberline {3.7}Characteristics of anomaly}{19}{section.3.7}
-\contentsline {section}{\numberline {3.8}Hypothesis}{20}{section.3.8}
+\contentsline {section}{\numberline {3.7}Characteristics of anomaly}{18}{section.3.7}
+\contentsline {section}{\numberline {3.8}Hypothesis}{19}{section.3.8}
 \contentsline {chapter}{\numberline {4}Design and Framework}{27}{chapter.4}
 \contentsline {section}{\numberline {4.1}System Design}{27}{section.4.1}
 \contentsline {section}{\numberline {4.2}Anomaly Detection Library}{29}{section.4.2}
