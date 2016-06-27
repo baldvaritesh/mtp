@@ -87,7 +87,7 @@ def fetchNewsForCenter(resultsOfSystem, centerNumber, intervalToConsider=5):
 		result[date] = resultOfThisDate
 		
 	# Fetch all dates of news articles corresponding to this center
-	query = "select distinct publish_date, article_hash_url, source_url, an.reason, an.comment, an.days  from articlemetadata, analysis an where  article_hash_url = an.article_id and article_hash_url in (select distinct(article_id) from analysis where  comment not ilike '%delete%' and reason not ilike '%prices dropped%' and publish_date <= '2015-07-06' and (place iLike '"+center+"' or place iLike 'india') ) order by publish_date"
+	query = "select distinct publish_date, article_hash_url, source_url, an.reason from articlemetadata, analysis an where  article_hash_url = an.article_id and article_hash_url in (select distinct(article_id) from analysis where  comment not ilike '%delete%' and reason not ilike '%prices dropped%' and publish_date <= '2015-07-06' and (place iLike '"+center+"' or place iLike 'india') ) order by publish_date"
 	
 	cur.execute(query)
 	allArticlesQueryResult = cur.fetchall()
