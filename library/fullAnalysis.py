@@ -30,7 +30,7 @@ defaultThresholdCentre1 = [6, 14, -5, 100, 6, 50, -7, 100] # For Mumbai
 defaultThresholdCentre2 = [6, 14, -4, 100, 6, 20, -5, 100] # For Delhi
 
 # This variable is set true if we want to use user defined threshold. If True, values of threshold for methods linear regression and slope based method will be fetched from above array by referring corresponding index
-userThreshold = True 
+userThreshold = False 
 
 
 def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
@@ -206,6 +206,33 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         (filteredResult_union_of_h3, union_result_of_H3_news_article, all_articles_union_result_of_H3) = fetchNewsForCenter(union_result_of_H3, i)
         (filteredResult_intersection, intersection_result_with_H3_news_article_result,all_articles_intersection_result_with_H3) = fetchNewsForCenter(intersection_result_with_H3, i)
         
+        
+        print "This is for retail vs average:"
+        print "For Slope Based:"
+        notMatched = articlesNotMatched(slopeBased_news_article_result,all_articles_slope_based)
+        print "Count: " + str(len(notMatched))
+        for row in notMatched:
+            print str(row[0]) + "," + str(row[3]) + "," + str(row[2])
+        print "For Correlation based:"
+        notMatched = articlesNotMatched(correlationBased_news_article_result,all_articles_correlationBased)
+        print "Count: " + str(len(notMatched))
+        for row in notMatched:
+            print str(row[0]) + "," + str(row[3]) + "," + str(row[2])
+        print "For Linear Regression based:"
+        notMatched = articlesNotMatched(linearRegression_news_article_result,all_articles_linearRegression)
+        print "Count: " + str(len(notMatched))
+        for row in notMatched:
+            print str(row[0]) + "," + str(row[3]) + "," + str(row[2])
+        print "For Graph based:"
+        notMatched = articlesNotMatched(graphBasedAnomaly_news_article_result,all_articles_linearRegression)
+        print "Count: " + str(len(notMatched))
+        for row in notMatched:
+            print str(row[0]) + "," + str(row[3]) + "," + str(row[2])
+        print "For Multivariate:"
+        notMatched = articlesNotMatched(multiple_arima_news_article_result,all_articles_linearRegression)
+        print "Count: " + str(len(notMatched))
+        for row in notMatched:
+            print str(row[0]) + "," + str(row[3]) + "," + str(row[2])        
         print "Not matched for Retail vs Retail Average"
         notMatched = articlesNotMatched(intersection_result_with_H3_news_article_result,all_articles_intersection_result_with_H3)
         print "Count: " + str(len(notMatched))
@@ -334,7 +361,33 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         (filteredResult_union_of_h3, union_result_of_H3_news_article, all_articles_union_result_of_H3) = fetchNewsForCenter(union_result_of_H3, i)
         (filteredResult_intersection, intersection_result_with_H3_news_article_result,all_articles_intersection_result_with_H3) = fetchNewsForCenter(intersection_result_with_H3, i)
         
-        print "Not matched for Retail vs Arrival"
+        print "This is for retail vs arrival:"
+        print "For Slope Based:"
+        notMatched = articlesNotMatched(slopeBased_news_article_result,all_articles_slope_based)
+        print "Count: " + str(len(notMatched))
+        for row in notMatched:
+            print str(row[0]) + "," + str(row[3]) + "," + str(row[2])
+        print "For Correlation based:"
+        notMatched = articlesNotMatched(correlationBased_news_article_result,all_articles_correlationBased)
+        print "Count: " + str(len(notMatched))
+        for row in notMatched:
+            print str(row[0]) + "," + str(row[3]) + "," + str(row[2])
+        print "For Linear Regression based:"
+        notMatched = articlesNotMatched(linearRegression_news_article_result,all_articles_linearRegression)
+        print "Count: " + str(len(notMatched))
+        for row in notMatched:
+            print str(row[0]) + "," + str(row[3]) + "," + str(row[2])
+        print "For Graph based:"
+        notMatched = articlesNotMatched(graphBasedAnomaly_news_article_result,all_articles_linearRegression)
+        print "Count: " + str(len(notMatched))
+        for row in notMatched:
+            print str(row[0]) + "," + str(row[3]) + "," + str(row[2])
+        print "For Multivariate:"
+        notMatched = articlesNotMatched(multiple_arima_news_article_result,all_articles_linearRegression)
+        print "Count: " + str(len(notMatched))
+        for row in notMatched:
+            print str(row[0]) + "," + str(row[3]) + "," + str(row[2])        
+        print "Not matched for Retail vs arrival"
         notMatched = articlesNotMatched(intersection_result_with_H3_news_article_result,all_articles_intersection_result_with_H3)
         print "Count: " + str(len(notMatched))
         for row in notMatched:
@@ -456,7 +509,33 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         (filteredResult_union_of_h3, union_result_of_H3_news_article, all_articles_union_result_of_H3) = fetchNewsForCenter(union_result_of_H3, i)
         (filteredResult_intersection, intersection_result_with_H3_news_article_result,all_articles_intersection_result_with_H3) = fetchNewsForCenter(intersection_result_with_H3, i)
         
-        print "Not matched for Retail vs Wholesale"
+        print "This is for retail vs wholesale:"
+        print "For Slope Based:"
+        notMatched = articlesNotMatched(slopeBased_news_article_result,all_articles_slope_based)
+        print "Count: " + str(len(notMatched))
+        for row in notMatched:
+            print str(row[0]) + "," + str(row[3]) + "," + str(row[2])
+        print "For Correlation based:"
+        notMatched = articlesNotMatched(correlationBased_news_article_result,all_articles_correlationBased)
+        print "Count: " + str(len(notMatched))
+        for row in notMatched:
+            print str(row[0]) + "," + str(row[3]) + "," + str(row[2])
+        print "For Linear Regression based:"
+        notMatched = articlesNotMatched(linearRegression_news_article_result,all_articles_linearRegression)
+        print "Count: " + str(len(notMatched))
+        for row in notMatched:
+            print str(row[0]) + "," + str(row[3]) + "," + str(row[2])
+        print "For Graph based:"
+        notMatched = articlesNotMatched(graphBasedAnomaly_news_article_result,all_articles_linearRegression)
+        print "Count: " + str(len(notMatched))
+        for row in notMatched:
+            print str(row[0]) + "," + str(row[3]) + "," + str(row[2])
+        print "For Multivariate:"
+        notMatched = articlesNotMatched(multiple_arima_news_article_result,all_articles_linearRegression)
+        print "Count: " + str(len(notMatched))
+        for row in notMatched:
+            print str(row[0]) + "," + str(row[3]) + "," + str(row[2])        
+        print "Not matched for Retail vs wholesale"
         notMatched = articlesNotMatched(intersection_result_with_H3_news_article_result,all_articles_intersection_result_with_H3)
         print "Count: " + str(len(notMatched))
         for row in notMatched:
@@ -580,7 +659,33 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         (filteredResult_union_of_h3, union_result_of_H3_news_article, all_articles_union_result_of_H3) = fetchNewsForCenter(union_result_of_H3, i)
         (filteredResult_intersection, intersection_result_with_H3_news_article_result,all_articles_intersection_result_with_H3) = fetchNewsForCenter(intersection_result_with_H3, i)
         
-        print "Not matched for Wholesale vs Arrival"
+        print "This is for wholesale vs arrival:"
+        print "For Slope Based:"
+        notMatched = articlesNotMatched(slopeBased_news_article_result,all_articles_slope_based)
+        print "Count: " + str(len(notMatched))
+        for row in notMatched:
+            print str(row[0]) + "," + str(row[3]) + "," + str(row[2])
+        print "For Correlation based:"
+        notMatched = articlesNotMatched(correlationBased_news_article_result,all_articles_correlationBased)
+        print "Count: " + str(len(notMatched))
+        for row in notMatched:
+            print str(row[0]) + "," + str(row[3]) + "," + str(row[2])
+        print "For Linear Regression based:"
+        notMatched = articlesNotMatched(linearRegression_news_article_result,all_articles_linearRegression)
+        print "Count: " + str(len(notMatched))
+        for row in notMatched:
+            print str(row[0]) + "," + str(row[3]) + "," + str(row[2])
+        print "For Graph based:"
+        notMatched = articlesNotMatched(graphBasedAnomaly_news_article_result,all_articles_linearRegression)
+        print "Count: " + str(len(notMatched))
+        for row in notMatched:
+            print str(row[0]) + "," + str(row[3]) + "," + str(row[2])
+        print "For Multivariate:"
+        notMatched = articlesNotMatched(multiple_arima_news_article_result,all_articles_linearRegression)
+        print "Count: " + str(len(notMatched))
+        for row in notMatched:
+            print str(row[0]) + "," + str(row[3]) + "," + str(row[2])        
+        print "Not matched for wholesale vs arrival"
         notMatched = articlesNotMatched(intersection_result_with_H3_news_article_result,all_articles_intersection_result_with_H3)
         print "Count: " + str(len(notMatched))
         for row in notMatched:
@@ -1030,6 +1135,31 @@ def articlesNotMatched(matched, allArticles):
             notMatched.append(row)
             uniqueDates.add(row[0])
     print "Unique Dates Not matched: " + str(len(uniqueDates))
+    
+    print "Distribution of articles not Matched:"
+    notMatchedDitribution = dict()
+    for row in notMatched:
+        if(row[3] not in notMatchedDitribution):
+            notMatchedDitribution[row[3]] = 1
+        else:
+            notMatchedDitribution[row[3]] = notMatchedDitribution[row[3]] +1
+    for key in notMatchedDitribution:
+        print key + "," + str(notMatchedDitribution[key])
+    
+    print "Distribution of articles which are matched with anomalies:"
+    considered = set()
+    matchedDistribution = dict()
+    for row in matched:
+        if(row[3] not in considered):
+            considered.add(row[3])
+            if(row[5] not in matchedDistribution):
+                matchedDistribution[row[5]] = 1
+            else:
+                matchedDistribution[row[5]] = matchedDistribution[row[5]] +1
+                
+    for key in matchedDistribution:
+        print key + "," + str(matchedDistribution[key])
+    
     return notMatched
     pass
 
