@@ -20,8 +20,7 @@ two time-series and save it in an array. Now, slide window by ``w'' elements
 and calculate correlation value again and so on. Now, we have correlation values at 
 multiple windows.\\
 \\
-Now, let's say both the series should have been positively correlated. So, what 
-we do is, we choose threshold by MAD test if not provided to us, and find all 
+Now, let's say both the series should have been positively correlated. All the significant correlation values are taken. Then threshold is choosen by MAD test if not provided to us, and find all 
 correlation values which are below that threshold and report all those windows 
 as anomaly. Similarly, for negative correlation values above the threshold value is reported as anomaly.
 
@@ -169,7 +168,7 @@ default\_threshold = True, threshold = 0):}
 
 
 This is main function of this method. This is driver of whole method. Using 
-previously stated methods, it will first gather correlation values at different 
+previously stated methods, it will first gather significant correlation values at different 
 windows. Than depending upon which type of threshold is to be used, it will 
 filter out anomalies. If default threshold is to be used, than it will be 
 calculated using MAD test on the correlation values at each window, else 
