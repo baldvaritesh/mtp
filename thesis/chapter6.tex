@@ -3,9 +3,10 @@
 The analysis was performed for different time-series of two centers- Delhi and Mumbai.
 
 Following analysis is for Mumbai. In case of Mumbai, there are total of 66 distinct days for which news articles exist. Here, articles not matched represents unique dates for which articles were present but system failed to report anomaly against that date.
+
 \begin{table}[H]
 \centering
-
+\resizebox{\textwidth}{!}{
 \begin{tabular}{| L{3cm} | L{3cm} | L{3cm} | L{3cm} | L{3cm} |}
 \hline                                 
 				  & \textbf{Anomalies \newline Reported} & \textbf{Anomalies \newline Matched}  & \textbf{Articles \newline Not Matched}   & \textbf{Articles Not Matched which stated traders nexus as reason} \\ \hline
@@ -13,10 +14,11 @@ Following analysis is for Mumbai. In case of Mumbai, there are total of 66 disti
 \textbf{Retail Vs Arrival}        & 323                         & 153                         &  33                		&  9  (27.27\%)              \\ \hline
 \textbf{Retail Vs Wholesale}      & 160                         & 52                          &  52                		&  14 (26.92\%)               \\ \hline
 \textbf{Wholesale Vs Arrival}     & 332                         & 168                         &  29                		&  7  (24.13\%)              \\ \hline
-\end{tabular}
+\end{tabular}}
 \caption{System Result for Mumbai}
 \label{result}
 \end{table}
+
 
 Following are the inferences from the above table:
 \begin{itemize}
@@ -27,6 +29,7 @@ Following are the inferences from the above table:
 \end{itemize}
 
 As shown in the above table \ref{result}, from the number of news articles which are missed by system, almost 25\% of them are of traders nexus. Rest 75\% are because of low production, unseasonal rainfall, low supply, etc. Now, one of the reason why these articles were missed may be because of arrival was low during this tenure and it is normal to have price hike. So, that might be reason that system might have considered them as normal. Usually news sources report in article whenever prices goes high.
+
 
 \begin{table}[H]
 	\centering	

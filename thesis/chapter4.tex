@@ -22,23 +22,23 @@ Following methods are implemented in the library to detect anomalies in given ti
 \subsection{Window Based Correlation}
 The method finds anomalies between two timeseries. If the two timeseries are supposed to be positively correlated, then it reports all the tenures where the timeseries deviates from showing positive correlation between them.
 \\
-Similarly if the two timeseries are supposed to be negatively correlated, then it reports all the tenures where the timeseries deviates from showing negative correlation between them. The significant deviations are reported based on either the default significance value of 0.01 or it can be customized based on the need. For more information 
+Similarly if the two timeseries are supposed to be negatively correlated, then it reports all the tenures where the timeseries deviates from showing negative correlation between them. The significant deviations are reported based on either the default significance value of 0.01 or it can be customized based on the need. For more information refer Appendix \ref{appendix:correlation}.
 \subsection{Slope Based Detection}
-The  method calculates the rate of change of one timeseries with respect to the other. The tenures are reported where one timeseries varies to a large extent from the other.
+The  method calculates the rate of change of one timeseries with respect to the other. The tenures are reported where one timeseries varies to a large extent from the other. For more information refer Appendix \ref{appendix:slopeBased}.
 \\
 The threshold is decided based on the MAD outlier detection test or it could be set manually.
 \subsection{Linear Regression}
 The method builds a linear model between two timeseries. Values are predicted based on this linear model and error is calculated. All the tenures with error values breaching the threshold are reported as anomaly. 
 \\
-The threshold can be decided by MAD outlier detection technique or it can be configured manually.
+The threshold can be decided by MAD outlier detection technique or it can be configured manually. For more information refer Appendix \ref{appendix:linearRegression}.
 \subsection{Graph Based Anomaly}
 Graph based anomaly detection technique considers each day as a node of a graph. Similar nodes are connected to each other by some weight. Similarity of nodes are calculated by making use of the values of that node i.e. value(s) of timeseries on that date. Based on this similarity, edge weights are also assigned. Then random walk algorithm is applied on this graph structure and connectivity value of each node is calculated. Graph nodes having the least connectivity values are reported as anomaly.
 \\
-The method also takes into account the trend, seasonality etc of timeseries. Top few points (can be configured) are reported as anomaly by the system.
+The method also takes into account the trend, seasonality etc of timeseries. Top few points (can be configured) are reported as anomaly by the system. For more information refer Appendix \ref{appendix:graphBased}.
 \subsection{Multivariate- Vector Autoregressive}
 The method uses vector autoregressive framework for multivariate time-series analysis in order to forecast values. The framework treats all the variables as symmetrical and all the variables are modelled as if they influence each others equally.
 \\
-Error percentage is calculated between actual and forecasted values. These error values are used to filter anomalous conditions from non-anomalous conditions by setting a threshold value which can be automatically computed by MAD outlier detection test or it can be manually configured to the required value.
+Error percentage is calculated between actual and forecasted values. These error values are used to filter anomalous conditions from non-anomalous conditions by setting a threshold value which can be automatically computed by MAD outlier detection test or it can be manually configured to the required value. For more information refer Appendix \ref{appendix:multivariate}
 \section{Hypothesis Testing}
 These methods can be used for testing various hypothesis by changing the parameters in the library functions. The details are as following:
 \begin{itemize}
