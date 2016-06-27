@@ -1,4 +1,6 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: Thesis.aux
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Thesis.aux
 A level-1 auxiliary file: titlepage.aux
 A level-1 auxiliary file: certificate.aux
 A level-1 auxiliary file: abstract.aux
@@ -14,6 +16,8 @@ The style file: plain.bst
 Database file #1: biblio.bib
 Warning--to sort, need author or key in agmarknet
 Warning--to sort, need author or key in retailpricecollection
+Warning--to sort, need author or key in alchemyapi
+Warning--to sort, need author or key in diffbot
 Warning--to sort, need author or key in Redif57:online
 Warning--to sort, need author or key in Whyo17:online
 Warning--to sort, need author or key in Theg44:online
@@ -29,4 +33,45 @@ Warning--to sort, need author or key in Keral99:online
 Warning--to sort, need author or key in Rains78:online
 Warning--to sort, need author or key in var
 Warning--there's a number but no volume in kapur2011quid
-(There were 17 warnings)
+You've used 23 entries,
+            2118 wiz_defined-function locations,
+            607 strings with 7981 characters,
+and the built_in function-call counts, 4689 in all, are:
+= -- 463
+> -- 112
+< -- 1
++ -- 56
+- -- 32
+* -- 201
+:= -- 636
+add.period$ -- 69
+call.type$ -- 23
+change.case$ -- 85
+chr.to.int$ -- 0
+cite$ -- 42
+duplicate$ -- 190
+empty$ -- 532
+format.name$ -- 32
+if$ -- 1098
+int.to.chr$ -- 0
+int.to.str$ -- 23
+missing$ -- 5
+newline$ -- 117
+num.names$ -- 10
+pop$ -- 212
+preamble$ -- 1
+purify$ -- 62
+quote$ -- 0
+skip$ -- 135
+stack$ -- 0
+substring$ -- 154
+swap$ -- 32
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 90
+warning$ -- 19
+while$ -- 14
+width$ -- 25
+write$ -- 217
+(There were 19 warnings)

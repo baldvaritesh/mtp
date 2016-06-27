@@ -16,65 +16,65 @@
 \contentsline {section}{\numberline {3.5}Mapping of wholesale price to retail price}{11}{section.3.5}
 \contentsline {section}{\numberline {3.6}How to Define Anomaly?}{12}{section.3.6}
 \contentsline {subsection}{\numberline {3.6.1}Summary Of News Articles}{13}{subsection.3.6.1}
-\contentsline {section}{\numberline {3.7}Characteristics of anomaly}{19}{section.3.7}
-\contentsline {section}{\numberline {3.8}Hypothesis}{20}{section.3.8}
-\contentsline {chapter}{\numberline {4}Design and Framework}{27}{chapter.4}
-\contentsline {section}{\numberline {4.1}System Design}{27}{section.4.1}
-\contentsline {section}{\numberline {4.2}Anomaly Detection Library}{29}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Window Based Correlation}{29}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Slope Based Detection}{29}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Linear Regression}{29}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Graph Based Anomaly}{30}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}Multivariate- Vector Autoregressive}{30}{subsection.4.2.5}
-\contentsline {section}{\numberline {4.3}Hypothesis Testing}{30}{section.4.3}
-\contentsline {chapter}{\numberline {5}Analysis of System Results}{33}{chapter.5}
-\contentsline {section}{\numberline {5.1}Overview of System Results}{33}{section.5.1}
-\contentsline {section}{\numberline {5.2}Analysis of Each Method}{36}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Slope Based Anomaly Detection}{37}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Linear Regression}{50}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Window Based Correlation}{56}{subsection.5.2.3}
-\contentsline {subsection}{\numberline {5.2.4}Multivariate Time Series- Vector Autoregressive}{63}{subsection.5.2.4}
-\contentsline {subsection}{\numberline {5.2.5}Graph Based Anomaly Detection}{66}{subsection.5.2.5}
-\contentsline {chapter}{\numberline {6}Results and Findings}{70}{chapter.6}
-\contentsline {chapter}{\numberline {7}Conclusion and Future Work}{84}{chapter.7}
-\contentsline {section}{\numberline {7.1}Conclusion}{84}{section.7.1}
-\contentsline {section}{\numberline {7.2}Future Work}{84}{section.7.2}
-\contentsline {chapter}{Bibliography}{86}{chapter*.12}
-\contentsline {chapter}{\numberline {A}Window Based Correlation}{89}{appendix.A}
-\contentsline {section}{\numberline {A.1}Introduction}{89}{section.A.1}
-\contentsline {section}{\numberline {A.2}Related Functions}{90}{section.A.2}
-\contentsline {subsection}{\numberline {A.2.1}correlation(arr1, arr2, maxlag, pos, neg)}{90}{subsection.A.2.1}
-\contentsline {subsection}{\numberline {A.2.2}getMaxCorr(arar1,positive\_correlation)}{90}{subsection.A.2.2}
-\contentsline {subsection}{\numberline {A.2.3}correlationAtLag(series1, series2, lag, window\_size)}{91}{subsection.A.2.3}
-\contentsline {subsection}{\numberline {A.2.4}WindowCorrelationWithConstantLag(arr1, arr2, window\_size,maxlag, positive\_correlation, pos, neg)}{92}{subsection.A.2.4}
-\contentsline {subsection}{\numberline {A.2.5}anomaliesFromWindowCorrelationWithConstantlag\\(arr1, arr2, window\_size=15,maxlag=15, \\positive\_correlation=True, pos=1, neg=1, \\ default\_threshold = True, threshold = 0):}{93}{subsection.A.2.5}
-\contentsline {section}{\numberline {A.3}Description}{94}{section.A.3}
-\contentsline {chapter}{\numberline {B}Slope Based Detection}{96}{appendix.B}
-\contentsline {section}{\numberline {B.1}Introduction}{96}{section.B.1}
-\contentsline {section}{\numberline {B.2}Related Functions}{97}{section.B.2}
-\contentsline {subsection}{\numberline {B.2.1}slopeBasedDetection(series1,smoothed1,\\series2,smoothed2, next\_val\_to\_consider,\\ default\_threshold, threshold, what\_to\_consider)}{97}{subsection.B.2.1}
-\contentsline {subsection}{\numberline {B.2.2}anomalyDatesSlopeBaseddetetion\\(slopeBasedResult,any\_series)}{98}{subsection.B.2.2}
-\contentsline {subsection}{\numberline {B.2.3}slopeBased(series1,smoothed1,series2,smoothed2,\\next\_val\_to\_consider, default\_threshold, \\threshold, what\_to\_consider)}{98}{subsection.B.2.3}
-\contentsline {section}{\numberline {B.3}Description}{99}{section.B.3}
-\contentsline {chapter}{\numberline {C}Linear Regression}{101}{appendix.C}
-\contentsline {section}{\numberline {C.1}Introduction}{101}{section.C.1}
-\contentsline {section}{\numberline {C.2}Related Functions}{102}{section.C.2}
-\contentsline {subsection}{\numberline {C.2.1}linear\_regression(x\_series, y\_series, param = 0, default\_threshold = True, threshold = 0)}{102}{subsection.C.2.1}
-\contentsline {subsection}{\numberline {C.2.2}anomalies\_from\_linear\_regression(result\_of\_lr, any\_series)}{103}{subsection.C.2.2}
-\contentsline {subsection}{\numberline {C.2.3}linear\_regressionMain(x\_series, y\_series, param = 0, default\_threshold = True, threshold = 0)}{104}{subsection.C.2.3}
-\contentsline {section}{\numberline {C.3}Description}{105}{section.C.3}
-\contentsline {chapter}{\numberline {D}Graph Based Anomaly Detection Technique}{106}{appendix.D}
-\contentsline {section}{\numberline {D.1}Introduction}{106}{section.D.1}
-\contentsline {section}{\numberline {D.2}Related Functions}{107}{section.D.2}
-\contentsline {subsection}{\numberline {D.2.1}graphBasedAnomalyCall(dependentVar, numberOfVals, timeSeriesFileNames)}{107}{subsection.D.2.1}
-\contentsline {subsection}{\numberline {D.2.2}generateCSVsForGraphBasedAnomaly(lists, dateIndex, seriesIndex)}{108}{subsection.D.2.2}
-\contentsline {subsection}{\numberline {D.2.3}getAnomalies(dates,resultFile, numOfPtsReqd)}{110}{subsection.D.2.3}
-\contentsline {subsection}{\numberline {D.2.4}graphBasedAnomalyMain(lists, dependentVar, numOfPtsReqd, dateIndex=0, seriesIndex=1)}{110}{subsection.D.2.4}
-\contentsline {section}{\numberline {D.3}Description}{111}{section.D.3}
-\contentsline {chapter}{\numberline {E}Multivariate Time Series Anomaly Detection Technique}{112}{appendix.E}
-\contentsline {section}{\numberline {E.1}Introduction}{112}{section.E.1}
-\contentsline {section}{\numberline {E.2}Related Functions}{113}{section.E.2}
-\contentsline {subsection}{\numberline {E.2.1}MultivariateAnomaly(fileName,hd, paramCount,fileStart)}{113}{subsection.E.2.1}
-\contentsline {subsection}{\numberline {E.2.2}multivaraiateAnalysis(args)}{114}{subsection.E.2.2}
-\contentsline {subsection}{\numberline {E.2.3}csvTransform(filePath,startDate)}{114}{subsection.E.2.3}
-\contentsline {section}{\numberline {E.3}Description}{114}{section.E.3}
+\contentsline {section}{\numberline {3.7}Characteristics of anomaly}{18}{section.3.7}
+\contentsline {section}{\numberline {3.8}Hypothesis}{19}{section.3.8}
+\contentsline {chapter}{\numberline {4}Design and Framework}{25}{chapter.4}
+\contentsline {section}{\numberline {4.1}System Design}{25}{section.4.1}
+\contentsline {section}{\numberline {4.2}Anomaly Detection Library}{27}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Window Based Correlation}{27}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Slope Based Detection}{27}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Linear Regression}{27}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Graph Based Anomaly}{28}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Multivariate- Vector Autoregressive}{28}{subsection.4.2.5}
+\contentsline {section}{\numberline {4.3}Hypothesis Testing}{28}{section.4.3}
+\contentsline {chapter}{\numberline {5}Analysis of System Results}{31}{chapter.5}
+\contentsline {section}{\numberline {5.1}Overview of System Results}{31}{section.5.1}
+\contentsline {section}{\numberline {5.2}Analysis of Each Method}{34}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Slope Based Anomaly Detection}{35}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Linear Regression}{48}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Window Based Correlation}{54}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Multivariate Time Series- Vector Autoregressive}{61}{subsection.5.2.4}
+\contentsline {subsection}{\numberline {5.2.5}Graph Based Anomaly Detection}{64}{subsection.5.2.5}
+\contentsline {chapter}{\numberline {6}Results and Findings}{68}{chapter.6}
+\contentsline {chapter}{\numberline {7}Conclusion and Future Work}{82}{chapter.7}
+\contentsline {section}{\numberline {7.1}Conclusion}{82}{section.7.1}
+\contentsline {section}{\numberline {7.2}Future Work}{82}{section.7.2}
+\contentsline {chapter}{Bibliography}{84}{chapter*.12}
+\contentsline {chapter}{\numberline {A}Window Based Correlation}{87}{appendix.A}
+\contentsline {section}{\numberline {A.1}Introduction}{87}{section.A.1}
+\contentsline {section}{\numberline {A.2}Related Functions}{88}{section.A.2}
+\contentsline {subsection}{\numberline {A.2.1}correlation(arr1, arr2, maxlag, pos, neg)}{88}{subsection.A.2.1}
+\contentsline {subsection}{\numberline {A.2.2}getMaxCorr(arar1,positive\_correlation)}{88}{subsection.A.2.2}
+\contentsline {subsection}{\numberline {A.2.3}correlationAtLag(series1, series2, lag, window\_size)}{89}{subsection.A.2.3}
+\contentsline {subsection}{\numberline {A.2.4}WindowCorrelationWithConstantLag(arr1, arr2, window\_size,maxlag, positive\_correlation, pos, neg)}{90}{subsection.A.2.4}
+\contentsline {subsection}{\numberline {A.2.5}anomaliesFromWindowCorrelationWithConstantlag\\(arr1, arr2, window\_size=15,maxlag=15, \\positive\_correlation=True, pos=1, neg=1, \\ default\_threshold = True, threshold = 0):}{91}{subsection.A.2.5}
+\contentsline {section}{\numberline {A.3}Description}{92}{section.A.3}
+\contentsline {chapter}{\numberline {B}Slope Based Detection}{94}{appendix.B}
+\contentsline {section}{\numberline {B.1}Introduction}{94}{section.B.1}
+\contentsline {section}{\numberline {B.2}Related Functions}{95}{section.B.2}
+\contentsline {subsection}{\numberline {B.2.1}slopeBasedDetection(series1,smoothed1,\\series2,smoothed2, next\_val\_to\_consider,\\ default\_threshold, threshold, what\_to\_consider)}{95}{subsection.B.2.1}
+\contentsline {subsection}{\numberline {B.2.2}anomalyDatesSlopeBaseddetetion\\(slopeBasedResult,any\_series)}{96}{subsection.B.2.2}
+\contentsline {subsection}{\numberline {B.2.3}slopeBased(series1,smoothed1,series2,smoothed2,\\next\_val\_to\_consider, default\_threshold, \\threshold, what\_to\_consider)}{96}{subsection.B.2.3}
+\contentsline {section}{\numberline {B.3}Description}{97}{section.B.3}
+\contentsline {chapter}{\numberline {C}Linear Regression}{99}{appendix.C}
+\contentsline {section}{\numberline {C.1}Introduction}{99}{section.C.1}
+\contentsline {section}{\numberline {C.2}Related Functions}{100}{section.C.2}
+\contentsline {subsection}{\numberline {C.2.1}linear\_regression(x\_series, y\_series, param = 0, default\_threshold = True, threshold = 0)}{100}{subsection.C.2.1}
+\contentsline {subsection}{\numberline {C.2.2}anomalies\_from\_linear\_regression(result\_of\_lr, any\_series)}{101}{subsection.C.2.2}
+\contentsline {subsection}{\numberline {C.2.3}linear\_regressionMain(x\_series, y\_series, param = 0, default\_threshold = True, threshold = 0)}{102}{subsection.C.2.3}
+\contentsline {section}{\numberline {C.3}Description}{103}{section.C.3}
+\contentsline {chapter}{\numberline {D}Graph Based Anomaly Detection Technique}{104}{appendix.D}
+\contentsline {section}{\numberline {D.1}Introduction}{104}{section.D.1}
+\contentsline {section}{\numberline {D.2}Related Functions}{105}{section.D.2}
+\contentsline {subsection}{\numberline {D.2.1}graphBasedAnomalyCall(dependentVar, numberOfVals, timeSeriesFileNames)}{105}{subsection.D.2.1}
+\contentsline {subsection}{\numberline {D.2.2}generateCSVsForGraphBasedAnomaly(lists, dateIndex, seriesIndex)}{106}{subsection.D.2.2}
+\contentsline {subsection}{\numberline {D.2.3}getAnomalies(dates,resultFile, numOfPtsReqd)}{108}{subsection.D.2.3}
+\contentsline {subsection}{\numberline {D.2.4}graphBasedAnomalyMain(lists, dependentVar, numOfPtsReqd, dateIndex=0, seriesIndex=1)}{108}{subsection.D.2.4}
+\contentsline {section}{\numberline {D.3}Description}{109}{section.D.3}
+\contentsline {chapter}{\numberline {E}Multivariate Time Series Anomaly Detection Technique}{110}{appendix.E}
+\contentsline {section}{\numberline {E.1}Introduction}{110}{section.E.1}
+\contentsline {section}{\numberline {E.2}Related Functions}{111}{section.E.2}
+\contentsline {subsection}{\numberline {E.2.1}MultivariateAnomaly(fileName,hd, paramCount,fileStart)}{111}{subsection.E.2.1}
+\contentsline {subsection}{\numberline {E.2.2}multivaraiateAnalysis(args)}{112}{subsection.E.2.2}
+\contentsline {subsection}{\numberline {E.2.3}csvTransform(filePath,startDate)}{112}{subsection.E.2.3}
+\contentsline {section}{\numberline {E.3}Description}{112}{section.E.3}
