@@ -1,15 +1,78 @@
 \chapter{Results and Findings}
 
-The final results given by the system on comapring differnet timeseries for two centers- Delhi and Mumbai, are as following:
+The analysis was performed for different time-series of two centers- Delhi and Mumbai.
 
-\textbf{Note:} In following figures, Yellow highlighted regions are system reported anomalies for which no corresponding news article was present, Blue highlighted region represents news article for which our system did not report any anomaly and Red highlighted region represents anomalies reported by system for which news articles were present.
+Following analysis is for Mumbai. In case of Mumbai, there are total of 66 distinct days for which news articles exist. Here, articles not matched represents unique dates for which articles were present but system failed to report anomaly against that date.
+
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}{| L{3cm} | L{3cm} | L{3cm} | L{3cm} | L{3cm} |}
+\hline                                 
+				  & \textbf{Anomalies \newline Reported} & \textbf{Anomalies \newline Matched}  & \textbf{Articles \newline Not Matched}   & \textbf{Articles Not Matched which stated traders nexus as reason} \\ \hline
+\textbf{Retail Vs Average Retail} & 125                         & 64                          &  49                		&  12 (24.49\%)                \\ \hline
+\textbf{Retail Vs Arrival}        & 323                         & 153                         &  33                		&  9  (27.27\%)              \\ \hline
+\textbf{Retail Vs Wholesale}      & 160                         & 52                          &  52                		&  14 (26.92\%)               \\ \hline
+\textbf{Wholesale Vs Arrival}     & 332                         & 168                         &  29                		&  7  (24.13\%)              \\ \hline
+\end{tabular}}
+\caption{System Result for Mumbai}
+\label{result}
+\end{table}
+
+
+Following are the inferences from the above table:
+\begin{itemize}
+ \item Analysis involving arrival timeseries tends to produce better matches. This could be because arrival is one of the determining factor for the price of commodity. Also, news often compare arrival data to explain the suspicious scenarios.
+ \item Retail vs Average Retail does not produce good matches which shows that the prices at different centers tend to go in tendum which might be because of strong traders nexus.
+ \item Retail vs Wholesale is not performing good results which gives a clear indication that usually retail prices align with the wholesale prices. So, retailers don't tend to get involved in the fixing of prices because they are forced to align the price of commodity with the wholesale prices.
+ \item This also indirectly indicates that the most of the problem exists at the wholesale level where traders operate who are usually accused by the news reports for manipulating the price of commodity.
+\end{itemize}
+
+As shown in the above table \ref{result}, from the number of news articles which are missed by system, almost 25\% of them are of traders nexus. Rest 75\% are because of low production, unseasonal rainfall, low supply, etc. Now, one of the reason why these articles were missed may be because of arrival was low during this tenure and it is normal to have price hike. So, that might be reason that system might have considered them as normal. Usually news sources report in article whenever prices goes high.
+
+
+\begin{table}[H]
+	\centering	
+	\resizebox{\textwidth}{!}{
+	\begin{tabular}{|c|c|}
+		\hline
+		\textbf{Date} & \textbf{News article}\\ \hline
+		2012-12-27   &  http://timesofindia.indiatimes.com/india/Onion-prices-80-higher-than-last-year/articleshow/17774280.cms                                            \\ \hline
+		2013-01-22   & http://www.business-standard.com/article/markets/onion-prices-up-sharply-on-transport-cost-113012200072\_1.html                                            \\ \hline
+		2013-01-30   & http://www.firstpost.com/business/economy/rise-in-onion-prices-temporary-phenomenon-pawar-607494.html                                             \\ \hline
+		2013-07-03   & http://www.business-standard.com/article/markets/heavy-crop-damage-in-hilly-states-lifts-onion-potato-prices-113070300796\_1.html                                            \\ \hline
+		2014-06-20   & http://timesofindia.indiatimes.com/business/india-business/Despite-record-onion-yield-prices-shoot-up/articleshow/36853238.cms                                            \\ \hline
+		2014-06-30   & http://timesofindia.indiatimes.com/india/Retail-onion-prices-soar-to-double-of-wholesale-rates/articleshow/37490678.cms                                            \\ \hline
+		2014-07-01   & \pbox{20cm}{http://profit.ndtv.com/news/industries/article-onion-prices-shoot-up-no-relief-in-sight-574345 \\ http://www.moneycontrol.com/news/economy/budget-carvan-how-will-modi-tackle-onion-pricing-web\_1116723.html}                                \\ \hline
+	\end{tabular}}
+	\caption{Common 7 News articles with trader nexus as reason missed by system}
+	\label{table:missed7}
+\end{table}
+
+Now, the one which are stating traders nexus as reason, and are missed by system were studied. There are 7 cases which were excluded from all the analysis. These 7 dates are shown in table \ref{table:missed7}. Note that there exist 24 unique dates for which trader nexus articles are present. So 71\% of traders nexus article were reported by system overall. So, we tried to dig up why system missed remaining ones. On studying those cases, we found following:
+
+\begin{itemize}
+
+	\item When we looked for Retail vs Average Retail series, we found that all centers were behaving similar. Whereas this analysis detects when one center deviates from other. That's why system might have missed them. One more point to note is that these articles are for traders nexus and it is quite common that traders will be communicating among themselves and controlling the prices and that is the reason why we observed that centers are behaving similar.
+	
+	\item For Retail vs Arrival analysis, Hypothesis 1 reported some of the anomalies, but Hypothesis 3 did not. Hypothesis 3 reports anomalies date-wise and Hypothesis 1 reports anomalies window-wise. So, we found that while taking intersection these anomalies got removed. Note that in Hypothesis 3 not exact date, but nearby dates were reported.
+	
+	\item When we studied Retail vs Wholesale Analysis, we found that in all cases, both prices were moving hand in hand. So, this analysis could not capture these anomalies. \textbf{ Note that this might be the reason, why Retail vs Average Retail and Retail vs Wholesale are not producing promising results because they usually go hand in hand. But when arrival comes into picture, then we can have better estimate of prices. So analysis which is with arrival are performing better as compared to others}
+	
+	\item For Wholesale vs Arrival, 3 of the anomalies were reported by Hypothesis 1. But as stated above for Retail vs Arrival, here too Hypothesis 3 results could not report exact date and we missed them. For the remaining cases in this analysis, we could not find particular reason why they are not reported.
+	
+\end{itemize}
+
+Following figures are the pictorial representation of the above (Table \ref{result}) results on time-line.
+
+\textbf{Note:} In following figures, Yellow highlighted regions are system reported anomalies for which no corresponding news article was present, Violet highlighted region represents news article for which our system did not report any anomaly and Red highlighted region represents anomalies reported by system for which news articles were present.
 
 \begin{itemize}
  \item Retail Price vs Average Retail Price
 			
 			\begin{figure}[H]
 		    	\centering
-  		    	\includegraphics[width=0.8\textwidth]{graphs/MumbaiRetailVsAverageRetail.png}
+  		    	\includegraphics[width=1.1\textwidth]{graphs/RvsAvg_Whole.png}
 		    	\caption{System Result (Green line - Centre Retail Price, Blue Line - Average Retail Price)}
 		    	\label{fig:RvsR}
 			\end{figure}
@@ -19,7 +82,7 @@ The final results given by the system on comapring differnet timeseries for two 
 			
 			\begin{figure}[H]
 		    	\centering
-  		    	\includegraphics[width=0.8\textwidth]{graphs/mumbaiRvsA.png}
+  		    	\includegraphics[width=1.1\textwidth]{graphs/RetailVsArrival_whole.png}
 		    	\caption{System Result (Green line - Arrival Data of Onion, Blue Line - Retail Price)}
 		    	\label{fig:RvsA}
 			\end{figure}
@@ -29,7 +92,7 @@ The final results given by the system on comapring differnet timeseries for two 
 			
 			\begin{figure}[H]
 		    	\centering
-  		    	\includegraphics[width=0.8\textwidth]{graphs/MumbaiRvsW.png}
+  		    	\includegraphics[width=1.1\textwidth]{graphs/retailVsWS_Whole.png}
 		    	\caption{System Result (Green line - Retail Price, Blue Line - Wholesale Price)}
 		    	\label{fig:RvsW}
 			\end{figure}
@@ -39,7 +102,7 @@ The final results given by the system on comapring differnet timeseries for two 
 			
 			\begin{figure}[H]
 		    	\centering
-  		    	\includegraphics[width=0.8\textwidth]{graphs/mumbaiWvsA.png}
+  		    	\includegraphics[width=1.1\textwidth]{graphs/WSvsArrival_Whole.png}
 		    	\caption{System Result (Green line - Arrival Data of Onion, Blue Line - Wholesale Price)}
 		    	\label{fig:WvsA}
 			\end{figure}
@@ -48,26 +111,25 @@ The final results given by the system on comapring differnet timeseries for two 
 \end{itemize}
 
 
-Here are few examples comparing system results with the news articles and what news articles are saying about price hike.
-
+Following table has few examples showing system reported anomalies and an article supporting it.
 
 \begin{table}[H]
 \centering
 \resizebox{\textwidth}{!}{
-\begin{tabular}{|l|l|l|l|}
+\begin{tabular}{|c|c|c|c|}
 \hline
-System Reported Date & Analysis                 & Reason                        & Title                                                                  \\ \hline
-2010-12-23           & Wholesale vs Arrival     & unseasonal rainfall           & \href{http://timesofindia.indiatimes.com/city/pune/Onion-prices-still-leave-consumers-teary-eyed/articleshow/7147525.cms}{Onion prices still leave consumers teary-eyed}                          \\ \hline
-2010-12-21           & Wholesale vs Arrival     & traders nexus/hoarding        & \href{http://articles.economictimes.indiatimes.com/2010-12-21/news/27586208_1_minimum-export-price-onion-prices-mep}{Sharp rise in onion price due to hoarding}                              \\ \hline
-2013-10-23           & Retail vs Wholesale      & bad weather                   & \href{http://www.hindustantimes.com/india/rs-100-and-rising-onion-prices-surge-uncontrollably/story-sFzxWMO87KI5KnQ2FXdLFL.html}{Rs 100 and rising: onion prices surge uncontrollably}                   \\ \hline
-2013-10-24           & Retail vs Wholesale      & traders nexus/hoarding        & \href{http://www.thehindu.com/business/Industry/india-floats-tender-for-import-of-onions/article5264970.ece}{India floats tender for import of onions}                              \\ \hline
-2013-07-23           & Retail vs Arrival        & low production                & \href{http://timesofindia.indiatimes.com/business/india-business/Onion-prices-more-than-double-to-Rs-36-40/kg-in-metros/articleshow/21272374.cms}{Onion prices more than double to Rs 36-40/kg in metros}                 \\ \hline
-2013-07-23           & Retail vs Arrival        & traders nexus/hoarding        & \href{http://www.business-standard.com/article/markets/ban-on-onion-exports-won-t-impact-domestic-prices-113072300848_1.html}{Ban on onion exports won't impact domestic prices}                      \\ \hline
-2014-07-07           & Wholesale vs Arrival     & prediction of delayed monsoon & \href{http://timesofindia.indiatimes.com/business/india-business/Govt-hikes-minimum-export-price-of-onion-to-US-500-per-tonne/articleshow/37630139.cms}{Govt to check onion prices with imports}                                \\ \hline
-2014-07-07           & Wholesale vs Arrival     & traders nexus/hoarding        & \href{http://articles.economictimes.indiatimes.com/2014-07-03/news/51057542_1_stock-limits-onions-ravi-shankar-prasad}{Government puts stock limits on onions \& potatoes to check prices}     \\ \hline
-2014-07-13           & Wholesale vs Arrival     & low production                & \href{http://timesofindia.indiatimes.com/india/Govt-to-check-onion-prices-with-imports/articleshow/38282324.cms}{Govt hikes minimum export price of onion to US\$ 500 per tonne}         \\ \hline
-2013-08-11           & Retail vs Average Retail & low production                & \href{http://www.dnaindia.com/india/report-onion-prices-rise-to-rs-55-60kg-hike-bring-tears-in-eyes-of-people-1873151}{Onion prices rise to Rs 55-60/kg, hike bring 'tears' in eyes of people} \\ \hline
-2013-08-17           & Retail vs Average Retail & traders nexus/hoarding        & \href{http://timesofindia.indiatimes.com/india/Hoarding-pushing-onion-prices-up-govt-finds/articleshow/21872501.cms}{Hoarding pushing onion prices up, govt finds}                           \\ \hline
+\textbf{System Reported Tenure} & \textbf{News Articles Link}                                                                                             & \textbf{Analysis Type} & \textbf{Location} \\ \hline
+27-Dec-2010 to 29-Dec-2010      & http://timesofindia.indiatimes.com/city/pune/Onion-prices-still-leave-consumers-teary-eyed/articleshow/7147525.cms      & Retail vs Average      & Mumbai            \\ \hline
+17-Oct-2013 to 27-Oct-2013      & http://timesofindia.indiatimes.com/india/Panic-grips-Union-govt-as-onion-price-hits-Rs-100-a-kg/articleshow/24563164.cms       & Retail vs Average      & Mumbai            \\ \hline
+15-Dec-2010 to 13-Jan-2011      & http://articles.economictimes.indiatimes.com/2010-12-21/news/27586208\_1\_minimum-export-price-onion-prices-mep         & Retail vs Arrival      & Mumbai            \\ \hline
+17-Oct—2013 to 25-Nov-2013      & http://www.dnaindia.com/mumbai/report-dna-exclusive-traders-not-farmers-making-the-most-of-soaring-onion-price-1909850  & Retail vs Arrival      & Mumbai            \\ \hline
+29-Jun-2014 to 06-July-2014     & http://timesofindia.indiatimes.com/india/Retail-onion-prices-soar-to-double-of-wholesale-rates/articleshow/37490678.cms & Retail vs Arrival      & Delhi             \\ \hline
+18-Nov-2013 to 24-Nov-2013      & http://www.firstpost.com/politics/onion-tomato-price-hoardings-to-malign-party-cong-writes-to-ec-1238589.html           & Retail vs Wholesale    & Mumbai            \\ \hline
+21-Oct-2013 to 04-Nov-2013      & http://www.dnaindia.com/mumbai/report-dna-exclusive-traders-not-farmers-making-the-most-of-soaring-onion-price-1909850  & Retail vs Wholesale    & Mumbai            \\ \hline
+27-Oct-2013 to 03-Nov-2013      & http://www.thehindu.com/business/Industry/monopoly-of-wholesale-trade-causing-onion-price-hike/article5264512.ece     & Retail vs Wholesale    & Delhi             \\ \hline
+17-Oct-2013 to 24-Nov-2013      & http://www.moneycontrol.com/news/economy/onion-prices-remain-high-at-rs-100kg-crisis-to-continue\_976318.html           & Wholesale vs Arrival   & Mumbai            \\ \hline
+15-Dec-2010 to 12-Jan-2011      & http://timesofindia.indiatimes.com/city/pune/Onion-prices-still-leave-consumers-teary-eyed/articleshow/7147525.cms         & Wholesale vs Arrival   & Mumbai            \\ \hline
+29-Jun-2014 to 05-July-2014     & http://timesofindia.indiatimes.com/india/Retail-onion-prices-soar-to-double-of-wholesale-rates/articleshow/37490678.cms & Wholesale vs Arrival   & Delhi             \\ \hline
 \end{tabular}}
 
 \caption{Few Examples}
@@ -75,14 +137,165 @@ System Reported Date & Analysis                 & Reason                        
 
 \end{table}
 
-Few of the analysis which were local to center could not be matched with national news articles, but on digging more in regional news article, we could justify the anomaly. One of such case is the anomaly reported on 7th and 8th January 2013, for which news was reported in \href{http://www.jagran.com/news/business-onion-price-affected-from-fog-9987751.html}{Jagran local news paper} on 28th December 2012 which says due to fog there was disruption in the supply of onions. Despite of the speculation on low arrival of onion we observed considerable hike in arrival (which could be hoarded onion stocks brought into market) to earn better profits to take advantage of increased price of onion. Also, we have observed 2 news articles suspecting traders' nexus as the reason for the increased onion prices.
+Explaination of all the cases listed in table are as following:
+
+\begin{itemize}
+ \item 27-Dec-2010 to 29-Dec-2010 : According to our hypothesis 4, price trends at different centers should behave similar. But, here retail price of onion in Mumbai took a sharp rise then faced a downfall which was not seen being followed by Delhi. Instead retail prices at Delhi continued to grow. There were multiple news articles for the same tenure which claimed unseasonal rainfall/traders nexus as reason for anomaly. One of the article link is given in table. (See Figure \ref{fig:Mumbai_RetailvsAvg_ill1})
+ 
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{graphs/Mumbai_RetailvsAvg_ill1.png}
+	\caption{Case: 27-Dec-2010 to 29-Dec-2010 (Green line - Centre Retail Price, Blue Line - Average Retail Price)}
+	\label{fig:Mumbai_RetailvsAvg_ill1}
+	\end{figure}
+  
+  
+  Similar is observed for 17-Oct-2013 to 27-Oct-2013. (See Figure \ref{fig:Mumbai_RetailvsAvg_ill2})
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{graphs/Mumbai_RetailvsAvg_ill2.png}
+	\caption{Case: 17-Oct-2013 to 27-Oct-2013 (Green line - Centre Retail Price, Blue Line - Average Retail Price)}
+	\label{fig:Mumbai_RetailvsAvg_ill2}
+	\end{figure}
+\item 15-Dec-2010 to 13-Jan-2011 : There was a decrease in the arrival of onion in Mumbai at the start of December which resulted in the increase of retail price. Later arrival seemed nearly constant or increasing but prices continued to grow high. The arrival also increased when the prices were very high which could be the arrival of hoarded stock in market for profiteering.
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{graphs/Mumbai_RetailvsArrival_ill1.png}
+	\caption{Case: 15-Dec-2010 to 13-Jan-2011 (Green line - Arrival Data of Onion, Blue Line - Retail Price)}
+	\label{fig:Mumbai_RetailvsArrival_ill1}
+	\end{figure}
+
+Similar is observed for 17-Oct-2013 to 25-Nov-2013. (See Figure \ref{fig:Mumbai_RetailvsArrival_ill2})
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{graphs/Mumbai_RetailvsArrival_ill2.png}
+	\caption{Case: 17-Oct-2013 to 25-Nov-2013 (Green line - Arrival Data of Onion, Blue Line - Retail Price)}
+	\label{fig:Mumbai_RetailvsArrival_ill2}
+	\end{figure}
+
+Similar is observed for 29-Jun-2014 to 06-July-2014 in Delhi. (See Figure \ref{fig:Delhi_RetailvsArrival_ill1})
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{graphs/Delhi_RetailvsArrival_ill1.png}
+	\caption{Case: 29-Jun-2014 to 06-July-2014 (Green line - Arrival Data of Onion, Blue Line - Retail Price)}
+	\label{fig:Delhi_RetailvsArrival_ill1}
+	\end{figure}
+
+\item 18-Nov-2013 to 24-Nov-2013 : Retail prices are decided by wholesale price. But here in Mumbai, retail price continued to remain high despite of decrease in the wholesale price. (See Figure \ref{fig:Mumbai_RetailvsWS_ill1})
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{graphs/Mumbai_RetailvsWS_ill1.png}
+	\caption{Case: 18-Nov-2013 to 24-Nov-2013 (Green line - Retail Price, Blue Line - Wholesale Price)}
+	\label{fig:Mumbai_RetailvsWS_ill1}
+	\end{figure}	
+Similar is observed for 21-Oct-2013 to 04-Nov-2013. (See Figure \ref{fig:Mumbai_RetailvsWS_ill2})
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{graphs/Mumbai_RetailvsWS_ill2.png}
+	\caption{Case: 21-Oct-2013 to 04-Nov-2013 (Green line - Retail Price, Blue Line - Wholesale Price)}
+	\label{fig:Mumbai_RetailvsWS_ill2}
+	\end{figure}
+
+Similar is observed for 27-Oct-2013 to 03-Nov-2013 in Delhi. (See Figure \ref{fig:Delhi_RetailvsWS_ill1})
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{graphs/Delhi_RetailvsWS_ill1.png}
+	\caption{Case: 27-Oct-2013 to 03-Nov-2013 (Green line - Retail Price, Blue Line - Wholesale Price)}
+	\label{fig:Delhi_RetailvsWS_ill1}
+	\end{figure}
+
+\item 17-Oct-2013 to 24-Nov-2013 : Market observed increase in the arrival on increase of wholesale in Mumbai. The supply crunch could be man-made which resulted in increase in wholesale price and then to take advantage of increased prices, stocks were released in market. (See Figure \ref{fig:Mumbai_WSvsArrival_ill1})
+      \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.8\textwidth]{graphs/Mumbai_WSvsArrival_ill1.png}
+      \caption{Case : 17-Oct-2013 to 24-Nov-2013 (Green line - Arrival Data of Onion, Blue Line - Wholesale Price)}
+      \label{fig:Mumbai_WSvsArrival_ill1}
+      \end{figure}
+Similar is observed for 15-Dec-2010 to 12-Jan-2011. The tenure has articles on the unseasonal rainfall which might have resulted into into hoarding of stocks by traders. (See Figure \ref{fig:Mumbai_WSvsArrival_ill2})
+      \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.8\textwidth]{graphs/Mumbai_WSvsArrival_ill2.png}
+      \caption{Case : 15-Dec-2010 to 12-Jan-2011 (Green line - Arrival Data of Onion, Blue Line - Wholesale Price)}
+      \label{fig:Mumbai_WSvsArrival_ill2}
+      \end{figure}
+Similar is observed for 29-Jun-2014 to 05-July-2014 in Delhi. (See Figure \ref{fig:Delhi_WSvsArrival_ill1})
+      \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.8\textwidth]{graphs/Delhi_WSvsArrival_ill1.png}
+      \caption{Case : 29-Jun-2014 to 05-July-2014 (Green line - Arrival Data of Onion, Blue Line - Wholesale Price)}
+      \label{fig:Delhi_WSvsArrival_ill1}
+      \end{figure}
+\end{itemize}
+
+
+Few of the analysis which were local to center could not be matched with national news articles, but on digging more in regional news article, we could justify the anomaly. One of such case is the anomaly reported on 7th and 8th January 2013, in Delhi, for which news was reported in \href{http://www.jagran.com/news/business-onion-price-affected-from-fog-9987751.html}{Jagran local news paper} on 28th December 2012 which says due to fog there was disruption in the supply of onions. Despite of the speculation on low arrival of onion we observed considerable hike in arrival (which could be hoarded onion stocks brought into market) to earn better profits to take advantage of increased price of onion. Also, we have observed 2 news articles suspecting traders' nexus as the reason for the increased onion prices.
 
 
 			\begin{figure}[H]
 		    	\centering
-  		    	\includegraphics[width=0.8\textwidth]{graphs/12131.png}
-		    	\caption{Slope Based Anomaly Detection (Green line - Retail Price, Blue Line - Wholesale Price)}
-		    	\label{fig:12131}
+  		    	\includegraphics[width=1.1\textwidth]{graphs/localDelhiRegionalNewsPlusNexus.png}
+		    	\caption{System Result (Green line - Arrival Data of Onion, Blue Line - Retail Price)}
+		    	\label{fig:localExample}
 			\end{figure}
 			
-			
+News Article stated the following,
+
+		\begin{figure}[H]
+		    	\centering
+  		    	\includegraphics[width=1.1\textwidth]{graphs/localDelhiFog.png}
+		    	\caption{Jagran News paper article}
+		    	\label{fig:localDelhiFog}
+		\end{figure}
+		
+
+We also tried to run system by changing window size for different methods. We got the following results:
+		
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+	x tick label style={
+		/pgf/number format/1000 sep=},
+	enlargelimits=0.05,
+	legend style={at={(0.5,-0.1)},
+	anchor=north,legend columns=-1},
+	ybar interval=0.7,
+]
+
+\addplot 
+	coordinates {(1,51.2) (2,47.37)
+		 (3,32.5) (4,50.6) (5,60)};
+\addplot 
+	coordinates {(1,53.78) (2,47.24)
+		 (3,35.26) (4,47.74) (5,60)};
+\addplot 
+	coordinates {(1,48.45) (2,45.37)
+		 (3,37.72) (4,46.02) (5,60)};
+\addplot 
+	coordinates {(1,55.4) (2,45.16)
+		 (3,35.09) (4,52.98) (5,60)};	
+		 
+		 
+\legend{A, B, C, D}
+\end{axis}
+\end{tikzpicture}
+\caption{Anomaly Reported, (1-Retail vs Average Retail, 2-Retail vs Arrival, 3-Retail vs Wholesale, 4-Wholesale vs Arrival)}
+\label{fig:comparisonMultipleWindows}
+\end{figure}
+
+Where,
+\begin{itemize}
+ \item A - Result with 15 as Correlation Window and 7 as Slope Based Window
+ \item B - Result with 10 as Correlation Window and 4 as Slope Based Window
+ \item C - Result with 20 as Correlation Window and 4 as Slope Based Window
+ \item D - Result with 7 as Correlation Window and 4 as Slope Based Window
+\end{itemize}
+
+
+Figure \ref{fig:comparisonMultipleWindows} shows comparison of system result taking different window size for correlation and slope based anomaly detection mathod. Note that for all of these methods, default threshold value was considered, user did not provided any threshold value. From figure \ref{fig:comparisonMultipleWindows}, we see that some window size performs better for some type of analysis and may not be for other. So, user may need to run the system with different window sizes for different analysis. 			
