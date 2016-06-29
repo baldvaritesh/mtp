@@ -243,9 +243,14 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         # sys.exit(0)
         
         # Plot Graph for i'th center
-        # plotGraphForHypothesis(c_list, avgRetailTimeSeries, slopeBased_result, filteredResult_slope_based, all_articles_graphBasedAnomaly)
+        plotGraphForHypothesis(c_list, avgRetailTimeSeries, slopeBased_result, filteredResult_slope_based, all_articles_graphBasedAnomaly)
+        plotGraphForHypothesis(c_list, avgRetailTimeSeries, correlationBased_result, filteredResult_correlation_based, all_articles_graphBasedAnomaly)
         # plotGraphForHypothesis(c_list, avgRetailTimeSeries, linearRegression_result, filteredResult_linear_regression, all_articles_graphBasedAnomaly)
         # plotGraphForHypothesis(c_list, avgRetailTimeSeries, graphBasedAnomaly_result, filteredResult_graph_based, all_articles_graphBasedAnomaly)
+        # plotGraphForHypothesis(c_list, avgRetailTimeSeries, union_result_of_H1, filteredResult_union_of_h1, all_articles_graphBasedAnomaly)
+        # plotGraphForHypothesis(c_list, avgRetailTimeSeries, union_result_of_H3, filteredResult_union_of_h3, all_articles_graphBasedAnomaly)
+        #plotGraphForHypothesis(c_list, avgRetailTimeSeries, intersection_result_with_H3, filteredResult_intersection, all_articles_graphBasedAnomaly)
+        
         
         # Save system results in dictionary to process further
         RvsR_anomalies_union_of_H3[2*i]  = union_result_of_H3
@@ -395,9 +400,12 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         print "\n\n\n\n"
         
         # Plot Graph for i'th center
-        # plotGraphForHypothesisArrival(c_list, retailList[i], slopeBased_result, filteredResult_slope_based, all_articles_graphBasedAnomaly)
+        #plotGraphForHypothesisArrival(c_list, retailList[i], slopeBased_result, filteredResult_slope_based, all_articles_graphBasedAnomaly)
+        #plotGraphForHypothesisArrival(c_list, retailList[i], correlationBased_result, filteredResult_correlation_based, all_articles_graphBasedAnomaly)
         # plotGraphForHypothesisArrival(c_list, retailList[i], linearRegression_result, filteredResult_linear_regression, all_articles_graphBasedAnomaly)
         # plotGraphForHypothesisArrival(c_list, retailList[i], graphBasedAnomaly_result, filteredResult_graph_based, all_articles_graphBasedAnomaly)
+        plotGraphForHypothesisArrival(c_list, retailList[i], union_result_of_H1, filteredResult_union_of_h1, all_articles_graphBasedAnomaly)
+        plotGraphForHypothesisArrival(c_list, retailList[i], union_result_of_H3, filteredResult_union_of_h3, all_articles_graphBasedAnomaly)
         
         # Save system results in dictionary to process further
         RvsA_anomalies_union_of_H3[2*i]  = union_result_of_H3
@@ -543,10 +551,12 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         print "\n\n\n\n"
         
         # Plot Graph for i'th center
-        # plotGraphForHypothesis(c_list, wholesaleList[i], slopeBased_result, filteredResult_slope_based, all_articles_graphBasedAnomaly)
+        #plotGraphForHypothesis(c_list, wholesaleList[i], slopeBased_result, filteredResult_slope_based, all_articles_graphBasedAnomaly)
+        #plotGraphForHypothesis(c_list, wholesaleList[i], correlationBased_result, filteredResult_correlation_based, all_articles_graphBasedAnomaly)
         # plotGraphForHypothesis(c_list, wholesaleList[i], linearRegression_result, filteredResult_linear_regression, all_articles_graphBasedAnomaly)
         # plotGraphForHypothesis(c_list, wholesaleList[i], graphBasedAnomaly_result, filteredResult_graph_based, all_articles_graphBasedAnomaly)
-        
+        plotGraphForHypothesis(c_list, wholesaleList[i], union_result_of_H1, filteredResult_union_of_h1, all_articles_graphBasedAnomaly)
+        plotGraphForHypothesis(c_list, wholesaleList[i], union_result_of_H3, filteredResult_union_of_h3, all_articles_graphBasedAnomaly)
         # Save system results in dictionary to process further
         RvsW_anomalies_union_of_H3[2*i]  = union_result_of_H3
         RvsW_anomalies_union_of_H1[2*i] = union_result_of_H1
@@ -693,9 +703,12 @@ def hypothesisForCenter(numOfFiles, *timeSeriesFileNames):
         print "\n\n\n\n"
         
         # Plot Graph for i'th center
-        # plotGraphForHypothesisArrival(c_list, wholesaleList[i], slopeBased_result, filteredResult_slope_based, all_articles_graphBasedAnomaly)
+        #plotGraphForHypothesisArrival(c_list, wholesaleList[i], slopeBased_result, filteredResult_slope_based, all_articles_graphBasedAnomaly)
+        #plotGraphForHypothesisArrival(c_list, wholesaleList[i], correlationBased_result, filteredResult_correlation_based, all_articles_graphBasedAnomaly)
         # plotGraphForHypothesisArrival(c_list, wholesaleList[i], linearRegression_result, filteredResult_linear_regression, all_articles_graphBasedAnomaly)
         # plotGraphForHypothesisArrival(c_list, wholesaleList[i], graphBasedAnomaly_result, filteredResult_graph_based, all_articles_graphBasedAnomaly)
+        #plotGraphForHypothesisArrival(c_list, wholesaleList[i], union_result_of_H1, filteredResult_union_of_h1, all_articles_graphBasedAnomaly)
+        #plotGraphForHypothesisArrival(c_list, wholesaleList[i], union_result_of_H3, filteredResult_union_of_h3, all_articles_graphBasedAnomaly)
         
         # Save system results in dictionary to process further
         WvsA_anomalies_union_of_H3[2*i]  = union_result_of_H3

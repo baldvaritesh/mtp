@@ -1,6 +1,8 @@
 import numpy
 import numpy as np
 import csv
+import matplotlib
+matplotlib.rcParams.update({'font.size': 22})
 import matplotlib.pyplot as plt
 import datetime
 import StringIO
@@ -87,7 +89,7 @@ def fetchNewsForCenter(resultsOfSystem, centerNumber, intervalToConsider=5):
 		result[date] = resultOfThisDate
 		
 	# Fetch all dates of news articles corresponding to this center
-	query = "select distinct publish_date, article_hash_url, source_url, an.reason, an.comment, an.days  from articlemetadata, analysis an where  article_hash_url = an.article_id and article_hash_url in (select distinct(article_id) from analysis where  comment not ilike '%delete%' and reason not ilike '%prices dropped%' and publish_date <= '2015-07-06' and (place iLike '"+center+"' or place iLike 'india') ) order by publish_date"
+	query = "select distinct publish_date, article_hash_url, source_url, an.reason from articlemetadata, analysis an where  article_hash_url = an.article_id and article_hash_url in (select distinct(article_id) from analysis where  comment not ilike '%delete%' and reason not ilike '%prices dropped%' and publish_date <= '2015-07-06' and (place iLike '"+center+"' or place iLike 'india') ) order by publish_date"
 	
 	cur.execute(query)
 	allArticlesQueryResult = cur.fetchall()
@@ -418,6 +420,8 @@ def plotGraphForHypothesisArrival(original,average,list1, list2, total_news_arti
 	ax2.set_ylabel('Price', color='b')
 	for row in list1:
 		ax.axvspan(row[0], row[0] + timedelta(days=1), color='y', alpha=0.5, lw=0)
+
+
 	# print type(list2)
 	# print type(total_news_articles)
 	# print (list2)
