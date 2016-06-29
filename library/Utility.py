@@ -1,6 +1,8 @@
 import numpy
 import numpy as np
 import csv
+import matplotlib
+matplotlib.rcParams.update({'font.size': 22})
 import matplotlib.pyplot as plt
 import datetime
 import StringIO
@@ -418,6 +420,8 @@ def plotGraphForHypothesisArrival(original,average,list1, list2, total_news_arti
 	ax2.set_ylabel('Price', color='b')
 	for row in list1:
 		ax.axvspan(row[0], row[0] + timedelta(days=1), color='y', alpha=0.5, lw=0)
+
+
 	# print type(list2)
 	# print type(total_news_articles)
 	# print (list2)
