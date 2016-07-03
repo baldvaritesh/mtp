@@ -36,45 +36,46 @@
 \BOOKMARK [2][-]{subsection.5.2.4}{Multivariate Time Series- Vector Autoregressive}{section.5.2}% 36
 \BOOKMARK [2][-]{subsection.5.2.5}{Graph Based Anomaly Detection}{section.5.2}% 37
 \BOOKMARK [0][-]{chapter.6}{Results and Findings}{}% 38
-\BOOKMARK [0][-]{chapter.7}{Conclusion and Future Work}{}% 39
-\BOOKMARK [1][-]{section.7.1}{Conclusion}{chapter.7}% 40
-\BOOKMARK [1][-]{section.7.2}{Future Work}{chapter.7}% 41
-\BOOKMARK [0][-]{chapter*.12}{Bibliography}{}% 42
-\BOOKMARK [0][-]{appendix.A}{Window Based Correlation}{}% 43
-\BOOKMARK [1][-]{section.A.1}{Introduction}{appendix.A}% 44
-\BOOKMARK [1][-]{section.A.2}{Related Functions}{appendix.A}% 45
-\BOOKMARK [2][-]{subsection.A.2.1}{correlation\(arr1, arr2, maxlag, pos, neg\)}{section.A.2}% 46
-\BOOKMARK [2][-]{subsection.A.2.2}{getMaxCorr\(arar1,positive\137correlation\)}{section.A.2}% 47
-\BOOKMARK [2][-]{subsection.A.2.3}{correlationAtLag\(series1, series2, lag, window\137size\)}{section.A.2}% 48
-\BOOKMARK [2][-]{subsection.A.2.4}{WindowCorrelationWithConstantLag\(arr1, arr2, window\137size,maxlag, positive\137correlation, pos, neg\)}{section.A.2}% 49
-\BOOKMARK [2][-]{subsection.A.2.5}{anomaliesFromWindowCorrelationWithConstantlag\(arr1, arr2, window\137size=15,maxlag=15, positive\137correlation=True, pos=1, neg=1, \040default\137threshold = True, threshold = 0\):}{section.A.2}% 50
-\BOOKMARK [1][-]{section.A.3}{Description}{appendix.A}% 51
-\BOOKMARK [0][-]{appendix.B}{Slope Based Detection}{}% 52
-\BOOKMARK [1][-]{section.B.1}{Introduction}{appendix.B}% 53
-\BOOKMARK [1][-]{section.B.2}{Related Functions}{appendix.B}% 54
-\BOOKMARK [2][-]{subsection.B.2.1}{slopeBasedDetection\(series1,smoothed1,series2,smoothed2, next\137val\137to\137consider, default\137threshold, threshold, what\137to\137consider\)}{section.B.2}% 55
-\BOOKMARK [2][-]{subsection.B.2.2}{anomalyDatesSlopeBaseddetetion\(slopeBasedResult,any\137series\)}{section.B.2}% 56
-\BOOKMARK [2][-]{subsection.B.2.3}{slopeBased\(series1,smoothed1,series2,smoothed2,next\137val\137to\137consider, default\137threshold, threshold, what\137to\137consider\)}{section.B.2}% 57
-\BOOKMARK [1][-]{section.B.3}{Description}{appendix.B}% 58
-\BOOKMARK [0][-]{appendix.C}{Linear Regression}{}% 59
-\BOOKMARK [1][-]{section.C.1}{Introduction}{appendix.C}% 60
-\BOOKMARK [1][-]{section.C.2}{Related Functions}{appendix.C}% 61
-\BOOKMARK [2][-]{subsection.C.2.1}{linear\137regression\(x\137series, y\137series, param = 0, default\137threshold = True, threshold = 0\)}{section.C.2}% 62
-\BOOKMARK [2][-]{subsection.C.2.2}{anomalies\137from\137linear\137regression\(result\137of\137lr, any\137series\)}{section.C.2}% 63
-\BOOKMARK [2][-]{subsection.C.2.3}{linear\137regressionMain\(x\137series, y\137series, param = 0, default\137threshold = True, threshold = 0\)}{section.C.2}% 64
-\BOOKMARK [1][-]{section.C.3}{Description}{appendix.C}% 65
-\BOOKMARK [0][-]{appendix.D}{Graph Based Anomaly Detection Technique}{}% 66
-\BOOKMARK [1][-]{section.D.1}{Introduction}{appendix.D}% 67
-\BOOKMARK [1][-]{section.D.2}{Related Functions}{appendix.D}% 68
-\BOOKMARK [2][-]{subsection.D.2.1}{graphBasedAnomalyCall\(dependentVar, numberOfVals, timeSeriesFileNames\)}{section.D.2}% 69
-\BOOKMARK [2][-]{subsection.D.2.2}{generateCSVsForGraphBasedAnomaly\(lists, dateIndex, seriesIndex\)}{section.D.2}% 70
-\BOOKMARK [2][-]{subsection.D.2.3}{getAnomalies\(dates,resultFile, numOfPtsReqd\)}{section.D.2}% 71
-\BOOKMARK [2][-]{subsection.D.2.4}{graphBasedAnomalyMain\(lists, dependentVar, numOfPtsReqd, dateIndex=0, seriesIndex=1\)}{section.D.2}% 72
-\BOOKMARK [1][-]{section.D.3}{Description}{appendix.D}% 73
-\BOOKMARK [0][-]{appendix.E}{Multivariate Time Series Anomaly Detection Technique}{}% 74
-\BOOKMARK [1][-]{section.E.1}{Introduction}{appendix.E}% 75
-\BOOKMARK [1][-]{section.E.2}{Related Functions}{appendix.E}% 76
-\BOOKMARK [2][-]{subsection.E.2.1}{MultivariateAnomaly\(fileName,hd, paramCount,fileStart\)}{section.E.2}% 77
-\BOOKMARK [2][-]{subsection.E.2.2}{multivaraiateAnalysis\(args\)}{section.E.2}% 78
-\BOOKMARK [2][-]{subsection.E.2.3}{csvTransform\(filePath,startDate\)}{section.E.2}% 79
-\BOOKMARK [1][-]{section.E.3}{Description}{appendix.E}% 80
+\BOOKMARK [1][-]{section.6.1}{Analysis of Methods implemented}{chapter.6}% 39
+\BOOKMARK [0][-]{chapter.7}{Conclusion and Future Work}{}% 40
+\BOOKMARK [1][-]{section.7.1}{Conclusion}{chapter.7}% 41
+\BOOKMARK [1][-]{section.7.2}{Future Work}{chapter.7}% 42
+\BOOKMARK [0][-]{chapter*.17}{Bibliography}{}% 43
+\BOOKMARK [0][-]{appendix.A}{Window Based Correlation}{}% 44
+\BOOKMARK [1][-]{section.A.1}{Introduction}{appendix.A}% 45
+\BOOKMARK [1][-]{section.A.2}{Related Functions}{appendix.A}% 46
+\BOOKMARK [2][-]{subsection.A.2.1}{correlation\(arr1, arr2, maxlag, pos, neg\)}{section.A.2}% 47
+\BOOKMARK [2][-]{subsection.A.2.2}{getMaxCorr\(arar1,positive\137correlation\)}{section.A.2}% 48
+\BOOKMARK [2][-]{subsection.A.2.3}{correlationAtLag\(series1, series2, lag, window\137size\)}{section.A.2}% 49
+\BOOKMARK [2][-]{subsection.A.2.4}{WindowCorrelationWithConstantLag\(arr1, arr2, window\137size,maxlag, positive\137correlation, pos, neg\)}{section.A.2}% 50
+\BOOKMARK [2][-]{subsection.A.2.5}{anomaliesFromWindowCorrelationWithConstantlag\(arr1, arr2, window\137size=15,maxlag=15, positive\137correlation=True, pos=1, neg=1, \040default\137threshold = True, threshold = 0\):}{section.A.2}% 51
+\BOOKMARK [1][-]{section.A.3}{Description}{appendix.A}% 52
+\BOOKMARK [0][-]{appendix.B}{Slope Based Detection}{}% 53
+\BOOKMARK [1][-]{section.B.1}{Introduction}{appendix.B}% 54
+\BOOKMARK [1][-]{section.B.2}{Related Functions}{appendix.B}% 55
+\BOOKMARK [2][-]{subsection.B.2.1}{slopeBasedDetection\(series1,smoothed1,series2,smoothed2, next\137val\137to\137consider, default\137threshold, threshold, what\137to\137consider\)}{section.B.2}% 56
+\BOOKMARK [2][-]{subsection.B.2.2}{anomalyDatesSlopeBaseddetetion\(slopeBasedResult,any\137series\)}{section.B.2}% 57
+\BOOKMARK [2][-]{subsection.B.2.3}{slopeBased\(series1,smoothed1,series2,smoothed2,next\137val\137to\137consider, default\137threshold, threshold, what\137to\137consider\)}{section.B.2}% 58
+\BOOKMARK [1][-]{section.B.3}{Description}{appendix.B}% 59
+\BOOKMARK [0][-]{appendix.C}{Linear Regression}{}% 60
+\BOOKMARK [1][-]{section.C.1}{Introduction}{appendix.C}% 61
+\BOOKMARK [1][-]{section.C.2}{Related Functions}{appendix.C}% 62
+\BOOKMARK [2][-]{subsection.C.2.1}{linear\137regression\(x\137series, y\137series, param = 0, default\137threshold = True, threshold = 0\)}{section.C.2}% 63
+\BOOKMARK [2][-]{subsection.C.2.2}{anomalies\137from\137linear\137regression\(result\137of\137lr, any\137series\)}{section.C.2}% 64
+\BOOKMARK [2][-]{subsection.C.2.3}{linear\137regressionMain\(x\137series, y\137series, param = 0, default\137threshold = True, threshold = 0\)}{section.C.2}% 65
+\BOOKMARK [1][-]{section.C.3}{Description}{appendix.C}% 66
+\BOOKMARK [0][-]{appendix.D}{Graph Based Anomaly Detection Technique}{}% 67
+\BOOKMARK [1][-]{section.D.1}{Introduction}{appendix.D}% 68
+\BOOKMARK [1][-]{section.D.2}{Related Functions}{appendix.D}% 69
+\BOOKMARK [2][-]{subsection.D.2.1}{graphBasedAnomalyCall\(dependentVar, numberOfVals, timeSeriesFileNames\)}{section.D.2}% 70
+\BOOKMARK [2][-]{subsection.D.2.2}{generateCSVsForGraphBasedAnomaly\(lists, dateIndex, seriesIndex\)}{section.D.2}% 71
+\BOOKMARK [2][-]{subsection.D.2.3}{getAnomalies\(dates,resultFile, numOfPtsReqd\)}{section.D.2}% 72
+\BOOKMARK [2][-]{subsection.D.2.4}{graphBasedAnomalyMain\(lists, dependentVar, numOfPtsReqd, dateIndex=0, seriesIndex=1\)}{section.D.2}% 73
+\BOOKMARK [1][-]{section.D.3}{Description}{appendix.D}% 74
+\BOOKMARK [0][-]{appendix.E}{Multivariate Time Series Anomaly Detection Technique}{}% 75
+\BOOKMARK [1][-]{section.E.1}{Introduction}{appendix.E}% 76
+\BOOKMARK [1][-]{section.E.2}{Related Functions}{appendix.E}% 77
+\BOOKMARK [2][-]{subsection.E.2.1}{MultivariateAnomaly\(fileName,hd, paramCount,fileStart\)}{section.E.2}% 78
+\BOOKMARK [2][-]{subsection.E.2.2}{multivaraiateAnalysis\(args\)}{section.E.2}% 79
+\BOOKMARK [2][-]{subsection.E.2.3}{csvTransform\(filePath,startDate\)}{section.E.2}% 80
+\BOOKMARK [1][-]{section.E.3}{Description}{appendix.E}% 81
