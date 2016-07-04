@@ -61,3 +61,19 @@
 * localNation2Center.csv
 	This file contains results when we seggregated local and national anomalies for 2 cenres Mumbai and Delhi. We took out common anomalies and stated as national and rest are stated as local to that center.
 	
+* largeWindowResult.csv
+	This is result when window size are changes for 2 functions as follows:
+		- For Slop Based: 10
+		- For Window Correlation: 20
+
+* smallWindowResult.csv
+	This is result when window size are changes for 2 functions as follows:
+		- For Slop Based: 4
+		- For Window Correlation: 10
+* verySmallWindow.csv
+	This is result when window size are changes for 2 functions as follows:
+		- For Slop Based: 4
+		- For Window Correlation: 7
+
+* distributionOfArticlesMatched.csv
+	This result states the distribution of articles matched, that is how many articles are stating particluar reason as anomaly.

@@ -389,16 +389,128 @@ is of type \textit{float}.
  
  
  
+ \item \textbf{plotGraphForHypothesis(original, average, list1, list2, total\_news\_articles)} \\
+  
+ Given the arguments of 2 series, anomalies matched, anomalies reported and articles which are not matched, this function plots graph of that. Note that here here both the series should have same units.
+ 
+ \begin{itemize}
+ \item Input Parameters
+ 
+ \begin{enumerate}
+  \item original: Series 1
+  \item average: Series 2
+  \item list1: Predicted By system : list of tuples ... (date, ... , ...)
+  \item list2: Actual results : List of Dates
+  \item total\_news\_articles: All articles present in the database for this center/entity
+ \end{enumerate}
+
+ \item Output \textit{(list)}: \\
+ Plots Graph.
+ \end{itemize}
+ 
+ 
+ \item \textbf{fetchNewsForCenter(resultsOfSystem, centerNumber, intervalToConsider=5)} \\
+  
+ Given the list of anomalies and name of center for which anomalies are reported, this function returns the all news articles present for this centre and all the anomalies which are matched with anomalies.\\
+ 
+ \begin{itemize}
+ \item Input Parameters
+ 
+ \begin{enumerate}
+  \item resultsOfSystem: List of tuples/list of the format (date, ... ,...)
+  \item centerNumber: Center Number (Refer placeMapping function for more details about centre number)
+  \item intervalToConsider: News will be fetched from news articles for a particular date(given by system as anomaly) in interval [date-intervalToConsider, date+intervalToConsider]
+ \end{enumerate}
+
+ \item Output \textit{(list)}: \\
+ returns result of the following form....
+A tuple:
+
+	(resultList, allArticlesQueryResult)
+	
+Where:\\
+\\
+* resultList : This is of tuples with following fields:\\
+				(System\_anomaly\_date, news\_article\_date, \\news\_source, source\_url, difference\_between\_system\_date\_and\_news\_article\_date \\,reason, comment, days\_compared\_in\_article)\\
+				1. System\_anomaly\_date: date reported by our system which is reported as anomolous date\\
+				2. news\_article\_date: date of news article corresponding to above System\_anomaly\_date\\
+				3. news\_source: source of news (which media?)\\
+				4. source\_url: link of the news article\\
+				5. difference\_between\_system\_date\_and\_news\_article\_date: difference between dates of (news\_article\_date - System\_anomaly\_date)\\
+				6. reason: what reason is stated by article\\
+				7. comment: any comment on article if present\\
+				8. days\_compared\_in\_article: Article has compared data between how many days to state that it is anomaly?\\
+				\\
+* allArticlesQueryResult: List of dates of all news articles for this center which is present in the database
+ \end{itemize}
+ 
+
+
+ \item \textbf{plotGraphForHypothesisArrival(original, average, list1, list2, total\_news\_articles)} \\
+  
+ Given the arguments of 2 series, anomalies matched, anomalies reported and articles which are not matched, this function plots graph of that. Note that here here both the series have different units like one series is of price and other is of arrival.
+ 
+ \begin{itemize}
+ \item Input Parameters
+ 
+ \begin{enumerate}
+  \item original: Series 1
+  \item average: Series 2
+  \item list1: Predicted By system : list of tuples ... (date, ... , ...)
+  \item list2: Actual results : List of Dates
+  \item total\_news\_articles: All articles present in the database for this center/entity
+ \end{enumerate}
+
+ \item Output \textit{(list)}: \\
+ Plots Graph.
+ \end{itemize} 
  
  
  
+ \item \textbf{placeMapping(i)} \\
+  
+ Depending upon the value of parameters passed, it returns centre name as follows:\\
+ 0: Mumbai\\
+ 1: Delhi\\
+ 2: Ahmedabad\\
+ 3: Banglore\\
+ 4: Patna\\
+ 5: India\\
  
  
  
+ \item \textbf{union(numOfLists, *lists)} \\
+  
+ Takes union of dates, where list of dates are passed as list of tuples where first element of tuple is date.
  
+ \begin{itemize}
+ \item Input Parameters
  
+ \begin{enumerate}
+  	\item numOfLists: It states number of lists, whose union is to be found
+	\item lists: each element of lists is a list, whose union is to be found, each of this list should be list of tuples, whose first element should be date
+ \end{enumerate}
+
+ \item Output \textit{(list)}: \\
+ returns list of dates after union
+ \end{itemize}
  
+
+ \item \textbf{intersect(list1,list2)} \\
+  
+ Takes intersection of elements present in lists list1 and list2.
  
+ \begin{itemize}
+ \item Input Parameters
+ 
+ \begin{enumerate}
+  	\item list1 : list of dates in tuple format (date,)
+	\item list2 : list of dates in tuple format (date,)
+ \end{enumerate}
+
+ \item Output \textit{(list)}: \\
+ returns intersection of list1 and list2
+ \end{itemize} 
  
  
  
