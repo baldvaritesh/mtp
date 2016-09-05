@@ -36,7 +36,7 @@ df[3] = df.apply(lambda row: StringDateToDay(row[0]), axis=1)
 ##################################################################################
 #	Analysis of the Retail Data
 #	1. Note that the threshold for choosing the valid points is taken as 2000
-# 	2. Important Variables: IdsPicked, df, dfPicked, dfMandis, dfCentres
+# 	2. Important Variables: IdsPicked, df, dfPicked, dfMandis, dfCentres, IdsName
 ##################################################################################
 
 def writeDictToCSV (filename, mydict):
