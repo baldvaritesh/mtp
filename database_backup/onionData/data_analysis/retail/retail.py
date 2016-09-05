@@ -53,12 +53,13 @@ def WriteListToFile (filename, myList):
   	file.close()
   	return
 
-
-''' Complete this function '''
 def writeMandisToFile(filename, IdsName):
-	f = open(filename, 'w')
+	MandisChosen = []
 	for key, value in IdsName.items():
-	f.close()
+		p = value['mandis']
+		for i in xrange(0 , len(p)):
+			MandisChosen.append(p[i][0])
+	WriteListToFile('mandisChosen.csv', MandisChosen)
 	return 
 
 def PickParticularIDs (threshold, mydict):
