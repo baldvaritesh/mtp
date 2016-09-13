@@ -3,26 +3,26 @@ CREATE DATABASE "onion";
 create table wholesaleoniondata (
 
 dateofdata       date                   ,
- mandicode        integer                , 
- arrivalsintons   numeric                , 
- origin           character varying(50)  , 
- variety          character varying(100) , 
- minpricersqtl    numeric                , 
- maxpricersqtl    numeric                , 
+ mandicode        integer                ,
+ arrivalsintons   numeric                ,
+ origin           character varying(50)  ,
+ variety          character varying(100) ,
+ minpricersqtl    numeric                ,
+ maxpricersqtl    numeric                ,
  modalpricersqtl  numeric );
- 
+
 -- COPY wholesaleoniondata FROM 'C:\Users\KAPILT~1\Downloads\ONIOND~1\Wholesaledata.csv' DELIMITER ',' NULL AS 'NULL' CSV;
 
 
  create table mandis(
  mandicode  SERIAL                ,
- mandiname  character varying(200) , 
+ mandiname  character varying(200) ,
  statecode  integer                 not null,
  latitude   numeric                ,
- longitude  numeric                , 
+ longitude  numeric                ,
  centreid   integer
  );
- 
+
 --COPY mandis(mandiname,statecode,latitude,longitude,centreid) FROM '/home/reshma/Desktop/Reshma/Major/project/Onion Data Cleared/Mandi.csv' DELIMITER ',' NULL AS 'NULL' CSV;
 
 
@@ -33,7 +33,7 @@ dateofdata       date                   ,
 
 
 --COPY states(state) FROM '/home/kapil/Desktop/project/Onion Data Cleared/States.csv'  DELIMITER ',' NULL AS 'NULL' CSV;
- 
+
  create table centres(
  CentreId SERIAL,
  statecode INT,
@@ -47,7 +47,7 @@ dateofdata       date                   ,
 CREATE TABLE RetailOnionData(
     DateOfData DATE,
     CentreId INT,
-    Price DECIMAL    
+    Price DECIMAL
 );
 
 -- COPY RetailOnionData FROM 'C:\Users\KAPILT~1\Downloads\ONIOND~1\retaildata.csv' DELIMITER ',' NULL AS 'NULL' CSV;
@@ -60,12 +60,12 @@ where modalpricersqtl is NULL and minpricersqtl is not null and maxpricersqtl is
 
 -- This command is used to set empty modalprice based on minimum price if maximum price is null
 update wholesaleoniondata
-set modalpricersqtl = minpricersqtl 
+set modalpricersqtl = minpricersqtl
 where modalpricersqtl is NULL and minpricersqtl is not null and maxpricersqtl is null;
 
 -- This command is used to set empty modalprice based on maximum price if minimum price is null
 update wholesaleoniondata
-set modalpricersqtl = maxpricersqtl 
+set modalpricersqtl = maxpricersqtl
 where modalpricersqtl is NULL and minpricersqtl is null and maxpricersqtl is not null;
 
 
