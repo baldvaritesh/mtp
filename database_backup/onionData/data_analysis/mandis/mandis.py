@@ -14,7 +14,7 @@ dfManidisChosen = pd.read_csv('../retail/mandisChosen.csv', header=None)
 MandisChosen = dfManidisChosen[0].tolist()
 
 # Pick the mandis which are chosen
-dfMC[8] = dfMC.apply(lambda row: row[1] in MandisChosen, axis=1)
+dfMC[8] = df.apply(lambda row: row[1] in MandisChosen, axis=1)
 dfMC = dfMC[dfMC[8] == True]
 
 # Remove the mandis with zero or NULL arrival, and if any price is reported NULL
