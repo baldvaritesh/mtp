@@ -1,50 +1,75 @@
-import pandas as pd, csv, numpy as np , math
+import pandas as pd, numpy as np, math, csv
 from datetime import datetime
 from collections import Counter
 
 ''' Structure of Database File From BackUp '''
-''' Date 	MandiCode	Arrival		Origin 		Variety 	MinP 	MaxP 	ModalP '''
+''' Date  MandiCode Arrival   Origin    Variety   MinP  MaxP  ModalP '''
 
 ##################################################################################
-#	Creating a Valid Mandi Database for analysis
+# Lib Functions
+##################################################################################
+
+def StringDateToDay(x):
+  dateObject = datetime.strptime(x, '%Y-%m-%d')
+  return dateObject.strftime('%A')
+
+def getMandisList(dataFrame, threshold):
+  mandisList = Counter(dataFrame[1].tolist())
+  for key, value in mandisList.items():
+    if value < (0.8 * threshold):
+      del mandisList[key]
+  return mandisList.keys()
+
+def getCentresList(mappingMandiToCentre, mandisList):
+  centreList = []
+  for mandi in mandisList:
+    c = mappingMandiToCentre[mandi]
+    if(c not in centreList):
+      centreList.append(c)
+  return centreList
+
+
+##################################################################################
+# Creating a Valid Mandi Database for analysis
 ##################################################################################
 
 dfMC = pd.read_csv('../../csv_bkup/wholesaleoniondata.csv', header=None)
-dfManidisChosen = pd.read_csv('../retail/mandisChosen.csv', header=None)
-MandisChosen = dfManidisChosen[0].tolist()
 
-# Pick the mandis which are chosen
-dfMC[8] = dfMC.apply(lambda row: row[1] in MandisChosen, axis=1)
-dfMC = dfMC[dfMC[8] == True]
+# Remove the mandis with zero or NULL arrival, and if min price is reported NULL
+# You can also do the pruning if by chosing the modal price
 
-# Remove the mandis with zero or NULL arrival, and if any price is reported NULL
 dfMC = dfMC[dfMC[2] != 0]
 dfMC = dfMC[np.isfinite(dfMC[2])]
 dfMC = dfMC[np.isfinite(dfMC[5])]
-dfMC = dfMC[np.isfinite(dfMC[6])]
-dfMC = dfMC[np.isfinite(dfMC[7])]
 
-# Remove the duplicates like the last time
+# Drop any duplicates based on date and mandi ID and sort to see the last date
+
 dfMC = dfMC.drop_duplicates(subset=[0,1])
+dfMC = dfMC.sort([0,1], ascending=[True, True])
 
+# Get the mapping of mandis to centres
 
-# add the day on the particular date in the dataframe
-'''	Data 	CentreID 	Price 	Day '''
-def StringDateToDay(x):
-	dateObject = datetime.strptime(x, '%Y-%m-%d')
-	return dateObject.strftime('%A')
+df = pd.read_csv('../../csv_bkup/mandis.csv', header=None)
+df['mapping'] = zip(df[0], df[2])
+mapping = dict(df['mapping'].tolist())
 
-dfMC[9] = dfMC.apply(lambda row: StringDateToDay(row[0]), axis=1)
+# Here I get most of mandis in your result but I think that we should remove the weekends first
+# But the corresponding centres only come out to be only 3 unlike 10, what you reported
+mandis = getMandisList(dfMC, 2480)
+print len(mandis)
+centres = getCentresList(mapping, mandis)
+print len(centres)
 
+# Drop the weekends from the data since we are not considering them in the centres data
+dfMC[8] = dfMC.apply(lambda row: StringDateToDay(row[0]), axis=1)
+dfMC = dfMC[dfMC[8] != 'Saturday']
+dfMC = dfMC[dfMC[8] != 'Sunday']
 
-def writeDictToCSV (filename, mydict):
-	with open(filename, 'wb') as csv_file:
-		writer = csv.writer(csv_file)
-		for key, value in mydict.items():
-			writer.writerow([key, value])
-	return
-
-#daysList = Counter(df[3].tolist())
-IDList = Counter(df[1].tolist())
-#writeDictToCSV('daysData.csv', daysList)
-writeDictToCSV('pointsCount.csv', IDList)
+# Count the number of mandis actually left
+# Total days = 9.5 * 365 = 3468
+# Days apart from weekends : 9.5 * (365 - 104) = 2480
+# Here the output is even more less
+mandis = getMandisList(dfMC, 2480)
+print len(mandis)
+centres = getCentresList(mapping, mandis)
+print len(centres)
