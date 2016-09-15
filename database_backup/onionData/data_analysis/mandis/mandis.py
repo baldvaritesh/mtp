@@ -40,7 +40,7 @@ dfMC = pd.read_csv('../../csv_bkup/wholesaleoniondata.csv', header=None)
 
 dfMC = dfMC[dfMC[2] != 0]
 dfMC = dfMC[np.isfinite(dfMC[2])]
-dfMC = dfMC[np.isfinite(dfMC[5])]
+dfMC = dfMC[np.isfinite(dfMC[7])]
 
 # Drop any duplicates based on date and mandi ID and sort to see the last date
 
@@ -59,17 +59,19 @@ mandis = getMandisList(dfMC, 2480)
 print len(mandis)
 centres = getCentresList(mapping, mandis)
 print len(centres)
+centres.sort()
+print centres
 
 # Drop the weekends from the data since we are not considering them in the centres data
-dfMC[8] = dfMC.apply(lambda row: StringDateToDay(row[0]), axis=1)
-dfMC = dfMC[dfMC[8] != 'Saturday']
-dfMC = dfMC[dfMC[8] != 'Sunday']
+#dfMC[8] = dfMC.apply(lambda row: StringDateToDay(row[0]), axis=1)
+#dfMC = dfMC[dfMC[8] != 'Saturday']
+#dfMC = dfMC[dfMC[8] != 'Sunday']
 
 # Count the number of mandis actually left
 # Total days = 9.5 * 365 = 3468
 # Days apart from weekends : 9.5 * (365 - 104) = 2480
 # Here the output is even more less
-mandis = getMandisList(dfMC, 2480)
-print len(mandis)
-centres = getCentresList(mapping, mandis)
-print len(centres)
+# mandis = getMandisList(dfMC, 2480)
+# print len(mandis)
+# centres = getCentresList(mapping, mandis)
+# print len(centres)
