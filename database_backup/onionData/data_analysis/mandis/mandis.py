@@ -47,7 +47,7 @@ dfMC = dfMC[np.isfinite(dfMC[7])]
 
 # Drop any duplicates based on date and mandi ID and sort to see the last date
 
-dfMC = dfMC.drop_duplicates(subset=[0,1])
+dfMC = dfMC.drop_duplicates(subset=[0,1], take_last=True)
 dfMC = dfMC.sort([0,1], ascending=[True, True])
 
 # Get the mapping of mandis to centres
@@ -59,9 +59,7 @@ mapping = dict(df['mapping'].tolist())
 # Here I get most of mandis in your result but I think that we should remove the weekends first
 # But the corresponding centres only come out to be only 3 unlike 10, what you reported
 mandis = getMandisList(dfMC, 2480)
-print len(mandis)
 centres = getCentresDict(mapping, mandis)
-print len(centres)
 
 # Drop the weekends from the data since we are not considering them in the centres data
 # dfMC[8] = dfMC.apply(lambda row: StringDateToDay(row[0]), axis=1)

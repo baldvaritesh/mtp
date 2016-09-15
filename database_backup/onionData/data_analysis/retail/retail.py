@@ -1,9 +1,11 @@
+''' Earlier analysis File | Now use the File in the main directory rather '''
+
 import pandas as pd, csv, numpy as np , math
 from datetime import datetime
 from collections import Counter
 
 ''' Structure of Database File From BackUp '''
-''' Data 	CentreId 	Price '''
+''' Date	CentreId 	Price '''
 
 ##################################################################################
 #	Creating a Valid Retail Database
@@ -20,13 +22,13 @@ df = df.drop_duplicates(subset=[0,1])
 
 # remove entries before 2006, check where the end point is
 df = df.sort([0], ascending=[True])
-df = df.drop(df.index[:34963])
+df = df.drop(df.index[:34963], take_last=True)
 
 # sort the database by dates and then by ids (both ascending)
 df = df.sort([0,1], ascending=[True, True])
 
 # add the day on the particular date in the dataframe
-'''	Data 	CentreID 	Price 	Day '''
+'''	Date 	CentreID 	Price 	Day '''
 def StringDateToDay(x):
 	dateObject = datetime.strptime(x, '%Y-%m-%d')
 	return dateObject.strftime('%A')
@@ -60,7 +62,7 @@ def writeMandisToFile(filename, IdsName):
 		for i in xrange(0 , len(p)):
 			MandisChosen.append(p[i][0])
 	WriteListToFile('mandisChosen.csv', MandisChosen)
-	return 
+	return
 
 def PickParticularIDs (threshold, mydict):
 	ids = []
@@ -74,7 +76,7 @@ def AnalyseMissingDataByID(idChosen, df):
 	df = df[df[1] == idChosen]
 	daysSeries = df[0].tolist()
 	maxValue = -1
-	MissingDays = [] 
+	MissingDays = []
 	for i in xrange(1 , len(daysSeries)):
 		dateObject1 = datetime.strptime(daysSeries[i-1], '%Y-%m-%d')
 		dateObject2 = datetime.strptime(daysSeries[i], '%Y-%m-%d')
