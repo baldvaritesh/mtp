@@ -20,12 +20,14 @@ def getMandisList(dataFrame, threshold):
       del mandisList[key]
   return mandisList.keys()
 
-def getCentresList(mappingMandiToCentre, mandisList):
-  centreList = []
+def getCentresDict(mappingMandiToCentre, mandisList):
+  centreDict = {}
   for mandi in mandisList:
     c = mappingMandiToCentre[mandi]
-    if(c not in centreList):
-      centreList.append(c)
+    if c not in centreDict.keys():
+      centreDict[c] = [mandi]
+    else:
+      centreDict[c].append(mandi)
   return centreList
 
 
@@ -40,6 +42,7 @@ dfMC = pd.read_csv('../../csv_bkup/wholesaleoniondata.csv', header=None)
 
 dfMC = dfMC[dfMC[2] != 0]
 dfMC = dfMC[np.isfinite(dfMC[2])]
+dfMC = dfMC[dfMC[7] != 0]
 dfMC = dfMC[np.isfinite(dfMC[7])]
 
 # Drop any duplicates based on date and mandi ID and sort to see the last date
@@ -50,22 +53,20 @@ dfMC = dfMC.sort([0,1], ascending=[True, True])
 # Get the mapping of mandis to centres
 
 df = pd.read_csv('../../csv_bkup/mandis.csv', header=None)
-df['mapping'] = zip(df[0], df[2])
+df['mapping'] = zip(df[0], df[5])
 mapping = dict(df['mapping'].tolist())
 
 # Here I get most of mandis in your result but I think that we should remove the weekends first
 # But the corresponding centres only come out to be only 3 unlike 10, what you reported
 mandis = getMandisList(dfMC, 2480)
 print len(mandis)
-centres = getCentresList(mapping, mandis)
+centres = getCentresDict(mapping, mandis)
 print len(centres)
-centres.sort()
-print centres
 
 # Drop the weekends from the data since we are not considering them in the centres data
-#dfMC[8] = dfMC.apply(lambda row: StringDateToDay(row[0]), axis=1)
-#dfMC = dfMC[dfMC[8] != 'Saturday']
-#dfMC = dfMC[dfMC[8] != 'Sunday']
+# dfMC[8] = dfMC.apply(lambda row: StringDateToDay(row[0]), axis=1)
+# dfMC = dfMC[dfMC[8] != 'Saturday']
+# dfMC = dfMC[dfMC[8] != 'Sunday']
 
 # Count the number of mandis actually left
 # Total days = 9.5 * 365 = 3468
@@ -75,3 +76,4 @@ print centres
 # print len(mandis)
 # centres = getCentresList(mapping, mandis)
 # print len(centres)
+# print centres
