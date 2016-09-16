@@ -39,20 +39,23 @@ def CreateMandiSeries(Mandi, Whole, EWMAisOn):
     mcSeries = mc
   return mcSeries
 
-def PlotDifferenceAbsolute(SeriesA, SeriesB, MCDiff):
+def PlotDifferenceAbsolute(SeriesA, SeriesB, MCDiff, SaveToFile=""):
   diff = abs(SeriesA - SeriesB) if (not MCDiff) else abs(SeriesA[2] - SeriesB[7])
   plt.plot(diff)
-  plt.show()
+  plt.savefig(SaveToFile) if (len(SaveToFile) != 0) else plt.show()
+  plt.clf()
 
-def PlotDifference(SeriesA, SeriesB, MCDiff):
+def PlotDifference(SeriesA, SeriesB, MCDiff, SaveToFile=""):
   diff = (SeriesA - SeriesB) if (not MCDiff) else (SeriesA[2] - SeriesB[7])
   plt.plot(diff)
-  plt.show()
+  plt.savefig(SaveToFile) if (len(SaveToFile) != 0) else plt.show()
+  plt.clf()
 
-def PlotCentreWithMandi(CSeries, MSeries):
+def PlotCentreWithMandi(CSeries, MSeries, SaveToFile=""):
   plt.plot(CSeries)
   plt.plot(MSeries)
-  plt.show()
+  plt.savefig(SaveToFile) if (len(SaveToFile) != 0) else plt.show()
+  plt.clf()
 
 
 ##################################################################################
@@ -97,4 +100,12 @@ for i in range(0 , len(c)):
   for j in range(0, len(m[i])):
     ms[i].append(CreateMandiSeries(m[i][j] , whole, True))
 
+# for i in xrange(0, len(cs)):
+#   for j in xrange(0, len(ms[i])):
+#     PlotDifferenceAbsolute(cs[i],ms[i][j],False, str(c[i])+"_"+str(m[i][j])+".png")
+
+for i in [0,2]:
+  for j in xrange(0, len(ms[i]) - 1):
+    for k in xrange(j + 1, len(ms[i])):
+      PlotDifferenceAbsolute(ms[i][j], ms[i][k],False, str(m[i][j])+"_"+str(m[i][k])+".png")
 
