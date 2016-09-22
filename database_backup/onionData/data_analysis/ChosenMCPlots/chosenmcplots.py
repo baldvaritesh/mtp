@@ -51,9 +51,9 @@ def PlotDifference(SeriesA, SeriesB, MCDiff, SaveToFile=""):
   plt.savefig(SaveToFile) if (len(SaveToFile) != 0) else plt.show()
   plt.clf()
 
-def PlotCentreWithMandi(CSeries, MSeries, SaveToFile=""):
-  plt.plot(CSeries)
-  plt.plot(MSeries)
+def PlotCentreWithMandi(CSeries, MSeries, SaveToFile="", ColorC = "", ColorM = ""):
+  plt.plot(CSeries, color=ColorC) if (len(ColorC) != 0) else plt.plot(CSeries)
+  plt.plot(MSeries, color=ColorM) if (len(ColorM) != 0) else plt.plot(MSeries)
   plt.savefig(SaveToFile) if (len(SaveToFile) != 0) else plt.show()
   plt.clf()
 
@@ -104,8 +104,8 @@ for i in range(0 , len(c)):
 #   for j in xrange(0, len(ms[i])):
 #     PlotDifferenceAbsolute(cs[i],ms[i][j],False, str(c[i])+"_"+str(m[i][j])+".png")
 
-for i in [0,2]:
-  for j in xrange(0, len(ms[i]) - 1):
-    for k in xrange(j + 1, len(ms[i])):
-      PlotDifferenceAbsolute(ms[i][j], ms[i][k],False, str(m[i][j])+"_"+str(m[i][k])+".png")
+# for i in [0,2]:
+#   for j in xrange(0, len(ms[i]) - 1):
+#     for k in xrange(j + 1, len(ms[i])):
+#       PlotDifferenceAbsolute(ms[i][j], ms[i][k],False, str(m[i][j])+"_"+str(m[i][k])+".png")
 
