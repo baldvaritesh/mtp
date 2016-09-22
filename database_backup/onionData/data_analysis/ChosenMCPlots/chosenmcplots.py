@@ -94,6 +94,7 @@ m = [[337, 345, 577], [278, 284, 285, 288, 323, 324, 405, 545, 584], [279, 325, 
 cs = []
 ms = []
 
+# We are not doing smoothening now
 for i in range(0 , len(c)):
   cs.append(CreateCentreSeries(c[i] , retail, False))
   ms.append([])
