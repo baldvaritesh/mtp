@@ -95,10 +95,10 @@ cs = []
 ms = []
 
 for i in range(0 , len(c)):
-  cs.append(CreateCentreSeries(c[i] , retail, True))
+  cs.append(CreateCentreSeries(c[i] , retail, False))
   ms.append([])
   for j in range(0, len(m[i])):
-    ms[i].append(CreateMandiSeries(m[i][j] , whole, True))
+    ms[i].append(CreateMandiSeries(m[i][j] , whole, False))
 
 # for i in xrange(0, len(cs)):
 #   for j in xrange(0, len(ms[i])):
