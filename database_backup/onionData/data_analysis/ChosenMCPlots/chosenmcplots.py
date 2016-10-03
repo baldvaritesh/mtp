@@ -27,7 +27,7 @@ def CreateMandiSeries(Mandi, Whole, EWMAisOn):
   mc = Whole[Whole[1] == Mandi]
   mc = mc.sort([0], ascending=[True])
   mc[8] = mc.apply(lambda row: datetime.strptime(row[0], '%Y-%m-%d'), axis=1)
-  mc.drop(mc.columns[[0,1,2,3,4,5,6]], axis=1, inplace=True)
+  mc.drop(mc.columns[[0,1,3,4,5,6]], axis=1, inplace=True)
   mc.set_index(8, inplace=True)
   mc.index.names=[None]
   idx = pd.date_range('2006-01-01', '2015-06-23')
