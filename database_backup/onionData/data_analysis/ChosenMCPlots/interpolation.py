@@ -65,3 +65,4 @@ def HermitePolynomials(p,l,r,series,tension,bias):
   a2 =    t3 -   t2
   a3 = -2*t3 + 3*t2
   return(a0*series[l]+a1*m0+a2*m1+a3*series[r])
+

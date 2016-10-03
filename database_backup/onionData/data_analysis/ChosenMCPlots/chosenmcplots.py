@@ -87,9 +87,9 @@ retail = retail.drop_duplicates(subset=[0,1], take_last=True)
 
 
 # Now for the assigned centres and mandis create series
-x = {37: 0, 40: 1, 50: 2}
-c = [37,40,50]
-m = [[337, 345, 577], [278, 284, 285, 288, 323, 324, 405, 545, 584], [279, 325, 376]]
+x = {10: 0, 16: 1, 40: 2, 44: 3, 50: 4}
+c = [10, 16, 40, 44, 50]
+m = [[182, 174, 194], [281, 404, 351, 312, 165, 70, 293, 164, 407, 166], [545, 323, 405, 584, 278, 288], [156, 427], [279, 376]]
 
 cs = []
 ms = []
@@ -100,13 +100,3 @@ for i in range(0 , len(c)):
   ms.append([])
   for j in range(0, len(m[i])):
     ms[i].append(CreateMandiSeries(m[i][j] , whole, False))
-
-# for i in xrange(0, len(cs)):
-#   for j in xrange(0, len(ms[i])):
-#     PlotDifferenceAbsolute(cs[i],ms[i][j],False, str(c[i])+"_"+str(m[i][j])+".png")
-
-# for i in [0,2]:
-#   for j in xrange(0, len(ms[i]) - 1):
-#     for k in xrange(j + 1, len(ms[i])):
-#       PlotDifferenceAbsolute(ms[i][j], ms[i][k],False, str(m[i][j])+"_"+str(m[i][k])+".png")
-
