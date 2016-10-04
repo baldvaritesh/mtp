@@ -1,14 +1,14 @@
-''' 
+'''
 @	Note that this file is particularly for demo purposes
 @	Not a general purpose file
 @	Analysis based on Centre 50 and Corresponding Mandis 279, 376
 '''
 
-import chosenmcplots as cp 
+import chosenmcplots as cp
 import pandas as pd, numpy as np, math, csv, matplotlib.pyplot as plt
 from datetime import datetime
 from collections import Counter
-import statsmodels as sm 
+import statsmodels as sm
 
 ''' get the dummy centre: 50 and two mandis: 279 (0) , 376 (2) '''
 c = cp.cs[2]
@@ -31,7 +31,7 @@ m[2][7][0] = m[2][7][1] = m[2][7][2] = m[2][7][3]
 def ZeroMean(series, ind):
 	mean = series[ind].mean()
 	series[ind] -= mean
-	return series 
+	return series
 
 def g(y, p):
 	if(p == 1):
@@ -57,7 +57,7 @@ def PreProcess(seriesC, seriesM):
 	DReq = scipy.linalg.sqrtm(D)
 	V = np.dot( np.dot(eig_vec_cov, DReq) , eig_vec_cov.T)
 
-	# 
+	#
 	#	Whiten the series z = Vx
 	#
 	seriesC = seriesC.apply(lambda row: np.dot(V, row.T).T, axis=1)
@@ -65,7 +65,7 @@ def PreProcess(seriesC, seriesM):
 
 def normalize(v):
     norm=np.linalg.norm(v)
-    if norm==0: 
+    if norm==0:
        return v
     return v/norm
 
@@ -90,12 +90,12 @@ def FindSingleIC(series, p, function, presentICs):
 			if(i == 5):
 				break
 			print str(i) + ' ' + str(np.dot(wpNew, wp.T))
-			wp = wpNew			
+			wp = wpNew
 			i+=1
 		if(found == True):
 			print '-----------' + str(p) + '----------------'
-			print wpNew 
-			break		
+			print wpNew
+			break
 	return wpNew
 
 def FindAllIC(series, function, m):
