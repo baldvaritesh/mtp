@@ -19,8 +19,8 @@ m = cp.ms
 
 ''' Interpolate all the present series '''
 for x in c:
-	x = x.replace('0.0', np.NaN, regex=True)
-	x = x.interpolate(method='pchip')
+	x[2] = x[2].replace('0.0', np.NaN, regex=True)
+	x[2] = x[2].interpolate(method='pchip')
 	x[2][0] = x[2][1]
 
 for mandis in m:
@@ -35,6 +35,18 @@ for mandis in m:
 #	c.isnull().values.any()
 #
 
+def RemoveNullsWithFirstValue(series):
+	if(np.isfinite(series[7][0]) == True):
+		return series
+	for i in xrange(0 , len(series[7])):
+		if(np.isfinite(series[7][i]) == False):
+			continue
+		else:
+			value = series[7][i]
+			for j in xrange(0,i):
+				series[7][j] = value 
+			break
+	return series
 
 def ZeroMean(series, ind):
 	mean = series[ind].mean()
@@ -42,16 +54,18 @@ def ZeroMean(series, ind):
 	return series
 
 def PreProcess(seriesC, seriesM):
-	for i in xrange(0 , len(seriesM)):
-		seriesC[i + 3] = seriesM[i][7]
-
+	series = [seriesC[2]]
+	for i in xrange(0, len(seriesM)):
+		series.append(seriesM[i][7])
 	for i in xrange(2, len(seriesM) + 3):
 		seriesC[i] = ZeroMean(seriesC, i)
 	#
 	#	Get the covariance matrices and eigen value decomposition
 	#
 	eig_val_cov, eig_vec_cov = np.linalg.eig(seriesC.cov())
-	D = [[eig_val_cov[0],0.0,0.0], [0.0,eig_val_cov[1],0.0], [0.0,0.0,eig_val_cov[2]]]
+	D = [[0.0 for i in xrange(0, len(eig_val_cov))] for j in xrange(0 , len(eig_val_cov))]
+	for i in xrange(0, len(eig_val_cov)):
+		D[i][i] = eig_val_cov[i]
 	DInverse = np.linalg.matrix_power(D, -1)
 	DReq = scipy.linalg.sqrtm(D)
 	V = np.dot( np.dot(eig_vec_cov, DReq) , eig_vec_cov.T)
