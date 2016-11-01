@@ -1,17 +1,17 @@
-''' 
+'''
 @	Note that this file is particularly for demo purposes
 @	Not a general purpose file
 @	Analysis based on Centre 50 and Corresponding Mandis 279, 376
 '''
 
-import chosenmcplots as cp 
+import chosenmcplots as cp
 import pandas as pd, numpy as np, math, csv, matplotlib.pyplot as plt
 from datetime import datetime
 from collections import Counter
 import statsmodels as sm
 import scipy, numpy as np
 from scipy import signal
-from sklearn.decomposition import FastICA, PCA 
+from sklearn.decomposition import FastICA, PCA
 
 ''' get the dummy centre: 50 and two mandis: 279 (0) , 376 (2) '''
 c = cp.cs
@@ -70,7 +70,7 @@ def PreProcess(seriesC, seriesM):
 	DReq = scipy.linalg.sqrtm(D)
 	V = np.dot( np.dot(eig_vec_cov, DReq) , eig_vec_cov.T)
 
-	# 
+	#
 	#	Whiten the series z = Vx
 	#
 	seriesC = seriesC.apply(lambda row: np.dot(V, row.T).T, axis=1)
