@@ -19,8 +19,8 @@ m = cp.ms
 
 ''' Interpolate all the present series '''
 for x in c:
-	x = x.replace('0.0', np.NaN, regex=True)
-	x = x.interpolate(method='pchip')
+	x[2] = x[2].replace('0.0', np.NaN, regex=True)
+	x[2] = x[2].interpolate(method='pchip')
 	x[2][0] = x[2][1]
 
 for mandis in m:
