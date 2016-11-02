@@ -45,13 +45,10 @@ def PreProcess(series):
 	return series
 
 
-def ICA(series, n, days):
-	if(len(series) != days):
+def ICA(seriesInp, n, days):
+	if(len(seriesInp) != days):
 		print 'Input is not correctly oriented'
 		return
-
-	#convert the pandas series to np array
-	seriesInp = series.as_matrix()
 
 	ica = FastICA(n_components=n)
 	S_ = ica.fit_transform(seriesInp)
@@ -64,6 +61,35 @@ def ICA(series, n, days):
 			series2[i][j] -= seriesInp[i][j]
 
 	return (series2, S_, A_)
+
+
+'''Create a window around the series of factor'''
+def CreateWindow(seriesInp, factor, days):
+	if(len(seriesInp) != days):
+		print 'Input is not correctly oriented'
+		return
+
+	window = np.zeros(shape=(len(seriesInp), len(seriesInp.T)))
+	for i in xrange(0, len(seriesInp)):
+		for j in xrange(0, len(seriesInp.T)):
+			window[i][j] = abs(seriesInp[i][j] * factor)
+
+	return window
+
+
+''' Extract anomalies is not a general function '''
+def ExtractAnomalies(residuals, window, index, days):
+	anomalies = []
+	idx = pd.date_range('2006-01-01', '2015-06-23')
+	# idx2 = [0] * days
+	for i in xrange(0, days):
+		if(abs(residuals.T[index][i]) > window.T[index][i]):
+			anomalies.append(idx[i])
+			# idx2[i] = 1.0
+	# lets plot the anomalies
+	# plt.plot(idx2)
+	# plt.show()
+	return anomalies
 
 
 ''' Get the centres and mandis '''
@@ -94,11 +120,10 @@ for i in xrange(1, 5):
 	centres[i] = c[i][2]
 for i in xrange(0,5):
 	centres = ZeroMean(centres, i)
-centres2 = PreProcess(centres)
+centres2 = PreProcess(centres).as_matrix()
 
 ''' Initialise plotting library '''
 plt2.Init(len(centres2),2006)
-
 
 
 ''' Check if any NaNs exist '''

@@ -15,17 +15,34 @@ def Init(numDays, start):
   yrs = (numDays / 365) + 2
   labels = [str(start + i) for i in xrange(0, yrs)]
   intervals = [i*365 for i in xrange(0 , yrs)]
-
-
-def PlotICs():
-  # plt.subplot(211)
-  # plt.plot(lag_acf)
-  # plt.axhline(y=0,linestyle='--',color='gray')
-  # plt.axhline(y=-1.96/np.sqrt(len(ts_log_diff)),linestyle='--',color='gray')
-  # plt.axhline(y=1.96/np.sqrt(len(ts_log_diff)),linestyle='--',color='gray')
-  # plt.title('IC1')
   return
 
-def PlotResiduals():
+
+def PlotICs(ics):
+  plt.subplot(211)
+  plt.plot(ics.T[0], label='IC1')
+  plt.legend(loc='best')
+  plt.xticks(intervals, labels)
+  plt.subplot(212)
+  plt.plot(ics.T[1], label='IC2')
+  plt.legend(loc='best')
+  plt.xticks(intervals, labels)
+  plt.tight_layout()
+  plt.show()
+  return
+
+def PlotResidual(seriesInp, window, index):
+  #Create the negative window series
+  reflector = lambda t: -1.0*t
+  funReflector = np.vectorize(reflector)
+  window2 = funReflector(window)
+
+  plt.plot(seriesInp.T[index], label=('Centre' + str(index + 1)))
+  plt.plot(window.T[index], linestyle='--', color='gray')
+  plt.axhline(y=0,linestyle='--',color='gray')
+  plt.plot(window2.T[index], linestyle='--', color='gray')
+  plt.legend(loc='best')
+  plt.xticks(intervals, labels)
+  plt.show()
   return
 
