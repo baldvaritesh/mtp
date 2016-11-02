@@ -49,15 +49,19 @@ def ICA(series, n, days):
 	if(len(series) != days):
 		print 'Input is not correctly oriented'
 		return
+
+	#convert the pandas series to np array
+	seriesInp = series.as_matrix()
+
 	ica = FastICA(n_components=n)
-	S_ = ica.transform(series)
+	S_ = ica.fit_transform(seriesInp)
 	A_ = ica.mixing_
 	series2 = np.dot(S_, A_.T)
 
 	#	Get the residuals
-	for i in xrange(0,len(series)):
-		for j in xrange(0,len(series.T)):
-			series2[i][j] -= series[i][j]
+	for i in xrange(0,len(seriesInp)):
+		for j in xrange(0,len(seriesInp.T)):
+			series2[i][j] -= seriesInp[i][j]
 
 	return (series2, S_, A_)
 
@@ -66,18 +70,18 @@ def ICA(series, n, days):
 c = cp.cs
 m = cp.ms
 
-''' Interpolate all the present series '''
+''' Interpolate all the present centres for now '''
 for x in c:
 	x[2] = x[2].replace('0.0', np.NaN, regex=True)
 	x[2] = x[2].interpolate(method='pchip')
 	x[2][0] = x[2][1]
 
-for mandis in m:
-	for x in mandis:
-		x[2] = x[2].replace('0.0', np.NaN, regex=True)
-		x[2] = x[2].interpolate(method='pchip')
-		x[7] = x[7].replace('0.0', np.NaN, regex=True)
-		x[7] = x[7].interpolate(method='pchip')
+# for mandis in m:
+# 	for x in mandis:
+# 		x[2] = x[2].replace('0.0', np.NaN, regex=True)
+# 		x[2] = x[2].interpolate(method='pchip')
+# 		x[7] = x[7].replace('0.0', np.NaN, regex=True)
+# 		x[7] = x[7].interpolate(method='pchip')
 
 
 # Get the current values in a particular data frame
@@ -91,6 +95,11 @@ for i in xrange(1, 5):
 for i in xrange(0,5):
 	centres = ZeroMean(centres, i)
 centres2 = PreProcess(centres)
+
+''' Initialise plotting library '''
+plt2.Init(len(centres2),2006)
+
+
 
 ''' Check if any NaNs exist '''
 #
