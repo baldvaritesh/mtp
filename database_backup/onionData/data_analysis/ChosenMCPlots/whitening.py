@@ -6,6 +6,7 @@
 
 import chosenmcplots as cp
 import pandas as pd, numpy as np, math, csv, matplotlib.pyplot as plt
+import plotting as plt2
 from datetime import datetime
 from collections import Counter
 import statsmodels as sm
@@ -13,7 +14,55 @@ import scipy, numpy as np
 from scipy import signal
 from sklearn.decomposition import FastICA, PCA
 
-''' get the dummy centre: 50 and two mandis: 279 (0) , 376 (2) '''
+
+def RemoveNullsWithFirstValue(series):
+	if(np.isfinite(series[7][0]) == True):
+		return series
+	for i in xrange(0 , len(series[7])):
+		if(np.isfinite(series[7][i]) == False):
+			continue
+		else:
+			value = series[7][i]
+			for j in xrange(0,i):
+				series[7][j] = value
+			break
+	return series
+
+def ZeroMean(series, ind):
+	mean = series[ind].mean()
+	series[ind] -= mean
+	return series
+
+def PreProcess(series):
+	eig_val_cov, eig_vec_cov = np.linalg.eig(series.cov())
+	D = [[0.0 for i in xrange(0, len(eig_val_cov))] for j in xrange(0 , len(eig_val_cov))]
+	for i in xrange(0, len(eig_val_cov)):
+		D[i][i] = eig_val_cov[i]
+	DInverse = np.linalg.matrix_power(D, -1)
+	DReq = scipy.linalg.sqrtm(D)
+	V = np.dot( np.dot(eig_vec_cov, DReq) , eig_vec_cov.T)
+	series = series.apply(lambda row: np.dot(V, row.T).T, axis=1)
+	return series
+
+
+def ICA(series, n, days):
+	if(len(series) != days):
+		print 'Input is not correctly oriented'
+		return
+	ica = FastICA(n_components=n)
+	S_ = ica.transform(series)
+	A_ = ica.mixing_
+	series2 = np.dot(S_, A_.T)
+
+	#	Get the residuals
+	for i in xrange(0,len(series)):
+		for j in xrange(0,len(series.T)):
+			series2[i][j] -= series[i][j]
+
+	return (series2, S_, A_)
+
+
+''' Get the centres and mandis '''
 c = cp.cs
 m = cp.ms
 
@@ -30,49 +79,21 @@ for mandis in m:
 		x[7] = x[7].replace('0.0', np.NaN, regex=True)
 		x[7] = x[7].interpolate(method='pchip')
 
+
+# Get the current values in a particular data frame
+#	centres contains the original data frame // mean is centered
+#	centres2 contains the whitened data frame
+
+centres = c[0]
+centres[0] = centres[2]
+for i in xrange(1, 5):
+	centres[i] = c[i][2]
+for i in xrange(0,5):
+	centres = ZeroMean(centres, i)
+centres2 = PreProcess(centres)
+
 ''' Check if any NaNs exist '''
 #
 #	c.isnull().values.any()
 #
-
-def RemoveNullsWithFirstValue(series):
-	if(np.isfinite(series[7][0]) == True):
-		return series
-	for i in xrange(0 , len(series[7])):
-		if(np.isfinite(series[7][i]) == False):
-			continue
-		else:
-			value = series[7][i]
-			for j in xrange(0,i):
-				series[7][j] = value 
-			break
-	return series
-
-def ZeroMean(series, ind):
-	mean = series[ind].mean()
-	series[ind] -= mean
-	return series
-
-def PreProcess(seriesC, seriesM):
-	series = [seriesC[2]]
-	for i in xrange(0, len(seriesM)):
-		series.append(seriesM[i][7])
-	for i in xrange(2, len(seriesM) + 3):
-		seriesC[i] = ZeroMean(seriesC, i)
-	#
-	#	Get the covariance matrices and eigen value decomposition
-	#
-	eig_val_cov, eig_vec_cov = np.linalg.eig(seriesC.cov())
-	D = [[0.0 for i in xrange(0, len(eig_val_cov))] for j in xrange(0 , len(eig_val_cov))]
-	for i in xrange(0, len(eig_val_cov)):
-		D[i][i] = eig_val_cov[i]
-	DInverse = np.linalg.matrix_power(D, -1)
-	DReq = scipy.linalg.sqrtm(D)
-	V = np.dot( np.dot(eig_vec_cov, DReq) , eig_vec_cov.T)
-
-	#
-	#	Whiten the series z = Vx
-	#
-	seriesC = seriesC.apply(lambda row: np.dot(V, row.T).T, axis=1)
-	return seriesC
 

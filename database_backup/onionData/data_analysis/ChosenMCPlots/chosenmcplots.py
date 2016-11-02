@@ -59,12 +59,8 @@ def PlotCentreWithMandi(CSeries, MSeries, SaveToFile="", ColorC = "", ColorM = "
 
 
 ##################################################################################
-# Generate Plots
+# Get the mandis for which data is available
 ##################################################################################
-
-# Pick the centres assigned to me
-# c: 37, 40, 50
-# m: [337, 345, 577], [278, 284, 285, 288, 323, 324, 405, 545, 584], [279, 325, 376]
 
 whole = pd.read_csv('../../csv_bkup/wholesaleoniondata.csv', header=None)
 retail = pd.read_csv('../../csv_bkup/RetailOnionData.csv', header=None)
