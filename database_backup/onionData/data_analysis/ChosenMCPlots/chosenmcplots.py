@@ -85,6 +85,7 @@ retail = retail.drop_duplicates(subset=[0,1], take_last=True)
 # Now for the assigned centres and mandis create series
 x = {10: 0, 16: 1, 40: 2, 44: 3, 50: 4}
 c = [10, 16, 40, 44, 50]
+cnames = ['BHUBANESHWAR','DELHI','LUCKNOW','MUMBAI','PATNA']
 m = [[182, 174, 194], [281, 404, 351, 312, 165, 70, 293, 164, 407, 166], [545, 323, 405, 584, 278, 288], [156, 427], [279, 376]]
 
 cs = []
