@@ -123,7 +123,7 @@ for i in xrange(0,5):
 centres2 = PreProcess(centres).as_matrix()
 
 ''' Initialise plotting library '''
-plt2.Init(len(centres2),2006)
+# plt2.Init(len(centres2),2006)
 
 
 ''' Check if any NaNs exist '''
