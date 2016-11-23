@@ -92,6 +92,18 @@ def ExtractAnomalies(residuals, window, index, days):
 	return anomalies
 
 
+def RemoveNaNsFront(series, idx):
+	index = 0
+	while True:
+		if(not np.isfinite(series[idx][index])):
+			index += 1
+		else:
+			break
+	for i in xrange(0, index):
+		series[idx][i] = series[idx][index]
+	return series
+
+
 ''' Get the centres and mandis '''
 c = cp.cs
 m = cp.ms
@@ -102,19 +114,22 @@ for x in c:
 	x[2] = x[2].interpolate(method='pchip')
 	x[2][0] = x[2][1]
 
-# for mandis in m:
-# 	for x in mandis:
-# 		x[2] = x[2].replace('0.0', np.NaN, regex=True)
-# 		x[2] = x[2].interpolate(method='pchip')
-# 		x[7] = x[7].replace('0.0', np.NaN, regex=True)
-# 		x[7] = x[7].interpolate(method='pchip')
+for mandis in m:
+	for x in mandis:
+		x[2] = x[2].replace('0.0', np.NaN, regex=True)
+		x[2] = x[2].interpolate(method='pchip')
+		x[7] = x[7].replace('0.0', np.NaN, regex=True)
+		x[7] = x[7].interpolate(method='pchip')
+		x = RemoveNaNsFront(x, 2)
+		x = RemoveNaNsFront(x, 7)
+
 
 
 # Get the current values in a particular data frame
 #	centres contains the original data frame // mean is centered
 #	centres2 contains the whitened data frame
 
-centres = c[0]
+centres = c[0].copy()
 centres[0] = centres[2]
 for i in xrange(1, 5):
 	centres[i] = c[i][2]
