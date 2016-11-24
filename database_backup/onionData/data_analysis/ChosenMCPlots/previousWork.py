@@ -29,7 +29,7 @@ def getDataForVAR(c,m,centreIndex, dataType):
 	data[0] = data[PRICE_CENTRE]
 	del data[PRICE_CENTRE]
 	for i in xrange(0, len(m[centreIndex])):
-		data[i+1] = m[centreIndex][i][PRICE]
+		data[i+1] = m[centreIndex][i][dataType]
 	return data
 
 def MADThreshold(array):
@@ -60,7 +60,27 @@ def WindowCorrelation(c, m, centreIndex, window=15):
 
 
 # Multivariate Analysis Anomalies
-
+def MVARAnalysis(c, m, centreIndex, maxlgs=15):
+	data = getDataForVAR(c,m,centreIndex, PRICE)
+	l = len(data)
+	trainIdx = int(0.8 * l)
+	dataTrain = data.head(trainIdx)
+	dataTest = data.tail(l - trainIdx)
+	model = st2.VAR(dataTrain)
+	results = model.fit()
+	initialValue = data[0][trainIdx]
+	forecastValues = results.forecast(dataTest.values, l - trainIdx)
+	diff = dataTest.values
+	for i in xrange(l - trainIdx):
+		for j in xrange(0, len(m[centreIndex]) + 1):
+			diff[i][j] = abs(forecastValues[i][j] - diff[i][j])
+	idx = pd.date_range('2006-01-01', '2015-06-23')
+	(lower_threshold, upper_threshold) = MADThreshold(diff.T[0])
+	anom = []
+	for i in xrange(l - trainIdx):
+		if(diff[i][0] < lower_threshold or diff[i][0] > upper_threshold):
+			anom.append(idx[i + trainIdx])
+	return anom 
 
 # Linear Regression Anomalies
 def LinearRegression(c, m, centreIndex):
