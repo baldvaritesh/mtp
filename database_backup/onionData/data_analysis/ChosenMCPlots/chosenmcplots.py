@@ -6,6 +6,9 @@ from collections import Counter
 # Lib Functions
 ##################################################################################
 
+anomalies = {}
+# anomalies['Delhi'] = 
+
 def CreateCentreSeries(Centre, Retail, EWMAisOn):
   rc = Retail[Retail[1] == Centre]
   rc = rc.sort([0], ascending=[True])

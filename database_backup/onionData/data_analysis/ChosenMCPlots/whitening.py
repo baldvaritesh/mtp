@@ -91,6 +91,24 @@ def ExtractAnomalies(residuals, window, index, days):
 	# plt.show()
 	return anomalies
 
+def ExtractAnomalies3(residuals, window, index, days, val):
+	anomalies = []
+	idx = pd.date_range('2006-01-01', '2015-06-23')
+	idx2 = [-2000] * days
+	for i in xrange(0, days):
+		if(abs(residuals.T[index][i]) > window.T[index][i]):
+			anomalies.append(idx[i])
+			idx2[i] = val 
+	return idx2
+
+def ExtractAnomalies2(residuals, index, days):
+	anomalies = []
+	idx = pd.date_range('2006-01-01', '2015-06-23')
+	win = sum(abs(i) for i in resid.T[index]) / 3461
+	for i in xrange(0, days):
+		if(abs(residuals.T[index][i]) > window.T[index][i]):
+			anomalies.append(idx[i])
+	return anomalies
 
 def RemoveNaNsFront(series, idx):
 	index = 0
